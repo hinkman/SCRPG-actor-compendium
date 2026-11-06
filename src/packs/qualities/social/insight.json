@@ -1,0 +1,31 @@
+{
+  "name": "Insight",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You can read people and determine what they're trying to hide.</p>"
+  },
+  "effects": [],
+  "folder": "wu9KdcPXRfWt4LfJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "social"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZRk2kCPudIffPj2B",
+  "_key": "!items!ZRk2kCPudIffPj2B"
+}

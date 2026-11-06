@@ -1,0 +1,31 @@
+{
+  "name": "History",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You have a deep knowledge of various historical facts from around the world.</p>"
+  },
+  "effects": [],
+  "folder": "4FTleXHHeyCbMYgz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "information"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "JzAMmM18LkxtTJqA",
+  "_key": "!items!JzAMmM18LkxtTJqA"
+}

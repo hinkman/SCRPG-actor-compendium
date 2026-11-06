@@ -1,0 +1,31 @@
+{
+  "name": "Investigation",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You have training in investigation, from evidence collecting techniques to forensic styles.</p>"
+  },
+  "effects": [],
+  "folder": "zzSOZugeC3JffBjV",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "mental"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "1VMylzBV9IEh1R7q",
+  "_key": "!items!1VMylzBV9IEh1R7q"
+}

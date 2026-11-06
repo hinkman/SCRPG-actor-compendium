@@ -1,8 +1,8 @@
 {
     "id": "scrpg-actor-compendium",
     "title": "Sentinel Comics RPG Actor Compendium",
-    "description": "Compendium items from Sentinel Comics: The Roleplaying Game for the scrpg-foundry system. This release contains the power list.",
-    "version": "0.1.0",
+    "description": "Compendium items from Sentinel Comics: The Roleplaying Game for the scrpg-foundry system. This release contains the power and quality lists.",
+    "version": "0.2.0",
     "compatibility": {
         "minimum": "14",
         "verified": "14"
@@ -38,9 +38,21 @@
                 "ASSISTANT": "OWNER",
                 "PLAYER": "OBSERVER"
             }
+        },
+        {
+            "name": "qualities",
+            "label": "SCRPG Qualities",
+            "path": "packs/qualities",
+            "type": "Item",
+            "system": "scrpg-foundry",
+            "ownership": {
+                "GAMEMASTER": "OWNER",
+                "ASSISTANT": "OWNER",
+                "PLAYER": "OBSERVER"
+            }
         }
     ],
     "url": "https://github.com/hinkman/SCRPG-actor-compendium",
     "manifest": "https://raw.githubusercontent.com/hinkman/SCRPG-actor-compendium/main/module.json",
-    "download": "https://github.com/hinkman/SCRPG-actor-compendium/releases/download/v0.1.0/scrpg-actor-compendium.zip"
+    "download": "https://github.com/hinkman/SCRPG-actor-compendium/releases/download/v0.2.0/scrpg-actor-compendium.zip"
 }

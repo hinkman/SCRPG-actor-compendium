@@ -1,0 +1,31 @@
+{
+  "name": "Banter",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You have a gift for gab that sometimes can be used to annoy your enemies (or friends).</p>"
+  },
+  "effects": [],
+  "folder": "wu9KdcPXRfWt4LfJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "social"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "jLRoVcoc8Dz0Kiio",
+  "_key": "!items!jLRoVcoc8Dz0Kiio"
+}

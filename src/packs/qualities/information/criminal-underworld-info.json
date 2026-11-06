@@ -1,0 +1,31 @@
+{
+  "name": "Criminal Underworld Info",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You are connected in the world of organized crime. If you need to find a guy who knows a guy or have some loot to fence, you know how to do it.</p>"
+  },
+  "effects": [],
+  "folder": "4FTleXHHeyCbMYgz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "information"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "zlx2bULfYfooNB03",
+  "_key": "!items!zlx2bULfYfooNB03"
+}

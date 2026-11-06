@@ -1,0 +1,31 @@
+{
+  "name": "Medicine",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You have training in treating illness and injury.</p>"
+  },
+  "effects": [],
+  "folder": "4FTleXHHeyCbMYgz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "information"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "9HxtjpcxtAZ5pS2M",
+  "_key": "!items!9HxtjpcxtAZ5pS2M"
+}

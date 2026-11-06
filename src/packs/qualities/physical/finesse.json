@@ -1,0 +1,31 @@
+{
+  "name": "Finesse",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You are very precise with your hands and can pull off defusing a bomb or picking a pocket.</p>"
+  },
+  "effects": [],
+  "folder": "H6jh3QISsKrVJLM5",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "physical"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "N7c8j5IUBEVL7y9h",
+  "_key": "!items!N7c8j5IUBEVL7y9h"
+}

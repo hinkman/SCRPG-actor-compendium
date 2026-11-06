@@ -1,0 +1,31 @@
+{
+  "name": "Persuasion",
+  "type": "quality",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "dieType": "d4",
+    "selected": null,
+    "description": "<p>You can convince others that what you're saying is in their best interest.</p>"
+  },
+  "effects": [],
+  "folder": "wu9KdcPXRfWt4LfJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "social"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "8ZsX24oT6HwuGtKU",
+  "_key": "!items!8ZsX24oT6HwuGtKU"
+}
