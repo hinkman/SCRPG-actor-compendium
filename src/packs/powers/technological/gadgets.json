@@ -1,0 +1,32 @@
+{
+  "name": "Gadgets",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You have access to a wide variety of useful technological tools for any given situation — generally built by somebody else.</p>"
+  },
+  "effects": [],
+  "folder": "RwnC2q3JuoLH38CD",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "technological"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "CjqhY7vBfkJQyhw4",
+  "_key": "!items!CjqhY7vBfkJQyhw4"
+}

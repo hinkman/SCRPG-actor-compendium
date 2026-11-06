@@ -1,0 +1,32 @@
+{
+  "name": "Weather",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can control the weather, including terrible storms and winds. If you want a more direct application of the weather's power, you can also take electricity or cold to supplement it.</p>"
+  },
+  "effects": [],
+  "folder": "NKEyQneBccqFEPll",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "elemental-energy"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "2SjcSUDviDzxuKNY",
+  "_key": "!items!2SjcSUDviDzxuKNY"
+}

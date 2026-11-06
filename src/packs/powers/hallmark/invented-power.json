@@ -1,0 +1,32 @@
+{
+  "name": "Invented Power",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>There might be a specific power not otherwise covered by the powers listed here. With the GM's permission, you can add another power.</p>"
+  },
+  "effects": [],
+  "folder": "Scyi9ZVhnXpp0LAW",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "hallmark"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "DBdgQ8b9GinmXSJe",
+  "_key": "!items!DBdgQ8b9GinmXSJe"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Leaping",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>Whether it's from immense strength or the proportionate ability of a bullfrog, you can leap through the air with ease.</p>"
+  },
+  "effects": [],
+  "folder": "h5NRkWgyeirDWB1v",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "mobility"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "fBd3ZqSIUowckCHO",
+  "_key": "!items!fBd3ZqSIUowckCHO"
+}

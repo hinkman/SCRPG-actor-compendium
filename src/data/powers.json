@@ -1,0 +1,272 @@
+[
+  {
+    "key": "athletic",
+    "label": "Athletic",
+    "powers": [
+      {
+        "name": "Agility",
+        "description": "Your reflexes are honed."
+      },
+      {
+        "name": "Speed",
+        "description": "You're quick on your feet."
+      },
+      {
+        "name": "Strength",
+        "description": "You're strong and have no problem lifting."
+      },
+      {
+        "name": "Vitality",
+        "description": "You're in a good shape and good health. At higher levels of vitality, you may even have a regenerative ability."
+      }
+    ]
+  },
+  {
+    "key": "elemental-energy",
+    "label": "Elemental/Energy",
+    "powers": [
+      {
+        "name": "Cold",
+        "description": "Brr. You can lower the temperature dramatically and shape ice to your whim."
+      },
+      {
+        "name": "Cosmic",
+        "description": "The primal energies of the universe itself are yours to command."
+      },
+      {
+        "name": "Electricity",
+        "description": "You command the lightning (or just a nearby powerline)."
+      },
+      {
+        "name": "Fire",
+        "description": "You can make everything burn."
+      },
+      {
+        "name": "Infernal",
+        "description": "You can command the demonic energies of the underworld."
+      },
+      {
+        "name": "Nuclear",
+        "description": "The splitting of the atom allows you to channel raw power and radiation."
+      },
+      {
+        "name": "Radiant",
+        "description": "The light of the Heavenly Host is at your fingertips, ready to purge the world of evil."
+      },
+      {
+        "name": "Sonic",
+        "description": "Focused waves of sound can be wielded to great effect, both for destructive vibration and for sound mimicry."
+      },
+      {
+        "name": "Weather",
+        "description": "You can control the weather, including terrible storms and winds. If you want a more direct application of the weather's power, you can also take electricity or cold to supplement it."
+      }
+    ]
+  },
+  {
+    "key": "hallmark",
+    "label": "Hallmark",
+    "powers": [
+      {
+        "name": "Signature Vehicle",
+        "description": "You have a custom vehicle that is nearly always on hand for you — it could be an awesome motorcycle, a tricked out van or even something like a magical surfboard. (Be sure to rename this power on your hero sheet to whatever your vehicle is.)"
+      },
+      {
+        "name": "Signature Weaponry",
+        "description": "You have a weapon that is almost like a part of you, from Fanatic's blade Absolution to Wraith's arsenal of knives. (Be sure to rename this power on your hero sheet to whatever your weapon is.)"
+      },
+      {
+        "name": "Invented Power",
+        "description": "There might be a specific power not otherwise covered by the powers listed here. With the GM's permission, you can add another power."
+      }
+    ]
+  },
+  {
+    "key": "intellectual",
+    "label": "Intellectual",
+    "powers": [
+      {
+        "name": "Awareness",
+        "description": "You have enhanced senses that give you a broader range of awareness, covering everything from innate danger sense to superior sight and hearing."
+      },
+      {
+        "name": "Deduction",
+        "description": "Your mind can make leaps of logic by analyzing details."
+      },
+      {
+        "name": "Intuition",
+        "description": "You have strong gut feelings about what's going to happen and these feelings frequently lead to correct conclusions."
+      },
+      {
+        "name": "Lightning Calculator",
+        "description": "You can perform intense feats of mathematics in your head in the blink of an eye."
+      },
+      {
+        "name": "Presence",
+        "description": "You project your personality strongly over those you meet."
+      }
+    ]
+  },
+  {
+    "key": "materials",
+    "label": "Materials",
+    "powers": [
+      {
+        "name": "Metal",
+        "description": "You can command and control metals, fashioning them to all kinds of shapes."
+      },
+      {
+        "name": "Plants",
+        "description": "The plants of this world (and maybe beyond) respond to your thoughts, growing as you see fit."
+      },
+      {
+        "name": "Stone",
+        "description": "You can shape stone and use it to build as well as destroy."
+      },
+      {
+        "name": "Toxic",
+        "description": "You can manipulate toxic substances, including radioactive wastes and various poison gases."
+      },
+      {
+        "name": "Transmutation",
+        "description": "You can transform non-living materials from one type to another. (To control them, also take other entries from this category in addition to transmutation.)"
+      }
+    ]
+  },
+  {
+    "key": "mobility",
+    "label": "Mobility",
+    "powers": [
+      {
+        "name": "Flight",
+        "description": "Look, up in the sky! It's you!"
+      },
+      {
+        "name": "Leaping",
+        "description": "Whether it's from immense strength or the proportionate ability of a bullfrog, you can leap through the air with ease."
+      },
+      {
+        "name": "Momentum",
+        "description": "You build up momentum as you move and can channel it effectively."
+      },
+      {
+        "name": "Swimming",
+        "description": "You are at home in the water and can propel yourself seamlessly through it. (At d8 or above, you also have no problems breathing underwater.)"
+      },
+      {
+        "name": "Swinging",
+        "description": "Via ropes or other devices, you can swing yourself across town, as long as you have something to grab onto."
+      },
+      {
+        "name": "Teleportation",
+        "description": "Poof! You can disappear one place and reappear another. The greater the die value, the bigger distance you can go and the more control you have over the process."
+      },
+      {
+        "name": "Wall-Crawling",
+        "description": "You can stick to walls and travel across them quickly."
+      }
+    ]
+  },
+  {
+    "key": "psychic",
+    "label": "Psychic",
+    "powers": [
+      {
+        "name": "Animal Control",
+        "description": "Your mental abilities let you talk to and command non-sentient animals."
+      },
+      {
+        "name": "Illusions",
+        "description": "You can weave convincing mental images to others."
+      },
+      {
+        "name": "Postcognition",
+        "description": "You can experience visions of what has happened in the past to a person, place, or object."
+      },
+      {
+        "name": "Precognition",
+        "description": "You have a limited ability to see into the future—or at least, a potential future."
+      },
+      {
+        "name": "Remote Viewing",
+        "description": "You can project your senses to view another place at the same time."
+      },
+      {
+        "name": "Suggestion",
+        "description": "You can influence minds to act based on your will."
+      },
+      {
+        "name": "Telekinesis",
+        "description": "You can move things with your mind. The higher the die, the heavier the things and the more precision you have."
+      },
+      {
+        "name": "Telepathy",
+        "description": "You can send thoughts as well as read minds."
+      }
+    ]
+  },
+  {
+    "key": "self-control",
+    "label": "Self Control",
+    "powers": [
+      {
+        "name": "Absorption",
+        "description": "You can absorb energy sent to you, and channel it into other forms."
+      },
+      {
+        "name": "Density Control",
+        "description": "You can make yourself more or less dense to make yourself more resistant to harm or have a lighter step."
+      },
+      {
+        "name": "Duplication",
+        "description": "You can make copies of yourself. Generally these copies won't be functional enough to act as full heroes, unless your abilities let you back this up."
+      },
+      {
+        "name": "Elasticity",
+        "description": "You can stretch your entire body."
+      },
+      {
+        "name": "Intangibility",
+        "description": "You can pass through solid objects."
+      },
+      {
+        "name": "Invisibility",
+        "description": "You can make yourself unseen when needed."
+      },
+      {
+        "name": "Part Detachment",
+        "description": "You can give someone a hand. Or any other limb, really."
+      },
+      {
+        "name": "Shapeshifting",
+        "description": "You can change your form into something roughly the same size. Some shapeshifters have a limited number of forms they can take, while others are more mutable."
+      },
+      {
+        "name": "Size-Changing",
+        "description": "You can increase or decrease your size, from a tall building to ant-sized."
+      }
+    ]
+  },
+  {
+    "key": "technological",
+    "label": "Technological",
+    "powers": [
+      {
+        "name": "Gadgets",
+        "description": "You have access to a wide variety of useful technological tools for any given situation — generally built by somebody else."
+      },
+      {
+        "name": "Inventions",
+        "description": "You can invent your own technological tools, and have some of your own inventions on you at all times."
+      },
+      {
+        "name": "Power Suit",
+        "description": "You have a technological suit with a variety of built-in functions."
+      },
+      {
+        "name": "Robotics",
+        "description": "You are able to create your own robot servitors."
+      }
+    ]
+  }
+]

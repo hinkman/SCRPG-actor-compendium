@@ -1,0 +1,32 @@
+{
+  "name": "Transmutation",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can transform non-living materials from one type to another. (To control them, also take other entries from this category in addition to transmutation.)</p>"
+  },
+  "effects": [],
+  "folder": "2Rzi6xKp8LA9TxiX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "materials"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "MCfvbWF3GUPDWbLz",
+  "_key": "!items!MCfvbWF3GUPDWbLz"
+}

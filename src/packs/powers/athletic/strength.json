@@ -1,0 +1,32 @@
+{
+  "name": "Strength",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You're strong and have no problem lifting.</p>"
+  },
+  "effects": [],
+  "folder": "6P85gGqCuJHglHtc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "athletic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "DK1Dj4AZrwDMvF9G",
+  "_key": "!items!DK1Dj4AZrwDMvF9G"
+}

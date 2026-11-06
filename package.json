@@ -1,0 +1,11 @@
+{
+  "name": "scrpg-actor-compendium",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pack": "node ./tools/pack.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.0"
+  }
+}

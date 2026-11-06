@@ -1,0 +1,32 @@
+{
+  "name": "Metal",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can command and control metals, fashioning them to all kinds of shapes.</p>"
+  },
+  "effects": [],
+  "folder": "2Rzi6xKp8LA9TxiX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "materials"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "A9h5xRHAQb8BgcmJ",
+  "_key": "!items!A9h5xRHAQb8BgcmJ"
+}

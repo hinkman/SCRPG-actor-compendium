@@ -1,0 +1,32 @@
+{
+  "name": "Awareness",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You have enhanced senses that give you a broader range of awareness, covering everything from innate danger sense to superior sight and hearing.</p>"
+  },
+  "effects": [],
+  "folder": "5kXOpGwq3lIGoo1I",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "intellectual"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QD7BBCX8C7mnA1FJ",
+  "_key": "!items!QD7BBCX8C7mnA1FJ"
+}

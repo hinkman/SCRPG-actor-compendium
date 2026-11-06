@@ -1,0 +1,32 @@
+{
+  "name": "Intuition",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You have strong gut feelings about what's going to happen and these feelings frequently lead to correct conclusions.</p>"
+  },
+  "effects": [],
+  "folder": "5kXOpGwq3lIGoo1I",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "intellectual"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "US0ZfFzUJ9CEcS6M",
+  "_key": "!items!US0ZfFzUJ9CEcS6M"
+}

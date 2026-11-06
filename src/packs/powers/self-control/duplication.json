@@ -1,0 +1,32 @@
+{
+  "name": "Duplication",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can make copies of yourself. Generally these copies won't be functional enough to act as full heroes, unless your abilities let you back this up.</p>"
+  },
+  "effects": [],
+  "folder": "jMNuQ5CqXI5gNJGf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "self-control"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "sFnNvNhWv7cPtIeb",
+  "_key": "!items!sFnNvNhWv7cPtIeb"
+}

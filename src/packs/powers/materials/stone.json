@@ -1,0 +1,32 @@
+{
+  "name": "Stone",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can shape stone and use it to build as well as destroy.</p>"
+  },
+  "effects": [],
+  "folder": "2Rzi6xKp8LA9TxiX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "materials"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "32fVL3dVZJS3cwxT",
+  "_key": "!items!32fVL3dVZJS3cwxT"
+}

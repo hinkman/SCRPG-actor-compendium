@@ -1,0 +1,32 @@
+{
+  "name": "Telepathy",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can send thoughts as well as read minds.</p>"
+  },
+  "effects": [],
+  "folder": "qrLaMtViEIh9c0TA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "psychic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OHdZH273UnZyulN4",
+  "_key": "!items!OHdZH273UnZyulN4"
+}

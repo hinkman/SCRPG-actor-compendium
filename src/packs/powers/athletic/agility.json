@@ -1,0 +1,32 @@
+{
+  "name": "Agility",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>Your reflexes are honed.</p>"
+  },
+  "effects": [],
+  "folder": "6P85gGqCuJHglHtc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "athletic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "iJ4lw3vOpXIC2Mwp",
+  "_key": "!items!iJ4lw3vOpXIC2Mwp"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Signature Weaponry",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You have a weapon that is almost like a part of you, from Fanatic's blade Absolution to Wraith's arsenal of knives. (Be sure to rename this power on your hero sheet to whatever your weapon is.)</p>"
+  },
+  "effects": [],
+  "folder": "Scyi9ZVhnXpp0LAW",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "hallmark"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "fubw8CJu2mXFZJUD",
+  "_key": "!items!fubw8CJu2mXFZJUD"
+}

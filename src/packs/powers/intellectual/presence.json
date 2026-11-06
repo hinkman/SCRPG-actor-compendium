@@ -1,0 +1,32 @@
+{
+  "name": "Presence",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You project your personality strongly over those you meet.</p>"
+  },
+  "effects": [],
+  "folder": "5kXOpGwq3lIGoo1I",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "intellectual"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "UEiMFUmpNBwhY20J",
+  "_key": "!items!UEiMFUmpNBwhY20J"
+}

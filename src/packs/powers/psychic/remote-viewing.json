@@ -1,0 +1,32 @@
+{
+  "name": "Remote Viewing",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can project your senses to view another place at the same time.</p>"
+  },
+  "effects": [],
+  "folder": "qrLaMtViEIh9c0TA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "psychic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Lkxdi4SlNOmbquQb",
+  "_key": "!items!Lkxdi4SlNOmbquQb"
+}

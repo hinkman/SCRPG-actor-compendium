@@ -1,0 +1,32 @@
+{
+  "name": "Postcognition",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can experience visions of what has happened in the past to a person, place, or object.</p>"
+  },
+  "effects": [],
+  "folder": "qrLaMtViEIh9c0TA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "psychic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "9t8cDObvaS7pkrwd",
+  "_key": "!items!9t8cDObvaS7pkrwd"
+}

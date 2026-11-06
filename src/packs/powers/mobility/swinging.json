@@ -1,0 +1,32 @@
+{
+  "name": "Swinging",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>Via ropes or other devices, you can swing yourself across town, as long as you have something to grab onto.</p>"
+  },
+  "effects": [],
+  "folder": "h5NRkWgyeirDWB1v",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "mobility"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "KziYDpbuojnthfT5",
+  "_key": "!items!KziYDpbuojnthfT5"
+}

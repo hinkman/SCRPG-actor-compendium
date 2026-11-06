@@ -1,0 +1,32 @@
+{
+  "name": "Radiant",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>The light of the Heavenly Host is at your fingertips, ready to purge the world of evil.</p>"
+  },
+  "effects": [],
+  "folder": "NKEyQneBccqFEPll",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "elemental-energy"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "NSolfVXE3xnWgiyu",
+  "_key": "!items!NSolfVXE3xnWgiyu"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Swimming",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You are at home in the water and can propel yourself seamlessly through it. (At d8 or above, you also have no problems breathing underwater.)</p>"
+  },
+  "effects": [],
+  "folder": "h5NRkWgyeirDWB1v",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "mobility"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "I7Gr7LIRFGAzC1NE",
+  "_key": "!items!I7Gr7LIRFGAzC1NE"
+}

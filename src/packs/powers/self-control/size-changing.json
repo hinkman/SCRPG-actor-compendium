@@ -1,0 +1,32 @@
+{
+  "name": "Size-Changing",
+  "type": "power",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "dieType": "d4",
+    "aux": "main",
+    "selected": null,
+    "description": "<p>You can increase or decrease your size, from a tall building to ant-sized.</p>"
+  },
+  "effects": [],
+  "folder": "jMNuQ5CqXI5gNJGf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "self-control"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "N9hlUuhKZTN6REox",
+  "_key": "!items!N9hlUuhKZTN6REox"
+}
