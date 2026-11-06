@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Flora",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You can identify any type of plant life and determine its origin in broad terms, such as Earth, alien, etc.</p>",
+    "minorTwist": "<p>What grows out of your control?</p>",
+    "majorTwist": "<p>How is nature reclaiming something important?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of Flora",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome with the aid of local flora and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "zc0IkyjGUAMQDVf1",
+  "_key": "!items!zc0IkyjGUAMQDVf1"
+}

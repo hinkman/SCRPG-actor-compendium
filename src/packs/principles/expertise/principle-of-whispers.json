@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Whispers",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You hear a voice in your head that no one else hears. That voice tells you things, which might be true or false, but the voice certainly seems to know a lot.</p>",
+    "minorTwist": "<p>How did the voice in your head just distract you?</p>",
+    "majorTwist": "<p>What is the voice demanding of you now?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of Whispers",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome against a challenge that involves information that you have no real way of knowing and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Kn2cT93UB1KqAGcX",
+  "_key": "!items!Kn2cT93UB1KqAGcX"
+}

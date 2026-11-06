@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Science",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are up to date on and understand most modern scientific theories and research and can quote from them during conversations.</p>",
+    "minorTwist": "<p>What were the surprising effects of leveraging that scientific principle in this situation?</p>",
+    "majorTwist": "<p>Oh heck! What just blew up?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of Science",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome while applying specific scientific principles. Use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Sgp90sKDt3r2o6vb",
+  "_key": "!items!Sgp90sKDt3r2o6vb"
+}

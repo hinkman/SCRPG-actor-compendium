@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Peace",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You believe that the ultimate goal of your mission is peace, and that violence is usually not the answer. While not necessarily a pacifist, you can almost always come up with a non-violent solution to problems.</p>",
+    "minorTwist": "<p>What causes you to lose your calm?</p>",
+    "majorTwist": "<p>What major issue do you create with your team when you refuse to engage in violence?</p>"
+  },
+  "effects": [],
+  "folder": "ltpc1CB7cVq1Wa8l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "identity",
+      "greenAbility": {
+        "name": "Principle of Peace",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation with serenity instead of violence and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OIJRUY9HjwR2Gdgo",
+  "_key": "!items!OIJRUY9HjwR2Gdgo"
+}

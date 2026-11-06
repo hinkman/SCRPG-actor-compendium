@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Zealot",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>Your will is indomitable, and your beliefs govern your actions.</p>",
+    "minorTwist": "<p>Who suffered extra because of your zealous persecution?</p>",
+    "majorTwist": "<p>What has your faith called on you to do that no one else will understand?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of the Zealot",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation that tests your faith and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ji6uhc3eQlEZ9NbC",
+  "_key": "!items!ji6uhc3eQlEZ9NbC"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Loner",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You're the best at what you do, as long as no one else sees you do it. You can always find your own path.</p>",
+    "minorTwist": "<p>Now that you're separated from your team, how will you get back?</p>",
+    "majorTwist": "<p>How do you alienate the rest of your team with your loner tendencies?</p>"
+  },
+  "effects": [],
+  "folder": "ltpc1CB7cVq1Wa8l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "identity",
+      "greenAbility": {
+        "name": "Principle of the Loner",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome when doing something different from the rest of your team and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "3ccYepGcqpJ1eRPd",
+  "_key": "!items!3ccYepGcqpJ1eRPd"
+}

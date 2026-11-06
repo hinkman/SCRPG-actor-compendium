@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Gearhead",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You always know the general state of repair or function of an item of technology, whether it's a simple toaster or an alien orbital defense system.</p>",
+    "minorTwist": "<p>What mechanical device just shorted out?</p>",
+    "majorTwist": "<p>What machine just went terribly off the rails?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of the Gearhead",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a technological challenge and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "AMywxBa4gBZu4TbR",
+  "_key": "!items!AMywxBa4gBZu4TbR"
+}

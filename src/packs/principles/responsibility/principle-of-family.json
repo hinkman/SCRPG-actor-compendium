@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Family",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>Your family is an important part of your life. You have relatives in a wide range of fields that you can call upon.</p>",
+    "minorTwist": "<p>Which member of your family just compromised your mission?</p>",
+    "majorTwist": "<p>What do you have to give up in your heroic life for the sake of your family?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of Family",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome in a situation where you have been given advice from a family member and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "chyvKv2e5A5sbCJ3",
+  "_key": "!items!chyvKv2e5A5sbCJ3"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Principle of History",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have many contacts and references in the archaeological, historical, and anthropological fields.</p>",
+    "minorTwist": "<p>How did your old-timeyness cause an issue?</p>",
+    "majorTwist": "<p>What ancient force is now making itself known in the present?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of History",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>A Overcome a situation involving archaeology, history, or puzzle-solving and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "zCQr1dfckDR6AVxP",
+  "_key": "!items!zCQr1dfckDR6AVxP"
+}

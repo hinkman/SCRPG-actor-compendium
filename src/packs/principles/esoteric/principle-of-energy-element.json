@@ -1,0 +1,44 @@
+{
+  "name": "Principle of [Energy/Element]",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have an affinity to or a love of [energy/element]. You can interact with that [energy/element] with ease.</p>",
+    "minorTwist": "<p>What other energy/element is currently causing your powers to go on the fritz?</p>",
+    "majorTwist": "<p>What source of energy/element is currently dampening all your powers?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of [Energy/Element]",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a challenge involving [energy/element] and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "reo3mSBIyOzbdCQM",
+  "_key": "!items!reo3mSBIyOzbdCQM"
+}

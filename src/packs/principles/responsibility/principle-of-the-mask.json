@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Mask",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>It is vitally important that you hide your true identity. You have a career that allows you to slip between identities when necessary.</p>",
+    "minorTwist": "<p>What clue about your real identity did you leave behind?</p>",
+    "majorTwist": "<p>Who from your civilian life is now in imminent danger?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of the Mask",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome using knowledge from your civilian life and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "t2iZ3giMdCWYszKg",
+  "_key": "!items!t2iZ3giMdCWYszKg"
+}

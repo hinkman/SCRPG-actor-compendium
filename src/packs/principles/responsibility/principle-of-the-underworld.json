@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Underworld",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have a variety of contacts from the criminal underworld and organized crime.</p>",
+    "minorTwist": "<p>What shady detail causes others to distrust you?</p>",
+    "majorTwist": "<p>Are you guilty of what you're being arrested for?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of the Underworld",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a problem related to your knowledge of the criminal underworld or using one of your contacts and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "punwgPHVXMDK7OKv",
+  "_key": "!items!punwgPHVXMDK7OKv"
+}

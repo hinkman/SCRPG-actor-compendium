@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Order",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You believe in organization and concordance. You always keep your head in the face of chaos.</p>",
+    "minorTwist": "<p>What element of disorder causes your plan to fall apart?</p>",
+    "majorTwist": "<p>How is your ordered existence ruined by chaos?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of Order",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a challenge where you can organize other people. Use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "vcWbngxoEUxgCJxc",
+  "_key": "!items!vcWbngxoEUxgCJxc"
+}

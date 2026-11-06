@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Compassion",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are an empathetic person. You feel the suffering of others around you.</p>",
+    "minorTwist": "<p>What overwhelming injustice causes you extra pain?</p>",
+    "majorTwist": "<p>How will you handle disconnecting from humanity?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of Compassion",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome to connect with an individual on a personal level and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "U7EQqtnpOn5z2Ul0",
+  "_key": "!items!U7EQqtnpOn5z2Ul0"
+}

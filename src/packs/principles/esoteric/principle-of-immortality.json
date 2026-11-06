@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Immortality",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You do not age and will not be affected by mundane ailments.</p>",
+    "minorTwist": "<p>You take the long view of things. How does that cause you to be too slow?</p>",
+    "majorTwist": "<p>What important attachment must you shed?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of Immortality",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation involving your physical condition and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Qde3DYxewN7qt2IA",
+  "_key": "!items!Qde3DYxewN7qt2IA"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Indestructible",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You ignore damage from unpowered close-combat weapons and attacks, such as clubs and non-powered fists, or basic ranged attacks, such as slings and arrows.</p>",
+    "minorTwist": "<p>What goes wrong with your defenses?</p>",
+    "majorTwist": "<p>Who gets hurt other than you as a result of you not being able to take damage?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of the Indestructible",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>A Overcome in a situation where you charge headlong into danger and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "lBXW0zqjBDOhVAlO",
+  "_key": "!items!lBXW0zqjBDOhVAlO"
+}

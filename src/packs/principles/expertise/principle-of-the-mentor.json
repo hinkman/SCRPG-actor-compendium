@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Mentor",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>It is important to you to share your knowledge and experience with less-weathered heroes. Everyone grants you some measure of respect for your wisdom.</p>",
+    "minorTwist": "<p>Which whippersnapper just showed you up?</p>",
+    "majorTwist": "<p>What has just proven that you're too behind the times?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of the Mentor",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a challenge that someone else younger already tried and failed. Use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "AGIroUveg759ulCW",
+  "_key": "!items!AGIroUveg759ulCW"
+}

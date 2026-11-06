@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Ambition",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>There is something you want, and you strive towards achieving your goals, no matter the cost. You see paths to victory that no one else will.</p>",
+    "minorTwist": "<p>How is the pursuit of your goals getting in the way of being a hero in this situation?</p>",
+    "majorTwist": "<p>What did you just pass up or miss that could have helped you achieve your biggest goal at last?</p>"
+  },
+  "effects": [],
+  "folder": "ltpc1CB7cVq1Wa8l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "identity",
+      "greenAbility": {
+        "name": "Principle of Ambition",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation where someone else has given you a bonus from a Boost and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "mldAbAMbirPbs56g",
+  "_key": "!items!mldAbAMbirPbs56g"
+}

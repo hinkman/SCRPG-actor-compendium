@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Time Traveler",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are far from your own time and are often unsure how to act in this time. You have an innate sense for when time is not quite right in the era you're in.</p>",
+    "minorTwist": "<p>What detail of this era did you not previously know about?</p>",
+    "majorTwist": "<p>What effects are happening as you discorporate in time?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of the Time Traveler",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a problem using knowledge from your home era and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZmD8tqwFIZWT23Cu",
+  "_key": "!items!ZmD8tqwFIZWT23Cu"
+}

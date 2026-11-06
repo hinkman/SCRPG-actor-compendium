@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Nomad",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are far away from home, but you're used to living on the road. You know how to get by on the run.</p>",
+    "minorTwist": "<p>What problem does your lack of attachments cause?</p>",
+    "majorTwist": "<p>How have you been lost from your new home?</p>"
+  },
+  "effects": [],
+  "folder": "ltpc1CB7cVq1Wa8l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "identity",
+      "greenAbility": {
+        "name": "Principle of the Nomad",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation where you can apply lessons from the road and use you Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "GPFtXoitC4vSx9Tm",
+  "_key": "!items!GPFtXoitC4vSx9Tm"
+}

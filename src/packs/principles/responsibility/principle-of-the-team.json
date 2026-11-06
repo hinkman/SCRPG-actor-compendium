@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Team",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>Your heroic team takes up a significant portion of your life and you have an official position in that team. Civilian authorities will recognize your status in the team.</p>",
+    "minorTwist": "<p>What embarrassment did you just cause as a representative of your team?</p>",
+    "majorTwist": "<p>What major sanctions will you suffer as a result of your actions?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of the Team",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome by using your status as an official representative and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wlPkdoin5HkKfr33",
+  "_key": "!items!wlPkdoin5HkKfr33"
+}

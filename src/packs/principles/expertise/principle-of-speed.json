@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Speed",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You're fast, and you don't like to waste time. You like to be on your way as quickly as possible.</p>",
+    "minorTwist": "<p>What physical drawbacks do you suffer from going too fast?</p>",
+    "majorTwist": "<p>What critical detail did you speed by earlier that is now coming back to haunt you?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of Speed",
+        "type": "I",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>When you successfully Overcome, you may end up anywhere in the current environment. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "sHaW3AJeFur6uBqb",
+  "_key": "!items!sHaW3AJeFur6uBqb"
+}

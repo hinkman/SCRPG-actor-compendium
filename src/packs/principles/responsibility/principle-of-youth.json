@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Youth",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have an innocent and cheerful outlook on most things, based on your upbeat personality and general lack of experience. You can slip into many situations that adults would have trouble with.</p>",
+    "minorTwist": "<p>Who has been put out by your overconfidence?</p>",
+    "majorTwist": "<p>What person that you would hate to let down is now very disappointed in you?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of Youth",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation where your age or size is an asset and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "dfE6aNwXtBBMUtsU",
+  "_key": "!items!dfE6aNwXtBBMUtsU"
+}

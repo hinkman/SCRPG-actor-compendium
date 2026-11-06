@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Sea",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You can speak to aquatic creatures and breathe underwater.</p>",
+    "minorTwist": "<p>What challenge does the surface world pose for you?</p>",
+    "majorTwist": "<p>What disaster is incoming as the sea comes calling?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of the Sea",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation while underwater and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "lgKD1LojFvmMp0cN",
+  "_key": "!items!lgKD1LojFvmMp0cN"
+}

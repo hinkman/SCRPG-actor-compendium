@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Defender",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You will put yourself in harm's way to defend another without a second thought.</p>",
+    "minorTwist": "<p>How do your actions put you in more danger than before?</p>",
+    "majorTwist": "<p>What great sacrifice did you just make to succeed?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of the Defender",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a situation that requires you to hold the line and use your Max die OR use your Mid die and Defend with your Min die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "52otf7Yt6CUlBP4C",
+  "_key": "!items!52otf7Yt6CUlBP4C"
+}

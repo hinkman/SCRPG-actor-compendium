@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Mastery",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have thoroughly studied your own powers and are proud of your mastery of them. You understand a good deal about the metaphysics of your powers.</p>",
+    "minorTwist": "<p>How did your powers fail you in the moment?</p>",
+    "majorTwist": "<p>What side effects are you suffering from your powers?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of Mastery",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome in a situation that uses your powers in a new way and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "O7MPneMTphBqXryc",
+  "_key": "!items!O7MPneMTphBqXryc"
+}

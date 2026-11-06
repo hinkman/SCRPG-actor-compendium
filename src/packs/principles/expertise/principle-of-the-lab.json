@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Lab",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have nearly unlimited access to a dedicated research area, and are at home there.</p>",
+    "minorTwist": "<p>What did you make a detour to observe and sample for later experiments?</p>",
+    "majorTwist": "<p>Something's gone very wrong at the lab; what was it?</p>"
+  },
+  "effects": [],
+  "folder": "93pju5tQDeNTtQRt",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "expertise",
+      "greenAbility": {
+        "name": "Principle of the Lab",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome while in a familiar workspace or when you have ample research time. Use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZEYEJng1XD1ltX17",
+  "_key": "!items!ZEYEJng1XD1ltX17"
+}

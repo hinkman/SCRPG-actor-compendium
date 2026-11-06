@@ -22,13 +22,33 @@ const PACKS = [
         itemType: "power",
         img: "icons/svg/aura.svg",
         expectedCount: 54,
-        systemFields: ["dieType", "aux", "selected", "description"],
-        buildSystem(description) {
+        validateEntry(entry, categoryKey) {
+            if (!entry.name || !entry.description) {
+                throw new Error(`power in ${categoryKey} is missing name or description`);
+            }
+        },
+        buildItem(entry, categoryKey, folderId, itemId) {
+            const description = `<p>${htmlEscape(entry.description)}</p>`;
             return {
-                dieType: "d4",
-                aux: "main",
-                selected: null,
-                description
+                name: entry.name,
+                type: "power",
+                img: "icons/svg/aura.svg",
+                system: {
+                    dieType: "d4",
+                    aux: "main",
+                    selected: null,
+                    description
+                },
+                effects: [],
+                folder: folderId,
+                sort: 0,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": { category: categoryKey }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
             };
         }
     },
@@ -39,12 +59,79 @@ const PACKS = [
         itemType: "quality",
         img: "icons/svg/book.svg",
         expectedCount: 24,
-        systemFields: ["dieType", "selected", "description"],
-        buildSystem(description) {
+        validateEntry(entry, categoryKey) {
+            if (!entry.name || !entry.description) {
+                throw new Error(`quality in ${categoryKey} is missing name or description`);
+            }
+        },
+        buildItem(entry, categoryKey, folderId, itemId) {
+            const description = `<p>${htmlEscape(entry.description)}</p>`;
             return {
-                dieType: "d4",
-                selected: null,
-                description
+                name: entry.name,
+                type: "quality",
+                img: "icons/svg/book.svg",
+                system: {
+                    dieType: "d4",
+                    selected: null,
+                    description
+                },
+                effects: [],
+                folder: folderId,
+                sort: 0,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": { category: categoryKey }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
+            };
+        }
+    },
+    {
+        key: "principles",
+        dataFile: "src/data/principles.json",
+        entriesKey: "principles",
+        itemType: "principles",
+        img: "icons/svg/upgrade.svg",
+        expectedCount: 64,
+        validateEntry(entry, categoryKey) {
+            if (!entry.name || !entry.roleplaying || !entry.minorTwist || !entry.majorTwist) {
+                throw new Error(`principle in ${categoryKey} is missing required text fields`);
+            }
+            const ability = entry.greenAbility;
+            if (!ability?.name || !ability?.type || !ability?.gameText || !ability?.icon) {
+                throw new Error(`principle ${entry.name} is missing greenAbility data`);
+            }
+        },
+        buildItem(entry, categoryKey, folderId, itemId) {
+            return {
+                name: entry.name,
+                type: "principles",
+                img: "icons/svg/upgrade.svg",
+                system: {
+                    roleplaying: `<p>${htmlEscape(entry.roleplaying)}</p>`,
+                    minorTwist: `<p>${htmlEscape(entry.minorTwist)}</p>`,
+                    majorTwist: `<p>${htmlEscape(entry.majorTwist)}</p>`
+                },
+                effects: [],
+                folder: folderId,
+                sort: 0,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": {
+                        category: categoryKey,
+                        greenAbility: {
+                            name: entry.greenAbility.name,
+                            type: entry.greenAbility.type,
+                            icon: entry.greenAbility.icon,
+                            gameText: `<p>${htmlEscape(entry.greenAbility.gameText)}</p>`
+                        }
+                    }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
             };
         }
     }
@@ -117,37 +204,13 @@ function buildSources(pack) {
         writeJson(path.join(sourceRoot, category.key, "_Folder.json"), folder);
 
         for (const entry of entries) {
-            if (!entry.name || !entry.description) {
-                throw new Error(`${pack.itemType} in ${category.key} is missing name or description`);
-            }
-
+            pack.validateEntry(entry, category.key);
             const itemId = foundryId(`${pack.itemType}:${category.key}:${slug(entry.name)}`);
             if (ids.has(itemId)) throw new Error(`Duplicate id ${itemId} for ${entry.name}`);
             ids.add(itemId);
             if (!/^[A-Za-z0-9]{16}$/.test(itemId)) throw new Error(`Bad id ${itemId}`);
 
-            const description = `<p>${htmlEscape(entry.description)}</p>`;
-            const system = pack.buildSystem(description);
-            for (const key of Object.keys(system)) {
-                if (!pack.systemFields.includes(key)) throw new Error(`Unexpected system field ${key}`);
-            }
-
-            const item = {
-                name: entry.name,
-                type: pack.itemType,
-                img: pack.img,
-                system,
-                effects: [],
-                folder: folderId,
-                sort: 0,
-                ownership: { default: 0 },
-                flags: {
-                    "scrpg-actor-compendium": { category: category.key }
-                },
-                _stats: STATS,
-                _id: itemId,
-                _key: `!items!${itemId}`
-            };
+            const item = pack.buildItem(entry, category.key, folderId, itemId);
             documents.push(item);
             writeJson(path.join(sourceRoot, category.key, `${slug(entry.name)}.json`), item);
         }

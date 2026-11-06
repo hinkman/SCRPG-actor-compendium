@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Fauna",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>Your innate animalistic nature allows you to identify any type of non-sapient animal life and determine its origin in broad terms, such as Earth, alien, etc.</p>",
+    "minorTwist": "<p>How did your primal nature get the better of you?</p>",
+    "majorTwist": "<p>What is the only way the animal within can be restrained?</p>"
+  },
+  "effects": [],
+  "folder": "CAcgRFYPQqlUbyEh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "esoteric",
+      "greenAbility": {
+        "name": "Principle of Fauna",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome with the aid of local fauna and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "6kpMLYoMM6zSlJsY",
+  "_key": "!items!6kpMLYoMM6zSlJsY"
+}

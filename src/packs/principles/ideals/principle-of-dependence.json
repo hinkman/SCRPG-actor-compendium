@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Dependence",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are reliant on [something] and cannot normally function without it.</p>",
+    "minorTwist": "<p>How did the object of your dependence get damaged or lost?</p>",
+    "majorTwist": "<p>How is your dependence preventing you from functioning as a hero?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of Dependence",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome in a situation that the object of your dependence was made for. Use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "5P7pn6vqLmqLm1B3",
+  "_key": "!items!5P7pn6vqLmqLm1B3"
+}

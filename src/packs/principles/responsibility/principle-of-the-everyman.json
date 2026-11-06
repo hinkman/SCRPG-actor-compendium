@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Everyman",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are just a normal person who has had power thrust upon them or are otherwise in over your head. You don't have the same sense of lofty purpose as other heroes. When needed, you can make yourself just another face in the crowd.</p>",
+    "minorTwist": "<p>Which hero did you make look good at the expense of yourself?</p>",
+    "majorTwist": "<p>How are you utterly and totally out of your league?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of the Everyman",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome when using a bonus made by another hero and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ps2OEDdABDb9sh2t",
+  "_key": "!items!ps2OEDdABDb9sh2t"
+}

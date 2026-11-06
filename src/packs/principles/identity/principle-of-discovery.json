@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Discovery",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You are eager to learn new things at any cost. You can rattle off data about newly discovered concepts and ideas.</p>",
+    "minorTwist": "<p>What new discovery causes you to reconsider what you are doing?</p>",
+    "majorTwist": "<p>What new discovery must you keep hidden at all costs?</p>"
+  },
+  "effects": [],
+  "folder": "ltpc1CB7cVq1Wa8l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "identity",
+      "greenAbility": {
+        "name": "Principle of Discovery",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>When you're on the forefront in making a discovery or invention and take an Overcome action to further your knowledge, use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "uiQpUuUCUsvOoLVU",
+  "_key": "!items!uiQpUuUCUsvOoLVU"
+}

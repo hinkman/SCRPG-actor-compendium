@@ -1,0 +1,44 @@
+{
+  "name": "Principle of the Sidekick",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You always seem to be where the trouble is; you're never too far away when a crisis strikes the group you sidekick for.</p>",
+    "minorTwist": "<p>Which hero has to rescue you from your current predicament?</p>",
+    "majorTwist": "<p>What serious lesson that you ignored is now getting you into big trouble?</p>"
+  },
+  "effects": [],
+  "folder": "FP6qu0Iu8tzTYv8i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "responsibility",
+      "greenAbility": {
+        "name": "Principle of the Sidekick",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome a challenge that has already flummoxed a more senior teammate and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "i9C6KgInontBhBvw",
+  "_key": "!items!i9C6KgInontBhBvw"
+}

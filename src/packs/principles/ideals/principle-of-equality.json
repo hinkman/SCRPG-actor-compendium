@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Equality",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You have a keen sense of social status and can spot any situation where people are treated unfairly.</p>",
+    "minorTwist": "<p>Who is in danger that you just spotted?</p>",
+    "majorTwist": "<p>What will you sacrifice to protect the downtrodden?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of Equality",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome to protect the rights of the underprivileged and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Rjdz2CojNYCk4EDI",
+  "_key": "!items!Rjdz2CojNYCk4EDI"
+}

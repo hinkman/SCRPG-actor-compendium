@@ -1,0 +1,44 @@
+{
+  "name": "Principle of Self Preservation",
+  "type": "principles",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "roleplaying": "<p>You value your own safety more than most others in your line of work. You will never be caught fully unaware in a situation where your life is at stake.</p>",
+    "minorTwist": "<p>Who suffers because of your hesitation?</p>",
+    "majorTwist": "<p>Are you willing to lay down your life to save others?</p>"
+  },
+  "effects": [],
+  "folder": "xMpWeMbAMHG5Kc50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "category": "ideals",
+      "greenAbility": {
+        "name": "Principle of Self Preservation",
+        "type": "A",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "gameText": "<p>Overcome to get yourself out of immediate danger and use your Max die. You and each of your allies gain a hero point.</p>"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wFdIsofK8XXlRxbR",
+  "_key": "!items!wFdIsofK8XXlRxbR"
+}
