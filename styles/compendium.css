@@ -1,3 +1,24 @@
+/* Half of the SCRPG item-sheet editor height (6.25rem). */
+.SCRPG.sheet.item .principle prose-mirror[name="system.roleplaying"],
+.SCRPG.sheet.item .principle prose-mirror[name="system.minorTwist"],
+.SCRPG.sheet.item .principle prose-mirror[name="system.majorTwist"] {
+    height: 3.125rem;
+    min-height: 3.125rem;
+    max-height: 3.125rem;
+    overflow: hidden;
+}
+
+.SCRPG.sheet.item .principle prose-mirror[name="system.roleplaying"] .editor-container,
+.SCRPG.sheet.item .principle prose-mirror[name="system.minorTwist"] .editor-container,
+.SCRPG.sheet.item .principle prose-mirror[name="system.majorTwist"] .editor-container,
+.SCRPG.sheet.item .principle prose-mirror[name="system.roleplaying"] .editor-content,
+.SCRPG.sheet.item .principle prose-mirror[name="system.minorTwist"] .editor-content,
+.SCRPG.sheet.item .principle prose-mirror[name="system.majorTwist"] .editor-content {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
 .scrpg-compendium-green-ability {
     margin-top: 0.75rem;
     padding-top: 0.5rem;
