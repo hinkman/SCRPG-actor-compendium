@@ -24,6 +24,7 @@
   "flags": {
     "scrpg-actor-compendium": {
       "color": "red",
+      "group": null,
       "category": "psychic-powers",
       "source": {
         "itemType": "power",

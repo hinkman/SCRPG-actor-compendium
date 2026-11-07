@@ -1,0 +1,48 @@
+{
+  "name": "Principle of Strength",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome using brute force and use your Max die. You and each of your allies gain a hero point.</p>"
+  },
+  "effects": [],
+  "folder": "msc1MEhwwEA5BXsv",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "principles",
+      "category": "expertise",
+      "source": {
+        "itemType": "principles",
+        "category": "expertise"
+      },
+      "gameTextTemplate": "Overcome using brute force and use your Max die. You and each of your allies gain a hero point.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OkmDqP7gVxEF7xQs",
+  "_key": "!items!OkmDqP7gVxEF7xQs"
+}

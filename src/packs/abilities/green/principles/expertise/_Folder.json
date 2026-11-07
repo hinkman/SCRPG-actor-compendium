@@ -1,0 +1,20 @@
+{
+  "name": "Expertise",
+  "description": "",
+  "folder": "VVqpvtVKOnNR2dQ4",
+  "type": "Item",
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "msc1MEhwwEA5BXsv",
+  "_key": "!folders!msc1MEhwwEA5BXsv"
+}

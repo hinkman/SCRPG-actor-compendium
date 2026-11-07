@@ -1,0 +1,48 @@
+{
+  "name": "Principle of Equality",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome to protect the rights of the underprivileged and use your Max die. You and each of your allies gain a hero point.</p>"
+  },
+  "effects": [],
+  "folder": "xXFD1EMUvWGgWXMp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "principles",
+      "category": "ideals",
+      "source": {
+        "itemType": "principles",
+        "category": "ideals"
+      },
+      "gameTextTemplate": "Overcome to protect the rights of the underprivileged and use your Max die. You and each of your allies gain a hero point.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "UPeUfiDnkIsGvWZX",
+  "_key": "!items!UPeUfiDnkIsGvWZX"
+}

@@ -24,6 +24,7 @@
   "flags": {
     "scrpg-actor-compendium": {
       "color": "red",
+      "group": null,
       "category": "physical-qualities",
       "source": {
         "itemType": "quality",

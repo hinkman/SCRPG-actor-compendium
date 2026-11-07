@@ -185,6 +185,7 @@ const PACKS = [
                 flags: {
                     "scrpg-actor-compendium": {
                         color: context.colorKey,
+                        group: context.groupKey || null,
                         category: categoryKey,
                         source: context.source || null,
                         gameTextTemplate: entry.gameText,
@@ -281,10 +282,61 @@ function buildFlatSources(pack, categories, sourceRoot, ids, documents) {
     }
 }
 
+function writeAbilityCategory({
+    pack,
+    color,
+    category,
+    parentFolderId,
+    folderPathParts,
+    folderIdSeed,
+    sourceRoot,
+    ids,
+    documents,
+    groupKey = null
+}) {
+    const entries = category.abilities;
+    if (!category.key || !category.label || !Array.isArray(entries)) {
+        throw new Error(`Ability category is missing key, label, or abilities: ${JSON.stringify(category)}`);
+    }
+
+    const { folder, folderId } = makeFolder({
+        name: category.label,
+        parentId: parentFolderId,
+        idSeed: folderIdSeed
+    });
+    if (ids.has(folderId)) throw new Error(`Duplicate id ${folderId}`);
+    ids.add(folderId);
+    documents.push(folder);
+    writeJson(path.join(sourceRoot, ...folderPathParts, "_Folder.json"), folder);
+
+    for (const entry of entries) {
+        pack.validateEntry(entry, category.key);
+        // Keep color+category+name ids stable even when an intermediate group folder is added.
+        const itemId = foundryId(`${pack.itemType}:${color.key}:${category.key}:${slug(entry.name)}`);
+        if (ids.has(itemId)) throw new Error(`Duplicate id ${itemId} for ${entry.name}`);
+        ids.add(itemId);
+        if (!/^[A-Za-z0-9]{16}$/.test(itemId)) throw new Error(`Bad id ${itemId}`);
+
+        const item = pack.buildItem(entry, category.key, folderId, itemId, {
+            aux: color.aux || color.key,
+            colorKey: color.key,
+            groupKey,
+            source: category.source || null
+        });
+        documents.push(item);
+        writeJson(path.join(sourceRoot, ...folderPathParts, `${slug(entry.name)}.json`), item);
+    }
+}
+
 function buildNestedAbilitySources(pack, colors, sourceRoot, ids, documents) {
     for (const color of colors) {
-        if (!color.key || !color.label || !Array.isArray(color.categories)) {
-            throw new Error(`Ability color folder is missing key, label, or categories: ${JSON.stringify(color)}`);
+        if (!color.key || !color.label) {
+            throw new Error(`Ability color folder is missing key or label: ${JSON.stringify(color)}`);
+        }
+        const hasCategories = Array.isArray(color.categories);
+        const hasGroups = Array.isArray(color.groups);
+        if (!hasCategories && !hasGroups) {
+            throw new Error(`Ability color folder is missing categories or groups: ${JSON.stringify(color)}`);
         }
 
         const { folder: colorFolder, folderId: colorFolderId } = makeFolder({
@@ -297,39 +349,52 @@ function buildNestedAbilitySources(pack, colors, sourceRoot, ids, documents) {
         documents.push(colorFolder);
         writeJson(path.join(sourceRoot, color.key, "_Folder.json"), colorFolder);
 
-        for (const category of color.categories) {
-            const entries = category.abilities;
-            if (!category.key || !category.label || !Array.isArray(entries)) {
-                throw new Error(`Ability category is missing key, label, or abilities: ${JSON.stringify(category)}`);
-            }
+        if (hasGroups) {
+            for (const group of color.groups) {
+                if (!group.key || !group.label || !Array.isArray(group.categories)) {
+                    throw new Error(`Ability group is missing key, label, or categories: ${JSON.stringify(group)}`);
+                }
 
-            const { folder, folderId } = makeFolder({
-                name: category.label,
-                parentId: colorFolderId,
-                idSeed: `folder:${pack.key}:${color.key}:${category.key}`
-            });
-            if (ids.has(folderId)) throw new Error(`Duplicate id ${folderId}`);
-            ids.add(folderId);
-            documents.push(folder);
-            writeJson(path.join(sourceRoot, color.key, category.key, "_Folder.json"), folder);
-
-            for (const entry of entries) {
-                pack.validateEntry(entry, category.key);
-                const itemId = foundryId(`${pack.itemType}:${color.key}:${category.key}:${slug(entry.name)}`);
-                if (ids.has(itemId)) throw new Error(`Duplicate id ${itemId} for ${entry.name}`);
-                ids.add(itemId);
-                if (!/^[A-Za-z0-9]{16}$/.test(itemId)) throw new Error(`Bad id ${itemId}`);
-
-                const item = pack.buildItem(entry, category.key, folderId, itemId, {
-                    aux: color.aux || color.key,
-                    colorKey: color.key,
-                    source: category.source || null
+                const { folder: groupFolder, folderId: groupFolderId } = makeFolder({
+                    name: group.label,
+                    parentId: colorFolderId,
+                    idSeed: `folder:${pack.key}:${color.key}:${group.key}`
                 });
-                documents.push(item);
-                writeJson(
-                    path.join(sourceRoot, color.key, category.key, `${slug(entry.name)}.json`),
-                    item
-                );
+                if (ids.has(groupFolderId)) throw new Error(`Duplicate id ${groupFolderId}`);
+                ids.add(groupFolderId);
+                documents.push(groupFolder);
+                writeJson(path.join(sourceRoot, color.key, group.key, "_Folder.json"), groupFolder);
+
+                for (const category of group.categories) {
+                    writeAbilityCategory({
+                        pack,
+                        color,
+                        category,
+                        parentFolderId: groupFolderId,
+                        folderPathParts: [color.key, group.key, category.key],
+                        folderIdSeed: `folder:${pack.key}:${color.key}:${group.key}:${category.key}`,
+                        sourceRoot,
+                        ids,
+                        documents,
+                        groupKey: group.key
+                    });
+                }
+            }
+        }
+
+        if (hasCategories) {
+            for (const category of color.categories) {
+                writeAbilityCategory({
+                    pack,
+                    color,
+                    category,
+                    parentFolderId: colorFolderId,
+                    folderPathParts: [color.key, category.key],
+                    folderIdSeed: `folder:${pack.key}:${color.key}:${category.key}`,
+                    sourceRoot,
+                    ids,
+                    documents
+                });
             }
         }
     }
