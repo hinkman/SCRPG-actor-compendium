@@ -1,0 +1,56 @@
+{
+  "name": "Sacrificial Ram",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack up to three nearby targets using [Signature Vehicle]. Use your Max+Mid dice against each of them. You cannot use your Signature Vehicle power for the rest of this scene and until it is recovered/repaired.</p>"
+  },
+  "effects": [],
+  "folder": "0yL0HTK30vFg9xaJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "hallmark-powers",
+      "source": {
+        "itemType": "power",
+        "category": "hallmark"
+      },
+      "gameTextTemplate": "Attack up to three nearby targets using [Signature Vehicle]. Use your Max+Mid dice against each of them. You cannot use your Signature Vehicle power for the rest of this scene and until it is recovered/repaired.",
+      "slots": [
+        {
+          "token": "[Signature Vehicle]",
+          "itemType": "power",
+          "category": "hallmark",
+          "names": [
+            "Signature Vehicle"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "lw3XYFpfsoAMzphk",
+  "_key": "!items!lw3XYFpfsoAMzphk"
+}

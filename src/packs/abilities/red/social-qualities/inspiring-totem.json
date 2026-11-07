@@ -1,0 +1,47 @@
+{
+  "name": "Inspiring Totem",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>When you use an ability action, you may also perform any one basic action using your Mid die on the same roll.</p>"
+  },
+  "effects": [],
+  "folder": "GxDnLWDP8o5WzQ2Y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "social-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "social"
+      },
+      "gameTextTemplate": "When you use an ability action, you may also perform any one basic action using your Mid die on the same roll.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "PzAdh3lwAmiWsFRD",
+  "_key": "!items!PzAdh3lwAmiWsFRD"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Improved Immunity",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": true
+    },
+    "type": "I",
+    "gameText": "<p>If you would take damage from [element/energy], ignore that damage and Recover that amount instead. Use the value of the damage to Boost yourself.</p>"
+  },
+  "effects": [],
+  "folder": "VhwFLCgeO2SxJH2n",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "elemental-energy-powers",
+      "source": {
+        "itemType": "power",
+        "category": "elemental-energy"
+      },
+      "gameTextTemplate": "If you would take damage from [element/energy], ignore that damage and Recover that amount instead. Use the value of the damage to Boost yourself.",
+      "slots": [
+        {
+          "token": "[element/energy]",
+          "itemType": "power",
+          "category": "elemental-energy"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wXpuDK8W9K8rDSdX",
+  "_key": "!items!wXpuDK8W9K8rDSdX"
+}

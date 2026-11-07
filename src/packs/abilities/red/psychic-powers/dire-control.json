@@ -1,0 +1,47 @@
+{
+  "name": "Dire Control",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Select a minion. That minion is now entirely under your control and acts at the start of your turn. If you are incapacitated, you lose control of this minion. You may also choose to release control of this minion at any time. At the end of the scene, this minion is defeated.</p>"
+  },
+  "effects": [],
+  "folder": "VFoDFKC8FM2uxuZy",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "psychic-powers",
+      "source": {
+        "itemType": "power",
+        "category": "psychic"
+      },
+      "gameTextTemplate": "Select a minion. That minion is now entirely under your control and acts at the start of your turn. If you are incapacitated, you lose control of this minion. You may also choose to release control of this minion at any time. At the end of the scene, this minion is defeated.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "bY1pDicJhCcOMYKL",
+  "_key": "!items!bY1pDicJhCcOMYKL"
+}

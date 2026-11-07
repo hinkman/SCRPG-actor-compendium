@@ -1,0 +1,53 @@
+{
+  "name": "Dangerous Hinder",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder using [power]. Use your Max+Mid dice. If you roll doubles, also Attack the target using your Mid+Min dice and take damage equal to your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "VFoDFKC8FM2uxuZy",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "psychic-powers",
+      "source": {
+        "itemType": "power",
+        "category": "psychic"
+      },
+      "gameTextTemplate": "Hinder using [power]. Use your Max+Mid dice. If you roll doubles, also Attack the target using your Mid+Min dice and take damage equal to your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power",
+          "category": "psychic"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "E6smHQKKPO3vi76o",
+  "_key": "!items!E6smHQKKPO3vi76o"
+}

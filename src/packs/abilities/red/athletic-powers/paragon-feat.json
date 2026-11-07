@@ -1,0 +1,53 @@
+{
+  "name": "Paragon Feat",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome using [power] in a situation that requires you to be more than humanly capable, like an extreme feat of strength or speed. Use your Max+Min dice. Boost all nearby allies with your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "ATO9OfuAlOV4Qdbf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "athletic-powers",
+      "source": {
+        "itemType": "power",
+        "category": "athletic"
+      },
+      "gameTextTemplate": "Overcome using [power] in a situation that requires you to be more than humanly capable, like an extreme feat of strength or speed. Use your Max+Min dice. Boost all nearby allies with your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power",
+          "category": "athletic"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "GmIlcEaug8yVjvF3",
+  "_key": "!items!GmIlcEaug8yVjvF3"
+}

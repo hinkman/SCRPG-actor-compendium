@@ -1,0 +1,47 @@
+{
+  "name": "Heroic Sacrifice",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single Red zone die.</p>"
+  },
+  "effects": [],
+  "folder": "GxDnLWDP8o5WzQ2Y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "social-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "social"
+      },
+      "gameTextTemplate": "When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single Red zone die.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "11crYnylDphd8ABo",
+  "_key": "!items!11crYnylDphd8ABo"
+}

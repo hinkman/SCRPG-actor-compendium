@@ -1,0 +1,53 @@
+{
+  "name": "Field of Hazards",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder any number of targets in the scene using [power]. Use your Max+Min dice. If you roll doubles, also Attack each target using your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "JXLdYph58xFBMuiO",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "materials-powers",
+      "source": {
+        "itemType": "power",
+        "category": "materials"
+      },
+      "gameTextTemplate": "Hinder any number of targets in the scene using [power]. Use your Max+Min dice. If you roll doubles, also Attack each target using your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power",
+          "category": "materials"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "iIZMDTQJcKgY5K2b",
+  "_key": "!items!iIZMDTQJcKgY5K2b"
+}

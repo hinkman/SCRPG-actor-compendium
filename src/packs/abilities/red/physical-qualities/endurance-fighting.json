@@ -1,0 +1,47 @@
+{
+  "name": "Endurance Fighting",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>Whenever you Attack a target with an action, you may also Hinder that target with your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "M31PtA1pDmUKIcPZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "physical-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "physical"
+      },
+      "gameTextTemplate": "Whenever you Attack a target with an action, you may also Hinder that target with your Min die.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "138hR5RPiGxjzDHU",
+  "_key": "!items!138hR5RPiGxjzDHU"
+}

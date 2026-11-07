@@ -1,0 +1,56 @@
+{
+  "name": "Quick Exit",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [Signature Vehicle]. Use your Max die. Hinder each nearby opponent with your Mid die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.</p>"
+  },
+  "effects": [],
+  "folder": "0yL0HTK30vFg9xaJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "hallmark-powers",
+      "source": {
+        "itemType": "power",
+        "category": "hallmark"
+      },
+      "gameTextTemplate": "Attack using [Signature Vehicle]. Use your Max die. Hinder each nearby opponent with your Mid die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.",
+      "slots": [
+        {
+          "token": "[Signature Vehicle]",
+          "itemType": "power",
+          "category": "hallmark",
+          "names": [
+            "Signature Vehicle"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "8eCTCZV79C82f7Zf",
+  "_key": "!items!8eCTCZV79C82f7Zf"
+}

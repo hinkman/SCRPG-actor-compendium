@@ -1,0 +1,53 @@
+{
+  "name": "Combustion",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack multiple nearby targets using [power]. Use your Max+Mid dice. Take irreducible damage equal to your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "DG2hwhoi7fooRCM9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "technological-powers",
+      "source": {
+        "itemType": "power",
+        "category": "technological"
+      },
+      "gameTextTemplate": "Attack multiple nearby targets using [power]. Use your Max+Mid dice. Take irreducible damage equal to your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power",
+          "category": "technological"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "YCnG896s57lLf5Vs",
+  "_key": "!items!YCnG896s57lLf5Vs"
+}

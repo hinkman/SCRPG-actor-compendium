@@ -1,0 +1,47 @@
+{
+  "name": "Purification",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Remove all bonuses and penalties from the scene. You cannot use this ability again this scene.</p>"
+  },
+  "effects": [],
+  "folder": "VhwFLCgeO2SxJH2n",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "elemental-energy-powers",
+      "source": {
+        "itemType": "power",
+        "category": "elemental-energy"
+      },
+      "gameTextTemplate": "Remove all bonuses and penalties from the scene. You cannot use this ability again this scene.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "eIYXCyXKkCGXqXqN",
+  "_key": "!items!eIYXCyXKkCGXqXqN"
+}

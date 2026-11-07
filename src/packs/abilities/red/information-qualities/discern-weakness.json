@@ -1,0 +1,53 @@
+{
+  "name": "Discern Weakness",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Remove a bonus on a target. Hinder that target using [quality]. Use your Max die, and that penalty is persistent and exclusive.</p>"
+  },
+  "effects": [],
+  "folder": "s0vb9NXJOHC1lpMB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "information-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "information"
+      },
+      "gameTextTemplate": "Remove a bonus on a target. Hinder that target using [quality]. Use your Max die, and that penalty is persistent and exclusive.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "information"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "KRa3YTDltaPHnDCN",
+  "_key": "!items!KRa3YTDltaPHnDCN"
+}

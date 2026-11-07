@@ -1,0 +1,53 @@
+{
+  "name": "Empowerment",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are Attacked, roll your single [power] die as a Defend against that Attack. Also Boost yourself with that same roll.</p>"
+  },
+  "effects": [],
+  "folder": "7D4SA20glmSMhRCY",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "self-control-powers",
+      "source": {
+        "itemType": "power",
+        "category": "self-control"
+      },
+      "gameTextTemplate": "When you are Attacked, roll your single [power] die as a Defend against that Attack. Also Boost yourself with that same roll.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power",
+          "category": "self-control"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QoCb7ZwPtjQOzaKu",
+  "_key": "!items!QoCb7ZwPtjQOzaKu"
+}

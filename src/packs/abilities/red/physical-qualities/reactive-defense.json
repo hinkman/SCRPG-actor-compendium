@@ -1,0 +1,53 @@
+{
+  "name": "Reactive Defense",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single [quality] die.</p>"
+  },
+  "effects": [],
+  "folder": "M31PtA1pDmUKIcPZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "physical-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "physical"
+      },
+      "gameTextTemplate": "When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single [quality] die.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "physical"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "r4qbyFjPJt1THlzB",
+  "_key": "!items!r4qbyFjPJt1THlzB"
+}

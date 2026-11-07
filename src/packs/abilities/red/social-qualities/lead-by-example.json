@@ -1,0 +1,53 @@
+{
+  "name": "Lead by Example",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Make a basic action using [quality]. Use your Max die. All other heroes who take the same basic action on their turn against the same target receive a Boost from your Mid+Min dice.</p>"
+  },
+  "effects": [],
+  "folder": "GxDnLWDP8o5WzQ2Y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "social-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "social"
+      },
+      "gameTextTemplate": "Make a basic action using [quality]. Use your Max die. All other heroes who take the same basic action on their turn against the same target receive a Boost from your Mid+Min dice.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "social"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "yxZXU4rZpGo8a1cc",
+  "_key": "!items!yxZXU4rZpGo8a1cc"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Calculated Dodge",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>You may take 1 irreducible damage to reroll the dice pool of a target that is Attacking or Hindering you.</p>"
+  },
+  "effects": [],
+  "folder": "67qkY1UhMCrrpbZg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "intellectual-powers",
+      "source": {
+        "itemType": "power",
+        "category": "intellectual"
+      },
+      "gameTextTemplate": "You may take 1 irreducible damage to reroll the dice pool of a target that is Attacking or Hindering you.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "w70cpz4qFTHKAGs8",
+  "_key": "!items!w70cpz4qFTHKAGs8"
+}

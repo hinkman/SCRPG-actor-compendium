@@ -1,0 +1,53 @@
+{
+  "name": "Critical Eye",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Select a target. Boost using [quality]. Use your Max+Mid+Min dice. That bonus must be used against that target before the end of your next turn, or it is wasted.</p>"
+  },
+  "effects": [],
+  "folder": "s0vb9NXJOHC1lpMB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "information-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "information"
+      },
+      "gameTextTemplate": "Select a target. Boost using [quality]. Use your Max+Mid+Min dice. That bonus must be used against that target before the end of your next turn, or it is wasted.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "information"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Shru5f8fC414HBee",
+  "_key": "!items!Shru5f8fC414HBee"
+}

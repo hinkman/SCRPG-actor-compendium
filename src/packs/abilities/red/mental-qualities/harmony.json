@@ -1,0 +1,57 @@
+{
+  "name": "Harmony",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>As long as you have at least one bonus created from [quality], treat [power] as one size higher (max d12).</p>"
+  },
+  "effects": [],
+  "folder": "aED6yH6Fy39E4lYh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "mental-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "mental"
+      },
+      "gameTextTemplate": "As long as you have at least one bonus created from [quality], treat [power] as one size higher (max d12).",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "mental"
+        },
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Rje7EZBC01qcz9F1",
+  "_key": "!items!Rje7EZBC01qcz9F1"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Finishing Blow",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [quality]. Use your Max die. Remove any number of penalties from the target. Add your Min die to the Attack each time you remove a penalty.</p>"
+  },
+  "effects": [],
+  "folder": "M31PtA1pDmUKIcPZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "category": "physical-qualities",
+      "source": {
+        "itemType": "quality",
+        "category": "physical"
+      },
+      "gameTextTemplate": "Attack using [quality]. Use your Max die. Remove any number of penalties from the target. Add your Min die to the Attack each time you remove a penalty.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality",
+          "category": "physical"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "GQ3Jc7M5agRZg20c",
+  "_key": "!items!GQ3Jc7M5agRZg20c"
+}

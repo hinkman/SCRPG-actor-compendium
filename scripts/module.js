@@ -28,10 +28,12 @@ Hooks.on("renderSCRPGCharacterSheet", (sheet, element) => {
 
 /**
  * Show each principle's Green ability (type, icons, game text) on the item sheet,
- * including when browsing the compendium.
+ * including when browsing the compendium. Also inject power/quality slot pickers
+ * for abilities that use bracket placeholders.
  */
 Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPrincipleGreenAbility(sheet, element);
+    void renderAbilitySlotPickers(sheet, element);
 });
 
 async function renderPrincipleGreenAbility(sheet, element) {
@@ -91,6 +93,126 @@ function escapeHtml(value) {
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;");
+}
+
+/**
+ * On actor-owned abilities from this module, show dropdowns for [power]/[quality]
+ * (and similar) placeholders so the chosen trait fills the game text.
+ */
+async function renderAbilitySlotPickers(sheet, element) {
+    try {
+        const item = sheet.document ?? sheet.item;
+        if (!item || item.type !== "ability") return;
+
+        const meta = item.flags?.[MODULE_ID];
+        const slots = meta?.slots;
+        if (!Array.isArray(slots) || !slots.length) return;
+
+        const root = element instanceof HTMLElement ? element : sheet.element;
+        if (!root) return;
+
+        const host = root.querySelector(".ability-content") || root.querySelector(".sheet-content") || root;
+        host.querySelector(".scrpg-compendium-ability-slots")?.remove();
+
+        const actor = item.actor;
+        const section = document.createElement("div");
+        section.className = "scrpg-compendium-ability-slots";
+
+        if (!actor) {
+            section.innerHTML = `
+                <h4>Linked Traits</h4>
+                <p class="hint">Drop this ability onto a hero to choose which power or quality fills each placeholder.</p>
+                <ul>${slots.map(slot => `<li><code>${escapeHtml(slot.token)}</code></li>`).join("")}</ul>
+            `;
+            host.append(section);
+            return;
+        }
+
+        const selections = meta.selections || {};
+        const rows = slots.map(slot => {
+            const options = matchingActorItems(actor, slot);
+            const selectedId = selections[slot.token] || "";
+            const optionHtml = [
+                `<option value="">${escapeHtml(slot.token)}</option>`,
+                ...options.map(opt => {
+                    const selected = opt.id === selectedId ? " selected" : "";
+                    return `<option value="${escapeHtml(opt.id)}"${selected}>${escapeHtml(opt.name)}</option>`;
+                })
+            ].join("");
+            return `
+                <label class="scrpg-compendium-ability-slot">
+                    <span class="label">${escapeHtml(slotLabel(slot))}</span>
+                    <select data-slot-token="${escapeHtml(slot.token)}">${optionHtml}</select>
+                </label>
+            `;
+        }).join("");
+
+        section.innerHTML = `<h4>Linked Traits</h4><div class="scrpg-compendium-ability-slot-list">${rows}</div>`;
+        host.append(section);
+
+        section.querySelectorAll("select[data-slot-token]").forEach(select => {
+            select.addEventListener("change", async event => {
+                const token = event.currentTarget.dataset.slotToken;
+                const chosenId = event.currentTarget.value || null;
+                await applyAbilitySlotSelection(item, token, chosenId);
+            });
+        });
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to render ability slot pickers`, err);
+    }
+}
+
+function slotLabel(slot) {
+    if (slot.itemType === "power") return "Power";
+    if (slot.itemType === "quality") return "Quality";
+    return slot.token;
+}
+
+function matchingActorItems(actor, slot) {
+    const itemType = slot.itemType;
+    if (!itemType) return [];
+
+    let items = actor.items.filter(owned => owned.type === itemType);
+    const categories = Array.isArray(slot.categories)
+        ? slot.categories
+        : (slot.category ? [slot.category] : null);
+
+    if (categories?.length) {
+        const categorized = items.filter(owned => {
+            const category = owned.flags?.[MODULE_ID]?.category;
+            return category && categories.includes(category);
+        });
+        if (categorized.length) items = categorized;
+    }
+
+    if (Array.isArray(slot.names) && slot.names.length) {
+        const named = items.filter(owned => slot.names.includes(owned.name));
+        if (named.length) items = named;
+    }
+
+    return items.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+async function applyAbilitySlotSelection(item, token, chosenId) {
+    const meta = item.flags?.[MODULE_ID] || {};
+    const template = meta.gameTextTemplate;
+    if (!template) return;
+
+    const selections = { ...(meta.selections || {}) };
+    if (chosenId) selections[token] = chosenId;
+    else delete selections[token];
+
+    let text = template;
+    for (const slot of meta.slots || []) {
+        const selectedId = selections[slot.token];
+        const chosen = selectedId ? item.actor?.items.get(selectedId) : null;
+        if (chosen) text = text.replaceAll(slot.token, chosen.name);
+    }
+
+    await item.update({
+        "system.gameText": `<p>${escapeHtml(text)}</p>`,
+        [`flags.${MODULE_ID}.selections`]: selections
+    });
 }
 
 /**
