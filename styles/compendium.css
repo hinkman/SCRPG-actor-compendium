@@ -1,0 +1,31 @@
+.scrpg-compendium-green-ability {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-light-tertiary, #782e22);
+}
+
+.scrpg-compendium-green-ability h4 {
+    margin: 0 0 0.35rem;
+}
+
+.scrpg-compendium-green-ability-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.scrpg-compendium-green-ability-meta .label {
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.scrpg-compendium-green-ability-icons {
+    display: inline-flex;
+    gap: 0.35rem;
+}
+
+.scrpg-compendium-green-ability-text {
+    line-height: 1.35;
+}
