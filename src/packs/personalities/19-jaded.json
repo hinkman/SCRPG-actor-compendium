@@ -1,0 +1,42 @@
+{
+  "name": "Jaded",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Remove a bonus or penalty of your choice.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 19,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Jaded",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "yu74n4lri8lhVgiQ",
+  "_key": "!items!yu74n4lri8lhVgiQ"
+}

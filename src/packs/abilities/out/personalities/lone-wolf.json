@@ -1,0 +1,52 @@
+{
+  "name": "Lone Wolf",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "out",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost an ally by rolling your single [quality] die.</p>"
+  },
+  "effects": [],
+  "folder": "kxGPNJoTcwEhK1eS",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "out",
+      "group": null,
+      "category": "personalities",
+      "source": {
+        "itemType": "personality"
+      },
+      "gameTextTemplate": "Boost an ally by rolling your single [quality] die.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "bnWG50qicoPN7tw1",
+  "_key": "!items!bnWG50qicoPN7tw1"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Impulsive",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it. Upgrade one of your power or quality dice by one step (to a maximum d12).</p>",
+    "out": "The hero who goes directly after you may take 1 damage to reroll their dice pool.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 3,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Impulsive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "5QeNGw1ArP4ghbEQ",
+  "_key": "!items!5QeNGw1ArP4ghbEQ"
+}

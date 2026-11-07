@@ -1,0 +1,42 @@
+{
+  "name": "Jovial",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Defend an ally by rolling your single [quality] die.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 15,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Jovial",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "0EhdAcZsAWqdsJ8B",
+  "_key": "!items!0EhdAcZsAWqdsJ8B"
+}

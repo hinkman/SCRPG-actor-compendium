@@ -87,3 +87,23 @@
 .scrpg-compendium-ability-slot .label {
     font-weight: bold;
 }
+
+.scrpg-compendium-personality-meta {
+    margin-bottom: 0.5rem;
+}
+
+.scrpg-compendium-personality-meta .label,
+.scrpg-compendium-out-ability .label {
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.scrpg-compendium-out-ability {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-light-tertiary, #782e22);
+}
+
+.scrpg-compendium-out-ability h4 {
+    margin: 0 0 0.35rem;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Decisive",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Boost an ally by rolling your single [power] die.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 14,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Decisive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OF5ehGJ2zu5yZMzr",
+  "_key": "!items!OF5ehGJ2zu5yZMzr"
+}

@@ -147,7 +147,7 @@ const PACKS = [
         nested: true,
         itemType: "ability",
         img: "icons/svg/combat.svg",
-        expectedCount: 131,
+        expectedCount: 151,
         validateEntry(entry, categoryKey) {
             if (!entry.name || !entry.type || !entry.gameText || !entry.icon) {
                 throw new Error(`ability in ${categoryKey} is missing required fields`);
@@ -191,6 +191,66 @@ const PACKS = [
                         gameTextTemplate: entry.gameText,
                         slots: entry.slots,
                         selections: {}
+                    }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
+            };
+        }
+    },
+    {
+        key: "personalities",
+        dataFile: "src/data/personalities.json",
+        flatList: true,
+        itemType: "personality",
+        img: "icons/svg/mystery-man.svg",
+        expectedCount: 20,
+        validateEntry(entry) {
+            if (!entry.name || !entry.description || !entry.out || !entry.number) {
+                throw new Error(`personality is missing required fields: ${JSON.stringify(entry)}`);
+            }
+            if (!entry.statusDie?.green || !entry.statusDie?.yellow || !entry.statusDie?.red) {
+                throw new Error(`personality ${entry.name} is missing status dice`);
+            }
+            const ability = entry.outAbility;
+            if (!ability?.uuid || !ability?.name || !ability?.category || !ability?.color) {
+                throw new Error(`personality ${entry.name} is missing outAbility reference`);
+            }
+            const expectedId = foundryId(`ability:${ability.color}:${ability.category}:${slug(ability.name)}`);
+            const expectedUuid = `Compendium.scrpg-actor-compendium.abilities.Item.${expectedId}`;
+            if (ability.uuid !== expectedUuid) {
+                throw new Error(`personality ${entry.name} outAbility uuid mismatch: ${ability.uuid} !== ${expectedUuid}`);
+            }
+        },
+        buildItem(entry, folderId, itemId) {
+            return {
+                name: entry.name,
+                type: "personality",
+                img: "icons/svg/mystery-man.svg",
+                system: {
+                    description: `<p>${htmlEscape(entry.description)}</p>`,
+                    out: entry.out,
+                    statusDie: {
+                        green: entry.statusDie.green,
+                        yellow: entry.statusDie.yellow,
+                        red: entry.statusDie.red
+                    }
+                },
+                effects: [],
+                folder: folderId,
+                sort: entry.number * 100_000,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": {
+                        number: entry.number,
+                        outAbilityUuid: entry.outAbility.uuid,
+                        outAbility: {
+                            color: entry.outAbility.color,
+                            category: entry.outAbility.category,
+                            name: entry.outAbility.name,
+                            uuid: entry.outAbility.uuid
+                        }
                     }
                 },
                 _stats: STATS,
@@ -400,6 +460,24 @@ function buildNestedAbilitySources(pack, colors, sourceRoot, ids, documents) {
     }
 }
 
+function buildFlatListSources(pack, entries, sourceRoot, ids, documents) {
+    if (!Array.isArray(entries)) {
+        throw new Error(`Flat list pack ${pack.key} expected an array`);
+    }
+
+    for (const entry of entries) {
+        pack.validateEntry(entry);
+        const itemId = foundryId(`${pack.itemType}:${String(entry.number).padStart(2, "0")}:${slug(entry.name)}`);
+        if (ids.has(itemId)) throw new Error(`Duplicate id ${itemId} for ${entry.name}`);
+        ids.add(itemId);
+        if (!/^[A-Za-z0-9]{16}$/.test(itemId)) throw new Error(`Bad id ${itemId}`);
+
+        const item = pack.buildItem(entry, null, itemId);
+        documents.push(item);
+        writeJson(path.join(sourceRoot, `${String(entry.number).padStart(2, "0")}-${slug(entry.name)}.json`), item);
+    }
+}
+
 function buildSources(pack) {
     const dataPath = path.join(root, pack.dataFile);
     const sourceRoot = path.join(root, "src/packs", pack.key);
@@ -411,13 +489,15 @@ function buildSources(pack) {
 
     if (pack.nested) {
         buildNestedAbilitySources(pack, data, sourceRoot, ids, documents);
+    } else if (pack.flatList) {
+        buildFlatListSources(pack, data, sourceRoot, ids, documents);
     } else {
         buildFlatSources(pack, data, sourceRoot, ids, documents);
     }
 
     const itemCount = documents.filter(doc => doc.type === pack.itemType).length;
     const folderCount = documents.filter(doc => doc._key.startsWith("!folders!")).length;
-    const label = pack.nested ? "abilities" : pack.entriesKey;
+    const label = pack.nested ? "abilities" : (pack.flatList ? pack.key : pack.entriesKey);
     console.log(`Wrote ${itemCount} ${label} in ${folderCount} folders`);
     return { itemCount, folderCount, sourceRoot };
 }
@@ -428,7 +508,7 @@ for (const pack of PACKS) {
     clearPack(packDest);
     await compilePack(sourceRoot, packDest, { log: true, recursive: true });
     if (itemCount !== pack.expectedCount) {
-        const label = pack.nested ? "abilities" : pack.entriesKey;
+        const label = pack.nested ? "abilities" : (pack.flatList ? pack.key : pack.entriesKey);
         throw new Error(`Expected ${pack.expectedCount} ${label}, wrote ${itemCount}`);
     }
 }

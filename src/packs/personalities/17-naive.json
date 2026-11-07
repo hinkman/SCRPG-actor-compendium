@@ -1,0 +1,42 @@
+{
+  "name": "Naive",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Hinder an opponent by rolling your single [power] die.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d12"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 17,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Naive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "oAlNsjefWMPH33dR",
+  "_key": "!items!oAlNsjefWMPH33dR"
+}

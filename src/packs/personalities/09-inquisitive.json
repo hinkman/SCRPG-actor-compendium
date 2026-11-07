@@ -1,0 +1,42 @@
+{
+  "name": "Inquisitive",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Choose an ally. Until your next turn, that ally may reroll one of their dice by using a Reaction.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 9,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Inquisitive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "JjLSulQhQy71MZHY",
+  "_key": "!items!JjLSulQhQy71MZHY"
+}

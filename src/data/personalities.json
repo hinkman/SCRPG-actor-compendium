@@ -1,0 +1,342 @@
+[
+  {
+    "number": 1,
+    "name": "Lone Wolf",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    },
+    "out": "Boost an ally by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Lone Wolf",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1"
+    }
+  },
+  {
+    "number": 2,
+    "name": "Natural Leader",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Boost an ally by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Natural Leader",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1"
+    }
+  },
+  {
+    "number": 3,
+    "name": "Impulsive",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it. Upgrade one of your power or quality dice by one step (to a maximum d12).",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d8"
+    },
+    "out": "The hero who goes directly after you may take 1 damage to reroll their dice pool.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Impulsive",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+    }
+  },
+  {
+    "number": 4,
+    "name": "Mischievous",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it. When determining your health during Step 7, you may use any power or quality instead of an Athletic power or Mental quality.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d8"
+    },
+    "out": "Hinder an opponent by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Mischievous",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+    }
+  },
+  {
+    "number": 5,
+    "name": "Sarcastic",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    },
+    "out": "Hinder an opponent by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Sarcastic",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg"
+    }
+  },
+  {
+    "number": 6,
+    "name": "Distant",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    },
+    "out": "Boost an ally by rolling your single Red status die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Distant",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dBVbEzSworXZ7sCj"
+    }
+  },
+  {
+    "number": 7,
+    "name": "Stalwart",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    },
+    "out": "Defend an ally by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Stalwart",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx"
+    }
+  },
+  {
+    "number": 8,
+    "name": "Fast Talking",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Hinder a minion or lieutenant by rolling your single [quality] die, and increase that penalty by -1.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Fast Talking",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy"
+    }
+  },
+  {
+    "number": 9,
+    "name": "Inquisitive",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Choose an ally. Until your next turn, that ally may reroll one of their dice by using a Reaction.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Inquisitive",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+    }
+  },
+  {
+    "number": 10,
+    "name": "Alluring",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Boost an ally by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Alluring",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CeJNDgTubK5c7NSa"
+    }
+  },
+  {
+    "number": 11,
+    "name": "Stoic",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Defend an ally by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Stoic",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GcSuuOmbojvyq4Yn"
+    }
+  },
+  {
+    "number": 12,
+    "name": "Nurturing",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d12"
+    },
+    "out": "Boost an ally by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Nurturing",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV"
+    }
+  },
+  {
+    "number": 13,
+    "name": "Analytical",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    },
+    "out": "Remove a bonus or penalty of your choice.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Analytical",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rsTnttSCjKmkrVYw"
+    }
+  },
+  {
+    "number": 14,
+    "name": "Decisive",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    },
+    "out": "Boost an ally by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Decisive",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK"
+    }
+  },
+  {
+    "number": 15,
+    "name": "Jovial",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Defend an ally by rolling your single [quality] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Jovial",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ"
+    }
+  },
+  {
+    "number": 16,
+    "name": "Cheerful",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    },
+    "out": "Boost an ally by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Cheerful",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+    }
+  },
+  {
+    "number": 17,
+    "name": "Naive",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d12"
+    },
+    "out": "Hinder an opponent by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Naive",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+    }
+  },
+  {
+    "number": 18,
+    "name": "Apathetic",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10"
+    },
+    "out": "Remove a bonus or penalty of your choice.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Apathetic",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv"
+    }
+  },
+  {
+    "number": 19,
+    "name": "Jaded",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    },
+    "out": "Remove a bonus or penalty of your choice.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Jaded",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+    }
+  },
+  {
+    "number": 20,
+    "name": "Arrogant",
+    "description": "Make up a quality based on your hero's backstory. Assign a d8 to it.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    },
+    "out": "Hinder an opponent by rolling your single [power] die.",
+    "outAbility": {
+      "color": "out",
+      "category": "personalities",
+      "name": "Arrogant",
+      "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qkrE4sLpDqmAFtkk"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "Cheerful",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Boost an ally by rolling your single [power] die.",
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 16,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Cheerful",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OKANQSUshsaEEyxl",
+  "_key": "!items!OKANQSUshsaEEyxl"
+}

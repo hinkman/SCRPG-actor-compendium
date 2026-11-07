@@ -1,0 +1,52 @@
+{
+  "name": "Jovial",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "out",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Defend an ally by rolling your single [quality] die.</p>"
+  },
+  "effects": [],
+  "folder": "kxGPNJoTcwEhK1eS",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "out",
+      "group": null,
+      "category": "personalities",
+      "source": {
+        "itemType": "personality"
+      },
+      "gameTextTemplate": "Defend an ally by rolling your single [quality] die.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "0ECmDqNkfGr4CGCZ",
+  "_key": "!items!0ECmDqNkfGr4CGCZ"
+}

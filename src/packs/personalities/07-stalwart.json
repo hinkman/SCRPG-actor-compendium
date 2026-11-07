@@ -1,0 +1,42 @@
+{
+  "name": "Stalwart",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it.</p>",
+    "out": "Defend an ally by rolling your single [power] die.",
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 7,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Stalwart",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "lJHoZI3vXPDzCSdH",
+  "_key": "!items!lJHoZI3vXPDzCSdH"
+}

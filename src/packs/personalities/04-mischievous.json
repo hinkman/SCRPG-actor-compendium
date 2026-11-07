@@ -1,0 +1,42 @@
+{
+  "name": "Mischievous",
+  "type": "personality",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Make up a quality based on your hero's backstory. Assign a d8 to it. When determining your health during Step 7, you may use any power or quality instead of an Athletic power or Mental quality.</p>",
+    "out": "Hinder an opponent by rolling your single [power] die.",
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 4,
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Mischievous",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "sxhbxILz8CUvGp88",
+  "_key": "!items!sxhbxILz8CUvGp88"
+}

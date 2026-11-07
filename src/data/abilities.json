@@ -2379,5 +2379,372 @@
         ]
       }
     ]
+  },
+  {
+    "key": "out",
+    "label": "Out",
+    "aux": "out",
+    "color": "#6e6e6e",
+    "categories": [
+      {
+        "key": "personalities",
+        "label": "Personalities",
+        "source": {
+          "itemType": "personality"
+        },
+        "abilities": [
+          {
+            "name": "Lone Wolf",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Natural Leader",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Impulsive",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "The hero who goes directly after you may take 1 damage to reroll their dice pool.",
+            "slots": []
+          },
+          {
+            "name": "Mischievous",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": true,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Hinder an opponent by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Sarcastic",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": true,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Hinder an opponent by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Distant",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single Red status die.",
+            "slots": []
+          },
+          {
+            "name": "Stalwart",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": true,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Defend an ally by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Fast Talking",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": true,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Hinder a minion or lieutenant by rolling your single [quality] die, and increase that penalty by -1.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Inquisitive",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Choose an ally. Until your next turn, that ally may reroll one of their dice by using a Reaction.",
+            "slots": []
+          },
+          {
+            "name": "Alluring",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Stoic",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": true,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Defend an ally by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Nurturing",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Analytical",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Remove a bonus or penalty of your choice.",
+            "slots": []
+          },
+          {
+            "name": "Decisive",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Jovial",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": true,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Defend an ally by rolling your single [quality] die.",
+            "slots": [
+              {
+                "token": "[quality]",
+                "itemType": "quality"
+              }
+            ]
+          },
+          {
+            "name": "Cheerful",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": true,
+              "recover": false
+            },
+            "gameText": "Boost an ally by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Naive",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": true,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Hinder an opponent by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          },
+          {
+            "name": "Apathetic",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Remove a bonus or penalty of your choice.",
+            "slots": []
+          },
+          {
+            "name": "Jaded",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": false,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Remove a bonus or penalty of your choice.",
+            "slots": []
+          },
+          {
+            "name": "Arrogant",
+            "type": "A",
+            "icon": {
+              "attack": false,
+              "defend": false,
+              "overcome": false,
+              "hinder": true,
+              "boost": false,
+              "recover": false
+            },
+            "gameText": "Hinder an opponent by rolling your single [power] die.",
+            "slots": [
+              {
+                "token": "[power]",
+                "itemType": "power"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
