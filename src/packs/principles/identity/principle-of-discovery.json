@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "identity",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.p3FHYhXiSkCujVsw",
       "greenAbility": {
+        "color": "green",
+        "category": "identity",
         "name": "Principle of Discovery",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>When you're on the forefront in making a discovery or invention and take an Overcome action to further your knowledge, use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p3FHYhXiSkCujVsw"
       }
     }
   },

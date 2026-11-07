@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "responsibility",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.Kh3yPrqtyDtGO4SB",
       "greenAbility": {
+        "color": "green",
+        "category": "responsibility",
         "name": "Principle of the Team",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome by using your status as an official representative and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Kh3yPrqtyDtGO4SB"
       }
     }
   },

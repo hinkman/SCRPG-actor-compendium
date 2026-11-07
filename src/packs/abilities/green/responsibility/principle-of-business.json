@@ -1,0 +1,47 @@
+{
+  "name": "Principle of Business",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome in a situation related to the field of your business or knowing locals. Use your Max die. You and each of your allies gain a hero point.</p>"
+  },
+  "effects": [],
+  "folder": "229gEvZBrh67ycsD",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "category": "responsibility",
+      "source": {
+        "itemType": "principles",
+        "category": "responsibility"
+      },
+      "gameTextTemplate": "Overcome in a situation related to the field of your business or knowing locals. Use your Max die. You and each of your allies gain a hero point.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "PzT7sXViz8EeKQ4r",
+  "_key": "!items!PzT7sXViz8EeKQ4r"
+}

@@ -100,8 +100,13 @@ const PACKS = [
                 throw new Error(`principle in ${categoryKey} is missing required text fields`);
             }
             const ability = entry.greenAbility;
-            if (!ability?.name || !ability?.type || !ability?.gameText || !ability?.icon) {
-                throw new Error(`principle ${entry.name} is missing greenAbility data`);
+            if (!ability?.uuid || !ability?.name || !ability?.category || !ability?.color) {
+                throw new Error(`principle ${entry.name} is missing greenAbility reference`);
+            }
+            const expectedId = foundryId(`ability:${ability.color}:${ability.category}:${slug(ability.name)}`);
+            const expectedUuid = `Compendium.scrpg-actor-compendium.abilities.Item.${expectedId}`;
+            if (ability.uuid !== expectedUuid) {
+                throw new Error(`principle ${entry.name} greenAbility uuid mismatch: ${ability.uuid} !== ${expectedUuid}`);
             }
         },
         buildItem(entry, categoryKey, folderId, itemId) {
@@ -121,11 +126,12 @@ const PACKS = [
                 flags: {
                     "scrpg-actor-compendium": {
                         category: categoryKey,
+                        greenAbilityUuid: entry.greenAbility.uuid,
                         greenAbility: {
+                            color: entry.greenAbility.color,
+                            category: entry.greenAbility.category,
                             name: entry.greenAbility.name,
-                            type: entry.greenAbility.type,
-                            icon: entry.greenAbility.icon,
-                            gameText: `<p>${htmlEscape(entry.greenAbility.gameText)}</p>`
+                            uuid: entry.greenAbility.uuid
                         }
                     }
                 },
@@ -141,7 +147,7 @@ const PACKS = [
         nested: true,
         itemType: "ability",
         img: "icons/svg/combat.svg",
-        expectedCount: 67,
+        expectedCount: 131,
         validateEntry(entry, categoryKey) {
             if (!entry.name || !entry.type || !entry.gameText || !entry.icon) {
                 throw new Error(`ability in ${categoryKey} is missing required fields`);

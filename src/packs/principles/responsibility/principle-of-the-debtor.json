@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "responsibility",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.yl57T9eFwU1bXvpV",
       "greenAbility": {
+        "color": "green",
+        "category": "responsibility",
         "name": "Principle of the Debtor",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome in a situation related to repaying a debt and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yl57T9eFwU1bXvpV"
       }
     }
   },

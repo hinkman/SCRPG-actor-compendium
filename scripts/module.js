@@ -27,9 +27,8 @@ Hooks.on("renderSCRPGCharacterSheet", (sheet, element) => {
 });
 
 /**
- * Show each principle's Green ability (type, icons, game text) on the item sheet,
- * including when browsing the compendium. Also inject power/quality slot pickers
- * for abilities that use bracket placeholders.
+ * Show each principle's linked Green ability on the item sheet, and inject
+ * power/quality slot pickers for abilities that use bracket placeholders.
  */
 Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPrincipleGreenAbility(sheet, element);
@@ -41,8 +40,14 @@ async function renderPrincipleGreenAbility(sheet, element) {
         const item = sheet.document ?? sheet.item;
         if (!item || item.type !== "principles") return;
 
-        const greenAbility = item.flags?.[MODULE_ID]?.greenAbility;
-        if (!greenAbility?.gameText) return;
+        const uuid = principleGreenAbilityUuid(item);
+        if (!uuid) return;
+
+        const ability = await fromUuid(uuid);
+        if (!ability) {
+            console.warn(`${MODULE_ID} | Missing linked Green ability ${uuid}`);
+            return;
+        }
 
         const root = element instanceof HTMLElement ? element : sheet.element;
         if (!root) return;
@@ -50,7 +55,7 @@ async function renderPrincipleGreenAbility(sheet, element) {
         const host = root.querySelector(".principle") || root.querySelector(".sheet-content") || root;
         host.querySelector(".scrpg-compendium-green-ability")?.remove();
 
-        const typeKey = greenAbility.type || "A";
+        const typeKey = ability.system?.type || "A";
         const typeLabel = CONFIG.SCRPG?.abilityType?.[typeKey]?.desc
             ? game.i18n.localize(CONFIG.SCRPG.abilityType[typeKey].desc)
             : typeKey;
@@ -58,16 +63,20 @@ async function renderPrincipleGreenAbility(sheet, element) {
             ? game.i18n.localize(CONFIG.SCRPG.abilityType[typeKey].tooltip)
             : "";
 
-        const icon = greenAbility.icon || {};
+        const icon = ability.system?.icon || {};
         const iconHtml = Object.entries(ACTION_ICONS)
             .filter(([key]) => icon[key])
             .map(([, meta]) => `<i class="${meta.cls}" title="${meta.title}"></i>`)
             .join("");
 
         const TextEditor = foundry.applications.ux.TextEditor.implementation;
-        const enriched = await TextEditor.enrichHTML(greenAbility.gameText ?? "", {
+        const linkHtml = await TextEditor.enrichHTML(`@UUID[${uuid}]{${ability.name}}`, {
             secrets: item.isOwner,
             relativeTo: item
+        });
+        const enriched = await TextEditor.enrichHTML(ability.system?.gameText ?? "", {
+            secrets: item.isOwner,
+            relativeTo: ability
         });
 
         const section = document.createElement("div");
@@ -75,7 +84,7 @@ async function renderPrincipleGreenAbility(sheet, element) {
         section.innerHTML = `
             <h4 class="principle-section">Green Ability</h4>
             <div class="scrpg-compendium-green-ability-meta">
-                <div><span class="label">Name</span> ${escapeHtml(greenAbility.name || item.name)}</div>
+                <div><span class="label">Name</span> ${linkHtml}</div>
                 <div title="${escapeHtml(typeTooltip)}"><span class="label">Type</span> ${escapeHtml(typeLabel)}</div>
                 ${iconHtml ? `<div class="scrpg-compendium-green-ability-icons"><span class="label">Icon</span> ${iconHtml}</div>` : ""}
             </div>
@@ -85,6 +94,11 @@ async function renderPrincipleGreenAbility(sheet, element) {
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to render principle Green ability`, err);
     }
+}
+
+function principleGreenAbilityUuid(item) {
+    const meta = item.flags?.[MODULE_ID];
+    return meta?.greenAbilityUuid || meta?.greenAbility?.uuid || null;
 }
 
 function escapeHtml(value) {
@@ -217,7 +231,7 @@ async function applyAbilitySlotSelection(item, token, chosenId) {
 
 /**
  * When a principle from this module is dropped onto a principle column,
- * also create its Green ability on the actor.
+ * also create its linked Green ability on the actor.
  */
 Hooks.on("dropActorSheetData", (actor, sheet, data) => {
     void handlePrincipleDrop(actor, sheet, data);
@@ -232,12 +246,18 @@ async function handlePrincipleDrop(actor, sheet, data) {
         const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "principles") return;
 
-        const greenAbility = item.flags?.[MODULE_ID]?.greenAbility;
-        if (!greenAbility) return;
+        const uuid = principleGreenAbilityUuid(item);
+        if (!uuid) return;
 
         const event = sheet?._scrpgCompendiumDropEvent;
         const slot = principleSlotFromEvent(event);
         if (!slot) return;
+
+        const ability = await fromUuid(uuid);
+        if (!ability) {
+            console.warn(`${MODULE_ID} | Missing linked Green ability ${uuid}`);
+            return;
+        }
 
         const existing = actor.items.filter(owned =>
             owned.type === "ability"
@@ -247,30 +267,19 @@ async function handlePrincipleDrop(actor, sheet, data) {
             await actor.deleteEmbeddedDocuments("Item", existing.map(owned => owned.id));
         }
 
-        await actor.createEmbeddedDocuments("Item", [{
-            name: greenAbility.name || item.name,
-            type: "ability",
-            img: item.img || "icons/svg/upgrade.svg",
-            system: {
-                aux: "green",
-                icon: {
-                    attack: !!greenAbility.icon?.attack,
-                    defend: !!greenAbility.icon?.defend,
-                    overcome: greenAbility.icon?.overcome !== false,
-                    hinder: !!greenAbility.icon?.hinder,
-                    boost: !!greenAbility.icon?.boost,
-                    recover: !!greenAbility.icon?.recover
-                },
-                type: greenAbility.type || "A",
-                gameText: greenAbility.gameText || ""
-            },
-            flags: {
-                [MODULE_ID]: {
-                    principleSlot: slot,
-                    fromPrinciple: item.name
-                }
-            }
-        }]);
+        const created = ability.toObject();
+        delete created._id;
+        delete created.folder;
+        created.flags = created.flags || {};
+        created.flags[MODULE_ID] = {
+            ...(created.flags[MODULE_ID] || {}),
+            principleSlot: slot,
+            fromPrinciple: item.name,
+            fromAbilityUuid: uuid,
+            selections: {}
+        };
+
+        await actor.createEmbeddedDocuments("Item", [created]);
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to create principle Green ability`, err);
     }

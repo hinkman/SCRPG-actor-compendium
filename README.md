@@ -2,18 +2,20 @@
 
 Unofficial compendium module for [Foundry VTT](https://foundryvtt.com/) using the [scrpg-foundry](https://github.com/hinkman/SCRPG-foundry) system. A copy of Sentinel Comics: The Roleplaying Game is required. This module does not replace the rules.
 
-Version 0.4.0 contains:
+Version 0.5.0 contains:
 
 - Powers (rulebook pages 123–126)
 - Qualities (rulebook pages 127–128)
 - Principles (rulebook pages 132–149)
-- Red abilities (rulebook pages 114–119), in the shared **SCRPG Abilities** pack under a Red folder
+- Abilities in the shared **SCRPG Abilities** pack:
+  - **Green** — principle Green abilities, linked from each principle by UUID
+  - **Red** — Red abilities (rulebook pages 114–119), grouped by power/quality category
 
 Entries stay in their Foundry compendia and are not imported into the world Items directory automatically. Drag a power, quality, principle, or ability onto a hero when you need it. Die size for powers and qualities starts at `d4` and is set on the character.
 
-Principle item sheets show the Green ability type and game text. Dropping a principle onto a principle column also creates that Green ability on the hero.
+Principle item sheets show the linked Green ability (with a clickable UUID link). Dropping a principle onto a principle column also creates that Green ability on the hero from the abilities pack.
 
-Abilities that use `[power]`, `[quality]`, or similar placeholders show trait dropdowns once the ability is on a hero, so you can fill those slots from the hero’s matching powers or qualities.
+Abilities that use `[power]`, `[quality]`, `[energy/element]`, or similar placeholders show trait dropdowns once the ability is on a hero.
 
 ## Install
 

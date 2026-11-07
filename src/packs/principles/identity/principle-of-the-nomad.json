@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "identity",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.XF7yySg0fPw06OCt",
       "greenAbility": {
+        "color": "green",
+        "category": "identity",
         "name": "Principle of the Nomad",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome a situation where you can apply lessons from the road and use you Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XF7yySg0fPw06OCt"
       }
     }
   },

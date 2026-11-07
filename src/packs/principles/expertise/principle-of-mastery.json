@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "expertise",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.MFuoy5MwfB2lSHvD",
       "greenAbility": {
+        "color": "green",
+        "category": "expertise",
         "name": "Principle of Mastery",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome in a situation that uses your powers in a new way and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MFuoy5MwfB2lSHvD"
       }
     }
   },

@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "identity",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.Yc0C9S4MdDLvV1eh",
       "greenAbility": {
+        "color": "green",
+        "category": "identity",
         "name": "Principle of Levity",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome a dire situation where your jokes prevent demoralization and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Yc0C9S4MdDLvV1eh"
       }
     }
   },

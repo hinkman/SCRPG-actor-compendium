@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "identity",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.9YvAnxqgQWVKjFIK",
       "greenAbility": {
+        "color": "green",
+        "category": "identity",
         "name": "Principle of the Spotless Mind",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome a situation where being free of the past is useful and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9YvAnxqgQWVKjFIK"
       }
     }
   },

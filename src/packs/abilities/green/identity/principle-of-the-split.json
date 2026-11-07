@@ -1,0 +1,47 @@
+{
+  "name": "Principle of the Split",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome a situation that benefits from having a completely new outlook and use your Max die. You and each of your allies gain a hero point.</p>"
+  },
+  "effects": [],
+  "folder": "tpruP4x9HDxAgsWc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "category": "identity",
+      "source": {
+        "itemType": "principles",
+        "category": "identity"
+      },
+      "gameTextTemplate": "Overcome a situation that benefits from having a completely new outlook and use your Max die. You and each of your allies gain a hero point.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "tVhyrvG7kEHVqGlh",
+  "_key": "!items!tVhyrvG7kEHVqGlh"
+}

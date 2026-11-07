@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "esoteric",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.JS41bOzjqG2kCOVs",
       "greenAbility": {
+        "color": "green",
+        "category": "esoteric",
         "name": "Principle of Fauna",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome with the aid of local fauna and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JS41bOzjqG2kCOVs"
       }
     }
   },

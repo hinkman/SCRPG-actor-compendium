@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "identity",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.tELuqPtCp3j7nkfj",
       "greenAbility": {
+        "color": "green",
+        "category": "identity",
         "name": "Principle of Savagery",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome a situation that taps into your primal nature and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tELuqPtCp3j7nkfj"
       }
     }
   },

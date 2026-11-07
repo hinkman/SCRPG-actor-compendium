@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "responsibility",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.qrWFeE91dKPqCHQi",
       "greenAbility": {
+        "color": "green",
+        "category": "responsibility",
         "name": "Principle of the Detective",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome to learn hidden information and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qrWFeE91dKPqCHQi"
       }
     }
   },

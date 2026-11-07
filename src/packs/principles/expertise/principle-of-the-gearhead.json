@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "expertise",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.ACf7m9mlmqaj9GdS",
       "greenAbility": {
+        "color": "green",
+        "category": "expertise",
         "name": "Principle of the Gearhead",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome a technological challenge and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ACf7m9mlmqaj9GdS"
       }
     }
   },

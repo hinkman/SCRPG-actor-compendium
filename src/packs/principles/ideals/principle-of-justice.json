@@ -16,18 +16,12 @@
   "flags": {
     "scrpg-actor-compendium": {
       "category": "ideals",
+      "greenAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.zIYiKcFhSxbi4YFH",
       "greenAbility": {
+        "color": "green",
+        "category": "ideals",
         "name": "Principle of Justice",
-        "type": "A",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "gameText": "<p>Overcome to stop an act of injustice in progress and use your Max die. You and each of your allies gain a hero point.</p>"
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zIYiKcFhSxbi4YFH"
       }
     }
   },
