@@ -14,17 +14,30 @@ Hooks.once("init", () => {
 });
 
 /**
- * Capture drop events on SCRPG actor sheets so principle drops can detect
- * which principle column was targeted.
+ * Wrap the sheet drop handler so principle/personality/archetype/power-source
+ * drops still create linked abilities under Application V2. Slot detection must
+ * run synchronously against the live drop event — composedPath() is empty after await.
  */
-Hooks.on("renderSCRPGCharacterSheet", (sheet, element) => {
-    const root = element instanceof HTMLElement ? element : sheet.element;
-    if (!root || root.dataset.scrpgCompendiumDropBound) return;
-    root.dataset.scrpgCompendiumDropBound = "1";
-    root.addEventListener("drop", event => {
-        sheet._scrpgCompendiumDropEvent = event;
-    }, true);
+Hooks.on("renderSCRPGCharacterSheet", sheet => {
+    patchSheetDropItem(sheet);
 });
+
+function patchSheetDropItem(sheet) {
+    if (sheet._scrpgCompendiumDropPatched) return;
+    const original = sheet._onDropItem;
+    if (typeof original !== "function") return;
+
+    sheet._scrpgCompendiumDropPatched = true;
+    sheet._onDropItem = async function(event, data) {
+        const principleSlot = principleSlotFromEvent(event);
+        const result = await original.call(this, event, data);
+        await handlePrincipleDrop(this.actor, this, data, principleSlot);
+        await handlePersonalityDrop(this.actor, this, data);
+        await handleArchetypeDrop(this.actor, this, data);
+        await handlePowerSourceDrop(this.actor, this, data);
+        return result;
+    };
+}
 
 /**
  * Show linked abilities on principle/personality sheets, and inject
@@ -306,17 +319,6 @@ async function applyAbilitySlotSelection(item, token, chosenId) {
     });
 }
 
-/**
- * When a principle or personality from this module is dropped onto a hero,
- * also create its linked ability on the actor.
- */
-Hooks.on("dropActorSheetData", (actor, sheet, data) => {
-    void handlePrincipleDrop(actor, sheet, data);
-    void handlePersonalityDrop(actor, sheet, data);
-    void handleArchetypeDrop(actor, sheet, data);
-    void handlePowerSourceDrop(actor, sheet, data);
-});
-
 async function renderArchetypeAbilities(sheet, element) {
     try {
         const item = sheet.document ?? sheet.item;
@@ -528,11 +530,12 @@ async function handlePersonalityDrop(actor, sheet, data) {
     }
 }
 
-async function handlePrincipleDrop(actor, sheet, data) {
+async function handlePrincipleDrop(actor, sheet, data, slot = null) {
     try {
         if (!actor?.isOwner) return;
         if (actor.type !== "hero") return;
         if (data?.type !== "Item") return;
+        if (!slot) return;
 
         const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "principles") return;
@@ -540,9 +543,9 @@ async function handlePrincipleDrop(actor, sheet, data) {
         const uuid = principleGreenAbilityUuid(item);
         if (!uuid) return;
 
-        const event = sheet?._scrpgCompendiumDropEvent;
-        const slot = principleSlotFromEvent(event);
-        if (!slot) return;
+        const dedupeKey = `${actor.uuid}:${slot}:${uuid}`;
+        if (sheet?._scrpgPrincipleDropKey === dedupeKey) return;
+        if (sheet) sheet._scrpgPrincipleDropKey = dedupeKey;
 
         const ability = await fromUuid(uuid);
         if (!ability) {
@@ -578,12 +581,33 @@ async function handlePrincipleDrop(actor, sheet, data) {
 
 function principleSlotFromEvent(event) {
     if (!event) return null;
+
     const path = typeof event.composedPath === "function" ? event.composedPath() : [];
-    for (const node of path) {
-        const className = node?.className;
-        if (!className || typeof className !== "string") continue;
-        if (className.includes("DroppableFirstPrinciple")) return "first";
-        if (className.includes("DroppableSecondPrinciple")) return "second";
+    const nodes = path.length
+        ? path
+        : walkDropAncestors(event.target || event.srcElement);
+
+    for (const node of nodes) {
+        if (!node?.classList) {
+            const className = node?.className;
+            if (className == null || className === "") continue;
+            const text = String(className);
+            if (text.includes("DroppableFirstPrinciple")) return "first";
+            if (text.includes("DroppableSecondPrinciple")) return "second";
+            continue;
+        }
+        if (node.classList.contains("DroppableFirstPrinciple")) return "first";
+        if (node.classList.contains("DroppableSecondPrinciple")) return "second";
     }
     return null;
+}
+
+function walkDropAncestors(start) {
+    const nodes = [];
+    let node = start;
+    while (node) {
+        nodes.push(node);
+        node = node.parentElement;
+    }
+    return nodes;
 }
