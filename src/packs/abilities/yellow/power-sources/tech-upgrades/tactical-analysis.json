@@ -1,0 +1,48 @@
+{
+  "name": "Tactical Analysis",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When Attacked, treat the amount of damage you take as a Boost action for yourself.</p>"
+  },
+  "effects": [],
+  "folder": "qKzqQ1spZ4HYzw1B",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "tech-upgrades",
+      "source": {
+        "itemType": "powerSources",
+        "number": 10
+      },
+      "gameTextTemplate": "When Attacked, treat the amount of damage you take as a Boost action for yourself.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wnLg88vMMkfCOAuo",
+  "_key": "!items!wnLg88vMMkfCOAuo"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Twist Reality",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.</p>"
+  },
+  "effects": [],
+  "folder": "3CafjjZkPATWSV9h",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "higher-power",
+      "source": {
+        "itemType": "powerSources",
+        "number": 19
+      },
+      "gameTextTemplate": "After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "xqo2qx2qRIUiZRtH",
+  "_key": "!items!xqo2qx2qRIUiZRtH"
+}

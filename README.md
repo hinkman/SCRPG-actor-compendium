@@ -2,22 +2,24 @@
 
 Unofficial compendium module for [Foundry VTT](https://foundryvtt.com/) using the [scrpg-foundry](https://github.com/hinkman/SCRPG-foundry) system. A copy of Sentinel Comics: The Roleplaying Game is required. This module does not replace the rules.
 
-Version 0.7.0 contains:
+Version 0.8.0 contains:
 
 - Powers (rulebook pages 123–126)
 - Qualities (rulebook pages 127–128)
 - Principles (rulebook pages 132–149)
 - Personalities (rulebook pages 109–112)
 - Archetypes (rulebook pages 81–106), with table numbers and UUID-linked powers/qualities in descriptions
+- Power Sources (rulebook pages 56–70), with table numbers, UUID-linked powers, and Yellow/Green ability links
 - Abilities in the shared **SCRPG Abilities** pack:
   - **Green → Principles** — principle Green abilities
+  - **Green / Yellow → Power Sources** — power-source abilities by color
   - **Green / Yellow / Red → Archetypes** — archetype abilities by color
   - **Red** — Red abilities from pp. 114–119 (power/quality category folders)
   - **Out → Personalities** — grey Out abilities
 
 Entries stay in their Foundry compendia. Drag items onto a hero when needed. Die size for powers and qualities starts at `d4`.
 
-Principle and personality sheets show linked abilities. Archetype descriptions are split into **Powers/Qualities**, **Abilities**, **Principle**, **Additional Info**, and **Personality** sections, with ability UUID links inline under each grant instruction and explicit personality dice. Drops create those linked abilities on the hero. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
+Principle and personality sheets show linked abilities. Archetype descriptions are split into **Powers/Qualities**, **Abilities**, **Principle**, **Additional Info**, and **Personality** sections. Power Source descriptions use **Powers**, **Abilities**, **Additional Info**, and **Archetype** (with selection dice). Drops create linked abilities on the hero. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
 
 ## Install
 

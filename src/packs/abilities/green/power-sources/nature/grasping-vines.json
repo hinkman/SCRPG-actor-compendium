@@ -1,0 +1,53 @@
+{
+  "name": "Grasping Vines",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder using [power]. Use your Max die. You may split that penalty across multiple nearby targets.</p>"
+  },
+  "effects": [],
+  "folder": "rrNIHsQ1jEFhRUxL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "nature",
+      "source": {
+        "itemType": "powerSources",
+        "number": 6
+      },
+      "gameTextTemplate": "Hinder using [power]. Use your Max die. You may split that penalty across multiple nearby targets.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "q9CTr0ZO8Z4Miz3q",
+  "_key": "!items!q9CTr0ZO8Z4Miz3q"
+}

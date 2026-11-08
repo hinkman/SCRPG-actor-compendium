@@ -1,0 +1,1029 @@
+[
+  {
+    "number": 1,
+    "name": "Accident",
+    "flavor": "An external source caused you to manifest powers or perhaps the cure for an accident caused it.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Materials powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d12",
+      "d6"
+    ],
+    "description": "An external source caused you to manifest powers or perhaps the cure for an accident caused it.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Materials powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d12, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An external source caused you to manifest powers or perhaps the cure for an accident caused it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR]{Area Alteration}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe]{Inflict}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF]{Reflexive Burst}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN]{Ambush Awareness}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1]{Change in Circumstance}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep]{Immunity}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d12, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Area Alteration",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR"
+      },
+      {
+        "color": "yellow",
+        "name": "Inflict",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe"
+      },
+      {
+        "color": "yellow",
+        "name": "Reflexive Burst",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF"
+      },
+      {
+        "color": "green",
+        "name": "Ambush Awareness",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN"
+      },
+      {
+        "color": "green",
+        "name": "Change in Circumstance",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1"
+      },
+      {
+        "color": "green",
+        "name": "Immunity",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "Training",
+    "flavor": "The source of your powers is the result of your hard work, dedication, and long hours.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Gadgets",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Intellectual powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "When you move to the next step, select an extra quality from that archetype's list at d8."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "The source of your powers is the result of your hard work, dedication, and long hours.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Gadgets\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Intellectual powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nWhen you move to the next step, select an extra quality from that archetype's list at d8.\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The source of your powers is the result of your hard work, dedication, and long hours.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.CjqhY7vBfkJQyhw4]{Gadgets}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Intellectual powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY]{Always Be Prepared}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6]{Reactive Field}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP]{Flowing Fight}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>When you move to the next step, select an extra quality from that archetype's list at d8.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Always Be Prepared",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY"
+      },
+      {
+        "color": "yellow",
+        "name": "Reactive Field",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6"
+      },
+      {
+        "color": "yellow",
+        "name": "Flowing Fight",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "Genetic",
+    "flavor": "Mutations in your DNA have caused you to develop unusual abilities.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Agility",
+      "Flight",
+      "Signature Weaponry",
+      "Strength",
+      "Vitality",
+      "Select from Intellectual powers category",
+      "Select from Psychic powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "Mutations in your DNA have caused you to develop unusual abilities.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Agility\n• Flight\n• Signature Weaponry\n• Strength\n• Vitality\n• Select from Intellectual powers category\n• Select from Psychic powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Mutations in your DNA have caused you to develop unusual abilities.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.iJ4lw3vOpXIC2Mwp]{Agility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G]{Strength}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz]{Vitality}</p><p>• Select from Intellectual powers category</p><p>• Select from Psychic powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj]{Danger Sense}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI]{Adaptive}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO]{Area Assault}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs]{Growth}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R]{Rally}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Danger Sense",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj"
+      },
+      {
+        "color": "yellow",
+        "name": "Adaptive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI"
+      },
+      {
+        "color": "yellow",
+        "name": "Area Assault",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO"
+      },
+      {
+        "color": "green",
+        "name": "Growth",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs"
+      },
+      {
+        "color": "green",
+        "name": "Rally",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "name": "Experimentation",
+    "flavor": "Your powers were created in a lab and had some unexpected side effects.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Mobility powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d8",
+      "d8",
+      "d8"
+    ],
+    "description": "Your powers were created in a lab and had some unexpected side effects.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Mobility powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d8, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Your powers were created in a lab and had some unexpected side effects.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE]{Personal Upgrade}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z]{Misdirection}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK]{Throw Minion}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB]{Overpower}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD]{Unflagging}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d8, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Personal Upgrade",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE"
+      },
+      {
+        "color": "yellow",
+        "name": "Misdirection",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z"
+      },
+      {
+        "color": "yellow",
+        "name": "Throw Minion",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK"
+      },
+      {
+        "color": "green",
+        "name": "Overpower",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB"
+      },
+      {
+        "color": "green",
+        "name": "Unflagging",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "name": "Mystical",
+    "flavor": "Your magical training or alteration by magic gives you your powers.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Awareness",
+      "Flight",
+      "Presence",
+      "Signature Weaponry",
+      "Teleportation",
+      "Select from Elemental/Energy powers category",
+      "Select from Materials powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Gain an Information quality and assign a d10 to it."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "Your magical training or alteration by magic gives you your powers.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Awareness\n• Flight\n• Presence\n• Signature Weaponry\n• Teleportation\n• Select from Elemental/Energy powers category\n• Select from Materials powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain an Information quality and assign a d10 to it.\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Your magical training or alteration by magic gives you your powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J]{Presence}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6]{Teleportation}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw]{Modification Wave}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm]{Mystic Redirection}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd]{Sever Link}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain an Information quality and assign a d10 to it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Modification Wave",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw"
+      },
+      {
+        "color": "yellow",
+        "name": "Mystic Redirection",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm"
+      },
+      {
+        "color": "yellow",
+        "name": "Sever Link",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "name": "Nature",
+    "flavor": "The power of nature flows through you.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Animal Control",
+      "Cold",
+      "Electricity",
+      "Fire",
+      "Flight",
+      "Leaping",
+      "Shapeshifting",
+      "Swimming",
+      "Swinging",
+      "Wall-Crawling",
+      "Weather",
+      "Select from Athletic powers category",
+      "Select from Materials powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "The power of nature flows through you.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Animal Control\n• Cold\n• Electricity\n• Fire\n• Flight\n• Leaping\n• Shapeshifting\n• Swimming\n• Swinging\n• Wall-Crawling\n• Weather\n• Select from Athletic powers category\n• Select from Materials powers category\n\nGain two of these Yellow abilities:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The power of nature flows through you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kjMIs092vuIRV2Bq]{Animal Control}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO]{Leaping}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QBoHOQPJB8bWcXDl]{Shapeshifting}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE]{Swimming}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5]{Swinging}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.bEqe9rU47wZ26mpV]{Wall-Crawling}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY]{Weather}</p><p>• Select from Athletic powers category</p><p>• Select from Materials powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv]{Call to the Wild}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW]{Predator's Eye}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d]{Wild Strength}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q]{Grasping Vines}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q]{Natural Weapon}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Call to the Wild",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv"
+      },
+      {
+        "color": "yellow",
+        "name": "Predator's Eye",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW"
+      },
+      {
+        "color": "yellow",
+        "name": "Wild Strength",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d"
+      },
+      {
+        "color": "green",
+        "name": "Grasping Vines",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q"
+      },
+      {
+        "color": "green",
+        "name": "Natural Weapon",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "name": "Relic",
+    "flavor": "An object (or collection of objects) of mystical significance either grants you powers or altered you to give you powers.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Awareness",
+      "Intuition",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Elemental/Energy powers category",
+      "Select from Materials powers category",
+      "Select from Mobility powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d10",
+      "d6"
+    ],
+    "description": "An object (or collection of objects) of mystical significance either grants you powers or altered you to give you powers.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Awareness\n• Intuition\n• Signature Vehicle\n• Signature Weaponry\n• Select from Elemental/Energy powers category\n• Select from Materials powers category\n• Select from Mobility powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d10, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An object (or collection of objects) of mystical significance either grants you powers or altered you to give you powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC]{Harvest Life Force}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq]{Magical Shield}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp]{Momentary Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV]{Relic Drain}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4]{Draw Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7]{Punishment}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d10, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Harvest Life Force",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC"
+      },
+      {
+        "color": "yellow",
+        "name": "Magical Shield",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq"
+      },
+      {
+        "color": "yellow",
+        "name": "Momentary Power",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp"
+      },
+      {
+        "color": "yellow",
+        "name": "Relic Drain",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV"
+      },
+      {
+        "color": "green",
+        "name": "Draw Power",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4"
+      },
+      {
+        "color": "green",
+        "name": "Punishment",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "name": "Powered Suit",
+    "flavor": "An engineered suit provides you with your powers, and may even be important to keeping you alive.",
+    "powersIntro": "Assign one die to the power Power Suit.\nAssign the rest of the dice you rolled at the end of the background step to the following powers:",
+    "powers": [
+      "Awareness",
+      "Cold",
+      "Elasticity",
+      "Electricity",
+      "Fire",
+      "Lightning Calculator",
+      "Nuclear",
+      "Part Detachment",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Mobility powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d6",
+      "d6"
+    ],
+    "description": "An engineered suit provides you with your powers, and may even be important to keeping you alive.\n\nAssign one die to the power Power Suit.\nAssign the rest of the dice you rolled at the end of the background step to the following powers:\n• Awareness\n• Cold\n• Elasticity\n• Electricity\n• Fire\n• Lightning Calculator\n• Nuclear\n• Part Detachment\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Mobility powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d6, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An engineered suit provides you with your powers, and may even be important to keeping you alive.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign one die to the power @UUID[Compendium.scrpg-actor-compendium.powers.Item.mbWy2aKC05gxmL8C]{Power Suit}.</p><p>Assign the rest of the dice you rolled at the end of the background step to the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.GTlpRqwtk6QMb9Hi]{Elasticity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DEqpcIHX8qEVJeag]{Lightning Calculator}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb]{Nuclear}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.g16MUwFTT08IfvEm]{Part Detachment}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88]{Energy Converter}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL]{Explosive Attack}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu]{Onboard Upgrade}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV]{Damage Reduction}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG]{Diagnostic Subroutine}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d6, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Energy Converter",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88"
+      },
+      {
+        "color": "yellow",
+        "name": "Explosive Attack",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL"
+      },
+      {
+        "color": "yellow",
+        "name": "Onboard Upgrade",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu"
+      },
+      {
+        "color": "green",
+        "name": "Damage Reduction",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV"
+      },
+      {
+        "color": "green",
+        "name": "Diagnostic Subroutine",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "name": "Radiation",
+    "flavor": "Exposure to radiation has charged your system and given you new abilities.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Nuclear",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Self Control powers category",
+      "Select from Technological powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "description": "Exposure to radiation has charged your system and given you new abilities.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Nuclear\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Self Control powers category\n• Select from Technological powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Exposure to radiation has charged your system and given you new abilities.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb]{Nuclear}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA]{Radioactive Recharge}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9]{Unstable Reaction}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361]{Wither}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8]{Charged Up}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0]{Dangerous Lash}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa]{Radioactive Aura}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Radioactive Recharge",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA"
+      },
+      {
+        "color": "yellow",
+        "name": "Unstable Reaction",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9"
+      },
+      {
+        "color": "yellow",
+        "name": "Wither",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361"
+      },
+      {
+        "color": "green",
+        "name": "Charged Up",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8"
+      },
+      {
+        "color": "green",
+        "name": "Dangerous Lash",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0"
+      },
+      {
+        "color": "green",
+        "name": "Radioactive Aura",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "name": "Tech Upgrades",
+    "flavor": "You have technological upgrades and implants that give you your powers.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Mobility powers category",
+      "Select from Technological powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "You have technological upgrades and implants that give you your powers.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Mobility powers category\n• Select from Technological powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have technological upgrades and implants that give you your powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog]{Energy Burst}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn]{Recharge}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp]{Techno-Absorb}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo]{Tactical Analysis}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0]{Indiscriminate Fabrication}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY]{Organi-Hack}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Energy Burst",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog"
+      },
+      {
+        "color": "yellow",
+        "name": "Recharge",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn"
+      },
+      {
+        "color": "yellow",
+        "name": "Techno-Absorb",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp"
+      },
+      {
+        "color": "yellow",
+        "name": "Tactical Analysis",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo"
+      },
+      {
+        "color": "green",
+        "name": "Indiscriminate Fabrication",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0"
+      },
+      {
+        "color": "green",
+        "name": "Organi-Hack",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "name": "Supernatural",
+    "flavor": "In some way, you have pierced the veil of life and reality and brought back power.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Awareness",
+      "Cold",
+      "Electricity",
+      "Fire",
+      "Infernal",
+      "Plants",
+      "Presence",
+      "Radiant",
+      "Strength",
+      "Transmutation",
+      "Vitality",
+      "Weather",
+      "Select from Mobility powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Gain one power not on the above list. Assign it a d10."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d10",
+      "d6"
+    ],
+    "description": "In some way, you have pierced the veil of life and reality and brought back power.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Awareness\n• Cold\n• Electricity\n• Fire\n• Infernal\n• Plants\n• Presence\n• Radiant\n• Strength\n• Transmutation\n• Vitality\n• Weather\n• Select from Mobility powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one power not on the above list. Assign it a d10.\n\nRoll d10, d10, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>In some way, you have pierced the veil of life and reality and brought back power.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC]{Infernal}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.8UiThcI7PJaRNavE]{Plants}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J]{Presence}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu]{Radiant}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G]{Strength}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz]{Transmutation}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz]{Vitality}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY]{Weather}</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB]{Area Healing}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow]{Mass Modification}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv]{Personal Upgrade}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB]{Reach through Veil}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain one power not on the above list. Assign it a d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d10, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Area Healing",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB"
+      },
+      {
+        "color": "yellow",
+        "name": "Mass Modification",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow"
+      },
+      {
+        "color": "yellow",
+        "name": "Personal Upgrade",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv"
+      },
+      {
+        "color": "yellow",
+        "name": "Reach through Veil",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "name": "Artificial Being",
+    "flavor": "You were created, not born, and your abilities simply stem from your makeup.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Inventions",
+      "Robotics",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Mobility powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "You were created, not born, and your abilities simply stem from your makeup.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Inventions\n• Robotics\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Mobility powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were created, not born, and your abilities simply stem from your makeup.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1]{Inventions}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB]{Robotics}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.lnLDxlGSgYHnyn4k]{Created Immunity}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ARWVQAsAH51XPtSP]{Multiple Assault}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6AoOtIbrr9DlJqZq]{Recalculating...}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.T8eKmRY72OBHNMl2]{Created Form}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP]{Intentionality}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Created Immunity",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.lnLDxlGSgYHnyn4k"
+      },
+      {
+        "color": "yellow",
+        "name": "Multiple Assault",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ARWVQAsAH51XPtSP"
+      },
+      {
+        "color": "yellow",
+        "name": "Recalculating...",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6AoOtIbrr9DlJqZq"
+      },
+      {
+        "color": "green",
+        "name": "Created Form",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.T8eKmRY72OBHNMl2"
+      },
+      {
+        "color": "green",
+        "name": "Intentionality",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP"
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "name": "Cursed",
+    "flavor": "A supernatural curse has been inflicted upon you or your family line, granting both boons and banes.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Materials powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d12",
+      "d6"
+    ],
+    "description": "A supernatural curse has been inflicted upon you or your family line, granting both boons and banes.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Materials powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d12, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>A supernatural curse has been inflicted upon you or your family line, granting both boons and banes.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7]{Attunement}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95]{Costly Strength}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X]{Cursed Resolve}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38]{Double Edged Luck}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB]{Extremes}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d12, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Attunement",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7"
+      },
+      {
+        "color": "yellow",
+        "name": "Costly Strength",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95"
+      },
+      {
+        "color": "yellow",
+        "name": "Cursed Resolve",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X"
+      },
+      {
+        "color": "green",
+        "name": "Double Edged Luck",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38"
+      },
+      {
+        "color": "green",
+        "name": "Extremes",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "name": "Alien",
+    "flavor": "You are not from Earth, though your powers might not be all that unusual where you come from. Or you've been granted abilities by an extraterrestrial source.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Mobility powers category",
+      "Select from Psychic powers category",
+      "Select from Technological powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Then, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8."
+    ],
+    "archetypeDice": [
+      "d8",
+      "d8",
+      "d8"
+    ],
+    "description": "You are not from Earth, though your powers might not be all that unusual where you come from. Or you've been granted abilities by an extraterrestrial source.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Signature Vehicle\n• Signature Weaponry\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Mobility powers category\n• Select from Psychic powers category\n• Select from Technological powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nThen, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8.\n\nRoll d8, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You are not from Earth, though your powers might not be all that unusual where you come from. Or you've been granted abilities by an extraterrestrial source.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe]{Alien Boost}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX]{Empower and Repair}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem]{Halt}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Then, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d8, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Alien Boost",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe"
+      },
+      {
+        "color": "yellow",
+        "name": "Empower and Repair",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX"
+      },
+      {
+        "color": "yellow",
+        "name": "Halt",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "name": "Genius",
+    "flavor": "The source of your powers is your brilliant mind. You have put your staggering intellect to the task of fighting crime.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Inventions",
+      "Robotics",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Intellectual powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Select an extra quality from the Information or Mental quality categories at d10."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d6",
+      "d6"
+    ],
+    "description": "The source of your powers is your brilliant mind. You have put your staggering intellect to the task of fighting crime.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Inventions\n• Robotics\n• Signature Vehicle\n• Signature Weaponry\n• Select from Intellectual powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nSelect an extra quality from the Information or Mental quality categories at d10.\n\nRoll d10, d6, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The source of your powers is your brilliant mind. You have put your staggering intellect to the task of fighting crime.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1]{Inventions}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB]{Robotics}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Intellectual powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a]{A Plan For Everything}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v]{Expanded Mind}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG]{Overwhelming Vision}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Select an extra quality from the Information or Mental quality categories at d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d6, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "A Plan For Everything",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a"
+      },
+      {
+        "color": "yellow",
+        "name": "Expanded Mind",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v"
+      },
+      {
+        "color": "yellow",
+        "name": "Overwhelming Vision",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "name": "Cosmos",
+    "flavor": "Exposure to forces from beyond the stars have changed you.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Cosmic",
+      "Intuition",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Select from Mobility powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category",
+      "Select from Technological powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Downgrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "Exposure to forces from beyond the stars have changed you.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Cosmic\n• Intuition\n• Signature Vehicle\n• Signature Weaponry\n• Select from Mobility powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n• Select from Technological powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nDowngrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size.\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Exposure to forces from beyond the stars have changed you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho]{Cosmic}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq]{Cosmic Ray Absorption}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ]{Encourage}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e]{Mass Effect}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Downgrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Cosmic Ray Absorption",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq"
+      },
+      {
+        "color": "yellow",
+        "name": "Encourage",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ"
+      },
+      {
+        "color": "yellow",
+        "name": "Mass Effect",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "name": "Extradimensional",
+    "flavor": "Exposure to side dimensions like the Realm of Discord has left its mark on you.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Cosmic",
+      "Duplication",
+      "Infernal",
+      "Intangibility",
+      "Invisibility",
+      "Radiant",
+      "Signature Vehicle",
+      "Signature Weaponry",
+      "Transmutation",
+      "Teleportation",
+      "Select from Intellectual powers category",
+      "Select from Psychic powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d12",
+      "d6"
+    ],
+    "description": "Exposure to side dimensions like the Realm of Discord has left its mark on you.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Cosmic\n• Duplication\n• Infernal\n• Intangibility\n• Invisibility\n• Radiant\n• Signature Vehicle\n• Signature Weaponry\n• Transmutation\n• Teleportation\n• Select from Intellectual powers category\n• Select from Psychic powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d12, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Exposure to side dimensions like the Realm of Discord has left its mark on you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho]{Cosmic}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.sFnNvNhWv7cPtIeb]{Duplication}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC]{Infernal}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5r7HjDoWoSVm9d5e]{Intangibility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.pjArTyAxecwPdHvf]{Invisibility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu]{Radiant}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz]{Transmutation}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6]{Teleportation}</p><p>• Select from Intellectual powers category</p><p>• Select from Psychic powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.L14lvKwYoyb4t5xB]{Absorb Essence}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.35hDMOUNrgGJYZD5]{Aura of Pain}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.vjpYFgWLZxvFAn9F]{Bizarre Strike}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.S3HX3L1AgWZ2qK2V]{Attune}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp]{Extrasensory Awareness}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d12, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Absorb Essence",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.L14lvKwYoyb4t5xB"
+      },
+      {
+        "color": "yellow",
+        "name": "Aura of Pain",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.35hDMOUNrgGJYZD5"
+      },
+      {
+        "color": "yellow",
+        "name": "Bizarre Strike",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vjpYFgWLZxvFAn9F"
+      },
+      {
+        "color": "green",
+        "name": "Attune",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S3HX3L1AgWZ2qK2V"
+      },
+      {
+        "color": "green",
+        "name": "Extrasensory Awareness",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp"
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "name": "Unknown",
+    "flavor": "You don't know the source of your powers: they either just manifested one day, or hint at a bigger mystery.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Select from Elemental/Energy powers category",
+      "Select from Intellectual powers category",
+      "Select from Materials powers category",
+      "Select from Self Control powers category",
+      "Select from Technological powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Gain a Social quality at d10."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "description": "You don't know the source of your powers: they either just manifested one day, or hint at a bigger mystery.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Select from Elemental/Energy powers category\n• Select from Intellectual powers category\n• Select from Materials powers category\n• Select from Self Control powers category\n• Select from Technological powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain a Social quality at d10.\n\nRoll d10, d8, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You don't know the source of your powers: they either just manifested one day, or hint at a bigger mystery.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Materials powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM]{Brainstorm}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX]{Strange Enhancement}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO]{Volatile Creations}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain a Social quality at d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Brainstorm",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM"
+      },
+      {
+        "color": "yellow",
+        "name": "Strange Enhancement",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX"
+      },
+      {
+        "color": "yellow",
+        "name": "Volatile Creations",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "name": "Higher Power",
+    "flavor": "You have been chosen by a higher force or are a being from another realm. Your powers are a reflection of your calling or true form.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Select from Athletic powers category",
+      "Select from Elemental/Energy powers category",
+      "Select from Materials powers category",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": "Gain one of these Green abilities:",
+    "additionalInfo": [],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "description": "You have been chosen by a higher force or are a being from another realm. Your powers are a reflection of your calling or true form.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Select from Athletic powers category\n• Select from Elemental/Energy powers category\n• Select from Materials powers category\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one of these Green abilities:\n\nRoll d10, d8, d8 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have been chosen by a higher force or are a being from another realm. Your powers are a reflection of your calling or true form.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV]{Command Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q]{Dangerous Explosion}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI]{Embolden}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF]{Resolve}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv]{Resilience}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH]{Twist Reality}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Command Power",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV"
+      },
+      {
+        "color": "yellow",
+        "name": "Dangerous Explosion",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q"
+      },
+      {
+        "color": "yellow",
+        "name": "Embolden",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI"
+      },
+      {
+        "color": "yellow",
+        "name": "Resolve",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF"
+      },
+      {
+        "color": "green",
+        "name": "Resilience",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv"
+      },
+      {
+        "color": "green",
+        "name": "Twist Reality",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "name": "The Multiverse",
+    "flavor": "You have traveled or been flung through the realms of time and space. Without The Multiverse itself, you would not be who you are now.",
+    "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+    "powers": [
+      "Awareness",
+      "Cosmic",
+      "Intuition",
+      "Speed",
+      "Teleportation",
+      "Select from Psychic powers category",
+      "Select from Self Control powers category"
+    ],
+    "yellowGrant": "Gain two of these Yellow abilities, each using a different power:",
+    "greenGrant": null,
+    "additionalInfo": [
+      "Gain one extra power from any category at d6."
+    ],
+    "archetypeDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "description": "You have traveled or been flung through the realms of time and space. Without The Multiverse itself, you would not be who you are now.\n\nAssign all the dice you rolled at the end of the background step to any of the following powers:\n• Awareness\n• Cosmic\n• Intuition\n• Speed\n• Teleportation\n• Select from Psychic powers category\n• Select from Self Control powers category\n\nGain two of these Yellow abilities, each using a different power:\n\nGain one extra power from any category at d6.\n\nRoll d10, d8, d6 for archetype selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have traveled or been flung through the realms of time and space. Without The Multiverse itself, you would not be who you are now.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho]{Cosmic}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ]{Speed}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6]{Teleportation}</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD]{Power From Beyond}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2]{Respond In Kind}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN]{Dread Pallor}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl]{Reality Scorned}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain one extra power from any category at d6.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>",
+    "abilities": [
+      {
+        "color": "yellow",
+        "name": "Power From Beyond",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD"
+      },
+      {
+        "color": "yellow",
+        "name": "Respond In Kind",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2"
+      },
+      {
+        "color": "yellow",
+        "name": "Dread Pallor",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN"
+      },
+      {
+        "color": "yellow",
+        "name": "Reality Scorned",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "name": "Mystical",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Your magical training or alteration by magic gives you your powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J]{Presence}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6]{Teleportation}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw]{Modification Wave}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm]{Mystic Redirection}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd]{Sever Link}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain an Information quality and assign a d10 to it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 5,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Modification Wave",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw"
+        },
+        {
+          "color": "yellow",
+          "name": "Mystic Redirection",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm"
+        },
+        {
+          "color": "yellow",
+          "name": "Sever Link",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "AFt3a0sOTRYPyykw",
+  "_key": "!items!AFt3a0sOTRYPyykw"
+}

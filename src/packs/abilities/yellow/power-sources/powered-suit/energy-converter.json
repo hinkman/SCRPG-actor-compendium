@@ -1,0 +1,53 @@
+{
+  "name": "Energy Converter",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you take damage from [element/energy], treat the amount of damage you take as a Boost action for yourself.</p>"
+  },
+  "effects": [],
+  "folder": "kj7tn4GhC2SKCStL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "powered-suit",
+      "source": {
+        "itemType": "powerSources",
+        "number": 8
+      },
+      "gameTextTemplate": "When you take damage from [element/energy], treat the amount of damage you take as a Boost action for yourself.",
+      "slots": [
+        {
+          "token": "[element/energy]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "NLHMcOM0XxyS8T88",
+  "_key": "!items!NLHMcOM0XxyS8T88"
+}

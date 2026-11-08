@@ -1,0 +1,53 @@
+{
+  "name": "Brainstorm",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power]. Hit one target using your Min die, another target with your Mid die, and Boost using your Max die.</p>"
+  },
+  "effects": [],
+  "folder": "JrPSaQwvm4c8w1fc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "unknown",
+      "source": {
+        "itemType": "powerSources",
+        "number": 18
+      },
+      "gameTextTemplate": "Attack using [power]. Hit one target using your Min die, another target with your Mid die, and Boost using your Max die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Zj4WbuK0hTdHRxUM",
+  "_key": "!items!Zj4WbuK0hTdHRxUM"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Radioactive Aura",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When a new target enters the scene close to you, you may Attack it by rolling your single [power] die.</p>"
+  },
+  "effects": [],
+  "folder": "IpfqV3cgUmAjICoR",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "radiation",
+      "source": {
+        "itemType": "powerSources",
+        "number": 9
+      },
+      "gameTextTemplate": "When a new target enters the scene close to you, you may Attack it by rolling your single [power] die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "e78bNYzODuaZzcJa",
+  "_key": "!items!e78bNYzODuaZzcJa"
+}

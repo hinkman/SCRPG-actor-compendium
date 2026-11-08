@@ -34,6 +34,7 @@ Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPrincipleGreenAbility(sheet, element);
     void renderPersonalityOutAbility(sheet, element);
     void renderArchetypeAbilities(sheet, element);
+    void renderPowerSourceExtras(sheet, element);
     void renderAbilitySlotPickers(sheet, element);
 });
 
@@ -313,6 +314,7 @@ Hooks.on("dropActorSheetData", (actor, sheet, data) => {
     void handlePrincipleDrop(actor, sheet, data);
     void handlePersonalityDrop(actor, sheet, data);
     void handleArchetypeDrop(actor, sheet, data);
+    void handlePowerSourceDrop(actor, sheet, data);
 });
 
 async function renderArchetypeAbilities(sheet, element) {
@@ -398,6 +400,88 @@ async function handleArchetypeDrop(actor, sheet, data) {
         }
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to create archetype abilities`, err);
+    }
+}
+
+async function renderPowerSourceExtras(sheet, element) {
+    try {
+        const item = sheet.document ?? sheet.item;
+        if (!item || item.type !== "powerSources") return;
+
+        const root = element instanceof HTMLElement ? element : sheet.element;
+        if (!root) return;
+
+        if (!sheet._scrpgPowerSourceSized && typeof sheet.setPosition === "function") {
+            sheet._scrpgPowerSourceSized = true;
+            const height = sheet.position?.height ?? 0;
+            const width = sheet.position?.width ?? 0;
+            if (height <= 480 || width <= 520) {
+                sheet.setPosition({
+                    width: Math.max(width, 560),
+                    height: Math.max(height, 640)
+                });
+            }
+        }
+
+        const host = root.querySelector(".power-source") || root.querySelector(".sheet-content") || root;
+        host.querySelector(".scrpg-compendium-archetype-meta")?.remove();
+
+        const meta = item.flags?.[MODULE_ID] || {};
+        if (meta.number) {
+            const numberEl = document.createElement("div");
+            numberEl.className = "scrpg-compendium-archetype-meta";
+            numberEl.innerHTML = `<span class="label">Number</span> ${escapeHtml(String(meta.number))}`;
+            host.prepend(numberEl);
+        }
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to render power source sheet extras`, err);
+    }
+}
+
+async function handlePowerSourceDrop(actor, sheet, data) {
+    try {
+        if (!actor?.isOwner) return;
+        if (actor.type !== "hero") return;
+        if (data?.type !== "Item") return;
+
+        const item = await foundry.documents.Item.fromDropData(data);
+        if (item?.type !== "powerSources") return;
+
+        const refs = item.flags?.[MODULE_ID]?.abilities;
+        if (!Array.isArray(refs) || !refs.length) return;
+
+        const existing = actor.items.filter(owned =>
+            owned.type === "ability"
+            && owned.flags?.[MODULE_ID]?.fromPowerSource
+        );
+        if (existing.length) {
+            await actor.deleteEmbeddedDocuments("Item", existing.map(owned => owned.id));
+        }
+
+        const created = [];
+        for (const ref of refs) {
+            const ability = await fromUuid(ref.uuid);
+            if (!ability) {
+                console.warn(`${MODULE_ID} | Missing linked power source ability ${ref.uuid}`);
+                continue;
+            }
+            const dataObj = ability.toObject();
+            delete dataObj._id;
+            delete dataObj.folder;
+            dataObj.flags = dataObj.flags || {};
+            dataObj.flags[MODULE_ID] = {
+                ...(dataObj.flags[MODULE_ID] || {}),
+                fromPowerSource: item.name,
+                fromAbilityUuid: ref.uuid,
+                selections: {}
+            };
+            created.push(dataObj);
+        }
+        if (created.length) {
+            await actor.createEmbeddedDocuments("Item", created);
+        }
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to create power source abilities`, err);
     }
 }
 

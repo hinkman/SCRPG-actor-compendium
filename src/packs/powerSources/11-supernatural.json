@@ -1,0 +1,56 @@
+{
+  "name": "Supernatural",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>In some way, you have pierced the veil of life and reality and brought back power.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC]{Infernal}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.8UiThcI7PJaRNavE]{Plants}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J]{Presence}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu]{Radiant}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G]{Strength}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz]{Transmutation}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz]{Vitality}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY]{Weather}</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB]{Area Healing}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow]{Mass Modification}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv]{Personal Upgrade}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB]{Reach through Veil}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain one power not on the above list. Assign it a d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d10, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 11,
+      "archetypeDice": [
+        "d10",
+        "d10",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Area Healing",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB"
+        },
+        {
+          "color": "yellow",
+          "name": "Mass Modification",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow"
+        },
+        {
+          "color": "yellow",
+          "name": "Personal Upgrade",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv"
+        },
+        {
+          "color": "yellow",
+          "name": "Reach through Veil",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "xploSXxT7iO45kdd",
+  "_key": "!items!xploSXxT7iO45kdd"
+}

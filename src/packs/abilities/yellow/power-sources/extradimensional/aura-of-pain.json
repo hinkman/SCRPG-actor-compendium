@@ -1,0 +1,53 @@
+{
+  "name": "Aura of Pain",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack multiple targets using [power]. Then, take irreducible damage equal to the number of targets hit.</p>"
+  },
+  "effects": [],
+  "folder": "9bDeUlHG7RrwxsNK",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "extradimensional",
+      "source": {
+        "itemType": "powerSources",
+        "number": 17
+      },
+      "gameTextTemplate": "Attack multiple targets using [power]. Then, take irreducible damage equal to the number of targets hit.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "35hDMOUNrgGJYZD5",
+  "_key": "!items!35hDMOUNrgGJYZD5"
+}

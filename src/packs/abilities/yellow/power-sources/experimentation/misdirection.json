@@ -1,0 +1,53 @@
+{
+  "name": "Misdirection",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When a nearby hero in the Yellow or Red zone would take damage, Defend against that damage by rolling your single [power] die, then redirect any remaining damage to a nearby minion of your choice.</p>"
+  },
+  "effects": [],
+  "folder": "1QRwC7lipWmz6dEl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "experimentation",
+      "source": {
+        "itemType": "powerSources",
+        "number": 4
+      },
+      "gameTextTemplate": "When a nearby hero in the Yellow or Red zone would take damage, Defend against that damage by rolling your single [power] die, then redirect any remaining damage to a nearby minion of your choice.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "I3ey6SxXKb8PQn9Z",
+  "_key": "!items!I3ey6SxXKb8PQn9Z"
+}

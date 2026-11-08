@@ -1,0 +1,61 @@
+{
+  "name": "Genetic",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Mutations in your DNA have caused you to develop unusual abilities.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.iJ4lw3vOpXIC2Mwp]{Agility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G]{Strength}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz]{Vitality}</p><p>• Select from Intellectual powers category</p><p>• Select from Psychic powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj]{Danger Sense}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI]{Adaptive}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO]{Area Assault}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs]{Growth}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R]{Rally}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 3,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Danger Sense",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj"
+        },
+        {
+          "color": "yellow",
+          "name": "Adaptive",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI"
+        },
+        {
+          "color": "yellow",
+          "name": "Area Assault",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO"
+        },
+        {
+          "color": "green",
+          "name": "Growth",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs"
+        },
+        {
+          "color": "green",
+          "name": "Rally",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wNdbvPH1kgqAOQWP",
+  "_key": "!items!wNdbvPH1kgqAOQWP"
+}

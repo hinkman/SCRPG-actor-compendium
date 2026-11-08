@@ -1,0 +1,61 @@
+{
+  "name": "Powered Suit",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An engineered suit provides you with your powers, and may even be important to keeping you alive.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign one die to the power @UUID[Compendium.scrpg-actor-compendium.powers.Item.mbWy2aKC05gxmL8C]{Power Suit}.</p><p>Assign the rest of the dice you rolled at the end of the background step to the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.GTlpRqwtk6QMb9Hi]{Elasticity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DEqpcIHX8qEVJeag]{Lightning Calculator}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb]{Nuclear}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.g16MUwFTT08IfvEm]{Part Detachment}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88]{Energy Converter}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL]{Explosive Attack}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu]{Onboard Upgrade}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV]{Damage Reduction}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG]{Diagnostic Subroutine}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d6, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 8,
+      "archetypeDice": [
+        "d10",
+        "d6",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Energy Converter",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88"
+        },
+        {
+          "color": "yellow",
+          "name": "Explosive Attack",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL"
+        },
+        {
+          "color": "yellow",
+          "name": "Onboard Upgrade",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu"
+        },
+        {
+          "color": "green",
+          "name": "Damage Reduction",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV"
+        },
+        {
+          "color": "green",
+          "name": "Diagnostic Subroutine",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "V5HXUsLa0WGoDR4W",
+  "_key": "!items!V5HXUsLa0WGoDR4W"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Relic",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An object (or collection of objects) of mystical significance either grants you powers or altered you to give you powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC]{Harvest Life Force}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq]{Magical Shield}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp]{Momentary Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV]{Relic Drain}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4]{Draw Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7]{Punishment}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d10, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 7,
+      "archetypeDice": [
+        "d10",
+        "d10",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Harvest Life Force",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC"
+        },
+        {
+          "color": "yellow",
+          "name": "Magical Shield",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq"
+        },
+        {
+          "color": "yellow",
+          "name": "Momentary Power",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp"
+        },
+        {
+          "color": "yellow",
+          "name": "Relic Drain",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV"
+        },
+        {
+          "color": "green",
+          "name": "Draw Power",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4"
+        },
+        {
+          "color": "green",
+          "name": "Punishment",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Q5d6XiGFr8VZbtKj",
+  "_key": "!items!Q5d6XiGFr8VZbtKj"
+}

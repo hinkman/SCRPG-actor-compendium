@@ -1,0 +1,51 @@
+{
+  "name": "Training",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The source of your powers is the result of your hard work, dedication, and long hours.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.CjqhY7vBfkJQyhw4]{Gadgets}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Intellectual powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY]{Always Be Prepared}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6]{Reactive Field}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP]{Flowing Fight}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>When you move to the next step, select an extra quality from that archetype's list at d8.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 2,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Always Be Prepared",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY"
+        },
+        {
+          "color": "yellow",
+          "name": "Reactive Field",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6"
+        },
+        {
+          "color": "yellow",
+          "name": "Flowing Fight",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "d5Mq0zoBitnalrpn",
+  "_key": "!items!d5Mq0zoBitnalrpn"
+}

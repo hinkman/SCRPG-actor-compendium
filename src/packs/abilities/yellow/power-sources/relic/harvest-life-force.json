@@ -1,0 +1,53 @@
+{
+  "name": "Harvest Life Force",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power]. Use your Min die. Take damage equal to your Mid die, and one nearby ally Recovers Health equal to your Max die.</p>"
+  },
+  "effects": [],
+  "folder": "toqcgbGix1PJ7gZZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "relic",
+      "source": {
+        "itemType": "powerSources",
+        "number": 7
+      },
+      "gameTextTemplate": "Attack using [power]. Use your Min die. Take damage equal to your Mid die, and one nearby ally Recovers Health equal to your Max die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "3TkLPa5kqOCMwqAC",
+  "_key": "!items!3TkLPa5kqOCMwqAC"
+}

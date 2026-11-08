@@ -1,0 +1,57 @@
+{
+  "name": "Embolden",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power], and Boost all nearby heroes taking [choose two basic actions] using your Min die until your next turn.</p>"
+  },
+  "effects": [],
+  "folder": "dDlxxLFupThnN3LA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "higher-power",
+      "source": {
+        "itemType": "powerSources",
+        "number": 19
+      },
+      "gameTextTemplate": "Attack using [power], and Boost all nearby heroes taking [choose two basic actions] using your Min die until your next turn.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        },
+        {
+          "token": "[choose two basic actions]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "cg94zciN04k88cCI",
+  "_key": "!items!cg94zciN04k88cCI"
+}

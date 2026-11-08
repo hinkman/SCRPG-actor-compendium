@@ -1,0 +1,66 @@
+{
+  "name": "Tech Upgrades",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have technological upgrades and implants that give you your powers.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog]{Energy Burst}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn]{Recharge}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp]{Techno-Absorb}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo]{Tactical Analysis}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0]{Indiscriminate Fabrication}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY]{Organi-Hack}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 10,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Energy Burst",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog"
+        },
+        {
+          "color": "yellow",
+          "name": "Recharge",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn"
+        },
+        {
+          "color": "yellow",
+          "name": "Techno-Absorb",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp"
+        },
+        {
+          "color": "yellow",
+          "name": "Tactical Analysis",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo"
+        },
+        {
+          "color": "green",
+          "name": "Indiscriminate Fabrication",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0"
+        },
+        {
+          "color": "green",
+          "name": "Organi-Hack",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Us9gOMubjBGwL9Ng",
+  "_key": "!items!Us9gOMubjBGwL9Ng"
+}

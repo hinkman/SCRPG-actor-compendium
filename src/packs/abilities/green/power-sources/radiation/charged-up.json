@@ -1,0 +1,48 @@
+{
+  "name": "Charged Up",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>Whenever you roll a 1 on one or more dice, you may reroll those dice. You must accept the result of the reroll.</p>"
+  },
+  "effects": [],
+  "folder": "IpfqV3cgUmAjICoR",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "radiation",
+      "source": {
+        "itemType": "powerSources",
+        "number": 9
+      },
+      "gameTextTemplate": "Whenever you roll a 1 on one or more dice, you may reroll those dice. You must accept the result of the reroll.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "S52duNILjAA97FN8",
+  "_key": "!items!S52duNILjAA97FN8"
+}

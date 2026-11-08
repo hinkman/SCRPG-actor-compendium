@@ -1,0 +1,48 @@
+{
+  "name": "Resilience",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>At the start of your turn, remove any -1 penalties on you.</p>"
+  },
+  "effects": [],
+  "folder": "3CafjjZkPATWSV9h",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "higher-power",
+      "source": {
+        "itemType": "powerSources",
+        "number": 19
+      },
+      "gameTextTemplate": "At the start of your turn, remove any -1 penalties on you.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "G8G0KDjDTfRsVgQv",
+  "_key": "!items!G8G0KDjDTfRsVgQv"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Nature",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The power of nature flows through you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kjMIs092vuIRV2Bq]{Animal Control}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG]{Cold}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1]{Electricity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW]{Fire}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO]{Leaping}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QBoHOQPJB8bWcXDl]{Shapeshifting}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE]{Swimming}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5]{Swinging}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.bEqe9rU47wZ26mpV]{Wall-Crawling}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY]{Weather}</p><p>• Select from Athletic powers category</p><p>• Select from Materials powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv]{Call to the Wild}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW]{Predator's Eye}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d]{Wild Strength}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q]{Grasping Vines}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q]{Natural Weapon}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 6,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Call to the Wild",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv"
+        },
+        {
+          "color": "yellow",
+          "name": "Predator's Eye",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW"
+        },
+        {
+          "color": "yellow",
+          "name": "Wild Strength",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d"
+        },
+        {
+          "color": "green",
+          "name": "Grasping Vines",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q"
+        },
+        {
+          "color": "green",
+          "name": "Natural Weapon",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "0vi3rqbEM4P305C5",
+  "_key": "!items!0vi3rqbEM4P305C5"
+}

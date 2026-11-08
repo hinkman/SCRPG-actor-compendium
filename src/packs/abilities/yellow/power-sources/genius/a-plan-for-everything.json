@@ -1,0 +1,53 @@
+{
+  "name": "A Plan For Everything",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are attacked, first roll your single [power] die. Defend yourself with that roll. Then, Boost yourself using that roll.</p>"
+  },
+  "effects": [],
+  "folder": "xulG6Ag9z7HIEsyo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "genius",
+      "source": {
+        "itemType": "powerSources",
+        "number": 15
+      },
+      "gameTextTemplate": "When you are attacked, first roll your single [power] die. Defend yourself with that roll. Then, Boost yourself using that roll.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "0UZRXFzHY5gjHA7a",
+  "_key": "!items!0UZRXFzHY5gjHA7a"
+}

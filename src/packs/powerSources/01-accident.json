@@ -1,0 +1,65 @@
+{
+  "name": "Accident",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>An external source caused you to manifest powers or perhaps the cure for an accident caused it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR]{Area Alteration}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe]{Inflict}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF]{Reflexive Burst}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN]{Ambush Awareness}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1]{Change in Circumstance}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep]{Immunity}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d12, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 1,
+      "archetypeDice": [
+        "d12",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Area Alteration",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR"
+        },
+        {
+          "color": "yellow",
+          "name": "Inflict",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe"
+        },
+        {
+          "color": "yellow",
+          "name": "Reflexive Burst",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF"
+        },
+        {
+          "color": "green",
+          "name": "Ambush Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN"
+        },
+        {
+          "color": "green",
+          "name": "Change in Circumstance",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1"
+        },
+        {
+          "color": "green",
+          "name": "Immunity",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "SysCcRSin5EMndNX",
+  "_key": "!items!SysCcRSin5EMndNX"
+}

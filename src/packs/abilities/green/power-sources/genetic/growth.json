@@ -1,0 +1,53 @@
+{
+  "name": "Growth",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost yourself using [quality]. That bonus is persistent and exclusive.</p>"
+  },
+  "effects": [],
+  "folder": "8rBd2gy6vQE8HgSR",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "genetic",
+      "source": {
+        "itemType": "powerSources",
+        "number": 3
+      },
+      "gameTextTemplate": "Boost yourself using [quality]. That bonus is persistent and exclusive.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "F5ZJ235EmR5MPfNs",
+  "_key": "!items!F5ZJ235EmR5MPfNs"
+}

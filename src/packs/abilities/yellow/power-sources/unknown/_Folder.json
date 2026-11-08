@@ -1,0 +1,20 @@
+{
+  "name": "Unknown",
+  "description": "",
+  "folder": "EIxpqSe1WAJqbnZQ",
+  "type": "Item",
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "JrPSaQwvm4c8w1fc",
+  "_key": "!folders!JrPSaQwvm4c8w1fc"
+}

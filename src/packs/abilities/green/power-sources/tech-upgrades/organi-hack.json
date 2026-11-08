@@ -1,0 +1,53 @@
+{
+  "name": "Organi-Hack",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack a target using [power]. Hinder that target with your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "9E2CjomXDOQOCwlH",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "tech-upgrades",
+      "source": {
+        "itemType": "powerSources",
+        "number": 10
+      },
+      "gameTextTemplate": "Attack a target using [power]. Hinder that target with your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "9MXpKZV3Kp66rkCY",
+  "_key": "!items!9MXpKZV3Kp66rkCY"
+}

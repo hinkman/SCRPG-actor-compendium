@@ -1,0 +1,48 @@
+{
+  "name": "Call to the Wild",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Gain a d8 minion. It takes its turn before yours, but goes away at the end of the scene. You may only have one such minion at a time.</p>"
+  },
+  "effects": [],
+  "folder": "1lQusEMwt4aeVQ0x",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "nature",
+      "source": {
+        "itemType": "powerSources",
+        "number": 6
+      },
+      "gameTextTemplate": "Gain a d8 minion. It takes its turn before yours, but goes away at the end of the scene. You may only have one such minion at a time.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZqzzZywPjfbXCpwv",
+  "_key": "!items!ZqzzZywPjfbXCpwv"
+}

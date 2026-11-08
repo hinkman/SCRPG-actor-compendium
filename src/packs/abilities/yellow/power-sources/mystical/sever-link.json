@@ -1,0 +1,53 @@
+{
+  "name": "Sever Link",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome an environmental challenge using [power]. Use your Max die. Either remove any penalty in the scene or Boost equal to your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "g453X1Dkjen86XG4",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "mystical",
+      "source": {
+        "itemType": "powerSources",
+        "number": 5
+      },
+      "gameTextTemplate": "Overcome an environmental challenge using [power]. Use your Max die. Either remove any penalty in the scene or Boost equal to your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "TT5qCwPkikkKY4nd",
+  "_key": "!items!TT5qCwPkikkKY4nd"
+}

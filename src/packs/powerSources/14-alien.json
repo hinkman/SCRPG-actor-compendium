@@ -1,0 +1,51 @@
+{
+  "name": "Alien",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You are not from Earth, though your powers might not be all that unusual where you come from. Or you've been granted abilities by an extraterrestrial source.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe]{Alien Boost}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX]{Empower and Repair}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem]{Halt}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Then, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d8, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 14,
+      "archetypeDice": [
+        "d8",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Alien Boost",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe"
+        },
+        {
+          "color": "yellow",
+          "name": "Empower and Repair",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX"
+        },
+        {
+          "color": "yellow",
+          "name": "Halt",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QClEEnRLUCXfVMRv",
+  "_key": "!items!QClEEnRLUCXfVMRv"
+}

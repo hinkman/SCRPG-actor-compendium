@@ -1,0 +1,51 @@
+{
+  "name": "Genius",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>The source of your powers is your brilliant mind. You have put your staggering intellect to the task of fighting crime.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1]{Inventions}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB]{Robotics}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Intellectual powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a]{A Plan For Everything}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v]{Expanded Mind}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG]{Overwhelming Vision}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Select an extra quality from the Information or Mental quality categories at d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d6, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 15,
+      "archetypeDice": [
+        "d10",
+        "d6",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "A Plan For Everything",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a"
+        },
+        {
+          "color": "yellow",
+          "name": "Expanded Mind",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v"
+        },
+        {
+          "color": "yellow",
+          "name": "Overwhelming Vision",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QR3neissEUOCSI30",
+  "_key": "!items!QR3neissEUOCSI30"
+}

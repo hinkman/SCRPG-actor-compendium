@@ -1,0 +1,60 @@
+{
+  "name": "Cursed",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>A supernatural curse has been inflicted upon you or your family line, granting both boons and banes.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7]{Attunement}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95]{Costly Strength}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X]{Cursed Resolve}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38]{Double Edged Luck}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB]{Extremes}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d12, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 13,
+      "archetypeDice": [
+        "d12",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Attunement",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7"
+        },
+        {
+          "color": "yellow",
+          "name": "Costly Strength",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95"
+        },
+        {
+          "color": "yellow",
+          "name": "Cursed Resolve",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X"
+        },
+        {
+          "color": "green",
+          "name": "Double Edged Luck",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38"
+        },
+        {
+          "color": "green",
+          "name": "Extremes",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Rb6mEIHCa78TuFQ8",
+  "_key": "!items!Rb6mEIHCa78TuFQ8"
+}

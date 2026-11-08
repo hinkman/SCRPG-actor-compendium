@@ -1,0 +1,48 @@
+{
+  "name": "Reach through Veil",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When a nearby ally would take damage, Defend that ally by rolling your single status die, and move them elsewhere in the same scene.</p>"
+  },
+  "effects": [],
+  "folder": "pxe0ULcT7ZFpNPs3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "supernatural",
+      "source": {
+        "itemType": "powerSources",
+        "number": 11
+      },
+      "gameTextTemplate": "When a nearby ally would take damage, Defend that ally by rolling your single status die, and move them elsewhere in the same scene.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "aFEydFX484OarPfB",
+  "_key": "!items!aFEydFX484OarPfB"
+}

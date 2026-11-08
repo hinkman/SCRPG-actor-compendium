@@ -1,0 +1,48 @@
+{
+  "name": "Reactive Field",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are attacked by a nearby enemy, the attacker also takes an equal amount of damage.</p>"
+  },
+  "effects": [],
+  "folder": "dpOgv6ykesiwtLYo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "training",
+      "source": {
+        "itemType": "powerSources",
+        "number": 2
+      },
+      "gameTextTemplate": "When you are attacked by a nearby enemy, the attacker also takes an equal amount of damage.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "irLsZNE2hqDWW3B6",
+  "_key": "!items!irLsZNE2hqDWW3B6"
+}

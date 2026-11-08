@@ -1,0 +1,51 @@
+{
+  "name": "Cosmos",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Exposure to forces from beyond the stars have changed you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho]{Cosmic}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq]{Cosmic Ray Absorption}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ]{Encourage}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e]{Mass Effect}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Downgrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 16,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Cosmic Ray Absorption",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq"
+        },
+        {
+          "color": "yellow",
+          "name": "Encourage",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ"
+        },
+        {
+          "color": "yellow",
+          "name": "Mass Effect",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "WJ4sQAchCCkjlv8O",
+  "_key": "!items!WJ4sQAchCCkjlv8O"
+}

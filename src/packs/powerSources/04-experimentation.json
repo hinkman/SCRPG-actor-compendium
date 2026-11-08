@@ -1,0 +1,61 @@
+{
+  "name": "Experimentation",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Your powers were created in a lab and had some unexpected side effects.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE]{Personal Upgrade}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z]{Misdirection}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK]{Throw Minion}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB]{Overpower}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD]{Unflagging}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d8, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 4,
+      "archetypeDice": [
+        "d8",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Personal Upgrade",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE"
+        },
+        {
+          "color": "yellow",
+          "name": "Misdirection",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z"
+        },
+        {
+          "color": "yellow",
+          "name": "Throw Minion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK"
+        },
+        {
+          "color": "green",
+          "name": "Overpower",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB"
+        },
+        {
+          "color": "green",
+          "name": "Unflagging",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "O17ZCVFhAeDlxbrE",
+  "_key": "!items!O17ZCVFhAeDlxbrE"
+}

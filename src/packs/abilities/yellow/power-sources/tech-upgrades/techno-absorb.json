@@ -1,0 +1,53 @@
+{
+  "name": "Techno-Absorb",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": true
+    },
+    "type": "I",
+    "gameText": "<p>When you would take damage from [element/energy], you may Recover that amount of Health instead.</p>"
+  },
+  "effects": [],
+  "folder": "qKzqQ1spZ4HYzw1B",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "tech-upgrades",
+      "source": {
+        "itemType": "powerSources",
+        "number": 10
+      },
+      "gameTextTemplate": "When you would take damage from [element/energy], you may Recover that amount of Health instead.",
+      "slots": [
+        {
+          "token": "[element/energy]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "7N906TT16JtDSdXp",
+  "_key": "!items!7N906TT16JtDSdXp"
+}

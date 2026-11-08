@@ -1,0 +1,53 @@
+{
+  "name": "Throw Minion",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack a minion using [power]. The result of the minion's save Attacks another target of your choice.</p>"
+  },
+  "effects": [],
+  "folder": "1QRwC7lipWmz6dEl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "experimentation",
+      "source": {
+        "itemType": "powerSources",
+        "number": 4
+      },
+      "gameTextTemplate": "Attack a minion using [power]. The result of the minion's save Attacks another target of your choice.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "WdH4qGjjzWilHxVK",
+  "_key": "!items!WdH4qGjjzWilHxVK"
+}

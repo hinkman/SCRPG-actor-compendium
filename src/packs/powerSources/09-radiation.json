@@ -1,0 +1,66 @@
+{
+  "name": "Radiation",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Exposure to radiation has charged your system and given you new abilities.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb]{Nuclear}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA]{Radioactive Recharge}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9]{Unstable Reaction}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361]{Wither}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8]{Charged Up}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0]{Dangerous Lash}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa]{Radioactive Aura}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 9,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Radioactive Recharge",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA"
+        },
+        {
+          "color": "yellow",
+          "name": "Unstable Reaction",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9"
+        },
+        {
+          "color": "yellow",
+          "name": "Wither",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361"
+        },
+        {
+          "color": "green",
+          "name": "Charged Up",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8"
+        },
+        {
+          "color": "green",
+          "name": "Dangerous Lash",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0"
+        },
+        {
+          "color": "green",
+          "name": "Radioactive Aura",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "rgpzrWgqLVmTTk6I",
+  "_key": "!items!rgpzrWgqLVmTTk6I"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "The Multiverse",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have traveled or been flung through the realms of time and space. Without The Multiverse itself, you would not be who you are now.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ]{Awareness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho]{Cosmic}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M]{Intuition}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ]{Speed}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6]{Teleportation}</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD]{Power From Beyond}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2]{Respond In Kind}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN]{Dread Pallor}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl]{Reality Scorned}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain one extra power from any category at d6.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 2000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 20,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Power From Beyond",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD"
+        },
+        {
+          "color": "yellow",
+          "name": "Respond In Kind",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2"
+        },
+        {
+          "color": "yellow",
+          "name": "Dread Pallor",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN"
+        },
+        {
+          "color": "yellow",
+          "name": "Reality Scorned",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "p6DH1oQUtwuPLVCZ",
+  "_key": "!items!p6DH1oQUtwuPLVCZ"
+}

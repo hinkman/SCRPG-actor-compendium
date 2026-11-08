@@ -1,0 +1,53 @@
+{
+  "name": "Indiscriminate Fabrication",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost using [power], assigning your Min, Mid, and Max dice to 3 different bonuses, one of which must be given to an enemy.</p>"
+  },
+  "effects": [],
+  "folder": "9E2CjomXDOQOCwlH",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "power-sources",
+      "category": "tech-upgrades",
+      "source": {
+        "itemType": "powerSources",
+        "number": 10
+      },
+      "gameTextTemplate": "Boost using [power], assigning your Min, Mid, and Max dice to 3 different bonuses, one of which must be given to an enemy.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Qp6lSTpeFSLaOij0",
+  "_key": "!items!Qp6lSTpeFSLaOij0"
+}

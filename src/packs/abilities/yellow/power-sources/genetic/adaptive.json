@@ -1,0 +1,53 @@
+{
+  "name": "Adaptive",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": true
+    },
+    "type": "A",
+    "gameText": "<p>Boost yourself using [power], then either remove a penalty on yourself or Recover using your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "Fb9LET4tI7z7pXAs",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "genetic",
+      "source": {
+        "itemType": "powerSources",
+        "number": 3
+      },
+      "gameTextTemplate": "Boost yourself using [power], then either remove a penalty on yourself or Recover using your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "p2eTkXenlMbLCLcI",
+  "_key": "!items!p2eTkXenlMbLCLcI"
+}

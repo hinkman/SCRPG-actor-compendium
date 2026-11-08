@@ -1,0 +1,48 @@
+{
+  "name": "Unstable Reaction",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.</p>"
+  },
+  "effects": [],
+  "folder": "CUK2cKYhj7Z8BRgP",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "radiation",
+      "source": {
+        "itemType": "powerSources",
+        "number": 9
+      },
+      "gameTextTemplate": "After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "AqTQglLCehByjYg9",
+  "_key": "!items!AqTQglLCehByjYg9"
+}

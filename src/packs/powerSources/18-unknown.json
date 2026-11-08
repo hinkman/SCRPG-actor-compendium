@@ -1,0 +1,51 @@
+{
+  "name": "Unknown",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You don't know the source of your powers: they either just manifested one day, or hint at a bigger mystery.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Materials powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM]{Brainstorm}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX]{Strange Enhancement}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO]{Volatile Creations}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Additional Info</div><p>Gain a Social quality at d10.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d6 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 18,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Brainstorm",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM"
+        },
+        {
+          "color": "yellow",
+          "name": "Strange Enhancement",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX"
+        },
+        {
+          "color": "yellow",
+          "name": "Volatile Creations",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZcUWCY6wflnOVxqQ",
+  "_key": "!items!ZcUWCY6wflnOVxqQ"
+}

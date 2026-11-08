@@ -1,0 +1,66 @@
+{
+  "name": "Higher Power",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have been chosen by a higher force or are a being from another realm. Your powers are a reflection of your calling or true form.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV]{Command Power}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q]{Dangerous Explosion}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI]{Embolden}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF]{Resolve}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv]{Resilience}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH]{Twist Reality}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 19,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Command Power",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV"
+        },
+        {
+          "color": "yellow",
+          "name": "Dangerous Explosion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q"
+        },
+        {
+          "color": "yellow",
+          "name": "Embolden",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI"
+        },
+        {
+          "color": "yellow",
+          "name": "Resolve",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF"
+        },
+        {
+          "color": "green",
+          "name": "Resilience",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv"
+        },
+        {
+          "color": "green",
+          "name": "Twist Reality",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "VYNuLGLtTkHoReJf",
+  "_key": "!items!VYNuLGLtTkHoReJf"
+}

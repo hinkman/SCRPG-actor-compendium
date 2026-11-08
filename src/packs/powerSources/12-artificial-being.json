@@ -1,0 +1,61 @@
+{
+  "name": "Artificial Being",
+  "type": "powerSources",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were created, not born, and your abilities simply stem from your makeup.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Powers</div><p>Assign all the dice you rolled at the end of the background step to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1]{Inventions}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB]{Robotics}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Abilities</div><p>Gain two of these Yellow abilities, each using a different power:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.lnLDxlGSgYHnyn4k]{Created Immunity}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.ARWVQAsAH51XPtSP]{Multiple Assault}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.6AoOtIbrr9DlJqZq]{Recalculating...}</li></ul><p>Gain one of these Green abilities:</p><ul class=\"scrpg-archetype-ability-links\"><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.T8eKmRY72OBHNMl2]{Created Form}</li><li>@UUID[Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP]{Intentionality}</li></ul></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Archetype</div><p>Roll d10, d8, d8 for archetype selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 12,
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "abilities": [
+        {
+          "color": "yellow",
+          "name": "Created Immunity",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.lnLDxlGSgYHnyn4k"
+        },
+        {
+          "color": "yellow",
+          "name": "Multiple Assault",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ARWVQAsAH51XPtSP"
+        },
+        {
+          "color": "yellow",
+          "name": "Recalculating...",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6AoOtIbrr9DlJqZq"
+        },
+        {
+          "color": "green",
+          "name": "Created Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.T8eKmRY72OBHNMl2"
+        },
+        {
+          "color": "green",
+          "name": "Intentionality",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "9EMnlzH3HENYV1bH",
+  "_key": "!items!9EMnlzH3HENYV1bH"
+}

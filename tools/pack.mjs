@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { buildArchetypeDescriptionHtml } from "./archetype-description.mjs";
+import { buildPowerSourceDescriptionHtml } from "./power-source-description.mjs";
 
 const root = process.cwd();
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -148,7 +149,7 @@ const PACKS = [
         nested: true,
         itemType: "ability",
         img: "icons/svg/combat.svg",
-        expectedCount: 340,
+        expectedCount: 431,
         validateEntry(entry, categoryKey) {
             if (!entry.name || !entry.type || !entry.gameText || !entry.icon) {
                 throw new Error(`ability in ${categoryKey} is missing required fields`);
@@ -301,6 +302,60 @@ const PACKS = [
                 flags: {
                     "scrpg-actor-compendium": {
                         number: entry.number,
+                        abilities: entry.abilities
+                    }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
+            };
+        }
+    },
+    {
+        key: "powerSources",
+        dataFile: "src/data/powerSources.json",
+        flatList: true,
+        itemType: "powerSources",
+        img: "icons/svg/explosion.svg",
+        expectedCount: 20,
+        validateEntry(entry) {
+            if (!entry.name || !entry.number || !entry.descriptionHtml) {
+                throw new Error(`power source is missing required fields: ${JSON.stringify(entry)}`);
+            }
+            if (!Array.isArray(entry.archetypeDice) || !entry.archetypeDice.length) {
+                throw new Error(`power source ${entry.name} is missing archetypeDice`);
+            }
+            if (!Array.isArray(entry.abilities)) {
+                throw new Error(`power source ${entry.name} is missing abilities array`);
+            }
+            for (const ability of entry.abilities) {
+                if (!ability?.uuid || !ability?.name || !ability?.color) {
+                    throw new Error(`power source ${entry.name} has invalid ability link`);
+                }
+                const expectedId = foundryId(`ability:${ability.color}:${slug(entry.name)}:${slug(ability.name)}`);
+                const expectedUuid = `Compendium.scrpg-actor-compendium.abilities.Item.${expectedId}`;
+                if (ability.uuid !== expectedUuid) {
+                    throw new Error(`power source ${entry.name} ability uuid mismatch for ${ability.name}: ${ability.uuid} !== ${expectedUuid}`);
+                }
+            }
+        },
+        buildItem(entry, folderId, itemId) {
+            const description = buildPowerSourceDescriptionHtml(entry);
+            return {
+                name: entry.name,
+                type: "powerSources",
+                img: "icons/svg/explosion.svg",
+                system: {
+                    description
+                },
+                effects: [],
+                folder: folderId,
+                sort: entry.number * 100_000,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": {
+                        number: entry.number,
+                        archetypeDice: entry.archetypeDice,
                         abilities: entry.abilities
                     }
                 },

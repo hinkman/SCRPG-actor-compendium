@@ -1,0 +1,53 @@
+{
+  "name": "Predator's Eye",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power]. Use your Max+Min dice. Then gain a Boost using your Mid die. The target of the Attack gains a bonus of the same size.</p>"
+  },
+  "effects": [],
+  "folder": "1lQusEMwt4aeVQ0x",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "nature",
+      "source": {
+        "itemType": "powerSources",
+        "number": 6
+      },
+      "gameTextTemplate": "Attack using [power]. Use your Max+Min dice. Then gain a Boost using your Mid die. The target of the Attack gains a bonus of the same size.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "bW9SzBgQqFJPv2ZW",
+  "_key": "!items!bW9SzBgQqFJPv2ZW"
+}

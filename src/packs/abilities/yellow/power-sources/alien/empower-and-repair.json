@@ -1,0 +1,53 @@
+{
+  "name": "Empower and Repair",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": true,
+      "overcome": false,
+      "hinder": true,
+      "boost": true,
+      "recover": true
+    },
+    "type": "A",
+    "gameText": "<p>Boost, Hinder, Defend, or Attack using [power]. You and all nearby heroes in the Yellow or Red zone Recover Health equal to your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "QO6eUvwEO9E2UA0l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "alien",
+      "source": {
+        "itemType": "powerSources",
+        "number": 14
+      },
+      "gameTextTemplate": "Boost, Hinder, Defend, or Attack using [power]. You and all nearby heroes in the Yellow or Red zone Recover Health equal to your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "g4uHfCTG6ZwW3ykX",
+  "_key": "!items!g4uHfCTG6ZwW3ykX"
+}

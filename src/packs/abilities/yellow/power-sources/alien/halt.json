@@ -1,0 +1,53 @@
+{
+  "name": "Halt",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are Attacked at close range, Defend yourself by rolling your single [power] die.</p>"
+  },
+  "effects": [],
+  "folder": "QO6eUvwEO9E2UA0l",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "power-sources",
+      "category": "alien",
+      "source": {
+        "itemType": "powerSources",
+        "number": 14
+      },
+      "gameTextTemplate": "When you are Attacked at close range, Defend yourself by rolling your single [power] die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "4Vx0kglZMKYV7jem",
+  "_key": "!items!4Vx0kglZMKYV7jem"
+}
