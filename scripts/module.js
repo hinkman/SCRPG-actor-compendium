@@ -335,41 +335,9 @@ async function renderArchetypeAbilities(sheet, element) {
             host.prepend(numberEl);
         }
 
-        const abilities = Array.isArray(meta.abilities) ? meta.abilities : [];
-        if (!abilities.length) return;
-
-        const TextEditor = foundry.applications.ux.TextEditor.implementation;
-        const byColor = { green: [], yellow: [], red: [] };
-        for (const ref of abilities) {
-            (byColor[ref.color] || (byColor[ref.color] = [])).push(ref);
-        }
-
-        const sections = [];
-        for (const color of ["green", "yellow", "red"]) {
-            const refs = byColor[color] || [];
-            if (!refs.length) continue;
-            const links = [];
-            for (const ref of refs) {
-                const link = await TextEditor.enrichHTML(`@UUID[${ref.uuid}]{${ref.name}}`, {
-                    secrets: item.isOwner,
-                    relativeTo: item
-                });
-                links.push(`<li>${link}</li>`);
-            }
-            sections.push(`
-                <div class="scrpg-compendium-archetype-ability-group">
-                    <h5>${escapeHtml(color.charAt(0).toUpperCase() + color.slice(1))} Abilities</h5>
-                    <ul>${links.join("")}</ul>
-                </div>
-            `);
-        }
-
-        const section = document.createElement("div");
-        section.className = "scrpg-compendium-archetype-abilities";
-        section.innerHTML = `<h4>Abilities</h4>${sections.join("")}`;
-        host.append(section);
+        // Ability UUID links live inline in system.description under their grant text.
     } catch (err) {
-        console.error(`${MODULE_ID} | Failed to render archetype abilities`, err);
+        console.error(`${MODULE_ID} | Failed to render archetype sheet extras`, err);
     }
 }
 

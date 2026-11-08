@@ -2,6 +2,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { buildArchetypeDescriptionHtml } from "./archetype-description.mjs";
 
 const root = process.cwd();
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -285,12 +286,13 @@ const PACKS = [
             }
         },
         buildItem(entry, folderId, itemId) {
+            const description = buildArchetypeDescriptionHtml(entry);
             return {
                 name: entry.name,
                 type: "archetypes",
                 img: "icons/svg/statue.svg",
                 system: {
-                    description: entry.descriptionHtml
+                    description
                 },
                 effects: [],
                 folder: folderId,
