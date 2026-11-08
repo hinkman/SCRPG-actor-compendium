@@ -17,7 +17,7 @@ Version 0.7.0 contains:
 
 Entries stay in their Foundry compendia. Drag items onto a hero when needed. Die size for powers and qualities starts at `d4`.
 
-Principle and personality sheets show linked abilities. Archetype descriptions place ability UUID links inline under each grant instruction (matching the rulebook layout). Drops create those linked abilities on the hero. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
+Principle and personality sheets show linked abilities. Archetype descriptions are split into **Powers/Qualities**, **Abilities**, and **Principle** sections, with ability UUID links inline under each grant instruction. Drops create those linked abilities on the hero. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
 
 ## Install
 

@@ -117,6 +117,17 @@
     margin-right: 0.25rem;
 }
 
+.SCRPG.sheet.item .archetype .scrpg-archetype-block,
+.scrpg-archetype-block {
+    margin: 0 0 0.75rem;
+}
+
+.SCRPG.sheet.item .archetype .scrpg-archetype-section,
+.scrpg-archetype-section {
+    margin: 0 0 0.35rem;
+    font-family: var(--scrpg-heading-font, inherit);
+}
+
 .SCRPG.sheet.item .archetype .scrpg-archetype-ability-links,
 .scrpg-archetype-ability-links {
     margin: 0.15rem 0 0.65rem;
