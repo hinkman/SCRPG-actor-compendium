@@ -146,7 +146,8 @@ function isAdditionalInfoStart(paragraph) {
 
 /**
  * Ensure personality lines include explicit die sizes (PDF die icons).
- * Default is d10, d10; keep any dice already present (e.g. Transporter d10, d8).
+ * Default is d10, d10; keep any dice already present in the prose unless
+ * personalityDice is provided as an override.
  */
 export function normalizePersonalityParagraph(paragraph, personalityDice = null) {
     const diceFromText = [...paragraph.matchAll(/\bd\d+\b/gi)].map(m => m[0].toLowerCase());
@@ -389,18 +390,6 @@ export function rebuildAllArchetypeDescriptions(archetypesPath = path.join(ROOT,
                 return line.replace(trimmed, normalizePersonalityParagraph(trimmed, archetype.personalityDice));
             })
             .join("\n");
-        // Transporter is the odd one out in the book (d10 + d8).
-        if (archetype.name === "Transporter" && !archetype.personalityDice) {
-            archetype.personalityDice = ["d10", "d8"];
-            archetype.description = archetype.description
-                .split("\n")
-                .map(line => {
-                    const trimmed = line.trim();
-                    if (!trimmed || !isPersonalityParagraph(trimmed)) return line;
-                    return line.replace(trimmed, normalizePersonalityParagraph(trimmed, archetype.personalityDice));
-                })
-                .join("\n");
-        }
         archetype.descriptionHtml = buildArchetypeDescriptionHtml(archetype);
     }
     fs.writeFileSync(archetypesPath, `${JSON.stringify(archetypes, null, 2)}\n`);
