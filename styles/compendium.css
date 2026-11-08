@@ -117,6 +117,66 @@
     margin-right: 0.25rem;
 }
 
+/*
+ * Archetype sheets: fill the resizable window so description grows/shrinks
+ * with the frame instead of staying a short fixed editor box.
+ */
+.SCRPG.sheet.item:has(.archetype) .sheet-content-root {
+    overflow: hidden;
+}
+
+.SCRPG.sheet.item .archetype.sheet-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+}
+
+.SCRPG.sheet.item .archetype > .box-border {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.SCRPG.sheet.item .archetype .archetype-title {
+    flex: 0 0 auto;
+}
+
+.SCRPG.sheet.item .archetype .archetype-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.SCRPG.sheet.item .archetype .archetype-description prose-mirror {
+    display: block;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.SCRPG.sheet.item .archetype .archetype-description prose-mirror .editor-container {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+}
+
+.SCRPG.sheet.item .archetype .editor {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+}
+
 .SCRPG.sheet.item .archetype .scrpg-archetype-block,
 .scrpg-archetype-block {
     margin: 0 0 0.75rem;
@@ -124,8 +184,17 @@
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-section,
 .scrpg-archetype-section {
-    margin: 0 0 0.35rem;
-    font-family: var(--scrpg-heading-font, inherit);
+    margin: 0.35rem 0 0.45rem;
+    padding: 0.15rem 0.25rem;
+    border-top: 2px dotted #000000;
+    border-bottom: 2px dotted #000000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.05em;
+    line-height: 1.3;
+    color: #111111;
+    -webkit-text-fill-color: #111111;
+    background: transparent;
 }
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-ability-links,

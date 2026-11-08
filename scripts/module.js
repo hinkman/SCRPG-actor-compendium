@@ -323,6 +323,19 @@ async function renderArchetypeAbilities(sheet, element) {
         const root = element instanceof HTMLElement ? element : sheet.element;
         if (!root) return;
 
+        // Default item sheets are 480px tall; give archetypes more room once.
+        if (!sheet._scrpgArchetypeSized && typeof sheet.setPosition === "function") {
+            sheet._scrpgArchetypeSized = true;
+            const height = sheet.position?.height ?? 0;
+            const width = sheet.position?.width ?? 0;
+            if (height <= 480 || width <= 520) {
+                sheet.setPosition({
+                    width: Math.max(width, 560),
+                    height: Math.max(height, 640)
+                });
+            }
+        }
+
         const host = root.querySelector(".archetype") || root.querySelector(".sheet-content") || root;
         host.querySelector(".scrpg-compendium-archetype-meta")?.remove();
         host.querySelector(".scrpg-compendium-archetype-abilities")?.remove();

@@ -269,7 +269,8 @@ function renderParagraphBlock(paragraphs, abilitiesState) {
 
 function sectionHtml(title, bodyParts) {
     if (!bodyParts.length) return "";
-    return `<section class="scrpg-archetype-block"><h4 class="scrpg-archetype-section">${title}</h4>${bodyParts.join("")}</section>`;
+    // Use a div, not h4 — Foundry dark-theme heading colors are unreadable on the white sheet.
+    return `<section class="scrpg-archetype-block"><div class="scrpg-archetype-section">${title}</div>${bodyParts.join("")}</section>`;
 }
 
 function untitledBlock(bodyParts, extraClass = "") {
