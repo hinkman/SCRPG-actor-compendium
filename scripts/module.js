@@ -14,30 +14,21 @@ Hooks.once("init", () => {
 });
 
 /**
- * Wrap the sheet drop handler so principle/personality/archetype/power-source
- * drops still create linked abilities under Application V2. Slot detection must
- * run synchronously against the live drop event — composedPath() is empty after await.
+ * Preferred path: scrpg-foundry fires these after a successful sheet drop.
+ * Create linked abilities from the resolved Item document.
  */
-Hooks.on("renderSCRPGCharacterSheet", sheet => {
-    patchSheetDropItem(sheet);
+Hooks.on("scrpgDropPrinciple", (actor, item, slot) => {
+    void createPrincipleAbility(actor, item, slot);
 });
-
-function patchSheetDropItem(sheet) {
-    if (sheet._scrpgCompendiumDropPatched) return;
-    const original = sheet._onDropItem;
-    if (typeof original !== "function") return;
-
-    sheet._scrpgCompendiumDropPatched = true;
-    sheet._onDropItem = async function(event, data) {
-        const principleSlot = principleSlotFromEvent(event);
-        const result = await original.call(this, event, data);
-        await handlePrincipleDrop(this.actor, this, data, principleSlot);
-        await handlePersonalityDrop(this.actor, this, data);
-        await handleArchetypeDrop(this.actor, this, data);
-        await handlePowerSourceDrop(this.actor, this, data);
-        return result;
-    };
-}
+Hooks.on("scrpgDropPersonality", (actor, item) => {
+    void createPersonalityAbility(actor, item);
+});
+Hooks.on("scrpgDropArchetype", (actor, item) => {
+    void createArchetypeAbilities(actor, item);
+});
+Hooks.on("scrpgDropPowerSource", (actor, item) => {
+    void createPowerSourceAbilities(actor, item);
+});
 
 /**
  * Show linked abilities on principle/personality sheets, and inject
@@ -358,13 +349,10 @@ async function renderArchetypeAbilities(sheet, element) {
     }
 }
 
-async function handleArchetypeDrop(actor, sheet, data) {
+async function createArchetypeAbilities(actor, item) {
     try {
         if (!actor?.isOwner) return;
         if (actor.type !== "hero") return;
-        if (data?.type !== "Item") return;
-
-        const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "archetypes") return;
 
         const refs = item.flags?.[MODULE_ID]?.abilities;
@@ -440,13 +428,10 @@ async function renderPowerSourceExtras(sheet, element) {
     }
 }
 
-async function handlePowerSourceDrop(actor, sheet, data) {
+async function createPowerSourceAbilities(actor, item) {
     try {
         if (!actor?.isOwner) return;
         if (actor.type !== "hero") return;
-        if (data?.type !== "Item") return;
-
-        const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "powerSources") return;
 
         const refs = item.flags?.[MODULE_ID]?.abilities;
@@ -487,13 +472,10 @@ async function handlePowerSourceDrop(actor, sheet, data) {
     }
 }
 
-async function handlePersonalityDrop(actor, sheet, data) {
+async function createPersonalityAbility(actor, item) {
     try {
         if (!actor?.isOwner) return;
         if (actor.type !== "hero") return;
-        if (data?.type !== "Item") return;
-
-        const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "personality") return;
 
         const uuid = personalityOutAbilityUuid(item);
@@ -530,22 +512,15 @@ async function handlePersonalityDrop(actor, sheet, data) {
     }
 }
 
-async function handlePrincipleDrop(actor, sheet, data, slot = null) {
+async function createPrincipleAbility(actor, item, slot) {
     try {
         if (!actor?.isOwner) return;
         if (actor.type !== "hero") return;
-        if (data?.type !== "Item") return;
-        if (!slot) return;
-
-        const item = await foundry.documents.Item.fromDropData(data);
         if (item?.type !== "principles") return;
+        if (!slot) return;
 
         const uuid = principleGreenAbilityUuid(item);
         if (!uuid) return;
-
-        const dedupeKey = `${actor.uuid}:${slot}:${uuid}`;
-        if (sheet?._scrpgPrincipleDropKey === dedupeKey) return;
-        if (sheet) sheet._scrpgPrincipleDropKey = dedupeKey;
 
         const ability = await fromUuid(uuid);
         if (!ability) {
@@ -577,37 +552,4 @@ async function handlePrincipleDrop(actor, sheet, data, slot = null) {
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to create principle Green ability`, err);
     }
-}
-
-function principleSlotFromEvent(event) {
-    if (!event) return null;
-
-    const path = typeof event.composedPath === "function" ? event.composedPath() : [];
-    const nodes = path.length
-        ? path
-        : walkDropAncestors(event.target || event.srcElement);
-
-    for (const node of nodes) {
-        if (!node?.classList) {
-            const className = node?.className;
-            if (className == null || className === "") continue;
-            const text = String(className);
-            if (text.includes("DroppableFirstPrinciple")) return "first";
-            if (text.includes("DroppableSecondPrinciple")) return "second";
-            continue;
-        }
-        if (node.classList.contains("DroppableFirstPrinciple")) return "first";
-        if (node.classList.contains("DroppableSecondPrinciple")) return "second";
-    }
-    return null;
-}
-
-function walkDropAncestors(start) {
-    const nodes = [];
-    let node = start;
-    while (node) {
-        nodes.push(node);
-        node = node.parentElement;
-    }
-    return nodes;
 }

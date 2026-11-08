@@ -2,7 +2,7 @@
 
 Unofficial compendium module for [Foundry VTT](https://foundryvtt.com/) using the [scrpg-foundry](https://github.com/hinkman/SCRPG-foundry) system. A copy of Sentinel Comics: The Roleplaying Game is required. This module does not replace the rules.
 
-Version 0.8.1 contains:
+Version 0.8.2 contains:
 
 - Powers (rulebook pages 123–126)
 - Qualities (rulebook pages 127–128)
@@ -23,7 +23,7 @@ Principle and personality sheets show linked abilities. Archetype descriptions a
 
 ## Install
 
-Foundry 14 and `scrpg-foundry` 0.9.10 or newer. Install from:
+Foundry 14 and `scrpg-foundry` 0.9.12 or newer. Install from:
 
 `https://raw.githubusercontent.com/hinkman/SCRPG-actor-compendium/main/module.json`
 
