@@ -1,0 +1,48 @@
+{
+  "name": "Destroyer",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>Whenever you take a basic Attack action, either use your Max+Min dice to Attack one target, or Attack two different targets, one using your Max die and one using your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "Zo8L14z9lmm8h9s9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "Whenever you take a basic Attack action, either use your Max+Min dice to Attack one target, or Attack two different targets, one using your Max die and one using your Mid die.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "8pwAJ47jFLaCKF2y",
+  "_key": "!items!8pwAJ47jFLaCKF2y"
+}

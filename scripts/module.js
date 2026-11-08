@@ -33,6 +33,7 @@ Hooks.on("renderSCRPGCharacterSheet", (sheet, element) => {
 Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPrincipleGreenAbility(sheet, element);
     void renderPersonalityOutAbility(sheet, element);
+    void renderArchetypeAbilities(sheet, element);
     void renderAbilitySlotPickers(sheet, element);
 });
 
@@ -244,16 +245,24 @@ async function renderAbilitySlotPickers(sheet, element) {
 }
 
 function slotLabel(slot) {
-    if (slot.itemType === "power") return "Power";
-    if (slot.itemType === "quality") return "Quality";
+    const types = Array.isArray(slot.itemTypes)
+        ? slot.itemTypes
+        : (slot.itemType ? [slot.itemType] : []);
+    if (types.length === 2 && types.includes("power") && types.includes("quality")) {
+        return "Power/Quality";
+    }
+    if (types[0] === "power") return "Power";
+    if (types[0] === "quality") return "Quality";
     return slot.token;
 }
 
 function matchingActorItems(actor, slot) {
-    const itemType = slot.itemType;
-    if (!itemType) return [];
+    const types = Array.isArray(slot.itemTypes)
+        ? slot.itemTypes
+        : (slot.itemType ? [slot.itemType] : []);
+    if (!types.length) return [];
 
-    let items = actor.items.filter(owned => owned.type === itemType);
+    let items = actor.items.filter(owned => types.includes(owned.type));
     const categories = Array.isArray(slot.categories)
         ? slot.categories
         : (slot.category ? [slot.category] : null);
@@ -303,7 +312,113 @@ async function applyAbilitySlotSelection(item, token, chosenId) {
 Hooks.on("dropActorSheetData", (actor, sheet, data) => {
     void handlePrincipleDrop(actor, sheet, data);
     void handlePersonalityDrop(actor, sheet, data);
+    void handleArchetypeDrop(actor, sheet, data);
 });
+
+async function renderArchetypeAbilities(sheet, element) {
+    try {
+        const item = sheet.document ?? sheet.item;
+        if (!item || item.type !== "archetypes") return;
+
+        const root = element instanceof HTMLElement ? element : sheet.element;
+        if (!root) return;
+
+        const host = root.querySelector(".archetype") || root.querySelector(".sheet-content") || root;
+        host.querySelector(".scrpg-compendium-archetype-meta")?.remove();
+        host.querySelector(".scrpg-compendium-archetype-abilities")?.remove();
+
+        const meta = item.flags?.[MODULE_ID] || {};
+        if (meta.number) {
+            const numberEl = document.createElement("div");
+            numberEl.className = "scrpg-compendium-archetype-meta";
+            numberEl.innerHTML = `<span class="label">Number</span> ${escapeHtml(String(meta.number))}`;
+            host.prepend(numberEl);
+        }
+
+        const abilities = Array.isArray(meta.abilities) ? meta.abilities : [];
+        if (!abilities.length) return;
+
+        const TextEditor = foundry.applications.ux.TextEditor.implementation;
+        const byColor = { green: [], yellow: [], red: [] };
+        for (const ref of abilities) {
+            (byColor[ref.color] || (byColor[ref.color] = [])).push(ref);
+        }
+
+        const sections = [];
+        for (const color of ["green", "yellow", "red"]) {
+            const refs = byColor[color] || [];
+            if (!refs.length) continue;
+            const links = [];
+            for (const ref of refs) {
+                const link = await TextEditor.enrichHTML(`@UUID[${ref.uuid}]{${ref.name}}`, {
+                    secrets: item.isOwner,
+                    relativeTo: item
+                });
+                links.push(`<li>${link}</li>`);
+            }
+            sections.push(`
+                <div class="scrpg-compendium-archetype-ability-group">
+                    <h5>${escapeHtml(color.charAt(0).toUpperCase() + color.slice(1))} Abilities</h5>
+                    <ul>${links.join("")}</ul>
+                </div>
+            `);
+        }
+
+        const section = document.createElement("div");
+        section.className = "scrpg-compendium-archetype-abilities";
+        section.innerHTML = `<h4>Abilities</h4>${sections.join("")}`;
+        host.append(section);
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to render archetype abilities`, err);
+    }
+}
+
+async function handleArchetypeDrop(actor, sheet, data) {
+    try {
+        if (!actor?.isOwner) return;
+        if (actor.type !== "hero") return;
+        if (data?.type !== "Item") return;
+
+        const item = await foundry.documents.Item.fromDropData(data);
+        if (item?.type !== "archetypes") return;
+
+        const refs = item.flags?.[MODULE_ID]?.abilities;
+        if (!Array.isArray(refs) || !refs.length) return;
+
+        const existing = actor.items.filter(owned =>
+            owned.type === "ability"
+            && owned.flags?.[MODULE_ID]?.fromArchetype
+        );
+        if (existing.length) {
+            await actor.deleteEmbeddedDocuments("Item", existing.map(owned => owned.id));
+        }
+
+        const created = [];
+        for (const ref of refs) {
+            const ability = await fromUuid(ref.uuid);
+            if (!ability) {
+                console.warn(`${MODULE_ID} | Missing linked archetype ability ${ref.uuid}`);
+                continue;
+            }
+            const dataObj = ability.toObject();
+            delete dataObj._id;
+            delete dataObj.folder;
+            dataObj.flags = dataObj.flags || {};
+            dataObj.flags[MODULE_ID] = {
+                ...(dataObj.flags[MODULE_ID] || {}),
+                fromArchetype: item.name,
+                fromAbilityUuid: ref.uuid,
+                selections: {}
+            };
+            created.push(dataObj);
+        }
+        if (created.length) {
+            await actor.createEmbeddedDocuments("Item", created);
+        }
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to create archetype abilities`, err);
+    }
+}
 
 async function handlePersonalityDrop(actor, sheet, data) {
     try {

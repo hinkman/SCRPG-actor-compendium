@@ -1,0 +1,53 @@
+{
+  "name": "Possess Person",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [a power gained from your archetype]. If you incapacitate the target and change forms, you may use your Min die as a bonus to your next action. Alternatively, you may possess a willing target for no bonus.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "Attack using [a power gained from your archetype]. If you incapacitate the target and change forms, you may use your Min die as a bonus to your next action. Alternatively, you may possess a willing target for no bonus.",
+      "slots": [
+        {
+          "token": "[a power gained from your archetype]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ziTg0EzscKsL2qeR",
+  "_key": "!items!ziTg0EzscKsL2qeR"
+}

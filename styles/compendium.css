@@ -107,3 +107,31 @@
 .scrpg-compendium-out-ability h4 {
     margin: 0 0 0.35rem;
 }
+
+.scrpg-compendium-archetype-meta {
+    margin-bottom: 0.5rem;
+}
+
+.scrpg-compendium-archetype-meta .label {
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.scrpg-compendium-archetype-abilities {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-light-tertiary, #782e22);
+}
+
+.scrpg-compendium-archetype-abilities h4 {
+    margin: 0 0 0.35rem;
+}
+
+.scrpg-compendium-archetype-ability-group h5 {
+    margin: 0.5rem 0 0.25rem;
+}
+
+.scrpg-compendium-archetype-ability-group ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}

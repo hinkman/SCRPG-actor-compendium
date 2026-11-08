@@ -1,0 +1,56 @@
+{
+  "name": "Strength in Victory",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": true
+    },
+    "type": "R",
+    "gameText": "<p>When you eliminate a minion with an Attack using [power/quality], Recover Health equal to your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "NO81VrmjYzbGfkev",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "physical-powerhouse",
+      "source": {
+        "itemType": "archetypes",
+        "number": 3
+      },
+      "gameTextTemplate": "When you eliminate a minion with an Attack using [power/quality], Recover Health equal to your Min die.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "5zeLBXXVOL4mm937",
+  "_key": "!items!5zeLBXXVOL4mm937"
+}

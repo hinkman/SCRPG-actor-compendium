@@ -1,0 +1,53 @@
+{
+  "name": "Weird Form",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [power] die.</p>"
+  },
+  "effects": [],
+  "folder": "GJxwlBGVAJSYGY1y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "form-changer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 16
+      },
+      "gameTextTemplate": "When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [power] die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "IZbbpIEYdgHOhtSC",
+  "_key": "!items!IZbbpIEYdgHOhtSC"
+}

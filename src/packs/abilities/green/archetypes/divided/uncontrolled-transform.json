@@ -1,0 +1,48 @@
+{
+  "name": "Uncontrolled Transform",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>The first time you take damage or change zones in a scene, you must change from your civilian form to your heroic form. You can also transform by taking an action and taking damage equal to a roll of your current status die. After an action scene, you change back to your civilian form.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "The first time you take damage or change zones in a scene, you must change from your civilian form to your heroic form. You can also transform by taking an action and taking damage equal to a roll of your current status die. After an action scene, you change back to your civilian form.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ss01cyBG6dC5zOJp",
+  "_key": "!items!ss01cyBG6dC5zOJp"
+}

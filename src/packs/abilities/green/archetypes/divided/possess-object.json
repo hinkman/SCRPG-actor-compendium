@@ -1,0 +1,53 @@
+{
+  "name": "Possess Object",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Overcome using [a quality gained from your archetype]. On a success, merge with an item and then use your Min die to take a basic action.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "Overcome using [a quality gained from your archetype]. On a success, merge with an item and then use your Min die to take a basic action.",
+      "slots": [
+        {
+          "token": "[a quality gained from your archetype]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "jBzkcr5R20qCbUWN",
+  "_key": "!items!jBzkcr5R20qCbUWN"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Precise Hit",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.</p>"
+  },
+  "effects": [],
+  "folder": "3yR54qFhZnniqCKc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "blaster",
+      "source": {
+        "itemType": "archetypes",
+        "number": 5
+      },
+      "gameTextTemplate": "Attack using [power]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "0zBbd2gGhD9wumb9",
+  "_key": "!items!0zBbd2gGhD9wumb9"
+}

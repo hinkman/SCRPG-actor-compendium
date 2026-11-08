@@ -1,0 +1,48 @@
+{
+  "name": "Psychic Insight",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.</p>"
+  },
+  "effects": [],
+  "folder": "PvDJkse9nmDmtkG8",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "psychic",
+      "source": {
+        "itemType": "archetypes",
+        "number": 12
+      },
+      "gameTextTemplate": "After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "49JGzmia1g39hN1J",
+  "_key": "!items!49JGzmia1g39hN1J"
+}

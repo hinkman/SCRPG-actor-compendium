@@ -1,0 +1,76 @@
+{
+  "name": "Wild Card",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>No one knows what you will do next — not the bad guys, not your allies, sometimes not even you.</p><p>Assign one or more of the dice you rolled at the end of the power source step to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Physical qualities category</p><p>• Select from Social qualities category</p><p>Gain two of the following Green abilities, using two different powers.</p><p>Gain one of these Yellow abilities.</p><p>Choose an Ideals principle.</p><p>Roll d10, d10 for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 15,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Gimmick",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gVS9lWj9vrPl0pav"
+        },
+        {
+          "color": "green",
+          "name": "Multitask",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sCjlYDhbpB2fyvPF"
+        },
+        {
+          "color": "green",
+          "name": "Surprise Results",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8V23QLdMhaMm1ksS"
+        },
+        {
+          "color": "green",
+          "name": "Unknown Results",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qgqw2F9QUFw2cEXX"
+        },
+        {
+          "color": "yellow",
+          "name": "Break the 4th",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.U6J8qnDm39ZC3XjQ"
+        },
+        {
+          "color": "yellow",
+          "name": "Danger!",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4ffkFBRSra05lBgh"
+        },
+        {
+          "color": "yellow",
+          "name": "Expect the Unexpected",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5iCtwVnOWCIUYHJa"
+        },
+        {
+          "color": "yellow",
+          "name": "Imitation",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gOk1W0UUUxEuBTjr"
+        },
+        {
+          "color": "yellow",
+          "name": "Turn the Tables",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.DilWGdPZKMElZzh5"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ydBuboP9ggZckkNe",
+  "_key": "!items!ydBuboP9ggZckkNe"
+}

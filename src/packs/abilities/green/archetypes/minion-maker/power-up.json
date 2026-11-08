@@ -1,0 +1,53 @@
+{
+  "name": "Power Up",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost another hero or one of your minions using [power]. Either use your Max die, or use your Mid die and make that bonus persistent.</p>"
+  },
+  "effects": [],
+  "folder": "rA5SaUsUJlwhpMzT",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "minion-maker",
+      "source": {
+        "itemType": "archetypes",
+        "number": 14
+      },
+      "gameTextTemplate": "Boost another hero or one of your minions using [power]. Either use your Max die, or use your Mid die and make that bonus persistent.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "P9TeNH1pPeyHZtp4",
+  "_key": "!items!P9TeNH1pPeyHZtp4"
+}

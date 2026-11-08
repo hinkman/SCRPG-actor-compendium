@@ -1,0 +1,53 @@
+{
+  "name": "Exploding Ammo",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": true,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack or Overcome using [quality] on an environmental target, using your Max+Min dice. If you roll doubles, take a minor twist.</p>"
+  },
+  "effects": [],
+  "folder": "p4NDvbwPJ40nUiWE",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "marksman",
+      "source": {
+        "itemType": "archetypes",
+        "number": 4
+      },
+      "gameTextTemplate": "Attack or Overcome using [quality] on an environmental target, using your Max+Min dice. If you roll doubles, take a minor twist.",
+      "slots": [
+        {
+          "token": "[quality]",
+          "itemType": "quality"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ApS6H8WML4YPpBJq",
+  "_key": "!items!ApS6H8WML4YPpBJq"
+}

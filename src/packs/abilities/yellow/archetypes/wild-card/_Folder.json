@@ -1,0 +1,20 @@
+{
+  "name": "Wild Card",
+  "description": "",
+  "folder": "dyFu9TCOAg9wFolv",
+  "type": "Item",
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "wq9JpuPLyElGOB61",
+  "_key": "!folders!wq9JpuPLyElGOB61"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Sorcerer",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You command an arsenal of spells and mystical forces.</p><p>Assign one or more of the dice you rolled at the end of the power source step to any of these powers:</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Self Control powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p><p>Gain two of the following Green abilities, using two different powers.</p><p>Gain one of these Yellow abilities.</p><p>Choose an Esoteric principle.</p><p>Roll d10, d10 for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 11,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Banish",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.imnA8a70pkaz0abA"
+        },
+        {
+          "color": "green",
+          "name": "Energy Jaunt",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ebJxg6qUjmPnLeYe"
+        },
+        {
+          "color": "green",
+          "name": "Powerful Blast",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HF3Da8MT2unKCQ99"
+        },
+        {
+          "color": "green",
+          "name": "Subdue",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ccfZVifaC4QubTZk"
+        },
+        {
+          "color": "yellow",
+          "name": "Cords of Magic",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qnvb3r0lB1inQSRo"
+        },
+        {
+          "color": "yellow",
+          "name": "Field of Energy",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.uqmhNqGBWd5UT21Y"
+        },
+        {
+          "color": "yellow",
+          "name": "Living Bomb",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SkJ0L648OB64L2F0"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "nkw08hGG07FKfdVq",
+  "_key": "!items!nkw08hGG07FKfdVq"
+}

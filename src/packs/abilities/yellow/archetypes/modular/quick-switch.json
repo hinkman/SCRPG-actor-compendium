@@ -1,0 +1,48 @@
+{
+  "name": "Quick Switch",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Destroy one bonus on you. Change modes, then take an action in the new mode.</p>"
+  },
+  "effects": [],
+  "folder": "Ql7JM5HegKRxKAut",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "Destroy one bonus on you. Change modes, then take an action in the new mode.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "5g3buhH23xpgaE8P",
+  "_key": "!items!5g3buhH23xpgaE8P"
+}

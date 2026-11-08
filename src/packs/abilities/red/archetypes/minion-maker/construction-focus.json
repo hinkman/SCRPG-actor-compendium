@@ -1,0 +1,53 @@
+{
+  "name": "Construction Focus",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Create two minions using [power], one with your Max die and one with your Mid die. Choose which one basic action each of them can perform. They act on the start of your turn.</p>"
+  },
+  "effects": [],
+  "folder": "XbXD7szWYeKdU0qg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "minion-maker",
+      "source": {
+        "itemType": "archetypes",
+        "number": 14
+      },
+      "gameTextTemplate": "Create two minions using [power], one with your Max die and one with your Mid die. Choose which one basic action each of them can perform. They act on the start of your turn.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "vj1lnYSEjgrQ6AYF",
+  "_key": "!items!vj1lnYSEjgrQ6AYF"
+}

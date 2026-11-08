@@ -1,0 +1,53 @@
+{
+  "name": "Sonic Boom",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder multiple targets using [power]. Apply your Min die to each of them.</p>"
+  },
+  "effects": [],
+  "folder": "4psFgKNcxLGCDBVf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "flyer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 8
+      },
+      "gameTextTemplate": "Hinder multiple targets using [power]. Apply your Min die to each of them.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Y5UohFe4r7xiLBhq",
+  "_key": "!items!Y5UohFe4r7xiLBhq"
+}

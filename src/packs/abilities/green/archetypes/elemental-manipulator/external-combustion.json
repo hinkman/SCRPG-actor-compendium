@@ -1,0 +1,53 @@
+{
+  "name": "External Combustion",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack up to two targets using [power]. Also take an amount of damage equal to your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "0ixQaBcaQ2eDBdGO",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "elemental-manipulator",
+      "source": {
+        "itemType": "archetypes",
+        "number": 9
+      },
+      "gameTextTemplate": "Attack up to two targets using [power]. Also take an amount of damage equal to your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "EDGW1MueeJEwYTsB",
+  "_key": "!items!EDGW1MueeJEwYTsB"
+}

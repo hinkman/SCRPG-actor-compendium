@@ -1,0 +1,53 @@
+{
+  "name": "Run Down",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack multiple targets using [power]. Use your Min die against each.</p>"
+  },
+  "effects": [],
+  "folder": "4imoWq5mNW8UACra",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "transporter",
+      "source": {
+        "itemType": "archetypes",
+        "number": 13
+      },
+      "gameTextTemplate": "Attack multiple targets using [power]. Use your Min die against each.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QrX70BABFgW8K5q4",
+  "_key": "!items!QrX70BABFgW8K5q4"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Deflect",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you would be dealt damage, you may deal damage to a nearby target equal to the amount reduced by your Armored ability.</p>"
+  },
+  "effects": [],
+  "folder": "B9CoMHUoW1cHte50",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "armored",
+      "source": {
+        "itemType": "archetypes",
+        "number": 7
+      },
+      "gameTextTemplate": "When you would be dealt damage, you may deal damage to a nearby target equal to the amount reduced by your Armored ability.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "cyHxS1GUExiDEJZV",
+  "_key": "!items!cyHxS1GUExiDEJZV"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Divided Psyche",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>While you are in your civilian form, use two qualities instead of a power and a quality. While in your heroic form, use two powers instead of a power and a quality. (Use your status in both cases.) You cannot use abilities related to a power or quality you don't have access to.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "While you are in your civilian form, use two qualities instead of a power and a quality. While in your heroic form, use two powers instead of a power and a quality. (Use your status in both cases.) You cannot use abilities related to a power or quality you don't have access to.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "nDvC1bPNRhCHiMtC",
+  "_key": "!items!nDvC1bPNRhCHiMtC"
+}

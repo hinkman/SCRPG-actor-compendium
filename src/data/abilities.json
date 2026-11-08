@@ -1412,6 +1412,176 @@
           }
         ]
       }
+    ],
+    "groups": [
+      {
+        "key": "archetypes",
+        "label": "Archetypes",
+        "categories": [
+          {
+            "key": "minion-maker",
+            "label": "Minion-Maker",
+            "source": {
+              "itemType": "archetypes",
+              "number": 14
+            },
+            "abilities": [
+              {
+                "name": "Construction Focus",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Create two minions using [power], one with your Max die and one with your Mid die. Choose which one basic action each of them can perform. They act on the start of your turn.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Swarm Combat",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max die plus a bonus equal to the number of minions you have.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Sacrifice",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are Attacked, redirect the Attack to one of your nearby minions.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "form-changer",
+            "label": "Form-Changer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 16
+            },
+            "abilities": [
+              {
+                "name": "Emergency Change",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When hit with an Attack, change to any form before resolving the Attack. Take a minor twist.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "modular",
+            "label": "Modular",
+            "source": {
+              "itemType": "archetypes",
+              "number": 20
+            },
+            "abilities": [
+              {
+                "name": "Emergency Switch",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are hit with an Attack, you may change to any mode. If you do, take extra damage equal to the Min die or take a minor twist.",
+                "slots": []
+              },
+              {
+                "name": "Destroyer",
+                "type": "I",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Whenever you take a basic Attack action, either use your Max+Min dice to Attack one target, or Attack two different targets, one using your Max die and one using your Mid die.",
+                "slots": []
+              },
+              {
+                "name": "Hunter/Killer",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Move to any target in this scene and Hinder that target using [power]. Then, Attack that target using your Max+Min dice.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Shield",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are attacked, you may Defend against the Attack by rolling your single [power] die. If you reduce the damage to 0 or less, you may also Hinder the source of the damage with the result of the die you rolled.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   {
@@ -2377,6 +2547,1988 @@
             ]
           }
         ]
+      },
+      {
+        "key": "archetypes",
+        "label": "Archetypes",
+        "categories": [
+          {
+            "key": "speedster",
+            "label": "Speedster",
+            "source": {
+              "itemType": "archetypes",
+              "number": 1
+            },
+            "abilities": [
+              {
+                "name": "Always on the Move",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Defend yourself using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Fast Fingers",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Hinder using [power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Non-stop Assault",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [quality]. Use your Min die. Hinder each target equal to your Mid die.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "shadow",
+            "label": "Shadow",
+            "source": {
+              "itemType": "archetypes",
+              "number": 2
+            },
+            "abilities": [
+              {
+                "name": "Sabotage",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Remove one physical bonus or penalty, Hinder a target using your Min die, or maneuver to a new location in your environment.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Shadowy Figure",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Defend using your Min die against all Attacks until your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Untouchable",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you would be dealt damage, roll a d4 while in the Green zone, d6 while in the Yellow, or d8 while in Red. Reduce the damage you take by the value rolled. Attack another target with that roll.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "physical-powerhouse",
+            "label": "Physical Powerhouse",
+            "source": {
+              "itemType": "archetypes",
+              "number": 3
+            },
+            "abilities": [
+              {
+                "name": "Damage Resistant",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Frontline Fighting",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. The target of that Attack must take an Attack action against you as its next turn, if possible.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Galvanize",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Power Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality] and use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Strength in Victory",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "When you eliminate a minion with an Attack using [power/quality], Recover Health equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "marksman",
+            "label": "Marksman",
+            "source": {
+              "itemType": "archetypes",
+              "number": 4
+            },
+            "abilities": [
+              {
+                "name": "Dual Wielder",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack two different targets using [power/quality], one target using your Mid die and the other your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Load",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power/quality] to create one bonus using your Max die and another using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Precise Shot",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Sniper Aim",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power/quality]. Use your Max+Min dice. This bonus can only be used against one chosen target, and is persistent & exclusive against that target until it leaves the scene.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Spin & Shoot",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Defend using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "blaster",
+            "label": "Blaster",
+            "source": {
+              "itemType": "archetypes",
+              "number": 5
+            },
+            "abilities": [
+              {
+                "name": "Exploit Vulnerability",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. If you Attacked or Hindered that target in your previous turn, use your Max die in this Attack.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Disabling Blast",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Hinder using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Danger Zone",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Use your Min die against each.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Precise Hit",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "close-quarters-combatant",
+            "label": "Close Quarters Combatant",
+            "source": {
+              "itemType": "archetypes",
+              "number": 6
+            },
+            "abilities": [
+              {
+                "name": "Defensive Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend using [power/quality]. Attack using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dual Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack one target using [power/quality]. Attack a second target using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Flexible Stance",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Take any two basic actions using [power/quality], each using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Offensive Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Precise Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Throw Minion",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack a minion using [power/quality]. Whatever that minion rolls as defense Attacks another target of your choice.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "armored",
+            "label": "Armored",
+            "source": {
+              "itemType": "archetypes",
+              "number": 7
+            },
+            "abilities": [
+              {
+                "name": "Armored",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Deflect",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you would be dealt damage, you may deal damage to a nearby target equal to the amount reduced by your Armored ability.",
+                "slots": []
+              },
+              {
+                "name": "Dual Offense",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Attack a second target with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Living Bulwark",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Defend another target with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Repair",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "Attack using [power]. Recover Health equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Unstoppable Charge",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "flyer",
+            "label": "Flyer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 8
+            },
+            "abilities": [
+              {
+                "name": "Aerial Bombardment",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack up to three targets using [power/quality]. Apply your Min die to each of them.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Aerial Surveillance",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Barrel Roll",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are Attacked while Flying, you may Defend yourself by rolling your single [power/quality] die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dive & Drop",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack a minion using [power]. Use whatever that minion rolls for its save as an Attack against another target of your choice.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Sonic Boom",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder multiple targets using [power]. Apply your Min die to each of them.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Strike & Swoop",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Defend against all Attacks against you using your Min die until your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "elemental-manipulator",
+            "label": "Elemental Manipulator",
+            "source": {
+              "itemType": "archetypes",
+              "number": 9
+            },
+            "abilities": [
+              {
+                "name": "Backlash",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max die. Take damage equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Energy Conversion",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Defend using [power]. Use your Max die. Boost using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "External Combustion",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack up to two targets using [power]. Also take an amount of damage equal to your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Focused Apparatus",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder using [power]. Attack using your Min die. If you are in the Red zone, you may apply the penalty to any number of nearby targets.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "robot-cyborg",
+            "label": "Robot/Cyborg",
+            "source": {
+              "itemType": "archetypes",
+              "number": 10
+            },
+            "abilities": [
+              {
+                "name": "Adaptive Programming",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power], and Defend with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Living Arsenal",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power] with a bonus equal to the number of bonuses you currently have.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Metal Skin",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce the amount of physical damage taken by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Self-Improvement",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power]. That bonus is persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Something for Everyone",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Mid die to Attack one extra target for each bonus you have. Apply a different bonus to each Attack.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "sorcerer",
+            "label": "Sorcerer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 11
+            },
+            "abilities": [
+              {
+                "name": "Banish",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder using [power]. Use your Max die. If you roll doubles, also Attack using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Energy Jaunt",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power], applying your Min die against each.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Powerful Blast",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power] and use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Subdue",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Hinder the same target using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "psychic",
+            "label": "Psychic",
+            "source": {
+              "itemType": "archetypes",
+              "number": 12
+            },
+            "abilities": [
+              {
+                "name": "Psychic Assault",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [Psychic power]. Hinder the target using your Min die.",
+                "slots": [
+                  {
+                    "token": "[Psychic power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Psychic Coordination",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [Psychic power]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+                "slots": [
+                  {
+                    "token": "[Psychic power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Psychic Insight",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "transporter",
+            "label": "Transporter",
+            "source": {
+              "itemType": "archetypes",
+              "number": 13
+            },
+            "abilities": [
+              {
+                "name": "Displacement Assault",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Either Hinder your target with your Min die or move them somewhere else in the scene.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Hit & Run",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Defend against all Attacks against you using your Min die until your next turn.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Mobile Assist",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost another hero using [power]. Attack using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Mobile Dodge",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are hit with an Attack, you may take 1 irreducible damage to have the attacker reroll their dice pool.",
+                "slots": []
+              },
+              {
+                "name": "Run Down",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Use your Min die against each.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "minion-maker",
+            "label": "Minion-Maker",
+            "source": {
+              "itemType": "archetypes",
+              "number": 14
+            },
+            "abilities": [
+              {
+                "name": "Make Minion",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Create a minion using [power]. Reference the minion chart to see what size of minion it is. Choose whether it can Attack, Defend, Boost, Hinder, or Overcome. It acts on the start of your turn. You can only use this ability in a situation conducive to how you create minions.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Power Up",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost another hero or one of your minions using [power]. Either use your Max die, or use your Mid die and make that bonus persistent.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "wild-card",
+            "label": "Wild Card",
+            "source": {
+              "itemType": "archetypes",
+              "number": 15
+            },
+            "abilities": [
+              {
+                "name": "Gimmick",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Hinder using [power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Multitask",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Take any two different basic actions using [power/quality], each using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Surprise Results",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "After rolling your dice pool for the turn, you may take 1 irreducible damage to reroll your entire pool.",
+                "slots": []
+              },
+              {
+                "name": "Unknown Results",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Take any basic action using [power]. Then roll a d6. On 1, Boost with your Min die. On 2, Hinder with your Min die. On 3, Defend with your Min die. On 4, lose Health equal to your Min die. On 5, your basic action uses your Max die. On 6, your basic action uses your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "form-changer",
+            "label": "Form-Changer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 16
+            },
+            "abilities": [
+              {
+                "name": "Change Forms",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Take a basic action using [Self Control power], then switch to any available form.",
+                "slots": [
+                  {
+                    "token": "[Self Control power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Form Recovery",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "Attack using [Self Control power] and Recover Health equal to your Min die. Return to your base form.",
+                "slots": [
+                  {
+                    "token": "[Self Control power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Surprise Shift",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [Self Control power] and use your Max die. Then change to any available form.",
+                "slots": [
+                  {
+                    "token": "[Self Control power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Clever Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Overcome using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Minuscule Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend using [power]. Use your Max die. Remove all penalties on you.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Strong Form",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Tough Form",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Tricky Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Hinder using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Weird Form",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [power] die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "gadgeteer",
+            "label": "Gadgeteer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 17
+            },
+            "abilities": [
+              {
+                "name": "Analyze Probabilities",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "After rolling your dice pool, you may take 1 irreducible damage to reroll your dice pool.",
+                "slots": []
+              },
+              {
+                "name": "Analyze Weakness",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder using [power]. Use your Max die, or use your Mid die and make it persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Equip",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power]. Make one bonus for one ally using your Mid die and another for another ally using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Helpful Invention",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power]. Use your Max die, or use your Mid die and make it persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "reality-shaper",
+            "label": "Reality Shaper",
+            "source": {
+              "itemType": "archetypes",
+              "number": 18
+            },
+            "abilities": [
+              {
+                "name": "Negative Likelihood",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder using [power]. That penalty is persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Not Quite Right",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "After a dice pool is rolled, adjust one die up or down one value on the die.",
+                "slots": []
+              },
+              {
+                "name": "Probability Insight",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Warp Space",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. You may move the target of that Attack anywhere else nearby. If the target goes next, you decide who takes the next turn after that.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "divided",
+            "label": "Divided",
+            "source": {
+              "itemType": "archetypes",
+              "number": 19
+            },
+            "abilities": [
+              {
+                "name": "Transform",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Change from your civilian form to your heroic form, or vice versa.",
+                "slots": []
+              },
+              {
+                "name": "Device Transform",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "If you have access to your device, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. if you have any penalties that separate you from your device or otherwise inhibit you having full access to your device, you cannot use this ability.",
+                "slots": []
+              },
+              {
+                "name": "Merge",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "If you have access to a willing compatible person to enable your transform, change from your civilian form to your heroic form, or vice versa. After you transformation, take a basic action using your Min die. If you have any penalties that separate you from that person, you cannot use this ability.",
+                "slots": []
+              },
+              {
+                "name": "Possess Person",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [a power gained from your archetype]. If you incapacitate the target and change forms, you may use your Min die as a bonus to your next action. Alternatively, you may possess a willing target for no bonus.",
+                "slots": [
+                  {
+                    "token": "[a power gained from your archetype]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Possess Object",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Overcome using [a quality gained from your archetype]. On a success, merge with an item and then use your Min die to take a basic action.",
+                "slots": [
+                  {
+                    "token": "[a quality gained from your archetype]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Uncontrolled Transform",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "The first time you take damage or change zones in a scene, you must change from your civilian form to your heroic form. You can also transform by taking an action and taking damage equal to a roll of your current status die. After an action scene, you change back to your civilian form.",
+                "slots": []
+              },
+              {
+                "name": "Divided Psyche",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "While you are in your civilian form, use two qualities instead of a power and a quality. While in your heroic form, use two powers instead of a power and a quality. (Use your status in both cases.) You cannot use abilities related to a power or quality you don't have access to.",
+                "slots": []
+              },
+              {
+                "name": "Split Form",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Choose two powers and two qualities that you always have access to in either form. You must divide up the remainder of your powers and qualities between your civilian and heroic forms, so they are only usable within those forms. You cannot use abilities related to a power or quality you don't have access to. In the next step, when you create a roleplaying quality, you will have access to that in either form.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "modular",
+            "label": "Modular",
+            "source": {
+              "itemType": "archetypes",
+              "number": 20
+            },
+            "abilities": [
+              {
+                "name": "Switch",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power/quality]. Then change modes.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Debilitator",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder all nearby opponents using [power]. If you roll doubles, take damage equal to your Max die, and then you may also Attack all nearby opponents with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Improvement",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power]. Create one bonus using your Max die and one bonus using your Mid die. These bonuses are persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Scout",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Overcome using [power]. Defend yourself with your Max die. Then, you may end up anywhere in the current scene.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -2740,6 +4892,1776 @@
               {
                 "token": "[power]",
                 "itemType": "power"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "yellow",
+    "label": "Yellow",
+    "aux": "yellow",
+    "color": "#c9a227",
+    "groups": [
+      {
+        "key": "archetypes",
+        "label": "Archetypes",
+        "categories": [
+          {
+            "key": "speedster",
+            "label": "Speedster",
+            "source": {
+              "itemType": "archetypes",
+              "number": 1
+            },
+            "abilities": [
+              {
+                "name": "Blinding Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [quality]. Hinder each target equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Flurry of Fists",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [quality]. Use your Max die. If you roll doubles, use Max+Min instead.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Supersonic Streak",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Use your Max die against one target, and your Mid die against each other target. If you roll doubles, take irreducible damage equal to your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Speedy Analysis",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost multiple targets using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "shadow",
+            "label": "Shadow",
+            "source": {
+              "itemType": "archetypes",
+              "number": 2
+            },
+            "abilities": [
+              {
+                "name": "Overcome From the Darkness",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Attack or Overcome using [power/quality]. Boost yourself using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Diversion",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you would take damage, Defend against that damage by rolling your single [power/quality] die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "physical-powerhouse",
+            "label": "Physical Powerhouse",
+            "source": {
+              "itemType": "archetypes",
+              "number": 3
+            },
+            "abilities": [
+              {
+                "name": "Damage Resistant",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Frontline Fighting",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. The target of that Attack must take an Attack action against you as its next turn, if possible.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Galvanize",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Power Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality] and use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Strength in Victory",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "When you eliminate a minion with an Attack using [power/quality], Recover Health equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "marksman",
+            "label": "Marksman",
+            "source": {
+              "itemType": "archetypes",
+              "number": 4
+            },
+            "abilities": [
+              {
+                "name": "Called Shot",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Attack using [quality]. Boost another hero using your Max die.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Exploding Ammo",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack or Overcome using [quality] on an environmental target, using your Max+Min dice. If you roll doubles, take a minor twist.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Hair Trigger Reflexes",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When a new target enters close range, Attack that target by rolling your single [quality] die.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Ricochet",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [quality]. Use your Max die. If you roll doubles, use Max+Min instead.",
+                "slots": [
+                  {
+                    "token": "[quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "blaster",
+            "label": "Blaster",
+            "source": {
+              "itemType": "archetypes",
+              "number": 5
+            },
+            "abilities": [
+              {
+                "name": "Energy Immunity",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "If you would take damage from [element/energy you have a related power for], instead reduce that damage to 0 and Recover that amount of Health.",
+                "slots": [
+                  {
+                    "token": "[element/energy you have a related power for]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Heedless Blast",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Use your Mid die against each target. Take irreducible damage equal to your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Imbue with Element",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max die. If you choose another hero to go next, Boost that hero using your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "close-quarters-combatant",
+            "label": "Close Quarters Combatant",
+            "source": {
+              "itemType": "archetypes",
+              "number": 6
+            },
+            "abilities": [
+              {
+                "name": "Defensive Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend using [power/quality]. Attack using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dual Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack one target using [power/quality]. Attack a second target using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Flexible Stance",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Take any two basic actions using [power/quality], each using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Offensive Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Precise Strike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Throw Minion",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack a minion using [power/quality]. Whatever that minion rolls as defense Attacks another target of your choice.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "flyer",
+            "label": "Flyer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 8
+            },
+            "abilities": [
+              {
+                "name": "Aerial Bombardment",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack up to three targets using [power/quality]. Apply your Min die to each of them.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Aerial Surveillance",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Barrel Roll",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are Attacked while Flying, you may Defend yourself by rolling your single [power/quality] die.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dive & Drop",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack a minion using [power]. Use whatever that minion rolls for its save as an Attack against another target of your choice.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Sonic Boom",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder multiple targets using [power]. Apply your Min die to each of them.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Strike & Swoop",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power/quality]. Defend against all Attacks against you using your Min die until your next turn.",
+                "slots": [
+                  {
+                    "token": "[power/quality]",
+                    "itemTypes": [
+                      "power",
+                      "quality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "elemental-manipulator",
+            "label": "Elemental Manipulator",
+            "source": {
+              "itemType": "archetypes",
+              "number": 9
+            },
+            "abilities": [
+              {
+                "name": "Damage Spike",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max+Min dice. Take damage equal to your Mid die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Energy Alignment",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "If you would take damage from [element/energy you have a related power for], reduce that damage to 0 and Recover that amount of Health instead.",
+                "slots": [
+                  {
+                    "token": "[element/energy you have a related power for]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Energy Redirection",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Whenever you take damage from [element/energy you have a related power for], you may also inflict that much damage on another target.",
+                "slots": [
+                  {
+                    "token": "[element/energy you have a related power for]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Live Dangerously",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Take damage equal to your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "robot-cyborg",
+            "label": "Robot/Cyborg",
+            "source": {
+              "itemType": "archetypes",
+              "number": 10
+            },
+            "abilities": [
+              {
+                "name": "Adaptive Programming",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power], and Defend with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Living Arsenal",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power] with a bonus equal to the number of bonuses you currently have.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Metal Skin",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce the amount of physical damage taken by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Self-Improvement",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power]. That bonus is persistent and exclusive.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Something for Everyone",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Mid die to Attack one extra target for each bonus you have. Apply a different bonus to each Attack.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "sorcerer",
+            "label": "Sorcerer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 11
+            },
+            "abilities": [
+              {
+                "name": "Cords of Magic",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Destroy all bonuses and penalties on a target. Then, Hinder that target using [power], using your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Field of Energy",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets near each other using [power].",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Living Bomb",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Destroy one d6 or d8 minion. Roll that minion's die as an Attack against another target.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "psychic",
+            "label": "Psychic",
+            "source": {
+              "itemType": "archetypes",
+              "number": 12
+            },
+            "abilities": [
+              {
+                "name": "Astral Projection",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Overcome using Remote Viewing and use your Max+Min dice. You do not have to be physically present in the area you are Overcoming.",
+                "slots": []
+              },
+              {
+                "name": "Illusionary Double",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are Attacked, Defend by rolling your single Illusions die.",
+                "slots": []
+              },
+              {
+                "name": "Minion Suggestion",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack a minion using Suggestion. If that minion would be taken out, you control its next action, and then it is removed. Otherwise, Hinder it using your Min die.",
+                "slots": []
+              },
+              {
+                "name": "Postcognitive Understanding",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "After an enemy rolls dice to take an action for their turn but before using the result, Hinder that enemy's roll using your single Postcognition die.",
+                "slots": []
+              },
+              {
+                "name": "Precognitive Alteration",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "After an ally rolls dice to take an action for their turn but before using the result, Boost that ally's roll using your single Precognition die.",
+                "slots": []
+              },
+              {
+                "name": "Psychic Analysis",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [Mental quality]. Either use your Max die, or use your Mid die and make it persistent.",
+                "slots": [
+                  {
+                    "token": "[Mental quality]",
+                    "itemType": "quality"
+                  }
+                ]
+              },
+              {
+                "name": "Swarm",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using Animal Control and use your Min die.",
+                "slots": []
+              },
+              {
+                "name": "Telekinetic Assault",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using Telekinesis. Either Attack one target and use your Max die, or two targets and use your Mid die against one and your Min die against another.",
+                "slots": []
+              },
+              {
+                "name": "Telepathic Whammy",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using Telepathy and use your Max die. Hinder the target with a persistent penalty using your Min die.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "transporter",
+            "label": "Transporter",
+            "source": {
+              "itemType": "archetypes",
+              "number": 13
+            },
+            "abilities": [
+              {
+                "name": "Displacement Assault",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Either Hinder your target with your Min die or move them somewhere else in the scene.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Hit & Run",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Defend against all Attacks against you using your Min die until your next turn.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Mobile Assist",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost another hero using [power]. Attack using your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Mobile Dodge",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When you are hit with an Attack, you may take 1 irreducible damage to have the attacker reroll their dice pool.",
+                "slots": []
+              },
+              {
+                "name": "Run Down",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. Use your Min die against each.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "minion-maker",
+            "label": "Minion-Maker",
+            "source": {
+              "itemType": "archetypes",
+              "number": 14
+            },
+            "abilities": [
+              {
+                "name": "Minion Formation",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any damage you take by the number of minions you have. Whenver damage is reduced this way, reduce the size of one of your minions.",
+                "slots": []
+              },
+              {
+                "name": "Rapid Deployment",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Create a minion using [power]. Use your Min die. Choose which basic action it can perform. It acts now and at the start of your turns.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Upgrade Minion",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost one of your minions using [power]. You may also upgrade that minion to your Max die size, replacing its minion form.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "wild-card",
+            "label": "Wild Card",
+            "source": {
+              "itemType": "archetypes",
+              "number": 15
+            },
+            "abilities": [
+              {
+                "name": "Break the 4th",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "You may uncheck a checked off collection on your hero sheet.",
+                "slots": []
+              },
+              {
+                "name": "Danger!",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power]. If you roll doubles, one nearby ally is also hit with the Attack",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Expect the Unexpected",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Apply a bonus after rolling your action, instead of before.",
+                "slots": []
+              },
+              {
+                "name": "Imitation",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Use a Green action ability of a nearby ally (using the same size power/quality die they would use.)",
+                "slots": []
+              },
+              {
+                "name": "Turn the Tables",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Change any bonus into a penalty of equal size or vice versa.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "form-changer",
+            "label": "Form-Changer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 16
+            },
+            "abilities": [
+              {
+                "name": "Agile Form",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Defend against all attacks until your next turn with your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Regenerating Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": true
+                },
+                "gameText": "Boost using [power]. Recover Health equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Speedy Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder multiple targets using [power].",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Towering Form",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack multiple targets using [power].",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Clever Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Overcome using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Minuscule Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend using [power]. Use your Max die. Remove all penalties on you.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Strong Form",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Tough Form",
+                "type": "I",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                "slots": []
+              },
+              {
+                "name": "Tricky Form",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost or Hinder using [power]. Use your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Weird Form",
+                "type": "R",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [power] die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "gadgeteer",
+            "label": "Gadgeteer",
+            "source": {
+              "itemType": "archetypes",
+              "number": 17
+            },
+            "abilities": [
+              {
+                "name": "Helpful Analysis",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "One nearby ally may reroll their dice pool. You lose Health equal to the Min die of the new roll.",
+                "slots": []
+              },
+              {
+                "name": "Snap Decision",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": true,
+                  "recover": false
+                },
+                "gameText": "Boost yourself using [power]. Use your Max+Min dice. Then Attack using your Mid die with that bonus.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Turn the Tables",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Change any bonus into a penalty of equal size or vice versa.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "reality-shaper",
+            "label": "Reality Shaper",
+            "source": {
+              "itemType": "archetypes",
+              "number": 18
+            },
+            "abilities": [
+              {
+                "name": "Alternate Outcome",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When a nearby enemy rolls their dice pool for the turn, you may lose 1 Health to reroll their entire pool.",
+                "slots": []
+              },
+              {
+                "name": "Helpful Analysis",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "One nearby ally may reroll their dice pool. You lose Health equal to the Min die of the new roll.",
+                "slots": []
+              },
+              {
+                "name": "Never Happened",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "When a nearby enemy would create a bonus or penalty, you may remove it immediately.",
+                "slots": []
+              },
+              {
+                "name": "Retroactive Rewrite",
+                "type": "R",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "You may apply a bonus to a roll after rolling instead of before.",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "modular",
+            "label": "Modular",
+            "source": {
+              "itemType": "archetypes",
+              "number": 20
+            },
+            "abilities": [
+              {
+                "name": "Quick Switch",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Destroy one bonus on you. Change modes, then take an action in the new mode.",
+                "slots": []
+              },
+              {
+                "name": "Analysis",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": false,
+                  "overcome": true,
+                  "hinder": true,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Hinder or use one of your principles to Overcome using [power]. Use your Max+Min dice.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Bombardment",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend yourself using [power]. You may Attack one target with your Max die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Regeneration",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": true
+                },
+                "gameText": "Defend using [power]. Use your Max die. Recover Health equal to your Min die.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Skirmish",
+                "type": "A",
+                "icon": {
+                  "attack": true,
+                  "defend": false,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Attack one target using [power]. Attack a different target with your Min die. At the end of your turn, you may change modes.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
+              },
+              {
+                "name": "Stalwart",
+                "type": "A",
+                "icon": {
+                  "attack": false,
+                  "defend": true,
+                  "overcome": false,
+                  "hinder": false,
+                  "boost": false,
+                  "recover": false
+                },
+                "gameText": "Defend yourself and all nearby allies using [power] against each Attack until the beginning of your next turn.",
+                "slots": [
+                  {
+                    "token": "[power]",
+                    "itemType": "power"
+                  }
+                ]
               }
             ]
           }

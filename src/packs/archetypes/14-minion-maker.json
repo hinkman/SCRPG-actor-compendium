@@ -1,0 +1,71 @@
+{
+  "name": "Minion-Maker",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Who needs friends when you can just make them?</p><p>Assign one or more of the dice you rolled at the end of the power source step to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.sFnNvNhWv7cPtIeb]{Duplication}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1]{Inventions}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.g16MUwFTT08IfvEm]{Part Detachment}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB]{Robotics}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Materials powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p><p>Gain these Green abilities, each using a different power.</p><p>Gain one of these Yellow abilities.</p><p>In addition to the normal list, the following Red abilities are available to you when you select Red abilities.</p><p>Choose an Expertise principle.</p><p>Your Minions</p><p>Whenever you create a minion during a scene using one of your abilities, you choose which of the basic actions they can take (Attack, Overcome, Defend, Boost, or Hinder). They act like minions under your control (see page 17 for details on how minions work) and act at the beginning of your turn. The size of the minion die is based on the result of your roll.</p><p>Minion chart:</p><p>• 0 or Less: d4 minion — tiny/featureless</p><p>• 1–3: d6 minion — small/limited detail</p><p>• 4–7: d8 minion — house pet sized/detailed</p><p>• 8–11: d10 minion — humanoid sized/intricate</p><p>• 12+: d12 minion — large/paragon</p><p>The minions you summon during an action scene are only temporary: they might be robots built on the fly and so don't have the construction necessary to stick around, or the magic used to bind them to your service may only be temporary, and so on. As a result, minions created by you only last for the current scene. You may be able to have more permanent helpers based on story development; see pages 142-143 and 248-249 for details.</p><p>Minion Forms</p><p>Additionally, during hero creation, select a number of minion forms that can apply extra characteristics to your minions based on bonuses you use when creating them. You get a number of selections equal to the maximum value of a related quality. (For example, @UUID[Compendium.scrpg-actor-compendium.qualities.Item.NyAC38THx81aTE4d]{Creativity}, @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}, @UUID[Compendium.scrpg-actor-compendium.qualities.Item.xawim5bOhlTqoptp]{Otherworldly Mythos}, @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E]{Science}, or @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc]{Technology}. If you have the related quality at d8, choose eight characteristics. If you have it at d10, choose ten, etc.) Add those forms to your hero's auxiliary sheet.</p><p>When you create a minion during a scene, you may discard one bonus you have access to (on you or a willing ally) to add one of these forms:</p><p>• Autonomous (+1 or higher): The minion can take any of the basic actions, not just one.</p><p>• Burrowing (+1 or higher): The minion can tunnel through the earth.</p><p>• Floating (+1 or higher): The minion can fly and maneuver in the air.</p><p>• Pack (+2 or higher): The minion adds +1 to its Attack for each other pack minion attacking the same target this round.</p><p>• Explosive (+2 or higher): When the minion is destroyed, also remove a bonus or penalty of your choice.</p><p>• Reinforced (+2 or higher): The minion adds +1 to its roll to save.</p><p>• Harsh (+3 or higher): When Hindering, the target also takes damage equal to that penalty.</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.ZrWO0E9JtfFj6GG1]{Stealth} (+3 or higher): On a successful minion save, do not reduce this minion's die size.</p><p>• Swift (+3 or higher): The minion rolls twice for its action and chooses the higher die.</p><p>• Champion (+4 or higher): When Boosting, may apply the bonus to all actions by its creator and their minions until your next turn.</p><p>• Hive-Mind (+4 or higher): While this minion is active, all your other minions can take the same action as it does.</p><p>• Turret (+4 or higher): When Attacking, the minion may split its die into two dice, each one size smaller than its die, and either Attack one target with both, or two targets.</p><p>Roll d10, d10 for your personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 14,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Make Minion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yaoTgiGQNn4sFD4a"
+        },
+        {
+          "color": "green",
+          "name": "Power Up",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.P9TeNH1pPeyHZtp4"
+        },
+        {
+          "color": "yellow",
+          "name": "Minion Formation",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5ePV1Ty4yzLIZ68Y"
+        },
+        {
+          "color": "yellow",
+          "name": "Rapid Deployment",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6rEYRNuuAh7m2Ljl"
+        },
+        {
+          "color": "yellow",
+          "name": "Upgrade Minion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Kq4OoeqZee4rFJ6t"
+        },
+        {
+          "color": "red",
+          "name": "Construction Focus",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vj1lnYSEjgrQ6AYF"
+        },
+        {
+          "color": "red",
+          "name": "Swarm Combat",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3lAjHPfzVEmmuG43"
+        },
+        {
+          "color": "red",
+          "name": "Sacrifice",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Y9KOwBS3mzk1Jlk7"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "g916tLJg9SDCk4wo",
+  "_key": "!items!g916tLJg9SDCk4wo"
+}

@@ -147,7 +147,7 @@ const PACKS = [
         nested: true,
         itemType: "ability",
         img: "icons/svg/combat.svg",
-        expectedCount: 151,
+        expectedCount: 340,
         validateEntry(entry, categoryKey) {
             if (!entry.name || !entry.type || !entry.gameText || !entry.icon) {
                 throw new Error(`ability in ${categoryKey} is missing required fields`);
@@ -251,6 +251,55 @@ const PACKS = [
                             name: entry.outAbility.name,
                             uuid: entry.outAbility.uuid
                         }
+                    }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
+            };
+        }
+    },
+    {
+        key: "archetypes",
+        dataFile: "src/data/archetypes.json",
+        flatList: true,
+        itemType: "archetypes",
+        img: "icons/svg/statue.svg",
+        expectedCount: 20,
+        validateEntry(entry) {
+            if (!entry.name || !entry.number || !entry.descriptionHtml) {
+                throw new Error(`archetype is missing required fields: ${JSON.stringify(entry)}`);
+            }
+            if (!Array.isArray(entry.abilities) || !entry.abilities.length) {
+                throw new Error(`archetype ${entry.name} has no ability links`);
+            }
+            for (const ability of entry.abilities) {
+                if (!ability?.uuid || !ability?.name || !ability?.color) {
+                    throw new Error(`archetype ${entry.name} has invalid ability link`);
+                }
+                const expectedId = foundryId(`ability:${ability.color}:${slug(entry.name)}:${slug(ability.name)}`);
+                const expectedUuid = `Compendium.scrpg-actor-compendium.abilities.Item.${expectedId}`;
+                if (ability.uuid !== expectedUuid) {
+                    throw new Error(`archetype ${entry.name} ability uuid mismatch for ${ability.name}: ${ability.uuid} !== ${expectedUuid}`);
+                }
+            }
+        },
+        buildItem(entry, folderId, itemId) {
+            return {
+                name: entry.name,
+                type: "archetypes",
+                img: "icons/svg/statue.svg",
+                system: {
+                    description: entry.descriptionHtml
+                },
+                effects: [],
+                folder: folderId,
+                sort: entry.number * 100_000,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": {
+                        number: entry.number,
+                        abilities: entry.abilities
                     }
                 },
                 _stats: STATS,

@@ -1,0 +1,48 @@
+{
+  "name": "Device Transform",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": true,
+      "overcome": true,
+      "hinder": true,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>If you have access to your device, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. if you have any penalties that separate you from your device or otherwise inhibit you having full access to your device, you cannot use this ability.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "If you have access to your device, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. if you have any penalties that separate you from your device or otherwise inhibit you having full access to your device, you cannot use this ability.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "gIcJj3KVg7gnbcCw",
+  "_key": "!items!gIcJj3KVg7gnbcCw"
+}

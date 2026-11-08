@@ -1,0 +1,66 @@
+{
+  "name": "Blaster",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>No need to mess around, the best way to use energy is to throw it at the bad guy.</p><p>Assign one of the dice you rolled at the end of the power source step to an Elemental/Energy power. If you already have an Elemental/Energy power, you can skip it, add a different Elemental/Energy power, or swap the die with one of your new dice.</p><p>Assign one of your remaining dice to one of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Elemental/Energy powers category</p><p>• Select from Mobility powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Mental qualities category</p><p>• Select from Physical qualities category</p><p>Gain two of the following Green abilities, each of which uses a different one of your powers from the Blaster list above:</p><p>Gain two of these Yellow abilities, using two different powers:</p><p>Choose an Esoteric principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 5,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Exploit Vulnerability",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ubn9ICW0nav4sohJ"
+        },
+        {
+          "color": "green",
+          "name": "Disabling Blast",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0tuiErxFx9m93ppy"
+        },
+        {
+          "color": "green",
+          "name": "Danger Zone",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.r9yE0hFtMQ3Ce4DQ"
+        },
+        {
+          "color": "green",
+          "name": "Precise Hit",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0zBbd2gGhD9wumb9"
+        },
+        {
+          "color": "yellow",
+          "name": "Energy Immunity",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GdsqrHseLVijGsRS"
+        },
+        {
+          "color": "yellow",
+          "name": "Heedless Blast",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sjIIxiqRtgBLoS5R"
+        },
+        {
+          "color": "yellow",
+          "name": "Imbue with Element",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PMBEHxkUXPyGqKet"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "jmJPudZhuTSHFALZ",
+  "_key": "!items!jmJPudZhuTSHFALZ"
+}

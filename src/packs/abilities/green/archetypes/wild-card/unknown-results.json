@@ -1,0 +1,53 @@
+{
+  "name": "Unknown Results",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": true,
+      "overcome": true,
+      "hinder": true,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Take any basic action using [power]. Then roll a d6. On 1, Boost with your Min die. On 2, Hinder with your Min die. On 3, Defend with your Min die. On 4, lose Health equal to your Min die. On 5, your basic action uses your Max die. On 6, your basic action uses your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "vmHbaQIWhgIFCfwV",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "wild-card",
+      "source": {
+        "itemType": "archetypes",
+        "number": 15
+      },
+      "gameTextTemplate": "Take any basic action using [power]. Then roll a d6. On 1, Boost with your Min die. On 2, Hinder with your Min die. On 3, Defend with your Min die. On 4, lose Health equal to your Min die. On 5, your basic action uses your Max die. On 6, your basic action uses your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "qgqw2F9QUFw2cEXX",
+  "_key": "!items!qgqw2F9QUFw2cEXX"
+}

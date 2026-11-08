@@ -1,0 +1,56 @@
+{
+  "name": "Aerial Surveillance",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.</p>"
+  },
+  "effects": [],
+  "folder": "KLG3fKKaxyZwR9WZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "flyer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 8
+      },
+      "gameTextTemplate": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ohMZL0W6ozgMBkhA",
+  "_key": "!items!ohMZL0W6ozgMBkhA"
+}

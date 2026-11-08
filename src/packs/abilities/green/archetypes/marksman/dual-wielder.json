@@ -1,0 +1,56 @@
+{
+  "name": "Dual Wielder",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack two different targets using [power/quality], one target using your Mid die and the other your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "uSWStHCn9HKxsXkI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "marksman",
+      "source": {
+        "itemType": "archetypes",
+        "number": 4
+      },
+      "gameTextTemplate": "Attack two different targets using [power/quality], one target using your Mid die and the other your Min die.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "148AbHjRtdl3Rha6",
+  "_key": "!items!148AbHjRtdl3Rha6"
+}

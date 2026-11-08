@@ -1,0 +1,48 @@
+{
+  "name": "Sacrifice",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are Attacked, redirect the Attack to one of your nearby minions.</p>"
+  },
+  "effects": [],
+  "folder": "XbXD7szWYeKdU0qg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "minion-maker",
+      "source": {
+        "itemType": "archetypes",
+        "number": 14
+      },
+      "gameTextTemplate": "When you are Attacked, redirect the Attack to one of your nearby minions.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Y9KOwBS3mzk1Jlk7",
+  "_key": "!items!Y9KOwBS3mzk1Jlk7"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Robot/Cyborg",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Your machine nature gives you adaptability and firepower.</p><p>Assign one or more of the dice you rolled at the end of the power source step to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p><p>Assign a d10 to a Technological power you do not already possess.</p><p>Gain two of the following Green abilities, using two different powers:</p><p>Gain one of the above abilities at Yellow.</p><p>Choose an Expertise principle.</p><p>When determining Health during step 7, you may use a Technological power instead of an Athletic power or Mental quality.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 10,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Adaptive Programming",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.nxy5L8mxhSKfBKAa"
+        },
+        {
+          "color": "green",
+          "name": "Living Arsenal",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TYRZ8Y4qvEtEt25N"
+        },
+        {
+          "color": "green",
+          "name": "Metal Skin",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GHCsdSDslA2nGCKQ"
+        },
+        {
+          "color": "green",
+          "name": "Self-Improvement",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3yGCDIiLKkbsIXgN"
+        },
+        {
+          "color": "green",
+          "name": "Something for Everyone",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sQcljCLUHC9mfoPa"
+        },
+        {
+          "color": "yellow",
+          "name": "Adaptive Programming",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YjenR52LBy44MSPD"
+        },
+        {
+          "color": "yellow",
+          "name": "Living Arsenal",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ViCkNQBpTJxixj0K"
+        },
+        {
+          "color": "yellow",
+          "name": "Metal Skin",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.kp1KchlKzojAJhqv"
+        },
+        {
+          "color": "yellow",
+          "name": "Self-Improvement",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.hfXn4607y3pBRpKD"
+        },
+        {
+          "color": "yellow",
+          "name": "Something for Everyone",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.kUlShLzWMzwYaZJp"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "vXGBAtkGhehDj6Xi",
+  "_key": "!items!vXGBAtkGhehDj6Xi"
+}

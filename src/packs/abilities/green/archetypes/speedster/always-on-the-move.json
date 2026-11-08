@@ -1,0 +1,56 @@
+{
+  "name": "Always on the Move",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power/quality]. Defend yourself using your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "tGsbIqvHLKDtIBgD",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "speedster",
+      "source": {
+        "itemType": "archetypes",
+        "number": 1
+      },
+      "gameTextTemplate": "Attack using [power/quality]. Defend yourself using your Min die.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "uvL1p0BxnFwgK66y",
+  "_key": "!items!uvL1p0BxnFwgK66y"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Hunter/Killer",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Move to any target in this scene and Hinder that target using [power]. Then, Attack that target using your Max+Min dice.</p>"
+  },
+  "effects": [],
+  "folder": "Zo8L14z9lmm8h9s9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "Move to any target in this scene and Hinder that target using [power]. Then, Attack that target using your Max+Min dice.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "QXGZL42zwMXgOJYV",
+  "_key": "!items!QXGZL42zwMXgOJYV"
+}

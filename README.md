@@ -2,30 +2,28 @@
 
 Unofficial compendium module for [Foundry VTT](https://foundryvtt.com/) using the [scrpg-foundry](https://github.com/hinkman/SCRPG-foundry) system. A copy of Sentinel Comics: The Roleplaying Game is required. This module does not replace the rules.
 
-Version 0.6.0 contains:
+Version 0.7.0 contains:
 
 - Powers (rulebook pages 123–126)
 - Qualities (rulebook pages 127–128)
 - Principles (rulebook pages 132–149)
-- Personalities (rulebook pages 109–112), with table number and status dice
+- Personalities (rulebook pages 109–112)
+- Archetypes (rulebook pages 81–106), with table numbers and UUID-linked powers/qualities in descriptions
 - Abilities in the shared **SCRPG Abilities** pack:
-  - **Green → Principles** — principle Green abilities, UUID-linked from each principle
-  - **Red** — Red abilities (rulebook pages 114–119)
-  - **Out → Personalities** — grey Out abilities, UUID-linked from each personality
+  - **Green → Principles** — principle Green abilities
+  - **Green / Yellow / Red → Archetypes** — archetype abilities by color
+  - **Red** — Red abilities from pp. 114–119 (power/quality category folders)
+  - **Out → Personalities** — grey Out abilities
 
-Entries stay in their Foundry compendia and are not imported into the world Items directory automatically. Drag a power, quality, principle, personality, or ability onto a hero when you need it. Die size for powers and qualities starts at `d4` and is set on the character.
+Entries stay in their Foundry compendia. Drag items onto a hero when needed. Die size for powers and qualities starts at `d4`.
 
-Principle and personality sheets show their linked abilities. Dropping a principle onto a principle column creates that Green ability on the hero. Dropping a personality onto a hero applies name, Out text, and status dice (system behavior) and also creates the linked Out ability.
-
-Abilities that use `[power]`, `[quality]`, `[energy/element]`, or similar placeholders show trait dropdowns once the ability is on a hero.
+Principle, personality, and archetype sheets show linked abilities. Drops create those linked abilities on the hero. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
 
 ## Install
 
-Foundry 14 and `scrpg-foundry` 0.9.10 or newer. In Foundry Setup, install or update the module from:
+Foundry 14 and `scrpg-foundry` 0.9.10 or newer. Install from:
 
 `https://raw.githubusercontent.com/hinkman/SCRPG-actor-compendium/main/module.json`
-
-Enable **Sentinel Comics RPG Actor Compendium** in a world that uses `scrpg-foundry`. Use the **SCRPG Powers**, **SCRPG Qualities**, **SCRPG Principles**, **SCRPG Abilities**, and **SCRPG Personalities** packs.
 
 ## Rebuild the packs
 
@@ -34,4 +32,4 @@ npm install
 npm run pack
 ```
 
-Edit files under `src/data/`, then run `npm run pack` to regenerate `src/packs/*` and compile `packs/*`.
+Edit files under `src/data/`, then run `npm run pack`.

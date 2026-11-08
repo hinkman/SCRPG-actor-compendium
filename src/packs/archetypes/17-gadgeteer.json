@@ -1,0 +1,66 @@
+{
+  "name": "Gadgeteer",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Any problem can be solved through sufficient brainpower.</p><p>Assign one of the dice you rolled at the end of the power source step to an Intellectual power. If you already have an Intellectual power, you can skip it, add a different Intellectual power, or swap the die with one of your new dice.</p><p>Assign one or more remaining dice to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Intellectual powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p><p>Gain two of the following Green abilities, using two different powers.</p><p>Gain one of the following Yellow abilities.</p><p>Choose an Identity principle.</p><p>Roll d10, d10 for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 17,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Analyze Probabilities",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Vca1oonR3AyeRPBO"
+        },
+        {
+          "color": "green",
+          "name": "Analyze Weakness",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Q5713bjdSl7mhuc0"
+        },
+        {
+          "color": "green",
+          "name": "Equip",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.LEimN1w44Fzfn2Ct"
+        },
+        {
+          "color": "green",
+          "name": "Helpful Invention",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CKPmY2Cn1DlVExJW"
+        },
+        {
+          "color": "yellow",
+          "name": "Helpful Analysis",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SpSNwuBKgz0DYWOW"
+        },
+        {
+          "color": "yellow",
+          "name": "Snap Decision",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UUsz8NXpxGiUtAwA"
+        },
+        {
+          "color": "yellow",
+          "name": "Turn the Tables",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F8nNT7d8SsN5M8t5"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "VpUQQ9rwj7Ujex0q",
+  "_key": "!items!VpUQQ9rwj7Ujex0q"
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Elemental Manipulator",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Energies are yours to command and flow, sometimes through your own body.</p><p>Assign one of the dice you rolled at the end of the power source step to an Elemental/Energy power. If you already have an Elemental/Energy power, you can skip it, add a different Elemental/Energy power, or swap the die with one of your new dice.</p><p>Assign one of the remaining dice to one of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.RECkAlMY7v9N4KNI]{Absorption}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO]{Leaping}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE]{Swimming}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz]{Transmutation}</p><p>• Select from Elemental/Energy powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E]{Science}</p><p>• Select from Mental qualities category</p><p>• Select from Physical qualities category</p><p>Gain two of the following Green abilities, both of which must use your Elemental/Energy powers:</p><p>Gain one of these Yellow abilities, using one of your Elemental/Energy powers:</p><p>Choose an Esoteric principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 9,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Backlash",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HLsEHPAxBt2q78Ol"
+        },
+        {
+          "color": "green",
+          "name": "Energy Conversion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SKyLBo1yktnogTy8"
+        },
+        {
+          "color": "green",
+          "name": "External Combustion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EDGW1MueeJEwYTsB"
+        },
+        {
+          "color": "green",
+          "name": "Focused Apparatus",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XskL1ZLzKP8RlmMt"
+        },
+        {
+          "color": "yellow",
+          "name": "Damage Spike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sF39J1l3x2medB9g"
+        },
+        {
+          "color": "yellow",
+          "name": "Energy Alignment",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.mIzjvha9oKYzYKpF"
+        },
+        {
+          "color": "yellow",
+          "name": "Energy Redirection",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Sh1XZWusiEAIFhH"
+        },
+        {
+          "color": "yellow",
+          "name": "Live Dangerously",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7wLas1GwhrDcDVkI"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "HCuN9wV9XcgQgvI0",
+  "_key": "!items!HCuN9wV9XcgQgvI0"
+}

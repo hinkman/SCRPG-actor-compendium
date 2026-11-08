@@ -1,0 +1,48 @@
+{
+  "name": "Telepathic Whammy",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using Telepathy and use your Max die. Hinder the target with a persistent penalty using your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "LwlueDhNjUstLDYe",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "psychic",
+      "source": {
+        "itemType": "archetypes",
+        "number": 12
+      },
+      "gameTextTemplate": "Attack using Telepathy and use your Max die. Hinder the target with a persistent penalty using your Min die.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "rRG1IaVBuXOEe7V6",
+  "_key": "!items!rRG1IaVBuXOEe7V6"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Regeneration",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": true
+    },
+    "type": "A",
+    "gameText": "<p>Defend using [power]. Use your Max die. Recover Health equal to your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "Ql7JM5HegKRxKAut",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "Defend using [power]. Use your Max die. Recover Health equal to your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Zwgw7xpIAO3CF2Y6",
+  "_key": "!items!Zwgw7xpIAO3CF2Y6"
+}

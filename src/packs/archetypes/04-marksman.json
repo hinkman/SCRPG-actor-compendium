@@ -1,0 +1,76 @@
+{
+  "name": "Marksman",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Whether it's guns, a bow and arrow, or something else, you know your aim is true.</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry} power. If you already have @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}, either skip it or swap the die with one of your new dice.</p><p>Assign one or more of the remaining dice to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5]{Swinging}</p><p>• Select from Athletic powers category</p><p>• Select from Intellectual powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p><p>• Select from Physical qualities category</p><p>Gain two of the following Green abilities, one using @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry} and the other using one of your qualities:</p><p>Gain two of the following Yellow abilities, using two different qualities:</p><p>Choose a Responsibility principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 4,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Dual Wielder",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.148AbHjRtdl3Rha6"
+        },
+        {
+          "color": "green",
+          "name": "Load",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tT4vu7o697Op2yDV"
+        },
+        {
+          "color": "green",
+          "name": "Precise Shot",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AluvtGwJSkdf4XLW"
+        },
+        {
+          "color": "green",
+          "name": "Sniper Aim",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dvbFMv65zHv4frfM"
+        },
+        {
+          "color": "green",
+          "name": "Spin & Shoot",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xDtbK6AiPjbKM0Hf"
+        },
+        {
+          "color": "yellow",
+          "name": "Called Shot",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.mi1P6JukisPzptzZ"
+        },
+        {
+          "color": "yellow",
+          "name": "Exploding Ammo",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ApS6H8WML4YPpBJq"
+        },
+        {
+          "color": "yellow",
+          "name": "Hair Trigger Reflexes",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.001KS0j5H863Xd47"
+        },
+        {
+          "color": "yellow",
+          "name": "Ricochet",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CcgG4Q1nAIYsp6hv"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "pjEbHIdNfo12kXUq",
+  "_key": "!items!pjEbHIdNfo12kXUq"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Analysis",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": true,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder or use one of your principles to Overcome using [power]. Use your Max+Min dice.</p>"
+  },
+  "effects": [],
+  "folder": "Ql7JM5HegKRxKAut",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "Hinder or use one of your principles to Overcome using [power]. Use your Max+Min dice.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "bnrMvBnbEuHepPTU",
+  "_key": "!items!bnrMvBnbEuHepPTU"
+}

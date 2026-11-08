@@ -1,0 +1,48 @@
+{
+  "name": "Split Form",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "I",
+    "gameText": "<p>Choose two powers and two qualities that you always have access to in either form. You must divide up the remainder of your powers and qualities between your civilian and heroic forms, so they are only usable within those forms. You cannot use abilities related to a power or quality you don't have access to. In the next step, when you create a roleplaying quality, you will have access to that in either form.</p>"
+  },
+  "effects": [],
+  "folder": "5fpR7laNM0vkyIwa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "divided",
+      "source": {
+        "itemType": "archetypes",
+        "number": 19
+      },
+      "gameTextTemplate": "Choose two powers and two qualities that you always have access to in either form. You must divide up the remainder of your powers and qualities between your civilian and heroic forms, so they are only usable within those forms. You cannot use abilities related to a power or quality you don't have access to. In the next step, when you create a roleplaying quality, you will have access to that in either form.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "x5dVkwfmxg117WxD",
+  "_key": "!items!x5dVkwfmxg117WxD"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Precise Shot",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.</p>"
+  },
+  "effects": [],
+  "folder": "uSWStHCn9HKxsXkI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "marksman",
+      "source": {
+        "itemType": "archetypes",
+        "number": 4
+      },
+      "gameTextTemplate": "Attack using [power/quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "AluvtGwJSkdf4XLW",
+  "_key": "!items!AluvtGwJSkdf4XLW"
+}

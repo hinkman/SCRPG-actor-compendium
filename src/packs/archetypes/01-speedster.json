@@ -1,0 +1,66 @@
+{
+  "name": "Speedster",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>Sorrygottagobeintwelveplacesatonce...</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ]{Speed} power. If you already have @UUID[Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ]{Speed}, either skip it or swap the die with one of your new dice.</p><p>Assign one or more of the remaining dice to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.iJ4lw3vOpXIC2Mwp]{Agility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5r7HjDoWoSVm9d5e]{Intangibility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.DEqpcIHX8qEVJeag]{Lightning Calculator}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz]{Vitality}</p><p>• Select from Mobility powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Mental qualities category</p><p>• Select from Physical qualities category</p><p>Gain two of the following Green abilities, each using a different power or quality from the Speedster list:</p><p>Gain one of the following Yellow abilities:</p><p>Choose an Expertise principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 1,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Always on the Move",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.uvL1p0BxnFwgK66y"
+        },
+        {
+          "color": "green",
+          "name": "Fast Fingers",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.hzglyEQIHTMxmri5"
+        },
+        {
+          "color": "green",
+          "name": "Non-stop Assault",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p2Jqwa3W8O9dRNv9"
+        },
+        {
+          "color": "yellow",
+          "name": "Blinding Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cPEyyECXO3cXEGKw"
+        },
+        {
+          "color": "yellow",
+          "name": "Flurry of Fists",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SyTeaLWOhplIEgXj"
+        },
+        {
+          "color": "yellow",
+          "name": "Supersonic Streak",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aGWuhzs4l4UXVzbl"
+        },
+        {
+          "color": "yellow",
+          "name": "Speedy Analysis",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.mc8vQFiOd2XcAHvS"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "aSW4bT5OSqXjAYwC",
+  "_key": "!items!aSW4bT5OSqXjAYwC"
+}

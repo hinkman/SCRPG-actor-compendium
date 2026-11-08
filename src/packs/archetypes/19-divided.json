@@ -1,0 +1,71 @@
+{
+  "name": "Divided",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You have two very different forms, such as an unpowered civilian form and a powered heroic form.</p><p>Note: Divided heroes are more complex to create than most heroes. We strongly recommend that the first hero you create in the Sentinel Comics RPG isn't a divided hero.</p><p>Divided heroes have two forms: one civilian, and one heroic, with some method to change between them.</p><p>Reroll the dice you rolled at the end of the power source step and choose another archetype other than Divided or Modular. Your full archetype is \"Divided [whatever you chose].\" Follow all the steps of that archetype, but when told to select a principle from that archetype, return to this archetype and complete this section. You may want to make notes on your auxiliary sheet on how your divided form works.</p><p>First, choose one of these four methods of transformation:</p><p>• Controllable Transition: You change between two different forms through some method that you have control over at all times. It might be yelling a magic word, or an elaborate sparkly transformation sequence. The disadvantage of controllable transition is that it always takes time to transform. Gain the following Green ability: Transform.</p><p>• Device Transition: You transform between forms via a device of some kind, possibly via cybernetic upgrades or a magical artifact that channels the essence of a demigod. The disadvantage of device transition is that you need access to the device to enact your transformation. Gain the following Green ability: Device Transform.</p><p>• Merging/Possession Transition: Your transformation isn't entirely within you and you require other entities to change forms. For some, you must merge with someone else/something else to achieve your full heroic potential. For others, you take direct control over inanimate objects or people to manifest your powers. Gain one of the following Green abilities: Merge, Possess Person, or Possess Object.</p><p>• Uncontrollable Transition: You transform in response to stress — whether you want to or not. Gain the following Green ability: Uncontrolled Transform.</p><p>After choosing your method of transformation, gain one of these Green abilities: Divided Psyche or Split Form.</p><p>Last, instead of the principle from your other archetype, take a Responsibility principle.</p><p>Roll d10, d10 for your personality selection. Optionally, you may take two different personalities — one for each of your forms — change your status dice as appropriate. (You still only have one roleplaying quality and Out ability.)</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 19,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Transform",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzVVBqNXZzDDAEqO"
+        },
+        {
+          "color": "green",
+          "name": "Device Transform",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gIcJj3KVg7gnbcCw"
+        },
+        {
+          "color": "green",
+          "name": "Merge",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xHOfuFeTjxjZTfsY"
+        },
+        {
+          "color": "green",
+          "name": "Possess Person",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ziTg0EzscKsL2qeR"
+        },
+        {
+          "color": "green",
+          "name": "Possess Object",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jBzkcr5R20qCbUWN"
+        },
+        {
+          "color": "green",
+          "name": "Uncontrolled Transform",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ss01cyBG6dC5zOJp"
+        },
+        {
+          "color": "green",
+          "name": "Divided Psyche",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.nDvC1bPNRhCHiMtC"
+        },
+        {
+          "color": "green",
+          "name": "Split Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.x5dVkwfmxg117WxD"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "pbAkBVEtTnbt5vAa",
+  "_key": "!items!pbAkBVEtTnbt5vAa"
+}

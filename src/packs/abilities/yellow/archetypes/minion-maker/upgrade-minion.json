@@ -1,0 +1,53 @@
+{
+  "name": "Upgrade Minion",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost one of your minions using [power]. You may also upgrade that minion to your Max die size, replacing its minion form.</p>"
+  },
+  "effects": [],
+  "folder": "Iqa1yaPl0kElAh0i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "minion-maker",
+      "source": {
+        "itemType": "archetypes",
+        "number": 14
+      },
+      "gameTextTemplate": "Boost one of your minions using [power]. You may also upgrade that minion to your Max die size, replacing its minion form.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Kq4OoeqZee4rFJ6t",
+  "_key": "!items!Kq4OoeqZee4rFJ6t"
+}

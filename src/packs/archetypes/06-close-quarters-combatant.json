@@ -1,0 +1,91 @@
+{
+  "name": "Close Quarters Combatant",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You prefer to fight up close and personal.</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat} quality. If you already have @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat}, either skip it or swap the die with one of your new dice.</p><p>Assign one or more of the remaining dice to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Physical qualities category</p><p>• Select from Social qualities category</p><p>Gain three of the following Green abilities, at least one using your @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat} quality and another using one of your powers:</p><p>Gain one of the above abilities as a Yellow ability, using a different power or quality from any of your Green abilities.</p><p>Choose a Responsibility principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 6,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Defensive Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gMkBe1mXVKyu4zm1"
+        },
+        {
+          "color": "green",
+          "name": "Dual Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yaLfbb57ErrXxB9Y"
+        },
+        {
+          "color": "green",
+          "name": "Flexible Stance",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.iR33NU0dvSPnBScs"
+        },
+        {
+          "color": "green",
+          "name": "Offensive Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.B8OfLL4KymIFH3Q3"
+        },
+        {
+          "color": "green",
+          "name": "Precise Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1aSE4cepOZeERVUM"
+        },
+        {
+          "color": "green",
+          "name": "Throw Minion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MsdT3THHgZncutO9"
+        },
+        {
+          "color": "yellow",
+          "name": "Defensive Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.etrC2PptpxWmJFDX"
+        },
+        {
+          "color": "yellow",
+          "name": "Dual Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7VEpTEuo4M1wk9Xf"
+        },
+        {
+          "color": "yellow",
+          "name": "Flexible Stance",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SxTvDxGQHwMvnfmE"
+        },
+        {
+          "color": "yellow",
+          "name": "Offensive Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ksKOGeP9HawmmwHg"
+        },
+        {
+          "color": "yellow",
+          "name": "Precise Strike",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KtcPmbpQYHH0f0CE"
+        },
+        {
+          "color": "yellow",
+          "name": "Throw Minion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.D5oWlBPmtqBT8Ysl"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "NBgDSAVjaGJcWAA3",
+  "_key": "!items!NBgDSAVjaGJcWAA3"
+}

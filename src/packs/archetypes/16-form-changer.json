@@ -1,0 +1,131 @@
+{
+  "name": "Form-Changer",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You can shift yourself between a few different forms.</p><p>Assign one of the dice you rolled at the end of the power source step to a power from the Self Control category. If you already have an Self Control power, you can skip it, add a different Self Control power, or swap the die with one of your new dice.</p><p>Assign one or more remaining dice to any of these powers:</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p><p>• Select from Self Control powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Physical qualities category</p><p>Gain the following Green ability (Change Forms).</p><p>Gain one of the following Green abilities (Form Recovery or Surprise Shift).</p><p>These abilities are available to you in any form. Make two other Green forms, recording them on your auxiliary sheet: You may swap dice between your powers for each form, including adding powers from the above list and dropping others. Each one gains a different ability only usable while in that form.</p><p>Then make a Yellow form, recording it on your auxiliary sheet. You may swap powers around and upgrade any two dice by one size. Pick one of the following Yellow form abilities for your Yellow form (or choose one of the unused Green form abilities above).</p><p>Gain the following Red ability.</p><p>Choose an Esoteric principle.</p><p>Roll d10, d10 for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 16,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Change Forms",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gJGz1gl0YuSKQLbL"
+        },
+        {
+          "color": "green",
+          "name": "Form Recovery",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.eG0TGSSqokTLifA5"
+        },
+        {
+          "color": "green",
+          "name": "Surprise Shift",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JH7RvpBuQFJl8Cab"
+        },
+        {
+          "color": "green",
+          "name": "Clever Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CH9U8KanKE9kYQY8"
+        },
+        {
+          "color": "green",
+          "name": "Minuscule Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SBKaQnzy9RVqtR4m"
+        },
+        {
+          "color": "green",
+          "name": "Strong Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.lg1iHGs75xnetgfh"
+        },
+        {
+          "color": "green",
+          "name": "Tough Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.QXvYr0QGlxLOdujX"
+        },
+        {
+          "color": "green",
+          "name": "Tricky Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.c5XdoF8b5YwOIjOg"
+        },
+        {
+          "color": "green",
+          "name": "Weird Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IZbbpIEYdgHOhtSC"
+        },
+        {
+          "color": "yellow",
+          "name": "Agile Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.kK4uiUR0GFCokESq"
+        },
+        {
+          "color": "yellow",
+          "name": "Regenerating Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.E0dbOiXNXPIVm2i2"
+        },
+        {
+          "color": "yellow",
+          "name": "Speedy Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MbSlrpfvqUDDS52U"
+        },
+        {
+          "color": "yellow",
+          "name": "Towering Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.67fR6HuyA6SrlxzA"
+        },
+        {
+          "color": "yellow",
+          "name": "Clever Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.A92AqoVDc3Lt5zeV"
+        },
+        {
+          "color": "yellow",
+          "name": "Minuscule Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EvjuenZWWSoRYJoI"
+        },
+        {
+          "color": "yellow",
+          "name": "Strong Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3Jb4oAOSjCMr2cex"
+        },
+        {
+          "color": "yellow",
+          "name": "Tough Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Aq9VDxaftmqqsJ1C"
+        },
+        {
+          "color": "yellow",
+          "name": "Tricky Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1EE160dwSXS5rhEC"
+        },
+        {
+          "color": "yellow",
+          "name": "Weird Form",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.H98P2pNRAytfCwxp"
+        },
+        {
+          "color": "red",
+          "name": "Emergency Change",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.BivLJCL5rCSwD1xj"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "bTqyA3rOcK5fxYH2",
+  "_key": "!items!bTqyA3rOcK5fxYH2"
+}

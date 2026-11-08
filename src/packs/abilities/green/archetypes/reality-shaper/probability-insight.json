@@ -1,0 +1,53 @@
+{
+  "name": "Probability Insight",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost using [power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "Z8zbm68DP3xA1Hcd",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "reality-shaper",
+      "source": {
+        "itemType": "archetypes",
+        "number": 18
+      },
+      "gameTextTemplate": "Boost using [power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Y0Xbq8dcJCEQF0OG",
+  "_key": "!items!Y0Xbq8dcJCEQF0OG"
+}

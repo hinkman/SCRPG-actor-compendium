@@ -1,0 +1,56 @@
+{
+  "name": "Galvanize",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.</p>"
+  },
+  "effects": [],
+  "folder": "NO81VrmjYzbGfkev",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "physical-powerhouse",
+      "source": {
+        "itemType": "archetypes",
+        "number": 3
+      },
+      "gameTextTemplate": "Boost using [power/quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
+      "slots": [
+        {
+          "token": "[power/quality]",
+          "itemTypes": [
+            "power",
+            "quality"
+          ]
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "oBQ6K4S07DFRgLN2",
+  "_key": "!items!oBQ6K4S07DFRgLN2"
+}

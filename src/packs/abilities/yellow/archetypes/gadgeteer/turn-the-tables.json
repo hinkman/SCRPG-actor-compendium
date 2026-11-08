@@ -1,0 +1,48 @@
+{
+  "name": "Turn the Tables",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Change any bonus into a penalty of equal size or vice versa.</p>"
+  },
+  "effects": [],
+  "folder": "TWM2ETWsLCti0VtJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "gadgeteer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 17
+      },
+      "gameTextTemplate": "Change any bonus into a penalty of equal size or vice versa.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "F8nNT7d8SsN5M8t5",
+  "_key": "!items!F8nNT7d8SsN5M8t5"
+}

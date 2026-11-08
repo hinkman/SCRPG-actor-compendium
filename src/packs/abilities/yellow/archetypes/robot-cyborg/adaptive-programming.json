@@ -1,0 +1,53 @@
+{
+  "name": "Adaptive Programming",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost yourself using [power], and Defend with your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "5U7dsiis3qQElfTo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "robot-cyborg",
+      "source": {
+        "itemType": "archetypes",
+        "number": 10
+      },
+      "gameTextTemplate": "Boost yourself using [power], and Defend with your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "YjenR52LBy44MSPD",
+  "_key": "!items!YjenR52LBy44MSPD"
+}

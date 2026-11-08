@@ -1,0 +1,53 @@
+{
+  "name": "Rapid Deployment",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Create a minion using [power]. Use your Min die. Choose which basic action it can perform. It acts now and at the start of your turns.</p>"
+  },
+  "effects": [],
+  "folder": "Iqa1yaPl0kElAh0i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "minion-maker",
+      "source": {
+        "itemType": "archetypes",
+        "number": 14
+      },
+      "gameTextTemplate": "Create a minion using [power]. Use your Min die. Choose which basic action it can perform. It acts now and at the start of your turns.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "6rEYRNuuAh7m2Ljl",
+  "_key": "!items!6rEYRNuuAh7m2Ljl"
+}

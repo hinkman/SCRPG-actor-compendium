@@ -1,0 +1,53 @@
+{
+  "name": "Banish",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder using [power]. Use your Max die. If you roll doubles, also Attack using your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "TgDjVi5BljR0GPbH",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "sorcerer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 11
+      },
+      "gameTextTemplate": "Hinder using [power]. Use your Max die. If you roll doubles, also Attack using your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "imnA8a70pkaz0abA",
+  "_key": "!items!imnA8a70pkaz0abA"
+}

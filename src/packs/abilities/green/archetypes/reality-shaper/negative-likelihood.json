@@ -1,0 +1,53 @@
+{
+  "name": "Negative Likelihood",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Hinder using [power]. That penalty is persistent and exclusive.</p>"
+  },
+  "effects": [],
+  "folder": "Z8zbm68DP3xA1Hcd",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "reality-shaper",
+      "source": {
+        "itemType": "archetypes",
+        "number": 18
+      },
+      "gameTextTemplate": "Hinder using [power]. That penalty is persistent and exclusive.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "KJvFASlenNY0sSBA",
+  "_key": "!items!KJvFASlenNY0sSBA"
+}

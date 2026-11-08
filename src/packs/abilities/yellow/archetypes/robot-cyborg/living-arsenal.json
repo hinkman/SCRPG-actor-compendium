@@ -1,0 +1,53 @@
+{
+  "name": "Living Arsenal",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power] with a bonus equal to the number of bonuses you currently have.</p>"
+  },
+  "effects": [],
+  "folder": "5U7dsiis3qQElfTo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "robot-cyborg",
+      "source": {
+        "itemType": "archetypes",
+        "number": 10
+      },
+      "gameTextTemplate": "Attack using [power] with a bonus equal to the number of bonuses you currently have.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "ViCkNQBpTJxixj0K",
+  "_key": "!items!ViCkNQBpTJxixj0K"
+}

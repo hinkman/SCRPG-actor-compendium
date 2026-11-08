@@ -1,0 +1,48 @@
+{
+  "name": "Emergency Change",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When hit with an Attack, change to any form before resolving the Attack. Take a minor twist.</p>"
+  },
+  "effects": [],
+  "folder": "lexw0ytPIJrRDE8S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "form-changer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 16
+      },
+      "gameTextTemplate": "When hit with an Attack, change to any form before resolving the Attack. Take a minor twist.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "BivLJCL5rCSwD1xj",
+  "_key": "!items!BivLJCL5rCSwD1xj"
+}

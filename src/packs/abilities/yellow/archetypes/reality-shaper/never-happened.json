@@ -1,0 +1,48 @@
+{
+  "name": "Never Happened",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When a nearby enemy would create a bonus or penalty, you may remove it immediately.</p>"
+  },
+  "effects": [],
+  "folder": "izSBQ65mnHd8ODGB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "reality-shaper",
+      "source": {
+        "itemType": "archetypes",
+        "number": 18
+      },
+      "gameTextTemplate": "When a nearby enemy would create a bonus or penalty, you may remove it immediately.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "mSh4GyDSY9nUUgz9",
+  "_key": "!items!mSh4GyDSY9nUUgz9"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Transporter",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You know how to get exactly where you need to be, when you need to be there.</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle} power or a power from the Mobility category. If you already have at least one, either skip it or swap this die with one of your new dice.</p><p>Assign one or more remaining dice to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p><p>• Select from Psychic powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Physical qualities category</p><p>• Select from Social qualities category</p><p>Gain two of the following Green abilities, using two different powers.</p><p>Gain one of the above abilities as a Yellow ability.</p><p>Choose an Expertise principle.</p><p>Roll d10, d8 for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 13,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Displacement Assault",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YRedgGF4MwRihDPh"
+        },
+        {
+          "color": "green",
+          "name": "Hit & Run",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OtnGe7R4OoOjfck"
+        },
+        {
+          "color": "green",
+          "name": "Mobile Assist",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.m1MJKmpisIGMKatS"
+        },
+        {
+          "color": "green",
+          "name": "Mobile Dodge",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.s1cfEPIftrbKiRv5"
+        },
+        {
+          "color": "green",
+          "name": "Run Down",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.QrX70BABFgW8K5q4"
+        },
+        {
+          "color": "yellow",
+          "name": "Displacement Assault",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.QqU1ALV6yCPxFAdq"
+        },
+        {
+          "color": "yellow",
+          "name": "Hit & Run",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.RAOrs4cIuVH8WNCv"
+        },
+        {
+          "color": "yellow",
+          "name": "Mobile Assist",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jgsx052iAprqogaC"
+        },
+        {
+          "color": "yellow",
+          "name": "Mobile Dodge",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.i5MSZbAhwHhFovFt"
+        },
+        {
+          "color": "yellow",
+          "name": "Run Down",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0afn9nJrtrdEU3ox"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "vGlkqyNazsMzEq9p",
+  "_key": "!items!vGlkqyNazsMzEq9p"
+}

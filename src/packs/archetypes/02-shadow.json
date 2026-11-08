@@ -1,0 +1,56 @@
+{
+  "name": "Shadow",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>You operate in the shadows via subtlety and guile.</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.qualities.Item.ZrWO0E9JtfFj6GG1]{Stealth} quality. If you already have @UUID[Compendium.scrpg-actor-compendium.qualities.Item.ZrWO0E9JtfFj6GG1]{Stealth}, either skip it or swap the die with one of your new dice.</p><p>Assign any number of the remaining dice to any of the following powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.5r7HjDoWoSVm9d5e]{Intangibility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.pjArTyAxecwPdHvf]{Invisibility}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Physical qualities category</p><p>Gain two of these Green abilities, each using a different power or quality from the Shadow lists:</p><p>Gain one of these Yellow abilities:</p><p>Choose an Expertise principle.</p><p>Roll for your personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 2,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Sabotage",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.32TayWJZVfrfZgzt"
+        },
+        {
+          "color": "green",
+          "name": "Shadowy Figure",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GvhcFXa9apskTChS"
+        },
+        {
+          "color": "green",
+          "name": "Untouchable",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xarWvNqCB0USt8VD"
+        },
+        {
+          "color": "yellow",
+          "name": "Overcome From the Darkness",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vfRnZYAykImoMQcw"
+        },
+        {
+          "color": "yellow",
+          "name": "Diversion",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ON5ZEGJrINPOBfbH"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "RYRQfASrNF5OK2CI",
+  "_key": "!items!RYRQfASrNF5OK2CI"
+}

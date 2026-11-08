@@ -1,0 +1,53 @@
+{
+  "name": "Shield",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "red",
+    "icon": {
+      "attack": false,
+      "defend": true,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>When you are attacked, you may Defend against the Attack by rolling your single [power] die. If you reduce the damage to 0 or less, you may also Hinder the source of the damage with the result of the die you rolled.</p>"
+  },
+  "effects": [],
+  "folder": "Zo8L14z9lmm8h9s9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "red",
+      "group": "archetypes",
+      "category": "modular",
+      "source": {
+        "itemType": "archetypes",
+        "number": 20
+      },
+      "gameTextTemplate": "When you are attacked, you may Defend against the Attack by rolling your single [power] die. If you reduce the damage to 0 or less, you may also Hinder the source of the damage with the result of the die you rolled.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "GRYMSfZbUtrbjIlU",
+  "_key": "!items!GRYMSfZbUtrbjIlU"
+}

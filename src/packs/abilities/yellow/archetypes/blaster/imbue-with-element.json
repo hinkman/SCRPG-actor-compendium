@@ -1,0 +1,53 @@
+{
+  "name": "Imbue with Element",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack using [power]. Use your Max die. If you choose another hero to go next, Boost that hero using your Mid die.</p>"
+  },
+  "effects": [],
+  "folder": "8pZaHQBXgRAArE2j",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "blaster",
+      "source": {
+        "itemType": "archetypes",
+        "number": 5
+      },
+      "gameTextTemplate": "Attack using [power]. Use your Max die. If you choose another hero to go next, Boost that hero using your Mid die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "PMBEHxkUXPyGqKet",
+  "_key": "!items!PMBEHxkUXPyGqKet"
+}

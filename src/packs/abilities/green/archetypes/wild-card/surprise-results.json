@@ -1,0 +1,48 @@
+{
+  "name": "Surprise Results",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "R",
+    "gameText": "<p>After rolling your dice pool for the turn, you may take 1 irreducible damage to reroll your entire pool.</p>"
+  },
+  "effects": [],
+  "folder": "vmHbaQIWhgIFCfwV",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "wild-card",
+      "source": {
+        "itemType": "archetypes",
+        "number": 15
+      },
+      "gameTextTemplate": "After rolling your dice pool for the turn, you may take 1 irreducible damage to reroll your entire pool.",
+      "slots": [],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "8V23QLdMhaMm1ksS",
+  "_key": "!items!8V23QLdMhaMm1ksS"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Cords of Magic",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": true,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Destroy all bonuses and penalties on a target. Then, Hinder that target using [power], using your Max die.</p>"
+  },
+  "effects": [],
+  "folder": "dAb9lrCvyIqYAluV",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "sorcerer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 11
+      },
+      "gameTextTemplate": "Destroy all bonuses and penalties on a target. Then, Hinder that target using [power], using your Max die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "Qnvb3r0lB1inQSRo",
+  "_key": "!items!Qnvb3r0lB1inQSRo"
+}

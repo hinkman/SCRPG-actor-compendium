@@ -1,0 +1,91 @@
+{
+  "name": "Flyer",
+  "type": "archetypes",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "description": "<p>The best way to support your team is from the air.</p><p>Assign one of the dice you rolled at the end of the power source step to the @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight} or @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle} power. If you already have one of them, either skip it or swap the die with one of your new dice.</p><p>Assign one or more remaining dice to any of these powers:</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle}</p><p>• @UUID[Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD]{Signature Weaponry}</p><p>• Select from Athletic powers category</p><p>• Select from Mobility powers category</p><p>• Select from Technological powers category</p><p>Assign any remaining dice to any of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Physical qualities category</p><p>Gain two of the following Green abilities, at least one using your @UUID[Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP]{Flight} or @UUID[Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT]{Signature Vehicle} power:</p><p>Gain one of the above abilities at Yellow.</p><p>Choose an Ideals principle.</p><p>Roll for personality selection.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 8,
+      "abilities": [
+        {
+          "color": "green",
+          "name": "Aerial Bombardment",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jQeGha5op3hKKYZP"
+        },
+        {
+          "color": "green",
+          "name": "Aerial Surveillance",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ohMZL0W6ozgMBkhA"
+        },
+        {
+          "color": "green",
+          "name": "Barrel Roll",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2ys5Zh6b6Qe7334k"
+        },
+        {
+          "color": "green",
+          "name": "Dive & Drop",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jx3t1QKTAaoY2GGH"
+        },
+        {
+          "color": "green",
+          "name": "Sonic Boom",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gp3fCpIguE2mdpIs"
+        },
+        {
+          "color": "green",
+          "name": "Strike & Swoop",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dwhE1ddwSw4rU5Lg"
+        },
+        {
+          "color": "yellow",
+          "name": "Aerial Bombardment",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AJyBzxZH4WjXrNBj"
+        },
+        {
+          "color": "yellow",
+          "name": "Aerial Surveillance",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.kjKxLCwTYiuhcm0O"
+        },
+        {
+          "color": "yellow",
+          "name": "Barrel Roll",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.R37Loo71GMm7OeRm"
+        },
+        {
+          "color": "yellow",
+          "name": "Dive & Drop",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VKHVrynlFCNDHUvG"
+        },
+        {
+          "color": "yellow",
+          "name": "Sonic Boom",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Y5UohFe4r7xiLBhq"
+        },
+        {
+          "color": "yellow",
+          "name": "Strike & Swoop",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5FCzlWuUil09s2Gx"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "KWbPlHB1wlzN5MZk",
+  "_key": "!items!KWbPlHB1wlzN5MZk"
+}

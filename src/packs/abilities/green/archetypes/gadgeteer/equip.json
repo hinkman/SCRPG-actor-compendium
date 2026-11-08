@@ -1,0 +1,53 @@
+{
+  "name": "Equip",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "green",
+    "icon": {
+      "attack": false,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": true,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Boost using [power]. Make one bonus for one ally using your Mid die and another for another ally using your Min die.</p>"
+  },
+  "effects": [],
+  "folder": "gMzrDBDqXsADfvxn",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "green",
+      "group": "archetypes",
+      "category": "gadgeteer",
+      "source": {
+        "itemType": "archetypes",
+        "number": 17
+      },
+      "gameTextTemplate": "Boost using [power]. Make one bonus for one ally using your Mid die and another for another ally using your Min die.",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "LEimN1w44Fzfn2Ct",
+  "_key": "!items!LEimN1w44Fzfn2Ct"
+}

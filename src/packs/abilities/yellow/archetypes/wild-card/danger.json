@@ -1,0 +1,53 @@
+{
+  "name": "Danger!",
+  "type": "ability",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "aux": "yellow",
+    "icon": {
+      "attack": true,
+      "defend": false,
+      "overcome": false,
+      "hinder": false,
+      "boost": false,
+      "recover": false
+    },
+    "type": "A",
+    "gameText": "<p>Attack multiple targets using [power]. If you roll doubles, one nearby ally is also hit with the Attack</p>"
+  },
+  "effects": [],
+  "folder": "wq9JpuPLyElGOB61",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "color": "yellow",
+      "group": "archetypes",
+      "category": "wild-card",
+      "source": {
+        "itemType": "archetypes",
+        "number": 15
+      },
+      "gameTextTemplate": "Attack multiple targets using [power]. If you roll doubles, one nearby ally is also hit with the Attack",
+      "slots": [
+        {
+          "token": "[power]",
+          "itemType": "power"
+        }
+      ],
+      "selections": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "4ffkFBRSra05lBgh",
+  "_key": "!items!4ffkFBRSra05lBgh"
+}
