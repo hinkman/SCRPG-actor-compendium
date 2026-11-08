@@ -65,7 +65,13 @@ function linkPowersQualities(text) {
     for (const name of names) {
         const uuid = map.get(name);
         const re = new RegExp(`\\b${escapeRegex(name)}\\b`, "g");
-        escaped = escaped.replace(re, `@UUID[${uuid}]{${name}}`);
+        escaped = escaped.replace(re, (match, offset, full) => {
+            // Skip minion-form labels like "• Stealth (+3 or higher)".
+            const before = full.slice(Math.max(0, offset - 4), offset);
+            const after = full.slice(offset + match.length, offset + match.length + 4);
+            if (/•\s*$/.test(before) && /^\s*\(/.test(after)) return match;
+            return `@UUID[${uuid}]{${name}}`;
+        });
     }
     return escaped;
 }
@@ -128,6 +134,34 @@ function isHealthParagraph(paragraph) {
     return /\bWhen determining Health\b/i.test(paragraph);
 }
 
+function isAdditionalInfoStart(paragraph) {
+    if (isHealthParagraph(paragraph)) return true;
+    if (/^(?:Your Minions|Minion Forms|Minion chart:)/i.test(paragraph)) return true;
+    if (/^The minions you summon/i.test(paragraph)) return true;
+    if (/^Additionally, during hero creation/i.test(paragraph)) return true;
+    if (/^When you create a minion during a scene/i.test(paragraph)) return true;
+    if (/^Whenever you create a minion/i.test(paragraph)) return true;
+    return false;
+}
+
+/**
+ * Ensure personality lines include explicit die sizes (PDF die icons).
+ * Default is d10, d10; keep any dice already present (e.g. Transporter d10, d8).
+ */
+export function normalizePersonalityParagraph(paragraph, personalityDice = null) {
+    const diceFromText = [...paragraph.matchAll(/\bd\d+\b/gi)].map(m => m[0].toLowerCase());
+    const dice = (personalityDice?.length ? personalityDice : diceFromText.length ? diceFromText : ["d10", "d10"])
+        .map(d => d.toLowerCase());
+    const diceText = dice.join(", ");
+    const useYour = /\byour personality\b/i.test(paragraph);
+    const optional = paragraph.match(/personality selection\.(.*)$/is)?.[1]?.trim() || "";
+    let line = useYour
+        ? `Roll ${diceText} for your personality selection.`
+        : `Roll ${diceText} for personality selection.`;
+    if (optional) line += ` ${optional}`;
+    return line;
+}
+
 function isPowersQualitiesStart(paragraph) {
     if (/^Assign\b/i.test(paragraph)) return true;
     if (/^•\s/.test(paragraph) && /powers? category|qualities? category/i.test(paragraph)) return true;
@@ -150,18 +184,19 @@ function isAbilitiesStart(paragraph) {
     return false;
 }
 
-function splitPrincipleAndTrailing(paragraph) {
+function splitPrincipleAndPersonality(paragraph) {
     const match = paragraph.match(
         /^(.*?\b(?:choose a principle from your other archetype|take a\s+\w+\s+principle)\.?)\s+(.*)$/i
     );
     if (match && isPersonalityParagraph(match[2])) {
-        return { principle: match[1].trim(), trailing: match[2].trim() };
+        return { principle: match[1].trim(), personality: match[2].trim() };
     }
     return null;
 }
 
 /**
- * Split archetype prose into intro / powersQualities / abilities / principle / trailing.
+ * Split archetype prose into intro / powersQualities / abilities / principle /
+ * additionalInfo / personality.
  */
 export function classifyArchetypeParagraphs(paragraphs) {
     const buckets = {
@@ -169,17 +204,18 @@ export function classifyArchetypeParagraphs(paragraphs) {
         powersQualities: [],
         abilities: [],
         principle: [],
-        trailing: []
+        additionalInfo: [],
+        personality: []
     };
     let section = "intro";
 
     for (const paragraph of paragraphs) {
         if (isPrincipleParagraph(paragraph)) {
-            const split = splitPrincipleAndTrailing(paragraph);
+            const split = splitPrincipleAndPersonality(paragraph);
             if (split) {
                 buckets.principle.push(split.principle);
-                buckets.trailing.push(split.trailing);
-                section = "trailing";
+                buckets.personality.push(split.personality);
+                section = "personality";
                 continue;
             }
             buckets.principle.push(paragraph);
@@ -187,21 +223,15 @@ export function classifyArchetypeParagraphs(paragraphs) {
             continue;
         }
 
-        if (isPersonalityParagraph(paragraph) || isHealthParagraph(paragraph)) {
-            buckets.trailing.push(paragraph);
-            section = "trailing";
+        if (isPersonalityParagraph(paragraph)) {
+            buckets.personality.push(paragraph);
+            section = "personality";
             continue;
         }
 
-        if (
-            /^(?:Your Minions|Minion Forms|Minion chart:)/i.test(paragraph)
-            || /^The minions you summon/i.test(paragraph)
-            || /^Additionally, during hero creation/i.test(paragraph)
-            || /^When you create a minion during a scene/i.test(paragraph)
-            || /^Whenever you create a minion/i.test(paragraph)
-        ) {
-            buckets.trailing.push(paragraph);
-            section = "trailing";
+        if (isAdditionalInfoStart(paragraph)) {
+            buckets.additionalInfo.push(paragraph);
+            section = "additionalInfo";
             continue;
         }
 
@@ -219,14 +249,13 @@ export function classifyArchetypeParagraphs(paragraphs) {
 
         // Bullet / continuation lines stay in the current content section.
         if (section === "intro" && /^•\s/.test(paragraph)) {
-            // Orphan bullets before an Assign are rare; treat as powers/qualities.
             buckets.powersQualities.push(paragraph);
             section = "powersQualities";
             continue;
         }
 
-        if (section === "trailing" && /^•\s/.test(paragraph)) {
-            buckets.trailing.push(paragraph);
+        if (section === "additionalInfo" && /^•\s/.test(paragraph)) {
+            buckets.additionalInfo.push(paragraph);
             continue;
         }
 
@@ -280,7 +309,8 @@ function untitledBlock(bodyParts, extraClass = "") {
 }
 
 /**
- * Build description HTML with Powers/Qualities, Abilities, and Principle sections.
+ * Build description HTML with Powers/Qualities, Abilities, Principle,
+ * Additional Info, and Personality sections.
  * Ability UUID links sit under the grant lines that introduce them.
  */
 export function buildArchetypeDescriptionHtml(archetype) {
@@ -324,20 +354,53 @@ export function buildArchetypeDescriptionHtml(archetype) {
     }
 
     const principle = renderParagraphBlock(buckets.principle, abilitiesState);
-    const trailing = renderParagraphBlock(buckets.trailing, abilitiesState);
+    const additionalInfo = renderParagraphBlock(buckets.additionalInfo, abilitiesState);
+
+    let personalityParas = buckets.personality.map(p =>
+        normalizePersonalityParagraph(p, archetype.personalityDice)
+    );
+    if (!personalityParas.length) {
+        personalityParas = [
+            normalizePersonalityParagraph("Roll for personality selection.", archetype.personalityDice)
+        ];
+    }
+    const personality = renderParagraphBlock(personalityParas, abilitiesState);
 
     return [
         untitledBlock(intro, "scrpg-archetype-block-intro"),
         sectionHtml("Powers/Qualities", powersQualities),
         sectionHtml("Abilities", abilities),
         sectionHtml("Principle", principle),
-        untitledBlock(trailing, "scrpg-archetype-block-notes")
+        sectionHtml("Additional Info", additionalInfo),
+        sectionHtml("Personality", personality)
     ].join("");
 }
 
 export function rebuildAllArchetypeDescriptions(archetypesPath = path.join(ROOT, "src/data/archetypes.json")) {
     const archetypes = JSON.parse(fs.readFileSync(archetypesPath, "utf8"));
     for (const archetype of archetypes) {
+        // Keep source prose in sync: inject explicit personality dice where missing.
+        const lines = archetype.description.split(/\n/);
+        archetype.description = lines
+            .map(line => {
+                const trimmed = line.trim();
+                if (!trimmed || !isPersonalityParagraph(trimmed)) return line;
+                // Preserve indent/blank structure by only replacing the trimmed content.
+                return line.replace(trimmed, normalizePersonalityParagraph(trimmed, archetype.personalityDice));
+            })
+            .join("\n");
+        // Transporter is the odd one out in the book (d10 + d8).
+        if (archetype.name === "Transporter" && !archetype.personalityDice) {
+            archetype.personalityDice = ["d10", "d8"];
+            archetype.description = archetype.description
+                .split("\n")
+                .map(line => {
+                    const trimmed = line.trim();
+                    if (!trimmed || !isPersonalityParagraph(trimmed)) return line;
+                    return line.replace(trimmed, normalizePersonalityParagraph(trimmed, archetype.personalityDice));
+                })
+                .join("\n");
+        }
         archetype.descriptionHtml = buildArchetypeDescriptionHtml(archetype);
     }
     fs.writeFileSync(archetypesPath, `${JSON.stringify(archetypes, null, 2)}\n`);
