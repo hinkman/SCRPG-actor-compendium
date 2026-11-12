@@ -299,6 +299,12 @@ function constraintNote(constraint) {
     if (constraint === "includeFlightOrSignatureVehicle") {
         return "At least one chosen ability should use Flight or Signature Vehicle.";
     }
+    if (constraint === "includeCloseCombatAndPower") {
+        return "At least one ability must use Close Combat and another must use a power.";
+    }
+    if (constraint === "signatureWeaponryAndQuality") {
+        return "One ability must use Signature Weaponry and another must use a quality.";
+    }
     return null;
 }
 

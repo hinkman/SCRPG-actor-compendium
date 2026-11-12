@@ -1,6 +1,6 @@
 /**
- * Ability FILL uniqueness helpers for wizard constraint metadata
- * (differentPower, differentPowerOrQuality, differentFromGreen, etc.).
+ * Ability FILL uniqueness + mix-include helpers for wizard constraint metadata
+ * (differentPower, includeCloseCombatAndPower, signatureWeaponryAndQuality, etc.).
  */
 
 /** Constraints that require distinct fills across abilities in a pick group. */
@@ -14,6 +14,48 @@ export const UNIQUE_WITHIN_GROUP = new Set([
 export const UNIQUE_FROM_GREEN = new Set([
     "differentFromGreenAbilities"
 ]);
+
+/** Canonical trait document ids used by mix-include rules. */
+export const TRAIT_IDS = {
+    closeCombat: "JbpF0zq2JHhwxVHD",
+    signatureWeaponry: "fubw8CJu2mXFZJUD",
+    flight: "5GDEdsr0jrDmWApP",
+    signatureVehicle: "hQIArnjTuOBxYoPT"
+};
+
+/**
+ * "At least one … and another …" (and single at-least-one) FILL constraints.
+ * Each rule must be covered by at least one selected ability's fill(s).
+ * With multiple rules, different abilities cover different rules in practice
+ * (matchers are mutually exclusive for current archetype text).
+ *
+ * @type {Record<string, {rules: Array<{id:string, match: object}>, message: string}>}
+ */
+export const MIX_INCLUDE_CONSTRAINTS = {
+    includeCloseCombatAndPower: {
+        rules: [
+            { id: "closeCombat", match: { ids: [TRAIT_IDS.closeCombat] } },
+            { id: "power", match: { itemTypes: ["power"] } }
+        ],
+        message: "At least one ability must use Close Combat and another must use a power"
+    },
+    signatureWeaponryAndQuality: {
+        rules: [
+            { id: "signatureWeaponry", match: { ids: [TRAIT_IDS.signatureWeaponry] } },
+            { id: "quality", match: { itemTypes: ["quality"] } }
+        ],
+        message: "One ability must use Signature Weaponry and another must use a quality"
+    },
+    includeFlightOrSignatureVehicle: {
+        rules: [
+            {
+                id: "flightOrVehicle",
+                match: { ids: [TRAIT_IDS.flight, TRAIT_IDS.signatureVehicle] }
+            }
+        ],
+        message: "At least one chosen ability must use Flight or Signature Vehicle"
+    }
+};
 
 /**
  * Human-readable note for a pick-group constraint.
@@ -41,7 +83,50 @@ export function constraintNote(constraint) {
     if (constraint === "includeCloseCombatAndPower") {
         return "At least one ability must use Close Combat and another must use a power.";
     }
+    if (constraint === "signatureWeaponryAndQuality") {
+        return "One ability must use Signature Weaponry and another must use a quality.";
+    }
     return null;
+}
+
+/**
+ * @param {string|null|undefined} uuid
+ * @param {string} id
+ */
+export function uuidHasTraitId(uuid, id) {
+    if (!uuid || !id) return false;
+    return uuid === id || uuid.endsWith(`.${id}`) || uuid.endsWith(`Item.${id}`);
+}
+
+/**
+ * Infer power vs quality from a Foundry pack uuid when possible.
+ * @param {string|null|undefined} uuid
+ * @returns {"power"|"quality"|null}
+ */
+export function itemTypeFromTraitUuid(uuid) {
+    if (!uuid || typeof uuid !== "string") return null;
+    if (uuid === "__special__") return "quality";
+    if (/\.powers\.Item\./i.test(uuid)) return "power";
+    if (/\.qualities\.Item\./i.test(uuid)) return "quality";
+    return null;
+}
+
+/**
+ * @param {string|null|undefined} traitUuid
+ * @param {{ids?: string[], itemTypes?: string[]}} match
+ * @param {{itemType?: string|null}} [hint]
+ */
+export function traitMatchesMixRule(traitUuid, match, hint = null) {
+    if (!traitUuid || !match) return false;
+    for (const id of match.ids || []) {
+        if (uuidHasTraitId(traitUuid, id)) return true;
+    }
+    const types = match.itemTypes || [];
+    if (types.length) {
+        const type = hint?.itemType || itemTypeFromTraitUuid(traitUuid);
+        if (type && types.includes(type)) return true;
+    }
+    return false;
 }
 
 /**
@@ -112,7 +197,7 @@ export function annotateTakenFillOptions(options, {
     itemTypeFilter = "any"
 } = {}) {
     if (!takenUuids?.size || !itemTypeFilter) {
-        return (options || []).map(opt => ({ ...opt, disabled: false }));
+        return (options || []).map(opt => ({ ...opt, disabled: Boolean(opt.disabled) }));
     }
     return (options || []).map(opt => {
         const matchesType = itemTypeFilter === "any"
@@ -121,8 +206,92 @@ export function annotateTakenFillOptions(options, {
         const isTaken = matchesType
             && takenUuids.has(opt.uuid)
             && opt.uuid !== selectedUuid;
-        return { ...opt, disabled: Boolean(isTaken) };
+        return { ...opt, disabled: Boolean(opt.disabled) || Boolean(isTaken) };
     });
+}
+
+/**
+ * Disable FILL options that would make a mix-include constraint unsatisfiable
+ * given sibling fills (e.g. last slot cannot be another Close Combat when a power is still required).
+ * Currently-selected values stay selectable so the control can show them.
+ *
+ * @param {Array<object>} options
+ * @param {object} cfg
+ * @param {string|null|undefined} cfg.constraint
+ * @param {string} cfg.abilityUuid
+ * @param {string[]} cfg.groupSelectedUuids
+ * @param {Record<string, Record<string, string>>|null|undefined} cfg.slotSelections
+ * @param {string|null|undefined} cfg.selectedUuid
+ */
+export function annotateMixConstraintOptions(options, {
+    constraint,
+    abilityUuid,
+    groupSelectedUuids = [],
+    slotSelections = null,
+    selectedUuid = null
+} = {}) {
+    const def = constraint ? MIX_INCLUDE_CONSTRAINTS[constraint] : null;
+    if (!def) return options || [];
+
+    return (options || []).map(opt => {
+        if (opt.disabled || opt.uuid === selectedUuid) return opt;
+        const keep = mixChoiceKeepsSatisfiable(
+            def,
+            opt.uuid,
+            opt.itemType || itemTypeFromTraitUuid(opt.uuid),
+            abilityUuid,
+            groupSelectedUuids,
+            slotSelections
+        );
+        return keep ? opt : { ...opt, disabled: true };
+    });
+}
+
+/**
+ * @param {object} def
+ * @param {string|null|undefined} chosenTraitUuid
+ * @param {string|null|undefined} chosenItemType
+ * @param {string} abilityUuid
+ * @param {string[]} groupSelectedUuids
+ * @param {Record<string, Record<string, string>>|null|undefined} slotSelections
+ */
+export function mixChoiceKeepsSatisfiable(
+    def,
+    chosenTraitUuid,
+    chosenItemType,
+    abilityUuid,
+    groupSelectedUuids,
+    slotSelections
+) {
+    const selected = (groupSelectedUuids || []).filter(Boolean);
+    if (!selected.length) return true;
+
+    for (const rule of def.rules) {
+        let covered = false;
+        let flexible = 0;
+        for (const uuid of selected) {
+            if (uuid === abilityUuid) {
+                if (!chosenTraitUuid) {
+                    flexible++;
+                    continue;
+                }
+                if (traitMatchesMixRule(chosenTraitUuid, rule.match, { itemType: chosenItemType })) {
+                    covered = true;
+                }
+                continue;
+            }
+            const fills = Object.values(slotSelections?.[uuid] || {}).filter(Boolean);
+            if (!fills.length) {
+                flexible++;
+                continue;
+            }
+            if (fills.some(fu => traitMatchesMixRule(fu, rule.match))) {
+                covered = true;
+            }
+        }
+        if (!covered && flexible === 0) return false;
+    }
+    return true;
 }
 
 /**
@@ -133,7 +302,14 @@ export function annotateTakenFillOptions(options, {
  * @param {string[]} args.groupSelectedUuids
  * @param {Record<string, Record<string, string>>|null|undefined} args.slotSelections
  * @param {Set<string>|null|undefined} args.greenFilledUuids
- * @returns {{taken: Set<string>, itemTypeFilter: "power"|"quality"|"any"|null}}
+ * @returns {{
+ *   taken: Set<string>,
+ *   itemTypeFilter: "power"|"quality"|"any"|null,
+ *   mixConstraint: string|null,
+ *   abilityUuid: string,
+ *   groupSelectedUuids: string[],
+ *   slotSelections: Record<string, Record<string, string>>|null|undefined
+ * }}
  */
 export function takenFillsForAbility({
     constraint,
@@ -142,24 +318,53 @@ export function takenFillsForAbility({
     slotSelections = null,
     greenFilledUuids = null
 }) {
+    const mixConstraint = constraint && MIX_INCLUDE_CONSTRAINTS[constraint]
+        ? constraint
+        : null;
+    const base = {
+        mixConstraint,
+        abilityUuid,
+        groupSelectedUuids,
+        slotSelections
+    };
+
     if (UNIQUE_FROM_GREEN.has(constraint)) {
         return {
+            ...base,
             taken: new Set(greenFilledUuids || []),
             itemTypeFilter: uniquenessItemType(constraint)
         };
     }
     if (!UNIQUE_WITHIN_GROUP.has(constraint)) {
-        return { taken: new Set(), itemTypeFilter: null };
+        return { ...base, taken: new Set(), itemTypeFilter: null };
     }
     const siblings = (groupSelectedUuids || []).filter(u => u && u !== abilityUuid);
     return {
+        ...base,
         taken: collectFilledTraitUuids(siblings, slotSelections),
         itemTypeFilter: uniquenessItemType(constraint)
     };
 }
 
 /**
- * Validate uniqueness constraints for one ability pick group.
+ * @param {object} def
+ * @param {string[]} selected
+ * @param {Record<string, Record<string, string>>|null|undefined} slotSelections
+ * @returns {string|null}
+ */
+function validateMixIncludeConstraint(def, selected, slotSelections) {
+    for (const rule of def.rules) {
+        const covered = selected.some(uuid => {
+            const fills = Object.values(slotSelections?.[uuid] || {}).filter(Boolean);
+            return fills.some(fu => traitMatchesMixRule(fu, rule.match));
+        });
+        if (!covered) return def.message;
+    }
+    return null;
+}
+
+/**
+ * Validate uniqueness / mix-include constraints for one ability pick group.
  * @param {object} group  wizard abilityPicks entry
  * @param {string[]} selectedUuids
  * @param {Record<string, Record<string, string>>|null|undefined} slotSelections
@@ -180,7 +385,7 @@ export function validateGroupFillConstraint(
     const selected = (selectedUuids || []).filter(Boolean);
     if (!selected.length) return null;
 
-    // Ensure slots are filled before uniqueness checks.
+    // Ensure slots are filled before uniqueness / mix checks.
     if (abilityMeta) {
         for (const uuid of selected) {
             const meta = abilityMeta instanceof Map ? abilityMeta.get(uuid) : abilityMeta[uuid];
@@ -199,9 +404,6 @@ export function validateGroupFillConstraint(
             const slots = slotSelections?.[uuid] || {};
             for (const traitUuid of Object.values(slots)) {
                 if (!traitUuid) continue;
-                // Only count fills that match the constraint's item type when we can.
-                // Without per-token type here, count all filled traits for powerOrQuality;
-                // for power/quality-only, prefer traits whose type matches if meta available.
                 values.push(traitUuid);
             }
         }
@@ -257,11 +459,16 @@ export function validateGroupFillConstraint(
             for (const slot of meta?.slots || []) {
                 const traitUuid = slots[slot.token];
                 if (!traitUuid) continue;
-                if (!slot.itemType || slot.itemType === "power") powers.add(traitUuid);
+                const type = itemTypeFromTraitUuid(traitUuid);
+                if (type === "power" || (!type && (!slot.itemType || slot.itemType === "power"))) {
+                    powers.add(traitUuid);
+                }
             }
             if (!meta?.slots?.length) {
                 for (const traitUuid of Object.values(slots)) {
-                    if (traitUuid) powers.add(traitUuid);
+                    if (traitUuid && itemTypeFromTraitUuid(traitUuid) === "power") {
+                        powers.add(traitUuid);
+                    }
                 }
             }
         }
@@ -269,6 +476,11 @@ export function validateGroupFillConstraint(
             return "Use at least two different powers across chosen abilities";
         }
         return null;
+    }
+
+    const mixDef = MIX_INCLUDE_CONSTRAINTS[constraint];
+    if (mixDef) {
+        return validateMixIncludeConstraint(mixDef, selected, slotSelections);
     }
 
     return null;

@@ -2,7 +2,7 @@
     "id": "scrpg-actor-compendium",
     "title": "Sentinel Comics RPG Actor Compendium",
     "description": "Compendium items from Sentinel Comics: The Roleplaying Game for the scrpg-foundry system. This release contains powers, qualities, principles, personalities, archetypes, power sources, backgrounds, and abilities (Green/Yellow/Red/Out).",
-    "version": "0.9.14",
+    "version": "0.9.15",
     "compatibility": {
         "minimum": "14",
         "verified": "14"

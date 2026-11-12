@@ -3,6 +3,7 @@ import { clearWizardLock, createHeroFromDraft, discardDraftActor, syncHeroFromDr
 import { legalChartNumbers, rollChart, rerollChart } from "./chartRoll.js";
 import { createEmptyDraft, invalidateFrom, upgradeDie } from "./draftState.js";
 import {
+    annotateMixConstraintOptions,
     annotateTakenFillOptions,
     collectGreenFilledTraits,
     constraintNote,
@@ -2300,10 +2301,17 @@ function buildInlineSlotRows(ability, traits, slotSelections, takenInfo = null) 
     if (!ability) return [];
     return slotOptionsForAbility(ability, traits).map(row => {
         const selectedUuid = slotSelections?.[row.token] || null;
-        const annotated = annotateTakenFillOptions(row.options, {
+        let annotated = annotateTakenFillOptions(row.options, {
             takenUuids: takenInfo?.taken || new Set(),
             selectedUuid,
             itemTypeFilter: takenInfo?.itemTypeFilter || null
+        });
+        annotated = annotateMixConstraintOptions(annotated, {
+            constraint: takenInfo?.mixConstraint || null,
+            abilityUuid: ability.uuid,
+            groupSelectedUuids: takenInfo?.groupSelectedUuids || [],
+            slotSelections: takenInfo?.slotSelections || null,
+            selectedUuid
         });
         return {
             token: row.token,
