@@ -87,7 +87,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             cancel: CharacterCreationWizard.#onCancel,
             chartRoll: CharacterCreationWizard.#onChartRoll,
             chartReroll: CharacterCreationWizard.#onChartReroll,
-            createHero: CharacterCreationWizard.#onCreateHero
+            createHero: CharacterCreationWizard.#onCreateHero,
+            previewChartItem: CharacterCreationWizard.#onPreviewChartItem
         }
     };
 
@@ -105,7 +106,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 `${TEMPLATE_ROOT}/steps/personality.hbs`,
                 `${TEMPLATE_ROOT}/steps/personalityDetails.hbs`
             ],
-            scrollable: [".scrpg-wizard-step"]
+            // Nested chart lists overflow themselves; preserve their scroll across selection re-renders.
+            scrollable: [".scrpg-wizard-step", ".scrpg-wizard-chart-list"]
         }
     };
 
@@ -1156,6 +1158,25 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             this._creating = false;
             await this.render();
         }
+    }
+
+    /**
+     * Open a chart option's Item sheet without selecting it.
+     * @this {CharacterCreationWizard}
+     * @param {PointerEvent} event
+     * @param {HTMLElement} target
+     */
+    static async #onPreviewChartItem(event, target) {
+        event.preventDefault();
+        event.stopPropagation();
+        const uuid = target.dataset.uuid;
+        if (!uuid) return;
+        const doc = await fromUuid(uuid);
+        if (!doc) {
+            ui.notifications?.warn("Could not open that compendium entry.");
+            return;
+        }
+        doc.sheet?.render(true);
     }
 
     /**

@@ -45,27 +45,39 @@
 
   <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Archetypes">
     {{#each chartRows}}
-      <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}{{#unless available}} is-locked{{/unless}}{{#if blocked}} is-blocked{{/if}}">
-        <input
-          type="radio"
-          name="archetypeNumber"
-          value="{{number}}"
-          data-uuid="{{uuid}}"
-          {{#if selected}}checked{{/if}}
-          {{#unless available}}disabled{{/unless}}
-        >
-        <span class="scrpg-wizard-chart-num">{{number}}</span>
-        <span class="scrpg-wizard-chart-body">
-          <span class="scrpg-wizard-chart-name">{{name}}</span>
-          <span class="scrpg-wizard-chart-meta">
-            {{#if blocked}}
-              Complex — not available in v1
-            {{else}}
-              Personality dice: {{personalityDiceLabel}} · Principle: {{principleLabel}}
-            {{/if}}
+      <div class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}{{#unless available}} is-locked{{/unless}}{{#if blocked}} is-blocked{{/if}}">
+        <label class="scrpg-wizard-chart-select">
+          <input
+            type="radio"
+            name="archetypeNumber"
+            value="{{number}}"
+            data-uuid="{{uuid}}"
+            {{#if selected}}checked{{/if}}
+            {{#unless available}}disabled{{/unless}}
+          >
+          <span class="scrpg-wizard-chart-num">{{number}}</span>
+          <span class="scrpg-wizard-chart-body">
+            <span class="scrpg-wizard-chart-name">{{name}}</span>
+            <span class="scrpg-wizard-chart-meta">
+              {{#if blocked}}
+                Complex — not available in v1
+              {{else}}
+                Personality dice: {{personalityDiceLabel}} · Principle: {{principleLabel}}
+              {{/if}}
+            </span>
           </span>
-        </span>
-      </label>
+        </label>
+        <button
+          type="button"
+          class="scrpg-wizard-chart-preview"
+          data-action="previewChartItem"
+          data-uuid="{{uuid}}"
+          title="Preview {{name}}"
+          aria-label="Preview {{name}}"
+        >
+          <i class="fas fa-tag" aria-hidden="true"></i>
+        </button>
+      </div>
     {{/each}}
   </div>
 </div>

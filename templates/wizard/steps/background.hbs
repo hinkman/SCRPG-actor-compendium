@@ -43,21 +43,33 @@
 
   <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Backgrounds">
     {{#each chartRows}}
-      <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}{{#unless available}} is-locked{{/unless}}">
-        <input
-          type="radio"
-          name="backgroundNumber"
-          value="{{number}}"
+      <div class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}{{#unless available}} is-locked{{/unless}}">
+        <label class="scrpg-wizard-chart-select">
+          <input
+            type="radio"
+            name="backgroundNumber"
+            value="{{number}}"
+            data-uuid="{{uuid}}"
+            {{#if selected}}checked{{/if}}
+            {{#unless available}}disabled{{/unless}}
+          >
+          <span class="scrpg-wizard-chart-num">{{number}}</span>
+          <span class="scrpg-wizard-chart-body">
+            <span class="scrpg-wizard-chart-name">{{name}}</span>
+            <span class="scrpg-wizard-chart-meta">PS dice: {{powerSourceDiceLabel}} · Principle: {{principleLabel}}</span>
+          </span>
+        </label>
+        <button
+          type="button"
+          class="scrpg-wizard-chart-preview"
+          data-action="previewChartItem"
           data-uuid="{{uuid}}"
-          {{#if selected}}checked{{/if}}
-          {{#unless available}}disabled{{/unless}}
+          title="Preview {{name}}"
+          aria-label="Preview {{name}}"
         >
-        <span class="scrpg-wizard-chart-num">{{number}}</span>
-        <span class="scrpg-wizard-chart-body">
-          <span class="scrpg-wizard-chart-name">{{name}}</span>
-          <span class="scrpg-wizard-chart-meta">PS dice: {{powerSourceDiceLabel}} · Principle: {{principleLabel}}</span>
-        </span>
-      </label>
+          <i class="fas fa-tag" aria-hidden="true"></i>
+        </button>
+      </div>
     {{/each}}
   </div>
 </div>
