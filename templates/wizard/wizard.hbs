@@ -19,8 +19,14 @@
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/powerSource.hbs"}}
     {{else if isPowerSourceDetailsStep}}
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/powerSourceDetails.hbs"}}
-    {{else if isPlaceholderStep}}
-      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/placeholder.hbs"}}
+    {{else if isArchetypeStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/archetype.hbs"}}
+    {{else if isArchetypeDetailsStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/archetypeDetails.hbs"}}
+    {{else if isPersonalityStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/personality.hbs"}}
+    {{else if isPersonalityDetailsStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/personalityDetails.hbs"}}
     {{/if}}
   </div>
 
@@ -28,7 +34,13 @@
     <button type="button" class="scrpg-wizard-btn" data-action="cancel">Cancel</button>
     <div class="scrpg-wizard-footer-nav">
       <button type="button" class="scrpg-wizard-btn" data-action="back" {{#unless canGoBack}}disabled{{/unless}}>Back</button>
-      <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="next" {{#unless canGoNext}}disabled{{/unless}}>Next</button>
+      {{#if isLastStep}}
+        <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="createHero" {{#unless canGoNext}}disabled{{/unless}}>
+          Create Hero
+        </button>
+      {{else}}
+        <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="next" {{#unless canGoNext}}disabled{{/unless}}>Next</button>
+      {{/if}}
     </div>
   </footer>
 </section>

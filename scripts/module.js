@@ -1,4 +1,5 @@
 import * as categoryResolver from "./categoryResolver.js";
+import * as apply from "./wizard/apply.js";
 import * as chartRoll from "./wizard/chartRoll.js";
 import { canCreateScrpgHero, openCreateWizard } from "./wizard/openWizard.js";
 import * as silentRoll from "./wizard/silentRoll.js";
@@ -13,7 +14,10 @@ const WIZARD_TEMPLATES = [
     `modules/${MODULE_ID}/templates/wizard/steps/backgroundDetails.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/powerSource.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/powerSourceDetails.hbs`,
-    `modules/${MODULE_ID}/templates/wizard/steps/placeholder.hbs`
+    `modules/${MODULE_ID}/templates/wizard/steps/archetype.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/archetypeDetails.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/personality.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/personalityDetails.hbs`
 ];
 
 const ACTION_ICONS = {
@@ -38,6 +42,7 @@ Hooks.once("ready", () => {
             categoryResolver,
             chartRoll,
             silentRoll,
+            apply,
             openCreateWizard,
             canCreateScrpgHero
         };

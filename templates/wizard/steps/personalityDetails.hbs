@@ -1,0 +1,77 @@
+<div class="scrpg-wizard-pers-details">
+  <header class="scrpg-wizard-step-header">
+    <h2>Personality — Status, Special &amp; Out</h2>
+    <p>
+      <strong>{{selectedPersonalityName}}</strong>:
+      record status dice, name your Special d8 quality, and bind the Out ability.
+      Then create the hero (Steps 5–8 come later).
+    </p>
+  </header>
+
+  <section class="scrpg-wizard-status-block" aria-label="Status dice">
+    <h3>Status dice</h3>
+    <div class="scrpg-wizard-status-row">
+      <span><strong>Green</strong> {{statusDie.green}}</span>
+      <span><strong>Yellow</strong> {{statusDie.yellow}}</span>
+      <span><strong>Red</strong> {{statusDie.red}}</span>
+    </div>
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Special quality">
+    <h3>Special quality ({{specialDie}})</h3>
+    <p class="scrpg-wizard-intro">{{specialPrompt}}</p>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Name</span>
+      <input type="text" name="specialQualityName" value="{{specialQualityName}}" placeholder="e.g. Street Smarts, Never Give Up" maxlength="80">
+    </label>
+
+    {{#if needsUpgrade}}
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Upgrade one power/quality die (+1 step, max d12)</span>
+        <select name="upgradeTraitUuid">
+          <option value="">— choose —</option>
+          {{#each upgradeOptions}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{die}} → upgrade)</option>
+          {{/each}}
+        </select>
+      </label>
+    {{/if}}
+
+    {{#if healthAnyNote}}
+      <p class="scrpg-wizard-hint">{{healthAnyNote}}</p>
+    {{/if}}
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Out ability">
+    <h3>Out ability</h3>
+    {{#if outPreview}}
+      <p class="scrpg-wizard-intro">{{outPreview}}</p>
+    {{/if}}
+    {{#each outSlots}}
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Fill {{token}}</span>
+        <select name="outSlot.{{tokenKey}}">
+          <option value="">— choose —</option>
+          {{#each options}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+          {{/each}}
+        </select>
+      </label>
+    {{else}}
+      <p class="scrpg-wizard-hint">This Out ability has no power/quality placeholders to bind.</p>
+    {{/each}}
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Hero identity">
+    <h3>Hero identity</h3>
+    <p class="scrpg-wizard-intro">Minimal finish for a playable actor. Health / Red / Retcon come in a later slice.</p>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Hero name</span>
+      <input type="text" name="heroName" value="{{heroName}}" placeholder="Hero name" maxlength="80" required>
+    </label>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Alias</span>
+      <input type="text" name="heroAlias" value="{{heroAlias}}" placeholder="Civilian name / alias" maxlength="80">
+    </label>
+  </section>
+</div>
