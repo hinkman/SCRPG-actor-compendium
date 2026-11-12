@@ -48,9 +48,11 @@ export async function openCreateWizard() {
     }
     try {
         const Wizard = await loadWizardClass();
-        return Wizard.openCreate();
+        return await Wizard.openCreate();
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to open character creation wizard`, err);
+        // Last-resort: drop a stuck fixed-id singleton left in AppV2 ERROR state.
+        foundry.applications.instances.delete("scrpg-character-creation-wizard");
         ui.notifications?.error("Failed to open the SCRPG hero wizard.");
         return null;
     }

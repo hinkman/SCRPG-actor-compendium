@@ -473,16 +473,11 @@ async function renderBackgroundExtras(sheet, element) {
         const root = element instanceof HTMLElement ? element : sheet.element;
         if (!root) return;
 
+        // Backgrounds are short (flavor + qualities); prefer a tall narrow frame so
+        // default entries like Unremarkable do not need an outer scrollbar.
         if (!sheet._scrpgBackgroundSized && typeof sheet.setPosition === "function") {
             sheet._scrpgBackgroundSized = true;
-            const height = sheet.position?.height ?? 0;
-            const width = sheet.position?.width ?? 0;
-            if (height <= 480 || width <= 520) {
-                sheet.setPosition({
-                    width: Math.max(width, 560),
-                    height: Math.max(height, 560)
-                });
-            }
+            sheet.setPosition({ width: 420, height: 640 });
         }
 
         const host = root.querySelector(".background") || root.querySelector(".sheet-content") || root;
