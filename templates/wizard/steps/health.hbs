@@ -1,0 +1,95 @@
+<div class="scrpg-wizard-health">
+  <header class="scrpg-wizard-step-header">
+    <h2>Health</h2>
+    <p>
+      Max Health =
+      <code>8 + Red status + (Athletic power or Mental quality or d4) + (d8 or 4)</code>.
+      Then apply the zone range chart.
+    </p>
+  </header>
+
+  <section class="scrpg-wizard-status-block" aria-label="Health ingredients">
+    <h3>Ingredients</h3>
+    <div class="scrpg-wizard-status-row">
+      <span><strong>Base</strong> 8</span>
+      <span><strong>Red status</strong> {{redStatusLabel}} (+{{redStatusFaces}})</span>
+      <span><strong>Bonus die</strong> {{#if bonusTraitName}}{{bonusTraitName}} ({{bonusDieLabel}}){{else}}d4 default{{/if}} (+{{bonusDieFaces}})</span>
+      <span><strong>Variance</strong> {{varianceLabel}} (+{{varianceFaces}})</span>
+    </div>
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Bonus die">
+    <h3>{{#if healthAny}}Any power or quality{{else}}Athletic power or Mental quality{{/if}}</h3>
+    {{#if bonusOptions.length}}
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Contribute this die</span>
+        <select name="healthBonusTraitUuid">
+          <option value="">— choose —</option>
+          {{#each bonusOptions}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+          {{/each}}
+        </select>
+      </label>
+    {{else}}
+      <p class="scrpg-wizard-hint">No Athletic power or Mental quality on this hero — using d4 (+4).</p>
+    {{/if}}
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Variance">
+    <h3>Roll d8 or take 4</h3>
+    <div class="scrpg-wizard-method-options">
+      <label class="scrpg-wizard-method-card{{#if varianceTake4}} is-selected{{/if}}">
+        <input type="radio" name="healthVarianceMode" value="take4" {{#if varianceTake4}}checked{{/if}}>
+        <span class="scrpg-wizard-method-card-body">
+          <span class="scrpg-wizard-method-card-title">Take 4</span>
+          <span class="scrpg-wizard-method-card-summary">Skip the roll and add 4.</span>
+        </span>
+      </label>
+      <label class="scrpg-wizard-method-card{{#if varianceRoll}} is-selected{{/if}}">
+        <input type="radio" name="healthVarianceMode" value="roll" {{#if varianceRoll}}checked{{/if}}>
+        <span class="scrpg-wizard-method-card-body">
+          <span class="scrpg-wizard-method-card-title">Roll 1d8</span>
+          <span class="scrpg-wizard-method-card-summary">Silent in-wizard roll with re-roll.</span>
+        </span>
+      </label>
+    </div>
+
+    {{#if varianceRoll}}
+      <div class="scrpg-wizard-roll-panel">
+        <div class="scrpg-wizard-roll-panel-copy">
+          {{#if varianceRollSummary}}
+            <div class="scrpg-wizard-roll-demo-result">
+              <strong>1d8 = {{varianceRollSummary.total}}</strong>
+              <span class="scrpg-wizard-roll-demo-detail">{{varianceRollSummary.detail}}</span>
+            </div>
+          {{else}}
+            <span class="scrpg-wizard-roll-demo-hint">Roll once to set the variance term.</span>
+          {{/if}}
+        </div>
+        <div class="scrpg-wizard-roll-demo-actions">
+          <button type="button" class="scrpg-wizard-btn" data-action="healthRoll">
+            {{#if varianceRollSummary}}Re-roll{{else}}Roll 1d8{{/if}}
+          </button>
+        </div>
+      </div>
+    {{/if}}
+  </section>
+
+  <section class="scrpg-wizard-status-block" aria-label="Health result">
+    <h3>Result</h3>
+    {{#if healthMax}}
+      <div class="scrpg-wizard-status-row">
+        <span><strong>Max Health</strong> {{healthMax}}</span>
+        {{#if ranges}}
+          <span><strong>Green</strong> {{healthMax}}–{{ranges.greenLow}}</span>
+          <span><strong>Yellow</strong> {{ranges.yellowHigh}}–{{ranges.yellowLow}}</span>
+          <span><strong>Red</strong> {{ranges.redHigh}}–{{ranges.redLow}}</span>
+        {{else}}
+          <span class="scrpg-wizard-hint">Max {{healthMax}} is outside the standard 17–40 chart; ranges will not auto-fill.</span>
+        {{/if}}
+      </div>
+    {{else}}
+      <p class="scrpg-wizard-hint">Choose the bonus die and variance to compute Health.</p>
+    {{/if}}
+  </section>
+</div>

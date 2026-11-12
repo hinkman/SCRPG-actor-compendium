@@ -1,0 +1,48 @@
+<div class="scrpg-wizard-red">
+  <header class="scrpg-wizard-step-header">
+    <h2>Red Abilities</h2>
+    <p>
+      Choose <strong>two</strong> Red abilities from lists you qualify for
+      (you must have a die in that power/quality category; Inherent abilities need d8+).
+      Selected: {{selectedCount}} / 2.
+    </p>
+  </header>
+
+  {{#unless eligibleGroups.length}}
+    <p class="scrpg-wizard-empty">
+      No Red ability lists are eligible yet. Check that your powers and qualities have category dice assigned.
+    </p>
+  {{/unless}}
+
+  {{#each eligibleGroups}}
+    <section class="scrpg-wizard-ability-block" aria-label="{{label}}">
+      <h3>{{label}}</h3>
+      <p class="scrpg-wizard-hint">Requires a {{sourceItemType}} in the {{sourceCategory}} category{{#if needsD8}}+; Inherent needs d8+{{/if}}.</p>
+      <div class="scrpg-wizard-ability-list">
+        {{#each abilities}}
+          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}{{#if disabled}} is-locked{{/if}}">
+            <input type="checkbox" name="redAbility" value="{{uuid}}" {{#if selected}}checked{{/if}} {{#if disabled}}disabled{{/if}}>
+            <span class="scrpg-wizard-ability-name">{{name}}</span>
+            <span class="scrpg-wizard-ability-color">{{abilityType}}</span>
+          </label>
+          {{#if selected}}
+            {{#if preview}}
+              <p class="scrpg-wizard-intro">{{preview}}</p>
+            {{/if}}
+            {{#each slotRows}}
+              <label class="scrpg-wizard-text-field">
+                <span class="label">Fill {{token}}</span>
+                <select name="redSlot.{{abilityKey}}.{{tokenKey}}">
+                  <option value="">— choose —</option>
+                  {{#each options}}
+                    <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+                  {{/each}}
+                </select>
+              </label>
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      </div>
+    </section>
+  {{/each}}
+</div>

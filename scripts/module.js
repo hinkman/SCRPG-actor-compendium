@@ -18,7 +18,11 @@ const WIZARD_TEMPLATES = [
     `modules/${MODULE_ID}/templates/wizard/steps/archetype.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/archetypeDetails.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/personality.hbs`,
-    `modules/${MODULE_ID}/templates/wizard/steps/personalityDetails.hbs`
+    `modules/${MODULE_ID}/templates/wizard/steps/personalityDetails.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/redAbilities.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/retcon.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/health.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/finishing.hbs`
 ];
 
 const ACTION_ICONS = {

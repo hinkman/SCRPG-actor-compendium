@@ -467,3 +467,27 @@
 .scrpg-wizard-text-field select {
   width: 100%;
 }
+
+.scrpg-wizard-text-field textarea {
+  width: 100%;
+}
+
+.scrpg-wizard-physical-grid {
+  display: grid;
+  gap: 0.35rem 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+}
+
+.scrpg-wizard-ability-option.is-locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.scrpg-wizard-method-card.is-locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.scrpg-wizard code {
+  font-size: 0.85em;
+}

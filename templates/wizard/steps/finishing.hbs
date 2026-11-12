@@ -1,0 +1,53 @@
+<div class="scrpg-wizard-finishing">
+  <header class="scrpg-wizard-step-header">
+    <h2>Finishing Touches</h2>
+    <p>
+      Name your hero and fill optional physical / costume fields the sheet supports.
+      Creating the actor happens here — after Red, Retcon, and Health.
+    </p>
+  </header>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Hero identity">
+    <h3>Identity</h3>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Hero name</span>
+      <input type="text" name="heroName" value="{{heroName}}" placeholder="Hero name" maxlength="80" required>
+    </label>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Alias</span>
+      <input type="text" name="heroAlias" value="{{heroAlias}}" placeholder="Civilian name / alias" maxlength="80">
+    </label>
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Physical attributes">
+    <h3>Physical attributes</h3>
+    <div class="scrpg-wizard-physical-grid">
+      {{#each physicalFields}}
+        <label class="scrpg-wizard-text-field">
+          <span class="label">{{label}}</span>
+          <input type="text" name="physical.{{key}}" value="{{value}}" maxlength="80">
+        </label>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="scrpg-wizard-assign-block" aria-label="Costume">
+    <h3>Costume / equipment</h3>
+    <label class="scrpg-wizard-text-field">
+      <span class="label">Costume</span>
+      <textarea name="costume" rows="3" maxlength="2000" placeholder="Costume, gear, signature look…">{{costume}}</textarea>
+    </label>
+  </section>
+
+  <section class="scrpg-wizard-status-block" aria-label="Ready summary">
+    <h3>Ready to create</h3>
+    <div class="scrpg-wizard-status-row">
+      <span><strong>Background</strong> {{summary.background}}</span>
+      <span><strong>Power Source</strong> {{summary.powerSource}}</span>
+      <span><strong>Archetype</strong> {{summary.archetype}}</span>
+      <span><strong>Personality</strong> {{summary.personality}}</span>
+      <span><strong>Health</strong> {{summary.health}}</span>
+      <span><strong>Red abilities</strong> {{summary.redCount}}</span>
+    </div>
+  </section>
+</div>
