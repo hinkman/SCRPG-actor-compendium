@@ -65,7 +65,214 @@
           "name": "Run Down",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0afn9nJrtrdEU3ox"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "expertise",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "principleText": "Choose an Expertise principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to the Signature Vehicle power or a power from the Mobility category. If you already have at least one, either skip it or swap this die with one of your new dice.",
+            "pack": null,
+            "choices": [],
+            "unstructured": true
+          },
+          {
+            "instruction": "Assign one or more remaining dice to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Vehicle",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "psychic",
+                "categoryLabel": "Psychic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "technological",
+                "categoryLabel": "Technological"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "social",
+                "categoryLabel": "Social"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "categoryLabel": "Social"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, using two different powers.",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Displacement Assault",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YRedgGF4MwRihDPh"
+              },
+              {
+                "color": "green",
+                "name": "Hit & Run",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OtnGe7R4OoOjfck"
+              },
+              {
+                "color": "green",
+                "name": "Mobile Assist",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.m1MJKmpisIGMKatS"
+              },
+              {
+                "color": "green",
+                "name": "Mobile Dodge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.s1cfEPIftrbKiRv5"
+              },
+              {
+                "color": "green",
+                "name": "Run Down",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.QrX70BABFgW8K5q4"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Gain one of the above abilities as a Yellow ability.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Displacement Assault",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.QqU1ALV6yCPxFAdq"
+              },
+              {
+                "color": "yellow",
+                "name": "Hit & Run",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.RAOrs4cIuVH8WNCv"
+              },
+              {
+                "color": "yellow",
+                "name": "Mobile Assist",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jgsx052iAprqogaC"
+              },
+              {
+                "color": "yellow",
+                "name": "Mobile Dodge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.i5MSZbAhwHhFovFt"
+              },
+              {
+                "color": "yellow",
+                "name": "Run Down",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0afn9nJrtrdEU3ox"
+              }
+            ],
+            "fromAboveList": true,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": [
+          "Some assignmentSteps.instruction lines still need human reading for die counts (one vs remaining)"
+        ]
+      }
     }
   },
   "_stats": {

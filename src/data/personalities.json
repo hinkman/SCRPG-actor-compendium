@@ -14,6 +14,26 @@
       "category": "personalities",
       "name": "Lone Wolf",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d8",
+        "yellow": "d8",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Lone Wolf",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -31,6 +51,26 @@
       "category": "personalities",
       "name": "Natural Leader",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Natural Leader",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -48,6 +88,28 @@
       "category": "personalities",
       "name": "Impulsive",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d6",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Impulsive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": [
+          "upgradeOnePowerOrQualityDie"
+        ]
+      }
     }
   },
   {
@@ -65,6 +127,28 @@
       "category": "personalities",
       "name": "Mischievous",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Mischievous",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": [
+          "healthMayUseAnyPowerOrQuality"
+        ]
+      }
     }
   },
   {
@@ -82,6 +166,26 @@
       "category": "personalities",
       "name": "Sarcastic",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d8",
+        "yellow": "d8",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Sarcastic",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -99,6 +203,26 @@
       "category": "personalities",
       "name": "Distant",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dBVbEzSworXZ7sCj"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d10",
+        "yellow": "d8",
+        "red": "d6"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.dBVbEzSworXZ7sCj",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Distant",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dBVbEzSworXZ7sCj"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -116,6 +240,26 @@
       "category": "personalities",
       "name": "Stalwart",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d8",
+        "yellow": "d8",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Stalwart",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NWVBGfASHghnzatx"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -133,6 +277,26 @@
       "category": "personalities",
       "name": "Fast Talking",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Fast Talking",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -150,6 +314,26 @@
       "category": "personalities",
       "name": "Inquisitive",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Inquisitive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -167,6 +351,26 @@
       "category": "personalities",
       "name": "Alluring",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CeJNDgTubK5c7NSa"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.CeJNDgTubK5c7NSa",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Alluring",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CeJNDgTubK5c7NSa"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -184,6 +388,26 @@
       "category": "personalities",
       "name": "Stoic",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GcSuuOmbojvyq4Yn"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.GcSuuOmbojvyq4Yn",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Stoic",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GcSuuOmbojvyq4Yn"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -201,6 +425,26 @@
       "category": "personalities",
       "name": "Nurturing",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d6",
+        "red": "d12"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Nurturing",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -218,6 +462,26 @@
       "category": "personalities",
       "name": "Analytical",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rsTnttSCjKmkrVYw"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d10",
+        "yellow": "d8",
+        "red": "d6"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.rsTnttSCjKmkrVYw",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Analytical",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rsTnttSCjKmkrVYw"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -235,6 +499,26 @@
       "category": "personalities",
       "name": "Decisive",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d8",
+        "yellow": "d8",
+        "red": "d8"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Decisive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Xq96Yes8NLrq96uK"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -252,6 +536,26 @@
       "category": "personalities",
       "name": "Jovial",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Jovial",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0ECmDqNkfGr4CGCZ"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -269,6 +573,26 @@
       "category": "personalities",
       "name": "Cheerful",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d10",
+        "yellow": "d8",
+        "red": "d6"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Cheerful",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -286,6 +610,26 @@
       "category": "personalities",
       "name": "Naive",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d6",
+        "red": "d12"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Naive",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -303,6 +647,26 @@
       "category": "personalities",
       "name": "Apathetic",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d6",
+        "yellow": "d8",
+        "red": "d10"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Apathetic",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -320,6 +684,26 @@
       "category": "personalities",
       "name": "Jaded",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d10",
+        "yellow": "d8",
+        "red": "d6"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Jaded",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   },
   {
@@ -337,6 +721,26 @@
       "category": "personalities",
       "name": "Arrogant",
       "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qkrE4sLpDqmAFtkk"
+    },
+    "wizard": {
+      "statusDie": {
+        "green": "d10",
+        "yellow": "d8",
+        "red": "d6"
+      },
+      "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.qkrE4sLpDqmAFtkk",
+      "outAbility": {
+        "color": "out",
+        "category": "personalities",
+        "name": "Arrogant",
+        "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qkrE4sLpDqmAFtkk"
+      },
+      "specialQuality": {
+        "kind": "custom",
+        "dieType": "d8",
+        "namePrompt": "Make up a quality based on your hero's backstory.",
+        "notes": []
+      }
     }
   }
 ]

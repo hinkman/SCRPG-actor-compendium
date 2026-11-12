@@ -18,7 +18,51 @@
         "d10",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "ideals",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "name": "Leadership",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.6pk4qELGNdf4aIC2"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "name": "Self-Discipline",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.TvkPcxa7MKYW0DCL"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "ideals",
+        "principleCategoryLabel": "Ideals",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {

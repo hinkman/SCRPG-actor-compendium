@@ -35,7 +35,84 @@
           "name": "Overwhelming Vision",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "name": "Inventions",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "name": "Robotics",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "A Plan For Everything",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a"
+              },
+              {
+                "color": "yellow",
+                "name": "Expanded Mind",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v"
+              },
+              {
+                "color": "yellow",
+                "name": "Overwhelming Vision",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d6",
+          "d6"
+        ],
+        "additionalInfo": [
+          "Select an extra quality from the Information or Mental quality categories at d10."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

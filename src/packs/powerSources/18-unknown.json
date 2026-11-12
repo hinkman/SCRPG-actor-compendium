@@ -35,7 +35,80 @@
           "name": "Volatile Creations",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Brainstorm",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM"
+              },
+              {
+                "color": "yellow",
+                "name": "Strange Enhancement",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX"
+              },
+              {
+                "color": "yellow",
+                "name": "Volatile Creations",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d6"
+        ],
+        "additionalInfo": [
+          "Gain a Social quality at d10."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

@@ -85,7 +85,84 @@
           "name": "Shield",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GRYMSfZbUtrbjIlU"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": null,
+      "complex": true,
+      "complexKey": "modular",
+      "wizardBlocked": true,
+      "wizard": {
+        "complex": true,
+        "complexKey": "modular",
+        "wizardBlocked": true,
+        "actorFlags": {
+          "modular": true
+        },
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": null,
+        "principleCategoryLabel": null,
+        "principleText": null,
+        "requiredTraits": [],
+        "assignmentSteps": [],
+        "powerChoices": [],
+        "qualityChoices": [],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "You gain the following Green ability: Switch.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Switch",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.LfC0HqwPGaLkllCw"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "And the following Yellow ability: Quick Switch.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Quick Switch",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5g3buhH23xpgaE8P"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "red",
+            "count": 1,
+            "grantText": "And the following Red ability: Emergency Switch.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "red",
+                "name": "Emergency Switch",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.afxF0llU1r8Oiel7"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          }
+        ],
+        "remainingFreeText": [
+          "Complex archetype (modular): nested UX deferred; wizardBlocked=true"
+        ]
+      }
     }
   },
   "_stats": {

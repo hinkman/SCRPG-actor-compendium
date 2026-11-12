@@ -18,7 +18,43 @@
         "d12",
         "d6",
         "d6"
-      ]
+      ],
+      "principleCategory": "identity",
+      "qualityDice": [
+        "d10",
+        "d10"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d10"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d10 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "categoryLabel": "Social"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "identity",
+        "principleCategoryLabel": "Identity",
+        "powerSourceDice": [
+          "d12",
+          "d6",
+          "d6"
+        ]
+      }
     }
   },
   "_stats": {

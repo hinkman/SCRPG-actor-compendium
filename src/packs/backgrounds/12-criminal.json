@@ -18,7 +18,51 @@
         "d8",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "expertise",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Criminal Underworld Info",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "name": "Imposing",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.TepWLbqMhXMPjkRO"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "powerSourceDice": [
+          "d8",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {

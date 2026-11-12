@@ -55,7 +55,129 @@
           "name": "Split Form",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.x5dVkwfmxg117WxD"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": null,
+      "complex": true,
+      "complexKey": "divided",
+      "wizardBlocked": true,
+      "wizard": {
+        "complex": true,
+        "complexKey": "divided",
+        "wizardBlocked": true,
+        "actorFlags": {
+          "divided": true
+        },
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": null,
+        "principleCategoryLabel": null,
+        "principleText": "Last, instead of the principle from your other archetype, take a Responsibility principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [],
+        "powerChoices": [],
+        "qualityChoices": [],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "• Controllable Transition: You change between two different forms through some method that you have control over at all times. It might be yelling a magic word, or an elaborate sparkly transformation sequence. The disadvantage of controllable transition is that it always takes time to transform. Gain the following Green ability: Transform.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Transform",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzVVBqNXZzDDAEqO"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "• Device Transition: You transform between forms via a device of some kind, possibly via cybernetic upgrades or a magical artifact that channels the essence of a demigod. The disadvantage of device transition is that you need access to the device to enact your transformation. Gain the following Green ability: Device Transform.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Device Transform",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gIcJj3KVg7gnbcCw"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "• Merging/Possession Transition: Your transformation isn't entirely within you and you require other entities to change forms. For some, you must merge with someone else/something else to achieve your full heroic potential. For others, you take direct control over inanimate objects or people to manifest your powers. Gain one of the following Green abilities: Merge, Possess Person, or Possess Object.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Possess Person",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ziTg0EzscKsL2qeR"
+              },
+              {
+                "color": "green",
+                "name": "Possess Object",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jBzkcr5R20qCbUWN"
+              },
+              {
+                "color": "green",
+                "name": "Merge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xHOfuFeTjxjZTfsY"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "• Uncontrollable Transition: You transform in response to stress — whether you want to or not. Gain the following Green ability: Uncontrolled Transform.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Uncontrolled Transform",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ss01cyBG6dC5zOJp"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "After choosing your method of transformation, gain one of these Green abilities: Divided Psyche or Split Form.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Divided Psyche",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.nDvC1bPNRhCHiMtC"
+              },
+              {
+                "color": "green",
+                "name": "Split Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.x5dVkwfmxg117WxD"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": [
+          "Complex archetype (divided): nested UX deferred; wizardBlocked=true"
+        ]
+      }
     }
   },
   "_stats": {

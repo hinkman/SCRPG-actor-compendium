@@ -45,7 +45,212 @@
           "name": "Unstoppable Charge",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HgvvG5jACSFcG5UI"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "expertise",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "principleText": "Choose an Expertise principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one or more of the dice you rolled at the end of the power source step to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Vehicle",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Weaponry",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "intellectual",
+                "categoryLabel": "Intellectual"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "materials",
+                "categoryLabel": "Materials"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "technological",
+                "categoryLabel": "Technological"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "social",
+                "categoryLabel": "Social"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "categoryLabel": "Social"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain the following Green ability:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Armored",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0SIacYiyqsFTPovE"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "green",
+            "count": 3,
+            "grantText": "Gain three of these Green abilities of your choice, using at least two different powers:",
+            "constraint": "atLeastTwoDifferentPowers",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Deflect",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cyHxS1GUExiDEJZV"
+              },
+              {
+                "color": "green",
+                "name": "Dual Offense",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6BYMFdvoejvDBh9P"
+              },
+              {
+                "color": "green",
+                "name": "Living Bulwark",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vWAHWQ5SsWBfi7vC"
+              },
+              {
+                "color": "green",
+                "name": "Repair",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.uPFnUKUH60kAZEHd"
+              },
+              {
+                "color": "green",
+                "name": "Unstoppable Charge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HgvvG5jACSFcG5UI"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

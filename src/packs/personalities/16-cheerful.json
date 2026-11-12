@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Cheerful",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d10",
+          "yellow": "d8",
+          "red": "d6"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Cheerful",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qEf8BDI12JbfpfEi"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

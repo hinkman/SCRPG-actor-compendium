@@ -18,7 +18,53 @@
         "d8",
         "d8",
         "d6"
-      ]
+      ],
+      "principleCategory": "responsibility",
+      "qualityDice": [
+        "d8",
+        "d6",
+        "d6"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d8",
+          "d6",
+          "d6"
+        ],
+        "qualityPickCount": 3,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d8, a d6, and a d6 to three of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "name": "Banter",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.jLRoVcoc8Dz0Kiio"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Criminal Underworld Info",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "responsibility",
+        "principleCategoryLabel": "Responsibility",
+        "powerSourceDice": [
+          "d8",
+          "d8",
+          "d6"
+        ]
+      }
     }
   },
   "_stats": {

@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Nurturing",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d6",
+          "red": "d12"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Nurturing",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.zYM9t56gPPeWyvSV"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

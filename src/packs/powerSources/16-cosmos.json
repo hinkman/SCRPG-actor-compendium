@@ -35,7 +35,102 @@
           "name": "Mass Effect",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cosmic",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Intuition",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Cosmic Ray Absorption",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq"
+              },
+              {
+                "color": "yellow",
+                "name": "Encourage",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ"
+              },
+              {
+                "color": "yellow",
+                "name": "Mass Effect",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [
+          "Downgrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

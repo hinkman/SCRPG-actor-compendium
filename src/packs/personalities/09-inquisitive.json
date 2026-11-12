@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Inquisitive",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d8",
+          "red": "d10"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Inquisitive",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JiJ5j6BphW3ZkmHt"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

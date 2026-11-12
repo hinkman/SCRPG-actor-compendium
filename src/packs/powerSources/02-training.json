@@ -35,7 +35,83 @@
           "name": "Flowing Fight",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "name": "Gadgets",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.CjqhY7vBfkJQyhw4"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Always Be Prepared",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY"
+              },
+              {
+                "color": "yellow",
+                "name": "Reactive Field",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6"
+              },
+              {
+                "color": "yellow",
+                "name": "Flowing Fight",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [
+          "When you move to the next step, select an extra quality from that archetype's list at d8."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

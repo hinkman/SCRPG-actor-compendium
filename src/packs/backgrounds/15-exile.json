@@ -18,7 +18,51 @@
         "d8",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "ideals",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "name": "Conviction",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.yFhNXz31ZVkgf6Vp"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "name": "Insight",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.ZRk2kCPudIffPj2B"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "ideals",
+        "principleCategoryLabel": "Ideals",
+        "powerSourceDice": [
+          "d8",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {

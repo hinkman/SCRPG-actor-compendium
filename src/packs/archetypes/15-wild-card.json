@@ -60,7 +60,215 @@
           "name": "Turn the Tables",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.DilWGdPZKMElZzh5"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "ideals",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "ideals",
+        "principleCategoryLabel": "Ideals",
+        "principleText": "Choose an Ideals principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one or more of the dice you rolled at the end of the power source step to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Vehicle",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Weaponry",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "intellectual",
+                "categoryLabel": "Intellectual"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "categoryLabel": "Self Control"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "social",
+                "categoryLabel": "Social"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "categoryLabel": "Social"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, using two different powers.",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Gimmick",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gVS9lWj9vrPl0pav"
+              },
+              {
+                "color": "green",
+                "name": "Multitask",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sCjlYDhbpB2fyvPF"
+              },
+              {
+                "color": "green",
+                "name": "Surprise Results",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8V23QLdMhaMm1ksS"
+              },
+              {
+                "color": "green",
+                "name": "Unknown Results",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.qgqw2F9QUFw2cEXX"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Gain one of these Yellow abilities.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Break the 4th",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.U6J8qnDm39ZC3XjQ"
+              },
+              {
+                "color": "yellow",
+                "name": "Danger!",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4ffkFBRSra05lBgh"
+              },
+              {
+                "color": "yellow",
+                "name": "Expect the Unexpected",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5iCtwVnOWCIUYHJa"
+              },
+              {
+                "color": "yellow",
+                "name": "Imitation",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gOk1W0UUUxEuBTjr"
+              },
+              {
+                "color": "yellow",
+                "name": "Turn the Tables",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.DilWGdPZKMElZzh5"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

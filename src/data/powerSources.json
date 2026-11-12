@@ -52,7 +52,104 @@
         "name": "Immunity",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Area Alteration",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR"
+            },
+            {
+              "color": "yellow",
+              "name": "Inflict",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe"
+            },
+            {
+              "color": "yellow",
+              "name": "Reflexive Burst",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Ambush Awareness",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN"
+            },
+            {
+              "color": "green",
+              "name": "Change in Circumstance",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1"
+            },
+            {
+              "color": "green",
+              "name": "Immunity",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d12",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 2,
@@ -94,7 +191,83 @@
         "name": "Flowing Fight",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Gadgets",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.CjqhY7vBfkJQyhw4"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Always Be Prepared",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1xx6Rm1oWVEf7cuY"
+            },
+            {
+              "color": "yellow",
+              "name": "Reactive Field",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.irLsZNE2hqDWW3B6"
+            },
+            {
+              "color": "yellow",
+              "name": "Flowing Fight",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CBzx0lk7CrKoKXJP"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [
+        "When you move to the next step, select an extra quality from that archetype's list at d8."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 3,
@@ -146,7 +319,111 @@
         "name": "Rally",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Agility",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.iJ4lw3vOpXIC2Mwp"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Flight",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Strength",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Vitality",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Danger Sense",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj"
+            },
+            {
+              "color": "yellow",
+              "name": "Adaptive",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI"
+            },
+            {
+              "color": "yellow",
+              "name": "Area Assault",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Growth",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs"
+            },
+            {
+              "color": "green",
+              "name": "Rally",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 4,
@@ -197,7 +474,101 @@
         "name": "Unflagging",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Personal Upgrade",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE"
+            },
+            {
+              "color": "yellow",
+              "name": "Misdirection",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z"
+            },
+            {
+              "color": "yellow",
+              "name": "Throw Minion",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Overpower",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB"
+            },
+            {
+              "color": "green",
+              "name": "Unflagging",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d8",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 5,
@@ -243,7 +614,109 @@
         "name": "Sever Link",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Flight",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Presence",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Teleportation",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Modification Wave",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw"
+            },
+            {
+              "color": "yellow",
+              "name": "Mystic Redirection",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm"
+            },
+            {
+              "color": "yellow",
+              "name": "Sever Link",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [
+        "Gain an Information quality and assign a d10 to it."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 6,
@@ -301,7 +774,153 @@
         "name": "Natural Weapon",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "name": "Animal Control",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kjMIs092vuIRV2Bq"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cold",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Electricity",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Fire",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Flight",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Leaping",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Shapeshifting",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QBoHOQPJB8bWcXDl"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Swimming",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Swinging",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Wall-Crawling",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.bEqe9rU47wZ26mpV"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Weather",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Call to the Wild",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv"
+            },
+            {
+              "color": "yellow",
+              "name": "Predator's Eye",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW"
+            },
+            {
+              "color": "yellow",
+              "name": "Wild Strength",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Grasping Vines",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q"
+            },
+            {
+              "color": "green",
+              "name": "Natural Weapon",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 7,
@@ -360,7 +979,127 @@
         "name": "Punishment",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Intuition",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Harvest Life Force",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC"
+            },
+            {
+              "color": "yellow",
+              "name": "Magical Shield",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq"
+            },
+            {
+              "color": "yellow",
+              "name": "Momentary Power",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp"
+            },
+            {
+              "color": "yellow",
+              "name": "Relic Drain",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Draw Power",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4"
+            },
+            {
+              "color": "green",
+              "name": "Punishment",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d10",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 8,
@@ -417,7 +1156,155 @@
         "name": "Diagnostic Subroutine",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign one die to the power Power Suit.\nAssign the rest of the dice you rolled at the end of the background step to the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cold",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Elasticity",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.GTlpRqwtk6QMb9Hi"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Electricity",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Fire",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Lightning Calculator",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DEqpcIHX8qEVJeag"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Nuclear",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Part Detachment",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.g16MUwFTT08IfvEm"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        }
+      ],
+      "requiredPowers": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Power Suit",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.mbWy2aKC05gxmL8C",
+          "required": true
+        }
+      ],
+      "assignAllBackgroundDice": false,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Energy Converter",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88"
+            },
+            {
+              "color": "yellow",
+              "name": "Explosive Attack",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL"
+            },
+            {
+              "color": "yellow",
+              "name": "Onboard Upgrade",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Damage Reduction",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV"
+            },
+            {
+              "color": "green",
+              "name": "Diagnostic Subroutine",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d6",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 9,
@@ -473,7 +1360,108 @@
         "name": "Radioactive Aura",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Nuclear",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "categoryLabel": "Technological"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Radioactive Recharge",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA"
+            },
+            {
+              "color": "yellow",
+              "name": "Unstable Reaction",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9"
+            },
+            {
+              "color": "yellow",
+              "name": "Wither",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Charged Up",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8"
+            },
+            {
+              "color": "green",
+              "name": "Dangerous Lash",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0"
+            },
+            {
+              "color": "green",
+              "name": "Radioactive Aura",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 10,
@@ -530,7 +1518,113 @@
         "name": "Organi-Hack",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "categoryLabel": "Technological"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Energy Burst",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog"
+            },
+            {
+              "color": "yellow",
+              "name": "Recharge",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn"
+            },
+            {
+              "color": "yellow",
+              "name": "Techno-Absorb",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp"
+            },
+            {
+              "color": "yellow",
+              "name": "Tactical Analysis",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Indiscriminate Fabrication",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0"
+            },
+            {
+              "color": "green",
+              "name": "Organi-Hack",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 11,
@@ -587,7 +1681,157 @@
         "name": "Reach through Veil",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cold",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Electricity",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Fire",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Infernal",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "name": "Plants",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.8UiThcI7PJaRNavE"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Presence",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Radiant",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Strength",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "name": "Transmutation",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Vitality",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Weather",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Area Healing",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB"
+            },
+            {
+              "color": "yellow",
+              "name": "Mass Modification",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow"
+            },
+            {
+              "color": "yellow",
+              "name": "Personal Upgrade",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv"
+            },
+            {
+              "color": "yellow",
+              "name": "Reach through Veil",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d10",
+        "d6"
+      ],
+      "additionalInfo": [
+        "Gain one power not on the above list. Assign it a d10."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 12,
@@ -641,7 +1885,122 @@
         "name": "Intentionality",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Inventions",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Robotics",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Created Immunity",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.lnLDxlGSgYHnyn4k"
+            },
+            {
+              "color": "yellow",
+              "name": "Multiple Assault",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ARWVQAsAH51XPtSP"
+            },
+            {
+              "color": "yellow",
+              "name": "Recalculating...",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6AoOtIbrr9DlJqZq"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Created Form",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.T8eKmRY72OBHNMl2"
+            },
+            {
+              "color": "green",
+              "name": "Intentionality",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Fyzx36w6FQSgnaUP"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 13,
@@ -690,7 +2049,94 @@
         "name": "Extremes",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Attunement",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7"
+            },
+            {
+              "color": "yellow",
+              "name": "Costly Strength",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95"
+            },
+            {
+              "color": "yellow",
+              "name": "Cursed Resolve",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Double Edged Luck",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38"
+            },
+            {
+              "color": "green",
+              "name": "Extremes",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d12",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 14,
@@ -735,7 +2181,100 @@
         "name": "Halt",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "categoryLabel": "Technological"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Alien Boost",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe"
+            },
+            {
+              "color": "yellow",
+              "name": "Empower and Repair",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX"
+            },
+            {
+              "color": "yellow",
+              "name": "Halt",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d8",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [
+        "Then, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 15,
@@ -777,7 +2316,84 @@
         "name": "Overwhelming Vision",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Inventions",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KaCyS15sdeKfi3g1"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "name": "Robotics",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kQBxHAqBwDrh07qB"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "A Plan For Everything",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0UZRXFzHY5gjHA7a"
+            },
+            {
+              "color": "yellow",
+              "name": "Expanded Mind",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tdjOB1AWZU34YQ8v"
+            },
+            {
+              "color": "yellow",
+              "name": "Overwhelming Vision",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2Tk4yMkjjKWgBlfG"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d6",
+        "d6"
+      ],
+      "additionalInfo": [
+        "Select an extra quality from the Information or Mental quality categories at d10."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 16,
@@ -822,7 +2438,102 @@
         "name": "Mass Effect",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cosmic",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Intuition",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "categoryLabel": "Mobility"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "categoryLabel": "Technological"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Cosmic Ray Absorption",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.movHb6LASX4fCnKq"
+            },
+            {
+              "color": "yellow",
+              "name": "Encourage",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MBkLxSlHEUEemGtQ"
+            },
+            {
+              "color": "yellow",
+              "name": "Mass Effect",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ULudrAYmEjF6UQ2e"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [
+        "Downgrade one d10 or d12 power one die size and upgrade one d6 or d8 power one die size."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 17,
@@ -878,7 +2589,145 @@
         "name": "Extrasensory Awareness",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cosmic",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Duplication",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.sFnNvNhWv7cPtIeb"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Infernal",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Intangibility",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5r7HjDoWoSVm9d5e"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "name": "Invisibility",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.pjArTyAxecwPdHvf"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Radiant",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Vehicle",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "hallmark",
+          "name": "Signature Weaponry",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "name": "Transmutation",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Teleportation",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Absorb Essence",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.L14lvKwYoyb4t5xB"
+            },
+            {
+              "color": "yellow",
+              "name": "Aura of Pain",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.35hDMOUNrgGJYZD5"
+            },
+            {
+              "color": "yellow",
+              "name": "Bizarre Strike",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vjpYFgWLZxvFAn9F"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Attune",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S3HX3L1AgWZ2qK2V"
+            },
+            {
+              "color": "green",
+              "name": "Extrasensory Awareness",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d12",
+        "d6"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 18,
@@ -920,7 +2769,80 @@
         "name": "Volatile Creations",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "categoryLabel": "Intellectual"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "technological",
+          "categoryLabel": "Technological"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Brainstorm",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Zj4WbuK0hTdHRxUM"
+            },
+            {
+              "color": "yellow",
+              "name": "Strange Enhancement",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HqNyyLvOXHDEXDnX"
+            },
+            {
+              "color": "yellow",
+              "name": "Volatile Creations",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9ydsxJb3dZTE6gKO"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "additionalInfo": [
+        "Gain a Social quality at d10."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   },
   {
     "number": 19,
@@ -975,7 +2897,99 @@
         "name": "Twist Reality",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "categoryLabel": "Athletic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "categoryLabel": "Elemental/Energy"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "materials",
+          "categoryLabel": "Materials"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Command Power",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV"
+            },
+            {
+              "color": "yellow",
+              "name": "Dangerous Explosion",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q"
+            },
+            {
+              "color": "yellow",
+              "name": "Embolden",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI"
+            },
+            {
+              "color": "yellow",
+              "name": "Resolve",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF"
+            }
+          ]
+        },
+        {
+          "color": "green",
+          "count": 1,
+          "grantText": "Gain one of these Green abilities:",
+          "constraint": null,
+          "abilities": [
+            {
+              "color": "green",
+              "name": "Resilience",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv"
+            },
+            {
+              "color": "green",
+              "name": "Twist Reality",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d8"
+      ],
+      "additionalInfo": [],
+      "remainingFreeText": []
+    }
   },
   {
     "number": 20,
@@ -1024,6 +3038,101 @@
         "name": "Reality Scorned",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
       }
-    ]
+    ],
+    "wizard": {
+      "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+      "powerChoices": [
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Awareness",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "elemental-energy",
+          "name": "Cosmic",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "intellectual",
+          "name": "Intuition",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "athletic",
+          "name": "Speed",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ"
+        },
+        {
+          "kind": "item",
+          "pack": "powers",
+          "categoryKey": "mobility",
+          "name": "Teleportation",
+          "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "psychic",
+          "categoryLabel": "Psychic"
+        },
+        {
+          "kind": "category",
+          "pack": "powers",
+          "categoryKey": "self-control",
+          "categoryLabel": "Self Control"
+        }
+      ],
+      "requiredPowers": [],
+      "assignAllBackgroundDice": true,
+      "abilityPicks": [
+        {
+          "color": "yellow",
+          "count": 2,
+          "grantText": "Gain two of these Yellow abilities, each using a different power:",
+          "constraint": "differentPower",
+          "abilities": [
+            {
+              "color": "yellow",
+              "name": "Power From Beyond",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD"
+            },
+            {
+              "color": "yellow",
+              "name": "Respond In Kind",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2"
+            },
+            {
+              "color": "yellow",
+              "name": "Dread Pallor",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN"
+            },
+            {
+              "color": "yellow",
+              "name": "Reality Scorned",
+              "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
+            }
+          ]
+        }
+      ],
+      "archetypeDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "additionalInfo": [
+        "Gain one extra power from any category at d6."
+      ],
+      "remainingFreeText": [
+        "additionalInfo: structured bonus grants deferred; keep prose for display"
+      ]
+    }
   }
 ]

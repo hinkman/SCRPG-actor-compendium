@@ -65,7 +65,222 @@
           "name": "Strength in Victory",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5zeLBXXVOL4mm937"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "expertise",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "principleText": "Choose an Expertise principle.",
+        "requiredTraits": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Strength",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G",
+            "required": true,
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to the Strength power. If you already have Strength, either skip it or swap the die with one of your new dice."
+          }
+        ],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one of the remaining dice to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "name": "Density Control",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.D8wlyytUDg2oEbkx"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "name": "Leaping",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Weaponry",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "name": "Size-Changing",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.N9hlUuhKZTN6REox"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "social",
+                "categoryLabel": "Social"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Density Control",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.D8wlyytUDg2oEbkx"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Leaping",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Size-Changing",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.N9hlUuhKZTN6REox"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "categoryLabel": "Social"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, each using a different power or quality from the Physical Powerhouse list (including Strength):",
+            "constraint": "differentPowerOrQuality",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Damage Resistant",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IPB6eWZFzzDr9j8e"
+              },
+              {
+                "color": "green",
+                "name": "Frontline Fighting",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HvsVJwjnaH7rWRtR"
+              },
+              {
+                "color": "green",
+                "name": "Galvanize",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.FCVqKVJ3wJ2eoJJi"
+              },
+              {
+                "color": "green",
+                "name": "Power Strike",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dH37lJqo53cKcBFQ"
+              },
+              {
+                "color": "green",
+                "name": "Strength in Victory",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cZZWLhJRhEtQDP1L"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Gain one of the above abilities at Yellow, using a different power or quality than your Green abilities.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Damage Resistant",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CTVnGKdSvggWJVxE"
+              },
+              {
+                "color": "yellow",
+                "name": "Frontline Fighting",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ORy7E29N09dz6B9s"
+              },
+              {
+                "color": "yellow",
+                "name": "Galvanize",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.oBQ6K4S07DFRgLN2"
+              },
+              {
+                "color": "yellow",
+                "name": "Power Strike",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.BcQLMN3FChkKxVeM"
+              },
+              {
+                "color": "yellow",
+                "name": "Strength in Victory",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5zeLBXXVOL4mm937"
+              }
+            ],
+            "fromAboveList": true,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

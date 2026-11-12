@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Apathetic",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d8",
+          "red": "d10"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Apathetic",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqMh2fsm0ZscLtDv"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

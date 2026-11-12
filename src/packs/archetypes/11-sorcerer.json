@@ -50,7 +50,189 @@
           "name": "Living Bomb",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SkJ0L648OB64L2F0"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "esoteric",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "principleText": "Choose an Esoteric principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one or more of the dice you rolled at the end of the power source step to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "elemental-energy",
+                "categoryLabel": "Elemental/Energy"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "materials",
+                "categoryLabel": "Materials"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "psychic",
+                "categoryLabel": "Psychic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "categoryLabel": "Self Control"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "categoryLabel": "Information"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "mental",
+                "categoryLabel": "Mental"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, using two different powers.",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Banish",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.imnA8a70pkaz0abA"
+              },
+              {
+                "color": "green",
+                "name": "Energy Jaunt",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ebJxg6qUjmPnLeYe"
+              },
+              {
+                "color": "green",
+                "name": "Powerful Blast",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HF3Da8MT2unKCQ99"
+              },
+              {
+                "color": "green",
+                "name": "Subdue",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ccfZVifaC4QubTZk"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Gain one of these Yellow abilities.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Cords of Magic",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qnvb3r0lB1inQSRo"
+              },
+              {
+                "color": "yellow",
+                "name": "Field of Energy",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.uqmhNqGBWd5UT21Y"
+              },
+              {
+                "color": "yellow",
+                "name": "Living Bomb",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SkJ0L648OB64L2F0"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

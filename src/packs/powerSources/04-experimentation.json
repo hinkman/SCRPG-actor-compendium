@@ -45,7 +45,101 @@
           "name": "Unflagging",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Personal Upgrade",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.pHoZH9FjeegXJBHE"
+              },
+              {
+                "color": "yellow",
+                "name": "Misdirection",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.I3ey6SxXKb8PQn9Z"
+              },
+              {
+                "color": "yellow",
+                "name": "Throw Minion",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.WdH4qGjjzWilHxVK"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Overpower",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PNXHZkbzkUSgB9MB"
+              },
+              {
+                "color": "green",
+                "name": "Unflagging",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2aDrJ4JVAxEsT8xD"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d8",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Naive",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d6",
+          "red": "d12"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Naive",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KqSwCKfYq1gG9Lwz"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

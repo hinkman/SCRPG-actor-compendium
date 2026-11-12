@@ -18,7 +18,43 @@
         "d10",
         "d8",
         "d6"
-      ]
+      ],
+      "principleCategory": "esoteric",
+      "qualityDice": [
+        "d12",
+        "d6"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d12",
+          "d6"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d12 and a d6 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d6"
+        ]
+      }
     }
   },
   "_stats": {

@@ -26,6 +26,28 @@
         "category": "personalities",
         "name": "Impulsive",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d6",
+          "red": "d8"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Impulsive",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VkqZtjf7k7oqCgEG"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": [
+            "upgradeOnePowerOrQualityDie"
+          ]
+        }
       }
     }
   },

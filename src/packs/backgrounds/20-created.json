@@ -18,7 +18,58 @@
         "d10",
         "d10",
         "d6"
-      ]
+      ],
+      "principleCategory": "expertise",
+      "qualityDice": [
+        "d12",
+        "d6"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d12",
+          "d6"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d12 and a d6 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "name": "Alertness",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.ogM64mcFILG1tI9V"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Science",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Technology",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "powerSourceDice": [
+          "d10",
+          "d10",
+          "d6"
+        ]
+      }
     }
   },
   "_stats": {

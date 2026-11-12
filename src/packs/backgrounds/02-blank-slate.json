@@ -18,7 +18,43 @@
         "d10",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "identity",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "identity",
+        "principleCategoryLabel": "Identity",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {

@@ -44,7 +44,94 @@
           "name": "Extremes",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Attunement",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IDh8jA5NA1CqIuO7"
+              },
+              {
+                "color": "yellow",
+                "name": "Costly Strength",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.YgPROkkBBWLLCg95"
+              },
+              {
+                "color": "yellow",
+                "name": "Cursed Resolve",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.K8RnyLm4CsGUsG6X"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Double Edged Luck",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jlGY2E8QM3GHmW38"
+              },
+              {
+                "color": "green",
+                "name": "Extremes",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5OqV73nGVJbqFFLB"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d12",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

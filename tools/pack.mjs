@@ -225,6 +225,9 @@ const PACKS = [
             if (ability.uuid !== expectedUuid) {
                 throw new Error(`personality ${entry.name} outAbility uuid mismatch: ${ability.uuid} !== ${expectedUuid}`);
             }
+            if (!entry.wizard) {
+                throw new Error(`personality ${entry.name} is missing wizard metadata (run tools/enrich-wizard-metadata.mjs)`);
+            }
         },
         buildItem(entry, folderId, itemId) {
             return {
@@ -253,7 +256,8 @@ const PACKS = [
                             category: entry.outAbility.category,
                             name: entry.outAbility.name,
                             uuid: entry.outAbility.uuid
-                        }
+                        },
+                        ...(entry.wizard ? { wizard: entry.wizard } : {})
                     }
                 },
                 _stats: STATS,
@@ -275,6 +279,12 @@ const PACKS = [
             }
             if (!Array.isArray(entry.abilities) || !entry.abilities.length) {
                 throw new Error(`archetype ${entry.name} has no ability links`);
+            }
+            if (!entry.wizard) {
+                throw new Error(`archetype ${entry.name} is missing wizard metadata (run tools/enrich-wizard-metadata.mjs)`);
+            }
+            if (!Array.isArray(entry.personalityDice) || !entry.personalityDice.length) {
+                throw new Error(`archetype ${entry.name} is missing personalityDice`);
             }
             for (const ability of entry.abilities) {
                 if (!ability?.uuid || !ability?.name || !ability?.color) {
@@ -303,7 +313,13 @@ const PACKS = [
                 flags: {
                     "scrpg-actor-compendium": {
                         number: entry.number,
-                        abilities: entry.abilities
+                        abilities: entry.abilities,
+                        personalityDice: entry.personalityDice || entry.wizard?.personalityDice || ["d10", "d10"],
+                        principleCategory: entry.wizard?.principleCategory || null,
+                        complex: Boolean(entry.wizard?.complex),
+                        complexKey: entry.wizard?.complexKey || null,
+                        wizardBlocked: Boolean(entry.wizard?.wizardBlocked),
+                        ...(entry.wizard ? { wizard: entry.wizard } : {})
                     }
                 },
                 _stats: STATS,
@@ -325,6 +341,9 @@ const PACKS = [
             }
             if (!Array.isArray(entry.archetypeDice) || !entry.archetypeDice.length) {
                 throw new Error(`power source ${entry.name} is missing archetypeDice`);
+            }
+            if (!entry.wizard) {
+                throw new Error(`power source ${entry.name} is missing wizard metadata (run tools/enrich-wizard-metadata.mjs)`);
             }
             if (!Array.isArray(entry.abilities)) {
                 throw new Error(`power source ${entry.name} is missing abilities array`);
@@ -357,7 +376,8 @@ const PACKS = [
                     "scrpg-actor-compendium": {
                         number: entry.number,
                         archetypeDice: entry.archetypeDice,
-                        abilities: entry.abilities
+                        abilities: entry.abilities,
+                        ...(entry.wizard ? { wizard: entry.wizard } : {})
                     }
                 },
                 _stats: STATS,
@@ -386,6 +406,9 @@ const PACKS = [
             if (!Array.isArray(entry.powerSourceDice) || !entry.powerSourceDice.length) {
                 throw new Error(`background ${entry.name} is missing powerSourceDice`);
             }
+            if (!entry.wizard) {
+                throw new Error(`background ${entry.name} is missing wizard metadata (run tools/enrich-wizard-metadata.mjs)`);
+            }
         },
         buildItem(entry, folderId, itemId) {
             const description = buildBackgroundDescriptionHtml(entry);
@@ -403,7 +426,10 @@ const PACKS = [
                 flags: {
                     "scrpg-actor-compendium": {
                         number: entry.number,
-                        powerSourceDice: entry.powerSourceDice
+                        powerSourceDice: entry.powerSourceDice,
+                        principleCategory: entry.wizard?.principleCategory || null,
+                        qualityDice: entry.wizard?.qualityDice || null,
+                        ...(entry.wizard ? { wizard: entry.wizard } : {})
                     }
                 },
                 _stats: STATS,
