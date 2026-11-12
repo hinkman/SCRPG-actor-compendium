@@ -1,0 +1,75 @@
+<div class="scrpg-wizard-ps-details">
+  <header class="scrpg-wizard-step-header">
+    <h2>Power Source — Powers &amp; Abilities</h2>
+    <p>
+      <strong>{{selectedPowerSourceName}}</strong>:
+      assign Background dice {{powerSourceDiceLabel}} to powers, then pick Yellow/Green abilities
+      (selective — not dump-all).
+    </p>
+  </header>
+
+  {{#if powersIntro}}
+    <p class="scrpg-wizard-intro">{{powersIntro}}</p>
+  {{/if}}
+
+  <section class="scrpg-wizard-assign-block" aria-label="Power dice">
+    <h3>Powers</h3>
+    <div class="scrpg-wizard-assign-list">
+      {{#each powerSlots}}
+        <div class="scrpg-wizard-assign-row" data-slot-index="{{slotIndex}}">
+          <label class="scrpg-wizard-assign-trait">
+            <span class="label">{{#if required}}Required{{else}}Power{{/if}}</span>
+            {{#if lockedUuid}}
+              <input type="hidden" name="powerUuid.{{slotIndex}}" value="{{lockedUuid}}">
+              <span class="scrpg-wizard-locked-trait">{{lockedName}}</span>
+            {{else}}
+              <select name="powerUuid.{{slotIndex}}">
+                <option value="">— choose —</option>
+                {{#each traitOptions}}
+                  <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+                {{/each}}
+              </select>
+            {{/if}}
+          </label>
+          <label class="scrpg-wizard-assign-die">
+            <span class="label">Die</span>
+            <select name="powerDie.{{slotIndex}}">
+              <option value="">—</option>
+              {{#each dieOptions}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  {{#each abilityPickGroups}}
+    <section class="scrpg-wizard-ability-block" aria-label="{{color}} abilities">
+      <h3>{{title}}</h3>
+      {{#if grantText}}
+        <p class="scrpg-wizard-intro">{{grantText}}</p>
+      {{/if}}
+      {{#if constraintNote}}
+        <p class="scrpg-wizard-hint">{{constraintNote}}</p>
+      {{/if}}
+      <div class="scrpg-wizard-ability-list">
+        {{#each abilities}}
+          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}">
+            <input
+              type="checkbox"
+              name="abilityPick.{{../index}}"
+              value="{{uuid}}"
+              {{#if selected}}checked{{/if}}
+              {{#if disabled}}disabled{{/if}}
+            >
+            <span class="scrpg-wizard-ability-name">{{name}}</span>
+            <span class="scrpg-wizard-ability-color">{{../color}}</span>
+          </label>
+        {{/each}}
+      </div>
+      <p class="scrpg-wizard-pick-count">Selected {{selectedCount}} / {{count}}</p>
+    </section>
+  {{/each}}
+</div>

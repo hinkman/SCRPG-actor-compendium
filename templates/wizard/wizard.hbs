@@ -11,38 +11,18 @@
   <div class="scrpg-wizard-step">
     {{#if isMethodStep}}
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/method.hbs"}}
+    {{else if isBackgroundStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/background.hbs"}}
+    {{else if isBackgroundDetailsStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/backgroundDetails.hbs"}}
+    {{else if isPowerSourceStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/powerSource.hbs"}}
+    {{else if isPowerSourceDetailsStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/powerSourceDetails.hbs"}}
     {{else if isPlaceholderStep}}
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/placeholder.hbs"}}
     {{/if}}
   </div>
-
-  {{#if showRollDemo}}
-    <aside class="scrpg-wizard-roll-demo" aria-label="Silent roll demo">
-      <div class="scrpg-wizard-roll-demo-copy">
-        <span class="scrpg-wizard-roll-demo-title">Silent roll</span>
-        {{#if demoRollSummary}}
-          <span class="scrpg-wizard-roll-demo-result">
-            <strong>{{demoRollSummary.formula}}</strong> → {{demoRollSummary.total}}
-            {{#if demoRollSummary.detail}}
-              <span class="scrpg-wizard-roll-demo-detail">{{demoRollSummary.detail}}</span>
-            {{/if}}
-          </span>
-        {{else}}
-          <span class="scrpg-wizard-roll-demo-hint">No chat noise — rolls stay in the wizard. Try a sample for Steps 1–2.</span>
-        {{/if}}
-      </div>
-      <div class="scrpg-wizard-roll-demo-actions">
-        {{#unless demoRollSummary}}
-          <button type="button" class="scrpg-wizard-btn" data-action="demoRoll">
-            <i class="fas fa-dice"></i> Roll sample
-          </button>
-        {{/unless}}
-        <button type="button" class="scrpg-wizard-btn" data-action="reroll" {{#unless demoRollSummary}}disabled{{/unless}}>
-          <i class="fas fa-rotate"></i> Re-roll
-        </button>
-      </div>
-    </aside>
-  {{/if}}
 
   <footer class="scrpg-wizard-footer">
     <button type="button" class="scrpg-wizard-btn" data-action="cancel">Cancel</button>
