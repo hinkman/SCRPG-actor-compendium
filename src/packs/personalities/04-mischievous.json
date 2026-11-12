@@ -26,6 +26,28 @@
         "category": "personalities",
         "name": "Mischievous",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d8",
+          "red": "d8"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Mischievous",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gCmG5SMkOXInJYcl"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": [
+            "healthMayUseAnyPowerOrQuality"
+          ]
+        }
       }
     }
   },

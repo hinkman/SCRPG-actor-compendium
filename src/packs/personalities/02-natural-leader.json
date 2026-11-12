@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Natural Leader",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d8",
+          "red": "d10"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Natural Leader",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XBUgx8ybu5GaZpc1"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

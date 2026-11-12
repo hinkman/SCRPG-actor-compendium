@@ -75,7 +75,203 @@
           "name": "Telepathic Whammy",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rRG1IaVBuXOEe7V6"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "esoteric",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "principleText": "Choose an Esoteric principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign at least two dice you rolled at the end of the power source step to powers from the Psychic category. If you already have one or more Psychic powers, assign dice to ensure that you have at least two Psychic powers.",
+            "pack": null,
+            "choices": [],
+            "unstructured": true
+          },
+          {
+            "instruction": "Assign any remaining dice to the following categories:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "intellectual",
+                "categoryLabel": "Intellectual"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "materials",
+                "categoryLabel": "Materials"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "psychic",
+                "categoryLabel": "Psychic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "categoryLabel": "Self Control"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "categoryLabel": "Information"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "mental",
+                "categoryLabel": "Mental"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          }
+        ],
+        "qualityChoices": [],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Psychic Assault",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7ci4p14uFfTwn0BY"
+              },
+              {
+                "color": "green",
+                "name": "Psychic Coordination",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XjB4NXJlXqODH0zr"
+              },
+              {
+                "color": "green",
+                "name": "Psychic Insight",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.49JGzmia1g39hN1J"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of the following Yellow abilities that you have the associated power or quality for.",
+            "constraint": "requiresAssociatedTrait",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Astral Projection",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6E6gotEupTh8vP0q"
+              },
+              {
+                "color": "yellow",
+                "name": "Illusionary Double",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0LCGlBFO4kKd0HwW"
+              },
+              {
+                "color": "yellow",
+                "name": "Minion Suggestion",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.5xf8IJsVbnXDh30t"
+              },
+              {
+                "color": "yellow",
+                "name": "Postcognitive Understanding",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.H8Okwp3sMCgDkyB5"
+              },
+              {
+                "color": "yellow",
+                "name": "Precognitive Alteration",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UEiOm3n2OCxfKZ8W"
+              },
+              {
+                "color": "yellow",
+                "name": "Psychic Analysis",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Rbgrq1pI0HgHCJR9"
+              },
+              {
+                "color": "yellow",
+                "name": "Swarm",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UB3DqVhCs3eURuIS"
+              },
+              {
+                "color": "yellow",
+                "name": "Telekinetic Assault",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TAJpPFFt7czGReZT"
+              },
+              {
+                "color": "yellow",
+                "name": "Telepathic Whammy",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rRG1IaVBuXOEe7V6"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": [
+          "Some assignmentSteps.instruction lines still need human reading for die counts (one vs remaining)"
+        ]
+      }
     }
   },
   "_stats": {

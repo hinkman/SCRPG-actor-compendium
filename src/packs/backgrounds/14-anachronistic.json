@@ -18,7 +18,58 @@
         "d10",
         "d8",
         "d6"
-      ]
+      ],
+      "principleCategory": "esoteric",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "History",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Magical Lore",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Technology",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d6"
+        ]
+      }
     }
   },
   "_stats": {

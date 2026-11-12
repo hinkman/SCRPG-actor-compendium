@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Lone Wolf",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d8",
+          "yellow": "d8",
+          "red": "d8"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Lone Wolf",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bnWG50qicoPN7tw1"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

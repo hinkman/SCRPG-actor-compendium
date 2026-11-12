@@ -40,7 +40,102 @@
           "name": "Reality Scorned",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Awareness",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cosmic",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Intuition",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Speed",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kTRnwcMJLHbZopWQ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Teleportation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Power From Beyond",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Hg5vKHyzSKO3s5WD"
+              },
+              {
+                "color": "yellow",
+                "name": "Respond In Kind",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.2NkOAQ0wyZAI3lb2"
+              },
+              {
+                "color": "yellow",
+                "name": "Dread Pallor",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.KA0cpHBToJFwX0qN"
+              },
+              {
+                "color": "yellow",
+                "name": "Reality Scorned",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cFs7VE7rmymtI1fl"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d6"
+        ],
+        "additionalInfo": [
+          "Gain one extra power from any category at d6."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

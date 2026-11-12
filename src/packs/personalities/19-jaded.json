@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Jaded",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d10",
+          "yellow": "d8",
+          "red": "d6"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Jaded",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jwAa9fnmN95EQMCn"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

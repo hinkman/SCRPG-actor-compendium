@@ -50,7 +50,187 @@
           "name": "Imbue with Element",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PMBEHxkUXPyGqKet"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "esoteric",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "principleText": "Choose an Esoteric principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to an Elemental/Energy power. If you already have an Elemental/Energy power, you can skip it, add a different Elemental/Energy power, or swap the die with one of your new dice.",
+            "pack": null,
+            "choices": [],
+            "unstructured": true
+          },
+          {
+            "instruction": "Assign one of your remaining dice to one of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Weaponry",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "elemental-energy",
+                "categoryLabel": "Elemental/Energy"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "technological",
+                "categoryLabel": "Technological"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "mental",
+                "categoryLabel": "Mental"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, each of which uses a different one of your powers from the Blaster list above:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Exploit Vulnerability",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ubn9ICW0nav4sohJ"
+              },
+              {
+                "color": "green",
+                "name": "Disabling Blast",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0tuiErxFx9m93ppy"
+              },
+              {
+                "color": "green",
+                "name": "Danger Zone",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.r9yE0hFtMQ3Ce4DQ"
+              },
+              {
+                "color": "green",
+                "name": "Precise Hit",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.0zBbd2gGhD9wumb9"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, using two different powers:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Energy Immunity",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GdsqrHseLVijGsRS"
+              },
+              {
+                "color": "yellow",
+                "name": "Heedless Blast",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sjIIxiqRtgBLoS5R"
+              },
+              {
+                "color": "yellow",
+                "name": "Imbue with Element",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.PMBEHxkUXPyGqKet"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": [
+          "Some assignmentSteps.instruction lines still need human reading for die counts (one vs remaining)"
+        ]
+      }
     }
   },
   "_stats": {

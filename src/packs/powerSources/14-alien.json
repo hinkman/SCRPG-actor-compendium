@@ -35,7 +35,100 @@
           "name": "Halt",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Alien Boost",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZrzTIq5ydzzAGpCe"
+              },
+              {
+                "color": "yellow",
+                "name": "Empower and Repair",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.g4uHfCTG6ZwW3ykX"
+              },
+              {
+                "color": "yellow",
+                "name": "Halt",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Vx0kglZMKYV7jem"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d8",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [
+          "Then, upgrade one d8 power or quality to d10. If you have no d8 powers, instead add a new power from the above list at d8."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

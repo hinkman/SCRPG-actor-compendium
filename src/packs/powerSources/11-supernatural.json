@@ -40,7 +40,157 @@
           "name": "Reach through Veil",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Awareness",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cold",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Electricity",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Fire",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Infernal",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "name": "Plants",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.8UiThcI7PJaRNavE"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Presence",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Radiant",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Strength",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "name": "Transmutation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Vitality",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Weather",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Area Healing",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Lii30GC1FebaBCDB"
+              },
+              {
+                "color": "yellow",
+                "name": "Mass Modification",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1piVWzovN4gSyeow"
+              },
+              {
+                "color": "yellow",
+                "name": "Personal Upgrade",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6zwCcOJUDztqv9Bv"
+              },
+              {
+                "color": "yellow",
+                "name": "Reach through Veil",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aFEydFX484OarPfB"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d10",
+          "d6"
+        ],
+        "additionalInfo": [
+          "Gain one power not on the above list. Assign it a d10."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

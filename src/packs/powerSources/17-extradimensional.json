@@ -44,7 +44,145 @@
           "name": "Extrasensory Awareness",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cosmic",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.7tvi62LlYMr2d8ho"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Duplication",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.sFnNvNhWv7cPtIeb"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Infernal",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.dgC2JpKYbYE64jEC"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Intangibility",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5r7HjDoWoSVm9d5e"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Invisibility",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.pjArTyAxecwPdHvf"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Radiant",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.NSolfVXE3xnWgiyu"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "name": "Transmutation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Teleportation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Absorb Essence",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.L14lvKwYoyb4t5xB"
+              },
+              {
+                "color": "yellow",
+                "name": "Aura of Pain",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.35hDMOUNrgGJYZD5"
+              },
+              {
+                "color": "yellow",
+                "name": "Bizarre Strike",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vjpYFgWLZxvFAn9F"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Attune",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S3HX3L1AgWZ2qK2V"
+              },
+              {
+                "color": "green",
+                "name": "Extrasensory Awareness",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F1wgEpuN0HTROZtp"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d12",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

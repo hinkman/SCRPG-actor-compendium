@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Fast Talking",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d6",
+          "yellow": "d8",
+          "red": "d10"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Fast Talking",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CNv07BlL2VJ99OLy"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

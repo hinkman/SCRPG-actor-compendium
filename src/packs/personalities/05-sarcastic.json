@@ -26,6 +26,26 @@
         "category": "personalities",
         "name": "Sarcastic",
         "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg"
+      },
+      "wizard": {
+        "statusDie": {
+          "green": "d8",
+          "yellow": "d8",
+          "red": "d8"
+        },
+        "outAbilityUuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg",
+        "outAbility": {
+          "color": "out",
+          "category": "personalities",
+          "name": "Sarcastic",
+          "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.y2a6AnHZAtCPGhcg"
+        },
+        "specialQuality": {
+          "kind": "custom",
+          "dieType": "d8",
+          "namePrompt": "Make up a quality based on your hero's backstory.",
+          "notes": []
+        }
       }
     }
   },

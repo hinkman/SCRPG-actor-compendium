@@ -45,7 +45,111 @@
           "name": "Rally",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Agility",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.iJ4lw3vOpXIC2Mwp"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Flight",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Strength",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DK1Dj4AZrwDMvF9G"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "name": "Vitality",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.9oftF6dPbn9LtnEz"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Danger Sense",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NfgdVMPFx7lCk9bj"
+              },
+              {
+                "color": "yellow",
+                "name": "Adaptive",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.p2eTkXenlMbLCLcI"
+              },
+              {
+                "color": "yellow",
+                "name": "Area Assault",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.55TzmNoDVBOjwdqO"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Growth",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.F5ZJ235EmR5MPfNs"
+              },
+              {
+                "color": "green",
+                "name": "Rally",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jYSVL4a34V7rB62R"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

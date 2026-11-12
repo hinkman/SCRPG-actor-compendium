@@ -35,7 +35,109 @@
           "name": "Sever Link",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Awareness",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Flight",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Presence",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.UEiMFUmpNBwhY20J"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Teleportation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fbddUiHTU2MMOSU6"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Modification Wave",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EMJBMnY6a1Uic5Dw"
+              },
+              {
+                "color": "yellow",
+                "name": "Mystic Redirection",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.D33j3h1LaPxepUbm"
+              },
+              {
+                "color": "yellow",
+                "name": "Sever Link",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.TT5qCwPkikkKY4nd"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [
+          "Gain an Information quality and assign a d10 to it."
+        ],
+        "remainingFreeText": [
+          "additionalInfo: structured bonus grants deferred; keep prose for display"
+        ]
+      }
     }
   },
   "_stats": {

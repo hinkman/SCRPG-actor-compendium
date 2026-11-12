@@ -50,7 +50,99 @@
           "name": "Twist Reality",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Command Power",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.8gElnEQXhh6n4OFV"
+              },
+              {
+                "color": "yellow",
+                "name": "Dangerous Explosion",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wVeieBovAW6v346q"
+              },
+              {
+                "color": "yellow",
+                "name": "Embolden",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cg94zciN04k88cCI"
+              },
+              {
+                "color": "yellow",
+                "name": "Resolve",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.jOpQ4w5PydCkDhpF"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Resilience",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.G8G0KDjDTfRsVgQv"
+              },
+              {
+                "color": "green",
+                "name": "Twist Reality",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xqo2qx2qRIUiZRtH"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

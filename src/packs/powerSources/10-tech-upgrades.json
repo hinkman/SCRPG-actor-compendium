@@ -50,7 +50,113 @@
           "name": "Organi-Hack",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Energy Burst",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Ch9yq1xSypnHNuog"
+              },
+              {
+                "color": "yellow",
+                "name": "Recharge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dv4681MSpvS0fyxn"
+              },
+              {
+                "color": "yellow",
+                "name": "Techno-Absorb",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7N906TT16JtDSdXp"
+              },
+              {
+                "color": "yellow",
+                "name": "Tactical Analysis",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.wnLg88vMMkfCOAuo"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Indiscriminate Fabrication",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Qp6lSTpeFSLaOij0"
+              },
+              {
+                "color": "green",
+                "name": "Organi-Hack",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9MXpKZV3Kp66rkCY"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

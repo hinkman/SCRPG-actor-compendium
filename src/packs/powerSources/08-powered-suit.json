@@ -45,7 +45,155 @@
           "name": "Diagnostic Subroutine",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign one die to the power Power Suit.\nAssign the rest of the dice you rolled at the end of the background step to the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Awareness",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cold",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Elasticity",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.GTlpRqwtk6QMb9Hi"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Electricity",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Fire",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Lightning Calculator",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.DEqpcIHX8qEVJeag"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Nuclear",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Part Detachment",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.g16MUwFTT08IfvEm"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          }
+        ],
+        "requiredPowers": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "name": "Power Suit",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.mbWy2aKC05gxmL8C",
+            "required": true
+          }
+        ],
+        "assignAllBackgroundDice": false,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Energy Converter",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.NLHMcOM0XxyS8T88"
+              },
+              {
+                "color": "yellow",
+                "name": "Explosive Attack",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.B7Q0Bl2AMqMm5yaL"
+              },
+              {
+                "color": "yellow",
+                "name": "Onboard Upgrade",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HYRijTPayIxPYpXu"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Damage Reduction",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ChxEWKdmnucs7IuV"
+              },
+              {
+                "color": "green",
+                "name": "Diagnostic Subroutine",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.GP0GwTv3wFGyMXuG"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d6",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

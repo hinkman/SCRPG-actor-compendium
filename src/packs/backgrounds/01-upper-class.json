@@ -18,7 +18,51 @@
         "d10",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "responsibility",
+      "qualityDice": [
+        "d10",
+        "d8"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "standard",
+        "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "name": "Fitness",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.OKWz93VvHmWerVbv"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "social",
+            "name": "Persuasion",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.8ZsX24oT6HwuGtKU"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          }
+        ],
+        "requiredQualities": [],
+        "principleCategory": "responsibility",
+        "principleCategoryLabel": "Responsibility",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {

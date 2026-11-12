@@ -49,7 +49,104 @@
           "name": "Immunity",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Area Alteration",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.rH74GhehJpAtALYR"
+              },
+              {
+                "color": "yellow",
+                "name": "Inflict",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.VAUyGwApaTOkHmHe"
+              },
+              {
+                "color": "yellow",
+                "name": "Reflexive Burst",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.UL1tw6hVedoFeimF"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Ambush Awareness",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.aPsvIm1EFK1S1ejN"
+              },
+              {
+                "color": "green",
+                "name": "Change in Circumstance",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.cy9AVkrCByZaSKm1"
+              },
+              {
+                "color": "green",
+                "name": "Immunity",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AzntVIjO1ZqW93Ep"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d12",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

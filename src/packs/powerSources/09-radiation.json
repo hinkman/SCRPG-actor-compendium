@@ -50,7 +50,108 @@
           "name": "Radioactive Aura",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Nuclear",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.tAFBYH96UfVO71Lb"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Radioactive Recharge",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.6EAD0B0yyIIA3gEA"
+              },
+              {
+                "color": "yellow",
+                "name": "Unstable Reaction",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AqTQglLCehByjYg9"
+              },
+              {
+                "color": "yellow",
+                "name": "Wither",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.yLyR7fbx6nLZL361"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Charged Up",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.S52duNILjAA97FN8"
+              },
+              {
+                "color": "green",
+                "name": "Dangerous Lash",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CVrbqhjhnS1V3wA0"
+              },
+              {
+                "color": "green",
+                "name": "Radioactive Aura",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.e78bNYzODuaZzcJa"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

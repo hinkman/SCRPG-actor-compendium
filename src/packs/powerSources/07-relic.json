@@ -50,7 +50,127 @@
           "name": "Punishment",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Awareness",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QD7BBCX8C7mnA1FJ"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "name": "Intuition",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.US0ZfFzUJ9CEcS6M"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "categoryLabel": "Psychic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities, each using a different power:",
+            "constraint": "differentPower",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Harvest Life Force",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3TkLPa5kqOCMwqAC"
+              },
+              {
+                "color": "yellow",
+                "name": "Magical Shield",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9bEdvGXsu11HsRGq"
+              },
+              {
+                "color": "yellow",
+                "name": "Momentary Power",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dso225lOGqvT3mlp"
+              },
+              {
+                "color": "yellow",
+                "name": "Relic Drain",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.9zUMwCRxZEVpKsSV"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Draw Power",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.92ddsAQhu7WS7DG4"
+              },
+              {
+                "color": "green",
+                "name": "Punishment",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.IAYdRIjThFf0AWR7"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d10",
+          "d6"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

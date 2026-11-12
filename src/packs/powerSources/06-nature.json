@@ -45,7 +45,153 @@
           "name": "Natural Weapon",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
         }
-      ]
+      ],
+      "wizard": {
+        "powersIntro": "Assign all the dice you rolled at the end of the background step to any of the following powers:",
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "psychic",
+            "name": "Animal Control",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.kjMIs092vuIRV2Bq"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Cold",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.ljOm3BJL43WZbbJG"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Electricity",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.e1RQaEZ4KGQjjmO1"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Fire",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.vn8X6ydhErIvOUHW"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Flight",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Leaping",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Shapeshifting",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.QBoHOQPJB8bWcXDl"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Swimming",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Swinging",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Wall-Crawling",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.bEqe9rU47wZ26mpV"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "name": "Weather",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.2SjcSUDviDzxuKNY"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "categoryLabel": "Materials"
+          }
+        ],
+        "requiredPowers": [],
+        "assignAllBackgroundDice": true,
+        "abilityPicks": [
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of these Yellow abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Call to the Wild",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ZqzzZywPjfbXCpwv"
+              },
+              {
+                "color": "yellow",
+                "name": "Predator's Eye",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.bW9SzBgQqFJPv2ZW"
+              },
+              {
+                "color": "yellow",
+                "name": "Wild Strength",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.oskzpIMhrWPMbj2d"
+              }
+            ]
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of these Green abilities:",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Grasping Vines",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.q9CTr0ZO8Z4Miz3q"
+              },
+              {
+                "color": "green",
+                "name": "Natural Weapon",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.vRGoLn4cHdbGTJ6Q"
+              }
+            ]
+          }
+        ],
+        "archetypeDice": [
+          "d10",
+          "d8",
+          "d8"
+        ],
+        "additionalInfo": [],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

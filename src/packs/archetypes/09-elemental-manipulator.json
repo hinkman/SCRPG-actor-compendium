@@ -55,7 +55,280 @@
           "name": "Live Dangerously",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7wLas1GwhrDcDVkI"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "esoteric",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "principleText": "Choose an Esoteric principle.",
+        "requiredTraits": [],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to an Elemental/Energy power. If you already have an Elemental/Energy power, you can skip it, add a different Elemental/Energy power, or swap the die with one of your new dice.",
+            "pack": null,
+            "choices": [],
+            "unstructured": true
+          },
+          {
+            "instruction": "Assign one of the remaining dice to one of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "name": "Absorption",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.RECkAlMY7v9N4KNI"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "name": "Flight",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "name": "Leaping",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "name": "Swimming",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Vehicle",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Weaponry",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "materials",
+                "name": "Transmutation",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "elemental-energy",
+                "categoryLabel": "Elemental/Energy"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "name": "Magical Lore",
+                "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl"
+              },
+              {
+                "kind": "item",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "name": "Science",
+                "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "mental",
+                "categoryLabel": "Mental"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "name": "Absorption",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.RECkAlMY7v9N4KNI"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Flight",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.5GDEdsr0jrDmWApP"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Leaping",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fBd3ZqSIUowckCHO"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Swimming",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.I7Gr7LIRFGAzC1NE"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "materials",
+            "name": "Transmutation",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.MCfvbWF3GUPDWbLz"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "elemental-energy",
+            "categoryLabel": "Elemental/Energy"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Magical Lore",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Science",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, both of which must use your Elemental/Energy powers:",
+            "constraint": "elementalEnergyPowers",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Backlash",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.HLsEHPAxBt2q78Ol"
+              },
+              {
+                "color": "green",
+                "name": "Energy Conversion",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.SKyLBo1yktnogTy8"
+              },
+              {
+                "color": "green",
+                "name": "External Combustion",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EDGW1MueeJEwYTsB"
+              },
+              {
+                "color": "green",
+                "name": "Focused Apparatus",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.XskL1ZLzKP8RlmMt"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Gain one of these Yellow abilities, using one of your Elemental/Energy powers:",
+            "constraint": "elementalEnergyPowers",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Damage Spike",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.sF39J1l3x2medB9g"
+              },
+              {
+                "color": "yellow",
+                "name": "Energy Alignment",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.mIzjvha9oKYzYKpF"
+              },
+              {
+                "color": "yellow",
+                "name": "Energy Redirection",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.4Sh1XZWusiEAIFhH"
+              },
+              {
+                "color": "yellow",
+                "name": "Live Dangerously",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.7wLas1GwhrDcDVkI"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": [
+          "Some assignmentSteps.instruction lines still need human reading for die counts (one vs remaining)"
+        ]
+      }
     }
   },
   "_stats": {

@@ -115,7 +115,245 @@
           "name": "Emergency Change",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.BivLJCL5rCSwD1xj"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "esoteric",
+      "complex": true,
+      "complexKey": "form-changer",
+      "wizardBlocked": true,
+      "wizard": {
+        "complex": true,
+        "complexKey": "form-changer",
+        "wizardBlocked": true,
+        "actorFlags": {
+          "formchanger": true
+        },
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "esoteric",
+        "principleCategoryLabel": "Esoteric",
+        "principleText": "Choose an Esoteric principle.",
+        "requiredTraits": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control",
+            "required": true,
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to a power from the Self Control category. If you already have an Self Control power, you can skip it, add a different Self Control power, or swap the die with one of your new dice."
+          }
+        ],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one or more remaining dice to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "categoryLabel": "Mobility"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "self-control",
+                "categoryLabel": "Self Control"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "technological",
+                "categoryLabel": "Technological"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "categoryLabel": "Information"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "categoryLabel": "Mobility"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "self-control",
+            "categoryLabel": "Self Control"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain the following Green ability (Change Forms).",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Change Forms",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.gJGz1gl0YuSKQLbL"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          },
+          {
+            "color": "green",
+            "count": 1,
+            "grantText": "Gain one of the following Green abilities (Form Recovery or Surprise Shift).",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Surprise Shift",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.JH7RvpBuQFJl8Cab"
+              },
+              {
+                "color": "green",
+                "name": "Form Recovery",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.eG0TGSSqokTLifA5"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 1,
+            "grantText": "Then make a Yellow form, recording it on your auxiliary sheet. You may swap powers around and upgrade any two dice by one size. Pick one of the following Yellow form abilities for your Yellow form (or choose one of the unused Green form abilities above).",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Agile Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.kK4uiUR0GFCokESq"
+              },
+              {
+                "color": "yellow",
+                "name": "Regenerating Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.E0dbOiXNXPIVm2i2"
+              },
+              {
+                "color": "yellow",
+                "name": "Speedy Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.MbSlrpfvqUDDS52U"
+              },
+              {
+                "color": "yellow",
+                "name": "Towering Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.67fR6HuyA6SrlxzA"
+              },
+              {
+                "color": "yellow",
+                "name": "Clever Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.A92AqoVDc3Lt5zeV"
+              },
+              {
+                "color": "yellow",
+                "name": "Minuscule Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.EvjuenZWWSoRYJoI"
+              },
+              {
+                "color": "yellow",
+                "name": "Strong Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.3Jb4oAOSjCMr2cex"
+              },
+              {
+                "color": "yellow",
+                "name": "Tough Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.Aq9VDxaftmqqsJ1C"
+              },
+              {
+                "color": "yellow",
+                "name": "Tricky Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.1EE160dwSXS5rhEC"
+              },
+              {
+                "color": "yellow",
+                "name": "Weird Form",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.H98P2pNRAytfCwxp"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "red",
+            "count": 1,
+            "grantText": "Gain the following Red ability.",
+            "constraint": null,
+            "abilities": [
+              {
+                "color": "red",
+                "name": "Emergency Change",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.BivLJCL5rCSwD1xj"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": true
+          }
+        ],
+        "remainingFreeText": [
+          "Complex archetype (form-changer): nested UX deferred; wizardBlocked=true"
+        ]
+      }
     }
   },
   "_stats": {

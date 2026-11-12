@@ -1,3 +1,5 @@
+import * as categoryResolver from "./categoryResolver.js";
+
 const MODULE_ID = "scrpg-actor-compendium";
 
 const ACTION_ICONS = {
@@ -11,6 +13,16 @@ const ACTION_ICONS = {
 
 Hooks.once("init", () => {
     console.log(`${MODULE_ID} | Initialising Sentinel Comics RPG compendium`);
+});
+
+Hooks.once("ready", () => {
+    const mod = game.modules.get(MODULE_ID);
+    if (mod) {
+        mod.api = {
+            ...(mod.api || {}),
+            categoryResolver
+        };
+    }
 });
 
 /**

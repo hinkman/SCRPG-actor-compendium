@@ -60,7 +60,225 @@
           "name": "Ricochet",
           "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CcgG4Q1nAIYsp6hv"
         }
-      ]
+      ],
+      "personalityDice": [
+        "d10",
+        "d10"
+      ],
+      "principleCategory": "responsibility",
+      "complex": false,
+      "complexKey": null,
+      "wizardBlocked": false,
+      "wizard": {
+        "complex": false,
+        "complexKey": null,
+        "wizardBlocked": false,
+        "actorFlags": null,
+        "personalityDice": [
+          "d10",
+          "d10"
+        ],
+        "principleCategory": "responsibility",
+        "principleCategoryLabel": "Responsibility",
+        "principleText": "Choose a Responsibility principle.",
+        "requiredTraits": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Weaponry",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.fubw8CJu2mXFZJUD",
+            "required": true,
+            "instruction": "Assign one of the dice you rolled at the end of the power source step to the Signature Weaponry power. If you already have Signature Weaponry, either skip it or swap the die with one of your new dice."
+          }
+        ],
+        "assignmentSteps": [
+          {
+            "instruction": "Assign one or more of the remaining dice to any of these powers:",
+            "pack": "powers",
+            "choices": [
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "hallmark",
+                "name": "Signature Vehicle",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+              },
+              {
+                "kind": "item",
+                "pack": "powers",
+                "categoryKey": "mobility",
+                "name": "Swinging",
+                "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "athletic",
+                "categoryLabel": "Athletic"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "intellectual",
+                "categoryLabel": "Intellectual"
+              },
+              {
+                "kind": "category",
+                "pack": "powers",
+                "categoryKey": "technological",
+                "categoryLabel": "Technological"
+              }
+            ]
+          },
+          {
+            "instruction": "Assign any remaining dice to any of these qualities:",
+            "pack": "qualities",
+            "choices": [
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "information",
+                "categoryLabel": "Information"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "mental",
+                "categoryLabel": "Mental"
+              },
+              {
+                "kind": "category",
+                "pack": "qualities",
+                "categoryKey": "physical",
+                "categoryLabel": "Physical"
+              }
+            ]
+          }
+        ],
+        "powerChoices": [
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "hallmark",
+            "name": "Signature Vehicle",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.hQIArnjTuOBxYoPT"
+          },
+          {
+            "kind": "item",
+            "pack": "powers",
+            "categoryKey": "mobility",
+            "name": "Swinging",
+            "uuid": "Compendium.scrpg-actor-compendium.powers.Item.KziYDpbuojnthfT5"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "athletic",
+            "categoryLabel": "Athletic"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "intellectual",
+            "categoryLabel": "Intellectual"
+          },
+          {
+            "kind": "category",
+            "pack": "powers",
+            "categoryKey": "technological",
+            "categoryLabel": "Technological"
+          }
+        ],
+        "qualityChoices": [
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "categoryLabel": "Information"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "categoryLabel": "Physical"
+          }
+        ],
+        "abilityPicks": [
+          {
+            "color": "green",
+            "count": 2,
+            "grantText": "Gain two of the following Green abilities, one using Signature Weaponry and the other using one of your qualities:",
+            "constraint": "signatureWeaponryAndQuality",
+            "abilities": [
+              {
+                "color": "green",
+                "name": "Dual Wielder",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.148AbHjRtdl3Rha6"
+              },
+              {
+                "color": "green",
+                "name": "Load",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.tT4vu7o697Op2yDV"
+              },
+              {
+                "color": "green",
+                "name": "Precise Shot",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.AluvtGwJSkdf4XLW"
+              },
+              {
+                "color": "green",
+                "name": "Sniper Aim",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.dvbFMv65zHv4frfM"
+              },
+              {
+                "color": "green",
+                "name": "Spin & Shoot",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.xDtbK6AiPjbKM0Hf"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          },
+          {
+            "color": "yellow",
+            "count": 2,
+            "grantText": "Gain two of the following Yellow abilities, using two different qualities:",
+            "constraint": "differentQuality",
+            "abilities": [
+              {
+                "color": "yellow",
+                "name": "Called Shot",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.mi1P6JukisPzptzZ"
+              },
+              {
+                "color": "yellow",
+                "name": "Exploding Ammo",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.ApS6H8WML4YPpBJq"
+              },
+              {
+                "color": "yellow",
+                "name": "Hair Trigger Reflexes",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.001KS0j5H863Xd47"
+              },
+              {
+                "color": "yellow",
+                "name": "Ricochet",
+                "uuid": "Compendium.scrpg-actor-compendium.abilities.Item.CcgG4Q1nAIYsp6hv"
+              }
+            ],
+            "fromAboveList": false,
+            "autoGranted": false
+          }
+        ],
+        "remainingFreeText": []
+      }
     }
   },
   "_stats": {

@@ -18,7 +18,69 @@
         "d10",
         "d8",
         "d8"
-      ]
+      ],
+      "principleCategory": "expertise",
+      "qualityDice": [
+        "d10",
+        "d8",
+        "d6"
+      ],
+      "wizard": {
+        "qualityDice": [
+          "d10",
+          "d8",
+          "d6"
+        ],
+        "qualityPickCount": 2,
+        "qualityAssignmentMode": "medical",
+        "qualitiesIntro": "Assign one of d10, d8, or d6 to Medicine and the other two dice to two of the following qualities:",
+        "qualityChoices": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "physical",
+            "name": "Finesse",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.N7c8j5IUBEVL7y9h"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Science",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E"
+          },
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Technology",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc"
+          },
+          {
+            "kind": "category",
+            "pack": "qualities",
+            "categoryKey": "mental",
+            "categoryLabel": "Mental"
+          }
+        ],
+        "requiredQualities": [
+          {
+            "kind": "item",
+            "pack": "qualities",
+            "categoryKey": "information",
+            "name": "Medicine",
+            "uuid": "Compendium.scrpg-actor-compendium.qualities.Item.9HxtjpcxtAZ5pS2M",
+            "required": true
+          }
+        ],
+        "principleCategory": "expertise",
+        "principleCategoryLabel": "Expertise",
+        "powerSourceDice": [
+          "d10",
+          "d8",
+          "d8"
+        ]
+      }
     }
   },
   "_stats": {
