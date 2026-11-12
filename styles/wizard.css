@@ -282,26 +282,30 @@
   cursor: not-allowed;
 }
 
-.scrpg-wizard-chart-preview {
-  flex: 0 0 auto;
-  display: inline-grid;
-  place-items: center;
-  width: 1.7rem;
-  height: 1.7rem;
+/* Foundry-style content tag: option name opens Item sheet without selecting. */
+.scrpg-wizard-chart-tag.content-link,
+button.scrpg-wizard-chart-tag.content-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  max-width: 100%;
   margin: 0;
-  padding: 0;
-  border: 1px solid rgba(120, 46, 34, 0.35);
-  border-radius: 0.3rem;
-  background: rgba(120, 46, 34, 0.08);
-  color: var(--color-text-hyperlink, #782e22);
+  font: inherit;
+  font-weight: 650;
+  line-height: 1.25;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
   cursor: pointer;
-  line-height: 1;
 }
 
-.scrpg-wizard-chart-preview:hover,
-.scrpg-wizard-chart-preview:focus-visible {
-  background: rgba(120, 46, 34, 0.16);
-  border-color: var(--color-border-highlight-1, #782e22);
+.scrpg-wizard-chart-tag.content-link > i {
+  flex: 0 0 auto;
+}
+
+.scrpg-wizard-chart-row.is-locked .scrpg-wizard-chart-tag.content-link {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .scrpg-wizard-chart-num {
@@ -319,6 +323,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+  min-width: 0;
 }
 
 .scrpg-wizard-chart-name {

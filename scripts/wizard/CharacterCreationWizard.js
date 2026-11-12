@@ -1697,12 +1697,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     /**
-     * Open a chart option's Item sheet without selecting it.
+     * Open a chart option's Item sheet from its content-tag name without selecting the row.
      * @this {CharacterCreationWizard}
      * @param {PointerEvent} event
      * @param {HTMLElement} target
      */
     static async #onPreviewChartItem(event, target) {
+        // Keep the surrounding radio/label from selecting this row.
         event.preventDefault();
         event.stopPropagation();
         const uuid = target.dataset.uuid;

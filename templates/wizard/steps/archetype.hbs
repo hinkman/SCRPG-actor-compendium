@@ -57,7 +57,17 @@
           >
           <span class="scrpg-wizard-chart-num">{{number}}</span>
           <span class="scrpg-wizard-chart-body">
-            <span class="scrpg-wizard-chart-name">{{name}}</span>
+            <button
+              type="button"
+              class="content-link scrpg-wizard-chart-tag"
+              data-action="previewChartItem"
+              data-uuid="{{uuid}}"
+              data-tooltip="Item"
+              title="Open {{name}}"
+              aria-label="Open {{name}}"
+            >
+              <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{name}}
+            </button>
             <span class="scrpg-wizard-chart-meta">
               {{#if blocked}}
                 Complex — not available in v1
@@ -67,16 +77,6 @@
             </span>
           </span>
         </label>
-        <button
-          type="button"
-          class="scrpg-wizard-chart-preview"
-          data-action="previewChartItem"
-          data-uuid="{{uuid}}"
-          title="Preview {{name}}"
-          aria-label="Preview {{name}}"
-        >
-          <i class="fas fa-tag" aria-hidden="true"></i>
-        </button>
       </div>
     {{/each}}
   </div>
