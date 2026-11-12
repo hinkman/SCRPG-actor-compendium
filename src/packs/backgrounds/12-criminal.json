@@ -1,0 +1,34 @@
+{
+  "name": "Criminal",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You spent too much time on the wrong side of the law. But something changed for you. Now you've turned over a new leaf, using your powers and abilities to be the best hero you can.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03]{Criminal Underworld Info}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.TepWLbqMhXMPjkRO]{Imposing}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d8 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 12,
+      "powerSourceDice": [
+        "d8",
+        "d8",
+        "d8"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "u5ndV3MVlZOK5maO",
+  "_key": "!items!u5ndV3MVlZOK5maO"
+}

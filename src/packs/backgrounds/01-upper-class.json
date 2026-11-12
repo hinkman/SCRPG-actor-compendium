@@ -1,0 +1,34 @@
+{
+  "name": "Upper Class",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were born in the upper echelons of high society. Likely you're also pretty darn rich.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.OKWz93VvHmWerVbv]{Fitness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8ZsX24oT6HwuGtKU]{Persuasion}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose a Responsibility principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 1,
+      "powerSourceDice": [
+        "d10",
+        "d8",
+        "d8"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "cpZlBGibQITlXa4A",
+  "_key": "!items!cpZlBGibQITlXa4A"
+}

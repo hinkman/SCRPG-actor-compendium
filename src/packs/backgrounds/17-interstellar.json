@@ -1,0 +1,34 @@
+{
+  "name": "Interstellar",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You come from beyond the stars! As a newcomer to planet Earth, you may be unaware of strange customs here, but you can still communicate with earthlings, one way or another. You might be an alien, or a human from a civilization lost in space long ago, or something else entirely.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d12 and a d6 to two of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 17,
+      "powerSourceDice": [
+        "d10",
+        "d8",
+        "d6"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "OnzJoPkJXbZcL4v5",
+  "_key": "!items!OnzJoPkJXbZcL4v5"
+}

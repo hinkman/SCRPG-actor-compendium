@@ -1,0 +1,406 @@
+[
+  {
+    "number": 1,
+    "name": "Upper Class",
+    "flavor": "You were born in the upper echelons of high society. Likely you're also pretty darn rich.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Fitness",
+      "Persuasion",
+      "Select from Mental qualities category"
+    ],
+    "principle": "Choose a Responsibility principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You were born in the upper echelons of high society. Likely you're also pretty darn rich.\n\nAssign a d10 and a d8 to two of these qualities:\n• Fitness\n• Persuasion\n• Select from Mental qualities category\n\nChoose a Responsibility principle.\n\nRoll d10, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were born in the upper echelons of high society. Likely you're also pretty darn rich.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.OKWz93VvHmWerVbv]{Fitness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8ZsX24oT6HwuGtKU]{Persuasion}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose a Responsibility principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 2,
+    "name": "Blank Slate",
+    "flavor": "You remember nothing. Were you brainwashed? Maybe you were just created? One way or another, you have no history. You start now. Your future is what you make of it.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Select from Mental qualities category",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Identity principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You remember nothing. Were you brainwashed? Maybe you were just created? One way or another, you have no history. You start now. Your future is what you make of it.\n\nAssign a d10 and a d8 to two of these qualities:\n• Select from Mental qualities category\n• Select from Physical qualities category\n\nChoose an Identity principle.\n\nRoll d10, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You remember nothing. Were you brainwashed? Maybe you were just created? One way or another, you have no history. You start now. Your future is what you make of it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• Select from Mental qualities category</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Identity principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 3,
+    "name": "Struggling",
+    "flavor": "You've been down and out. Perhaps you've recovered a bit, but you also might still be stuck in a terrible situation. Low on resources and luck, you did your best, but it often just wasn't good enough.",
+    "qualitiesIntro": "Assign a d8, a d6, and a d6 to three of these qualities:",
+    "qualities": [
+      "Banter",
+      "Criminal Underworld Info",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose a Responsibility principle.",
+    "powerSourceDice": [
+      "d8",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You've been down and out. Perhaps you've recovered a bit, but you also might still be stuck in a terrible situation. Low on resources and luck, you did your best, but it often just wasn't good enough.\n\nAssign a d8, a d6, and a d6 to three of these qualities:\n• Banter\n• Criminal Underworld Info\n• Select from Physical qualities category\n\nChoose a Responsibility principle.\n\nRoll d8, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You've been down and out. Perhaps you've recovered a bit, but you also might still be stuck in a terrible situation. Low on resources and luck, you did your best, but it often just wasn't good enough.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d8, a d6, and a d6 to three of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.jLRoVcoc8Dz0Kiio]{Banter}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03]{Criminal Underworld Info}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose a Responsibility principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 4,
+    "name": "Adventurer",
+    "flavor": "In your past, you have sought excitement and adventure at every turn. Even before you were a hero, you were a thrill seeker.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "History",
+      "Leadership",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d8",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "In your past, you have sought excitement and adventure at every turn. Even before you were a hero, you were a thrill seeker.\n\nAssign a d10 and a d8 to two of these qualities:\n• History\n• Leadership\n• Select from Physical qualities category\n\nChoose an Expertise principle.\n\nRoll d8, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>In your past, you have sought excitement and adventure at every turn. Even before you were a hero, you were a thrill seeker.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA]{History}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.6pk4qELGNdf4aIC2]{Leadership}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 5,
+    "name": "Unremarkable",
+    "flavor": "You were just a regular person, leading a normal life, until something came along and changed your life in a major way. You came from a commonplace background, but now you're a hero.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Close Combat",
+      "Select from Mental qualities category",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose an Identity principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You were just a regular person, leading a normal life, until something came along and changed your life in a major way. You came from a commonplace background, but now you're a hero.\n\nAssign a d10 and a d8 to two of these qualities:\n• Close Combat\n• Select from Mental qualities category\n• Select from Social qualities category\n\nChoose an Identity principle.\n\nRoll d10, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were just a regular person, leading a normal life, until something came along and changed your life in a major way. You came from a commonplace background, but now you're a hero.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat}</p><p>• Select from Mental qualities category</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Identity principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 6,
+    "name": "Law Enforcement",
+    "flavor": "You're a member of law enforcement, such as a beat cop, detective, or perhaps a lawyer or judge. You made a career of the law at one point. Perhaps you still do.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Close Combat",
+      "Criminal Underworld Info",
+      "Ranged Combat",
+      "Select from Mental qualities category",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose a Responsibility principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You're a member of law enforcement, such as a beat cop, detective, or perhaps a lawyer or judge. You made a career of the law at one point. Perhaps you still do.\n\nAssign a d10 and a d8 to two of these qualities:\n• Close Combat\n• Criminal Underworld Info\n• Ranged Combat\n• Select from Mental qualities category\n• Select from Social qualities category\n\nChoose a Responsibility principle.\n\nRoll d10, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You're a member of law enforcement, such as a beat cop, detective, or perhaps a lawyer or judge. You made a career of the law at one point. Perhaps you still do.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03]{Criminal Underworld Info}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.Zd02ZFDoMvEL1WWZ]{Ranged Combat}</p><p>• Select from Mental qualities category</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose a Responsibility principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 7,
+    "name": "Academic",
+    "flavor": "You work or study in a field of knowledge. You could be a school teacher, professor, researcher, or clergy member. The pursuit of knowledge is very important to you, and possibly what led you to become a hero.",
+    "qualitiesIntro": "Assign a d12 and a d8 to two of these qualities:",
+    "qualities": [
+      "Leadership",
+      "Self-Discipline",
+      "Select from Information qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You work or study in a field of knowledge. You could be a school teacher, professor, researcher, or clergy member. The pursuit of knowledge is very important to you, and possibly what led you to become a hero.\n\nAssign a d12 and a d8 to two of these qualities:\n• Leadership\n• Self-Discipline\n• Select from Information qualities category\n\nChoose an Expertise principle.\n\nRoll d10, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You work or study in a field of knowledge. You could be a school teacher, professor, researcher, or clergy member. The pursuit of knowledge is very important to you, and possibly what led you to become a hero.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d12 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.6pk4qELGNdf4aIC2]{Leadership}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.TvkPcxa7MKYW0DCL]{Self-Discipline}</p><p>• Select from Information qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 8,
+    "name": "Tragic",
+    "flavor": "Your history is eclipsed by a major negative event that shaped the rest of your life. You struggle to overcome the memory of the tragic event, be it the loss of a loved one or something that happened to you directly. Either way, the tragedy both fuels and haunts you.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Banter",
+      "Close Combat",
+      "Imposing",
+      "Select from Mental qualities category"
+    ],
+    "principle": "Choose an Ideals principle.",
+    "powerSourceDice": [
+      "d10",
+      "d10",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "Your history is eclipsed by a major negative event that shaped the rest of your life. You struggle to overcome the memory of the tragic event, be it the loss of a loved one or something that happened to you directly. Either way, the tragedy both fuels and haunts you.\n\nAssign a d10 and a d8 to two of these qualities:\n• Banter\n• Close Combat\n• Imposing\n• Select from Mental qualities category\n\nChoose an Ideals principle.\n\nRoll d10, d10, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Your history is eclipsed by a major negative event that shaped the rest of your life. You struggle to overcome the memory of the tragic event, be it the loss of a loved one or something that happened to you directly. Either way, the tragedy both fuels and haunts you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.jLRoVcoc8Dz0Kiio]{Banter}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.TepWLbqMhXMPjkRO]{Imposing}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Ideals principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d10, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 9,
+    "name": "Performer",
+    "flavor": "You were born for the stage. How you present yourself to the world is important to you, whether in or out of the limelight.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Acrobatics",
+      "Creativity",
+      "Finesse",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose a Responsibility principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You were born for the stage. How you present yourself to the world is important to you, whether in or out of the limelight.\n\nAssign a d10 and a d8 to two of these qualities:\n• Acrobatics\n• Creativity\n• Finesse\n• Select from Social qualities category\n\nChoose a Responsibility principle.\n\nRoll d10, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were born for the stage. How you present yourself to the world is important to you, whether in or out of the limelight.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.3DFNnhCcaxh9Hv1v]{Acrobatics}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.NyAC38THx81aTE4d]{Creativity}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.N7c8j5IUBEVL7y9h]{Finesse}</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose a Responsibility principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 10,
+    "name": "Military",
+    "flavor": "You have some sort of combat training, possibly as part of an organized armed forces. You might have even had combat experience before you became a hero.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Leadership",
+      "Self-Discipline",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Ideals principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You have some sort of combat training, possibly as part of an organized armed forces. You might have even had combat experience before you became a hero.\n\nAssign a d10 and a d8 to two of these qualities:\n• Leadership\n• Self-Discipline\n• Select from Physical qualities category\n\nChoose an Ideals principle.\n\nRoll d10, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have some sort of combat training, possibly as part of an organized armed forces. You might have even had combat experience before you became a hero.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.6pk4qELGNdf4aIC2]{Leadership}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.TvkPcxa7MKYW0DCL]{Self-Discipline}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Ideals principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 11,
+    "name": "Retired",
+    "flavor": "You used to wear the cape and cowl, but hung them up long ago. Now, something has changed, making you feel compelled to once again take up the fight for what is right. You never thought you would be here again.",
+    "qualitiesIntro": "Assign a d10 and a d10 to two of these qualities:",
+    "qualities": [
+      "Select from Information qualities category",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose an Identity principle.",
+    "powerSourceDice": [
+      "d12",
+      "d6",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You used to wear the cape and cowl, but hung them up long ago. Now, something has changed, making you feel compelled to once again take up the fight for what is right. You never thought you would be here again.\n\nAssign a d10 and a d10 to two of these qualities:\n• Select from Information qualities category\n• Select from Social qualities category\n\nChoose an Identity principle.\n\nRoll d12, d6, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You used to wear the cape and cowl, but hung them up long ago. Now, something has changed, making you feel compelled to once again take up the fight for what is right. You never thought you would be here again.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d10 to two of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Identity principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d12, d6, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 12,
+    "name": "Criminal",
+    "flavor": "You spent too much time on the wrong side of the law. But something changed for you. Now you've turned over a new leaf, using your powers and abilities to be the best hero you can.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Criminal Underworld Info",
+      "Imposing",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d8",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You spent too much time on the wrong side of the law. But something changed for you. Now you've turned over a new leaf, using your powers and abilities to be the best hero you can.\n\nAssign a d10 and a d8 to two of these qualities:\n• Criminal Underworld Info\n• Imposing\n• Select from Physical qualities category\n\nChoose an Expertise principle.\n\nRoll d8, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You spent too much time on the wrong side of the law. But something changed for you. Now you've turned over a new leaf, using your powers and abilities to be the best hero you can.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.zlx2bULfYfooNB03]{Criminal Underworld Info}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.TepWLbqMhXMPjkRO]{Imposing}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 13,
+    "name": "Medical",
+    "flavor": "You were in the business of healing, as a doctor or nurse or maybe even a veterinarian. Given your medical background, you have a lot of experience with treating injuries and diseases.",
+    "qualitiesIntro": "Assign one of d10, d8, or d6 to Medicine and the other two dice to two of the following qualities:",
+    "qualities": [
+      "Finesse",
+      "Science",
+      "Technology",
+      "Select from Mental qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You were in the business of healing, as a doctor or nurse or maybe even a veterinarian. Given your medical background, you have a lot of experience with treating injuries and diseases.\n\nAssign one of d10, d8, or d6 to Medicine and the other two dice to two of the following qualities:\n• Finesse\n• Science\n• Technology\n• Select from Mental qualities category\n\nChoose an Expertise principle.\n\nRoll d10, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You were in the business of healing, as a doctor or nurse or maybe even a veterinarian. Given your medical background, you have a lot of experience with treating injuries and diseases.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign one of d10, d8, or d6 to @UUID[Compendium.scrpg-actor-compendium.qualities.Item.9HxtjpcxtAZ5pS2M]{Medicine} and the other two dice to two of the following qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.N7c8j5IUBEVL7y9h]{Finesse}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E]{Science}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc]{Technology}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 14,
+    "name": "Anachronistic",
+    "flavor": "One way or another, you aren't quite in your time. You could be a stranded time traveler, or just a person who fits more with the ideals and customs of a time long before or after the one in which you currently reside. Either way, though this time is not your own, you still fight to protect it.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "History",
+      "Magical Lore",
+      "Technology",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Esoteric principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "One way or another, you aren't quite in your time. You could be a stranded time traveler, or just a person who fits more with the ideals and customs of a time long before or after the one in which you currently reside. Either way, though this time is not your own, you still fight to protect it.\n\nAssign a d10 and a d8 to two of these qualities:\n• History\n• Magical Lore\n• Technology\n• Select from Physical qualities category\n\nChoose an Esoteric principle.\n\nRoll d10, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>One way or another, you aren't quite in your time. You could be a stranded time traveler, or just a person who fits more with the ideals and customs of a time long before or after the one in which you currently reside. Either way, though this time is not your own, you still fight to protect it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA]{History}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc]{Technology}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 15,
+    "name": "Exile",
+    "flavor": "You're far from your home, one way or another. You may have left of your own accord, but it's equally likely that you were sent away from whatever place you came from. Either way, you're making your own way in the land where you now live.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Conviction",
+      "Insight",
+      "Select from Information qualities category"
+    ],
+    "principle": "Choose an Ideals principle.",
+    "powerSourceDice": [
+      "d8",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You're far from your home, one way or another. You may have left of your own accord, but it's equally likely that you were sent away from whatever place you came from. Either way, you're making your own way in the land where you now live.\n\nAssign a d10 and a d8 to two of these qualities:\n• Conviction\n• Insight\n• Select from Information qualities category\n\nChoose an Ideals principle.\n\nRoll d8, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You're far from your home, one way or another. You may have left of your own accord, but it's equally likely that you were sent away from whatever place you came from. Either way, you're making your own way in the land where you now live.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yFhNXz31ZVkgf6Vp]{Conviction}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.ZRk2kCPudIffPj2B]{Insight}</p><p>• Select from Information qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Ideals principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 16,
+    "name": "Former Villain",
+    "flavor": "You used to be a foe to the heroes, but you've changed your stripes. You may have realized the evil of your former ways, or your motivation might have changed to ally you with those you once fought. Either way, you are now a hero, though many other heroes are hesitant to trust you.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Conviction",
+      "Select from Information qualities category",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d8"
+    ],
+    "additionalInfo": [],
+    "description": "You used to be a foe to the heroes, but you've changed your stripes. You may have realized the evil of your former ways, or your motivation might have changed to ally you with those you once fought. Either way, you are now a hero, though many other heroes are hesitant to trust you.\n\nAssign a d10 and a d8 to two of these qualities:\n• Conviction\n• Select from Information qualities category\n• Select from Social qualities category\n\nChoose an Expertise principle.\n\nRoll d10, d8, d8 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You used to be a foe to the heroes, but you've changed your stripes. You may have realized the evil of your former ways, or your motivation might have changed to ally you with those you once fought. Either way, you are now a hero, though many other heroes are hesitant to trust you.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yFhNXz31ZVkgf6Vp]{Conviction}</p><p>• Select from Information qualities category</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d8 for power source selection.</p></section>"
+  },
+  {
+    "number": 17,
+    "name": "Interstellar",
+    "flavor": "You come from beyond the stars! As a newcomer to planet Earth, you may be unaware of strange customs here, but you can still communicate with earthlings, one way or another. You might be an alien, or a human from a civilization lost in space long ago, or something else entirely.",
+    "qualitiesIntro": "Assign a d12 and a d6 to two of these qualities:",
+    "qualities": [
+      "Select from Information qualities category",
+      "Select from Mental qualities category"
+    ],
+    "principle": "Choose an Esoteric principle.",
+    "powerSourceDice": [
+      "d10",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You come from beyond the stars! As a newcomer to planet Earth, you may be unaware of strange customs here, but you can still communicate with earthlings, one way or another. You might be an alien, or a human from a civilization lost in space long ago, or something else entirely.\n\nAssign a d12 and a d6 to two of these qualities:\n• Select from Information qualities category\n• Select from Mental qualities category\n\nChoose an Esoteric principle.\n\nRoll d10, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You come from beyond the stars! As a newcomer to planet Earth, you may be unaware of strange customs here, but you can still communicate with earthlings, one way or another. You might be an alien, or a human from a civilization lost in space long ago, or something else entirely.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d12 and a d6 to two of these qualities:</p><p>• Select from Information qualities category</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 18,
+    "name": "Dynasty",
+    "flavor": "You come from a line of heroes. It could be that your parents and their parents and their parents have all been heroes. Maybe you're adopted into a hero family. Regardless of how you came to be a part of this dynasty, heroism is part of your life.",
+    "qualitiesIntro": "Assign a d10 and a d10 to two of these qualities:",
+    "qualities": [
+      "Close Combat",
+      "Fitness",
+      "History",
+      "Select from Social qualities category"
+    ],
+    "principle": "Choose an Ideals principle.",
+    "powerSourceDice": [
+      "d8",
+      "d8",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You come from a line of heroes. It could be that your parents and their parents and their parents have all been heroes. Maybe you're adopted into a hero family. Regardless of how you came to be a part of this dynasty, heroism is part of your life.\n\nAssign a d10 and a d10 to two of these qualities:\n• Close Combat\n• Fitness\n• History\n• Select from Social qualities category\n\nChoose an Ideals principle.\n\nRoll d8, d8, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You come from a line of heroes. It could be that your parents and their parents and their parents have all been heroes. Maybe you're adopted into a hero family. Regardless of how you came to be a part of this dynasty, heroism is part of your life.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d10 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JbpF0zq2JHhwxVHD]{Close Combat}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.OKWz93VvHmWerVbv]{Fitness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA]{History}</p><p>• Select from Social qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Ideals principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 19,
+    "name": "Otherworldly",
+    "flavor": "You have at least a little of the uncanny in you. You could be a fully supernatural creature, or perhaps the spawn of one and a human.",
+    "qualitiesIntro": "Assign a d10 and a d8 to two of these qualities:",
+    "qualities": [
+      "Magical Lore",
+      "Otherworldly Mythos",
+      "Select from Mental qualities category"
+    ],
+    "principle": "Choose an Esoteric principle.",
+    "powerSourceDice": [
+      "d10",
+      "d6",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "You have at least a little of the uncanny in you. You could be a fully supernatural creature, or perhaps the spawn of one and a human.\n\nAssign a d10 and a d8 to two of these qualities:\n• Magical Lore\n• Otherworldly Mythos\n• Select from Mental qualities category\n\nChoose an Esoteric principle.\n\nRoll d10, d6, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have at least a little of the uncanny in you. You could be a fully supernatural creature, or perhaps the spawn of one and a human.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.xawim5bOhlTqoptp]{Otherworldly Mythos}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d6, d6 for power source selection.</p></section>"
+  },
+  {
+    "number": 20,
+    "name": "Created",
+    "flavor": "Were you built to be the hero you are today? Perhaps. But it's undeniable that you were created by someone or something. As a constructed being, you don't have the same experiences or expectations as similar organic creatures, but you still feel drawn to the role of hero.",
+    "qualitiesIntro": "Assign a d12 and a d6 to two of these qualities:",
+    "qualities": [
+      "Alertness",
+      "Science",
+      "Technology",
+      "Select from Physical qualities category"
+    ],
+    "principle": "Choose an Expertise principle.",
+    "powerSourceDice": [
+      "d10",
+      "d10",
+      "d6"
+    ],
+    "additionalInfo": [],
+    "description": "Were you built to be the hero you are today? Perhaps. But it's undeniable that you were created by someone or something. As a constructed being, you don't have the same experiences or expectations as similar organic creatures, but you still feel drawn to the role of hero.\n\nAssign a d12 and a d6 to two of these qualities:\n• Alertness\n• Science\n• Technology\n• Select from Physical qualities category\n\nChoose an Expertise principle.\n\nRoll d10, d10, d6 for power source selection.\n",
+    "descriptionHtml": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>Were you built to be the hero you are today? Perhaps. But it's undeniable that you were created by someone or something. As a constructed being, you don't have the same experiences or expectations as similar organic creatures, but you still feel drawn to the role of hero.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d12 and a d6 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.ogM64mcFILG1tI9V]{Alertness}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.yfrz6TSCgB2EzH4E]{Science}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc]{Technology}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d10, d6 for power source selection.</p></section>"
+  }
+]

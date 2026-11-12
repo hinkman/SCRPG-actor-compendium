@@ -1,0 +1,34 @@
+{
+  "name": "Otherworldly",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>You have at least a little of the uncanny in you. You could be a fully supernatural creature, or perhaps the spawn of one and a human.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.xawim5bOhlTqoptp]{Otherworldly Mythos}</p><p>• Select from Mental qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d6, d6 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 19,
+      "powerSourceDice": [
+        "d10",
+        "d6",
+        "d6"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "fbw918CwASzwAAKU",
+  "_key": "!items!fbw918CwASzwAAKU"
+}

@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { buildArchetypeDescriptionHtml } from "./archetype-description.mjs";
+import { buildBackgroundDescriptionHtml } from "./background-description.mjs";
 import { buildPowerSourceDescriptionHtml } from "./power-source-description.mjs";
 
 const root = process.cwd();
@@ -357,6 +358,52 @@ const PACKS = [
                         number: entry.number,
                         archetypeDice: entry.archetypeDice,
                         abilities: entry.abilities
+                    }
+                },
+                _stats: STATS,
+                _id: itemId,
+                _key: `!items!${itemId}`
+            };
+        }
+    },
+    {
+        key: "backgrounds",
+        dataFile: "src/data/backgrounds.json",
+        flatList: true,
+        itemType: "backgrounds",
+        img: "icons/svg/hanging-sign.svg",
+        expectedCount: 20,
+        validateEntry(entry) {
+            if (!entry.name || !entry.number || !entry.flavor || !entry.qualitiesIntro) {
+                throw new Error(`background is missing required fields: ${JSON.stringify(entry)}`);
+            }
+            if (!Array.isArray(entry.qualities) || !entry.qualities.length) {
+                throw new Error(`background ${entry.name} is missing qualities`);
+            }
+            if (!entry.principle) {
+                throw new Error(`background ${entry.name} is missing principle`);
+            }
+            if (!Array.isArray(entry.powerSourceDice) || !entry.powerSourceDice.length) {
+                throw new Error(`background ${entry.name} is missing powerSourceDice`);
+            }
+        },
+        buildItem(entry, folderId, itemId) {
+            const description = buildBackgroundDescriptionHtml(entry);
+            return {
+                name: entry.name,
+                type: "backgrounds",
+                img: "icons/svg/hanging-sign.svg",
+                system: {
+                    description
+                },
+                effects: [],
+                folder: folderId,
+                sort: entry.number * 100_000,
+                ownership: { default: 0 },
+                flags: {
+                    "scrpg-actor-compendium": {
+                        number: entry.number,
+                        powerSourceDice: entry.powerSourceDice
                     }
                 },
                 _stats: STATS,

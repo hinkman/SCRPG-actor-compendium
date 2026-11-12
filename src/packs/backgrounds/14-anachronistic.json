@@ -1,0 +1,34 @@
+{
+  "name": "Anachronistic",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>One way or another, you aren't quite in your time. You could be a stranded time traveler, or just a person who fits more with the ideals and customs of a time long before or after the one in which you currently reside. Either way, though this time is not your own, you still fight to protect it.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA]{History}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.brt7V1SXffIWpPTl]{Magical Lore}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.8sdeTQgqsZuFExgc]{Technology}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Esoteric principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d10, d8, d6 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 14,
+      "powerSourceDice": [
+        "d10",
+        "d8",
+        "d6"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "dK3NvpLTlKwFnTC2",
+  "_key": "!items!dK3NvpLTlKwFnTC2"
+}

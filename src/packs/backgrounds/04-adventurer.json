@@ -1,0 +1,34 @@
+{
+  "name": "Adventurer",
+  "type": "backgrounds",
+  "img": "icons/svg/hanging-sign.svg",
+  "system": {
+    "description": "<section class=\"scrpg-archetype-block scrpg-archetype-block-intro\"><p>In your past, you have sought excitement and adventure at every turn. Even before you were a hero, you were a thrill seeker.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Qualities</div><p>Assign a d10 and a d8 to two of these qualities:</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.JzAMmM18LkxtTJqA]{History}</p><p>• @UUID[Compendium.scrpg-actor-compendium.qualities.Item.6pk4qELGNdf4aIC2]{Leadership}</p><p>• Select from Physical qualities category</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Principle</div><p>Choose an Expertise principle.</p></section><section class=\"scrpg-archetype-block\"><div class=\"scrpg-archetype-section\">Power Source</div><p>Roll d8, d8, d8 for power source selection.</p></section>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "number": 4,
+      "powerSourceDice": [
+        "d8",
+        "d8",
+        "d8"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "_id": "TaaSen7FuzNC37ii",
+  "_key": "!items!TaaSen7FuzNC37ii"
+}

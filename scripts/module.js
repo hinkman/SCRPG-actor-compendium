@@ -39,6 +39,7 @@ Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPersonalityOutAbility(sheet, element);
     void renderArchetypeAbilities(sheet, element);
     void renderPowerSourceExtras(sheet, element);
+    void renderBackgroundExtras(sheet, element);
     void renderAbilitySlotPickers(sheet, element);
 });
 
@@ -425,6 +426,41 @@ async function renderPowerSourceExtras(sheet, element) {
         }
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to render power source sheet extras`, err);
+    }
+}
+
+async function renderBackgroundExtras(sheet, element) {
+    try {
+        const item = sheet.document ?? sheet.item;
+        if (!item || item.type !== "backgrounds") return;
+
+        const root = element instanceof HTMLElement ? element : sheet.element;
+        if (!root) return;
+
+        if (!sheet._scrpgBackgroundSized && typeof sheet.setPosition === "function") {
+            sheet._scrpgBackgroundSized = true;
+            const height = sheet.position?.height ?? 0;
+            const width = sheet.position?.width ?? 0;
+            if (height <= 480 || width <= 520) {
+                sheet.setPosition({
+                    width: Math.max(width, 560),
+                    height: Math.max(height, 560)
+                });
+            }
+        }
+
+        const host = root.querySelector(".background") || root.querySelector(".sheet-content") || root;
+        host.querySelector(".scrpg-compendium-archetype-meta")?.remove();
+
+        const meta = item.flags?.[MODULE_ID] || {};
+        if (meta.number) {
+            const numberEl = document.createElement("div");
+            numberEl.className = "scrpg-compendium-archetype-meta";
+            numberEl.innerHTML = `<span class="label">Number</span> ${escapeHtml(String(meta.number))}`;
+            host.prepend(numberEl);
+        }
+    } catch (err) {
+        console.error(`${MODULE_ID} | Failed to render background sheet extras`, err);
     }
 }
 
