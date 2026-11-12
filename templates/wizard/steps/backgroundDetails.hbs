@@ -49,17 +49,29 @@
     <h3>Principle₁ ({{principleCategoryLabel}})</h3>
     <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Principles">
       {{#each principles}}
-        <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}">
-          <input
-            type="radio"
-            name="principleUuid"
-            value="{{uuid}}"
-            {{#if selected}}checked{{/if}}
-          >
-          <span class="scrpg-wizard-chart-body">
-            <span class="scrpg-wizard-chart-name">{{name}}</span>
-          </span>
-        </label>
+        <div class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}">
+          <label class="scrpg-wizard-chart-select">
+            <input
+              type="radio"
+              name="principleUuid"
+              value="{{uuid}}"
+              {{#if selected}}checked{{/if}}
+            >
+            <span class="scrpg-wizard-chart-body">
+              <button
+                type="button"
+                class="content-link scrpg-wizard-chart-tag"
+                data-action="previewChartItem"
+                data-uuid="{{uuid}}"
+                data-tooltip="Item"
+                title="Open {{name}}"
+                aria-label="Open {{name}}"
+              >
+                <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{name}}
+              </button>
+            </span>
+          </label>
+        </div>
       {{else}}
         <p class="scrpg-wizard-empty">No principles found for this category.</p>
       {{/each}}
