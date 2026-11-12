@@ -46,8 +46,17 @@
   </section>
 
   {{#each abilityPickGroups}}
-    <section class="scrpg-wizard-ability-block" aria-label="{{color}} abilities">
-      <h3>{{title}}</h3>
+    <section
+      class="scrpg-wizard-ability-block{{#if incomplete}} is-incomplete{{/if}}"
+      aria-label="{{color}} abilities"
+      id="scrpg-wizard-ability-pick-{{index}}"
+    >
+      <h3>
+        {{title}}
+        <span class="scrpg-wizard-pick-badge{{#if incomplete}} is-incomplete{{/if}}">
+          {{selectedCount}} / {{count}}
+        </span>
+      </h3>
       {{#if grantText}}
         <p class="scrpg-wizard-intro">{{grantText}}</p>
       {{/if}}
@@ -69,7 +78,10 @@
           </label>
         {{/each}}
       </div>
-      <p class="scrpg-wizard-pick-count">Selected {{selectedCount}} / {{count}}</p>
+      <p class="scrpg-wizard-pick-count">
+        Selected {{selectedCount}} / {{count}}
+        {{#if incomplete}} — required to continue{{/if}}
+      </p>
     </section>
   {{/each}}
 </div>

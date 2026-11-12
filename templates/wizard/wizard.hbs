@@ -39,16 +39,28 @@
   </div>
 
   <footer class="scrpg-wizard-footer">
-    <button type="button" class="scrpg-wizard-btn" data-action="cancel">Cancel</button>
-    <div class="scrpg-wizard-footer-nav">
-      <button type="button" class="scrpg-wizard-btn" data-action="back" {{#unless canGoBack}}disabled{{/unless}}>Back</button>
-      {{#if isLastStep}}
-        <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="createHero" {{#unless canGoNext}}disabled{{/unless}}>
-          Create Hero
-        </button>
-      {{else}}
-        <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="next" {{#unless canGoNext}}disabled{{/unless}}>Next</button>
-      {{/if}}
+    {{#if nextRequirements.length}}
+      <div class="scrpg-wizard-next-requirements" role="status">
+        <span class="scrpg-wizard-next-requirements-label">Still needed:</span>
+        <ul>
+          {{#each nextRequirements}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+    <div class="scrpg-wizard-footer-actions">
+      <button type="button" class="scrpg-wizard-btn" data-action="cancel">Cancel</button>
+      <div class="scrpg-wizard-footer-nav">
+        <button type="button" class="scrpg-wizard-btn" data-action="back" {{#unless canGoBack}}disabled{{/unless}}>Back</button>
+        {{#if isLastStep}}
+          <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="createHero" {{#unless canGoNext}}disabled{{/unless}}>
+            Create Hero
+          </button>
+        {{else}}
+          <button type="button" class="scrpg-wizard-btn scrpg-wizard-btn-primary" data-action="next" {{#unless canGoNext}}disabled{{/unless}}>Next</button>
+        {{/if}}
+      </div>
     </div>
   </footer>
 </section>

@@ -26,6 +26,7 @@ import {
     buildPowerSlots,
     isPowerSourceChartComplete,
     isPowerSourceDetailsComplete,
+    powerSourceDetailsRemaining,
     powerSourceRollFormula
 } from "./steps/powerSource.js";
 import {
@@ -352,7 +353,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             selectedArchetypeName: draft.archetype.selectedName,
             selectedPersonalityName: draft.personality.selectedName,
             canGoBack: this.canGoBack,
-            canGoNext: this.canGoNext
+            canGoNext: this.canGoNext,
+            nextRequirements: []
         };
 
         if (step.id === "background") {
@@ -363,6 +365,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             Object.assign(base, this.#powerSourceChartContext());
         } else if (step.id === "powerSourceDetails") {
             Object.assign(base, this.#powerSourceDetailsContext());
+            base.nextRequirements = powerSourceDetailsRemaining(
+                draft,
+                this._selectedPowerSourceRow?.wizard
+            );
         } else if (step.id === "archetype") {
             Object.assign(base, this.#archetypeChartContext());
         } else if (step.id === "archetypeDetails") {
@@ -672,6 +678,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             const count = Number(group?.count) || 0;
             const atLimit = selected.length >= count;
             const color = group?.color || "yellow";
+            const incomplete = selected.length !== count;
             return {
                 index,
                 color,
@@ -681,6 +688,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 constraintNote: constraintNote(group?.constraint),
                 count,
                 selectedCount: selected.length,
+                incomplete,
                 abilities: (group?.abilities || [])
                     .filter(ab => ab?.uuid)
                     .map(ab => {

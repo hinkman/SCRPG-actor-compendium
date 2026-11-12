@@ -28,27 +28,52 @@ export function isPowerSourceChartComplete(draft) {
 }
 
 /**
+ * Human-readable leftovers for the PS Details Next button.
+ * Relic and similar sources need Yellow AND Green picks — not Yellow alone.
  * @param {object} draft
  * @param {object|null} selectedWizard  power source wizard flags
+ * @returns {string[]}
  */
-export function isPowerSourceDetailsComplete(draft, selectedWizard = null) {
+export function powerSourceDetailsRemaining(draft, selectedWizard = null) {
     const ps = draft?.powerSource;
     const bg = draft?.background;
-    if (!ps?.selectedUuid) return false;
+    const remaining = [];
+    if (!ps?.selectedUuid) {
+        remaining.push("Select a power source first");
+        return remaining;
+    }
 
     const dicePool = Array.isArray(bg?.powerSourceDice) ? bg.powerSourceDice : [];
-    if (!assignmentsComplete(ps.powerAssignments, dicePool)) return false;
+    if (!assignmentsComplete(ps.powerAssignments, dicePool)) {
+        remaining.push(`Assign all power dice (${dicePool.join(", ") || "—"})`);
+    }
 
     const picks = selectedWizard?.abilityPicks;
-    if (!Array.isArray(picks) || !picks.length) return true;
+    if (!Array.isArray(picks) || !picks.length) return remaining;
 
     for (let i = 0; i < picks.length; i++) {
         const need = Number(picks[i].count) || 0;
         const selected = ps.abilitySelections?.[String(i)] ?? [];
-        if (selected.length !== need) return false;
-        if (new Set(selected).size !== selected.length) return false;
+        const have = Array.isArray(selected) ? new Set(selected.filter(Boolean)).size : 0;
+        if (have !== need) {
+            const color = String(picks[i].color || "ability").replace(/^\w/, c => c.toUpperCase());
+            const left = Math.max(0, need - have);
+            remaining.push(
+                left === need
+                    ? `Pick ${need} ${color} abilit${need === 1 ? "y" : "ies"}`
+                    : `Pick ${left} more ${color} abilit${left === 1 ? "y" : "ies"} (${have}/${need})`
+            );
+        }
     }
-    return true;
+    return remaining;
+}
+
+/**
+ * @param {object} draft
+ * @param {object|null} selectedWizard  power source wizard flags
+ */
+export function isPowerSourceDetailsComplete(draft, selectedWizard = null) {
+    return powerSourceDetailsRemaining(draft, selectedWizard).length === 0;
 }
 
 /**
