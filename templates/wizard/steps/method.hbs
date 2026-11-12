@@ -1,0 +1,23 @@
+<div class="scrpg-wizard-method">
+  <header class="scrpg-wizard-step-header">
+    <h2>How do you want to build this hero?</h2>
+    <p>Choose Guided (roll charts) or Constructed (pick any row). You can cancel anytime — nothing is written to an Actor yet.</p>
+  </header>
+
+  <div class="scrpg-wizard-method-options" role="radiogroup" aria-label="Creation method">
+    {{#each methods}}
+      <label class="scrpg-wizard-method-card{{#if selected}} is-selected{{/if}}" data-method="{{id}}">
+        <input
+          type="radio"
+          name="method"
+          value="{{id}}"
+          {{#if selected}}checked{{/if}}
+        >
+        <span class="scrpg-wizard-method-card-body">
+          <span class="scrpg-wizard-method-card-title">{{label}}</span>
+          <span class="scrpg-wizard-method-card-summary">{{summary}}</span>
+        </span>
+      </label>
+    {{/each}}
+  </div>
+</div>

@@ -1,6 +1,15 @@
 import * as categoryResolver from "./categoryResolver.js";
+import { canCreateScrpgHero, openCreateWizard } from "./wizard/openWizard.js";
+import * as silentRoll from "./wizard/silentRoll.js";
 
 const MODULE_ID = "scrpg-actor-compendium";
+const { loadTemplates } = foundry.applications.handlebars;
+
+const WIZARD_TEMPLATES = [
+    `modules/${MODULE_ID}/templates/wizard/wizard.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/method.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/placeholder.hbs`
+];
 
 const ACTION_ICONS = {
     attack: { title: "Attack", cls: "fas fa-hand-rock" },
@@ -13,6 +22,7 @@ const ACTION_ICONS = {
 
 Hooks.once("init", () => {
     console.log(`${MODULE_ID} | Initialising Sentinel Comics RPG compendium`);
+    loadTemplates(WIZARD_TEMPLATES);
 });
 
 Hooks.once("ready", () => {
@@ -20,8 +30,49 @@ Hooks.once("ready", () => {
     if (mod) {
         mod.api = {
             ...(mod.api || {}),
-            categoryResolver
+            categoryResolver,
+            silentRoll,
+            openCreateWizard,
+            canCreateScrpgHero
         };
+    }
+});
+
+/**
+ * Actors Directory entry: "Create SCRPG Hero…"
+ * Visible only for scrpg-foundry + users who can create hero Actors.
+ */
+Hooks.on("renderActorDirectory", (app, html) => {
+    try {
+        if (!canCreateScrpgHero()) return;
+
+        const root = html instanceof HTMLElement
+            ? html
+            : (html?.[0] instanceof HTMLElement ? html[0] : app?.element);
+        if (!(root instanceof HTMLElement)) return;
+        if (root.querySelector("#scrpg-create-hero-btn")) return;
+
+        const footer =
+            root.querySelector(".directory-footer")
+            || root.querySelector("footer.directory-footer")
+            || root.querySelector(".action-buttons")
+            || root.querySelector("footer")
+            || null;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.id = "scrpg-create-hero-btn";
+        btn.className = "scrpg-create-hero-btn";
+        btn.innerHTML = `<i class="fas fa-mask"></i> Create SCRPG Hero…`;
+        btn.addEventListener("click", event => {
+            event.preventDefault();
+            void openCreateWizard();
+        });
+
+        if (footer) footer.prepend(btn);
+        else root.append(btn);
+    } catch (err) {
+        console.warn(`${MODULE_ID} | Failed to inject Actors Directory wizard button`, err);
     }
 });
 
