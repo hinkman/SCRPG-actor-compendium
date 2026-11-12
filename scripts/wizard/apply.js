@@ -392,7 +392,7 @@ async function applyPendingOutSlots(actor, createdItems, draft) {
 
     const update = {
         [`flags.${MODULE_ID}.selections`]: selections,
-        [`flags.${MODULE_ID}.-=pendingOutSlots`]: null
+        [`flags.${MODULE_ID}.pendingOutSlots`]: foundry.data.operators.ForcedDeletion
     };
     if (template) {
         update["system.gameText"] = `<p>${escapeHtml(text)}</p>`;
@@ -425,7 +425,7 @@ async function applyPendingAbilitySlots(actor, createdItems, draft) {
 
         const update = {
             [`flags.${MODULE_ID}.selections`]: selections,
-            [`flags.${MODULE_ID}.-=pendingAbilitySlots`]: null
+            [`flags.${MODULE_ID}.pendingAbilitySlots`]: foundry.data.operators.ForcedDeletion
         };
         if (template) {
             update["system.gameText"] = `<p>${escapeHtml(text)}</p>`;
