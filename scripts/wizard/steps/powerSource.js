@@ -2,6 +2,7 @@
 
 import { assignmentsComplete } from "../draftState.js";
 import { diceSizesToFormula } from "../chartRoll.js";
+import { validateAbilityPickFillConstraints } from "../fillConstraints.js";
 
 export const POWER_SOURCE_STEP = {
     id: "powerSource",
@@ -71,6 +72,15 @@ export function powerSourceDetailsRemaining(draft, selectedWizard = null, abilit
 
     if (abilityMeta && !abilitySlotsFilled(selectedUuids, abilityMeta, ps.abilitySlotSelections)) {
         remaining.push("Fill power/quality slots on selected abilities");
+    }
+
+    for (const msg of validateAbilityPickFillConstraints(
+        picks,
+        ps.abilitySelections,
+        ps.abilitySlotSelections,
+        abilityMeta
+    )) {
+        remaining.push(msg);
     }
     return remaining;
 }

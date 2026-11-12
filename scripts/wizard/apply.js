@@ -86,11 +86,37 @@ export async function syncHeroFromDraft(draft, options = {}) {
         await applyPendingAbilitySlots(actor, created, working);
     }
 
+    // Finishing must clear the read-only lock even if nested ForcedDeletion
+    // was dropped during a bulk flags merge — set false then unset.
+    if (!locked) {
+        await clearWizardLock(actor);
+    }
+
     if (openSheet) {
         actor.sheet?.render(true);
     }
 
     return actor;
+}
+
+/**
+ * Ensure flags.scrpg-actor-compendium.wizardLocked is gone / false.
+ * @param {Actor} actor
+ */
+export async function clearWizardLock(actor) {
+    if (!actor) return;
+    try {
+        await actor.update({
+            [`flags.${MODULE_ID}.${WIZARD_LOCKED_FLAG}`]: false
+        });
+    } catch (err) {
+        console.warn(`${MODULE_ID} | Failed to set wizardLocked false`, err);
+    }
+    try {
+        await actor.unsetFlag(MODULE_ID, WIZARD_LOCKED_FLAG);
+    } catch (err) {
+        console.warn(`${MODULE_ID} | Failed to unset wizardLocked`, err);
+    }
 }
 
 /**
@@ -172,9 +198,9 @@ async function buildActorData(working, { locked, identityOverride = null }) {
         },
         flags: {
             [MODULE_ID]: {
-                [WIZARD_LOCKED_FLAG]: locked
-                    ? true
-                    : foundry.data.operators.ForcedDeletion,
+                // Use explicit false on finish — Boolean(false) unlocks the sheet.
+                // ForcedDeletion in a nested flags blob was leaving the lock set.
+                [WIZARD_LOCKED_FLAG]: locked ? true : false,
                 wizard: {
                     method: working.method,
                     createdAt: Date.now(),

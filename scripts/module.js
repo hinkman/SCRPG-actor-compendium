@@ -5,6 +5,7 @@ import * as apply from "./wizard/apply.js";
 import * as chartRoll from "./wizard/chartRoll.js";
 import { canCreateScrpgHero, openCreateWizard } from "./wizard/openWizard.js";
 import * as silentRoll from "./wizard/silentRoll.js";
+import { layoutWizardAndSheet } from "./wizard/windowLayout.js";
 
 const MODULE_ID = "scrpg-actor-compendium";
 const { loadTemplates } = foundry.applications.handlebars;
@@ -122,6 +123,23 @@ Hooks.on("renderSCRPGItemSheet", (sheet, element) => {
     void renderPowerSourceExtras(sheet, element);
     void renderBackgroundExtras(sheet, element);
     void renderAbilitySlotPickers(sheet, element);
+});
+
+/**
+ * Keep the live draft sheet beside the wizard when Foundry repositions/renders it.
+ */
+Hooks.on("renderSCRPGCharacterSheet", (sheet, _element) => {
+    try {
+        const actor = sheet?.document ?? sheet?.actor;
+        if (!actor?.getFlag?.(MODULE_ID, "wizardLocked") && !actor?.flags?.[MODULE_ID]?.wizardLocked) {
+            return;
+        }
+        const wizard = foundry.applications.instances.get("scrpg-character-creation-wizard");
+        if (!wizard?.rendered) return;
+        layoutWizardAndSheet(wizard, sheet);
+    } catch (err) {
+        console.warn(`${MODULE_ID} | Side-by-side layout failed`, err);
+    }
 });
 
 async function renderPrincipleGreenAbility(sheet, element) {

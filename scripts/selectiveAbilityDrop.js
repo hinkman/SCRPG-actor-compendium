@@ -284,6 +284,15 @@ function constraintNote(constraint) {
     if (constraint === "differentPower") {
         return "Each chosen ability should use a different power.";
     }
+    if (constraint === "differentQuality") {
+        return "Each chosen ability should use a different quality.";
+    }
+    if (constraint === "differentPowerOrQuality") {
+        return "Each chosen ability should use a different power or quality.";
+    }
+    if (constraint === "differentFromGreenAbilities") {
+        return "Use a different power or quality than any of your Green ability fills.";
+    }
     if (constraint === "atLeastTwoDifferentPowers") {
         return "Use at least two different powers across the chosen abilities.";
     }
