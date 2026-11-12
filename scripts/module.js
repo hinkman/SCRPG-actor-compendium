@@ -1,3 +1,4 @@
+import { escapeHtml, fillAbilityGameTextHtml } from "./abilityFill.js";
 import * as categoryResolver from "./categoryResolver.js";
 import { promptAndGrantSelectedAbilities } from "./selectiveAbilityDrop.js";
 import * as apply from "./wizard/apply.js";
@@ -255,14 +256,6 @@ async function renderPersonalityOutAbility(sheet, element) {
     }
 }
 
-function escapeHtml(value) {
-    return String(value ?? "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;");
-}
-
 /**
  * On actor-owned abilities from this module, show dropdowns for [power]/[quality]
  * (and similar) placeholders so the chosen trait fills the game text.
@@ -296,6 +289,8 @@ async function renderAbilitySlotPickers(sheet, element) {
             return;
         }
 
+        const wizardLocked = Boolean(actor.getFlag?.(MODULE_ID, "wizardLocked")
+            ?? actor.flags?.[MODULE_ID]?.wizardLocked);
         const selections = meta.selections || {};
         const rows = slots.map(slot => {
             const options = matchingActorItems(actor, slot);
@@ -307,16 +302,19 @@ async function renderAbilitySlotPickers(sheet, element) {
                     return `<option value="${escapeHtml(opt.id)}"${selected}>${escapeHtml(opt.name)}</option>`;
                 })
             ].join("");
+            const disabled = wizardLocked ? " disabled" : "";
             return `
                 <label class="scrpg-compendium-ability-slot">
                     <span class="label">${escapeHtml(slotLabel(slot))}</span>
-                    <select data-slot-token="${escapeHtml(slot.token)}">${optionHtml}</select>
+                    <select data-slot-token="${escapeHtml(slot.token)}"${disabled}>${optionHtml}</select>
                 </label>
             `;
         }).join("");
 
         section.innerHTML = `<h4>Linked Traits</h4><div class="scrpg-compendium-ability-slot-list">${rows}</div>`;
         host.append(section);
+
+        if (wizardLocked) return;
 
         section.querySelectorAll("select[data-slot-token]").forEach(select => {
             select.addEventListener("change", async event => {
@@ -378,15 +376,16 @@ async function applyAbilitySlotSelection(item, token, chosenId) {
     if (chosenId) selections[token] = chosenId;
     else delete selections[token];
 
-    let text = template;
+    /** @type {Record<string, string>} */
+    const tokenToName = {};
     for (const slot of meta.slots || []) {
         const selectedId = selections[slot.token];
         const chosen = selectedId ? item.actor?.items.get(selectedId) : null;
-        if (chosen) text = text.replaceAll(slot.token, chosen.name);
+        if (chosen) tokenToName[slot.token] = chosen.name;
     }
 
     await item.update({
-        "system.gameText": `<p>${escapeHtml(text)}</p>`,
+        "system.gameText": fillAbilityGameTextHtml(template, tokenToName),
         [`flags.${MODULE_ID}.selections`]: selections
     });
 }

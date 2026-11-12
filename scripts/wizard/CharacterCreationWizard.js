@@ -1,4 +1,5 @@
-import { createHeroFromDraft } from "./apply.js";
+import { filledAbilityPreviewHtml } from "../abilityFill.js";
+import { createHeroFromDraft, discardDraftActor, syncHeroFromDraft } from "./apply.js";
 import { legalChartNumbers, rollChart, rerollChart } from "./chartRoll.js";
 import { createEmptyDraft, invalidateFrom, upgradeDie } from "./draftState.js";
 import {
@@ -100,7 +101,7 @@ const STEPS = [
 
 /**
  * AppV2 SCRPG hero creation wizard.
- * Slice F: Steps 1–8; Actor.create after Finishing.
+ * Slice F: Steps 1–8; keeps one live locked Actor in sync, unlocks on finish.
  */
 export default class CharacterCreationWizard extends HandlebarsApplicationMixin(ApplicationV2) {
     static DEFAULT_OPTIONS = {
@@ -198,6 +199,18 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._creating = false;
         /** @type {boolean} */
         this._stepTransitioning = false;
+        /** @type {Actor|null} live sheet Actor owned by this wizard */
+        this._draftActor = null;
+        /** @type {ReturnType<typeof setTimeout>|null} */
+        this._draftSyncTimer = null;
+        /** @type {number} */
+        this._draftSyncGeneration = 0;
+        /** @type {boolean} */
+        this._finalized = false;
+        /** @type {boolean} */
+        this._discarding = false;
+        /** @type {Promise<void>|null} */
+        this._draftSyncPromise = null;
     }
 
     /**
@@ -227,16 +240,21 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         }
         const app = new this({ mode: "create" });
         await app.render({ force: true });
+        await app.#ensureLiveSheet({ openSheet: true });
         return app;
     }
 
     /**
      * Ensure ERROR/empty-element closes still drop the fixed-id singleton.
+     * Discard the locked draft Actor unless the wizard finished successfully.
      * @param {object} [options]
      */
     async close(options = {}) {
         const id = this.id;
         try {
+            if (!this._finalized) {
+                await this.#discardLiveSheet();
+            }
             return await super.close(options);
         } finally {
             if (foundry.applications.instances.get(id) === this) {
@@ -741,7 +759,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                             name: ab.name || meta?.name || ab.uuid,
                             selected: isSelected,
                             disabled: atLimit && !isSelected,
-                            preview: isSelected ? (meta?.preview || null) : null,
+                            preview: isSelected
+                                ? filledAbilityPreviewHtml(
+                                    meta?.preview,
+                                    draft.abilitySlotSelections?.[ab.uuid],
+                                    slotTraits
+                                )
+                                : null,
                             slotRows: isSelected
                                 ? buildInlineSlotRows(
                                     meta,
@@ -841,7 +865,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                         name: ab.name || meta?.name || ab.uuid,
                         selected: isSelected,
                         disabled: autoGranted || (atLimit && !isSelected),
-                        preview: isSelected ? (meta?.preview || null) : null,
+                        preview: isSelected
+                            ? filledAbilityPreviewHtml(
+                                meta?.preview,
+                                draft.abilitySlotSelections?.[ab.uuid],
+                                slotTraits
+                            )
+                            : null,
                         slotRows: isSelected
                             ? buildInlineSlotRows(
                                 meta,
@@ -904,7 +934,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const assigned = collectAssignedTraits(this.wizardState);
 
         const outAbility = draft.outAbilityUuid ? await fromUuid(draft.outAbilityUuid) : null;
-        const outPreview = outAbility?.flags?.[MODULE_ID]?.gameTextTemplate
+        const outTemplate = outAbility?.flags?.[MODULE_ID]?.gameTextTemplate
             || stripHtml(outAbility?.system?.gameText)
             || this._selectedPersonalityRow?.doc?.system?.out
             || null;
@@ -923,6 +953,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 itemType: "quality"
             }
         ];
+        const outPreview = filledAbilityPreviewHtml(
+            outTemplate,
+            draft.outSlotSelections,
+            traitOptionsForOut
+        );
 
         const outSlots = this._outSlots.map(slot => {
             const token = slot.token;
@@ -988,7 +1023,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 abilityType: ability.abilityType,
                 selected: isSelected,
                 disabled: atLimit && !isSelected,
-                preview: isSelected ? (ability.preview || null) : null,
+                preview: isSelected
+                    ? filledAbilityPreviewHtml(
+                        ability.preview,
+                        draft.slotSelections?.[ability.uuid],
+                        traits
+                    )
+                    : null,
                 slotRows: isSelected
                     ? buildInlineSlotRows(ability, traits, draft.slotSelections?.[ability.uuid])
                     : []
@@ -1069,7 +1110,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     name: a.name,
                     categoryLabel: a.categoryLabel,
                     selected: isSelected,
-                    preview: isSelected ? (a.preview || null) : null,
+                    preview: isSelected
+                        ? filledAbilityPreviewHtml(
+                            a.preview,
+                            retcon.extraRedSlotSelections,
+                            effectiveTraits
+                        )
+                        : null,
                     slotRows: isSelected
                         ? buildInlineSlotRows(a, effectiveTraits, retcon.extraRedSlotSelections)
                         : []
@@ -1236,7 +1283,100 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             changed = this.#applyFinishing(data) || changed;
         }
 
-        if (changed) await this.render();
+        if (changed) {
+            await this.render();
+            this.#queueDraftSync();
+        }
+    }
+
+    /**
+     * Create the locked live Actor (and optionally open its sheet) if missing.
+     * @param {{openSheet?:boolean}} [options]
+     */
+    async #ensureLiveSheet(options = {}) {
+        const { openSheet = false } = options;
+        if (this._discarding || this._finalized) return this._draftActor;
+        if (this._draftActor?.id && game.actors.has(this._draftActor.id)) {
+            if (openSheet) this._draftActor.sheet?.render(true);
+            return this._draftActor;
+        }
+        try {
+            this._draftActor = await syncHeroFromDraft(this.wizardState, {
+                actor: null,
+                locked: true,
+                openSheet
+            });
+        } catch (err) {
+            console.error(`${MODULE_ID} | Failed to create live wizard sheet`, err);
+            ui.notifications?.warn("Could not open the live character sheet preview.");
+            this._draftActor = null;
+        }
+        return this._draftActor;
+    }
+
+    /** Debounced sync of the live Actor after wizard edits. */
+    #queueDraftSync() {
+        if (this._discarding || this._finalized) return;
+        clearTimeout(this._draftSyncTimer);
+        this._draftSyncTimer = setTimeout(() => {
+            this._draftSyncTimer = null;
+            void this.#syncLiveSheet();
+        }, 300);
+    }
+
+    /**
+     * Push the current draft onto the locked Actor (create if needed).
+     * @param {{immediate?:boolean, openSheet?:boolean}} [options]
+     */
+    async #syncLiveSheet(options = {}) {
+        const { openSheet = false } = options;
+        if (this._discarding || this._finalized) return;
+        clearTimeout(this._draftSyncTimer);
+        this._draftSyncTimer = null;
+
+        const generation = ++this._draftSyncGeneration;
+        const run = (async () => {
+            try {
+                const actor = await syncHeroFromDraft(this.wizardState, {
+                    actor: this._draftActor,
+                    locked: true,
+                    openSheet
+                });
+                if (generation !== this._draftSyncGeneration || this._discarding || this._finalized) {
+                    return;
+                }
+                this._draftActor = actor;
+            } catch (err) {
+                if (generation !== this._draftSyncGeneration) return;
+                console.error(`${MODULE_ID} | Live sheet sync failed`, err);
+            }
+        })();
+
+        this._draftSyncPromise = run;
+        await run;
+        if (this._draftSyncPromise === run) this._draftSyncPromise = null;
+    }
+
+    /** Delete the draft Actor and close its sheet. */
+    async #discardLiveSheet() {
+        this._discarding = true;
+        clearTimeout(this._draftSyncTimer);
+        this._draftSyncTimer = null;
+        this._draftSyncGeneration += 1;
+        if (this._draftSyncPromise) {
+            try {
+                await this._draftSyncPromise;
+            } catch {
+                /* ignore */
+            }
+        }
+        const actor = this._draftActor;
+        this._draftActor = null;
+        try {
+            await discardDraftActor(actor);
+        } catch (err) {
+            console.error(`${MODULE_ID} | Failed to discard draft actor`, err);
+        }
     }
 
     #applyBackgroundSelection(number) {
@@ -1819,6 +1959,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this.wizardState.stepIndex = nextIndex;
         try {
             await this.render();
+            await this.#syncLiveSheet();
         } catch (err) {
             this.wizardState.stepIndex = prevIndex;
             console.error(`${MODULE_ID} | Wizard step transition failed`, err);
@@ -1850,6 +1991,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     static async #onCancel(event, _target) {
         event?.preventDefault?.();
         event?.stopPropagation?.();
+        // close() discards the locked draft Actor and its sheet.
         await this.close();
     }
 
@@ -1867,6 +2009,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this.wizardState.health.varianceRollDetail = result.detail;
         refreshHealthComputation(this.wizardState, this._traitCategories);
         await this.render();
+        this.#queueDraftSync();
     }
 
     /**
@@ -1884,7 +2027,17 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._creating = true;
         await this.render();
         try {
-            const actor = await createHeroFromDraft(this.wizardState);
+            clearTimeout(this._draftSyncTimer);
+            this._draftSyncTimer = null;
+            if (this._draftSyncPromise) await this._draftSyncPromise;
+
+            const actor = await createHeroFromDraft(
+                this.wizardState,
+                null,
+                this._draftActor
+            );
+            this._draftActor = actor;
+            this._finalized = true;
             ui.notifications?.info(`Created hero “${actor.name}”.`);
             await this.close();
             actor.sheet?.render(true);

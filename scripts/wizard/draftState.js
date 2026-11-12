@@ -1,5 +1,6 @@
 /**
- * In-memory wizard draft through Steps 1–8 (Actor.create after Finishing).
+ * In-memory wizard draft through Steps 1–8.
+ * A locked live Actor mirrors this draft; Finishing unlocks that Actor.
  */
 
 import { emptyIdentity } from "./steps/finishing.js";
