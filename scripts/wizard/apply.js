@@ -1,26 +1,119 @@
 /**
- * Create a playable hero Actor from the wizard draft (Steps 1–8).
+ * Create / sync a hero Actor from the wizard draft (Steps 1–8).
  * Selective ability grants only — never dump-all drop hooks.
- * Actor.create runs after Finishing (Step 8).
+ *
+ * While the wizard is open the Actor is kept live with
+ * flags.scrpg-actor-compendium.wizardLocked = true (sheet read-only).
+ * Finishing clears the lock; cancel deletes the draft Actor.
  */
 
+import { fillAbilityGameTextHtml } from "../abilityFill.js";
 import { dieRank, upgradeDie } from "./draftState.js";
 import { applyRetconToDraft } from "./steps/retcon.js";
 import { refreshHealthComputation } from "./steps/health.js";
 
 const MODULE_ID = "scrpg-actor-compendium";
+export const WIZARD_LOCKED_FLAG = "wizardLocked";
 
 /**
+ * Finalize a playable hero from the wizard draft.
+ * Prefer syncing an existing locked draft Actor when provided.
+ *
  * @param {object} draft
- * @param {{name:string, alias?:string}} [identityOverride]
+ * @param {{name:string, alias?:string}|null} [identityOverride]
+ * @param {Actor|null} [existingActor]
  * @returns {Promise<Actor>}
  */
-export async function createHeroFromDraft(draft, identityOverride = null) {
-    // Work on a clone so a failed create does not corrupt the live wizard draft.
+export async function createHeroFromDraft(draft, identityOverride = null, existingActor = null) {
+    return syncHeroFromDraft(draft, {
+        actor: existingActor,
+        locked: false,
+        identityOverride,
+        openSheet: false
+    });
+}
+
+/**
+ * Create or update the live wizard Actor to match the current draft.
+ *
+ * @param {object} draft
+ * @param {object} [options]
+ * @param {Actor|null} [options.actor]
+ * @param {boolean} [options.locked=true]
+ * @param {{name?:string, alias?:string}|null} [options.identityOverride]
+ * @param {boolean} [options.openSheet=false]
+ * @returns {Promise<Actor>}
+ */
+export async function syncHeroFromDraft(draft, options = {}) {
+    const {
+        actor: existingActor = null,
+        locked = true,
+        identityOverride = null,
+        openSheet = false
+    } = options;
+
+    // Clone so retcon / health helpers never mutate the live wizard draft.
     const working = foundry.utils.deepClone(draft);
     applyRetconToDraft(working);
     refreshHealthComputation(working);
 
+    const actorData = await buildActorData(working, { locked, identityOverride });
+    const items = await buildItemData(working);
+
+    let actor = existingActor;
+    if (actor?.id && !game.actors.has(actor.id)) {
+        actor = null;
+    }
+
+    if (!actor) {
+        actor = await Actor.create(actorData);
+        if (!actor) throw new Error("Actor.create returned null");
+    } else {
+        await actor.update({
+            name: actorData.name,
+            system: actorData.system,
+            flags: actorData.flags
+        });
+        const existingIds = actor.items.map(i => i.id);
+        if (existingIds.length) {
+            await actor.deleteEmbeddedDocuments("Item", existingIds);
+        }
+    }
+
+    if (items.length) {
+        const created = await actor.createEmbeddedDocuments("Item", items);
+        await applyPendingOutSlots(actor, created, working);
+        await applyPendingAbilitySlots(actor, created, working);
+    }
+
+    if (openSheet) {
+        actor.sheet?.render(true);
+    }
+
+    return actor;
+}
+
+/**
+ * Close the sheet (if open) and delete a wizard draft Actor.
+ * @param {Actor|null|undefined} actor
+ */
+export async function discardDraftActor(actor) {
+    if (!actor) return;
+    try {
+        await actor.sheet?.close({ animate: false });
+    } catch (err) {
+        console.warn(`${MODULE_ID} | Failed to close draft sheet`, err);
+    }
+    if (actor.id && game.actors.has(actor.id)) {
+        await actor.delete();
+    }
+}
+
+/**
+ * @param {object} working
+ * @param {{locked:boolean, identityOverride?:object|null}} options
+ */
+async function buildActorData(working, { locked, identityOverride = null }) {
     const identity = {
         ...(working.identity || {}),
         ...(identityOverride || {})
@@ -31,7 +124,7 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
     const status = working.personality?.statusDie || {};
     const firstPrinciple = await principleSystemData(working.background?.principleUuid);
     const secondPrinciple = await principleSystemData(working.archetype?.principleUuid);
-    const outText = await resolveOutText(working);
+    const outHtml = await resolveOutHtml(working);
     const health = working.health || {};
     const ranges = health.ranges || {
         greenLow: 0,
@@ -43,7 +136,7 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
     const maxHealth = Number(health.max) || 0;
     const costume = String(identity.costume || "").trim();
 
-    const actorData = {
+    return {
         name,
         type: "hero",
         system: {
@@ -65,7 +158,7 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
                 yellow: status.yellow || "",
                 red: status.red || ""
             },
-            out: outText ? `<p>${escapeHtml(outText)}</p>` : "",
+            out: outHtml || "",
             firstPrinciple: firstPrinciple || emptyPrinciple(),
             secondPrinciple: secondPrinciple || emptyPrinciple(),
             wounds: { value: maxHealth, max: maxHealth },
@@ -79,6 +172,9 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
         },
         flags: {
             [MODULE_ID]: {
+                [WIZARD_LOCKED_FLAG]: locked
+                    ? true
+                    : foundry.data.operators.ForcedDeletion,
                 wizard: {
                     method: working.method,
                     createdAt: Date.now(),
@@ -98,10 +194,13 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
             }
         }
     };
+}
 
-    const actor = await Actor.create(actorData);
-    if (!actor) throw new Error("Actor.create returned null");
-
+/**
+ * @param {object} working
+ * @returns {Promise<object[]>}
+ */
+async function buildItemData(working) {
     const items = [];
     const dieByUuid = new Map();
 
@@ -229,13 +328,7 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
         }
     }
 
-    if (items.length) {
-        const created = await actor.createEmbeddedDocuments("Item", items);
-        await applyPendingOutSlots(actor, created, working);
-        await applyPendingAbilitySlots(actor, created, working);
-    }
-
-    return actor;
+    return items;
 }
 
 async function principleSystemData(uuid) {
@@ -254,7 +347,12 @@ function emptyPrinciple() {
     return { name: "", roleplaying: "", minorTwist: "", majorTwist: "" };
 }
 
-async function resolveOutText(draft) {
+/**
+ * Out text with bold filled trait names (HTML).
+ * @param {object} draft
+ * @returns {Promise<string>}
+ */
+async function resolveOutHtml(draft) {
     const uuid = draft.personality?.outAbilityUuid;
     if (!uuid) return "";
     const ability = await fromUuid(uuid);
@@ -263,7 +361,6 @@ async function resolveOutText(draft) {
         || "";
     if (!template) return "";
 
-    let text = template;
     const selections = { ...(draft.personality?.outSlotSelections || {}) };
     if (
         draft.retcon?.option === "rebindAbility"
@@ -273,11 +370,14 @@ async function resolveOutText(draft) {
     ) {
         selections[draft.retcon.rebindToken] = draft.retcon.rebindTraitUuid;
     }
+
+    /** @type {Record<string, string>} */
+    const tokenToName = {};
     for (const [token, traitUuid] of Object.entries(selections)) {
         const name = await traitNameFromDraft(draft, traitUuid);
-        if (name) text = text.replaceAll(token, name);
+        if (name) tokenToName[token] = name;
     }
-    return text;
+    return fillAbilityGameTextHtml(template, tokenToName);
 }
 
 async function traitNameFromDraft(draft, traitUuid) {
@@ -380,13 +480,14 @@ async function applyPendingOutSlots(actor, createdItems, draft) {
     const pending = meta.pendingOutSlots || {};
     const template = meta.gameTextTemplate || stripToPlain(outItem.system?.gameText) || "";
     const selections = {};
-    let text = template;
+    /** @type {Record<string, string>} */
+    const tokenToName = {};
 
     for (const [token, traitUuid] of Object.entries(pending)) {
         const owned = resolveOwnedTrait(actor, draft, traitUuid);
         if (owned) {
             selections[token] = owned.id;
-            text = text.replaceAll(token, owned.name);
+            tokenToName[token] = owned.name;
         }
     }
 
@@ -395,12 +496,14 @@ async function applyPendingOutSlots(actor, createdItems, draft) {
         [`flags.${MODULE_ID}.pendingOutSlots`]: foundry.data.operators.ForcedDeletion
     };
     if (template) {
-        update["system.gameText"] = `<p>${escapeHtml(text)}</p>`;
+        update["system.gameText"] = fillAbilityGameTextHtml(template, tokenToName);
     }
     await outItem.update(update);
 
-    if (text) {
-        await actor.update({ "system.out": `<p>${escapeHtml(text)}</p>` });
+    if (template) {
+        await actor.update({
+            "system.out": fillAbilityGameTextHtml(template, tokenToName)
+        });
     }
 }
 
@@ -413,13 +516,14 @@ async function applyPendingAbilitySlots(actor, createdItems, draft) {
         const pending = meta.pendingAbilitySlots || {};
         const template = meta.gameTextTemplate || stripToPlain(item.system?.gameText) || "";
         const selections = { ...(meta.selections || {}) };
-        let text = template;
+        /** @type {Record<string, string>} */
+        const tokenToName = {};
 
         for (const [token, traitUuid] of Object.entries(pending)) {
             const owned = resolveOwnedTrait(actor, draft, traitUuid);
             if (owned) {
                 selections[token] = owned.id;
-                text = text.replaceAll(token, owned.name);
+                tokenToName[token] = owned.name;
             }
         }
 
@@ -428,7 +532,7 @@ async function applyPendingAbilitySlots(actor, createdItems, draft) {
             [`flags.${MODULE_ID}.pendingAbilitySlots`]: foundry.data.operators.ForcedDeletion
         };
         if (template) {
-            update["system.gameText"] = `<p>${escapeHtml(text)}</p>`;
+            update["system.gameText"] = fillAbilityGameTextHtml(template, tokenToName);
         }
         await item.update(update);
     }

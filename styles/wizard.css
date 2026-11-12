@@ -427,6 +427,10 @@ button.scrpg-wizard-chart-tag.content-link {
   margin: 0.65rem 0 0.35rem;
 }
 
+.scrpg-wizard-intro strong {
+  font-weight: 700;
+}
+
 .scrpg-wizard-assign-block,
 .scrpg-wizard-principle-block,
 .scrpg-wizard-ability-block {
