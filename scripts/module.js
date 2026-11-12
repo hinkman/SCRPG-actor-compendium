@@ -1,4 +1,5 @@
 import * as categoryResolver from "./categoryResolver.js";
+import { promptAndGrantSelectedAbilities } from "./selectiveAbilityDrop.js";
 import * as apply from "./wizard/apply.js";
 import * as chartRoll from "./wizard/chartRoll.js";
 import { canCreateScrpgHero, openCreateWizard } from "./wizard/openWizard.js";
@@ -43,6 +44,7 @@ Hooks.once("ready", () => {
             chartRoll,
             silentRoll,
             apply,
+            promptAndGrantSelectedAbilities,
             openCreateWizard,
             canCreateScrpgHero
         };
@@ -98,10 +100,10 @@ Hooks.on("scrpgDropPersonality", (actor, item) => {
     void createPersonalityAbility(actor, item);
 });
 Hooks.on("scrpgDropArchetype", (actor, item) => {
-    void createArchetypeAbilities(actor, item);
+    void promptAndGrantSelectedAbilities(actor, item, "fromArchetype");
 });
 Hooks.on("scrpgDropPowerSource", (actor, item) => {
-    void createPowerSourceAbilities(actor, item);
+    void promptAndGrantSelectedAbilities(actor, item, "fromPowerSource");
 });
 
 /**
@@ -424,50 +426,6 @@ async function renderArchetypeAbilities(sheet, element) {
     }
 }
 
-async function createArchetypeAbilities(actor, item) {
-    try {
-        if (!actor?.isOwner) return;
-        if (actor.type !== "hero") return;
-        if (item?.type !== "archetypes") return;
-
-        const refs = item.flags?.[MODULE_ID]?.abilities;
-        if (!Array.isArray(refs) || !refs.length) return;
-
-        const existing = actor.items.filter(owned =>
-            owned.type === "ability"
-            && owned.flags?.[MODULE_ID]?.fromArchetype
-        );
-        if (existing.length) {
-            await actor.deleteEmbeddedDocuments("Item", existing.map(owned => owned.id));
-        }
-
-        const created = [];
-        for (const ref of refs) {
-            const ability = await fromUuid(ref.uuid);
-            if (!ability) {
-                console.warn(`${MODULE_ID} | Missing linked archetype ability ${ref.uuid}`);
-                continue;
-            }
-            const dataObj = ability.toObject();
-            delete dataObj._id;
-            delete dataObj.folder;
-            dataObj.flags = dataObj.flags || {};
-            dataObj.flags[MODULE_ID] = {
-                ...(dataObj.flags[MODULE_ID] || {}),
-                fromArchetype: item.name,
-                fromAbilityUuid: ref.uuid,
-                selections: {}
-            };
-            created.push(dataObj);
-        }
-        if (created.length) {
-            await actor.createEmbeddedDocuments("Item", created);
-        }
-    } catch (err) {
-        console.error(`${MODULE_ID} | Failed to create archetype abilities`, err);
-    }
-}
-
 async function renderPowerSourceExtras(sheet, element) {
     try {
         const item = sheet.document ?? sheet.item;
@@ -535,50 +493,6 @@ async function renderBackgroundExtras(sheet, element) {
         }
     } catch (err) {
         console.error(`${MODULE_ID} | Failed to render background sheet extras`, err);
-    }
-}
-
-async function createPowerSourceAbilities(actor, item) {
-    try {
-        if (!actor?.isOwner) return;
-        if (actor.type !== "hero") return;
-        if (item?.type !== "powerSources") return;
-
-        const refs = item.flags?.[MODULE_ID]?.abilities;
-        if (!Array.isArray(refs) || !refs.length) return;
-
-        const existing = actor.items.filter(owned =>
-            owned.type === "ability"
-            && owned.flags?.[MODULE_ID]?.fromPowerSource
-        );
-        if (existing.length) {
-            await actor.deleteEmbeddedDocuments("Item", existing.map(owned => owned.id));
-        }
-
-        const created = [];
-        for (const ref of refs) {
-            const ability = await fromUuid(ref.uuid);
-            if (!ability) {
-                console.warn(`${MODULE_ID} | Missing linked power source ability ${ref.uuid}`);
-                continue;
-            }
-            const dataObj = ability.toObject();
-            delete dataObj._id;
-            delete dataObj.folder;
-            dataObj.flags = dataObj.flags || {};
-            dataObj.flags[MODULE_ID] = {
-                ...(dataObj.flags[MODULE_ID] || {}),
-                fromPowerSource: item.name,
-                fromAbilityUuid: ref.uuid,
-                selections: {}
-            };
-            created.push(dataObj);
-        }
-        if (created.length) {
-            await actor.createEmbeddedDocuments("Item", created);
-        }
-    } catch (err) {
-        console.error(`${MODULE_ID} | Failed to create power source abilities`, err);
     }
 }
 
