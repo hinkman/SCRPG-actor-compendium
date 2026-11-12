@@ -1,0 +1,64 @@
+<div class="scrpg-wizard-power-source">
+  <header class="scrpg-wizard-step-header">
+    <h2>Step 2 — Power Source</h2>
+    <p>
+      {{#if isGuided}}
+        Roll your Background’s PS dice ({{powerSourceDiceLabel}}) silently, then pick a legal row.
+      {{else}}
+        Constructed: pick any power source. Power die sizes still come from Background
+        <strong>{{selectedBackgroundName}}</strong> ({{powerSourceDiceLabel}}).
+      {{/if}}
+    </p>
+  </header>
+
+  {{#if isGuided}}
+    <section class="scrpg-wizard-roll-panel" aria-label="Power Source roll">
+      <div class="scrpg-wizard-roll-panel-copy">
+        <span class="scrpg-wizard-roll-demo-title">Silent roll</span>
+        {{#if rollSummary}}
+          <span class="scrpg-wizard-roll-demo-result">
+            <strong>{{rollSummary.formula}}</strong>
+            {{#if rollSummary.detail}}
+              <span class="scrpg-wizard-roll-demo-detail">{{rollSummary.detail}}</span>
+            {{/if}}
+          </span>
+          {{#if legalNumbers.length}}
+            <span class="scrpg-wizard-legal-nums">Legal rows: {{#each legalNumbers}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</span>
+          {{/if}}
+        {{else}}
+          <span class="scrpg-wizard-roll-demo-hint">Roll {{powerSourceDiceLabel}} to unlock legal power sources.</span>
+        {{/if}}
+      </div>
+      <div class="scrpg-wizard-roll-demo-actions">
+        {{#unless rollSummary}}
+          <button type="button" class="scrpg-wizard-btn" data-action="chartRoll">
+            <i class="fas fa-dice"></i> Roll
+          </button>
+        {{/unless}}
+        <button type="button" class="scrpg-wizard-btn" data-action="chartReroll" {{#unless rollSummary}}disabled{{/unless}}>
+          <i class="fas fa-rotate"></i> Re-roll
+        </button>
+      </div>
+    </section>
+  {{/if}}
+
+  <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Power Sources">
+    {{#each chartRows}}
+      <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}{{#unless available}} is-locked{{/unless}}">
+        <input
+          type="radio"
+          name="powerSourceNumber"
+          value="{{number}}"
+          data-uuid="{{uuid}}"
+          {{#if selected}}checked{{/if}}
+          {{#unless available}}disabled{{/unless}}
+        >
+        <span class="scrpg-wizard-chart-num">{{number}}</span>
+        <span class="scrpg-wizard-chart-body">
+          <span class="scrpg-wizard-chart-name">{{name}}</span>
+          <span class="scrpg-wizard-chart-meta">Archetype dice: {{archetypeDiceLabel}}</span>
+        </span>
+      </label>
+    {{/each}}
+  </div>
+</div>

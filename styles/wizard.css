@@ -1,4 +1,4 @@
-/* SCRPG Character Creation Wizard (Slice B shell) */
+/* SCRPG Character Creation Wizard (Slice B shell + Slice C Steps 1–2) */
 
 .scrpg-wizard .window-content {
   padding: 0;
@@ -207,4 +207,184 @@
 #scrpg-create-hero-btn {
   width: 100%;
   margin: 0.25rem 0 0;
+}
+
+.scrpg-wizard-roll-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin: 0.85rem 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px dashed rgba(120, 46, 34, 0.35);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.scrpg-wizard-roll-panel-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 12rem;
+  flex: 1 1 14rem;
+}
+
+.scrpg-wizard-legal-nums {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.scrpg-wizard-chart-list {
+  display: grid;
+  gap: 0.4rem;
+  max-height: 22rem;
+  overflow: auto;
+  padding-right: 0.15rem;
+}
+
+.scrpg-wizard-chart-row {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--color-border-light-primary, #999);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+}
+
+.scrpg-wizard-chart-row input {
+  margin-top: 0.2rem;
+}
+
+.scrpg-wizard-chart-row.is-selected {
+  border-color: var(--color-border-highlight-1, #782e22);
+  box-shadow: 0 0 0 1px rgba(120, 46, 34, 0.35);
+}
+
+.scrpg-wizard-chart-row.is-locked {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scrpg-wizard-chart-num {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.25rem;
+  background: rgba(120, 46, 34, 0.12);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.scrpg-wizard-chart-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.scrpg-wizard-chart-name {
+  font-weight: 650;
+}
+
+.scrpg-wizard-chart-meta,
+.scrpg-wizard-intro,
+.scrpg-wizard-hint,
+.scrpg-wizard-pick-count,
+.scrpg-wizard-empty {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.scrpg-wizard-intro {
+  margin: 0.65rem 0 0.35rem;
+}
+
+.scrpg-wizard-assign-block,
+.scrpg-wizard-principle-block,
+.scrpg-wizard-ability-block {
+  margin-top: 0.9rem;
+}
+
+.scrpg-wizard-assign-block h3,
+.scrpg-wizard-principle-block h3,
+.scrpg-wizard-ability-block h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.scrpg-wizard-assign-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.scrpg-wizard-assign-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5.5rem;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.scrpg-wizard-assign-trait,
+.scrpg-wizard-assign-die {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.scrpg-wizard-assign-trait .label,
+.scrpg-wizard-assign-die .label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+.scrpg-wizard-locked-trait {
+  padding: 0.35rem 0.45rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+}
+
+.scrpg-wizard-ability-list {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.scrpg-wizard-ability-option {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--color-border-light-primary, #999);
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.scrpg-wizard-ability-option.is-selected {
+  border-color: var(--color-border-highlight-1, #782e22);
+}
+
+.scrpg-wizard-ability-name {
+  flex: 1 1 auto;
+  font-weight: 600;
+}
+
+.scrpg-wizard-ability-color {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.scrpg-wizard-hint {
+  margin: 0 0 0.4rem;
+  font-style: italic;
 }

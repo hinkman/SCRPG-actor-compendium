@@ -1,4 +1,5 @@
 import * as categoryResolver from "./categoryResolver.js";
+import * as chartRoll from "./wizard/chartRoll.js";
 import { canCreateScrpgHero, openCreateWizard } from "./wizard/openWizard.js";
 import * as silentRoll from "./wizard/silentRoll.js";
 
@@ -8,6 +9,10 @@ const { loadTemplates } = foundry.applications.handlebars;
 const WIZARD_TEMPLATES = [
     `modules/${MODULE_ID}/templates/wizard/wizard.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/method.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/background.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/backgroundDetails.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/powerSource.hbs`,
+    `modules/${MODULE_ID}/templates/wizard/steps/powerSourceDetails.hbs`,
     `modules/${MODULE_ID}/templates/wizard/steps/placeholder.hbs`
 ];
 
@@ -31,6 +36,7 @@ Hooks.once("ready", () => {
         mod.api = {
             ...(mod.api || {}),
             categoryResolver,
+            chartRoll,
             silentRoll,
             openCreateWizard,
             canCreateScrpgHero

@@ -1,0 +1,68 @@
+<div class="scrpg-wizard-bg-details">
+  <header class="scrpg-wizard-step-header">
+    <h2>Background — Qualities &amp; Principle</h2>
+    <p>
+      <strong>{{selectedBackgroundName}}</strong>:
+      assign {{qualityDiceLabel}} to qualities, then pick Principle₁ from
+      <strong>{{principleCategoryLabel}}</strong>.
+    </p>
+  </header>
+
+  {{#if qualitiesIntro}}
+    <p class="scrpg-wizard-intro">{{qualitiesIntro}}</p>
+  {{/if}}
+
+  <section class="scrpg-wizard-assign-block" aria-label="Quality dice">
+    <h3>Qualities</h3>
+    <div class="scrpg-wizard-assign-list">
+      {{#each qualitySlots}}
+        <div class="scrpg-wizard-assign-row" data-slot-index="{{slotIndex}}">
+          <label class="scrpg-wizard-assign-trait">
+            <span class="label">{{#if required}}Required{{else}}Quality{{/if}}</span>
+            {{#if lockedUuid}}
+              <input type="hidden" name="qualityUuid.{{slotIndex}}" value="{{lockedUuid}}">
+              <span class="scrpg-wizard-locked-trait">{{lockedName}}</span>
+            {{else}}
+              <select name="qualityUuid.{{slotIndex}}">
+                <option value="">— choose —</option>
+                {{#each traitOptions}}
+                  <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+                {{/each}}
+              </select>
+            {{/if}}
+          </label>
+          <label class="scrpg-wizard-assign-die">
+            <span class="label">Die</span>
+            <select name="qualityDie.{{slotIndex}}">
+              <option value="">—</option>
+              {{#each dieOptions}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="scrpg-wizard-principle-block" aria-label="Principle">
+    <h3>Principle₁ ({{principleCategoryLabel}})</h3>
+    <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Principles">
+      {{#each principles}}
+        <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}">
+          <input
+            type="radio"
+            name="principleUuid"
+            value="{{uuid}}"
+            {{#if selected}}checked{{/if}}
+          >
+          <span class="scrpg-wizard-chart-body">
+            <span class="scrpg-wizard-chart-name">{{name}}</span>
+          </span>
+        </label>
+      {{else}}
+        <p class="scrpg-wizard-empty">No principles found for this category.</p>
+      {{/each}}
+    </div>
+  </section>
+</div>
