@@ -20,27 +20,39 @@
       <p class="scrpg-wizard-hint">Requires a {{sourceItemType}} in the {{sourceCategory}} category{{#if needsD8}}+; Inherent needs d8+{{/if}}.</p>
       <div class="scrpg-wizard-ability-list">
         {{#each abilities}}
-          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}{{#if disabled}} is-locked{{/if}}">
-            <input type="checkbox" name="redAbility" value="{{uuid}}" {{#if selected}}checked{{/if}} {{#if disabled}}disabled{{/if}}>
-            <span class="scrpg-wizard-ability-name">{{name}}</span>
-            <span class="scrpg-wizard-ability-color">{{abilityType}}</span>
-          </label>
-          {{#if selected}}
-            {{#if preview}}
-              <p class="scrpg-wizard-intro">{{preview}}</p>
+          <div class="scrpg-wizard-ability-row{{#if selected}} is-open{{/if}}">
+            <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}{{#if disabled}} is-locked{{/if}}">
+              <input type="checkbox" name="redAbility" value="{{uuid}}" {{#if selected}}checked{{/if}} {{#if disabled}}disabled{{/if}}>
+              <button
+                type="button"
+                class="content-link scrpg-wizard-chart-tag"
+                data-action="previewChartItem"
+                data-uuid="{{uuid}}"
+                data-tooltip="Item"
+                title="Open {{name}}"
+                aria-label="Open {{name}}"
+              >
+                <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{name}}
+              </button>
+              <span class="scrpg-wizard-ability-color">{{abilityType}}</span>
+            </label>
+            {{#if selected}}
+              {{#if preview}}
+                <p class="scrpg-wizard-intro">{{preview}}</p>
+              {{/if}}
+              {{#each slotRows}}
+                <label class="scrpg-wizard-text-field scrpg-wizard-ability-slot">
+                  <span class="label">Fill {{token}}</span>
+                  <select name="redSlot.{{abilityKey}}.{{tokenKey}}">
+                    <option value="">— choose —</option>
+                    {{#each options}}
+                      <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+                    {{/each}}
+                  </select>
+                </label>
+              {{/each}}
             {{/if}}
-            {{#each slotRows}}
-              <label class="scrpg-wizard-text-field">
-                <span class="label">Fill {{token}}</span>
-                <select name="redSlot.{{abilityKey}}.{{tokenKey}}">
-                  <option value="">— choose —</option>
-                  {{#each options}}
-                    <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
-                  {{/each}}
-                </select>
-              </label>
-            {{/each}}
-          {{/if}}
+          </div>
         {{/each}}
       </div>
     </section>

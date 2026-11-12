@@ -21,7 +21,17 @@
             <span class="label">{{#if required}}Required{{else}}Power{{/if}}</span>
             {{#if lockedUuid}}
               <input type="hidden" name="powerUuid.{{slotIndex}}" value="{{lockedUuid}}">
-              <span class="scrpg-wizard-locked-trait">{{lockedName}}</span>
+              <button
+                type="button"
+                class="content-link scrpg-wizard-chart-tag scrpg-wizard-locked-trait-tag"
+                data-action="previewChartItem"
+                data-uuid="{{lockedUuid}}"
+                data-tooltip="Item"
+                title="Open {{lockedName}}"
+                aria-label="Open {{lockedName}}"
+              >
+                <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{lockedName}}
+              </button>
             {{else}}
               <select name="powerUuid.{{slotIndex}}">
                 <option value="">— choose —</option>
@@ -65,17 +75,45 @@
       {{/if}}
       <div class="scrpg-wizard-ability-list">
         {{#each abilities}}
-          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}">
-            <input
-              type="checkbox"
-              name="abilityPick.{{../index}}"
-              value="{{uuid}}"
-              {{#if selected}}checked{{/if}}
-              {{#if disabled}}disabled{{/if}}
-            >
-            <span class="scrpg-wizard-ability-name">{{name}}</span>
-            <span class="scrpg-wizard-ability-color">{{../color}}</span>
-          </label>
+          <div class="scrpg-wizard-ability-row{{#if selected}} is-open{{/if}}">
+            <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}">
+              <input
+                type="checkbox"
+                name="abilityPick.{{../index}}"
+                value="{{uuid}}"
+                {{#if selected}}checked{{/if}}
+                {{#if disabled}}disabled{{/if}}
+              >
+              <button
+                type="button"
+                class="content-link scrpg-wizard-chart-tag"
+                data-action="previewChartItem"
+                data-uuid="{{uuid}}"
+                data-tooltip="Item"
+                title="Open {{name}}"
+                aria-label="Open {{name}}"
+              >
+                <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{name}}
+              </button>
+              <span class="scrpg-wizard-ability-color">{{../color}}</span>
+            </label>
+            {{#if selected}}
+              {{#if preview}}
+                <p class="scrpg-wizard-intro">{{preview}}</p>
+              {{/if}}
+              {{#each slotRows}}
+                <label class="scrpg-wizard-text-field scrpg-wizard-ability-slot">
+                  <span class="label">Fill {{token}}</span>
+                  <select name="psAbilitySlot.{{abilityKey}}.{{tokenKey}}">
+                    <option value="">— choose —</option>
+                    {{#each options}}
+                      <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+                    {{/each}}
+                  </select>
+                </label>
+              {{/each}}
+            {{/if}}
+          </div>
         {{/each}}
       </div>
       <p class="scrpg-wizard-pick-count">

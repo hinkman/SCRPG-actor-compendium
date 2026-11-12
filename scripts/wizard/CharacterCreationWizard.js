@@ -192,6 +192,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._allPrinciples = [];
         /** @type {Array<object>} */
         this._allTraitsCatalog = [];
+        /** @type {Map<string, {uuid:string,name:string,slots:Array<object>,preview:string|null,abilityType?:string}>} */
+        this._abilityMeta = new Map();
         /** @type {boolean} */
         this._creating = false;
         /** @type {boolean} */
@@ -265,11 +267,19 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             case "powerSource":
                 return isPowerSourceChartComplete(draft);
             case "powerSourceDetails":
-                return isPowerSourceDetailsComplete(draft, this._selectedPowerSourceRow?.wizard);
+                return isPowerSourceDetailsComplete(
+                    draft,
+                    this._selectedPowerSourceRow?.wizard,
+                    this._abilityMeta
+                );
             case "archetype":
                 return isArchetypeChartComplete(draft);
             case "archetypeDetails":
-                return isArchetypeDetailsComplete(draft, this._selectedArchetypeRow?.wizard);
+                return isArchetypeDetailsComplete(
+                    draft,
+                    this._selectedArchetypeRow?.wizard,
+                    this._abilityMeta
+                );
             case "personality":
                 return isPersonalityChartComplete(draft);
             case "personalityDetails":
@@ -367,7 +377,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             Object.assign(base, this.#powerSourceDetailsContext());
             base.nextRequirements = powerSourceDetailsRemaining(
                 draft,
-                this._selectedPowerSourceRow?.wizard
+                this._selectedPowerSourceRow?.wizard,
+                this._abilityMeta
             );
         } else if (step.id === "archetype") {
             Object.assign(base, this.#archetypeChartContext());
@@ -499,6 +510,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             this._powerOptions = [];
             ui.notifications?.warn("Could not load power choices for this power source.");
         }
+        await this.#ensureAbilityMeta(abilityUuidsFromPicks(wizard.abilityPicks));
     }
 
     async #loadArchetypeDetailsOptions() {
@@ -513,6 +525,35 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             || this.wizardState.archetype.principleCategory
             || null;
         this._principles = category ? await loadPrinciplesForCategory(category) : [];
+        await this.#ensureAbilityMeta(abilityUuidsFromPicks(wizard.abilityPicks));
+    }
+
+    /**
+     * Cache ability slot / preview metadata for inline FILL controls.
+     * @param {string[]} uuids
+     */
+    async #ensureAbilityMeta(uuids = []) {
+        for (const uuid of uuids) {
+            if (!uuid || this._abilityMeta.has(uuid)) continue;
+            const doc = await fromUuid(uuid);
+            if (!doc) {
+                this._abilityMeta.set(uuid, {
+                    uuid,
+                    name: uuid,
+                    slots: [],
+                    preview: null
+                });
+                continue;
+            }
+            const flags = doc.flags?.[MODULE_ID] || {};
+            this._abilityMeta.set(uuid, {
+                uuid,
+                name: doc.name,
+                slots: Array.isArray(flags.slots) ? flags.slots : [],
+                preview: flags.gameTextTemplate || stripHtml(doc.system?.gameText) || null,
+                abilityType: doc.system?.type || "A"
+            });
+        }
     }
 
     async #loadPersonalityDetailsOptions() {
@@ -673,6 +714,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             }))
         }));
 
+        const slotTraits = collectAssignedTraits(this.wizardState);
         const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
             const selected = draft.abilitySelections?.[String(index)] || [];
             const count = Number(group?.count) || 0;
@@ -693,11 +735,20 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     .filter(ab => ab?.uuid)
                     .map(ab => {
                         const isSelected = selected.includes(ab.uuid);
+                        const meta = this._abilityMeta.get(ab.uuid);
                         return {
                             uuid: ab.uuid,
-                            name: ab.name || ab.uuid,
+                            name: ab.name || meta?.name || ab.uuid,
                             selected: isSelected,
-                            disabled: atLimit && !isSelected
+                            disabled: atLimit && !isSelected,
+                            preview: isSelected ? (meta?.preview || null) : null,
+                            slotRows: isSelected
+                                ? buildInlineSlotRows(
+                                    meta,
+                                    slotTraits,
+                                    draft.abilitySlotSelections?.[ab.uuid]
+                                )
+                                : []
                         };
                     })
             };
@@ -766,6 +817,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             }))
         }));
 
+        const slotTraits = collectAssignedTraits(this.wizardState);
         const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
             const selected = draft.abilitySelections?.[String(index)] || [];
             const count = Number(group.count) || 0;
@@ -783,11 +835,20 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 selectedCount: selected.length,
                 abilities: (group.abilities || []).map(ab => {
                     const isSelected = selected.includes(ab.uuid);
+                    const meta = this._abilityMeta.get(ab.uuid);
                     return {
                         uuid: ab.uuid,
-                        name: ab.name,
+                        name: ab.name || meta?.name || ab.uuid,
                         selected: isSelected,
-                        disabled: autoGranted || (atLimit && !isSelected)
+                        disabled: autoGranted || (atLimit && !isSelected),
+                        preview: isSelected ? (meta?.preview || null) : null,
+                        slotRows: isSelected
+                            ? buildInlineSlotRows(
+                                meta,
+                                slotTraits,
+                                draft.abilitySlotSelections?.[ab.uuid]
+                            )
+                            : []
                     };
                 })
             };
@@ -893,6 +954,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             healthAnyNote: notes.includes("healthMayUseAnyPowerOrQuality")
                 ? "Note for Health: you may use any power or quality when determining Max Health."
                 : null,
+            outAbilityUuid: draft.outAbilityUuid || null,
+            outAbilityName: outAbility?.name || "Out ability",
             outPreview,
             outSlots
         };
@@ -919,25 +982,16 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 });
             }
             const isSelected = selected.has(ability.uuid);
-            const slotRows = isSelected
-                ? slotOptionsForAbility(ability, traits).map(row => ({
-                    token: row.token,
-                    tokenKey: tokenKeyFromToken(row.token),
-                    abilityKey: abilityKeyFromUuid(ability.uuid),
-                    options: row.options.map(opt => ({
-                        ...opt,
-                        selected: draft.slotSelections?.[ability.uuid]?.[row.token] === opt.uuid
-                    }))
-                }))
-                : [];
             groupsMap.get(key).abilities.push({
                 uuid: ability.uuid,
                 name: ability.name,
                 abilityType: ability.abilityType,
                 selected: isSelected,
                 disabled: atLimit && !isSelected,
-                preview: ability.preview,
-                slotRows
+                preview: isSelected ? (ability.preview || null) : null,
+                slotRows: isSelected
+                    ? buildInlineSlotRows(ability, traits, draft.slotSelections?.[ability.uuid])
+                    : []
             });
         }
 
@@ -1000,18 +1054,6 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             };
         });
 
-        const extraAbility = eligibleExtra.find(a => a.uuid === retcon.extraRedUuid) || null;
-        const extraRedSlots = extraAbility
-            ? slotOptionsForAbility(extraAbility, effectiveTraits).map(row => ({
-                token: row.token,
-                tokenKey: tokenKeyFromToken(row.token),
-                options: row.options.map(opt => ({
-                    ...opt,
-                    selected: retcon.extraRedSlotSelections?.[row.token] === opt.uuid
-                }))
-            }))
-            : [];
-
         return {
             options,
             isExtraRed: retcon.option === "extraRed",
@@ -1020,13 +1062,19 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             isBumpRed: retcon.option === "bumpRedStatus",
             isAddD6: retcon.option === "addD6",
             isSwapPrinciple: retcon.option === "swapPrinciple",
-            extraRedChoices: eligibleExtra.map(a => ({
-                uuid: a.uuid,
-                name: a.name,
-                categoryLabel: a.categoryLabel,
-                selected: a.uuid === retcon.extraRedUuid
-            })),
-            extraRedSlots,
+            extraRedChoices: eligibleExtra.map(a => {
+                const isSelected = a.uuid === retcon.extraRedUuid;
+                return {
+                    uuid: a.uuid,
+                    name: a.name,
+                    categoryLabel: a.categoryLabel,
+                    selected: isSelected,
+                    preview: isSelected ? (a.preview || null) : null,
+                    slotRows: isSelected
+                        ? buildInlineSlotRows(a, effectiveTraits, retcon.extraRedSlotSelections)
+                        : []
+                };
+            }),
             traitOptions: traits.map(t => ({
                 ...t,
                 selectedA: t.uuid === retcon.swapUuidA,
@@ -1287,6 +1335,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             lockedName: s.lockedName
         }));
         this.wizardState.powerSource.abilitySelections = {};
+        this.wizardState.powerSource.abilitySlotSelections = {};
         this._selectedPowerSourceRow = row;
         return true;
     }
@@ -1315,6 +1364,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
         const pickMap = data.abilityPick || {};
         const groups = wizard.abilityPicks || [];
+        const selectedUuids = [];
         for (let i = 0; i < groups.length; i++) {
             const key = String(i);
             let selected = pickMap[key];
@@ -1327,6 +1377,32 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             if (prev.join("|") !== selected.join("|")) {
                 draft.abilitySelections[key] = selected;
                 changed = true;
+            }
+            selectedUuids.push(...selected);
+        }
+
+        draft.abilitySlotSelections = draft.abilitySlotSelections || {};
+        for (const uuid of Object.keys(draft.abilitySlotSelections)) {
+            if (!selectedUuids.includes(uuid)) {
+                delete draft.abilitySlotSelections[uuid];
+                changed = true;
+            }
+        }
+
+        const slotRoot = data.psAbilitySlot || {};
+        for (const uuid of selectedUuids) {
+            const meta = this._abilityMeta.get(uuid);
+            if (!meta) continue;
+            const abilityKey = abilityKeyFromUuid(uuid);
+            const slotMap = slotRoot[abilityKey] || {};
+            draft.abilitySlotSelections[uuid] = draft.abilitySlotSelections[uuid] || {};
+            for (const slot of meta.slots || []) {
+                const key = tokenKeyFromToken(slot.token);
+                const next = slotMap[key] || null;
+                if ((draft.abilitySlotSelections[uuid][slot.token] || null) !== next) {
+                    draft.abilitySlotSelections[uuid][slot.token] = next;
+                    changed = true;
+                }
             }
         }
 
@@ -1358,6 +1434,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             wizard
         ).map(s => ({ ...s }));
         this.wizardState.archetype.abilitySelections = defaultAbilitySelections(wizard);
+        this.wizardState.archetype.abilitySlotSelections = {};
         this._selectedArchetypeRow = row;
         return true;
     }
@@ -1390,6 +1467,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
         const pickMap = data.abilityPick || {};
         const groups = wizard.abilityPicks || [];
+        const selectedUuids = [];
         for (let i = 0; i < groups.length; i++) {
             const key = String(i);
             const group = groups[i];
@@ -1408,6 +1486,32 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             if (prev.join("|") !== selected.join("|")) {
                 draft.abilitySelections[key] = selected;
                 changed = true;
+            }
+            selectedUuids.push(...selected);
+        }
+
+        draft.abilitySlotSelections = draft.abilitySlotSelections || {};
+        for (const uuid of Object.keys(draft.abilitySlotSelections)) {
+            if (!selectedUuids.includes(uuid)) {
+                delete draft.abilitySlotSelections[uuid];
+                changed = true;
+            }
+        }
+
+        const slotRoot = data.archAbilitySlot || {};
+        for (const uuid of selectedUuids) {
+            const meta = this._abilityMeta.get(uuid);
+            if (!meta) continue;
+            const abilityKey = abilityKeyFromUuid(uuid);
+            const slotMap = slotRoot[abilityKey] || {};
+            draft.abilitySlotSelections[uuid] = draft.abilitySlotSelections[uuid] || {};
+            for (const slot of meta.slots || []) {
+                const key = tokenKeyFromToken(slot.token);
+                const next = slotMap[key] || null;
+                if ((draft.abilitySlotSelections[uuid][slot.token] || null) !== next) {
+                    draft.abilitySlotSelections[uuid][slot.token] = next;
+                    changed = true;
+                }
             }
         }
 
@@ -1943,10 +2047,10 @@ function capitalize(value) {
 
 function constraintNote(constraint) {
     if (constraint === "differentPower") {
-        return "Each chosen ability should use a different power (enforced when the hero is created).";
+        return "Each chosen ability should use a different power (fill slots below each pick).";
     }
     if (constraint === "atLeastTwoDifferentPowers") {
-        return "Use at least two different powers across the chosen abilities (sheet pickers after create).";
+        return "Use at least two different powers across the chosen abilities (fill slots below each pick).";
     }
     if (constraint === "includeFlightOrSignatureVehicle") {
         return "At least one chosen ability should use Flight or Signature Vehicle.";
@@ -1963,6 +2067,35 @@ function tokenKeyFromToken(token) {
 
 function abilityKeyFromUuid(uuid) {
     return String(uuid || "").replace(/[^a-zA-Z0-9]+/g, "_");
+}
+
+function abilityUuidsFromPicks(abilityPicks = []) {
+    const uuids = [];
+    for (const group of abilityPicks || []) {
+        for (const ab of group?.abilities || []) {
+            if (ab?.uuid) uuids.push(ab.uuid);
+        }
+    }
+    return uuids;
+}
+
+/**
+ * Inline FILL dropdown rows for a selected ability.
+ * @param {{uuid?:string,slots?:Array<object>}|null|undefined} ability
+ * @param {Array<object>} traits
+ * @param {Record<string, string>|null|undefined} slotSelections
+ */
+function buildInlineSlotRows(ability, traits, slotSelections) {
+    if (!ability) return [];
+    return slotOptionsForAbility(ability, traits).map(row => ({
+        token: row.token,
+        tokenKey: tokenKeyFromToken(row.token),
+        abilityKey: abilityKeyFromUuid(ability.uuid),
+        options: row.options.map(opt => ({
+            ...opt,
+            selected: slotSelections?.[row.token] === opt.uuid
+        }))
+    }));
 }
 
 function stripHtml(html) {

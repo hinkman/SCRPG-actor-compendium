@@ -467,15 +467,12 @@ button.scrpg-wizard-chart-tag.content-link {
   opacity: 0.7;
 }
 
-.scrpg-wizard-locked-trait {
-  padding: 0.35rem 0.45rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-  background: rgba(255, 255, 255, 0.65);
-  font-weight: 600;
+.scrpg-wizard-ability-list {
+  display: grid;
+  gap: 0.45rem;
 }
 
-.scrpg-wizard-ability-list {
+.scrpg-wizard-ability-row {
   display: grid;
   gap: 0.35rem;
 }
@@ -496,6 +493,11 @@ button.scrpg-wizard-chart-tag.content-link {
   border-color: var(--color-border-highlight-1, #782e22);
 }
 
+.scrpg-wizard-ability-option .scrpg-wizard-chart-tag.content-link {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .scrpg-wizard-ability-name {
   flex: 1 1 auto;
   font-weight: 600;
@@ -505,6 +507,33 @@ button.scrpg-wizard-chart-tag.content-link {
   font-size: 0.75rem;
   text-transform: uppercase;
   opacity: 0.7;
+}
+
+.scrpg-wizard-ability-row .scrpg-wizard-intro,
+.scrpg-wizard-ability-row .scrpg-wizard-ability-slot {
+  margin: 0 0.15rem;
+}
+
+.scrpg-wizard-ability-row .scrpg-wizard-ability-slot {
+  margin-top: 0;
+}
+
+.scrpg-wizard-locked-trait-tag.content-link {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.scrpg-wizard-locked-trait {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
 }
 
 .scrpg-wizard-hint {

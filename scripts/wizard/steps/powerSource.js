@@ -32,9 +32,10 @@ export function isPowerSourceChartComplete(draft) {
  * Relic and similar sources need Yellow AND Green picks — not Yellow alone.
  * @param {object} draft
  * @param {object|null} selectedWizard  power source wizard flags
+ * @param {Map<string, {slots?: Array<{token:string}>}>|null} [abilityMeta]
  * @returns {string[]}
  */
-export function powerSourceDetailsRemaining(draft, selectedWizard = null) {
+export function powerSourceDetailsRemaining(draft, selectedWizard = null, abilityMeta = null) {
     const ps = draft?.powerSource;
     const bg = draft?.background;
     const remaining = [];
@@ -51,10 +52,12 @@ export function powerSourceDetailsRemaining(draft, selectedWizard = null) {
     const picks = selectedWizard?.abilityPicks;
     if (!Array.isArray(picks) || !picks.length) return remaining;
 
+    const selectedUuids = [];
     for (let i = 0; i < picks.length; i++) {
         const need = Number(picks[i].count) || 0;
         const selected = ps.abilitySelections?.[String(i)] ?? [];
         const have = Array.isArray(selected) ? new Set(selected.filter(Boolean)).size : 0;
+        if (Array.isArray(selected)) selectedUuids.push(...selected.filter(Boolean));
         if (have !== need) {
             const color = String(picks[i].color || "ability").replace(/^\w/, c => c.toUpperCase());
             const left = Math.max(0, need - have);
@@ -65,15 +68,38 @@ export function powerSourceDetailsRemaining(draft, selectedWizard = null) {
             );
         }
     }
+
+    if (abilityMeta && !abilitySlotsFilled(selectedUuids, abilityMeta, ps.abilitySlotSelections)) {
+        remaining.push("Fill power/quality slots on selected abilities");
+    }
     return remaining;
 }
 
 /**
  * @param {object} draft
  * @param {object|null} selectedWizard  power source wizard flags
+ * @param {Map<string, {slots?: Array<{token:string}>}>|null} [abilityMeta]
  */
-export function isPowerSourceDetailsComplete(draft, selectedWizard = null) {
-    return powerSourceDetailsRemaining(draft, selectedWizard).length === 0;
+export function isPowerSourceDetailsComplete(draft, selectedWizard = null, abilityMeta = null) {
+    return powerSourceDetailsRemaining(draft, selectedWizard, abilityMeta).length === 0;
+}
+
+/**
+ * @param {string[]} selectedUuids
+ * @param {Map<string, {slots?: Array<{token:string}>}>|Record<string, {slots?: Array<{token:string}>}>} abilityMeta
+ * @param {Record<string, Record<string, string>>|null|undefined} slotSelections
+ */
+export function abilitySlotsFilled(selectedUuids, abilityMeta, slotSelections) {
+    const lookup = abilityMeta instanceof Map
+        ? abilityMeta
+        : new Map(Object.entries(abilityMeta || {}));
+    for (const uuid of selectedUuids || []) {
+        const meta = lookup.get(uuid);
+        for (const slot of meta?.slots || []) {
+            if (!slotSelections?.[uuid]?.[slot.token]) return false;
+        }
+    }
+    return true;
 }
 
 /**
