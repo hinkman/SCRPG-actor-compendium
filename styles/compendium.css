@@ -118,16 +118,18 @@
 }
 
 /*
- * Archetype / power-source sheets: fill the resizable window so description
- * grows/shrinks with the frame instead of staying a short fixed editor box.
+ * Archetype / power-source / background sheets: fill the resizable window so
+ * description grows/shrinks with the frame instead of a short fixed editor box.
  */
 .SCRPG.sheet.item:has(.archetype) .sheet-content-root,
-.SCRPG.sheet.item:has(.power-source) .sheet-content-root {
+.SCRPG.sheet.item:has(.power-source) .sheet-content-root,
+.SCRPG.sheet.item:has(.background) .sheet-content-root {
     overflow: hidden;
 }
 
 .SCRPG.sheet.item .archetype.sheet-content,
-.SCRPG.sheet.item .power-source.sheet-content {
+.SCRPG.sheet.item .power-source.sheet-content,
+.SCRPG.sheet.item .background.sheet-content {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -136,7 +138,8 @@
 }
 
 .SCRPG.sheet.item .archetype > .box-border,
-.SCRPG.sheet.item .power-source > .box-border {
+.SCRPG.sheet.item .power-source > .box-border,
+.SCRPG.sheet.item .background > .box-border {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -147,12 +150,14 @@
 }
 
 .SCRPG.sheet.item .archetype .archetype-title,
-.SCRPG.sheet.item .power-source .power-source-title {
+.SCRPG.sheet.item .power-source .power-source-title,
+.SCRPG.sheet.item .background .background-title {
     flex: 0 0 auto;
 }
 
 .SCRPG.sheet.item .archetype .archetype-description,
-.SCRPG.sheet.item .power-source .power-source-description {
+.SCRPG.sheet.item .power-source .power-source-description,
+.SCRPG.sheet.item .background .background-description {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -161,7 +166,8 @@
 }
 
 .SCRPG.sheet.item .archetype .archetype-description prose-mirror,
-.SCRPG.sheet.item .power-source .power-source-description prose-mirror {
+.SCRPG.sheet.item .power-source .power-source-description prose-mirror,
+.SCRPG.sheet.item .background .background-description prose-mirror {
     display: block;
     flex: 1 1 auto;
     min-height: 0;
@@ -172,14 +178,16 @@
 }
 
 .SCRPG.sheet.item .archetype .archetype-description prose-mirror .editor-container,
-.SCRPG.sheet.item .power-source .power-source-description prose-mirror .editor-container {
+.SCRPG.sheet.item .power-source .power-source-description prose-mirror .editor-container,
+.SCRPG.sheet.item .background .background-description prose-mirror .editor-container {
     height: auto;
     min-height: 0;
     max-height: none;
 }
 
 .SCRPG.sheet.item .archetype .editor,
-.SCRPG.sheet.item .power-source .editor {
+.SCRPG.sheet.item .power-source .editor,
+.SCRPG.sheet.item .background .editor {
     height: auto;
     min-height: 0;
     max-height: none;
@@ -187,12 +195,14 @@
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-block,
 .SCRPG.sheet.item .power-source .scrpg-archetype-block,
+.SCRPG.sheet.item .background .scrpg-archetype-block,
 .scrpg-archetype-block {
     margin: 0 0 0.75rem;
 }
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-section,
 .SCRPG.sheet.item .power-source .scrpg-archetype-section,
+.SCRPG.sheet.item .background .scrpg-archetype-section,
 .scrpg-archetype-section {
     margin: 0.35rem 0 0.45rem;
     padding: 0.15rem 0.25rem;
@@ -209,6 +219,7 @@
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-ability-links,
 .SCRPG.sheet.item .power-source .scrpg-archetype-ability-links,
+.SCRPG.sheet.item .background .scrpg-archetype-ability-links,
 .scrpg-archetype-ability-links {
     margin: 0.15rem 0 0.65rem;
     padding-left: 1.25rem;
@@ -216,6 +227,7 @@
 
 .SCRPG.sheet.item .archetype .scrpg-archetype-ability-links li,
 .SCRPG.sheet.item .power-source .scrpg-archetype-ability-links li,
+.SCRPG.sheet.item .background .scrpg-archetype-ability-links li,
 .scrpg-archetype-ability-links li {
     margin: 0.1rem 0;
 }

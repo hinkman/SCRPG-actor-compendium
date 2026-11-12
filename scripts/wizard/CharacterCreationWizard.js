@@ -105,11 +105,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     static DEFAULT_OPTIONS = {
         id: "scrpg-character-creation-wizard",
         classes: ["scrpg-wizard", "scrpg-actor-compendium"],
-        tag: "form",
+        // Keep the window chrome outside the <form> so header controls are not
+        // implicit form participants; submit/change still bind via contentTag.
+        tag: "div",
         position: { width: 760, height: 720 },
         window: {
             title: "Create SCRPG Hero",
             resizable: true,
+            contentTag: "form",
             contentClasses: ["standard-form"]
         },
         form: {
@@ -190,18 +193,53 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._allTraitsCatalog = [];
         /** @type {boolean} */
         this._creating = false;
+        /** @type {boolean} */
+        this._stepTransitioning = false;
     }
 
-    /** Open a create-mode wizard (focus if already open). */
+    /**
+     * Open a create-mode wizard (focus if already open).
+     * AppV2 removes the DOM node and sets ERROR on failed re-renders but leaves a
+     * fixed-id singleton registered; close() then no-ops without deregistering when
+     * element is already null — so dead instances must be dropped here.
+     */
     static async openCreate() {
-        const existing = foundry.applications.instances.get(this.DEFAULT_OPTIONS.id);
+        const id = this.DEFAULT_OPTIONS.id;
+        const existing = foundry.applications.instances.get(id);
         if (existing) {
-            existing.bringToFront();
-            return existing;
+            const states = ApplicationV2.RENDER_STATES;
+            const alive = Boolean(existing.element)
+                && existing.state === states.RENDERED;
+            if (alive) {
+                existing.bringToFront();
+                return existing;
+            }
+            foundry.applications.instances.delete(id);
+            try {
+                await existing.close({ animate: false });
+            } catch (err) {
+                console.warn(`${MODULE_ID} | Discarding dead wizard instance`, err);
+            }
+            foundry.applications.instances.delete(id);
         }
         const app = new this({ mode: "create" });
         await app.render({ force: true });
         return app;
+    }
+
+    /**
+     * Ensure ERROR/empty-element closes still drop the fixed-id singleton.
+     * @param {object} [options]
+     */
+    async close(options = {}) {
+        const id = this.id;
+        try {
+            return await super.close(options);
+        } finally {
+            if (foundry.applications.instances.get(id) === this) {
+                foundry.applications.instances.delete(id);
+            }
+        }
     }
 
     get currentStep() {
@@ -446,11 +484,15 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
     async #loadPowerSourceDetailsOptions() {
         const wizard = this._selectedPowerSourceRow?.wizard || {};
-        const choices = [
-            ...(wizard.requiredPowers || []),
-            ...(wizard.powerChoices || [])
-        ];
-        this._powerOptions = await expandChoiceList(choices);
+        const required = Array.isArray(wizard.requiredPowers) ? wizard.requiredPowers : [];
+        const choices = Array.isArray(wizard.powerChoices) ? wizard.powerChoices : [];
+        try {
+            this._powerOptions = await expandChoiceList([...required, ...choices]);
+        } catch (err) {
+            console.error(`${MODULE_ID} | Failed to expand power source choices`, err);
+            this._powerOptions = [];
+            ui.notifications?.warn("Could not load power choices for this power source.");
+        }
     }
 
     async #loadArchetypeDetailsOptions() {
@@ -627,30 +669,34 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
         const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
             const selected = draft.abilitySelections?.[String(index)] || [];
-            const count = Number(group.count) || 0;
+            const count = Number(group?.count) || 0;
             const atLimit = selected.length >= count;
+            const color = group?.color || "yellow";
             return {
                 index,
-                color: group.color,
-                title: `${capitalize(group.color)} abilities`,
-                grantText: group.grantText || null,
-                constraint: group.constraint || null,
-                constraintNote: constraintNote(group.constraint),
+                color,
+                title: `${capitalize(color)} abilities`,
+                grantText: group?.grantText || null,
+                constraint: group?.constraint || null,
+                constraintNote: constraintNote(group?.constraint),
                 count,
                 selectedCount: selected.length,
-                abilities: (group.abilities || []).map(ab => {
-                    const isSelected = selected.includes(ab.uuid);
-                    return {
-                        uuid: ab.uuid,
-                        name: ab.name,
-                        selected: isSelected,
-                        disabled: atLimit && !isSelected
-                    };
-                })
+                abilities: (group?.abilities || [])
+                    .filter(ab => ab?.uuid)
+                    .map(ab => {
+                        const isSelected = selected.includes(ab.uuid);
+                        return {
+                            uuid: ab.uuid,
+                            name: ab.name || ab.uuid,
+                            selected: isSelected,
+                            disabled: atLimit && !isSelected
+                        };
+                    })
             };
         });
 
         return {
+            selectedPowerSourceName: draft.selectedName,
             powersIntro: wizard.powersIntro || null,
             powerSourceDiceLabel: bgDice.join(", ") || "—",
             powerSlots: slots,
@@ -1073,6 +1119,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
      * @this {CharacterCreationWizard}
      */
     static async #onFormSubmit(_event, _form, formData) {
+        if (this._stepTransitioning || this._creating) return;
         const data = foundry.utils.expandObject(formData?.object ?? {});
         const step = this.currentStep;
         let changed = false;
@@ -1629,27 +1676,68 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     /**
      * @this {CharacterCreationWizard}
      */
-    static async #onNext(_event, _target) {
-        if (!this.canGoNext) return;
+    static async #onNext(event, _target) {
+        event?.preventDefault?.();
+        event?.stopPropagation?.();
+        if (!this.canGoNext || this._stepTransitioning) return;
         const nextIndex = this.wizardState.stepIndex + 1;
         if (nextIndex >= STEPS.length) return;
+        await this.#transitionToStep(nextIndex);
+    }
+
+    /**
+     * @this {CharacterCreationWizard}
+     */
+    static async #onBack(event, _target) {
+        event?.preventDefault?.();
+        event?.stopPropagation?.();
+        if (!this.canGoBack || this._stepTransitioning) return;
+        await this.#transitionToStep(Math.max(0, this.wizardState.stepIndex - 1));
+    }
+
+    /**
+     * Advance/rewind steps with recovery so a render throw cannot leave the
+     * fixed-id wizard stuck in AppV2 ERROR with a null element.
+     * @param {number} nextIndex
+     */
+    async #transitionToStep(nextIndex) {
+        const prevIndex = this.wizardState.stepIndex;
+        if (nextIndex === prevIndex) return;
+        this._stepTransitioning = true;
         this.wizardState.stepIndex = nextIndex;
-        await this.render();
+        try {
+            await this.render();
+        } catch (err) {
+            this.wizardState.stepIndex = prevIndex;
+            console.error(`${MODULE_ID} | Wizard step transition failed`, err);
+            ui.notifications?.error("Wizard step failed. Check the console for details.");
+            await this.#recoverAfterRenderError();
+        } finally {
+            this._stepTransitioning = false;
+        }
+    }
+
+    /**
+     * Re-mount the wizard after AppV2 tears down the element on render failure.
+     */
+    async #recoverAfterRenderError() {
+        const states = ApplicationV2.RENDER_STATES;
+        if (this.element && this.state === states.RENDERED) return;
+        try {
+            await this.render({ force: true });
+        } catch (err) {
+            console.error(`${MODULE_ID} | Wizard recovery render failed`, err);
+            foundry.applications.instances.delete(this.id);
+            ui.notifications?.warn("The wizard closed after an error. Use Create SCRPG Hero… to open a new one.");
+        }
     }
 
     /**
      * @this {CharacterCreationWizard}
      */
-    static async #onBack(_event, _target) {
-        if (!this.canGoBack) return;
-        this.wizardState.stepIndex = Math.max(0, this.wizardState.stepIndex - 1);
-        await this.render();
-    }
-
-    /**
-     * @this {CharacterCreationWizard}
-     */
-    static async #onCancel(_event, _target) {
+    static async #onCancel(event, _target) {
+        event?.preventDefault?.();
+        event?.stopPropagation?.();
         await this.close();
     }
 
@@ -1703,9 +1791,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
      * @param {HTMLElement} target
      */
     static async #onPreviewChartItem(event, target) {
-        // Keep the surrounding radio/label from selecting this row.
+        // Keep the surrounding radio/label from selecting this row, and stop
+        // Foundry's global .content-link handler from double-opening the sheet.
         event.preventDefault();
         event.stopPropagation();
+        event.stopImmediatePropagation?.();
         const uuid = target.dataset.uuid;
         if (!uuid) return;
         const doc = await fromUuid(uuid);

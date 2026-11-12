@@ -51,19 +51,31 @@ export async function expandChoiceList(choices = []) {
     const seen = new Set();
     const out = [];
     for (const choice of choices) {
-        const docs = await expandWizardChoice(choice);
+        if (!choice || typeof choice !== "object") continue;
+        let docs = [];
+        try {
+            docs = await expandWizardChoice(choice);
+        } catch (err) {
+            console.warn(`${MODULE_ID} | Failed to expand wizard choice`, choice, err);
+            continue;
+        }
         for (const doc of docs) {
+            if (!doc) continue;
             const uuid = doc.uuid;
             if (!uuid || seen.has(uuid)) continue;
             seen.add(uuid);
             const flags = doc.flags?.[MODULE_ID] || {};
-            const pack = choice.pack || (doc.pack?.includes(".powers") ? "powers" : doc.pack?.includes(".qualities") ? "qualities" : null);
+            const packId = typeof doc.pack === "string" ? doc.pack : "";
+            const pack = choice.pack
+                || (packId.includes(".powers") ? "powers"
+                    : packId.includes(".qualities") ? "qualities"
+                        : null);
             const itemType = pack === "powers" || doc.type === "power"
                 ? "power"
                 : (pack === "qualities" || doc.type === "quality" ? "quality" : (doc.type || null));
             out.push({
                 uuid,
-                name: doc.name,
+                name: doc.name || uuid,
                 categoryKey: flags.category || choice.categoryKey || null,
                 required: Boolean(choice.required),
                 itemType,
