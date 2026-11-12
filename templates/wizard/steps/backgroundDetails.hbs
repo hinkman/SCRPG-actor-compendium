@@ -21,7 +21,17 @@
             <span class="label">{{#if required}}Required{{else}}Quality{{/if}}</span>
             {{#if lockedUuid}}
               <input type="hidden" name="qualityUuid.{{slotIndex}}" value="{{lockedUuid}}">
-              <span class="scrpg-wizard-locked-trait">{{lockedName}}</span>
+              <button
+                type="button"
+                class="content-link scrpg-wizard-chart-tag scrpg-wizard-locked-trait-tag"
+                data-action="previewChartItem"
+                data-uuid="{{lockedUuid}}"
+                data-tooltip="Item"
+                title="Open {{lockedName}}"
+                aria-label="Open {{lockedName}}"
+              >
+                <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{lockedName}}
+              </button>
             {{else}}
               <select name="qualityUuid.{{slotIndex}}">
                 <option value="">— choose —</option>

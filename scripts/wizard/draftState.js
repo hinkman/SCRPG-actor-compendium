@@ -28,7 +28,9 @@ export function createEmptyDraft() {
             archetypeDice: [],
             powerAssignments: [],
             /** @type {Record<string, string[]>} abilityPicks index → selected uuids */
-            abilitySelections: {}
+            abilitySelections: {},
+            /** @type {Record<string, Record<string, string>>} abilityUuid → token → traitUuid */
+            abilitySlotSelections: {}
         },
         archetype: {
             roll: null,
@@ -42,7 +44,9 @@ export function createEmptyDraft() {
             /** @type {Array<object>} power/quality die assignments */
             traitAssignments: [],
             /** @type {Record<string, string[]>} */
-            abilitySelections: {}
+            abilitySelections: {},
+            /** @type {Record<string, Record<string, string>>} abilityUuid → token → traitUuid */
+            abilitySlotSelections: {}
         },
         personality: {
             roll: null,
@@ -138,6 +142,7 @@ export function invalidateFrom(draft, from) {
     if (from === "powerSource") {
         draft.powerSource.powerAssignments = [];
         draft.powerSource.abilitySelections = {};
+        draft.powerSource.abilitySlotSelections = {};
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
         clearFromPersonality();
@@ -152,6 +157,7 @@ export function invalidateFrom(draft, from) {
     if (from === "archetype") {
         draft.archetype.traitAssignments = [];
         draft.archetype.abilitySelections = {};
+        draft.archetype.abilitySlotSelections = {};
         draft.archetype.principleUuid = null;
         draft.archetype.principleName = null;
         Object.assign(draft.personality, empty.personality);

@@ -43,8 +43,9 @@ export function isArchetypeChartComplete(draft) {
 /**
  * @param {object} draft
  * @param {object|null} selectedWizard
+ * @param {Map<string, {slots?: Array<{token:string}>}>|null} [abilityMeta]
  */
-export function isArchetypeDetailsComplete(draft, selectedWizard = null) {
+export function isArchetypeDetailsComplete(draft, selectedWizard = null, abilityMeta = null) {
     const arch = draft?.archetype;
     const ps = draft?.powerSource;
     if (!arch?.selectedUuid) return false;
@@ -56,11 +57,22 @@ export function isArchetypeDetailsComplete(draft, selectedWizard = null) {
     const picks = selectedWizard?.abilityPicks;
     if (!Array.isArray(picks) || !picks.length) return true;
 
+    const selectedUuids = [];
     for (let i = 0; i < picks.length; i++) {
         const need = Number(picks[i].count) || 0;
         const selected = arch.abilitySelections?.[String(i)] ?? [];
         if (selected.length !== need) return false;
         if (new Set(selected).size !== selected.length) return false;
+        selectedUuids.push(...selected);
+    }
+
+    if (abilityMeta) {
+        for (const uuid of selectedUuids) {
+            const meta = abilityMeta instanceof Map ? abilityMeta.get(uuid) : abilityMeta[uuid];
+            for (const slot of meta?.slots || []) {
+                if (!arch.abilitySlotSelections?.[uuid]?.[slot.token]) return false;
+            }
+        }
     }
     return true;
 }

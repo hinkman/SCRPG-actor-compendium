@@ -156,7 +156,10 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
     for (const uuids of Object.values(working.powerSource?.abilitySelections || {})) {
         for (const uuid of uuids || []) {
             await pushClonedAbility(items, uuid, {
-                fromPowerSource: working.powerSource?.selectedName
+                fromPowerSource: working.powerSource?.selectedName,
+                pendingAbilitySlots: {
+                    ...(working.powerSource?.abilitySlotSelections?.[uuid] || {})
+                }
             });
         }
     }
@@ -164,7 +167,10 @@ export async function createHeroFromDraft(draft, identityOverride = null) {
     for (const uuids of Object.values(working.archetype?.abilitySelections || {})) {
         for (const uuid of uuids || []) {
             await pushClonedAbility(items, uuid, {
-                fromArchetype: working.archetype?.selectedName
+                fromArchetype: working.archetype?.selectedName,
+                pendingAbilitySlots: {
+                    ...(working.archetype?.abilitySlotSelections?.[uuid] || {})
+                }
             });
         }
     }

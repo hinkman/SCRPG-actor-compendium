@@ -44,21 +44,41 @@
 
   <section class="scrpg-wizard-assign-block" aria-label="Out ability">
     <h3>Out ability</h3>
-    {{#if outPreview}}
-      <p class="scrpg-wizard-intro">{{outPreview}}</p>
-    {{/if}}
-    {{#each outSlots}}
-      <label class="scrpg-wizard-text-field">
-        <span class="label">Fill {{token}}</span>
-        <select name="outSlot.{{tokenKey}}">
-          <option value="">— choose —</option>
-          {{#each options}}
-            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
-          {{/each}}
-        </select>
-      </label>
+    {{#if outAbilityUuid}}
+      <div class="scrpg-wizard-ability-row is-open">
+        <div class="scrpg-wizard-ability-option is-selected">
+          <button
+            type="button"
+            class="content-link scrpg-wizard-chart-tag"
+            data-action="previewChartItem"
+            data-uuid="{{outAbilityUuid}}"
+            data-tooltip="Item"
+            title="Open {{outAbilityName}}"
+            aria-label="Open {{outAbilityName}}"
+          >
+            <i class="fa-solid fa-suitcase" inert aria-hidden="true"></i>{{outAbilityName}}
+          </button>
+          <span class="scrpg-wizard-ability-color">Out</span>
+        </div>
+        {{#if outPreview}}
+          <p class="scrpg-wizard-intro">{{outPreview}}</p>
+        {{/if}}
+        {{#each outSlots}}
+          <label class="scrpg-wizard-text-field scrpg-wizard-ability-slot">
+            <span class="label">Fill {{token}}</span>
+            <select name="outSlot.{{tokenKey}}">
+              <option value="">— choose —</option>
+              {{#each options}}
+                <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+              {{/each}}
+            </select>
+          </label>
+        {{else}}
+          <p class="scrpg-wizard-hint">This Out ability has no power/quality placeholders to bind.</p>
+        {{/each}}
+      </div>
     {{else}}
-      <p class="scrpg-wizard-hint">This Out ability has no power/quality placeholders to bind.</p>
-    {{/each}}
+      <p class="scrpg-wizard-hint">No Out ability linked to this personality.</p>
+    {{/if}}
   </section>
 </div>
