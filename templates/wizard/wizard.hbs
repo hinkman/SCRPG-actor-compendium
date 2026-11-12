@@ -27,6 +27,14 @@
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/personality.hbs"}}
     {{else if isPersonalityDetailsStep}}
       {{> "modules/scrpg-actor-compendium/templates/wizard/steps/personalityDetails.hbs"}}
+    {{else if isRedAbilitiesStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/redAbilities.hbs"}}
+    {{else if isRetconStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/retcon.hbs"}}
+    {{else if isHealthStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/health.hbs"}}
+    {{else if isFinishingStep}}
+      {{> "modules/scrpg-actor-compendium/templates/wizard/steps/finishing.hbs"}}
     {{/if}}
   </div>
 

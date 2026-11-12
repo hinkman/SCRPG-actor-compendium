@@ -1,11 +1,15 @@
 import { createHeroFromDraft } from "./apply.js";
 import { legalChartNumbers, rollChart, rerollChart } from "./chartRoll.js";
-import { createEmptyDraft, invalidateFrom } from "./draftState.js";
+import { createEmptyDraft, invalidateFrom, upgradeDie } from "./draftState.js";
 import {
     expandChoiceList,
     formatRollSummary,
+    loadAllPowersAndQualities,
+    loadAllPrinciples,
     loadChartRows,
-    loadPrinciplesForCategory
+    loadPrinciplesForCategory,
+    loadRedAbilities,
+    resolveTraitCategories
 } from "./packData.js";
 import { METHOD_STEP, METHODS, isValidMethod } from "./steps/method.js";
 import {
@@ -43,6 +47,34 @@ import {
     isPersonalityDetailsComplete,
     personalityRollFormula
 } from "./steps/personality.js";
+import {
+    RED_ABILITIES_STEP,
+    RED_PICK_COUNT,
+    collectEffectiveTraits,
+    isRedAbilitiesComplete,
+    isRedAbilityEligible,
+    slotOptionsForAbility
+} from "./steps/redAbilities.js";
+import {
+    RETCON_STEP,
+    RETCON_OPTIONS,
+    isRetconComplete,
+    isValidRetconOption,
+    rebindableAbilities
+} from "./steps/retcon.js";
+import {
+    HEALTH_STEP,
+    dieFaces,
+    healthTraitOptions,
+    isHealthComplete,
+    refreshHealthComputation,
+    rollHealthVariance
+} from "./steps/health.js";
+import {
+    FINISHING_STEP,
+    PHYSICAL_FIELDS,
+    isFinishingComplete
+} from "./steps/finishing.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -58,12 +90,16 @@ const STEPS = [
     ARCHETYPE_STEP,
     ARCHETYPE_DETAILS_STEP,
     PERSONALITY_STEP,
-    PERSONALITY_DETAILS_STEP
+    PERSONALITY_DETAILS_STEP,
+    RED_ABILITIES_STEP,
+    RETCON_STEP,
+    HEALTH_STEP,
+    FINISHING_STEP
 ];
 
 /**
  * AppV2 SCRPG hero creation wizard.
- * Slice D: Steps 1–4 + Actor.create (first playable).
+ * Slice F: Steps 1–8; Actor.create after Finishing.
  */
 export default class CharacterCreationWizard extends HandlebarsApplicationMixin(ApplicationV2) {
     static DEFAULT_OPTIONS = {
@@ -87,6 +123,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             cancel: CharacterCreationWizard.#onCancel,
             chartRoll: CharacterCreationWizard.#onChartRoll,
             chartReroll: CharacterCreationWizard.#onChartReroll,
+            healthRoll: CharacterCreationWizard.#onHealthRoll,
             createHero: CharacterCreationWizard.#onCreateHero,
             previewChartItem: CharacterCreationWizard.#onPreviewChartItem
         }
@@ -104,7 +141,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 `${TEMPLATE_ROOT}/steps/archetype.hbs`,
                 `${TEMPLATE_ROOT}/steps/archetypeDetails.hbs`,
                 `${TEMPLATE_ROOT}/steps/personality.hbs`,
-                `${TEMPLATE_ROOT}/steps/personalityDetails.hbs`
+                `${TEMPLATE_ROOT}/steps/personalityDetails.hbs`,
+                `${TEMPLATE_ROOT}/steps/redAbilities.hbs`,
+                `${TEMPLATE_ROOT}/steps/retcon.hbs`,
+                `${TEMPLATE_ROOT}/steps/health.hbs`,
+                `${TEMPLATE_ROOT}/steps/finishing.hbs`
             ],
             // Nested chart lists overflow themselves; preserve their scroll across selection re-renders.
             scrollable: [".scrpg-wizard-step", ".scrpg-wizard-chart-list"]
@@ -139,6 +180,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._principles = [];
         /** @type {Array<object>} */
         this._outSlots = [];
+        /** @type {Array<object>} */
+        this._redAbilities = [];
+        /** @type {Map<string, string>} */
+        this._traitCategories = new Map();
+        /** @type {Array<object>} */
+        this._allPrinciples = [];
+        /** @type {Array<object>} */
+        this._allTraitsCatalog = [];
         /** @type {boolean} */
         this._creating = false;
     }
@@ -189,7 +238,26 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     draft,
                     this._selectedPersonalityRow?.wizard,
                     this._outSlots
-                ) && Boolean(String(draft.identity?.name || "").trim());
+                );
+            case "redAbilities": {
+                const selected = (draft.red?.abilityUuids || [])
+                    .map(uuid => this._redAbilities.find(a => a.uuid === uuid))
+                    .filter(Boolean);
+                return isRedAbilitiesComplete(draft, selected);
+            }
+            case "retcon": {
+                const extra = draft.retcon?.extraRedUuid
+                    ? this._redAbilities.find(a => a.uuid === draft.retcon.extraRedUuid)
+                    : null;
+                return isRetconComplete(draft, { extraRedAbility: extra });
+            }
+            case "health":
+                return isHealthComplete(
+                    draft,
+                    collectEffectiveTraits(draft, this._traitCategories)
+                );
+            case "finishing":
+                return isFinishingComplete(draft);
             default:
                 return false;
         }
@@ -200,7 +268,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     get isLastStep() {
-        return this.currentStep.id === "personalityDetails";
+        return this.currentStep.id === "finishing";
     }
 
     /** @override */
@@ -229,6 +297,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             isArchetypeDetailsStep: step.id === "archetypeDetails",
             isPersonalityStep: step.id === "personality",
             isPersonalityDetailsStep: step.id === "personalityDetails",
+            isRedAbilitiesStep: step.id === "redAbilities",
+            isRetconStep: step.id === "retcon",
+            isHealthStep: step.id === "health",
+            isFinishingStep: step.id === "finishing",
             isLastStep: this.isLastStep,
             isGuided: this.isGuided,
             methods: METHODS.map(m => ({
@@ -261,6 +333,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             Object.assign(base, this.#personalityChartContext());
         } else if (step.id === "personalityDetails") {
             Object.assign(base, await this.#personalityDetailsContext());
+        } else if (step.id === "redAbilities") {
+            Object.assign(base, this.#redAbilitiesContext());
+        } else if (step.id === "retcon") {
+            Object.assign(base, await this.#retconContext());
+        } else if (step.id === "health") {
+            Object.assign(base, this.#healthContext());
+        } else if (step.id === "finishing") {
+            Object.assign(base, this.#finishingContext());
         }
 
         return Object.assign(context, base);
@@ -294,6 +374,12 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         }
         if (stepId === "personalityDetails") {
             await this.#loadPersonalityDetailsOptions();
+        }
+        if (stepId === "redAbilities" || stepId === "retcon" || stepId === "health") {
+            await this.#loadRedStepData();
+        }
+        if (stepId === "retcon") {
+            await this.#loadRetconOptions();
         }
     }
 
@@ -391,6 +477,27 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const ability = await fromUuid(outUuid);
         const slots = ability?.flags?.[MODULE_ID]?.slots;
         if (Array.isArray(slots)) this._outSlots = slots;
+    }
+
+    async #loadRedStepData() {
+        if (!this._redAbilities.length) {
+            this._redAbilities = await loadRedAbilities();
+        }
+        const assigned = collectAssignedTraits(this.wizardState);
+        const uuids = assigned.map(t => t.uuid).filter(Boolean);
+        this._traitCategories = await resolveTraitCategories(uuids);
+    }
+
+    async #loadRetconOptions() {
+        if (!this._allPrinciples.length) {
+            this._allPrinciples = await loadAllPrinciples();
+        }
+        if (!this._allTraitsCatalog.length) {
+            this._allTraitsCatalog = await loadAllPowersAndQualities();
+        }
+        if (!this._redAbilities.length) {
+            this._redAbilities = await loadRedAbilities();
+        }
     }
 
     #backgroundChartContext() {
@@ -730,12 +837,234 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 selected: t.uuid === draft.upgradeTraitUuid
             })),
             healthAnyNote: notes.includes("healthMayUseAnyPowerOrQuality")
-                ? "Note for Step 7 (later): you may use any power or quality when determining Health."
+                ? "Note for Health: you may use any power or quality when determining Max Health."
                 : null,
             outPreview,
-            outSlots,
-            heroName: this.wizardState.identity?.name || "",
-            heroAlias: this.wizardState.identity?.alias || ""
+            outSlots
+        };
+    }
+
+    #redAbilitiesContext() {
+        const draft = this.wizardState.red;
+        const traits = collectEffectiveTraits(this.wizardState, this._traitCategories);
+        const selected = new Set(draft.abilityUuids || []);
+        const atLimit = selected.size >= RED_PICK_COUNT;
+
+        const groupsMap = new Map();
+        for (const ability of this._redAbilities) {
+            if (!isRedAbilityEligible(ability, traits)) continue;
+            const key = ability.categoryKey || "other";
+            if (!groupsMap.has(key)) {
+                groupsMap.set(key, {
+                    key,
+                    label: ability.categoryLabel || key,
+                    sourceItemType: ability.source?.itemType || "",
+                    sourceCategory: ability.source?.category || "",
+                    needsD8: true,
+                    abilities: []
+                });
+            }
+            const isSelected = selected.has(ability.uuid);
+            const slotRows = isSelected
+                ? slotOptionsForAbility(ability, traits).map(row => ({
+                    token: row.token,
+                    tokenKey: tokenKeyFromToken(row.token),
+                    abilityKey: abilityKeyFromUuid(ability.uuid),
+                    options: row.options.map(opt => ({
+                        ...opt,
+                        selected: draft.slotSelections?.[ability.uuid]?.[row.token] === opt.uuid
+                    }))
+                }))
+                : [];
+            groupsMap.get(key).abilities.push({
+                uuid: ability.uuid,
+                name: ability.name,
+                abilityType: ability.abilityType,
+                selected: isSelected,
+                disabled: atLimit && !isSelected,
+                preview: ability.preview,
+                slotRows
+            });
+        }
+
+        return {
+            selectedCount: selected.size,
+            eligibleGroups: [...groupsMap.values()]
+        };
+    }
+
+    async #retconContext() {
+        const retcon = this.wizardState.retcon;
+        const traits = collectEffectiveTraits(this.wizardState, this._traitCategories)
+            .filter(t => t.uuid !== "__special__");
+        const redStatus = this.wizardState.personality?.statusDie?.red;
+        const canBumpRed = Boolean(redStatus) && String(redStatus).toLowerCase() !== "d12";
+
+        const alreadyPicked = new Set(this.wizardState.red?.abilityUuids || []);
+        const effectiveTraits = collectEffectiveTraits(this.wizardState, this._traitCategories);
+        const eligibleExtra = this._redAbilities.filter(a =>
+            !alreadyPicked.has(a.uuid) && isRedAbilityEligible(a, effectiveTraits)
+        );
+
+        const outSummary = this.wizardState.personality?.outAbilityUuid
+            ? [{
+                uuid: this.wizardState.personality.outAbilityUuid,
+                name: "Out ability",
+                slots: this._outSlots
+            }]
+            : [];
+        const redSummaries = (this.wizardState.red?.abilityUuids || [])
+            .map(uuid => this._redAbilities.find(a => a.uuid === uuid))
+            .filter(Boolean);
+        const rebindList = rebindableAbilities(this.wizardState, [...redSummaries, ...outSummary]);
+        const selectedRebind = rebindList.find(a => a.uuid === retcon.rebindAbilityUuid) || null;
+
+        const options = RETCON_OPTIONS.map(opt => {
+            let disabled = false;
+            let disabledNote = null;
+            if (opt.id === "bumpRedStatus" && !canBumpRed) {
+                disabled = true;
+                disabledNote = "Red status is already d12.";
+            }
+            if (opt.id === "extraRed" && !eligibleExtra.length) {
+                disabled = true;
+                disabledNote = "No additional eligible Red abilities.";
+            }
+            if (opt.id === "rebindAbility" && !rebindList.length) {
+                disabled = true;
+                disabledNote = "No selected abilities with power/quality slots to rebind.";
+            }
+            if (opt.id === "swapDice" && traits.length < 2) {
+                disabled = true;
+                disabledNote = "Need at least two powers/qualities to swap.";
+            }
+            return {
+                ...opt,
+                selected: retcon.option === opt.id,
+                disabled,
+                disabledNote
+            };
+        });
+
+        const extraAbility = eligibleExtra.find(a => a.uuid === retcon.extraRedUuid) || null;
+        const extraRedSlots = extraAbility
+            ? slotOptionsForAbility(extraAbility, effectiveTraits).map(row => ({
+                token: row.token,
+                tokenKey: tokenKeyFromToken(row.token),
+                options: row.options.map(opt => ({
+                    ...opt,
+                    selected: retcon.extraRedSlotSelections?.[row.token] === opt.uuid
+                }))
+            }))
+            : [];
+
+        return {
+            options,
+            isExtraRed: retcon.option === "extraRed",
+            isSwapDice: retcon.option === "swapDice",
+            isRebind: retcon.option === "rebindAbility",
+            isBumpRed: retcon.option === "bumpRedStatus",
+            isAddD6: retcon.option === "addD6",
+            isSwapPrinciple: retcon.option === "swapPrinciple",
+            extraRedChoices: eligibleExtra.map(a => ({
+                uuid: a.uuid,
+                name: a.name,
+                categoryLabel: a.categoryLabel,
+                selected: a.uuid === retcon.extraRedUuid
+            })),
+            extraRedSlots,
+            traitOptions: traits.map(t => ({
+                ...t,
+                selectedA: t.uuid === retcon.swapUuidA,
+                selectedB: t.uuid === retcon.swapUuidB
+            })),
+            rebindAbilities: rebindList.map(a => ({
+                uuid: a.uuid,
+                name: a.name,
+                selected: a.uuid === retcon.rebindAbilityUuid
+            })),
+            rebindTokens: (selectedRebind?.slots || []).map(s => ({
+                token: s.token,
+                selected: s.token === retcon.rebindToken
+            })),
+            rebindTraitOptions: traits.map(t => ({
+                ...t,
+                selected: t.uuid === retcon.rebindTraitUuid
+            })),
+            currentRedStatus: redStatus || "—",
+            nextRedStatus: redStatus ? upgradeDie(redStatus) : "—",
+            addD6Options: this._allTraitsCatalog.map(t => ({
+                ...t,
+                selected: t.uuid === retcon.addD6Uuid
+            })),
+            firstPrincipleName: this.wizardState.background.principleName || "Principle 1",
+            secondPrincipleName: this.wizardState.archetype.principleName || "Principle 2",
+            principleSlotFirst: retcon.principleSlot === "first",
+            principleSlotSecond: retcon.principleSlot === "second",
+            allPrinciples: this._allPrinciples.map(p => ({
+                ...p,
+                selected: p.uuid === retcon.newPrincipleUuid
+            }))
+        };
+    }
+
+    #healthContext() {
+        const draft = this.wizardState;
+        const traits = collectEffectiveTraits(draft, this._traitCategories);
+        const options = healthTraitOptions(draft, traits);
+        refreshHealthComputation(draft, this._traitCategories);
+        const health = draft.health;
+        const red = draft.personality?.statusDie?.red;
+        const notes = draft.personality?.specialNotes || [];
+
+        return {
+            redStatusLabel: red || "—",
+            redStatusFaces: dieFaces(red),
+            bonusOptions: options.map(t => ({
+                ...t,
+                selected: t.uuid === health.bonusTraitUuid
+            })),
+            bonusTraitName: health.bonusTraitName,
+            bonusDieLabel: health.bonusTraitUuid
+                ? (options.find(t => t.uuid === health.bonusTraitUuid)?.die || "d4")
+                : "d4",
+            bonusDieFaces: health.bonusDieFaces || 4,
+            healthAny: notes.includes("healthMayUseAnyPowerOrQuality"),
+            varianceTake4: health.varianceMode === "take4",
+            varianceRoll: health.varianceMode === "roll",
+            varianceLabel: health.varianceMode === "roll"
+                ? (health.varianceRoll != null ? `rolled ${health.varianceRoll}` : "roll pending")
+                : (health.varianceMode === "take4" ? "take 4" : "—"),
+            varianceFaces: health.varianceMode === "roll"
+                ? (Number(health.varianceRoll) || 0)
+                : (health.varianceMode === "take4" ? 4 : 0),
+            varianceRollSummary: health.varianceMode === "roll" && health.varianceRoll != null
+                ? { total: health.varianceRoll, detail: health.varianceRollDetail || "1d8" }
+                : null,
+            healthMax: health.max,
+            ranges: health.ranges
+        };
+    }
+
+    #finishingContext() {
+        const identity = this.wizardState.identity || {};
+        return {
+            heroName: identity.name || "",
+            heroAlias: identity.alias || "",
+            costume: identity.costume || "",
+            physicalFields: PHYSICAL_FIELDS.map(f => ({
+                ...f,
+                value: identity[f.key] || ""
+            })),
+            summary: {
+                background: this.wizardState.background.selectedName || "—",
+                powerSource: this.wizardState.powerSource.selectedName || "—",
+                archetype: this.wizardState.archetype.selectedName || "—",
+                personality: this.wizardState.personality.selectedName || "—",
+                health: this.wizardState.health?.max || "—",
+                redCount: (this.wizardState.red?.abilityUuids || []).length
+                    + (this.wizardState.retcon?.option === "extraRed" ? 1 : 0)
+            }
         };
     }
 
@@ -786,6 +1115,22 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
         if (step.id === "personalityDetails") {
             changed = this.#applyPersonalityDetails(data) || changed;
+        }
+
+        if (step.id === "redAbilities") {
+            changed = this.#applyRedAbilities(data) || changed;
+        }
+
+        if (step.id === "retcon") {
+            changed = this.#applyRetcon(data) || changed;
+        }
+
+        if (step.id === "health") {
+            changed = this.#applyHealth(data) || changed;
+        }
+
+        if (step.id === "finishing") {
+            changed = this.#applyFinishing(data) || changed;
         }
 
         if (changed) await this.render();
@@ -1085,7 +1430,166 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             }
         }
 
+        if (changed) invalidateFrom(this.wizardState, "personalityDetails");
+        return changed;
+    }
+
+    #applyRedAbilities(data) {
+        const draft = this.wizardState.red;
+        let changed = false;
+
+        let selected = data.redAbility;
+        if (selected == null) selected = [];
+        if (!Array.isArray(selected)) selected = [selected];
+        selected = selected.filter(Boolean).slice(0, RED_PICK_COUNT);
+        const prev = draft.abilityUuids || [];
+        if (prev.join("|") !== selected.join("|")) {
+            draft.abilityUuids = selected;
+            for (const uuid of Object.keys(draft.slotSelections || {})) {
+                if (!selected.includes(uuid)) delete draft.slotSelections[uuid];
+            }
+            changed = true;
+            invalidateFrom(this.wizardState, "redAbilities");
+        }
+
+        const slotRoot = data.redSlot || {};
+        for (const uuid of draft.abilityUuids || []) {
+            const ability = this._redAbilities.find(a => a.uuid === uuid);
+            if (!ability) continue;
+            const abilityKey = abilityKeyFromUuid(uuid);
+            const slotMap = slotRoot[abilityKey] || {};
+            draft.slotSelections[uuid] = draft.slotSelections[uuid] || {};
+            for (const slot of ability.slots || []) {
+                const key = tokenKeyFromToken(slot.token);
+                const next = slotMap[key] || null;
+                if ((draft.slotSelections[uuid][slot.token] || null) !== next) {
+                    draft.slotSelections[uuid][slot.token] = next;
+                    changed = true;
+                }
+            }
+        }
+
+        return changed;
+    }
+
+    #applyRetcon(data) {
+        const draft = this.wizardState.retcon;
+        let changed = false;
+
+        if (data.retconOption && isValidRetconOption(data.retconOption)) {
+            if (draft.option !== data.retconOption) {
+                const empty = createEmptyDraft().retcon;
+                Object.assign(draft, empty);
+                draft.option = data.retconOption;
+                changed = true;
+                invalidateFrom(this.wizardState, "retcon");
+            }
+        }
+
+        if (draft.option === "extraRed") {
+            if (data.extraRedUuid !== undefined && data.extraRedUuid !== draft.extraRedUuid) {
+                draft.extraRedUuid = data.extraRedUuid || null;
+                draft.extraRedSlotSelections = {};
+                changed = true;
+            }
+            const slotMap = data.extraRedSlot || {};
+            const ability = this._redAbilities.find(a => a.uuid === draft.extraRedUuid);
+            for (const slot of ability?.slots || []) {
+                const key = tokenKeyFromToken(slot.token);
+                const next = slotMap[key] || null;
+                if ((draft.extraRedSlotSelections[slot.token] || null) !== next) {
+                    draft.extraRedSlotSelections[slot.token] = next;
+                    changed = true;
+                }
+            }
+        }
+
+        if (draft.option === "swapDice") {
+            if (data.swapUuidA !== undefined && data.swapUuidA !== draft.swapUuidA) {
+                draft.swapUuidA = data.swapUuidA || null;
+                changed = true;
+            }
+            if (data.swapUuidB !== undefined && data.swapUuidB !== draft.swapUuidB) {
+                draft.swapUuidB = data.swapUuidB || null;
+                changed = true;
+            }
+        }
+
+        if (draft.option === "rebindAbility") {
+            if (data.rebindAbilityUuid !== undefined && data.rebindAbilityUuid !== draft.rebindAbilityUuid) {
+                draft.rebindAbilityUuid = data.rebindAbilityUuid || null;
+                draft.rebindToken = null;
+                draft.rebindTraitUuid = null;
+                changed = true;
+            }
+            if (data.rebindToken !== undefined && data.rebindToken !== draft.rebindToken) {
+                draft.rebindToken = data.rebindToken || null;
+                changed = true;
+            }
+            if (data.rebindTraitUuid !== undefined && data.rebindTraitUuid !== draft.rebindTraitUuid) {
+                draft.rebindTraitUuid = data.rebindTraitUuid || null;
+                changed = true;
+            }
+        }
+
+        if (draft.option === "addD6" && data.addD6Uuid !== undefined) {
+            const next = data.addD6Uuid || null;
+            if (next !== draft.addD6Uuid) {
+                const opt = this._allTraitsCatalog.find(t => t.uuid === next);
+                draft.addD6Uuid = next;
+                draft.addD6Name = opt?.name || null;
+                draft.addD6ItemType = opt?.itemType || null;
+                changed = true;
+            }
+        }
+
+        if (draft.option === "swapPrinciple") {
+            if (data.principleSlot !== undefined && data.principleSlot !== draft.principleSlot) {
+                draft.principleSlot = data.principleSlot || null;
+                changed = true;
+            }
+            if (data.newPrincipleUuid !== undefined && data.newPrincipleUuid !== draft.newPrincipleUuid) {
+                const principle = this._allPrinciples.find(p => p.uuid === data.newPrincipleUuid);
+                draft.newPrincipleUuid = data.newPrincipleUuid || null;
+                draft.newPrincipleName = principle?.name || null;
+                changed = true;
+            }
+        }
+
+        return changed;
+    }
+
+    #applyHealth(data) {
+        const health = this.wizardState.health;
+        let changed = false;
+
+        if (data.healthBonusTraitUuid !== undefined) {
+            const next = data.healthBonusTraitUuid || null;
+            if (next !== health.bonusTraitUuid) {
+                health.bonusTraitUuid = next;
+                changed = true;
+            }
+        }
+
+        if (data.healthVarianceMode === "take4" || data.healthVarianceMode === "roll") {
+            if (health.varianceMode !== data.healthVarianceMode) {
+                health.varianceMode = data.healthVarianceMode;
+                if (data.healthVarianceMode === "take4") {
+                    health.varianceRoll = null;
+                    health.varianceRollDetail = null;
+                }
+                changed = true;
+            }
+        }
+
+        if (changed) refreshHealthComputation(this.wizardState, this._traitCategories);
+        return changed;
+    }
+
+    #applyFinishing(data) {
         const identity = this.wizardState.identity;
+        let changed = false;
+
         if (data.heroName !== undefined) {
             const next = String(data.heroName || "");
             if (next !== (identity.name || "")) {
@@ -1098,6 +1602,24 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             if (next !== (identity.alias || "")) {
                 identity.alias = next;
                 changed = true;
+            }
+        }
+        if (data.costume !== undefined) {
+            const next = String(data.costume || "");
+            if (next !== (identity.costume || "")) {
+                identity.costume = next;
+                changed = true;
+            }
+        }
+
+        const physical = data.physical || {};
+        for (const field of PHYSICAL_FIELDS) {
+            if (physical[field.key] !== undefined) {
+                const next = String(physical[field.key] || "");
+                if (next !== (identity[field.key] || "")) {
+                    identity[field.key] = next;
+                    changed = true;
+                }
             }
         }
 
@@ -1132,10 +1654,27 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     /**
+     * Silent Health variance roll (1d8).
+     * @this {CharacterCreationWizard}
+     */
+    static async #onHealthRoll(_event, _target) {
+        if (this.currentStep.id !== "health") return;
+        if (this.wizardState.health.varianceMode !== "roll") {
+            this.wizardState.health.varianceMode = "roll";
+        }
+        const result = await rollHealthVariance();
+        this.wizardState.health.varianceRoll = result.total;
+        this.wizardState.health.varianceRollDetail = result.detail;
+        refreshHealthComputation(this.wizardState, this._traitCategories);
+        await this.render();
+    }
+
+    /**
      * @this {CharacterCreationWizard}
      */
     static async #onCreateHero(_event, _target) {
         if (!this.canGoNext || this._creating) return;
+        if (this.currentStep.id !== "finishing") return;
         const name = String(this.wizardState.identity?.name || "").trim();
         if (!name) {
             ui.notifications?.warn("Enter a hero name before creating.");
@@ -1145,10 +1684,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._creating = true;
         await this.render();
         try {
-            const actor = await createHeroFromDraft(this.wizardState, {
-                name,
-                alias: this.wizardState.identity?.alias || ""
-            });
+            const actor = await createHeroFromDraft(this.wizardState);
             ui.notifications?.info(`Created hero “${actor.name}”.`);
             await this.close();
             actor.sheet?.render(true);
@@ -1324,6 +1860,10 @@ function tokenKeyFromToken(token) {
         .replace(/^\[/, "")
         .replace(/\]$/, "")
         .replace(/[^a-zA-Z0-9]+/g, "_");
+}
+
+function abilityKeyFromUuid(uuid) {
+    return String(uuid || "").replace(/[^a-zA-Z0-9]+/g, "_");
 }
 
 function stripHtml(html) {

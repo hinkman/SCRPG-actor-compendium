@@ -1,0 +1,160 @@
+<div class="scrpg-wizard-retcon">
+  <header class="scrpg-wizard-step-header">
+    <h2>Retcon</h2>
+    <p>Take <strong>exactly one</strong> retcon option before determining Health.</p>
+  </header>
+
+  <div class="scrpg-wizard-method-options" role="radiogroup" aria-label="Retcon option">
+    {{#each options}}
+      <label class="scrpg-wizard-method-card{{#if selected}} is-selected{{/if}}{{#if disabled}} is-locked{{/if}}">
+        <input type="radio" name="retconOption" value="{{id}}" {{#if selected}}checked{{/if}} {{#if disabled}}disabled{{/if}}>
+        <span class="scrpg-wizard-method-card-body">
+          <span class="scrpg-wizard-method-card-title">{{label}}</span>
+          <span class="scrpg-wizard-method-card-summary">{{summary}}</span>
+          {{#if disabledNote}}
+            <span class="scrpg-wizard-hint">{{disabledNote}}</span>
+          {{/if}}
+        </span>
+      </label>
+    {{/each}}
+  </div>
+
+  {{#if isExtraRed}}
+    <section class="scrpg-wizard-ability-block" aria-label="Extra Red ability">
+      <h3>Extra Red ability</h3>
+      <div class="scrpg-wizard-ability-list">
+        {{#each extraRedChoices}}
+          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}">
+            <input type="radio" name="extraRedUuid" value="{{uuid}}" {{#if selected}}checked{{/if}}>
+            <span class="scrpg-wizard-ability-name">{{name}}</span>
+            <span class="scrpg-wizard-ability-color">{{categoryLabel}}</span>
+          </label>
+        {{/each}}
+      </div>
+      {{#each extraRedSlots}}
+        <label class="scrpg-wizard-text-field">
+          <span class="label">Fill {{token}}</span>
+          <select name="extraRedSlot.{{tokenKey}}">
+            <option value="">— choose —</option>
+            {{#each options}}
+              <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+            {{/each}}
+          </select>
+        </label>
+      {{/each}}
+    </section>
+  {{/if}}
+
+  {{#if isSwapDice}}
+    <section class="scrpg-wizard-assign-block" aria-label="Swap two dice">
+      <h3>Swap two dice</h3>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">First power/quality</span>
+        <select name="swapUuidA">
+          <option value="">— choose —</option>
+          {{#each traitOptions}}
+            <option value="{{uuid}}" {{#if selectedA}}selected{{/if}}>{{name}} ({{die}})</option>
+          {{/each}}
+        </select>
+      </label>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Second power/quality</span>
+        <select name="swapUuidB">
+          <option value="">— choose —</option>
+          {{#each traitOptions}}
+            <option value="{{uuid}}" {{#if selectedB}}selected{{/if}}>{{name}} ({{die}})</option>
+          {{/each}}
+        </select>
+      </label>
+    </section>
+  {{/if}}
+
+  {{#if isRebind}}
+    <section class="scrpg-wizard-assign-block" aria-label="Rebind ability">
+      <h3>Rebind an ability</h3>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Ability</span>
+        <select name="rebindAbilityUuid">
+          <option value="">— choose —</option>
+          {{#each rebindAbilities}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+          {{/each}}
+        </select>
+      </label>
+      {{#if rebindTokens.length}}
+        <label class="scrpg-wizard-text-field">
+          <span class="label">Slot</span>
+          <select name="rebindToken">
+            <option value="">— choose —</option>
+            {{#each rebindTokens}}
+              <option value="{{token}}" {{#if selected}}selected{{/if}}>{{token}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label class="scrpg-wizard-text-field">
+          <span class="label">Use this power/quality</span>
+          <select name="rebindTraitUuid">
+            <option value="">— choose —</option>
+            {{#each rebindTraitOptions}}
+              <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}} {{die}})</option>
+            {{/each}}
+          </select>
+        </label>
+      {{else}}
+        <p class="scrpg-wizard-hint">Pick an ability that has a power/quality placeholder.</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if isBumpRed}}
+    <section class="scrpg-wizard-assign-block">
+      <h3>Increase Red status</h3>
+      <p class="scrpg-wizard-intro">
+        Current Red status: <strong>{{currentRedStatus}}</strong>
+        → becomes <strong>{{nextRedStatus}}</strong>.
+      </p>
+    </section>
+  {{/if}}
+
+  {{#if isAddD6}}
+    <section class="scrpg-wizard-assign-block" aria-label="Add d6 trait">
+      <h3>Add a d6 power or quality</h3>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Power or quality</span>
+        <select name="addD6Uuid">
+          <option value="">— choose —</option>
+          {{#each addD6Options}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}})</option>
+          {{/each}}
+        </select>
+      </label>
+    </section>
+  {{/if}}
+
+  {{#if isSwapPrinciple}}
+    <section class="scrpg-wizard-assign-block" aria-label="Swap principle">
+      <h3>Swap a principle</h3>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">Replace which principle?</span>
+        <select name="principleSlot">
+          <option value="">— choose —</option>
+          <option value="first" {{#if principleSlotFirst}}selected{{/if}}>
+            First — {{firstPrincipleName}}
+          </option>
+          <option value="second" {{#if principleSlotSecond}}selected{{/if}}>
+            Second — {{secondPrincipleName}}
+          </option>
+        </select>
+      </label>
+      <label class="scrpg-wizard-text-field">
+        <span class="label">New principle (any category)</span>
+        <select name="newPrincipleUuid">
+          <option value="">— choose —</option>
+          {{#each allPrinciples}}
+            <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{categoryKey}})</option>
+          {{/each}}
+        </select>
+      </label>
+    </section>
+  {{/if}}
+</div>

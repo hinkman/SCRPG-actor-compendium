@@ -1,6 +1,8 @@
 /**
- * In-memory wizard draft through Steps 1–4 (Actor.create in apply.js).
+ * In-memory wizard draft through Steps 1–8 (Actor.create after Finishing).
  */
+
+import { emptyIdentity } from "./steps/finishing.js";
 
 export function createEmptyDraft() {
     return {
@@ -57,20 +59,55 @@ export function createEmptyDraft() {
             upgradeTraitUuid: null,
             specialNotes: []
         },
-        identity: {
-            name: null,
-            alias: null
-        }
+        red: {
+            /** @type {string[]} */
+            abilityUuids: [],
+            /** @type {Record<string, Record<string, string>>} abilityUuid → token → traitUuid */
+            slotSelections: {}
+        },
+        retcon: {
+            option: null,
+            extraRedUuid: null,
+            extraRedSlotSelections: {},
+            swapUuidA: null,
+            swapUuidB: null,
+            rebindAbilityUuid: null,
+            rebindToken: null,
+            rebindTraitUuid: null,
+            addD6Uuid: null,
+            addD6Name: null,
+            addD6ItemType: null,
+            principleSlot: null,
+            newPrincipleUuid: null,
+            newPrincipleName: null
+        },
+        health: {
+            bonusTraitUuid: null,
+            bonusTraitName: null,
+            bonusDieFaces: 4,
+            varianceMode: null,
+            varianceRoll: null,
+            varianceRollDetail: null,
+            max: null,
+            ranges: null
+        },
+        identity: emptyIdentity()
     };
 }
 
 /**
  * Reset downstream state when an earlier chart choice changes.
  * @param {ReturnType<typeof createEmptyDraft>} draft
- * @param {"method"|"background"|"backgroundDetails"|"powerSource"|"powerSourceDetails"|"archetype"|"archetypeDetails"|"personality"} from
+ * @param {string} from
  */
 export function invalidateFrom(draft, from) {
     const empty = createEmptyDraft();
+
+    const clearFromPersonality = () => {
+        Object.assign(draft.red, empty.red);
+        Object.assign(draft.retcon, empty.retcon);
+        Object.assign(draft.health, empty.health);
+    };
 
     if (from === "method") {
         Object.assign(draft.background, empty.background);
@@ -78,6 +115,7 @@ export function invalidateFrom(draft, from) {
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
         Object.assign(draft.identity, empty.identity);
+        clearFromPersonality();
         return;
     }
     if (from === "background") {
@@ -87,12 +125,14 @@ export function invalidateFrom(draft, from) {
         Object.assign(draft.powerSource, empty.powerSource);
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "backgroundDetails") {
         Object.assign(draft.powerSource, empty.powerSource);
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "powerSource") {
@@ -100,11 +140,13 @@ export function invalidateFrom(draft, from) {
         draft.powerSource.abilitySelections = {};
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "powerSourceDetails") {
         Object.assign(draft.archetype, empty.archetype);
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "archetype") {
@@ -113,16 +155,28 @@ export function invalidateFrom(draft, from) {
         draft.archetype.principleUuid = null;
         draft.archetype.principleName = null;
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "archetypeDetails") {
         Object.assign(draft.personality, empty.personality);
+        clearFromPersonality();
         return;
     }
     if (from === "personality") {
         draft.personality.specialQualityName = null;
         draft.personality.outSlotSelections = {};
         draft.personality.upgradeTraitUuid = null;
+        clearFromPersonality();
+        return;
+    }
+    if (from === "personalityDetails" || from === "redAbilities") {
+        Object.assign(draft.retcon, empty.retcon);
+        Object.assign(draft.health, empty.health);
+        return;
+    }
+    if (from === "retcon") {
+        Object.assign(draft.health, empty.health);
     }
 }
 

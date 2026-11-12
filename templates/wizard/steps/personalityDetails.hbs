@@ -4,7 +4,7 @@
     <p>
       <strong>{{selectedPersonalityName}}</strong>:
       record status dice, name your Special d8 quality, and bind the Out ability.
-      Then create the hero (Steps 5–8 come later).
+      Red abilities, Retcon, Health, and finishing touches come next — Create Hero waits until the end.
     </p>
   </header>
 
@@ -60,18 +60,5 @@
     {{else}}
       <p class="scrpg-wizard-hint">This Out ability has no power/quality placeholders to bind.</p>
     {{/each}}
-  </section>
-
-  <section class="scrpg-wizard-assign-block" aria-label="Hero identity">
-    <h3>Hero identity</h3>
-    <p class="scrpg-wizard-intro">Minimal finish for a playable actor. Health / Red / Retcon come in a later slice.</p>
-    <label class="scrpg-wizard-text-field">
-      <span class="label">Hero name</span>
-      <input type="text" name="heroName" value="{{heroName}}" placeholder="Hero name" maxlength="80" required>
-    </label>
-    <label class="scrpg-wizard-text-field">
-      <span class="label">Alias</span>
-      <input type="text" name="heroAlias" value="{{heroAlias}}" placeholder="Civilian name / alias" maxlength="80">
-    </label>
   </section>
 </div>
