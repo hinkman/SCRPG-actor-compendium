@@ -1,7 +1,14 @@
 import { filledAbilityPreviewHtml } from "../abilityFill.js";
-import { createHeroFromDraft, discardDraftActor, syncHeroFromDraft } from "./apply.js";
+import { clearWizardLock, createHeroFromDraft, discardDraftActor, syncHeroFromDraft } from "./apply.js";
 import { legalChartNumbers, rollChart, rerollChart } from "./chartRoll.js";
 import { createEmptyDraft, invalidateFrom, upgradeDie } from "./draftState.js";
+import {
+    annotateTakenFillOptions,
+    collectGreenFilledTraits,
+    constraintNote,
+    takenFillsForAbility
+} from "./fillConstraints.js";
+import { layoutWizardAndSheet } from "./windowLayout.js";
 import {
     expandChoiceList,
     formatRollSummary,
@@ -37,6 +44,7 @@ import {
     archetypeRollFormula,
     buildTraitSlots,
     defaultAbilitySelections,
+    archetypeDetailsRemaining,
     isArchetypeBlocked,
     isArchetypeChartComplete,
     isArchetypeDetailsComplete
@@ -241,6 +249,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const app = new this({ mode: "create" });
         await app.render({ force: true });
         await app.#ensureLiveSheet({ openSheet: true });
+        app.#layoutBesideSheet();
         return app;
     }
 
@@ -339,6 +348,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     /** @override */
+    async _onRender(context, options) {
+        await super._onRender(context, options);
+        if (!this._finalized && !this._discarding) {
+            this.#layoutBesideSheet();
+        }
+    }
+
+    /** @override */
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
         const step = this.currentStep;
@@ -402,6 +419,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             Object.assign(base, this.#archetypeChartContext());
         } else if (step.id === "archetypeDetails") {
             Object.assign(base, this.#archetypeDetailsContext());
+            base.nextRequirements = archetypeDetailsRemaining(
+                draft,
+                this._selectedArchetypeRow?.wizard,
+                this._abilityMeta
+            );
         } else if (step.id === "personality") {
             Object.assign(base, this.#personalityChartContext());
         } else if (step.id === "personalityDetails") {
@@ -733,6 +755,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         }));
 
         const slotTraits = collectAssignedTraits(this.wizardState);
+        const greenFilled = collectGreenFilledTraits(
+            wizard.abilityPicks,
+            draft.abilitySelections,
+            draft.abilitySlotSelections
+        );
         const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
             const selected = draft.abilitySelections?.[String(index)] || [];
             const count = Number(group?.count) || 0;
@@ -754,6 +781,15 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     .map(ab => {
                         const isSelected = selected.includes(ab.uuid);
                         const meta = this._abilityMeta.get(ab.uuid);
+                        const taken = isSelected
+                            ? takenFillsForAbility({
+                                constraint: group?.constraint,
+                                abilityUuid: ab.uuid,
+                                groupSelectedUuids: selected,
+                                slotSelections: draft.abilitySlotSelections,
+                                greenFilledUuids: greenFilled
+                            })
+                            : null;
                         return {
                             uuid: ab.uuid,
                             name: ab.name || meta?.name || ab.uuid,
@@ -770,7 +806,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                                 ? buildInlineSlotRows(
                                     meta,
                                     slotTraits,
-                                    draft.abilitySlotSelections?.[ab.uuid]
+                                    draft.abilitySlotSelections?.[ab.uuid],
+                                    taken
                                 )
                                 : []
                         };
@@ -842,6 +879,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         }));
 
         const slotTraits = collectAssignedTraits(this.wizardState);
+        const greenFilled = collectGreenFilledTraits(
+            wizard.abilityPicks,
+            draft.abilitySelections,
+            draft.abilitySlotSelections
+        );
         const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
             const selected = draft.abilitySelections?.[String(index)] || [];
             const count = Number(group.count) || 0;
@@ -860,6 +902,15 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 abilities: (group.abilities || []).map(ab => {
                     const isSelected = selected.includes(ab.uuid);
                     const meta = this._abilityMeta.get(ab.uuid);
+                    const taken = isSelected
+                        ? takenFillsForAbility({
+                            constraint: group.constraint,
+                            abilityUuid: ab.uuid,
+                            groupSelectedUuids: selected,
+                            slotSelections: draft.abilitySlotSelections,
+                            greenFilledUuids: greenFilled
+                        })
+                        : null;
                     return {
                         uuid: ab.uuid,
                         name: ab.name || meta?.name || ab.uuid,
@@ -876,7 +927,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                             ? buildInlineSlotRows(
                                 meta,
                                 slotTraits,
-                                draft.abilitySlotSelections?.[ab.uuid]
+                                draft.abilitySlotSelections?.[ab.uuid],
+                                taken
                             )
                             : []
                     };
@@ -1031,7 +1083,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     )
                     : null,
                 slotRows: isSelected
-                    ? buildInlineSlotRows(ability, traits, draft.slotSelections?.[ability.uuid])
+                    ? buildInlineSlotRows(
+                        ability,
+                        traits,
+                        draft.slotSelections?.[ability.uuid]
+                    )
                     : []
             });
         }
@@ -1297,7 +1353,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const { openSheet = false } = options;
         if (this._discarding || this._finalized) return this._draftActor;
         if (this._draftActor?.id && game.actors.has(this._draftActor.id)) {
-            if (openSheet) this._draftActor.sheet?.render(true);
+            if (openSheet) {
+                await this._draftActor.sheet?.render(true);
+                this.#layoutBesideSheet();
+            }
             return this._draftActor;
         }
         try {
@@ -1306,12 +1365,18 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 locked: true,
                 openSheet
             });
+            if (openSheet) this.#layoutBesideSheet();
         } catch (err) {
             console.error(`${MODULE_ID} | Failed to create live wizard sheet`, err);
             ui.notifications?.warn("Could not open the live character sheet preview.");
             this._draftActor = null;
         }
         return this._draftActor;
+    }
+
+    /** Wizard left, live sheet right (clamped to the screen). */
+    #layoutBesideSheet() {
+        layoutWizardAndSheet(this, this._draftActor?.sheet);
     }
 
     /** Debounced sync of the live Actor after wizard edits. */
@@ -1346,6 +1411,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     return;
                 }
                 this._draftActor = actor;
+                this.#layoutBesideSheet();
             } catch (err) {
                 if (generation !== this._draftSyncGeneration) return;
                 console.error(`${MODULE_ID} | Live sheet sync failed`, err);
@@ -2027,8 +2093,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._creating = true;
         await this.render();
         try {
+            // Invalidate any in-flight locked sync before finishing.
             clearTimeout(this._draftSyncTimer);
             this._draftSyncTimer = null;
+            this._draftSyncGeneration += 1;
             if (this._draftSyncPromise) await this._draftSyncPromise;
 
             const actor = await createHeroFromDraft(
@@ -2038,13 +2106,15 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             );
             this._draftActor = actor;
             this._finalized = true;
+            await clearWizardLock(actor);
             ui.notifications?.info(`Created hero “${actor.name}”.`);
             await this.close();
-            actor.sheet?.render(true);
+            await actor.sheet?.render({ force: true });
         } catch (err) {
             console.error(`${MODULE_ID} | Failed to create hero from wizard`, err);
             ui.notifications?.error("Failed to create hero. Check the console for details.");
             this._creating = false;
+            this._finalized = false;
             await this.render();
         }
     }
@@ -2198,19 +2268,6 @@ function capitalize(value) {
     return s ? s.charAt(0).toUpperCase() + s.slice(1) : "";
 }
 
-function constraintNote(constraint) {
-    if (constraint === "differentPower") {
-        return "Each chosen ability should use a different power (fill slots below each pick).";
-    }
-    if (constraint === "atLeastTwoDifferentPowers") {
-        return "Use at least two different powers across the chosen abilities (fill slots below each pick).";
-    }
-    if (constraint === "includeFlightOrSignatureVehicle") {
-        return "At least one chosen ability should use Flight or Signature Vehicle.";
-    }
-    return null;
-}
-
 function tokenKeyFromToken(token) {
     return String(token || "")
         .replace(/^\[/, "")
@@ -2237,18 +2294,27 @@ function abilityUuidsFromPicks(abilityPicks = []) {
  * @param {{uuid?:string,slots?:Array<object>}|null|undefined} ability
  * @param {Array<object>} traits
  * @param {Record<string, string>|null|undefined} slotSelections
+ * @param {{taken?:Set<string>, itemTypeFilter?:string|null}|null} [takenInfo]
  */
-function buildInlineSlotRows(ability, traits, slotSelections) {
+function buildInlineSlotRows(ability, traits, slotSelections, takenInfo = null) {
     if (!ability) return [];
-    return slotOptionsForAbility(ability, traits).map(row => ({
-        token: row.token,
-        tokenKey: tokenKeyFromToken(row.token),
-        abilityKey: abilityKeyFromUuid(ability.uuid),
-        options: row.options.map(opt => ({
-            ...opt,
-            selected: slotSelections?.[row.token] === opt.uuid
-        }))
-    }));
+    return slotOptionsForAbility(ability, traits).map(row => {
+        const selectedUuid = slotSelections?.[row.token] || null;
+        const annotated = annotateTakenFillOptions(row.options, {
+            takenUuids: takenInfo?.taken || new Set(),
+            selectedUuid,
+            itemTypeFilter: takenInfo?.itemTypeFilter || null
+        });
+        return {
+            token: row.token,
+            tokenKey: tokenKeyFromToken(row.token),
+            abilityKey: abilityKeyFromUuid(ability.uuid),
+            options: annotated.map(opt => ({
+                ...opt,
+                selected: selectedUuid === opt.uuid
+            }))
+        };
+    });
 }
 
 function stripHtml(html) {

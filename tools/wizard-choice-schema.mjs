@@ -179,6 +179,12 @@ export function parseAbilityPickCount(grantText) {
 export function abilityConstraint(grantText) {
     if (!grantText) return null;
     if (/each using a different power or quality/i.test(grantText)) return "differentPowerOrQuality";
+    if (/using a different power or quality from any of your [Gg]reen/i.test(grantText)) {
+        return "differentFromGreenAbilities";
+    }
+    if (/using a different power or quality than your [Gg]reen/i.test(grantText)) {
+        return "differentFromGreenAbilities";
+    }
     if (/each using a different power/i.test(grantText)) return "differentPower";
     if (/using two different powers/i.test(grantText)) return "differentPower";
     if (/using two different qualities/i.test(grantText)) return "differentQuality";

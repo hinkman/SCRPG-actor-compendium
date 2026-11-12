@@ -2,6 +2,7 @@
 
 import { assignmentsComplete } from "../draftState.js";
 import { diceSizesToFormula } from "../chartRoll.js";
+import { validateAbilityPickFillConstraints } from "../fillConstraints.js";
 
 export const ARCHETYPE_STEP = {
     id: "archetype",
@@ -41,40 +42,72 @@ export function isArchetypeChartComplete(draft) {
 }
 
 /**
+ * Human-readable leftovers for Arch Details Next.
  * @param {object} draft
  * @param {object|null} selectedWizard
  * @param {Map<string, {slots?: Array<{token:string}>}>|null} [abilityMeta]
+ * @returns {string[]}
  */
-export function isArchetypeDetailsComplete(draft, selectedWizard = null, abilityMeta = null) {
+export function archetypeDetailsRemaining(draft, selectedWizard = null, abilityMeta = null) {
     const arch = draft?.archetype;
     const ps = draft?.powerSource;
-    if (!arch?.selectedUuid) return false;
-    if (!arch.principleUuid) return false;
+    const remaining = [];
+    if (!arch?.selectedUuid) {
+        remaining.push("Select an archetype first");
+        return remaining;
+    }
+    if (!arch.principleUuid) remaining.push("Choose Principle₂");
 
     const dicePool = Array.isArray(ps?.archetypeDice) ? ps.archetypeDice : [];
-    if (!assignmentsComplete(arch.traitAssignments, dicePool)) return false;
+    if (!assignmentsComplete(arch.traitAssignments, dicePool)) {
+        remaining.push(`Assign all trait dice (${dicePool.join(", ") || "—"})`);
+    }
 
     const picks = selectedWizard?.abilityPicks;
-    if (!Array.isArray(picks) || !picks.length) return true;
+    if (!Array.isArray(picks) || !picks.length) return remaining;
 
     const selectedUuids = [];
     for (let i = 0; i < picks.length; i++) {
         const need = Number(picks[i].count) || 0;
         const selected = arch.abilitySelections?.[String(i)] ?? [];
-        if (selected.length !== need) return false;
-        if (new Set(selected).size !== selected.length) return false;
-        selectedUuids.push(...selected);
+        const have = Array.isArray(selected) ? selected.length : 0;
+        if (Array.isArray(selected)) selectedUuids.push(...selected.filter(Boolean));
+        if (have !== need || new Set(selected).size !== selected.length) {
+            const color = String(picks[i].color || "ability").replace(/^\w/, c => c.toUpperCase());
+            remaining.push(`Pick ${need} ${color} abilit${need === 1 ? "y" : "ies"}`);
+        }
     }
 
     if (abilityMeta) {
         for (const uuid of selectedUuids) {
             const meta = abilityMeta instanceof Map ? abilityMeta.get(uuid) : abilityMeta[uuid];
             for (const slot of meta?.slots || []) {
-                if (!arch.abilitySlotSelections?.[uuid]?.[slot.token]) return false;
+                if (!arch.abilitySlotSelections?.[uuid]?.[slot.token]) {
+                    remaining.push("Fill power/quality slots on selected abilities");
+                    break;
+                }
             }
         }
     }
-    return true;
+
+    for (const msg of validateAbilityPickFillConstraints(
+        picks,
+        arch.abilitySelections,
+        arch.abilitySlotSelections,
+        abilityMeta
+    )) {
+        remaining.push(msg);
+    }
+    return remaining;
+}
+
+/**
+ * @param {object} draft
+ * @param {object|null} selectedWizard
+ * @param {Map<string, {slots?: Array<{token:string}>}>|null} [abilityMeta]
+ */
+export function isArchetypeDetailsComplete(draft, selectedWizard = null, abilityMeta = null) {
+    return archetypeDetailsRemaining(draft, selectedWizard, abilityMeta).length === 0;
 }
 
 /**

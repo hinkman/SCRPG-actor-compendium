@@ -244,7 +244,7 @@
             "color": "yellow",
             "count": 1,
             "grantText": "Gain one of the above abilities as a Yellow ability, using a different power or quality from any of your Green abilities.",
-            "constraint": null,
+            "constraint": "differentFromGreenAbilities",
             "abilities": [
               {
                 "color": "yellow",
