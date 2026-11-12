@@ -57,11 +57,17 @@ export async function expandChoiceList(choices = []) {
             if (!uuid || seen.has(uuid)) continue;
             seen.add(uuid);
             const flags = doc.flags?.[MODULE_ID] || {};
+            const pack = choice.pack || (doc.pack?.includes(".powers") ? "powers" : doc.pack?.includes(".qualities") ? "qualities" : null);
+            const itemType = pack === "powers" || doc.type === "power"
+                ? "power"
+                : (pack === "qualities" || doc.type === "quality" ? "quality" : (doc.type || null));
             out.push({
                 uuid,
                 name: doc.name,
                 categoryKey: flags.category || choice.categoryKey || null,
-                required: Boolean(choice.required)
+                required: Boolean(choice.required),
+                itemType,
+                pack: pack || null
             });
         }
     }

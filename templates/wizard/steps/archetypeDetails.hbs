@@ -1,0 +1,99 @@
+<div class="scrpg-wizard-arch-details">
+  <header class="scrpg-wizard-step-header">
+    <h2>Archetype — Powers, Qualities &amp; Principle₂</h2>
+    <p>
+      <strong>{{selectedArchetypeName}}</strong>:
+      assign Power Source dice {{archetypeDiceLabel}} to powers/qualities, pick Green/Yellow abilities,
+      then choose Principle₂ from <strong>{{principleCategoryLabel}}</strong>.
+    </p>
+  </header>
+
+  {{#each assignmentHints}}
+    <p class="scrpg-wizard-hint">{{this}}</p>
+  {{/each}}
+
+  <section class="scrpg-wizard-assign-block" aria-label="Trait dice">
+    <h3>Powers &amp; Qualities</h3>
+    <div class="scrpg-wizard-assign-list">
+      {{#each traitSlots}}
+        <div class="scrpg-wizard-assign-row" data-slot-index="{{slotIndex}}">
+          <label class="scrpg-wizard-assign-trait">
+            <span class="label">{{#if required}}Required{{else}}Trait{{/if}}</span>
+            {{#if lockedUuid}}
+              <input type="hidden" name="traitUuid.{{slotIndex}}" value="{{lockedUuid}}">
+              <span class="scrpg-wizard-locked-trait">{{lockedName}} <em>({{itemType}})</em></span>
+            {{else}}
+              <select name="traitUuid.{{slotIndex}}">
+                <option value="">— choose —</option>
+                {{#each traitOptions}}
+                  <option value="{{uuid}}" {{#if selected}}selected{{/if}}>{{name}} ({{itemType}})</option>
+                {{/each}}
+              </select>
+            {{/if}}
+          </label>
+          <label class="scrpg-wizard-assign-die">
+            <span class="label">Die</span>
+            <select name="traitDie.{{slotIndex}}">
+              <option value="">—</option>
+              {{#each dieOptions}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+              {{/each}}
+            </select>
+          </label>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  {{#each abilityPickGroups}}
+    <section class="scrpg-wizard-ability-block" aria-label="{{color}} abilities">
+      <h3>{{title}}</h3>
+      {{#if grantText}}
+        <p class="scrpg-wizard-intro">{{grantText}}</p>
+      {{/if}}
+      {{#if constraintNote}}
+        <p class="scrpg-wizard-hint">{{constraintNote}}</p>
+      {{/if}}
+      {{#if autoGranted}}
+        <p class="scrpg-wizard-hint">Auto-granted by this archetype.</p>
+      {{/if}}
+      <div class="scrpg-wizard-ability-list">
+        {{#each abilities}}
+          <label class="scrpg-wizard-ability-option{{#if selected}} is-selected{{/if}}">
+            <input
+              type="checkbox"
+              name="abilityPick.{{../index}}"
+              value="{{uuid}}"
+              {{#if selected}}checked{{/if}}
+              {{#if disabled}}disabled{{/if}}
+            >
+            <span class="scrpg-wizard-ability-name">{{name}}</span>
+            <span class="scrpg-wizard-ability-color">{{../color}}</span>
+          </label>
+        {{/each}}
+      </div>
+      <p class="scrpg-wizard-pick-count">Selected {{selectedCount}} / {{count}}</p>
+    </section>
+  {{/each}}
+
+  <section class="scrpg-wizard-principle-block" aria-label="Principle 2">
+    <h3>Principle₂ ({{principleCategoryLabel}})</h3>
+    <div class="scrpg-wizard-chart-list" role="radiogroup" aria-label="Principles">
+      {{#each principles}}
+        <label class="scrpg-wizard-chart-row{{#if selected}} is-selected{{/if}}">
+          <input
+            type="radio"
+            name="principleUuid"
+            value="{{uuid}}"
+            {{#if selected}}checked{{/if}}
+          >
+          <span class="scrpg-wizard-chart-body">
+            <span class="scrpg-wizard-chart-name">{{name}}</span>
+          </span>
+        </label>
+      {{else}}
+        <p class="scrpg-wizard-empty">No principles found for this category.</p>
+      {{/each}}
+    </div>
+  </section>
+</div>

@@ -1,3 +1,4 @@
+import { createHeroFromDraft } from "./apply.js";
 import { legalChartNumbers, rollChart, rerollChart } from "./chartRoll.js";
 import { createEmptyDraft, invalidateFrom } from "./draftState.js";
 import {
@@ -23,17 +24,30 @@ import {
     isPowerSourceDetailsComplete,
     powerSourceRollFormula
 } from "./steps/powerSource.js";
+import {
+    ARCHETYPE_STEP,
+    ARCHETYPE_DETAILS_STEP,
+    assignmentHints,
+    archetypeRollFormula,
+    buildTraitSlots,
+    defaultAbilitySelections,
+    isArchetypeBlocked,
+    isArchetypeChartComplete,
+    isArchetypeDetailsComplete
+} from "./steps/archetype.js";
+import {
+    PERSONALITY_STEP,
+    PERSONALITY_DETAILS_STEP,
+    collectAssignedTraits,
+    isPersonalityChartComplete,
+    isPersonalityDetailsComplete,
+    personalityRollFormula
+} from "./steps/personality.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 const MODULE_ID = "scrpg-actor-compendium";
 const TEMPLATE_ROOT = `modules/${MODULE_ID}/templates/wizard`;
-
-const PLACEHOLDER_STEP = {
-    id: "placeholder",
-    label: "Coming soon",
-    index: 5
-};
 
 const STEPS = [
     METHOD_STEP,
@@ -41,19 +55,22 @@ const STEPS = [
     BACKGROUND_DETAILS_STEP,
     POWER_SOURCE_STEP,
     POWER_SOURCE_DETAILS_STEP,
-    PLACEHOLDER_STEP
+    ARCHETYPE_STEP,
+    ARCHETYPE_DETAILS_STEP,
+    PERSONALITY_STEP,
+    PERSONALITY_DETAILS_STEP
 ];
 
 /**
  * AppV2 SCRPG hero creation wizard.
- * Slice C: Method + Background + Power Source (selective abilities). No Actor.create.
+ * Slice D: Steps 1–4 + Actor.create (first playable).
  */
 export default class CharacterCreationWizard extends HandlebarsApplicationMixin(ApplicationV2) {
     static DEFAULT_OPTIONS = {
         id: "scrpg-character-creation-wizard",
         classes: ["scrpg-wizard", "scrpg-actor-compendium"],
         tag: "form",
-        position: { width: 720, height: 680 },
+        position: { width: 760, height: 720 },
         window: {
             title: "Create SCRPG Hero",
             resizable: true,
@@ -69,7 +86,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             back: CharacterCreationWizard.#onBack,
             cancel: CharacterCreationWizard.#onCancel,
             chartRoll: CharacterCreationWizard.#onChartRoll,
-            chartReroll: CharacterCreationWizard.#onChartReroll
+            chartReroll: CharacterCreationWizard.#onChartReroll,
+            createHero: CharacterCreationWizard.#onCreateHero
         }
     };
 
@@ -82,7 +100,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 `${TEMPLATE_ROOT}/steps/backgroundDetails.hbs`,
                 `${TEMPLATE_ROOT}/steps/powerSource.hbs`,
                 `${TEMPLATE_ROOT}/steps/powerSourceDetails.hbs`,
-                `${TEMPLATE_ROOT}/steps/placeholder.hbs`
+                `${TEMPLATE_ROOT}/steps/archetype.hbs`,
+                `${TEMPLATE_ROOT}/steps/archetypeDetails.hbs`,
+                `${TEMPLATE_ROOT}/steps/personality.hbs`,
+                `${TEMPLATE_ROOT}/steps/personalityDetails.hbs`
             ],
             scrollable: [".scrpg-wizard-step"]
         }
@@ -102,12 +123,22 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         this._selectedBackgroundRow = null;
         /** @type {object|null} */
         this._selectedPowerSourceRow = null;
-        /** @type {Array<{uuid:string,name:string}>} */
+        /** @type {object|null} */
+        this._selectedArchetypeRow = null;
+        /** @type {object|null} */
+        this._selectedPersonalityRow = null;
+        /** @type {Array<{uuid:string,name:string,itemType?:string}>} */
         this._qualityOptions = [];
-        /** @type {Array<{uuid:string,name:string}>} */
+        /** @type {Array<{uuid:string,name:string,itemType?:string}>} */
         this._powerOptions = [];
+        /** @type {Array<{uuid:string,name:string,itemType?:string}>} */
+        this._traitOptions = [];
         /** @type {Array<object>} */
         this._principles = [];
+        /** @type {Array<object>} */
+        this._outSlots = [];
+        /** @type {boolean} */
+        this._creating = false;
     }
 
     /** Open a create-mode wizard (focus if already open). */
@@ -127,10 +158,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     get canGoBack() {
-        return this.wizardState.stepIndex > 0;
+        return this.wizardState.stepIndex > 0 && !this._creating;
     }
 
     get canGoNext() {
+        if (this._creating) return false;
         const step = this.currentStep;
         const draft = this.wizardState;
         switch (step.id) {
@@ -144,8 +176,18 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 return isPowerSourceChartComplete(draft);
             case "powerSourceDetails":
                 return isPowerSourceDetailsComplete(draft, this._selectedPowerSourceRow?.wizard);
-            case "placeholder":
-                return false;
+            case "archetype":
+                return isArchetypeChartComplete(draft);
+            case "archetypeDetails":
+                return isArchetypeDetailsComplete(draft, this._selectedArchetypeRow?.wizard);
+            case "personality":
+                return isPersonalityChartComplete(draft);
+            case "personalityDetails":
+                return isPersonalityDetailsComplete(
+                    draft,
+                    this._selectedPersonalityRow?.wizard,
+                    this._outSlots
+                ) && Boolean(String(draft.identity?.name || "").trim());
             default:
                 return false;
         }
@@ -153,6 +195,10 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
     get isGuided() {
         return this.wizardState.method === "guided";
+    }
+
+    get isLastStep() {
+        return this.currentStep.id === "personalityDetails";
     }
 
     /** @override */
@@ -177,7 +223,11 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             isBackgroundDetailsStep: step.id === "backgroundDetails",
             isPowerSourceStep: step.id === "powerSource",
             isPowerSourceDetailsStep: step.id === "powerSourceDetails",
-            isPlaceholderStep: step.id === "placeholder",
+            isArchetypeStep: step.id === "archetype",
+            isArchetypeDetailsStep: step.id === "archetypeDetails",
+            isPersonalityStep: step.id === "personality",
+            isPersonalityDetailsStep: step.id === "personalityDetails",
+            isLastStep: this.isLastStep,
             isGuided: this.isGuided,
             methods: METHODS.map(m => ({
                 ...m,
@@ -187,6 +237,8 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             methodLabel: METHODS.find(m => m.id === method)?.label ?? null,
             selectedBackgroundName: draft.background.selectedName,
             selectedPowerSourceName: draft.powerSource.selectedName,
+            selectedArchetypeName: draft.archetype.selectedName,
+            selectedPersonalityName: draft.personality.selectedName,
             canGoBack: this.canGoBack,
             canGoNext: this.canGoNext
         };
@@ -199,6 +251,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             Object.assign(base, this.#powerSourceChartContext());
         } else if (step.id === "powerSourceDetails") {
             Object.assign(base, this.#powerSourceDetailsContext());
+        } else if (step.id === "archetype") {
+            Object.assign(base, this.#archetypeChartContext());
+        } else if (step.id === "archetypeDetails") {
+            Object.assign(base, this.#archetypeDetailsContext());
+        } else if (step.id === "personality") {
+            Object.assign(base, this.#personalityChartContext());
+        } else if (step.id === "personalityDetails") {
+            Object.assign(base, await this.#personalityDetailsContext());
         }
 
         return Object.assign(context, base);
@@ -219,6 +279,20 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         if (stepId === "powerSourceDetails") {
             await this.#loadPowerSourceDetailsOptions();
         }
+        if (stepId === "archetype" || stepId === "archetypeDetails") {
+            await this.#loadArchetypes();
+            this.#syncSelectedArchetypeRow();
+        }
+        if (stepId === "archetypeDetails") {
+            await this.#loadArchetypeDetailsOptions();
+        }
+        if (stepId === "personality" || stepId === "personalityDetails") {
+            await this.#loadPersonalities();
+            this.#syncSelectedPersonalityRow();
+        }
+        if (stepId === "personalityDetails") {
+            await this.#loadPersonalityDetailsOptions();
+        }
     }
 
     async #loadBackgrounds() {
@@ -233,6 +307,18 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         }
     }
 
+    async #loadArchetypes() {
+        if (!this._chartCache.has("archetypes")) {
+            this._chartCache.set("archetypes", await loadChartRows("archetypes"));
+        }
+    }
+
+    async #loadPersonalities() {
+        if (!this._chartCache.has("personalities")) {
+            this._chartCache.set("personalities", await loadChartRows("personalities"));
+        }
+    }
+
     #syncSelectedBackgroundRow() {
         const uuid = this.wizardState.background.selectedUuid;
         const rows = this._chartCache.get("backgrounds") || [];
@@ -243,6 +329,18 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const uuid = this.wizardState.powerSource.selectedUuid;
         const rows = this._chartCache.get("powerSources") || [];
         this._selectedPowerSourceRow = rows.find(r => r.uuid === uuid) || null;
+    }
+
+    #syncSelectedArchetypeRow() {
+        const uuid = this.wizardState.archetype.selectedUuid;
+        const rows = this._chartCache.get("archetypes") || [];
+        this._selectedArchetypeRow = rows.find(r => r.uuid === uuid) || null;
+    }
+
+    #syncSelectedPersonalityRow() {
+        const uuid = this.wizardState.personality.selectedUuid;
+        const rows = this._chartCache.get("personalities") || [];
+        this._selectedPersonalityRow = rows.find(r => r.uuid === uuid) || null;
     }
 
     async #loadBackgroundDetailsOptions() {
@@ -265,6 +363,32 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             ...(wizard.powerChoices || [])
         ];
         this._powerOptions = await expandChoiceList(choices);
+    }
+
+    async #loadArchetypeDetailsOptions() {
+        const wizard = this._selectedArchetypeRow?.wizard || {};
+        const choices = [
+            ...(wizard.requiredTraits || []),
+            ...(wizard.powerChoices || []),
+            ...(wizard.qualityChoices || [])
+        ];
+        this._traitOptions = await expandChoiceList(choices);
+        const category = wizard.principleCategory
+            || this.wizardState.archetype.principleCategory
+            || null;
+        this._principles = category ? await loadPrinciplesForCategory(category) : [];
+    }
+
+    async #loadPersonalityDetailsOptions() {
+        const wizard = this._selectedPersonalityRow?.wizard || {};
+        const outUuid = wizard.outAbilityUuid
+            || this.wizardState.personality.outAbilityUuid
+            || null;
+        this._outSlots = [];
+        if (!outUuid) return;
+        const ability = await fromUuid(outUuid);
+        const slots = ability?.flags?.[MODULE_ID]?.slots;
+        if (Array.isArray(slots)) this._outSlots = slots;
     }
 
     #backgroundChartContext() {
@@ -425,6 +549,194 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         };
     }
 
+    #archetypeChartContext() {
+        const draft = this.wizardState.archetype;
+        const archDice = this.wizardState.powerSource.archetypeDice || [];
+        const legal = this.isGuided ? legalChartNumbers(draft.roll) : null;
+        const rows = (this._chartCache.get("archetypes") || []).map(row => {
+            const blocked = isArchetypeBlocked(row);
+            const rollOk = !this.isGuided || (legal?.includes(row.number) ?? false);
+            const available = !blocked && rollOk;
+            return {
+                number: row.number,
+                uuid: row.uuid,
+                name: row.name,
+                blocked,
+                available,
+                selected: draft.selectedUuid === row.uuid,
+                personalityDiceLabel: (
+                    row.wizard.personalityDice || row.flags.personalityDice || []
+                ).join(", ") || "—",
+                principleLabel: row.wizard.principleCategoryLabel
+                    || row.wizard.principleCategory
+                    || "—"
+            };
+        });
+        return {
+            chartRows: rows,
+            rollSummary: formatRollSummary(draft.roll),
+            legalNumbers: legal || [],
+            archetypeDiceLabel: archDice.join(", ") || "—",
+            selectedPowerSourceName: this.wizardState.powerSource.selectedName
+        };
+    }
+
+    #archetypeDetailsContext() {
+        const draft = this.wizardState.archetype;
+        const archDice = this.wizardState.powerSource.archetypeDice || [];
+        const wizard = this._selectedArchetypeRow?.wizard || {};
+
+        if (!draft.traitAssignments?.length) {
+            draft.traitAssignments = buildTraitSlots(archDice, wizard).map(s => ({ ...s }));
+        }
+
+        const slots = draft.traitAssignments.map(slot => ({
+            ...slot,
+            traitOptions: this._traitOptions.map(opt => ({
+                ...opt,
+                selected: opt.uuid === slot.uuid
+            })),
+            dieOptions: archDice.map(die => ({
+                value: die,
+                label: die,
+                selected: die === slot.die
+            }))
+        }));
+
+        const abilityPickGroups = (wizard.abilityPicks || []).map((group, index) => {
+            const selected = draft.abilitySelections?.[String(index)] || [];
+            const count = Number(group.count) || 0;
+            const atLimit = selected.length >= count;
+            const autoGranted = Boolean(group.autoGranted);
+            return {
+                index,
+                color: group.color,
+                title: `${capitalize(group.color)} abilities`,
+                grantText: group.grantText || null,
+                constraint: group.constraint || null,
+                constraintNote: constraintNote(group.constraint),
+                autoGranted,
+                count,
+                selectedCount: selected.length,
+                abilities: (group.abilities || []).map(ab => {
+                    const isSelected = selected.includes(ab.uuid);
+                    return {
+                        uuid: ab.uuid,
+                        name: ab.name,
+                        selected: isSelected,
+                        disabled: autoGranted || (atLimit && !isSelected)
+                    };
+                })
+            };
+        });
+
+        return {
+            selectedArchetypeName: draft.selectedName,
+            archetypeDiceLabel: archDice.join(", ") || "—",
+            assignmentHints: assignmentHints(wizard),
+            traitSlots: slots,
+            abilityPickGroups,
+            principleCategoryLabel: wizard.principleCategoryLabel
+                || draft.principleCategory
+                || "—",
+            principles: this._principles.map(p => ({
+                ...p,
+                selected: p.uuid === draft.principleUuid
+            }))
+        };
+    }
+
+    #personalityChartContext() {
+        const draft = this.wizardState.personality;
+        const persDice = this.wizardState.archetype.personalityDice || [];
+        const legal = this.isGuided ? legalChartNumbers(draft.roll) : null;
+        const rows = (this._chartCache.get("personalities") || []).map(row => {
+            const available = !this.isGuided || (legal?.includes(row.number) ?? false);
+            const status = row.wizard.statusDie || row.flags.statusDie || row.doc?.system?.statusDie || {};
+            return {
+                number: row.number,
+                uuid: row.uuid,
+                name: row.name,
+                available,
+                selected: draft.selectedUuid === row.uuid,
+                statusLabel: `${status.green || "—"} / ${status.yellow || "—"} / ${status.red || "—"}`
+            };
+        });
+        return {
+            chartRows: rows,
+            rollSummary: formatRollSummary(draft.roll),
+            legalNumbers: legal || [],
+            personalityDiceLabel: persDice.join(", ") || "—",
+            selectedArchetypeName: this.wizardState.archetype.selectedName
+        };
+    }
+
+    async #personalityDetailsContext() {
+        const draft = this.wizardState.personality;
+        const wizard = this._selectedPersonalityRow?.wizard || {};
+        const special = wizard.specialQuality || {};
+        const notes = special.notes || [];
+        const needsUpgrade = notes.includes("upgradeOnePowerOrQualityDie");
+        const assigned = collectAssignedTraits(this.wizardState);
+
+        const outAbility = draft.outAbilityUuid ? await fromUuid(draft.outAbilityUuid) : null;
+        const outPreview = outAbility?.flags?.[MODULE_ID]?.gameTextTemplate
+            || stripHtml(outAbility?.system?.gameText)
+            || this._selectedPersonalityRow?.doc?.system?.out
+            || null;
+
+        const traitOptionsForOut = [
+            ...assigned.map(t => ({
+                uuid: t.uuid,
+                name: t.name,
+                die: t.die,
+                itemType: t.itemType
+            })),
+            {
+                uuid: "__special__",
+                name: draft.specialQualityName?.trim() || "Special quality (this step)",
+                die: draft.specialQualityDie || "d8",
+                itemType: "quality"
+            }
+        ];
+
+        const outSlots = this._outSlots.map(slot => {
+            const token = slot.token;
+            const tokenKey = tokenKeyFromToken(token);
+            const selectedUuid = draft.outSlotSelections?.[token] || "";
+            const wantedTypes = Array.isArray(slot.itemTypes)
+                ? slot.itemTypes
+                : (slot.itemType ? [slot.itemType] : null);
+            const options = traitOptionsForOut
+                .filter(opt => !wantedTypes || wantedTypes.includes(opt.itemType) || opt.uuid === "__special__")
+                .map(opt => ({
+                    ...opt,
+                    selected: opt.uuid === selectedUuid
+                }));
+            return { token, tokenKey, options };
+        });
+
+        return {
+            selectedPersonalityName: draft.selectedName,
+            statusDie: draft.statusDie || {},
+            specialDie: special.dieType || draft.specialQualityDie || "d8",
+            specialPrompt: special.namePrompt || "Make up a quality based on your hero's backstory.",
+            specialQualityName: draft.specialQualityName || "",
+            needsUpgrade,
+            upgradeOptions: assigned.map(t => ({
+                ...t,
+                selected: t.uuid === draft.upgradeTraitUuid
+            })),
+            healthAnyNote: notes.includes("healthMayUseAnyPowerOrQuality")
+                ? "Note for Step 7 (later): you may use any power or quality when determining Health."
+                : null,
+            outPreview,
+            outSlots,
+            heroName: this.wizardState.identity?.name || "",
+            heroAlias: this.wizardState.identity?.alias || ""
+        };
+    }
+
     /**
      * Persist form field changes into draft state.
      * @this {CharacterCreationWizard}
@@ -456,6 +768,22 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
         if (step.id === "powerSourceDetails") {
             changed = this.#applyPowerSourceDetails(data) || changed;
+        }
+
+        if (step.id === "archetype" && data.archetypeNumber != null) {
+            changed = this.#applyArchetypeSelection(Number(data.archetypeNumber)) || changed;
+        }
+
+        if (step.id === "archetypeDetails") {
+            changed = this.#applyArchetypeDetails(data) || changed;
+        }
+
+        if (step.id === "personality" && data.personalityNumber != null) {
+            changed = this.#applyPersonalitySelection(Number(data.personalityNumber)) || changed;
+        }
+
+        if (step.id === "personalityDetails") {
+            changed = this.#applyPersonalityDetails(data) || changed;
         }
 
         if (changed) await this.render();
@@ -600,6 +928,177 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             }
         }
 
+        if (changed) invalidateFrom(this.wizardState, "powerSourceDetails");
+        return changed;
+    }
+
+    #applyArchetypeSelection(number) {
+        const rows = this._chartCache.get("archetypes") || [];
+        const row = rows.find(r => r.number === number);
+        if (!row || isArchetypeBlocked(row)) return false;
+        if (this.isGuided) {
+            const legal = legalChartNumbers(this.wizardState.archetype.roll);
+            if (!legal.includes(number)) return false;
+        }
+        if (this.wizardState.archetype.selectedUuid === row.uuid) return false;
+
+        invalidateFrom(this.wizardState, "archetype");
+        const wizard = row.wizard || {};
+        this.wizardState.archetype.selectedNumber = row.number;
+        this.wizardState.archetype.selectedUuid = row.uuid;
+        this.wizardState.archetype.selectedName = row.name;
+        this.wizardState.archetype.personalityDice = [
+            ...(wizard.personalityDice || row.flags.personalityDice || [])
+        ];
+        this.wizardState.archetype.principleCategory = wizard.principleCategory || null;
+        this.wizardState.archetype.traitAssignments = buildTraitSlots(
+            this.wizardState.powerSource.archetypeDice,
+            wizard
+        ).map(s => ({ ...s }));
+        this.wizardState.archetype.abilitySelections = defaultAbilitySelections(wizard);
+        this._selectedArchetypeRow = row;
+        return true;
+    }
+
+    #applyArchetypeDetails(data) {
+        const draft = this.wizardState.archetype;
+        const wizard = this._selectedArchetypeRow?.wizard || {};
+        const slots = draft.traitAssignments || [];
+        let changed = false;
+
+        const uuidMap = data.traitUuid || {};
+        const dieMap = data.traitDie || {};
+        for (const slot of slots) {
+            const key = String(slot.slotIndex);
+            const nextUuid = slot.lockedUuid || uuidMap[key] || null;
+            const nextDie = dieMap[key] || null;
+            const opt = this._traitOptions.find(o => o.uuid === nextUuid);
+            const nextName = slot.lockedName || opt?.name || null;
+            const nextType = slot.lockedUuid
+                ? slot.itemType
+                : (opt?.itemType || slot.itemType || null);
+            if (slot.uuid !== nextUuid || slot.die !== nextDie || slot.itemType !== nextType) {
+                slot.uuid = nextUuid;
+                slot.name = nextName;
+                slot.die = nextDie;
+                slot.itemType = nextType;
+                changed = true;
+            }
+        }
+
+        const pickMap = data.abilityPick || {};
+        const groups = wizard.abilityPicks || [];
+        for (let i = 0; i < groups.length; i++) {
+            const key = String(i);
+            const group = groups[i];
+            let selected;
+            if (group.autoGranted) {
+                selected = (group.abilities || []).map(a => a.uuid).filter(Boolean);
+            } else {
+                selected = pickMap[key];
+                if (selected == null) selected = [];
+                if (!Array.isArray(selected)) selected = [selected];
+                selected = selected.filter(Boolean);
+                const need = Number(group.count) || 0;
+                if (selected.length > need) selected = selected.slice(0, need);
+            }
+            const prev = draft.abilitySelections[key] || [];
+            if (prev.join("|") !== selected.join("|")) {
+                draft.abilitySelections[key] = selected;
+                changed = true;
+            }
+        }
+
+        if (data.principleUuid && data.principleUuid !== draft.principleUuid) {
+            const principle = this._principles.find(p => p.uuid === data.principleUuid);
+            draft.principleUuid = data.principleUuid;
+            draft.principleName = principle?.name || null;
+            changed = true;
+        }
+
+        if (changed) invalidateFrom(this.wizardState, "archetypeDetails");
+        return changed;
+    }
+
+    #applyPersonalitySelection(number) {
+        const rows = this._chartCache.get("personalities") || [];
+        const row = rows.find(r => r.number === number);
+        if (!row) return false;
+        if (this.isGuided) {
+            const legal = legalChartNumbers(this.wizardState.personality.roll);
+            if (!legal.includes(number)) return false;
+        }
+        if (this.wizardState.personality.selectedUuid === row.uuid) return false;
+
+        invalidateFrom(this.wizardState, "personality");
+        const wizard = row.wizard || {};
+        const status = wizard.statusDie || row.flags.statusDie || row.doc?.system?.statusDie || {};
+        this.wizardState.personality.selectedNumber = row.number;
+        this.wizardState.personality.selectedUuid = row.uuid;
+        this.wizardState.personality.selectedName = row.name;
+        this.wizardState.personality.statusDie = {
+            green: status.green || null,
+            yellow: status.yellow || null,
+            red: status.red || null
+        };
+        this.wizardState.personality.outAbilityUuid = wizard.outAbilityUuid
+            || wizard.outAbility?.uuid
+            || row.flags.outAbilityUuid
+            || null;
+        this.wizardState.personality.specialQualityDie = wizard.specialQuality?.dieType || "d8";
+        this.wizardState.personality.specialNotes = [...(wizard.specialQuality?.notes || [])];
+        this.wizardState.personality.outSlotSelections = {};
+        this.wizardState.personality.upgradeTraitUuid = null;
+        this._selectedPersonalityRow = row;
+        return true;
+    }
+
+    #applyPersonalityDetails(data) {
+        const draft = this.wizardState.personality;
+        let changed = false;
+
+        const nextName = data.specialQualityName != null
+            ? String(data.specialQualityName)
+            : draft.specialQualityName;
+        if (nextName !== draft.specialQualityName) {
+            draft.specialQualityName = nextName;
+            changed = true;
+        }
+
+        if (data.upgradeTraitUuid !== undefined) {
+            const next = data.upgradeTraitUuid || null;
+            if (next !== draft.upgradeTraitUuid) {
+                draft.upgradeTraitUuid = next;
+                changed = true;
+            }
+        }
+
+        const outMap = data.outSlot || {};
+        for (const slot of this._outSlots) {
+            const key = tokenKeyFromToken(slot.token);
+            const next = outMap[key] || null;
+            if ((draft.outSlotSelections[slot.token] || null) !== next) {
+                draft.outSlotSelections[slot.token] = next;
+                changed = true;
+            }
+        }
+
+        const identity = this.wizardState.identity;
+        if (data.heroName !== undefined) {
+            const next = String(data.heroName || "");
+            if (next !== (identity.name || "")) {
+                identity.name = next;
+                changed = true;
+            }
+        }
+        if (data.heroAlias !== undefined) {
+            const next = String(data.heroAlias || "");
+            if (next !== (identity.alias || "")) {
+                identity.alias = next;
+                changed = true;
+            }
+        }
+
         return changed;
     }
 
@@ -631,6 +1130,35 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     }
 
     /**
+     * @this {CharacterCreationWizard}
+     */
+    static async #onCreateHero(_event, _target) {
+        if (!this.canGoNext || this._creating) return;
+        const name = String(this.wizardState.identity?.name || "").trim();
+        if (!name) {
+            ui.notifications?.warn("Enter a hero name before creating.");
+            return;
+        }
+
+        this._creating = true;
+        await this.render();
+        try {
+            const actor = await createHeroFromDraft(this.wizardState, {
+                name,
+                alias: this.wizardState.identity?.alias || ""
+            });
+            ui.notifications?.info(`Created hero “${actor.name}”.`);
+            await this.close();
+            actor.sheet?.render(true);
+        } catch (err) {
+            console.error(`${MODULE_ID} | Failed to create hero from wizard`, err);
+            ui.notifications?.error("Failed to create hero. Check the console for details.");
+            this._creating = false;
+            await this.render();
+        }
+    }
+
+    /**
      * Guided chart roll for the current step.
      * @this {CharacterCreationWizard}
      */
@@ -639,16 +1167,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
         const step = this.currentStep;
         if (step.id === "background") {
             this.wizardState.background.roll = await rollChart(BACKGROUND_ROLL_FORMULA);
-            if (this.wizardState.background.selectedNumber != null) {
-                const legal = legalChartNumbers(this.wizardState.background.roll);
-                if (!legal.includes(this.wizardState.background.selectedNumber)) {
-                    invalidateFrom(this.wizardState, "background");
-                    this.wizardState.background.selectedNumber = null;
-                    this.wizardState.background.selectedUuid = null;
-                    this.wizardState.background.selectedName = null;
-                    this._selectedBackgroundRow = null;
-                }
-            }
+            this.#clearIllegalSelection("background");
             await this.render();
             return;
         }
@@ -659,16 +1178,29 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                 return;
             }
             this.wizardState.powerSource.roll = await rollChart(formula);
-            if (this.wizardState.powerSource.selectedNumber != null) {
-                const legal = legalChartNumbers(this.wizardState.powerSource.roll);
-                if (!legal.includes(this.wizardState.powerSource.selectedNumber)) {
-                    invalidateFrom(this.wizardState, "powerSource");
-                    this.wizardState.powerSource.selectedNumber = null;
-                    this.wizardState.powerSource.selectedUuid = null;
-                    this.wizardState.powerSource.selectedName = null;
-                    this._selectedPowerSourceRow = null;
-                }
+            this.#clearIllegalSelection("powerSource");
+            await this.render();
+            return;
+        }
+        if (step.id === "archetype") {
+            const formula = archetypeRollFormula(this.wizardState.powerSource.archetypeDice);
+            if (!formula) {
+                ui.notifications?.warn("Power Source has no archetype dice to roll.");
+                return;
             }
+            this.wizardState.archetype.roll = await rollChart(formula);
+            this.#clearIllegalSelection("archetype");
+            await this.render();
+            return;
+        }
+        if (step.id === "personality") {
+            const formula = personalityRollFormula(this.wizardState.archetype.personalityDice);
+            if (!formula) {
+                ui.notifications?.warn("Archetype has no personality dice to roll.");
+                return;
+            }
+            this.wizardState.personality.roll = await rollChart(formula);
+            this.#clearIllegalSelection("personality");
             await this.render();
         }
     }
@@ -680,22 +1212,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
     static async #onChartReroll(_event, _target) {
         if (!this.isGuided) return;
         const step = this.currentStep;
+
         if (step.id === "background") {
             const prior = this.wizardState.background.roll;
             this.wizardState.background.roll = prior?.formula
                 ? await rerollChart(prior)
                 : await rollChart(BACKGROUND_ROLL_FORMULA);
-            const legal = legalChartNumbers(this.wizardState.background.roll);
-            if (
-                this.wizardState.background.selectedNumber != null
-                && !legal.includes(this.wizardState.background.selectedNumber)
-            ) {
-                invalidateFrom(this.wizardState, "background");
-                this.wizardState.background.selectedNumber = null;
-                this.wizardState.background.selectedUuid = null;
-                this.wizardState.background.selectedName = null;
-                this._selectedBackgroundRow = null;
-            }
+            this.#clearIllegalSelection("background");
             await this.render();
             return;
         }
@@ -705,19 +1228,55 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
             this.wizardState.powerSource.roll = prior?.formula
                 ? await rerollChart(prior)
                 : await rollChart(formula);
-            const legal = legalChartNumbers(this.wizardState.powerSource.roll);
-            if (
-                this.wizardState.powerSource.selectedNumber != null
-                && !legal.includes(this.wizardState.powerSource.selectedNumber)
-            ) {
-                invalidateFrom(this.wizardState, "powerSource");
-                this.wizardState.powerSource.selectedNumber = null;
-                this.wizardState.powerSource.selectedUuid = null;
-                this.wizardState.powerSource.selectedName = null;
-                this._selectedPowerSourceRow = null;
-            }
+            this.#clearIllegalSelection("powerSource");
+            await this.render();
+            return;
+        }
+        if (step.id === "archetype") {
+            const formula = archetypeRollFormula(this.wizardState.powerSource.archetypeDice);
+            const prior = this.wizardState.archetype.roll;
+            this.wizardState.archetype.roll = prior?.formula
+                ? await rerollChart(prior)
+                : await rollChart(formula);
+            this.#clearIllegalSelection("archetype");
+            await this.render();
+            return;
+        }
+        if (step.id === "personality") {
+            const formula = personalityRollFormula(this.wizardState.archetype.personalityDice);
+            const prior = this.wizardState.personality.roll;
+            this.wizardState.personality.roll = prior?.formula
+                ? await rerollChart(prior)
+                : await rollChart(formula);
+            this.#clearIllegalSelection("personality");
             await this.render();
         }
+    }
+
+    /**
+     * @param {"background"|"powerSource"|"archetype"|"personality"} key
+     */
+    #clearIllegalSelection(key) {
+        const bucket = this.wizardState[key];
+        if (bucket?.selectedNumber == null) return;
+        const legal = legalChartNumbers(bucket.roll);
+        if (legal.includes(bucket.selectedNumber)) {
+            if (key === "archetype") {
+                const row = (this._chartCache.get("archetypes") || [])
+                    .find(r => r.number === bucket.selectedNumber);
+                if (row && !isArchetypeBlocked(row)) return;
+            } else {
+                return;
+            }
+        }
+        invalidateFrom(this.wizardState, key);
+        bucket.selectedNumber = null;
+        bucket.selectedUuid = null;
+        bucket.selectedName = null;
+        if (key === "background") this._selectedBackgroundRow = null;
+        if (key === "powerSource") this._selectedPowerSourceRow = null;
+        if (key === "archetype") this._selectedArchetypeRow = null;
+        if (key === "personality") this._selectedPersonalityRow = null;
     }
 }
 
@@ -730,5 +1289,25 @@ function constraintNote(constraint) {
     if (constraint === "differentPower") {
         return "Each chosen ability should use a different power (enforced when the hero is created).";
     }
+    if (constraint === "atLeastTwoDifferentPowers") {
+        return "Use at least two different powers across the chosen abilities (sheet pickers after create).";
+    }
+    if (constraint === "includeFlightOrSignatureVehicle") {
+        return "At least one chosen ability should use Flight or Signature Vehicle.";
+    }
     return null;
+}
+
+function tokenKeyFromToken(token) {
+    return String(token || "")
+        .replace(/^\[/, "")
+        .replace(/\]$/, "")
+        .replace(/[^a-zA-Z0-9]+/g, "_");
+}
+
+function stripHtml(html) {
+    return String(html || "")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
 }
