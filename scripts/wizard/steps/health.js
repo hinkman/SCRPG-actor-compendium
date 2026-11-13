@@ -2,6 +2,7 @@
 
 import { dieRank } from "../draftState.js";
 import { collectEffectiveTraits } from "./redAbilities.js";
+import { applyRetconToDraft } from "./retcon.js";
 import { silentRoll } from "../silentRoll.js";
 
 export const HEALTH_STEP = {
@@ -9,6 +10,25 @@ export const HEALTH_STEP = {
     label: "Health",
     index: 11
 };
+
+/**
+ * Deep-clone the wizard draft for retcon preview (plain JSON data only).
+ * @param {object} draft
+ */
+function cloneDraft(draft) {
+    return JSON.parse(JSON.stringify(draft ?? {}));
+}
+
+/**
+ * Clone with retcon mutations applied (Red status bump, die swaps, etc.).
+ * Does not mutate the live wizard draft.
+ * @param {object} draft
+ */
+export function draftWithRetconApplied(draft) {
+    const working = cloneDraft(draft);
+    applyRetconToDraft(working);
+    return working;
+}
 
 /** Max Health → [greenLow, yellowHigh, yellowLow, redHigh]; redLow is always 1. */
 export const HEALTH_RANGES = {
@@ -65,7 +85,18 @@ export function healthTraitOptions(draft, traits) {
 }
 
 /**
+ * Red status die size for Health (includes Increase Red status retcon).
+ * Safe on the live wizard draft — does not mutate personality.statusDie.
  * @param {object} draft
+ * @returns {string|null}
+ */
+export function redStatusDieForHealth(draft) {
+    const working = draftWithRetconApplied(draft);
+    return working?.personality?.statusDie?.red || null;
+}
+
+/**
+ * @param {object} draft  post-retcon draft (or live draft if bonusDieFaces already set)
  */
 export function computeHealthMax(draft) {
     const redStatus = dieFaces(draft?.personality?.statusDie?.red);
@@ -112,20 +143,37 @@ export function isHealthComplete(draft, traits = []) {
 
 /**
  * Refresh computed max + ranges on the draft health bucket.
+ * Uses a retcon-applied clone for Red status / trait dice so the live
+ * personality.statusDie and assignments stay unchanged until Actor sync.
  * @param {object} draft
  * @param {Map|Record} categoryByUuid
  */
 export function refreshHealthComputation(draft, categoryByUuid = null) {
-    const traits = collectEffectiveTraits(draft, categoryByUuid);
-    const options = healthTraitOptions(draft, traits);
-    const picked = options.find(t => t.uuid === draft.health?.bonusTraitUuid);
+    const working = draftWithRetconApplied(draft);
+    // Keep the caller's health picks (bonus trait / variance) on the clone.
+    working.health = { ...(draft.health || {}), ...(working.health || {}) };
+    if (draft.health) {
+        working.health.bonusTraitUuid = draft.health.bonusTraitUuid;
+        working.health.varianceMode = draft.health.varianceMode;
+        working.health.varianceRoll = draft.health.varianceRoll;
+        working.health.varianceRollDetail = draft.health.varianceRollDetail;
+    }
+
+    const traits = collectEffectiveTraits(working, categoryByUuid);
+    const options = healthTraitOptions(working, traits);
+    const picked = options.find(t => t.uuid === working.health?.bonusTraitUuid);
     const bonusDieFaces = picked ? dieFaces(picked.die) : 4;
 
+    working.health.bonusDieFaces = bonusDieFaces;
+    working.health.bonusTraitName = picked?.name || null;
+    working.health.max = computeHealthMax(working);
+    working.health.ranges = rangesForMax(working.health.max);
+
     draft.health = draft.health || {};
-    draft.health.bonusDieFaces = bonusDieFaces;
-    draft.health.bonusTraitName = picked?.name || null;
-    draft.health.max = computeHealthMax(draft);
-    draft.health.ranges = rangesForMax(draft.health.max);
+    draft.health.bonusDieFaces = working.health.bonusDieFaces;
+    draft.health.bonusTraitName = working.health.bonusTraitName;
+    draft.health.max = working.health.max;
+    draft.health.ranges = working.health.ranges;
     return draft.health;
 }
 

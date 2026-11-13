@@ -53,9 +53,12 @@ export async function syncHeroFromDraft(draft, options = {}) {
     } = options;
 
     // Clone so retcon / health helpers never mutate the live wizard draft.
+    // Health refresh applies retcon on its own clone (Red bump, die swaps) and
+    // writes only health fields — run it before mutating `working` so we never
+    // double-bump Red status.
     const working = foundry.utils.deepClone(draft);
-    applyRetconToDraft(working);
     refreshHealthComputation(working);
+    applyRetconToDraft(working);
 
     const actorData = await buildActorData(working, { locked, identityOverride });
     const items = await buildItemData(working);
