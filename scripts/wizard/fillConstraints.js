@@ -214,12 +214,14 @@ export function annotateTakenFillOptions(options, {
  * Disable FILL options that would make a mix-include constraint unsatisfiable
  * given sibling fills (e.g. last slot cannot be another Close Combat when a power is still required).
  * Currently-selected values stay selectable so the control can show them.
+ * Remaining unpicked ability slots in the group count as flexible coverage.
  *
  * @param {Array<object>} options
  * @param {object} cfg
  * @param {string|null|undefined} cfg.constraint
  * @param {string} cfg.abilityUuid
  * @param {string[]} cfg.groupSelectedUuids
+ * @param {number|null|undefined} cfg.groupCount
  * @param {Record<string, Record<string, string>>|null|undefined} cfg.slotSelections
  * @param {string|null|undefined} cfg.selectedUuid
  */
@@ -227,6 +229,7 @@ export function annotateMixConstraintOptions(options, {
     constraint,
     abilityUuid,
     groupSelectedUuids = [],
+    groupCount = null,
     slotSelections = null,
     selectedUuid = null
 } = {}) {
@@ -241,19 +244,25 @@ export function annotateMixConstraintOptions(options, {
             opt.itemType || itemTypeFromTraitUuid(opt.uuid),
             abilityUuid,
             groupSelectedUuids,
-            slotSelections
+            slotSelections,
+            groupCount
         );
-        return keep ? opt : { ...opt, disabled: true };
+        return keep ? opt : { ...opt, disabled: true, disabledNote: "blocks mix" };
     });
 }
 
 /**
+ * Whether choosing this trait on `abilityUuid` still leaves every mix rule coverable.
+ * Unpicked picks (`groupCount - selected`) and empty sibling fills are flexible slots;
+ * each can cover at most one remaining rule.
+ *
  * @param {object} def
  * @param {string|null|undefined} chosenTraitUuid
  * @param {string|null|undefined} chosenItemType
  * @param {string} abilityUuid
  * @param {string[]} groupSelectedUuids
  * @param {Record<string, Record<string, string>>|null|undefined} slotSelections
+ * @param {number|null|undefined} [groupCount]
  */
 export function mixChoiceKeepsSatisfiable(
     def,
@@ -261,37 +270,45 @@ export function mixChoiceKeepsSatisfiable(
     chosenItemType,
     abilityUuid,
     groupSelectedUuids,
-    slotSelections
+    slotSelections,
+    groupCount = null
 ) {
     const selected = (groupSelectedUuids || []).filter(Boolean);
     if (!selected.length) return true;
 
+    const pickCount = Math.max(Number(groupCount) || 0, selected.length);
+    let flexible = Math.max(0, pickCount - selected.length);
+    let uncovered = 0;
+
     for (const rule of def.rules) {
         let covered = false;
-        let flexible = 0;
         for (const uuid of selected) {
             if (uuid === abilityUuid) {
-                if (!chosenTraitUuid) {
-                    flexible++;
-                    continue;
-                }
+                if (!chosenTraitUuid) continue;
                 if (traitMatchesMixRule(chosenTraitUuid, rule.match, { itemType: chosenItemType })) {
                     covered = true;
                 }
                 continue;
             }
             const fills = Object.values(slotSelections?.[uuid] || {}).filter(Boolean);
-            if (!fills.length) {
-                flexible++;
-                continue;
-            }
+            if (!fills.length) continue;
             if (fills.some(fu => traitMatchesMixRule(fu, rule.match))) {
                 covered = true;
             }
         }
-        if (!covered && flexible === 0) return false;
+        if (!covered) uncovered++;
     }
-    return true;
+
+    for (const uuid of selected) {
+        if (uuid === abilityUuid) {
+            if (!chosenTraitUuid) flexible++;
+            continue;
+        }
+        const fills = Object.values(slotSelections?.[uuid] || {}).filter(Boolean);
+        if (!fills.length) flexible++;
+    }
+
+    return uncovered <= flexible;
 }
 
 /**
@@ -300,6 +317,7 @@ export function mixChoiceKeepsSatisfiable(
  * @param {string|null|undefined} args.constraint
  * @param {string} args.abilityUuid
  * @param {string[]} args.groupSelectedUuids
+ * @param {number|null|undefined} args.groupCount
  * @param {Record<string, Record<string, string>>|null|undefined} args.slotSelections
  * @param {Set<string>|null|undefined} args.greenFilledUuids
  * @returns {{
@@ -308,6 +326,7 @@ export function mixChoiceKeepsSatisfiable(
  *   mixConstraint: string|null,
  *   abilityUuid: string,
  *   groupSelectedUuids: string[],
+ *   groupCount: number|null|undefined,
  *   slotSelections: Record<string, Record<string, string>>|null|undefined
  * }}
  */
@@ -315,6 +334,7 @@ export function takenFillsForAbility({
     constraint,
     abilityUuid,
     groupSelectedUuids = [],
+    groupCount = null,
     slotSelections = null,
     greenFilledUuids = null
 }) {
@@ -325,6 +345,7 @@ export function takenFillsForAbility({
         mixConstraint,
         abilityUuid,
         groupSelectedUuids,
+        groupCount,
         slotSelections
     };
 

@@ -104,7 +104,7 @@
                   <select name="archAbilitySlot.{{abilityKey}}.{{tokenKey}}">
                     <option value="">— choose —</option>
                     {{#each options}}
-                      <option value="{{uuid}}" {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}}>{{name}} ({{itemType}} {{die}}){{#if disabled}} — used{{/if}}</option>
+                      <option value="{{uuid}}" {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}}>{{name}} ({{itemType}} {{die}}){{#if disabled}} — {{#if disabledNote}}{{disabledNote}}{{else}}used{{/if}}{{/if}}</option>
                     {{/each}}
                   </select>
                 </label>
