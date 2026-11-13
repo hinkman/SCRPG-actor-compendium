@@ -76,8 +76,10 @@ import {
 import {
     HEALTH_STEP,
     dieFaces,
+    draftWithRetconApplied,
     healthTraitOptions,
     isHealthComplete,
+    redStatusDieForHealth,
     refreshHealthComputation,
     rollHealthVariance
 } from "./steps/health.js";
@@ -328,11 +330,13 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                     : null;
                 return isRetconComplete(draft, { extraRedAbility: extra });
             }
-            case "health":
+            case "health": {
+                const postRetcon = draftWithRetconApplied(draft);
                 return isHealthComplete(
                     draft,
-                    collectEffectiveTraits(draft, this._traitCategories)
+                    collectEffectiveTraits(postRetcon, this._traitCategories)
                 );
+            }
             case "finishing":
                 return isFinishingComplete(draft);
             default:
@@ -1218,11 +1222,14 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
 
     #healthContext() {
         const draft = this.wizardState;
-        const traits = collectEffectiveTraits(draft, this._traitCategories);
-        const options = healthTraitOptions(draft, traits);
+        // Retcon (e.g. Increase Red status) must affect Health without mutating
+        // the live personality.statusDie — that bump is applied at Actor sync.
+        const postRetcon = draftWithRetconApplied(draft);
+        const traits = collectEffectiveTraits(postRetcon, this._traitCategories);
+        const options = healthTraitOptions(postRetcon, traits);
         refreshHealthComputation(draft, this._traitCategories);
         const health = draft.health;
-        const red = draft.personality?.statusDie?.red;
+        const red = redStatusDieForHealth(draft);
         const notes = draft.personality?.specialNotes || [];
 
         return {
