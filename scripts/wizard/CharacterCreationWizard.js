@@ -787,6 +787,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                                 constraint: group?.constraint,
                                 abilityUuid: ab.uuid,
                                 groupSelectedUuids: selected,
+                                groupCount: count,
                                 slotSelections: draft.abilitySlotSelections,
                                 greenFilledUuids: greenFilled
                             })
@@ -908,6 +909,7 @@ export default class CharacterCreationWizard extends HandlebarsApplicationMixin(
                             constraint: group.constraint,
                             abilityUuid: ab.uuid,
                             groupSelectedUuids: selected,
+                            groupCount: count,
                             slotSelections: draft.abilitySlotSelections,
                             greenFilledUuids: greenFilled
                         })
@@ -2310,6 +2312,7 @@ function buildInlineSlotRows(ability, traits, slotSelections, takenInfo = null) 
             constraint: takenInfo?.mixConstraint || null,
             abilityUuid: ability.uuid,
             groupSelectedUuids: takenInfo?.groupSelectedUuids || [],
+            groupCount: takenInfo?.groupCount ?? null,
             slotSelections: takenInfo?.slotSelections || null,
             selectedUuid
         });
