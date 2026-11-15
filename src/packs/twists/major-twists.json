@@ -1,0 +1,214 @@
+{
+  "name": "Major Twists",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "Example major twists from Sentinel Comics: The Roleplaying Game (p. 30).",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "mvJIISJDCG23Xw2o",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero loses Health equal to Max+Min dice.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.mvJIISJDCG23Xw2o"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "9gksjw76kqHysSHq",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero is Hindered using Max+Min dice, and that penalty is persistent.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.9gksjw76kqHysSHq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "LqFszmCo69Kgj6kt",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero must sacrifice something important (at least until the end of the issue) in order to succeed at their goal.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.LqFszmCo69Kgj6kt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "R8PxmbYZdZph9FQp",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The scene escalates 4 spaces towards a more dangerous state.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.R8PxmbYZdZph9FQp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "vDJUF5MPapNyHfp9",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero is separated far from the group and the current action.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.vDJUF5MPapNyHfp9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "5mQOUCOiqyejUWKu",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero draws attention in the form of a new squad of Mid die sized minions equal to number of heroes.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.5mQOUCOiqyejUWKu"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "x4tnmF8fPeEWT1Gb",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero loses access to multiple abilities.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.x4tnmF8fPeEWT1Gb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "z3XnDFGQtmtB3vCg",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero loses access to one or more of their powers and qualities.",
+      "name": "",
+      "_key": "!tables.results!XvTOvDFkN4IrCJSs.z3XnDFGQtmtB3vCg"
+    }
+  ],
+  "formula": "1d8",
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {
+    "scrpg-actor-compendium": {
+      "key": "major"
+    }
+  },
+  "_id": "XvTOvDFkN4IrCJSs",
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "sort": 100000,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!XvTOvDFkN4IrCJSs"
+}

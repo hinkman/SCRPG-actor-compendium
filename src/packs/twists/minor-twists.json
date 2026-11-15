@@ -1,0 +1,260 @@
+{
+  "name": "Minor Twists",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "Example minor twists from Sentinel Comics: The Roleplaying Game (p. 30).",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "qAKAUfnCC9RrFX61",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero loses Health equal to the Mid die.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.qAKAUfnCC9RrFX61"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "laSZEoPg2SoiWOq2",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero is Hindered using the Max die.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.laSZEoPg2SoiWOq2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "7j7sjlanGB5IK0ML",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero must make a difficult choice as part of the action.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.7j7sjlanGB5IK0ML"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "pUVUyAwDsQ8VOdSV",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero succeeds, but not as well as planned.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.pUVUyAwDsQ8VOdSV"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "HXVanXFhrjwkBB5S",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero must reveal a treasured secret, an embarrassing weakness, or otherwise bargain something away to succeed at their goal.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.HXVanXFhrjwkBB5S"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "MdSAkKBLsh97WKWe",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The scene escalates 1 space towards a more dangerous state.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.MdSAkKBLsh97WKWe"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "r17rTAd0f8Lq2FEJ",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero is separated from the rest of the group as a result of the action.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.r17rTAd0f8Lq2FEJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "fmjb5TTeVuf2WkXg",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero draws attention in the form of a new minion equal to their Mid die.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.fmjb5TTeVuf2WkXg"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_id": "DMctCQ9c8ct8oUJI",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "The hero loses access to one Green ability.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.DMctCQ9c8ct8oUJI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "JxN0AsyrahcbvG7y",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.10",
+        "createdTime": 1762387200000,
+        "modifiedTime": 1762387200000,
+        "lastModifiedBy": null
+      },
+      "description": "One of the hero's powers or qualities is reduced in die size.",
+      "name": "",
+      "_key": "!tables.results!VATDEu9MKVhyBpV5.JxN0AsyrahcbvG7y"
+    }
+  ],
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {
+    "scrpg-actor-compendium": {
+      "key": "minor"
+    }
+  },
+  "_id": "VATDEu9MKVhyBpV5",
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.10",
+    "createdTime": 1762387200000,
+    "modifiedTime": 1762387200000,
+    "lastModifiedBy": null
+  },
+  "sort": 0,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!VATDEu9MKVhyBpV5"
+}

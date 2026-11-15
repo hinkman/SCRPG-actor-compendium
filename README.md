@@ -11,6 +11,7 @@ Version 0.9.0 contains:
 - Personalities (rulebook pages 109–112)
 - Archetypes (rulebook pages 81–106), with table numbers and UUID-linked powers/qualities in descriptions
 - Power Sources (rulebook pages 56–70), with table numbers, UUID-linked powers, and Yellow/Green ability links
+- Minor Twists and Major Twists roll tables (rulebook page 30)
 - Abilities in the shared **SCRPG Abilities** pack:
   - **Green → Principles** — principle Green abilities
   - **Green / Yellow → Power Sources** — power-source abilities by color

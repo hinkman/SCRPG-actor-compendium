@@ -691,3 +691,85 @@ for (const pack of PACKS) {
         throw new Error(`Expected ${pack.expectedCount} ${label}, wrote ${itemCount}`);
     }
 }
+
+function buildTwistTables() {
+    const dataPath = path.join(root, "src/data/twists.json");
+    const sourceRoot = path.join(root, "src/packs/twists");
+    const tables = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    if (!Array.isArray(tables) || tables.length !== 2) {
+        throw new Error("src/data/twists.json must contain exactly two tables (minor, major)");
+    }
+
+    fs.rmSync(sourceRoot, { recursive: true, force: true });
+    fs.mkdirSync(sourceRoot, { recursive: true });
+
+    const ids = new Set();
+    let tableCount = 0;
+
+    for (const table of tables) {
+        if (!table.key || !table.name || !table.formula || !Array.isArray(table.results) || !table.results.length) {
+            throw new Error(`Twist table is missing required fields: ${JSON.stringify(table)}`);
+        }
+
+        const tableId = foundryId(`rolltable:twists:${table.key}`);
+        if (ids.has(tableId)) throw new Error(`Duplicate table id ${tableId}`);
+        ids.add(tableId);
+        if (!/^[A-Za-z0-9]{16}$/.test(tableId)) throw new Error(`Bad table id ${tableId}`);
+
+        const results = table.results.map((text, index) => {
+            const resultId = foundryId(`rolltable:twists:${table.key}:result:${index + 1}`);
+            if (ids.has(resultId)) throw new Error(`Duplicate result id ${resultId}`);
+            ids.add(resultId);
+            if (!/^[A-Za-z0-9]{16}$/.test(resultId)) throw new Error(`Bad result id ${resultId}`);
+            const range = index + 1;
+            return {
+                type: "text",
+                weight: 1,
+                range: [range, range],
+                drawn: false,
+                _id: resultId,
+                img: "icons/svg/d20-black.svg",
+                flags: {},
+                _stats: { ...STATS },
+                description: text,
+                name: "",
+                _key: `!tables.results!${tableId}.${resultId}`
+            };
+        });
+
+        const document = {
+            name: table.name,
+            img: "icons/svg/d20-grey.svg",
+            description: table.description || "",
+            results,
+            formula: table.formula,
+            replacement: true,
+            displayRoll: true,
+            flags: {
+                "scrpg-actor-compendium": { key: table.key }
+            },
+            _id: tableId,
+            _stats: { ...STATS },
+            sort: tableCount * 100_000,
+            folder: null,
+            ownership: { default: 0 },
+            _key: `!tables!${tableId}`
+        };
+
+        writeJson(path.join(sourceRoot, `${table.key}-twists.json`), document);
+        tableCount += 1;
+        console.log(`Wrote ${table.name} (${results.length} results, formula ${table.formula})`);
+    }
+
+    return { tableCount, sourceRoot };
+}
+
+{
+    const { tableCount, sourceRoot } = buildTwistTables();
+    const packDest = path.join(root, "packs/twists");
+    clearPack(packDest);
+    await compilePack(sourceRoot, packDest, { log: true, recursive: true });
+    if (tableCount !== 2) {
+        throw new Error(`Expected 2 twist tables, wrote ${tableCount}`);
+    }
+}

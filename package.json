@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "enrich": "node ./tools/enrich-wizard-metadata.mjs",
-    "pack": "node ./tools/pack.mjs"
+    "pack": "node ./tools/pack.mjs",
+    "version:check": "node ./tools/bump-module-version.mjs --check",
+    "version:bump": "node ./tools/bump-module-version.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.0"
