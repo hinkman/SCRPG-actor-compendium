@@ -1,0 +1,36 @@
+[
+  {
+    "key": "minor",
+    "name": "Minor Twists",
+    "formula": "1d10",
+    "description": "Example minor twists from Sentinel Comics: The Roleplaying Game (p. 30).",
+    "results": [
+      "The hero loses Health equal to the Mid die.",
+      "The hero is Hindered using the Max die.",
+      "The hero must make a difficult choice as part of the action.",
+      "The hero succeeds, but not as well as planned.",
+      "The hero must reveal a treasured secret, an embarrassing weakness, or otherwise bargain something away to succeed at their goal.",
+      "The scene escalates 1 space towards a more dangerous state.",
+      "The hero is separated from the rest of the group as a result of the action.",
+      "The hero draws attention in the form of a new minion equal to their Mid die.",
+      "The hero loses access to one Green ability.",
+      "One of the hero's powers or qualities is reduced in die size."
+    ]
+  },
+  {
+    "key": "major",
+    "name": "Major Twists",
+    "formula": "1d8",
+    "description": "Example major twists from Sentinel Comics: The Roleplaying Game (p. 30).",
+    "results": [
+      "The hero loses Health equal to Max+Min dice.",
+      "The hero is Hindered using Max+Min dice, and that penalty is persistent.",
+      "The hero must sacrifice something important (at least until the end of the issue) in order to succeed at their goal.",
+      "The scene escalates 4 spaces towards a more dangerous state.",
+      "The hero is separated far from the group and the current action.",
+      "The hero draws attention in the form of a new squad of Mid die sized minions equal to number of heroes.",
+      "The hero loses access to multiple abilities.",
+      "The hero loses access to one or more of their powers and qualities."
+    ]
+  }
+]
