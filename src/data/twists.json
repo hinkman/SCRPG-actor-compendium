@@ -26,7 +26,7 @@
       "The hero loses Health equal to Max+Min dice.",
       "The hero is Hindered using Max+Min dice, and that penalty is persistent.",
       "The hero must sacrifice something important (at least until the end of the issue) in order to succeed at their goal.",
-      "The scene escalates 4 spaces towards a more dangerous state.",
+      "The scene escalates 1d4 spaces towards a more dangerous state.",
       "The hero is separated far from the group and the current action.",
       "The hero draws attention in the form of a new squad of Mid die sized minions equal to number of heroes.",
       "The hero loses access to multiple abilities.",

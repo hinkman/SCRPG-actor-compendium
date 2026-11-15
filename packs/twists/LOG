@@ -1,5 +1,5 @@
-2026/11/15-13:06:16.095461 17981f000 Delete type=3 #1
-2026/11/15-13:06:16.095856 16fdc7000 Level-0 table #5: started
-2026/11/15-13:06:16.096072 16fdc7000 Level-0 table #5: 3746 bytes OK
-2026/11/15-13:06:16.096143 16fdc7000 Delete type=0 #3
-2026/11/15-13:06:16.096200 16fdc7000 Manual compaction at level-0 from '!tables!VATDEu9MKVhyBpV5' @ 72057594037927935 : 1 .. '!tables.results!XvTOvDFkN4IrCJSs.z3XnDFGQtmtB3vCg' @ 0 : 0; will stop at (end)
+2026/11/15-13:13:20.978057 170f1b000 Delete type=3 #1
+2026/11/15-13:13:20.978661 1717b3000 Level-0 table #5: started
+2026/11/15-13:13:20.978847 1717b3000 Level-0 table #5: 3748 bytes OK
+2026/11/15-13:13:20.978913 1717b3000 Delete type=0 #3
+2026/11/15-13:13:20.978963 1717b3000 Manual compaction at level-0 from '!tables!VATDEu9MKVhyBpV5' @ 72057594037927935 : 1 .. '!tables.results!XvTOvDFkN4IrCJSs.z3XnDFGQtmtB3vCg' @ 0 : 0; will stop at (end)
