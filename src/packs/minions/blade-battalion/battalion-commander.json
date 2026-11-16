@@ -1,0 +1,122 @@
+{
+  "name": "Battalion Commander",
+  "type": "minion",
+  "img": "icons/svg/cowled.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "Battalion Commander",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d8",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "items": [
+    {
+      "_id": "vIdbxnd3lR2BIXz8",
+      "name": "Hold The Line",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Any nearby allied minions gain a +1 to their save rolls and Attack rolls.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9dAI5OgZZmLa2lA1.vIdbxnd3lR2BIXz8"
+    },
+    {
+      "_id": "uE4YBrYV0PUYxhEB",
+      "name": "Quick-Deploy Baton",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever a Battalion Commander rolls a save roll, also use that roll as an Attack against a nearby foe, if there are any.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9dAI5OgZZmLa2lA1.uE4YBrYV0PUYxhEB"
+    }
+  ],
+  "effects": [],
+  "folder": "SuEVG788fN24PhAr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "blade-battalion",
+      "kind": "lieutenant",
+      "description": "Blade Battalion Commanders have all risen through the ranks. This is an impressive feat, considering how dangerous life is as a Blade Battalion Trooper. As a result, they should be feared not just because of the troops under their command, but also due to their own combat capabilities.",
+      "sourcePage": 406,
+      "dieTypeKnown": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "9dAI5OgZZmLa2lA1",
+  "_key": "!actors!9dAI5OgZZmLa2lA1"
+}

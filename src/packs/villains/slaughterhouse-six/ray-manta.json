@@ -1,0 +1,634 @@
+{
+  "name": "Ray Manta",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Raymond Mantey",
+    "archetype": "Inventor",
+    "approach": "Underpowered",
+    "wounds": {
+      "value": 0,
+      "max": 40
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "wTIc1prkWDpkzzRW",
+      "name": "40",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.wTIc1prkWDpkzzRW"
+    },
+    {
+      "_id": "TSgrifOhI5bJH3DN",
+      "name": "Gadgets",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.TSgrifOhI5bJH3DN"
+    },
+    {
+      "_id": "P6ZKsOZWnaYTTNIx",
+      "name": "Conspiracy Theorist",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.P6ZKsOZWnaYTTNIx"
+    },
+    {
+      "_id": "P87DjC1Xrv2XBRxz",
+      "name": "Inventions",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.P87DjC1Xrv2XBRxz"
+    },
+    {
+      "_id": "YKbJQXujTYohtTE9",
+      "name": "Conviction",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.YKbJQXujTYohtTE9"
+    },
+    {
+      "_id": "ZcWz4FQjduUpm31L",
+      "name": "Invention Mods",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.ZcWz4FQjduUpm31L"
+    },
+    {
+      "_id": "nFkpKAcEZZhKrS4o",
+      "name": "4+ Invention Mods",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.nFkpKAcEZZhKrS4o"
+    },
+    {
+      "_id": "tHh5NM1EciWXFmNg",
+      "name": "2-3 Invention Mods",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.tHh5NM1EciWXFmNg"
+    },
+    {
+      "_id": "LizzEI8kEXaHWSBl",
+      "name": "Contingencies Upon",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>damage and reduce all your power dice by one size. If this reduces any</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.LizzEI8kEXaHWSBl"
+    },
+    {
+      "_id": "PH3jnqocbVw7jXmr",
+      "name": "Contingencies",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>dice to below a , you are knocked out. Boost using Inventions. Use your Max die. Hinder using your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.PH3jnqocbVw7jXmr"
+    },
+    {
+      "_id": "rG9xQfpRODPQqAPR",
+      "name": "Prepared For Anything",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using your Min die. Boost using Inventions and use your Max die, also Boost with your Mid</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.rG9xQfpRODPQqAPR"
+    },
+    {
+      "_id": "blFIiseCbuMFSICg",
+      "name": "Ramshackle Creation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>die, and either make one of those bonuses persistent and exclusive or Attack with your Min die. Discard one of your bonuses to Defend against all Attacks against you</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.blFIiseCbuMFSICg"
+    },
+    {
+      "_id": "utVU1DejwAjk98nq",
+      "name": "Tinfoil Components",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>until your next turn, using that bonus value as the Defend result. Attack using Gadgets. If you roll doubles, add that value to your Attack.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.utVU1DejwAjk98nq"
+    },
+    {
+      "_id": "Et49YygPkAkO9AgQ",
+      "name": "Unexpected Accuracy",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Ray Manta built a bigger, semi-autonomous suit for himself, represented as a lieutenant with the Distance Attack, Escape Plan, Reliable, and If you roll triples, add all three dice to your Attack.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.Et49YygPkAkO9AgQ"
+    },
+    {
+      "_id": "goq263k1ubCfZo73",
+      "name": "The Manta Body",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Recovery abilities from page 236. (When using this upgrade, Ray Manta has 15 additional Health.) As long as you have access to materials, you can automatically succeed</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.goq263k1ubCfZo73"
+    },
+    {
+      "_id": "iShHX8ScEYoYuH0g",
+      "name": "Master of Mad Science",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>when Overcoming a challenge by using scientific principles and inventions.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.iShHX8ScEYoYuH0g"
+    }
+  ],
+  "effects": [],
+  "folder": "bVunWCsumAfcxt7G",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "slaughterhouse-six",
+      "sourcePage": 400,
+      "biographyHtml": "<p>401\n401\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nRaymond Mantey was one of RevoCorp’s most \nbrilliant weapon developers, responsible for some \nof the best-selling products in their off-the-books \nvillain supply division. If a client wanted a custom \nbattlesuit or specialized cybernetics, Ray was the \none to talk to. Few chose to do so more than once, \ngiven Ray’s proclivity for talking endlessly about \nconspiracies and robots at every opportunity. As \ntime went on, management decided that he was \ntoo useful to get rid of, but too weird for clients. \nWhen he made a manta-themed battle suit for \nhimself, fitted with anti-robot technology, they \nwere only too happy to transfer him to the active \nduty wing, and when Ambuscade came looking for \nmembers for a villain team, everyone at RevoCorp \nwas a bit relieved to see Raymond go. Glamour’s \nreveal as the true leader didn’t really surprise \nhim. After all, an illusionist creating a \nleader with illusions seemed \nentirely logical to him.\nCapabilities \nAnd Motivations\nRaymond Mantey has a mind \nthat is constantly making connections, for better \nand for worse. He can look at a camera and see \nhow the principles involved could be adapted into \na set of goggles that bypass the eye and directly \ntransmit to the brain, or look at a grapefruit and \nsee a vast conspiracy by the secretive international \nfruit council to sedate the populace through their \nchoice of breakfast citrus. He is constantly making \nnew inventions and new conspiracies in equal \nmeasure. The rest of the Slaughterhouse Six team \nhave learned not to ask him to go into detail and \nwork around his desire to wake people up to the \nmany truths he can see everywhere.\nUpgrades\nRay Manta has been in enough scrapes to know \nthat up close and personal isn’t for him. He’s been \nworking on suit upgrades to give his suit limited \nautonomy to get him out of trouble, like having a \nmedevac looking over his shoulder at all times. In \ntheory, it could even do some of the fighting for \nhim. But just because it can make decisions and act \non its own does NOT mean it is a robot.\nVillains\nAlias: Raymond Mantey...wait, why do you want \nto know?\nGender: Male, but gender is an artificial construct \nthey use to divide us.\nAge: Mid-40s, but impossible to truly be sure since \nwe are all programs in a simulation.\nHeight: 5’-ish. Slouches to throw off the satellites. \nEyes: Blue, constantly looking around for the \nhidden cameras.\nHair: Brown and greasy, because shampoo has \nsedatives to pacify the population. \nSkin: Pasty, unwashed to avoid the nanomachines \nin the water.\nBuild: Overweight and furtive\nCostume/Equipment: A blue smock and grey pants \nwith brown satchel. Backpack with a prehensile \ntail that ends in a gold spade-head with a laser. \nCloak made of reinforced tin-foil, split down the \nmiddle into two wings. Reinforced tin helmet with \nradar-jamming peaks and multi-lensed goggles.\nApproach: Underpowered\nArchetype: Inventor\nRay Manta</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "hFPRXRnq04vI3fzW",
+  "_key": "!actors!hFPRXRnq04vI3fzW"
+}

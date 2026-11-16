@@ -1,0 +1,314 @@
+{
+  "name": "Ruins of Atlantis",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>430\n430\nLocation: South Atlantic Ocean\nCoordinates: 34° 37’ 59” N, 12° 16’ 57’’ W\nDepth: 5698m (18694 feet)\nType: City/Magical Ward\nArea: approximately 73 ha (180 acres)\nAccessible area: approximately 40 ha (98 acres)\nFounded: unknown\nAbandoned: unknown\nCause of abandonment: unknown\nUNESCO World Heritage Site\nOfficial name: Archaeological area of Atlantis\nType: Scientific, cultural, technological\nDesignated: 2019\nRegion: International\nResearchers: 14\nKrakens: 1\nKraken Tentacles: Uncountable\nRuins of\nAtlantis\nResearchers have known about the existence \nof the place called Atlantis for years, but traveling \nto the bottom of the Atlantic Ocean has made \narchaeological expeditions prohibitively difficult. \nThe waters around Atlantis is patrolled by an \naggressive cephalopod of unknown classification, \nand while the ruins are sealed and pressurized by \nsome ancient unknowable technology, researchers \nwould have to contend with the ruin’s still-active \ninternal defenses, powered by Atlantean artifacts \nwhich defy all scientific explanation. \nDespite these challenges, a multinational team \nof researchers has set up a base within the ruins \nthemselves, protected by a pressurized water \nbarrier around the site. The crews of the Atlantis \nexpeditions have learned a healthy respect for the \nkraken, who seems content to lurk about near the \nedges of the water barrier, but will reach into the \ncomplex if it considers the ruins threatened in any \nway. Still, deep within the ruins, archaeologists are \nfinding evidence that challenges all conventional \ntheories on human evolution and civilization. \nHistorians estimate that both the founding \nand abandonment of Atlantis occurred many \nthousands of years before the earliest known \nhuman settlement of Jebel Irhoud, potentially just \nunder a million years before the human civilization \nof Mesopotamia. Indeed, it seems the citizens of \nAtlantis were creating complex technologies about \nthe same time as Neanderthals were learning that \nstones could be used to hit things. \nAtlantean magic is so far beyond current \nunderstanding that even to those who are familiar \nwith the weaving of arcane energies cannot \naccount for how it worked, making the fall of \ntheir society all the more perplexing. They could \nseal their city in such a way that it would survive \nsinking to the bottom of the ocean, but why? What \npossible catastrophe could cause an entire culture \nto abandon their city?\nWhen the Atlanteans left their city, it seems they \ntook the secrets of their ancient magic with them. \nWhile we can examine their marvels and learn \nstaggering truths about our own history, there are \nsome secrets that seem to have been lost forever.\n430\n430\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "C2Sae0J8CbEsI6Ey",
+      "name": "The Kraken Seeks Prey",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Roll the environment dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.C2Sae0J8CbEsI6Ey"
+    },
+    {
+      "_id": "rL3Ps2De59FP0M4C",
+      "name": "Water Barrier Disturbances",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>A stray projectile or</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.rL3Ps2De59FP0M4C"
+    },
+    {
+      "_id": "FUxic9WadIh9rDU8",
+      "name": "Activated Pillars",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>Giant crystalline pillars pulse with</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.FUxic9WadIh9rDU8"
+    },
+    {
+      "_id": "6m2W6iYETJZu2nvp",
+      "name": "The Kraken Is Angered",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Roll the environment dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.6m2W6iYETJZu2nvp"
+    },
+    {
+      "_id": "8He5i1NMyOWEYu04",
+      "name": "Forgotten Magics",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>A magical ward has been</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.8He5i1NMyOWEYu04"
+    },
+    {
+      "_id": "vRgKrGWZ8NpDJgB0",
+      "name": "Water Barrier Fault",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>A segment of the water</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.vRgKrGWZ8NpDJgB0"
+    },
+    {
+      "_id": "Q1184gvVGqOToNYr",
+      "name": "The Kraken Thrashes",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Roll the environment dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.Q1184gvVGqOToNYr"
+    },
+    {
+      "_id": "AIOEp3DUED0nMk0m",
+      "name": "Misapplied Protection",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Something has gone awry</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.AIOEp3DUED0nMk0m"
+    },
+    {
+      "_id": "YyJ8HE2bF73QTgaE",
+      "name": "Defensive Impairing Field",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>With a thrumming</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ckcEU7bkRjh116A6.YyJ8HE2bF73QTgaE"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 430,
+        "twists": 431
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "ckcEU7bkRjh116A6",
+  "_key": "!actors!ckcEU7bkRjh116A6"
+}

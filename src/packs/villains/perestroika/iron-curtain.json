@@ -1,0 +1,554 @@
+{
+  "name": "Iron Curtain",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Barrikada Dmitriyevna Petrov",
+    "archetype": "Guerilla",
+    "approach": "Prideful",
+    "wounds": {
+      "value": 0,
+      "max": 65
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "CUNiuQzKaB54c0Sj",
+      "name": "65",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.CUNiuQzKaB54c0Sj"
+    },
+    {
+      "_id": "4losZPbWFY2p6xj0",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.4losZPbWFY2p6xj0"
+    },
+    {
+      "_id": "KYsS6G1DkB4Aziay",
+      "name": "Leaping",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.KYsS6G1DkB4Aziay"
+    },
+    {
+      "_id": "gl1rEZOZo7dcwC6q",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.gl1rEZOZo7dcwC6q"
+    },
+    {
+      "_id": "6Oept8RBsJoMyRlB",
+      "name": "Conviction",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.6Oept8RBsJoMyRlB"
+    },
+    {
+      "_id": "Ui59AspBbMUbT1GQ",
+      "name": "Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.Ui59AspBbMUbT1GQ"
+    },
+    {
+      "_id": "f368aUK3uq3amIDS",
+      "name": "4+ Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.f368aUK3uq3amIDS"
+    },
+    {
+      "_id": "UAipfYx6p6m9BHgb",
+      "name": "2-3 Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.UAipfYx6p6m9BHgb"
+    },
+    {
+      "_id": "zqSW8VGICxROKOjB",
+      "name": "Iron Focus",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>start of your next turn with your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.zqSW8VGICxROKOjB"
+    },
+    {
+      "_id": "srw60s6Q3EH34lCC",
+      "name": "Metal Skin",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Reduce all damage dealt to you by 2. At the start of your turn, gain a bonus equal to the number of</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.srw60s6Q3EH34lCC"
+    },
+    {
+      "_id": "hCGgOmBnByFTfOh1",
+      "name": "Seeing Red",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>opponents that Attacked you since your last turn. Attack multiple close targets using Strength. Hinder each target using</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.hCGgOmBnByFTfOh1"
+    },
+    {
+      "_id": "pG6GINqObPuSlwA3",
+      "name": "The Curtain Sweep",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your Min die. Increase all of Iron Curtain’s quality dice by one size, except for Iron Heir.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.pG6GINqObPuSlwA3"
+    },
+    {
+      "_id": "uh16wsDV5au8QmJQ",
+      "name": "Quality Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Iron Curtain has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.uh16wsDV5au8QmJQ"
+    },
+    {
+      "_id": "9O2tb4HSQgbvw1qm",
+      "name": "Master of Annihilation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!tCNIBE0isnok8sIr.9O2tb4HSQgbvw1qm"
+    }
+  ],
+  "effects": [],
+  "folder": "qFXsoYfpv2WiPVRp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "perestroika",
+      "sourcePage": 384,
+      "biographyHtml": "<p>385\n385\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nBarrikada is the second to bear the name “Iron \nCurtain.” Her father was the first, frequently clashing \nwith previous Legacies during the Cold War. As the \nSoviet Union crumbled, Barrikada witnessed her \nfather’s spiral into depression and alcoholism as he \ncould not adapt to the changing world. He died a \nbroken man, but tried to put his angry daughter on \na better path with his dying words. Those words fell \non deaf ears. Mecha-Stalin’s message of a cause to \nfight for as well as a promise of strong foes to test \nherself against proved irresistible. After Perestroika’s \ndefeat at the hands of the Sentinels of Freedom, \nIron Curtain is eager for a rematch!\nCapabilities and Motivations\nIron Curtain’s metal flesh is both a blessing and \na curse. Where her father could transition to \nmetal and back at will, her skin is always metallic. \nThis grants her immense strength and durability, \nallowing her to fight against powerhouses like \nLegacy on equal footing, but greatly reduces her \nsense of touch and taste. While she can register \nheat and cold, she is immune to all but the most \nextreme ranges. Seeking to experience sensations \nand break the numbness, she is most at home in \nthe middle of a fight against an opponent who can \ntest her enough to finally make her feel something.\nUpgrades\nTaking advantage of Iron Curtain’s resilience, Mecha-\nStalin has used the technology at his disposal to \ncreate an electrified exoskeleton that makes her \neven more dangerous in close combat. With Iron \nCurtain’s formidable strength and durability, this \nelectric field ensures that she can last even longer \nand do even more damage. While she isn’t immune \nto the electricity it produces, she welcomes the \nadded spice it brings to the fight.\nAlias: Barrikada Dmitriyevna Petrov\nGender: Female\nAge: Early-20s\nHeight: 6’2”\nEyes: White\nHair: dark grey, metallic\nSkin: Silver, metallic\nBuild: Very Muscular\nCostume/Equipment: A red unitard, gloves, and \nknee-high boots. Red bands around thighs and \nupper arms, and a red star on each shoulder.\nApproach: Prideful\nArchetype: Guerrilla\nIron Curtain</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "tCNIBE0isnok8sIr",
+  "_key": "!actors!tCNIBE0isnok8sIr"
+}

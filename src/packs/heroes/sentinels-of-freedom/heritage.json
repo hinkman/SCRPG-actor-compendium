@@ -1,0 +1,876 @@
+{
+  "name": "Heritage",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Paul Parsons",
+    "archetype": "Physical Powerhouse",
+    "wounds": {
+      "value": 0,
+      "max": 32
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of Order",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of The Mentor",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Middle-Aged",
+    "height": "6’ 2”",
+    "eyes": "Blue",
+    "hair": "Light Brown and Grey",
+    "skin": "White",
+    "build": "Athletic",
+    "costume": "<p>Form-fitting blue and silver bodysuit, a high silver collar, blue gloves, tall black boots, with a stylized silver lantern logo on each shoulder.</p>",
+    "background": "Dynasty",
+    "powerSource": "Genetic",
+    "personality": "Natural Leader",
+    "health": {
+      "greenLow": 25,
+      "yellowHigh": 24,
+      "yellowLow": 12,
+      "redHigh": 11,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "xnhmEBJF0Dv6AduP",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.xnhmEBJF0Dv6AduP"
+    },
+    {
+      "_id": "aNFWDY6yHAI7VLpX",
+      "name": "Flight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.aNFWDY6yHAI7VLpX"
+    },
+    {
+      "_id": "SdPdoo90oNXj3tvK",
+      "name": "Speed",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.SdPdoo90oNXj3tvK"
+    },
+    {
+      "_id": "CUheDLRf2FZQvuKs",
+      "name": "Strength",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.CUheDLRf2FZQvuKs"
+    },
+    {
+      "_id": "pkDpMkLCNhAsUaSH",
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.pkDpMkLCNhAsUaSH"
+    },
+    {
+      "_id": "1BGcRL0fJeKA6W3D",
+      "name": "America’s Finest",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.1BGcRL0fJeKA6W3D"
+    },
+    {
+      "_id": "8svMASqwYNCG76eW",
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.8svMASqwYNCG76eW"
+    },
+    {
+      "_id": "HxqBW2yGd4jbfvSP",
+      "name": "History",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.HxqBW2yGd4jbfvSP"
+    },
+    {
+      "_id": "Ez8klhb8gN1eVymx",
+      "name": "Leadership",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.Ez8klhb8gN1eVymx"
+    },
+    {
+      "_id": "WqIszd6N2ZKUIcYH",
+      "name": "Fortitude",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Boost using Leadership. Apply that bonus to all hero Attack and Overcome</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.WqIszd6N2ZKUIcYH"
+    },
+    {
+      "_id": "qd2LGwyogNbQTZg9",
+      "name": "Galvanize",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>actions until the start of your next turn. Attack using Leadership. Other nearby heroes in the Yellow or Red zone</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.qd2LGwyogNbQTZg9"
+    },
+    {
+      "_id": "ospqV4zZTD7iaD0r",
+      "name": "Motivational Charge",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Overcome a challenge where you can organize other people. Use your Max Recover equal to your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.ospqV4zZTD7iaD0r"
+    },
+    {
+      "_id": "3iwTWU62bihawqnJ",
+      "name": "Principle of Order",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge that someone else younger already tried and failed.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.3iwTWU62bihawqnJ"
+    },
+    {
+      "_id": "CiiyCxYFiKrtTGzS",
+      "name": "Principle of the Mentor",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Use your Max die. You and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.CiiyCxYFiKrtTGzS"
+    },
+    {
+      "_id": "3qaEnsOF3qKlYBO4",
+      "name": "Danger Sense",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>rolling your single Awareness die. Attack using Strength. The target of that Attack must take the Attack action</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.3qaEnsOF3qKlYBO4"
+    },
+    {
+      "_id": "SOTSRhCcSSmLNyvp",
+      "name": "Lead from the Front",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>against you as its next turn, if possible. Boost yourself using Vitality, then either remove a penalty on yourself or</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.SOTSRhCcSSmLNyvp"
+    },
+    {
+      "_id": "JjX9hGo1VNiliKSY",
+      "name": "Steel Yourself",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Recover using your Min die. When an opponent Attacks, you may become the target of the Attack and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.JjX9hGo1VNiliKSY"
+    },
+    {
+      "_id": "aYq5rJ2lRj67R8w0",
+      "name": "Heroic Interception",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Defend by rolling your single Red zone die. Attack using Flight. Use your Max die. Then, Hinder that target using your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.aYq5rJ2lRj67R8w0"
+    },
+    {
+      "_id": "L5H3s5zXHboLMHXA",
+      "name": "Take Down",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Mid+Min dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!p8whkrDjmb5hvQQr.L5H3s5zXHboLMHXA"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 294,
+        "ability": 295,
+        "bio": 296
+      },
+      "biographyHtml": "<p>296\n296\nBiography \nFor decades, the name Paul Parsons was \nsynonymous with Legacy, arguably the world’s \ngreatest hero. Whenever the fighting was thickest, \nhe would be there, holding back the tide. Wherever \ninjustice reared its ugly head, a flash of white and \nblue would appear and save the day. Whenever a \nmadman with a plan for world domination laughed \nmaniacally and declared that he was invincible, \nLegacy would be there at the last moment to show \nhim just how wrong he was. In the darkest times, \neven the bravest heroes would look to him for \ninspiration, and he was always prepared to put his \nlife on the line for the freedom of others. \nPaul, like all of the firstborn Parsons before him, \nknew that he would likely die on the front lines \nof the fight against insurmountable odds, leaving \nthe next generation to take up the mantle. His \nfamily accepted and supported this, ready to face \nwhatever came with grace. \nWhen OblivAeon came to destroy all that was \nand would ever be, Paul knew that it would likely \nbe his final battle. In order to save all of existence, \nhe prepared to face the cosmic being with his \nfellow heroes (and greatest enemy) at his side, \nhis daughter prepared to fully take up the name \nof Legacy should he fall. It was an epic battle that \ntaxed his limits, and many times it seemed that he \nwould need to make the ultimate sacrifice. When \nthe time came, then, he was astonished to find that \nit was his greatest enemy, Baron Blade, who died to \nsave the world.\nLegacy was at a crossroads. He knew that his \ndaughter was ready to be a hero in her own right, \nand it was fitting that she inherit the name of Legacy. \nHowever, he couldn’t simply hand off responsibility \nand stop helping others. After consulting with \nhis family and friends, he reached a decision. Paul \nParsons would continue to be a hero under the \nname Heritage, leaving his daughter Felicia free to \nstep into the role of Legacy. The OblivAeon event \nproved that the world needed more heroes, so he \nwould focus on educating the next generation as a \nteacher at the newly proposed Freedom Plaza, and \nas an ambassador to the new multinational group \nG.L.O.B.A.L. Heritage would become a beacon of \nlight, showing the way for the next generation… \nbut if he ever sees a kid crying because their kitten \nis stuck in a tree, well, he always makes time to help \nthose in need.\nAlias: Paul Parsons\nGender: Male\nAge: Middle-Aged\nHeight: 6’2”\nEyes: Blue\nHair: Light brown and grey\nSkin: White\nBuild: Athletic\nCostume/Equipment: Form-fitting blue and silver \nbodysuit, a high silver collar, blue gloves, all black \nboots, with a stylized silver lantern logo on each \nshoulder.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Physical Powerhouse\nPersonality: Natural Leader\nHeritage\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "p8whkrDjmb5hvQQr",
+  "_key": "!actors!p8whkrDjmb5hvQQr"
+}

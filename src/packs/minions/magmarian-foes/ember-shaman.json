@@ -1,0 +1,91 @@
+{
+  "name": "Ember Shaman",
+  "type": "minion",
+  "img": "icons/svg/cowled.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "Ember Shaman",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d8",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "items": [
+    {
+      "_id": "BdYhBJWgJXqndSym",
+      "name": "Harvest",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>As an action, a Crystal Collector can remove a bonus or penalty from a nearby target. If it does so while its die is lower than a , increase its current die size by one.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!7xBvoXACzVpEZZ9e.BdYhBJWgJXqndSym"
+    }
+  ],
+  "effects": [],
+  "folder": "XcA25JQpqxB6aSGg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "magmarian-foes",
+      "kind": "lieutenant",
+      "description": "Inner Core Tunneler Inner Core Tunneler The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+      "sourcePage": 411,
+      "dieTypeKnown": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "7xBvoXACzVpEZZ9e",
+  "_key": "!actors!7xBvoXACzVpEZZ9e"
+}

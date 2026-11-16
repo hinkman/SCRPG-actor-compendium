@@ -1,0 +1,948 @@
+{
+  "name": "Headlong",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Brandon Bradley",
+    "archetype": "Transporter",
+    "wounds": {
+      "value": 0,
+      "max": 28
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of the Mask",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Speed",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Late-Teens",
+    "height": "5’10”",
+    "eyes": "Brown",
+    "hair": "Dark Brown",
+    "skin": "Dark",
+    "build": "Athletic",
+    "costume": "<p>Headlong’s sleeveless red bodysuit with blue energy arrows is made to fit under his work clothes. He always keeps his red gloves, dark red domino mask, and grey kneepads in his grey messenger bag, ready to change into costume at any time.</p>",
+    "background": "Struggling",
+    "powerSource": "Relic",
+    "personality": "Fast Talking",
+    "health": {
+      "greenLow": 22,
+      "yellowHigh": 21,
+      "yellowLow": 11,
+      "redHigh": 10,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d10",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "R9UhqWzFUOqkXiGc",
+      "name": "Agility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.R9UhqWzFUOqkXiGc"
+    },
+    {
+      "_id": "jvYyUKitBwhsvjQs",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.jvYyUKitBwhsvjQs"
+    },
+    {
+      "_id": "j7Ewnh1GIXgIcQ1q",
+      "name": "Intuition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.j7Ewnh1GIXgIcQ1q"
+    },
+    {
+      "_id": "BfCXQNDkHCDZnRLi",
+      "name": "Momentum",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.BfCXQNDkHCDZnRLi"
+    },
+    {
+      "_id": "lCYDzQWMBCheHK6U",
+      "name": "Speed",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.lCYDzQWMBCheHK6U"
+    },
+    {
+      "_id": "gGMEgoICLzdLKq0U",
+      "name": "Acrobatics",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.gGMEgoICLzdLKq0U"
+    },
+    {
+      "_id": "cBxEKGbUTnMCKHk8",
+      "name": "Banter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.cBxEKGbUTnMCKHk8"
+    },
+    {
+      "_id": "qWh1ov3lZWGb7gFO",
+      "name": "Criminal Underworld Info",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.qWh1ov3lZWGb7gFO"
+    },
+    {
+      "_id": "p3XiMjMjs0Amjezj",
+      "name": "Hustlin’",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.p3XiMjMjs0Amjezj"
+    },
+    {
+      "_id": "DIu1fjFXlj8MuHhL",
+      "name": "Persuasion",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.DIu1fjFXlj8MuHhL"
+    },
+    {
+      "_id": "2fyZMFetEtUWF46n",
+      "name": "Frictionless Shove",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>move them somewhere else in the scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.2fyZMFetEtUWF46n"
+    },
+    {
+      "_id": "xOZdcMa7zCaQ29TJ",
+      "name": "Get Moving",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost yourself using Momentum. That bonus is persistent and exclusive. Attack using Agility. Defend against all attacks against you until your next</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.xOZdcMa7zCaQ29TJ"
+    },
+    {
+      "_id": "1DmVEdaqpXzWbZvr",
+      "name": "Slip & Slide",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome using knowledge from your civilian life and use your Max die. You turn with your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.1DmVEdaqpXzWbZvr"
+    },
+    {
+      "_id": "ErtEkyFcsCtD3YMV",
+      "name": "Principle of the Mask",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and each of your allies gain a hero point. Whenever you successfully Overcome, you may end up anywhere in the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.ErtEkyFcsCtD3YMV"
+    },
+    {
+      "_id": "N4tVIVVjXca2KMoe",
+      "name": "Principle of Speed",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>current environment. Then, you and each of your allies gain a hero point.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.N4tVIVVjXca2KMoe"
+    },
+    {
+      "_id": "vFl4lC6PyKdfUDpQ",
+      "name": "Bowl Over",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack multiple targets using Momentum. Use your Min die against each. Boost yourself using Momentum. Use your Max die. Hinder a nearby</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.vFl4lC6PyKdfUDpQ"
+    },
+    {
+      "_id": "67b1jGGzOotntnNz",
+      "name": "Friction Transfer",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>opponent with your Min die. When another hero in the Yellow or Red zone would take damage, you may</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.67b1jGGzOotntnNz"
+    },
+    {
+      "_id": "XYbH1bMDucjPpO7I",
+      "name": "Smooth Move",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Defend them by rolling your single Intuition die. Hinder multiple nearby targets using Acrobatics. Use your Max die. End your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.XYbH1bMDucjPpO7I"
+    },
+    {
+      "_id": "Fa5YNz3F1gixGdCP",
+      "name": "Slippery Surface",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>turn elsewhere in the scene. Attack using Momentum. Use your Max die. Hinder that target with your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.Fa5YNz3F1gixGdCP"
+    },
+    {
+      "_id": "s2e5YgrOEOzjV8KP",
+      "name": "Spin Out",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Mid+Min dice. When an enemy Attacks an ally you can see, you may become the target</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.s2e5YgrOEOzjV8KP"
+    },
+    {
+      "_id": "7oDAZltvMH1iP5ab",
+      "name": "Wheelin’ & Dealin’",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>of that Attack and Defend against that Attack by rolling your single Red status die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.7oDAZltvMH1iP5ab"
+    }
+  ],
+  "effects": [],
+  "folder": "1Wp2XFdRcAr1Y8cz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "daybreak",
+      "sourcePages": {
+        "attr": 326,
+        "ability": 327,
+        "bio": 328
+      },
+      "biographyHtml": "<p>328\n328\nBiography \nBrandon’s family hit hard times after the death of \nhis mom, who died giving birth to his sister Delilah. \nBetween the medical bills and their lack of insurance, \nthe family was in dire straits, and Brandon’s father \nfound that he couldn’t pay the debt collectors and \nhis union dues. He chose the lesser evil, and found \nhimself looking for work as a non-union electrician. \nThis did not help the money situation, so Brandon’s \nolder brother Max decided to chip in. After all, \ndealers were always looking for runners. It was \ngood money, and it let the family stay afloat while \nBrandon took care of Delilah. Then, Max got caught \nwith a paper bag full of pills. The officer was one of \nthe few clean cops in Rook City — he let Max off \nwith a warning, but told him that he’d be checking \nup on him to make sure he didn’t get involved \nwith the criminal life again. He even followed \nthrough, which was more of a rarity. \nUnsurprisingly, the debt collectors started \ncalling again. With Max no longer bringing in \nmoney, Brandon stepped up. He got a job as a \ncourier. It was the same basic principle as what \nhis brother had done, but for far less money. It \nhelped, but only barely. Brandon started taking \non more and more jobs, running himself ragged \ntransporting packages around the city. One \nevening, after a particularly grueling day moving \nboxes of documents between law offices, he got a \njob transporting a parcel wrapped in brown paper \ntied with a red cord. It was a bit weird, but it was \ngoing to an antique shop so it made sense that \nit looked strange. He set out quickly, but as tired \nas he was, he didn’t hear the exterminator’s van \nuntil it barrelled around the corner right in front \nof him. He was sent flying one way, the package \nanother, and the last thing he remembered before \nhe passed out in a pile of trash was the sound of \nswarming bugs. \nWhen Brandon opened his eyes, he saw the \npackage burst open on the street. Shards of glass \nwere everywhere, but a strange resin seal tied to \nthe end of the red cord caught his eye. He picked \nup the seal, thinking that he might still be able to \ndeliver it… and fell over. Then again. Over and over, \neach time he tried to stand, it was like the world \nwas made of ice. When he dropped the seal, the \nconcrete under his feet returned to its normally \nnon-slippery surface. The seal imparted some sort \nof frictionless transference, and with that realization \ncame a measure of control, and thus balance. He \ntried to deliver the remnants of the broken package, \nbut he could never find the shop. For some reason, \nAlias: Brandon Bradley\nGender: Male\nAge: Late-Teens\nHeight: 5’10”\nEyes: Brown\nHair: Dark Brown\nSkin: Brown\nBuild: Athletic\nCostume/Equipment: Headlong’s sleeveless red \nbodysuit with blue energy arrows is made to fit \nunder his work clothes. He always keeps his red \ngloves, dark red domino mask, and grey knee pads \nin his grey messenger bag, ready to change into \ncostume at any time.\nBackground: Struggling\nPower Source: Relic\nArchetype: Transporter\nPersonality: Fast Talking\nHeadlong\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "f3m8yUmYGBn8tyIg",
+  "_key": "!actors!f3m8yUmYGBn8tyIg"
+}

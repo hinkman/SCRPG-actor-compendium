@@ -1,0 +1,674 @@
+{
+  "name": "Dragonclaw",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Sophia DeLeon",
+    "archetype": "Guerrilla",
+    "approach": "Ninja",
+    "wounds": {
+      "value": 0,
+      "max": 60
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "OoHxQ6ityD0u52vr",
+      "name": "60",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.OoHxQ6ityD0u52vr"
+    },
+    {
+      "_id": "a2ncmUUHkqdaZFXu",
+      "name": "Agility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.a2ncmUUHkqdaZFXu"
+    },
+    {
+      "_id": "WZmJMhmAco9xJUCd",
+      "name": "Acrobatics",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.WZmJMhmAco9xJUCd"
+    },
+    {
+      "_id": "feAs8tu1zTW1Sdr3",
+      "name": "Infernal",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.feAs8tu1zTW1Sdr3"
+    },
+    {
+      "_id": "dWhqieYxxZ2hbNBE",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.dWhqieYxxZ2hbNBE"
+    },
+    {
+      "_id": "MTpOjhgVJDX4zBMK",
+      "name": "Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.MTpOjhgVJDX4zBMK"
+    },
+    {
+      "_id": "c2N0GAN09wMURuff",
+      "name": "4+ Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.c2N0GAN09wMURuff"
+    },
+    {
+      "_id": "wH3cEwDBgeS8CvX0",
+      "name": "2-3 Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.wH3cEwDBgeS8CvX0"
+    },
+    {
+      "_id": "mS9YkQz2LYUchXcw",
+      "name": "A Cornered Dragon",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>If you are outnumbered by nearby opponents, reduce all damage</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.mS9YkQz2LYUchXcw"
+    },
+    {
+      "_id": "rKIwzBvIPayrJxWv",
+      "name": "Closes its Wings",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>dealt to you by 2. Attack using Close Combat and use your Max die. Defend against all</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.rKIwzBvIPayrJxWv"
+    },
+    {
+      "_id": "GeAsqX59XzQKppEz",
+      "name": "Drive Back Their Blades",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attacks against you with your Mid die until the start of your next turn.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.GeAsqX59XzQKppEz"
+    },
+    {
+      "_id": "Gy73F4zrJEqFLFBO",
+      "name": "Step as the Crane through",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Acrobatics, using your Max die against one target, Mid die</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.Gy73F4zrJEqFLFBO"
+    },
+    {
+      "_id": "0NioZ1krBiKtfUnU",
+      "name": "the Reeds",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>against another, and Min die against any target.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.0NioZ1krBiKtfUnU"
+    },
+    {
+      "_id": "TMJaGMWcaTt0QkH7",
+      "name": "Strike True, Learn Your",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack multiple close targets using Student of Many Masters. Hinder</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.TMJaGMWcaTt0QkH7"
+    },
+    {
+      "_id": "2oHIt7fIEQRQgLCD",
+      "name": "Foe, Be Unknowable",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>each target using your Min die. When you take an action that lets you make an Attack, also make an</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.2oHIt7fIEQRQgLCD"
+    },
+    {
+      "_id": "oTlgSfHtHoTmSaNs",
+      "name": "One with the Fray",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Attack using your Mid die. (When using this upgrade, Dragonclaw has 20 additional Health.) As long as you are in command of your own forces, automatically</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.oTlgSfHtHoTmSaNs"
+    },
+    {
+      "_id": "nx8ndSn7y2tA6kJO",
+      "name": "Master of Conquest",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>succeed at an Overcome involving seizing an area or capturing civilians.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.nx8ndSn7y2tA6kJO"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 360,
+      "biographyHtml": "<p>361\n361\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nSophia Anna Isabel DeLeon has served many masters \nand learned many things. From “Slim” Walker, her \nfirst master, she learned her own strength. When \nhe shut down his dojo, she learned to use that \nstrength for herself. Her second master, Graham \nPike, taught her how to understand herself and \ncontrol her foes as his Operative. When he \nsacrificed her to pay off a debt, she learned \nto trust no one. Zhu Long, the mystic that \nordered her death, brought her back from \nbeyond the grave and became her new \nmaster, showing her there was still much \nto learn. Bound by Zhu Long’s magic, \nshe carried out his orders as assassin, \ncourier, and emissary. The Dragon \nMaster taught her lessons in poison, \nmagic, and furthered her skills in the \nmartial arts. Here, she learned that \nshe could never defeat an opponent \nwhose capabilities she could not \ndiscover and whose motives she \ncould not understand. Though she seeks \nto escape Zhu Long’s control, she has \nbecome his greatest weapon. As the Dragon’s \nClaw, she has a measure of freedom, though \nshe is ever aware of the leash.\nCapabilities and Motivations\nDragonclaw is among the most capable \ncombatants in the world. The hero Mantra, \nformerly known as Mr. Fixer, is perhaps the only \nliving martial artist who could stand against her \nin hand-to-hand combat. Her fighting style flows \neffortlessly between grace and brutality. Even \nwithout her sword and magic, Dragonclaw can \nvanquish a room of armed professional soldiers \nthat were forewarned of her arrival. While she has \nspecific objectives as Zhu Long’s agent, like stealing \nrare relics or sending a lesson to an enemy, the larger \nplan she is working toward is often inscrutable. She \nis ever testing the bounds of the Dragon’s control, \nthough she knows that the dragon is always \nwatching her. With no way to become the master \nof her own fate, her loyalty to Zhu Long is absolute.\nUpgrades\nIn a ritual of her own devising, Dragonclaw created the \nJade Talon, a stone blade that serves both as a weapon \nand magical focus. Not only can it cut through flesh, \nstone, and metal with equal ease, it allows her to tread \nfarther down the mystical path than ever before. She \ncan channel this power in a variety of ways, with the \nmost terrifying being the power to bring the tattoos \non her body to life to fight with her.\nAlias: Sophia DeLeon\nGender: Female\nAge: Early middle-aged, appears early-20s\nHeight: 5’ 3”\nEyes: Brown\nHair: Black\nSkin: Olive, elaborate dragon tattoos \nBuild: Lithe\nCostume/Equipment: A red body wrap with green \nborders, belted with a red cord that goes around \nher torso multiple times, the tassels streaming \nbehind her. Loose black hair that reaches to her \nmid-back. Elaborate dragon tattoos on her arms \nand legs, with a red one circling her eyes. Left \nwrist wrapped with black cloth. Mid-calf black and \ngreen soft-soled boots. A leather scabbard slung \nover one shoulder that holds the mystical green \nstone blade The Jade Talon.\nApproach: Ninja\nArchetype: Guerilla\nDragonclaw\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "a9uW4sk8gjDQzbPc",
+  "_key": "!actors!a9uW4sk8gjDQzbPc"
+}

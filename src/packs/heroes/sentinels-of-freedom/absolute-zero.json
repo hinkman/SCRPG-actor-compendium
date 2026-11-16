@@ -1,0 +1,883 @@
+{
+  "name": "Absolute Zero",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Ryan Frost",
+    "archetype": "Elemental Manipulator",
+    "wounds": {
+      "value": 0,
+      "max": 29
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of Dependence",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Cold",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Middle-Aged",
+    "height": "5’7”",
+    "eyes": "White",
+    "hair": "None",
+    "skin": "Blueish White",
+    "build": "Slight",
+    "costume": "<p>When not in a cryo chamber, always wearing his white, blue, and carbon-black coolant suit, complete with glowing blue faceplate, palm apertures, chest vents, and a mid-chest triangle.</p>",
+    "background": "Tragic",
+    "powerSource": "Accident",
+    "personality": "Sarcastic",
+    "health": {
+      "greenLow": 23,
+      "yellowHigh": 22,
+      "yellowLow": 11,
+      "redHigh": 10,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "MlD8HYfIoOFXO6G0",
+      "name": "Absorption",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.MlD8HYfIoOFXO6G0"
+    },
+    {
+      "_id": "Fcgm8kTDpUjGBZA8",
+      "name": "Cold",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d12",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.Fcgm8kTDpUjGBZA8"
+    },
+    {
+      "_id": "RTAKMaaVoCVkTzSj",
+      "name": "Intuition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.RTAKMaaVoCVkTzSj"
+    },
+    {
+      "_id": "6JDWavDXA5Gj7F7P",
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.6JDWavDXA5Gj7F7P"
+    },
+    {
+      "_id": "dN4mNHldQaUFeWgn",
+      "name": "Banter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.dN4mNHldQaUFeWgn"
+    },
+    {
+      "_id": "XEVsMlKq7Yuf3P06",
+      "name": "Cool Under Pressure",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.XEVsMlKq7Yuf3P06"
+    },
+    {
+      "_id": "Dnxt6BzMO4FIMlYh",
+      "name": "Creativity",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.Dnxt6BzMO4FIMlYh"
+    },
+    {
+      "_id": "ed4D9uTmtftbw0sM",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.ed4D9uTmtftbw0sM"
+    },
+    {
+      "_id": "WYBCQ7OGnBgX3uLf",
+      "name": "Ice Shield",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend using Cold. Use your Max die. Boost using your Min die. When you change personal zones, you may Boost by rolling your single</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.WYBCQ7OGnBgX3uLf"
+    },
+    {
+      "_id": "tNUL41MUqTFMoaL9",
+      "name": "Thermodynamics",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Cold die. Attack up to two targets using Cold. Also take an amount of damage equal</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.tNUL41MUqTFMoaL9"
+    },
+    {
+      "_id": "vwq3wUNoNDCBGyT6",
+      "name": "Modular Realignment",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome in a situation related to or using your coolant suit. Use your Max to your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.vwq3wUNoNDCBGyT6"
+    },
+    {
+      "_id": "bL4372cfZS1o4FdY",
+      "name": "Principle of Dependence",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge involving Cold and use your Max die. You and each</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.bL4372cfZS1o4FdY"
+    },
+    {
+      "_id": "6NvwZrm0zJ8lLAUK",
+      "name": "Principle of Cold",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>of your allies gain a hero point. When your personal zone changes, Attack all close enemy targets by rolling</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.6NvwZrm0zJ8lLAUK"
+    },
+    {
+      "_id": "KA7GxZkIpXXaeU67",
+      "name": "Coolant Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>your single Cold die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.KA7GxZkIpXXaeU67"
+    },
+    {
+      "_id": "uk0BPTDZEglgCQNi",
+      "name": "Heat Sink",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder any number of nearby targets using Absorption. Use your Max die. If you would take damage from Cold, instead reduce that damage to 0 and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.uk0BPTDZEglgCQNi"
+    },
+    {
+      "_id": "GVIXbZeSNu5MhvG2",
+      "name": "Null-Point Calibrator",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "I",
+        "gameText": "<p>Recover that amount of Health instead. Whenever you are dealt damage, roll your single Absorption die to Defend</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.GVIXbZeSNu5MhvG2"
+    },
+    {
+      "_id": "OhIEam7B2SK9KjCy",
+      "name": "Colder Than Ice",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Whenever you Attack a target with an action, you may also Hinder that against the Attack and Boost yourself.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.OhIEam7B2SK9KjCy"
+    },
+    {
+      "_id": "lb5dikqyWqJEH05S",
+      "name": "Subzero Atmosphere",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>target with your Min die. Attack up to three targets, one of which must be you, using Cold. Assign</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.lb5dikqyWqJEH05S"
+    },
+    {
+      "_id": "avaIhTYuB1BrS4Bg",
+      "name": "Thermal Shockwave",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your Min, Mid, and Max dice as you choose among those targets.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.avaIhTYuB1BrS4Bg"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 316,
+        "ability": 317,
+        "bio": 318
+      },
+      "biographyHtml": "<p>318\n318\nBiography \nRyan Frost had it all. Stunning apartment with \na view of the Rook City skyline, ‘67 Jaguar in the \nparking lot, dream job on the way, and a gorgeous \nfiancee who always knew how to make him laugh. \nThe night it all fell apart was an ordinary one. They \nwere stressed because of wedding planning, and \na stupid argument about groceries had escalated \ninto a yelling match. They’d weathered arguments \nbefore, frequently facilitated by Christine going for a \ndrive to cool off. But she never came back from this \ndrive. The police told him that she had died instantly. \nThe other car had been going nearly a hundred \nmiles an hour. Drunk driving, repeat offender… \nRyan stopped listening. He stopped doing a lot of \nthings. He never showed up for the interview, didn’t \npay rent, stopped showering, just moved through a \ngray and lifeless world like a walking corpse. \nWhen the money ran out, he took the first job \nhe stumbled across, doing janitorial work at Pike \nCryogenics. He signed where they told him to sign, \nmopped up unidentifiable substances, and during the \nday he slept. He got used to the chill of the vapors \nrolling off of the liquid helium tanks, the leaks from \nthe vats, and the moisture everywhere. The nights \nticked by until the shoddy maintenance practices \ncaught up to the lab. Ryan was waxing the floor \nwhen a pressurization value failed, and the resulting \nexplosion doused him in cryogenic compounds. In \nfractions of a second, his body cooled to subzero \ntemperatures, and then, unbelievably, kept dropping. \nThe alarms brought the response team, but it was \ntoo late. Ryan was lying in a gelatinous chemical \nmixture that was rapidly crystallizing around him. \nSomehow he was still alive, but his biology had \nchanged drastically. He was put in stasis right away, \nand eventually orders came from higher up in the \ncorporate hierarchy that they were to put him in \ncold storage. Pike Industries had military contacts \nthat might want him later. \n“Later” ended up being ten years, when the \nmilitary decided that they would give him to Dr. \nStinson to be part of the F5 initiative. Devising a \ncryogenic surgical ward, she brought him out of \nthe coma. The military gave him a choice: he could \nstay in the cryo chamber, or he could put on the \nmobility suit that she had created and be a part \nof something bigger. The world needed heroes, and \nhis unique biology in combination with Tachyon’s \ntechnology could give him a measure of freedom \nas he helped to save the world. Ryan didn’t have \nto think twice about it: he said no. “Better bored in \nhere than dead out there.”\nAlias: Ryan Frost\nGender: Male\nAge: Middle-Aged\nHeight: 5’7”\nEyes: White\nHair: none\nSkin: Bluish White\nBuild: Slight\nCostume/Equipment: When not in a cryo \nchamber, always wearing his white, blue, and \ncarbon-black coolant suit, complete with glowing \nblue faceplate, palm apertures, chest vents, and a \nmid-chest triangle.\nBackground: Tragic\nPower Source: Accident\nArchetype: Elemental Manipulator\nPersonality: Sarcastic\nAbsolute Zero\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "gmbpqyvg3UW9X6U5",
+  "_key": "!actors!gmbpqyvg3UW9X6U5"
+}

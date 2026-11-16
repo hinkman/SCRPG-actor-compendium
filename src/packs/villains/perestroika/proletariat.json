@@ -1,0 +1,594 @@
+{
+  "name": "Proletariat",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Alexandr Tsarev",
+    "archetype": "Legion",
+    "approach": "Tactician",
+    "wounds": {
+      "value": 0,
+      "max": 35
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "0y3t18Iv5KHHhcRF",
+      "name": "35",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.0y3t18Iv5KHHhcRF"
+    },
+    {
+      "_id": "e10XDPiiUJLwy9bt",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.e10XDPiiUJLwy9bt"
+    },
+    {
+      "_id": "dEwe9QoHdyZuNM6w",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.dEwe9QoHdyZuNM6w"
+    },
+    {
+      "_id": "kZ6Hj4wQvCwwZm7I",
+      "name": "Sickle and Hammer",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.kZ6Hj4wQvCwwZm7I"
+    },
+    {
+      "_id": "dPjwMfvWmOWFznm2",
+      "name": "Cold Warrior",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.dPjwMfvWmOWFznm2"
+    },
+    {
+      "_id": "RmChoqPJtfktpgup",
+      "name": "Number of Clones",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.RmChoqPJtfktpgup"
+    },
+    {
+      "_id": "ZCnXay6U7OAz4yWk",
+      "name": "9+ Clones",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.ZCnXay6U7OAz4yWk"
+    },
+    {
+      "_id": "GYQj9oDqZvBS6ILo",
+      "name": "5-8 Clones",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.GYQj9oDqZvBS6ILo"
+    },
+    {
+      "_id": "zjb6BZSeUEsJuM6x",
+      "name": "Coordination Issues",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and use the lowest rolling die amongst them for each minion’s result on that action. As long as you have at least 1 nearby ally, you may reroll all 1s on your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.zjb6BZSeUEsJuM6x"
+    },
+    {
+      "_id": "4oJrHfXQ7zGz35xR",
+      "name": "Everyman’s Strength",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>dice. When you would take physical damage, prevent that damage and create a clone minion with a die size equal to your current status die</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.4oJrHfXQ7zGz35xR"
+    },
+    {
+      "_id": "x32PAJynMUkjGRyP",
+      "name": "Join in the Struggle",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>(including the newly made minion). You may use this reaction more than once a round, but each time you use this reaction after the first time, you take 1 irreducible damage. Attack using Close Combat and use your Max die. Add 1 to the Attack</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.x32PAJynMUkjGRyP"
+    },
+    {
+      "_id": "Ek7FbH53DXEugSx3",
+      "name": "Overwhelm the Mighty",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>for each other ally that Attacked that target since your last turn. Whenever a clone minion larger than a rolls a save against physical damage, if its save is successful, it splits into two dice of one smaller</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.Ek7FbH53DXEugSx3"
+    },
+    {
+      "_id": "JC0clwaqD4DiYCRV",
+      "name": "Quantity’s Quality",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Increase all of Proletariat’s power dice by one size. size instead of being reduced a die size, and you take 1 irreducible damage. If it fails its save, the minion is only reduced one die size, rather than being destroyed.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.JC0clwaqD4DiYCRV"
+    },
+    {
+      "_id": "o2I8sd4UJpxiGSAf",
+      "name": "Power Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Proletariat has 20 additional Health.) As long as you are in command of your own forces, automatically</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.o2I8sd4UJpxiGSAf"
+    },
+    {
+      "_id": "j15C1eK5HsaDWRYx",
+      "name": "Master of Superiority",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>succeed at an Overcome involving seizing an area or capturing civilians.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.j15C1eK5HsaDWRYx"
+    }
+  ],
+  "effects": [],
+  "folder": "qFXsoYfpv2WiPVRp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "perestroika",
+      "sourcePage": 382,
+      "biographyHtml": "<p>383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAt the end of WWII, Alexandr Tsarev was selected \nas a test subject for a secret Soviet program. \nExposed to radiation from a mysterious crystal, \nhe developed the power to duplicate himself. \nHe was cryogenically frozen, to later serve in the \nSoviet Union’s hour of greatest need. Decades later, \nBaron Blade discovered the lost facility and thawed \nhim out, tricking him into thinking the Freedom \nFive were enemies in his quest for vengeance. \nProletariat clashed with heroes as he looked for \nways to continue his mission and investigate other \nlost Soviet tech, eventually leading \nhim to a find a new purpose.\nCapabilities and Motivations\nProletariat is capable of duplicating himself on \ncontact and can absorb his duplicates to heal physical \nwounds. His consciousness is distributed across his \nduplicates, so there is no “main” Proletariat. Each \nduplicate acts independently, knowing everything \neach Proletariat knows. However, with more \ncopies comes more mental burden, reducing the \ncomplexity of tasks each one can do. What drives \nhim is the struggle for something bigger than himself. \nSomething like Perestroika gave him. A restored \nSoviet Union is less important to him than the act \nof fighting for something. After all, if it happened, \nhe’d be without purpose again.\nUpgrades\nWith his new cutting edge technology, Mecha-Stalin \noutfitted Proletariat with power armor designed to \nto work with his duplication, allowing him to hit \nharder and take more damage. \nAlias: Alexandr Tsarev\nGender: Male\nAge: Late-30s\nHeight: 5’9”\nEyes: Brown\nHair: Black\nSkin: Pale\nBuild: Stocky\nCostume/Equipment: Red bodysuit with white \npiping and red mask with a white star on the face. \nOlive drab combat pants with a black leather belt \nwith silver buckle and black combat boots. Short \ngrey high-collared jacket with red stars on the \narms.Black combat gloves. Proletariat wields a \nshort handled sledgehammer and sickle.\nApproach: Tactician\nArchetype: Legion\nProletariat\n383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "9VmPrkYm1YBODxch",
+  "_key": "!actors!9VmPrkYm1YBODxch"
+}

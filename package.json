@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "enrich": "node ./tools/enrich-wizard-metadata.mjs",
+    "extract:archive": "python3 ./tools/extract-archive.py",
     "pack": "node ./tools/pack.mjs",
+    "pack:archive": "node ./tools/pack-archive.mjs",
+    "pack:all": "npm run pack && npm run pack:archive",
     "version:check": "node ./tools/bump-module-version.mjs --check",
     "version:bump": "node ./tools/bump-module-version.mjs"
   },

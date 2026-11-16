@@ -1,0 +1,634 @@
+{
+  "name": "Baron Blade",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Ivan Ramonat",
+    "archetype": "Inventor",
+    "approach": "Mastermind",
+    "wounds": {
+      "value": 0,
+      "max": 50
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "neI6epwHJgkWe4UB",
+      "name": "50",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.neI6epwHJgkWe4UB"
+    },
+    {
+      "_id": "QDT81gATfUfgNMrG",
+      "name": "Conviction",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.QDT81gATfUfgNMrG"
+    },
+    {
+      "_id": "BPTGxZsHv9OVpStA",
+      "name": "Adaptive Mercurium Limb",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.BPTGxZsHv9OVpStA"
+    },
+    {
+      "_id": "btUnKcg1USgdrVD6",
+      "name": "Intuition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.btUnKcg1USgdrVD6"
+    },
+    {
+      "_id": "EyaHn8642YdIqMCX",
+      "name": "Finesse",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.EyaHn8642YdIqMCX"
+    },
+    {
+      "_id": "Y6HqB7ieFmqtVl8P",
+      "name": "Inventions (Mods)",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.Y6HqB7ieFmqtVl8P"
+    },
+    {
+      "_id": "dChk7ItOf6WRxTyK",
+      "name": "4+ Inventions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.dChk7ItOf6WRxTyK"
+    },
+    {
+      "_id": "Fq7yDKk7qGouOLnM",
+      "name": "2-3 Inventions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.Fq7yDKk7qGouOLnM"
+    },
+    {
+      "_id": "CZSiXTs8ElpUlyGM",
+      "name": "Brilliant Inventor",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Whenever you create a bonus, increase that bonus by 1.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.CZSiXTs8ElpUlyGM"
+    },
+    {
+      "_id": "7UjeCAntWx5grVpV",
+      "name": "“Consider the",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder all opponents that can see or hear you using Conviction. Boost</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.7UjeCAntWx5grVpV"
+    },
+    {
+      "_id": "PmjcXFxmb2HqWtBB",
+      "name": "Price of Victory”",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>yourself using your Max die. Boost yourself using Technology and use your Max die. Either make</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.PmjcXFxmb2HqWtBB"
+    },
+    {
+      "_id": "OHO2ubpdkI1MV73o",
+      "name": "Devious Devising",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>that bonus persistent and exclusive, or Boost yourself again using your Min+Mid dice. Attack using Inventions and at least one bonus. If you have multiple</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.OHO2ubpdkI1MV73o"
+    },
+    {
+      "_id": "U1u6aF7FZRqE310C",
+      "name": "The Glory of",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>bonuses, you may also Attack another target using the Min die and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.U1u6aF7FZRqE310C"
+    },
+    {
+      "_id": "BMYtkv35gLuPfOEm",
+      "name": "Mordengrad",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>one other bonus, and may also Attack a third target using the Max die and a third bonus.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.BMYtkv35gLuPfOEm"
+    },
+    {
+      "_id": "gzRlR5RNo9LZLgWE",
+      "name": "Battalion Backup",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Replenish your Blade Battalion minions up to the number of heroes. As long you have access to materials, you can automatically succeed</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.gzRlR5RNo9LZLgWE"
+    },
+    {
+      "_id": "ehit3WzMRksCKunT",
+      "name": "Master of Mad Science",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>when Overcoming a challenge by using scientific principles and inventions.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.ehit3WzMRksCKunT"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 348,
+      "biographyHtml": "<p>349\n349\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nFyodor Ramonat made weapons and machines of \nwar for many powerful nations, but he ultimately \npaid the price when heroes of those nations’ \nenemies destroyed his weapons factories, led by \nthe Legacy of that time. Fyodor’s son Ivan was so \nenraged by the death of his father that he took \nover his hometown of Mordengrad in Lithuania, \ndeclaring himself, Baron Blade, the leader of this \nsovereign nation. Like his father, Ivan was a brilliant \ninventor, but far more clever and ruthless, and now \nhe had a hatred of all so-called heroes. Across \nthe past few decades, Baron Blade has enacted \nnumerous maniacal plans to threaten the existence \nof all heroes, especially those in the Legacy line.\nCapabilities and Motivations\nBaron Blade is a devilishly imaginative inventor, \ncreating all manner of doomsday devices and \nconcocting outlandish plots, both for the glory of \nhis home country Mordengrad and also for the \ndownfall of his foes. His loyal army — the Blade \nBattalion — is well-equipped with cutting edge \ndevices and armor, but greater still is their fanatic \nloyalty to the Baron. Over the years of his villainous \ncareer, he has made use of many bizarre devices \nwith overly complicated workings — everything \nfrom drilling into the Earth’s core, to pulling the \nMoon into the Earth, to injecting himself with a \ndangerous serum meant to give him the means to \ndefeat his foes at any cost — however his goals \nhave always been quite clear: defend and elevate \nglorious Mordengrad, and destroy any foolhardy \nheroes who would call themselves Legacy.\nUpgrades\nBaron Blade is known to make use of various \npowered suits, from towering walking tanks, to \nsleek, cutting edge body armor, to utilitarian power \nlifters. The type of armored suit he dons is usually \ntailored to his particular plot, though they all have \nvarious advantages for both defense and combat.\nAlias: Ivan Grigori Ramonat\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Left eye: Brown / Right eye: Pale with scar\nHair: Black and grey\nSkin: Pale\nBuild: Athletic\nCostume/Equipment: A long purple coat with silver \npiping and accents, lined in dark red. A purple body \nsuit accented with lines of red energy running from \nhis Organic Sustaining Module installed on his chest. \nHis right eye is covered by his red, glowing Nether \nLens Monocle. His left hand and forearm are made \nof silvery metal, which he can control to take various \nshapes and applications.\nApproach: Mastermind\nArchetype: Inventor\nBaron Blade\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "r49fgQLpRyixWDvl",
+  "_key": "!actors!r49fgQLpRyixWDvl"
+}

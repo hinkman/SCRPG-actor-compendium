@@ -1,0 +1,91 @@
+{
+  "name": "“Seer”",
+  "type": "minion",
+  "img": "icons/svg/cowled.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "“Seer”",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d8",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "items": [
+    {
+      "_id": "fI1takKMyu7PcuuC",
+      "name": "Stealthy Strike",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Ninjas have a +1 to Attacks and Hinders made against combatants that are unaware of them or who have lost track of them.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!cbKT8XJr1a2x5ACF.fI1takKMyu7PcuuC"
+    }
+  ],
+  "effects": [],
+  "folder": "8yoyf8EYLbV3NdiJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "typical-combatants",
+      "kind": "lieutenant",
+      "description": "Sneaking unseen through defenses, striking from the shadows, and wielding specialized weapons with great skill are all hallmarks of the ninja.",
+      "sourcePage": 416,
+      "dieTypeKnown": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "cbKT8XJr1a2x5ACF",
+  "_key": "!actors!cbKT8XJr1a2x5ACF"
+}

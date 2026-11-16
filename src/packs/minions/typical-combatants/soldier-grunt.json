@@ -1,0 +1,91 @@
+{
+  "name": "Soldier Grunt",
+  "type": "minion",
+  "img": "icons/svg/cowled.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "Soldier Grunt",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d8",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "items": [
+    {
+      "_id": "zCfdYjM32a18vrjd",
+      "name": "Squad Goals",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Soldier Grunts have +1 to Attack and Boost actions while near other Soldier Grunts or Soldier Sergeants.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!IiU4LeFFikFSjhT0.zCfdYjM32a18vrjd"
+    }
+  ],
+  "effects": [],
+  "folder": "8yoyf8EYLbV3NdiJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "typical-combatants",
+      "kind": "minion",
+      "description": "A standard military soldier, outfitted with standard modern military gear.",
+      "sourcePage": 417,
+      "dieTypeKnown": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "IiU4LeFFikFSjhT0",
+  "_key": "!actors!IiU4LeFFikFSjhT0"
+}

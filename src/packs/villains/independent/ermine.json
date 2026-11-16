@@ -1,0 +1,554 @@
+{
+  "name": "Ermine",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Cassandra Lilya",
+    "archetype": "Formidable",
+    "approach": "Skilled",
+    "wounds": {
+      "value": 0,
+      "max": 60
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "NAhUarGgVMd7h50C",
+      "name": "60",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.NAhUarGgVMd7h50C"
+    },
+    {
+      "_id": "9V9msZIPauMgehKW",
+      "name": "Agility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.9V9msZIPauMgehKW"
+    },
+    {
+      "_id": "hFjvz4P9oMpUqh7m",
+      "name": "Acrobatics",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.hFjvz4P9oMpUqh7m"
+    },
+    {
+      "_id": "0Q7sYuLOA3BeA98z",
+      "name": "Gadgets",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.0Q7sYuLOA3BeA98z"
+    },
+    {
+      "_id": "fKmIv460n5lYjy1B",
+      "name": "Banter",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.fKmIv460n5lYjy1B"
+    },
+    {
+      "_id": "hFHgCrOGyHI985aG",
+      "name": "Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.hFHgCrOGyHI985aG"
+    },
+    {
+      "_id": "eMU4EDqpxHj4t1DO",
+      "name": "Any Penalties and No Bonuses",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.eMU4EDqpxHj4t1DO"
+    },
+    {
+      "_id": "pXL1hU7vErssfZxA",
+      "name": "Some Penalties and Some Bonuses",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.pXL1hU7vErssfZxA"
+    },
+    {
+      "_id": "Ikyfgl1DyhdS7Edm",
+      "name": "Feint of Heart",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Deal that much damage to another target. Hinder multiple targets using Flashy Felon and use your Max die. If you</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.Ikyfgl1DyhdS7Edm"
+    },
+    {
+      "_id": "bBhtY5zMUpAbM7YO",
+      "name": "Flashbangle",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>roll doubles, also Attack each target with your Mid die. Destroy one of your bonuses. Deal each opponent damage equal to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.bBhtY5zMUpAbM7YO"
+    },
+    {
+      "_id": "b1kvDTQn43xF9Vak",
+      "name": "Least Favorite Diamond",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>the value of that bonus. Boost using Gadgets and use your Max+Min dice. Remove all penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.b1kvDTQn43xF9Vak"
+    },
+    {
+      "_id": "efEABcS5ekzKvnHH",
+      "name": "Uncatchable",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>on yourself. Increase all of Ermine’s Powers by one die size. (When using this</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.efEABcS5ekzKvnHH"
+    },
+    {
+      "_id": "OHpjAaBLSNOt0VAo",
+      "name": "Power Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>upgrade, Ermine has 20 additional Health.) If you have access to great wealth and other resources, automatically</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.OHpjAaBLSNOt0VAo"
+    },
+    {
+      "_id": "EnyygEz4hjJIQyS9",
+      "name": "Mastery of Profitability",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>succeed at an Overcome to leverage those resources to get even richer, no matter who else pays the price.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.EnyygEz4hjJIQyS9"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 354,
+      "biographyHtml": "<p>355\n355\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nCassandra Lilya grew up in Rook City, where she \nlearned at a very early age that crime actually paid \nquite well and was far easier than silly things like \n“time” or “hard work.” At night, she broke into \nsupposedly secure areas and plundered riches under \nthe identity of Ermine. During the day, she used her \nill-gotten gains to fuel an extravagant lifestyle. When \nthe world’s largest diamond went on exhibition \nat the Rook City museum, she couldn’t \nresist stealing it. This proved to be her \nundoing as it caused her to cross \npaths with the hero Wraith, \nwho defeated her and ended \nthe secret of her dual life. While \nshe stayed out of jail, the revealing \nof her secret identity left her \nreputation in tatters. Her hatred \nof Wraith, as much as her skill as \na thief, were what caused Baron \nBlade to offer her a spot on his villain \nteam, the Vengeful Five. When that \nteam eventually fell apart, Ermine went \nback to a life of thievery, though she \nwould occasionally deign to help other \nvillains with their schemes, particularly if \nit meant a payout.\nCapabilities and Motivations\nErmine is extremely self-centered and rarely has \nlong term plans. While she’s quite adept at making \na complex plan to bypass a security system, she \ntends not to think much beyond the acquisition of \nwhatever shiny thing caught her eye. The thievery \nitself is what excites her, with the proceeds funding \na life of luxury. A gifted acrobat, sneak, and con \nartist, Ermine can get into many “secure” locations, \nand when she comes across something that has a \nbit more security, she’s happy to have someone act \nas a distraction for her. When things go wrong she’s \nextremely good at improvising her way out of the \nconsequences, leaving others with the aftermath. \nLately, she has teamed up with Fright Train for her \nheists, with his muscle and one-track mind pairing \nwell with her stealth and skill.\nUpgrades\nTaking a lesson from Wraith, Ermine has been \nacquiring a variety of gadgets. Instead of the fashion \ndisaster of Wraith’s clunky utility belt, Ermine’s \njewels can be used in many ways: granting her \ntemporary invisibility, creating holograms, deflecting \nlasers, and more. Truly a girl’s best friend.\nVillains\nAlias: Cassandra Lilya\nGender: Female\nAge: Late-20s\nHeight: 5’3”\nEyes: Amber\nHair: Blonde\nSkin: Tan\nBuild: Gymnast\nCostume/Equipment: A white and grey bodysuit \nwith gold piping that leaves her shoulders bare, \naccented by blue diamonds and a blue visor.\nApproach: Skilled\nArchetype: Formidable\nErmine</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "A7veNPcLw2oqNdeP",
+  "_key": "!actors!A7veNPcLw2oqNdeP"
+}

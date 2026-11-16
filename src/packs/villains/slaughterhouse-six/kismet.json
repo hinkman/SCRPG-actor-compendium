@@ -1,0 +1,490 @@
+{
+  "name": "Kismet",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Gabrielle Adhin",
+    "archetype": "Fragile",
+    "approach": "Dampening",
+    "wounds": {
+      "value": 0,
+      "max": 40
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "f8wOkOqsJMRZ5vzS",
+      "name": "40",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.f8wOkOqsJMRZ5vzS"
+    },
+    {
+      "_id": "CoVfTBsMFIkmonwz",
+      "name": "Intuition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.CoVfTBsMFIkmonwz"
+    },
+    {
+      "_id": "NJuyN5xn31vobaVV",
+      "name": "Creativity",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.NJuyN5xn31vobaVV"
+    },
+    {
+      "_id": "zhruQMXr0E7w2odx",
+      "name": "Karma",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.zhruQMXr0E7w2odx"
+    },
+    {
+      "_id": "lUNINDO1ygQNuJft",
+      "name": "Insight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.lUNINDO1ygQNuJft"
+    },
+    {
+      "_id": "YINSNGmo1lplikIs",
+      "name": "Health",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.YINSNGmo1lplikIs"
+    },
+    {
+      "_id": "uv4FA1WsKN10JKbb",
+      "name": "Karmic Disjunction",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>reduce all their power dice by one size. When Attacked, Defend yourself by rolling your single status die. If the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.uv4FA1WsKN10JKbb"
+    },
+    {
+      "_id": "ai06LGSI9M2Pp8EP",
+      "name": "Slippery Trickster",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>damage is reduced to 0, you may move to anywhere else in the scene. Hinder using Karma and use your Max die; that penalty is persistent and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.ai06LGSI9M2Pp8EP"
+    },
+    {
+      "_id": "D5roHoS7uVqC3W3G",
+      "name": "Twisted Jinx",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>exclusive. As long as that penalty is on the target, reduce their highest power die of your choice by one die size. Attack using your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.D5roHoS7uVqC3W3G"
+    },
+    {
+      "_id": "syhsZXwIlSLJL3tz",
+      "name": "Unlucky Break",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Lady Luck. Then remove all bonuses from the target. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.syhsZXwIlSLJL3tz"
+    },
+    {
+      "_id": "KwpXqzLLzSxBQq6t",
+      "name": "Fortune’s Smile",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Karma die. (When using this upgrade, Kismet has 10 additional Health.) If you have access to proper materials, automatically succeed at an</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.KwpXqzLLzSxBQq6t"
+    },
+    {
+      "_id": "BHaZGLbU1DuPizGa",
+      "name": "Master of Mysticism",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Overcome in a situation involving harnessing magical forces.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!0kGAx3nkXMkR0tmr.BHaZGLbU1DuPizGa"
+    }
+  ],
+  "effects": [],
+  "folder": "bVunWCsumAfcxt7G",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "slaughterhouse-six",
+      "sourcePage": 398,
+      "biographyHtml": "<p>399\n399\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nGabrielle Adhin grew up hearing stories about her \nfamily’s legendary luck, but they didn’t sit quite right \nwith her. Lucky people won the lottery; they didn’t \nwear secondhand clothing and have to move every \nfew months. After meeting the man she thought \nwas her soulmate and then having to move away, \nGabrielle was fed up. She left, and she took her \nfamily’s lucky talisman with her. As soon as she \ntouched it, she saw the strings of probability, and \nhow if she pulled on a string just so, she’d be able to \npush luck the way she wanted. She quickly learned \nthat if she made herself lucky, then there would be \na backlash that would cancel it out. But she could \nmake someone else unlucky, and capitalize on their \nmisfortune. And capitalize she did. Thus, Kismet \nbecame a perennial nuisance for heroes.\nCapabilities and Motivations\nKismet can alter probability, usually at the expense \nof her opponents. She can make a hero stumble \nat crucial moments, a punch land on a particularly \npainful spot, or a hand shake while aiming. The more \nshe pushes, the more drastic the result… but always \nwith a corresponding surge the other way. Making \nsomeone unnaturally unlucky means that they will \ndefinitely be lucky later, and making someone lucky \nmeans that anything they gained would be lost soon \nafter when the universe pushed back. Fortunately \nfor her and unfortunately for everyone else, Kismet \nhas become quite practiced at managing the waves \nof luck and unluck to her benefit.\nUpgrades\nWhen push comes to shove, Kismet will use her \npowers on herself to enhance her luck, though only \nin the most dire situations. When she exerts her \npowers broadly, heroes have a lot more things go \nwrong and have to be cautious about how they \nuse their powers, as anything they do might cause \nunexpected results! Kismet, on the other hand, is \ncalm and in control. Things just tend to go her way.\nAlias: Gabrielle Adhin\nGender: Female\nAge: Early-30s\nHeight: 5’7”\nEyes: Dark brown, glow green when using powers\nHair: Black with red streaks\nSkin: Light brown, full sleeve tattoo on right arm\nBuild: Curvaceous\nCostume/Equipment: A red dress that leaves her \narms and shoulders bare, cut to the thigh. Ripped \nred leggings. Translucent grey mesh overcoat. \nCarries an intricately carved stone talisman that \nglows green when she uses her powers. \nApproach: Dampening\nArchetype: Fragile\nKismet</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "0kGAx3nkXMkR0tmr",
+  "_key": "!actors!0kGAx3nkXMkR0tmr"
+}

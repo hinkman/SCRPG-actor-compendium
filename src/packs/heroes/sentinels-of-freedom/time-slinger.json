@@ -1,0 +1,916 @@
+{
+  "name": "Time-Slinger",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Jim Brooks",
+    "archetype": "Reality Shaper",
+    "wounds": {
+      "value": 0,
+      "max": 30
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of the Time Traveler",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Whispers",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Middle-Aged",
+    "height": "5’ 11”",
+    "eyes": "Brown",
+    "hair": "Brown",
+    "skin": "Tan",
+    "build": "Rugged",
+    "costume": "<p>Cowboy hat, worn jeans, brown leather boots. Blue collared shirt emblazoned with golden clock arms. Golden left arm. Golden time-gun. Glowing blue eyepiece over left eye. Has robot horse named Masadah.</p>",
+    "background": "Anachronistic",
+    "powerSource": "Tech Upgrades",
+    "personality": "Lone Wolf",
+    "health": {
+      "greenLow": 23,
+      "yellowHigh": 22,
+      "yellowLow": 12,
+      "redHigh": 11,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d8",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "dMcJG4iAroyWfACy",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.dMcJG4iAroyWfACy"
+    },
+    {
+      "_id": "o1gumDFeuJpPzu1I",
+      "name": "Postcognition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.o1gumDFeuJpPzu1I"
+    },
+    {
+      "_id": "C7OOQWtXhPfDiCxN",
+      "name": "Power Arm",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.C7OOQWtXhPfDiCxN"
+    },
+    {
+      "_id": "2KyxvkRSdGnQkvKb",
+      "name": "Robot Horse",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.2KyxvkRSdGnQkvKb"
+    },
+    {
+      "_id": "wsRCOAk48vwxSPBs",
+      "name": "Time Revolver",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.wsRCOAk48vwxSPBs"
+    },
+    {
+      "_id": "s0S3YQQDhIbBjcCR",
+      "name": "History",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.s0S3YQQDhIbBjcCR"
+    },
+    {
+      "_id": "mHFxIS9stVDEz6O7",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.mHFxIS9stVDEz6O7"
+    },
+    {
+      "_id": "YhpoxaYp0KSrLNU0",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.YhpoxaYp0KSrLNU0"
+    },
+    {
+      "_id": "mBOA6dzDc7CoB4OM",
+      "name": "Time-Lost Sheriff",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.mBOA6dzDc7CoB4OM"
+    },
+    {
+      "_id": "cNdHlWOgSKpnAJUu",
+      "name": "Altered Scan",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>After a die pool is rolled, adjust one die up or down one value on the die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.cNdHlWOgSKpnAJUu"
+    },
+    {
+      "_id": "VR9HuZXk9Pnkuq9g",
+      "name": "Sit a Spell",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.VR9HuZXk9Pnkuq9g"
+    },
+    {
+      "_id": "z7v7wpnsert4ishI",
+      "name": "Takin’ My Time",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome a problem using knowledge from your home era and use your Attack using your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.z7v7wpnsert4ishI"
+    },
+    {
+      "_id": "rA5qf65zEd8D17V2",
+      "name": "Principle of the Time Traveler",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.rA5qf65zEd8D17V2"
+    },
+    {
+      "_id": "ns5Wt9elEFHTnK7N",
+      "name": "Principle of Whispers",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.ns5Wt9elEFHTnK7N"
+    },
+    {
+      "_id": "bqBMq4TW3lmCduwj",
+      "name": "Fan the Hammer",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost yourself using Power Arm. Then, either remove a penalty on yourself</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.bqBMq4TW3lmCduwj"
+    },
+    {
+      "_id": "UsIQVvRbeYSY67t9",
+      "name": "Localized Acceleration",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.UsIQVvRbeYSY67t9"
+    },
+    {
+      "_id": "Tv7vddcxJas2LJC7",
+      "name": "Stack the Deck",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.Tv7vddcxJas2LJC7"
+    },
+    {
+      "_id": "m6rBxP9V7aZb4D16",
+      "name": "Get Out of Dodge",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.m6rBxP9V7aZb4D16"
+    },
+    {
+      "_id": "mAEqopBLHyN3hXju",
+      "name": "Showdown",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.mAEqopBLHyN3hXju"
+    },
+    {
+      "_id": "t4yuJMirfA2pMpaI",
+      "name": "Temporal Bootstrap",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZwZjHB6fPZHnMkcu.t4yuJMirfA2pMpaI"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 320,
+        "ability": 321,
+        "bio": 322
+      },
+      "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression — dynamiting his recently \npainted fences — was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn’t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZwZjHB6fPZHnMkcu",
+  "_key": "!actors!ZwZjHB6fPZHnMkcu"
+}

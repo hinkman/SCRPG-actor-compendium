@@ -1,0 +1,634 @@
+{
+  "name": "Biomancer",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Zosimos Alchemista",
+    "archetype": "Legion",
+    "approach": "Creator",
+    "wounds": {
+      "value": 0,
+      "max": 30
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "02LicD3ikPb4Ux5q",
+      "name": "30",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.02LicD3ikPb4Ux5q"
+    },
+    {
+      "_id": "7ix6NDPVUhFeK9gp",
+      "name": "Fleshcrafting",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.7ix6NDPVUhFeK9gp"
+    },
+    {
+      "_id": "IAGlmadULnyRbiJ3",
+      "name": "Creativity",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.IAGlmadULnyRbiJ3"
+    },
+    {
+      "_id": "AricqGjmDCVULPP5",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.AricqGjmDCVULPP5"
+    },
+    {
+      "_id": "QZFuddYa3slv4Wgw",
+      "name": "Fleshfather",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.QZFuddYa3slv4Wgw"
+    },
+    {
+      "_id": "6sdBh8IEJZvrwwGn",
+      "name": "Number of Minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.6sdBh8IEJZvrwwGn"
+    },
+    {
+      "_id": "L7H1E3o35XcguI9o",
+      "name": "9+ minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.L7H1E3o35XcguI9o"
+    },
+    {
+      "_id": "6a4PXAleg4TR6MEO",
+      "name": "5-8 minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.6a4PXAleg4TR6MEO"
+    },
+    {
+      "_id": "4hQi4F9bEvwe3feu",
+      "name": "Bring in the Fleshchildren",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>status. When one of your minions is destroyed, roll its die. You Recover that</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.4hQi4F9bEvwe3feu"
+    },
+    {
+      "_id": "C48s7B0qd3Rzqdvi",
+      "name": "Flesh of my Flesh",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>much Health. Boost one of your minions using Fleshcrafting and use your Max die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.C48s7B0qd3Rzqdvi"
+    },
+    {
+      "_id": "cghwgYHG5oG6EM5v",
+      "name": "Lovingly Sculpted",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>If it is your only minion, also Boost yourself using your Mid die. If not, Boost each of your other minions using your Min die. Use Fleshfather to create a lieutenant of the same die size as your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.cghwgYHG5oG6EM5v"
+    },
+    {
+      "_id": "GzBGnXwSX6FZBmLi",
+      "name": "Mold the Homunculus",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Max die. Whenever multiple of your minions all take the same action against the same target, you must roll all of their dice at the same time and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.GzBGnXwSX6FZBmLi"
+    },
+    {
+      "_id": "27iOpYHIRppIvuEB",
+      "name": "Pound of Flesh",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>use the lowest rolling die amongst them for each minion’s result on that action.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.27iOpYHIRppIvuEB"
+    },
+    {
+      "_id": "lOw4AdPFzhA78kP2",
+      "name": "Who Can You Trust?",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Replenish your Fleshchildren up to the number of heroes. As long as you are not directly involved in the fray and are using</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.lOw4AdPFzhA78kP2"
+    },
+    {
+      "_id": "cv0pW5jgljDURtaD",
+      "name": "Master Behind the",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>your influence indirectly, automatically succeed at an Overcome to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.cv0pW5jgljDURtaD"
+    },
+    {
+      "_id": "NTH1r8K56vJmg3Qz",
+      "name": "Curtain",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>manipulate a situation.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CO96diK8aSQwNp6q.NTH1r8K56vJmg3Qz"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 356,
+      "biographyHtml": "<p>357\n357\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nZosimos of Panopolis was the first magician to \nsuccessfully combine science and magic into a \ndiscipline that would come to be called Alchemy, \nwhich he then used to ensure his own immortality \nthrough the preservation and manipulation of flesh. \nWith the ravages of time conquered, he continued \nto study the building blocks of life and refine his \ncraft, eventually leading to the construction of his \nfirst “fleshchild”, stolen flesh laid over a constructed \nskeleton given temporary life via magic. Over the \nages, he made these simulacra more realistic, using \nthem to gather secrets and manipulate the world. \nHeroes have encountered his creations many times \nover the years, and he has even created fleshchild \nversions of the heroes to sow discord. He has \nnot been seen for some years after his last defeat \nat the hands of the hero Writhe, but with his \nproven ability to survive as well as to create \nfleshchild versions of himself, no one \nbelieves that he is gone for good.\nCapabilities and Motivations\nBiomancer is a master of indirect plots, orchestrating \nevents that result in other villains and heroes \nto dance to his unseen strings. He can create \nfleshchildren that are identical to the original, even \nto the point where the fleshchild thinks that it IS \nthe original. His creations infiltrate society, fooling \neven close friends and family as they work towards \nhis goals. With a DNA sample from a person with \npowers, he can create a fleshchild that can use that \nperson’s powers, though without a steady supply \nof that person’s DNA, the fleshchild will rapidly \ndegrade. Biomancer’s plots are labyrinthian to \nthe point where even a hero victory may well be \nsimply part of his larger plan. They can take years to \ncome to fruition as he moves pieces into place, and \nhe is quite content to remain in the background \nindefinitely if all is going according to plan.\nUpgrades\nBiomancer has improved at fleshchild creation, \nmaking them more realistic and durable. With \nhis ability to create fleshchildren that think they \nare real, anyone could actually be his minion, just \nwaiting for the activation order.\nAlias: Zosimos Alchemista\nGender: Male\nAge: Ancient, looks middle-aged\nHeight: 5’11”\nEyes: Gold\nHair: None\nSkin: Pasty\nBuild: Artificial\nCostume/Equipment: Red bodysuit, with a full \nlength white 17th century doctor’s robe over top. \nWhite elbow length gloves with buttons. Beaked \nred mask reminiscent of a 17th century plague \ndoctor. \nApproach: Creator\nArchetype: Legion\nBiomancer\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "CO96diK8aSQwNp6q",
+  "_key": "!actors!CO96diK8aSQwNp6q"
+}

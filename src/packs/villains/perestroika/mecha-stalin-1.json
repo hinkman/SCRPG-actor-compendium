@@ -1,0 +1,594 @@
+{
+  "name": "Mecha-Stalin 1",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Joseph Stalin?",
+    "archetype": "Squad",
+    "approach": "Adaptive",
+    "wounds": {
+      "value": 0,
+      "max": 40
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "Tc8H00I38z584Djd",
+      "name": "40",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.Tc8H00I38z584Djd"
+    },
+    {
+      "_id": "8HCrnYu6gbK5F98K",
+      "name": "Flamethrower",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.8HCrnYu6gbK5F98K"
+    },
+    {
+      "_id": "CQu4BUNKqDLghP3V",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.CQu4BUNKqDLghP3V"
+    },
+    {
+      "_id": "A4F1p0AucXt03H7h",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.A4F1p0AucXt03H7h"
+    },
+    {
+      "_id": "6ZHRW3JfqgERkFKl",
+      "name": "Leadership",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.6ZHRW3JfqgERkFKl"
+    },
+    {
+      "_id": "Q8ZUybLp26E82Xjh",
+      "name": "Other Villains",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.Q8ZUybLp26E82Xjh"
+    },
+    {
+      "_id": "moK3Yp2ool9iZbVL",
+      "name": "0 Other Villains in the Scene",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.moK3Yp2ool9iZbVL"
+    },
+    {
+      "_id": "YpE91MXHEcPWdjJT",
+      "name": "1-2 Other Villains in the Scene",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.YpE91MXHEcPWdjJT"
+    },
+    {
+      "_id": "9soCIyohGIHDrezB",
+      "name": "Hardened by Opposition",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Boost yourself with the result of that die. Attack using Ranged Combat. Use your Max die. Defend all nearby</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.9soCIyohGIHDrezB"
+    },
+    {
+      "_id": "V8i8W7d61cEF8ai2",
+      "name": "No Invincible Armies",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>allies with your Mid+Min dice until the start of your next turn. Take irreducible damage. Increase all your powers by one die size</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.V8i8W7d61cEF8ai2"
+    },
+    {
+      "_id": "7zPMxHhqwgaorj3Z",
+      "name": "Not One Step Back!",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>each until the end of the scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.7zPMxHhqwgaorj3Z"
+    },
+    {
+      "_id": "aZpLvTTmkrO9Dnuc",
+      "name": "Soviet Bloc",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Increase damage you deal by the number of nearby non-minion allies. Boost using Presence and use your Max die. Attack with your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.aZpLvTTmkrO9Dnuc"
+    },
+    {
+      "_id": "Him3Mzg8GmKeFstw",
+      "name": "The New Soviet Power",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend with your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.Him3Mzg8GmKeFstw"
+    },
+    {
+      "_id": "3JhSqRYrd0mzKcLs",
+      "name": "Red Army",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Replenish your Soviet Soldiers minions up to the number of heroes. As long as you are in command of your own forces, automatically</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.3JhSqRYrd0mzKcLs"
+    },
+    {
+      "_id": "qjXA5iZEqfx8wJWM",
+      "name": "Master of Conquest",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>succeed at an Overcome involving seizing an area or capturing civilians.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pIlKMU2E0chMiudq.qjXA5iZEqfx8wJWM"
+    }
+  ],
+  "effects": [],
+  "folder": "qFXsoYfpv2WiPVRp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "perestroika",
+      "sourcePage": 378,
+      "biographyHtml": "<p>379\n379\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nMecha-Stalin’s exact nature is unclear. Theories range \nfrom him being a Cold War attempt to clone Stalin, to \na robot, to the actual Stalin’s head, cut from his aging \nbody and preserved through Soviet science. With all the \nmemories of the original, the members of Perestroika \ncertainly believed in his authenticity. He masterminded \nthe rise of Perestroika, assembled the members and \nset forth the goal of creating a new Soviet Union. \nWith immense resources and a substantial force of \nwell-trained troops, Mecha-Stalin came close to taking \nover Megalopolis and turning it into a power base, but \nwas destroyed along with Perestroika’s hidden base \nin a conflict with the Sentinels of Freedom when he \nengaged the base’s self-destruct. Though the rest of \nPerestroika were taken into custody, Mecha-Stalin’s \ndestruction leaves many questions unanswered.\nCapabilities and Motivations\nMecha-Stalin’s body may have been a patchwork \namalgam of technology, but it was still extremely \ndangerous and deceptively durable. The multiple \nredundancies and lack of needing to protect a pilot \nmeant that the suit could pack more armor, pound \nfor pound, than the Bunker suit, and could take more \nhits in close combat. This let Mecha-Stalin utilize his \nflamethrower and crushing hand to full effect, and if \nthings got too intense, he fell back behind his allies \nto provide fire support with his autocannon. His \nmechanical body was arguably the least dangerous \naspect, however, as his technologically enhanced brain \nhad all of Stalin’s memories and ability to create a cult \nof personality, as well as the strategic wherewithal to \ncreate a multi-layered long-term plan for domination.\nUpgrades\nMecha-Stalin has ports for offensive and defensive \nupgrades, but discovery of the base precluded such \nupgrades. As a result, Mecha-Stalin’s body was hastily \nassembled and poorly charged. Weaponry like missile \npods would make the suit more offensively capable, \nand an increase in available energy would substantially \nincrease the speed, dexterity, and strength.\nAlias: Joseph Stalin?\nGender: Male\nAge: If he is the original: 142 years. Possibly some \ntype of newer creation.\nHeight: 7’3”\nEyes: One brown, one red lens\nHair: Brown\nSkin: A patchwork of flesh, steel, and brass.\nBuild: Hulking\nCostume/Equipment: A mechanical suit made \nof a hodgepodge of technologies and materials, \nincluding iron, steel, and brass. Right arm mounts \na flamethrower, and the left shoulder has a large \nradiator for getting rid of waste heat. A multi-\nbarrel cannon juts above the right shoulder. The \nhead is the only organic part, with the left part \nof the cranium replaced with steel and left eye \nreplaced with a glowing lens\nApproach: Adaptive\nArchetype: Squad\nMecha Stalin 1</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "pIlKMU2E0chMiudq",
+  "_key": "!actors!pIlKMU2E0chMiudq"
+}

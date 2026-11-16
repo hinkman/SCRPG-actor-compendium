@@ -2,30 +2,21 @@
 
 Unofficial compendium module for [Foundry VTT](https://foundryvtt.com/) using the [scrpg-foundry](https://github.com/hinkman/SCRPG-foundry) system. A copy of Sentinel Comics: The Roleplaying Game is required. This module does not replace the rules.
 
-Version 0.9.0 contains:
+Current contents:
 
-- Backgrounds (rulebook pages 49–54), with table numbers, UUID-linked qualities, principle category, and power-source dice
-- Powers (rulebook pages 123–126)
-- Qualities (rulebook pages 127–128)
-- Principles (rulebook pages 132–149)
-- Personalities (rulebook pages 109–112)
-- Archetypes (rulebook pages 81–106), with table numbers and UUID-linked powers/qualities in descriptions
-- Power Sources (rulebook pages 56–70), with table numbers, UUID-linked powers, and Yellow/Green ability links
-- Minor Twists and Major Twists roll tables in **SCRPG Rollable Tables** (rulebook page 30)
-- Abilities in the shared **SCRPG Abilities** pack:
-  - **Green → Principles** — principle Green abilities
-  - **Green / Yellow → Power Sources** — power-source abilities by color
-  - **Green / Yellow / Red → Archetypes** — archetype abilities by color
-  - **Red** — Red abilities from pp. 114–119 (power/quality category folders)
-  - **Out → Personalities** — grey Out abilities
+- Backgrounds, powers, qualities, principles, personalities, archetypes, power sources
+- Abilities (Green/Yellow/Red/Out) and **SCRPG Rollable Tables** (minor/major twists)
+- **Archive actors** (rulebook Chapter 7):
+  - **SCRPG Heroes** — team folders (Sentinels of Freedom, Daybreak)
+  - **SCRPG Villains** — Independent, Helfyre, Perestroika, Slaughterhouse Six
+  - **SCRPG Minions** — Aliens, Blade Battalion, Blade Drones, Devices, Magmarian Foes, Thematic Enemies, Typical Combatants
+  - **SCRPG Environments** — Megalopolis, Freedom Plaza, Wagner II Mars Base, Magmaria, Mordengrad, Ruins of Atlantis
 
-Entries stay in their Foundry compendia. Drag items onto a hero when needed. Die size for powers and qualities starts at `d4`.
-
-Background descriptions use **Qualities**, **Principle**, and **Power Source** sections. Principle and personality sheets show linked abilities. Archetype descriptions are split into **Powers/Qualities**, **Abilities**, **Principle**, **Additional Info**, and **Personality** sections. Power Source descriptions use **Powers**, **Abilities**, **Additional Info**, and **Archetype** (with selection dice). Drops create linked abilities on the hero for principles, personalities, archetypes, and power sources. Bracket tokens such as `[power]`, `[quality]`, and `[power/quality]` show trait dropdowns once an ability is owned.
+Wizard/item packs are unchanged. Archive actors use the existing `scrpg-foundry` hero/villain/minion/environment schemas.
 
 ## Install
 
-Foundry 14 and `scrpg-foundry` 0.9.12 or newer. Install from:
+Foundry 14 and `scrpg-foundry` 0.9.15 or newer. Install from:
 
 `https://raw.githubusercontent.com/hinkman/SCRPG-actor-compendium/main/module.json`
 
@@ -33,7 +24,16 @@ Foundry 14 and `scrpg-foundry` 0.9.12 or newer. Install from:
 
 ```bash
 npm install
-npm run pack
+npm run pack          # item + roll table packs
+npm run pack:archive  # Archive actor packs (from src/data/archive)
+# or: npm run pack:all
 ```
 
-Edit files under `src/data/`, then run `npm run pack`.
+To refresh Archive JSON from the SCRPG PDF (requires PyMuPDF):
+
+```bash
+npm run extract:archive
+npm run pack:archive
+```
+
+Edit files under `src/data/` (and `src/data/archive/` for actors), then rebuild.
