@@ -78,8 +78,14 @@ function attachItemKey(actorId, item) {
     return item;
 }
 
-function powerItem(actorId, actorSeed, power, index) {
-    const id = itemId(`${actorSeed}:power:${index}:${slug(power.name)}`);
+function powerItem(actorId, actorSeed, power, index, aux = "main") {
+    const mode = power.aux || aux;
+    // Keep legacy main-power seeds stable; namespace form/mode powers by aux.
+    const idSeed =
+        mode === "main"
+            ? `${actorSeed}:power:${index}:${slug(power.name)}`
+            : `${actorSeed}:power:${mode}:${index}:${slug(power.name)}`;
+    const id = itemId(idSeed);
     return attachItemKey(actorId, {
         _id: id,
         name: power.name,
@@ -87,7 +93,7 @@ function powerItem(actorId, actorSeed, power, index) {
         img: "icons/svg/aura.svg",
         system: {
             dieType: power.dieType || "d8",
-            aux: "main",
+            aux: mode,
             selected: "",
             description: ""
         },
@@ -131,8 +137,18 @@ function qualityItem(actorId, actorSeed, quality, index) {
     });
 }
 
+function abilityZoneColor(aux) {
+    const value = String(aux || "main");
+    // Form/mode slots like green1/yellow1 map to sheet zone colors; leave green/yellow/red/main alone.
+    if (value === "green1" || value === "green2") return "green";
+    if (value === "yellow1" || value === "yellow2") return "yellow";
+    if (value === "red1") return "red";
+    return value;
+}
+
 function abilityItem(actorId, actorSeed, ability, index) {
-    const id = itemId(`${actorSeed}:ability:${ability.aux || "main"}:${index}:${slug(ability.name)}`);
+    const aux = ability.aux || "main";
+    const id = itemId(`${actorSeed}:ability:${aux}:${index}:${slug(ability.name)}`);
     const icon = ability.icon || {
         attack: false,
         defend: false,
@@ -147,7 +163,7 @@ function abilityItem(actorId, actorSeed, ability, index) {
         type: "ability",
         img: "icons/svg/combat.svg",
         system: {
-            aux: ability.aux || "main",
+            aux,
             icon,
             type: ability.type || "A",
             gameText: ability.gameText ? `<p>${ability.gameText
@@ -162,11 +178,54 @@ function abilityItem(actorId, actorSeed, ability, index) {
         flags: {
             "scrpg-actor-compendium": {
                 archive: true,
-                color: ability.aux || "main"
+                color: ability.color || abilityZoneColor(aux)
             }
         },
         _stats: STATS
     });
+}
+
+/** Optional Archive form-changer / modular mode blocks → Auxiliary tab fields + items. */
+function applyFormChanger(actor, hero, actorSeed) {
+    const formChanger = hero.formChanger;
+    if (!formChanger || formChanger.enabled === false) return actor;
+
+    actor.system.formchanger = true;
+    // Form-changer UI reuses the modular green2 slot, which is gated on powerless.
+    actor.system.powerless = true;
+
+    const forms = formChanger.forms || {};
+    const modeKeys = ["main", "green1", "green2", "yellow1", "yellow2", "red1"];
+    let powerIndex = (hero.powers || []).length;
+    let abilityIndex = (hero.abilities || []).length;
+
+    for (const mode of modeKeys) {
+        const form = forms[mode];
+        if (!form) continue;
+
+        if (form.name) actor.system.modeName[mode] = form.name;
+        if (form.description) {
+            actor.system.modeDescription[mode] = `<p>${String(form.description)
+                .replaceAll("&", "&amp;")
+                .replaceAll("<", "&lt;")
+                .replaceAll(">", "&gt;")
+                .replaceAll("\n", "</p><p>")}</p>`;
+        }
+        actor.system.modeDisplayed[mode] = form.displayed !== false;
+
+        for (const power of form.powers || []) {
+            actor.items.push(powerItem(actor._id, actorSeed, power, powerIndex, mode));
+            powerIndex += 1;
+        }
+        for (const ability of form.abilities || []) {
+            actor.items.push(
+                abilityItem(actor._id, actorSeed, { ...ability, aux: ability.aux || mode }, abilityIndex)
+            );
+            abilityIndex += 1;
+        }
+    }
+
+    return actor;
 }
 
 function environmentTwistItem(actorId, actorSeed, twist, index) {
@@ -212,7 +271,7 @@ function buildHeroActor(hero, folderId, teamKey) {
     for (const [index, title] of (hero.collections || []).slice(0, 6).entries()) {
         collections[collectionSlots[index]] = title;
     }
-    return {
+    const actor = {
         name: hero.name,
         type: "hero",
         img: "icons/svg/mystery-man.svg",
@@ -310,6 +369,7 @@ function buildHeroActor(hero, folderId, teamKey) {
         _id: id,
         _key: `!actors!${id}`
     };
+    return applyFormChanger(actor, hero, seed);
 }
 
 function buildVillainActor(villain, folderId, teamKey) {
