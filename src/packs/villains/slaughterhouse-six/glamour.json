@@ -293,12 +293,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die and make it persistent and exclusive.</p>"
+        "gameText": "<p>Hinder using Illusions and use your Max+Mid dice, or use your Max die and make it persistent and exclusive.</p>"
       },
       "effects": [],
       "folder": null,
@@ -323,8 +323,8 @@
       "_key": "!actors.items!oSp8EVZ2QwPRYmIs.ZQ7J7nfeLewhZq3u"
     },
     {
-      "_id": "iHZiWQZnWZ8EK93K",
-      "name": "How Can You Trust What",
+      "_id": "3QmLobb1GHF8JGQy",
+      "name": "How Can You Trust What You See?",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -338,7 +338,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hinder multiple targets using Creativity. You and any nearby allies Defend</p>"
+        "gameText": "<p>Hinder multiple targets using Creativity. You and any nearby allies Defend using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -360,11 +360,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.iHZiWQZnWZ8EK93K"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.3QmLobb1GHF8JGQy"
     },
     {
-      "_id": "FVq9EZEDGiaa3oA5",
-      "name": "You See?",
+      "_id": "JkXWEHRaVBzf2PjD",
+      "name": "Step Through the Mirror",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>using your Max die. Select a nearby target. Either turn all bonuses on that target to equivalent</p>"
+        "gameText": "<p>Select a nearby target. Either turn all bonuses on that target to equivalent penalties, or move a penalty from that target to another target that you can see.</p>"
       },
       "effects": [],
       "folder": null,
@@ -400,11 +400,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.FVq9EZEDGiaa3oA5"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.JkXWEHRaVBzf2PjD"
     },
     {
-      "_id": "i57dTUzmiwWVfmC5",
-      "name": "Step Through the Mirror",
+      "_id": "gBNOlORE9Q6mmtNO",
+      "name": "Who Is Really Your Foe?",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>penalties, or move a penalty from that target to another target that you can see. Attack using Illusions. Use your Max die. A target dealt damage this way</p>"
+        "gameText": "<p>Attack using Illusions. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -440,17 +440,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.i57dTUzmiwWVfmC5"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.gBNOlORE9Q6mmtNO"
     },
     {
-      "_id": "vzP14KhSGd2bsj3P",
-      "name": "Who Is Really Your Foe?",
+      "_id": "0B0FPgeLVvw23rgB",
+      "name": "They Are What You Fear",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attacks an ally by rolling their single largest power die.</p>"
+        "gameText": "<p>Choose one group of minions in the scene. Upgrade all their dice one size (maximum ).</p>"
       },
       "effects": [],
       "folder": null,
@@ -480,11 +480,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.vzP14KhSGd2bsj3P"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.0B0FPgeLVvw23rgB"
     },
     {
-      "_id": "Tstu4A6OeFmH3VKB",
-      "name": "They Are What You",
+      "_id": "ssVGT785nyFooo6U",
+      "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -492,13 +492,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>Choose one group of minions in the scene. Upgrade all their dice one size (maximum ).</p>"
+        "type": "I",
+        "gameText": "<p>If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.</p>"
       },
       "effects": [],
       "folder": null,
@@ -520,127 +520,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.Tstu4A6OeFmH3VKB"
-    },
-    {
-      "_id": "F5iD9zNmzz2RexDK",
-      "name": "Fear",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "A",
-        "gameText": "<p>If you have complete control over your immediate surroundings,</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 600000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.F5iD9zNmzz2RexDK"
-    },
-    {
-      "_id": "sgyIju5bS0kKMOjr",
-      "name": "Master of Enforced",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to organize rabble to accomplish</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.sgyIju5bS0kKMOjr"
-    },
-    {
-      "_id": "r6VoUbL1g6DiDULF",
-      "name": "Order",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>a task.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 800000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.r6VoUbL1g6DiDULF"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.ssVGT785nyFooo6U"
     }
   ],
   "effects": [],

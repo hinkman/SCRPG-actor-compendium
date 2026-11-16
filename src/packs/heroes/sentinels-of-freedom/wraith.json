@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Remove a bonus or penalty of your choice.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -484,14 +484,14 @@
         "aux": "green",
         "icon": {
           "attack": true,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hinder a target using your Min die, or maneuver to a new location in your environment. Attack using Stealth. Defend using your Min die against all Attacks until your</p>"
+        "gameText": "<p>Attack using Ranged Combat. Remove one physical bonus or penalty, Hinder a target using your Min die, or maneuver to a new location in your environment.</p>"
       },
       "effects": [],
       "folder": null,
@@ -523,15 +523,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
+          "attack": true,
+          "defend": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>next turn. Overcome to learn hidden information and use your Max die. You and each</p>"
+        "gameText": "<p>Attack using Stealth. Defend using your Min die against all Attacks until your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -571,7 +571,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>of your allies gain a hero point. Overcome to infiltrate somewhere or avoid detection and use your Max</p>"
+        "gameText": "<p>Overcome to learn hidden information and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -603,15 +603,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. You and each of your allies gain a hero point. When you are Attacked by a nearby enemy, the attacker also takes an equal</p>"
+        "gameText": "<p>Overcome to infiltrate somewhere or avoid detection and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -643,15 +643,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
-          "defend": true,
+          "attack": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>amount of damage. When you would take damage, Defend against that damage by rolling your</p>"
+        "gameText": "<p>When you are Attacked by a nearby enemy, the attacker also takes an equal amount of damage.</p>"
       },
       "effects": [],
       "folder": null,
@@ -684,14 +684,14 @@
         "aux": "yellow",
         "icon": {
           "attack": false,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>single Stealth die. Boost yourself using Gadgets. That bonus is persistent and exclusive. Then,</p>"
+        "gameText": "<p>When you would take damage, Defend against that damage by rolling your single Stealth die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -731,7 +731,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using your Min die. You may use the bonus you just created on that Attack. Boost yourself using Throwing Knives. Use your Max die. That bonus is</p>"
+        "gameText": "<p>Boost yourself using Gadgets. That bonus is persistent and exclusive. Then, Attack using your Min die. You may use the bonus you just created on that Attack.</p>"
       },
       "effects": [],
       "folder": null,
@@ -764,14 +764,14 @@
         "aux": "red",
         "icon": {
           "attack": true,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>persistent and exclusive. Attack using your Mid die plus that bonus. Boost using Investigation and use your Max die. Defend against all Attacks</p>"
+        "gameText": "<p>Boost yourself using Throwing Knives. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.</p>"
       },
       "effects": [],
       "folder": null,
@@ -804,14 +804,14 @@
         "aux": "red",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": true,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>against you using your Mid die until your next turn. Note your Min die: as a Reaction, until your next turn, you may Hinder an attacker using that die. When taking any action using Deduction, you may reroll your Min die</p>"
+        "gameText": "<p>Boost using Investigation and use your Max die. Defend against all Attacks against you using your Mid die until your next turn. Note your Min die: as a Reaction, until your next turn, you may Hinder an attacker using that die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -851,7 +851,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>before determining effects.</p>"
+        "gameText": "<p>When taking any action using Deduction, you may reroll your Min die before determining effects.</p>"
       },
       "effects": [],
       "folder": null,

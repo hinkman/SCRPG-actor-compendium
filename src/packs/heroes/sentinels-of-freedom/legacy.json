@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Boost an ally by rolling your single Vitality die.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -451,15 +451,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>actions until the start of your next turn.</p>"
+        "gameText": "<p>Boost using Insight. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -484,8 +484,8 @@
       "_key": "!actors.items!FrZVkc5QNchL3IVv.pYzzFyuxedmWAGFw"
     },
     {
-      "_id": "7HFE7WQcl0HEXxRB",
-      "name": "Furthering your Father’s",
+      "_id": "6ZmCSEV08Bk8Z6t7",
+      "name": "Furthering your Father’s Legacy",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -521,11 +521,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.7HFE7WQcl0HEXxRB"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.6ZmCSEV08Bk8Z6t7"
     },
     {
-      "_id": "NKRHAjDgr47DQQ7N",
-      "name": "Legacy",
+      "_id": "ltVdD7s2Lr9jJDJh",
+      "name": "Sideswipe",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -534,12 +534,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": ""
+        "gameText": "<p>Hinder multiple targets using Flight. Apply your Min die to each of them.</p>"
       },
       "effects": [],
       "folder": null,
@@ -561,11 +561,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.NKRHAjDgr47DQQ7N"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.ltVdD7s2Lr9jJDJh"
     },
     {
-      "_id": "arWQlw10amXkd4i0",
-      "name": "Sideswipe",
+      "_id": "gNtUvE8LtB247atW",
+      "name": "Principle of the Hero",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -574,12 +574,12 @@
           "attack": false,
           "defend": false,
           "overcome": true,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome in a situation in which innocent people are in immediate danger. Hinder multiple targets using Flight. Apply your Min die to each of them.</p>"
+        "gameText": "<p>Overcome in a situation in which innocent people are in immediate danger. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -601,11 +601,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.arWQlw10amXkd4i0"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.gNtUvE8LtB247atW"
     },
     {
-      "_id": "bFocuKpIFSHy9Yp2",
-      "name": "Principle of the Hero",
+      "_id": "wTxmiNbadKDnff5q",
+      "name": "Principle of Justice",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -619,7 +619,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Use your Max die. You and each of your allies gain a hero point. Overcome to stop an act of injustice in progress and use your Max die. You</p>"
+        "gameText": "<p>Overcome to stop an act of injustice in progress and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -641,50 +641,10 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.bFocuKpIFSHy9Yp2"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.wTxmiNbadKDnff5q"
     },
     {
-      "_id": "DRJwwRIB62fo7YFc",
-      "name": "Principle of Justice",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "green",
-        "icon": {
-          "attack": true,
-          "defend": true,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "A",
-        "gameText": "<p>and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 500000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "green"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.DRJwwRIB62fo7YFc"
-    },
-    {
-      "_id": "EH7v9MkG9jLRgwQW",
+      "_id": "CNuAdTk4VePRWO9h",
       "name": "Danger Sense",
       "type": "ability",
       "img": "icons/svg/combat.svg",
@@ -699,7 +659,47 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>rolling your single Flight die. Attack using Flight, then Defend against all attacks against you until your</p>"
+        "gameText": "<p>When damaged by an environment target or a surprise Attack, Defend by rolling your single Flight die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.CNuAdTk4VePRWO9h"
+    },
+    {
+      "_id": "JfrR4nj5AOEgDJAl",
+      "name": "Evasive Assault",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Flight, then Defend against all attacks against you until your next turn equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -721,17 +721,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.EH7v9MkG9jLRgwQW"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.JfrR4nj5AOEgDJAl"
     },
     {
-      "_id": "KNlZwFwqbehDEG9u",
-      "name": "Evasive Assault",
+      "_id": "nbUmFc3VZu5xwv0o",
+      "name": "Sweeping Gaze",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -739,7 +739,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>next turn equal to your Min die.</p>"
+        "gameText": "<p>Attack multiple targets using Atomic Glare, using your Min die against each.</p>"
       },
       "effects": [],
       "folder": null,
@@ -761,15 +761,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.KNlZwFwqbehDEG9u"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.nbUmFc3VZu5xwv0o"
     },
     {
-      "_id": "03e03ZAwcVmf8Q3f",
-      "name": "Sweeping Gaze",
+      "_id": "gVriubgg56R6xL7N",
+      "name": "Focused Blast",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -779,7 +779,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack multiple targets using Atomic Glare, using your Min die against each. Boost yourself using Atomic Glare. Use your Max die. That bonus is</p>"
+        "gameText": "<p>Boost yourself using Atomic Glare. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.</p>"
       },
       "effects": [],
       "folder": null,
@@ -790,7 +790,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -801,11 +801,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.03e03ZAwcVmf8Q3f"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.gVriubgg56R6xL7N"
     },
     {
-      "_id": "jv7fpiyud4aw6A3U",
-      "name": "Focused Blast",
+      "_id": "MyHMrxkLv9l68rpM",
+      "name": "Head-On Collision",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -819,7 +819,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>persistent and exclusive. Attack using your Mid die plus that bonus. Attack using Flight. Use your Max die. Then, Hinder that target using your</p>"
+        "gameText": "<p>Attack using Flight. Use your Max die. Then, Hinder that target using your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -841,47 +841,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.jv7fpiyud4aw6A3U"
-    },
-    {
-      "_id": "e8sao56TzQHMpcQ2",
-      "name": "Head-On Collision",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "red",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "A",
-        "gameText": "<p>Mid+Min dice.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 1000000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "red"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.e8sao56TzQHMpcQ2"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.MyHMrxkLv9l68rpM"
     }
   ],
   "effects": [],

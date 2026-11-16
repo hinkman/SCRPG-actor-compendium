@@ -290,15 +290,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Deal that much damage to another target. Hinder multiple targets using Flashy Felon and use your Max die. If you</p>"
+        "gameText": "<p>When Attacked, Defend yourself by rolling your single Stealth die. Deal that much damage to another target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -333,12 +333,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>roll doubles, also Attack each target with your Mid die. Destroy one of your bonuses. Deal each opponent damage equal to</p>"
+        "gameText": "<p>Hinder multiple targets using Flashy Felon and use your Max die. If you roll doubles, also Attack each target with your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -374,11 +374,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>the value of that bonus. Boost using Gadgets and use your Max+Min dice. Remove all penalties</p>"
+        "gameText": "<p>Destroy one of your bonuses. Deal each opponent damage equal to the value of that bonus.</p>"
       },
       "effects": [],
       "folder": null,
@@ -414,11 +414,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>on yourself. Increase all of Ermine’s Powers by one die size. (When using this</p>"
+        "gameText": "<p>Boost using Gadgets and use your Max+Min dice. Remove all penalties on yourself.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>upgrade, Ermine has 20 additional Health.) If you have access to great wealth and other resources, automatically</p>"
+        "gameText": "<p>Increase all of Ermine’s Powers by one die size. (When using this upgrade, Ermine has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>succeed at an Overcome to leverage those resources to get even richer, no matter who else pays the price.</p>"
+        "gameText": "<p>If you have access to great wealth and other resources, automatically succeed at an Overcome to leverage those resources to get even richer, no matter who else pays the price.</p>"
       },
       "effects": [],
       "folder": null,

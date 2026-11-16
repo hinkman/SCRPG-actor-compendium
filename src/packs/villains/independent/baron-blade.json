@@ -323,8 +323,8 @@
       "_key": "!actors.items!r49fgQLpRyixWDvl.CZSiXTs8ElpUlyGM"
     },
     {
-      "_id": "7UjeCAntWx5grVpV",
-      "name": "“Consider the",
+      "_id": "9LsoJDKAHYC1eJAD",
+      "name": "“Consider the Price of Victory”",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -338,7 +338,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hinder all opponents that can see or hear you using Conviction. Boost</p>"
+        "gameText": "<p>Hinder all opponents that can see or hear you using Conviction. Boost yourself using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -360,11 +360,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.7UjeCAntWx5grVpV"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.9LsoJDKAHYC1eJAD"
     },
     {
-      "_id": "PmjcXFxmb2HqWtBB",
-      "name": "Price of Victory”",
+      "_id": "bprA4qHL033whpdc",
+      "name": "Devious Devising",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>yourself using your Max die. Boost yourself using Technology and use your Max die. Either make</p>"
+        "gameText": "<p>Boost yourself using Technology and use your Max die. Either make that bonus persistent and exclusive, or Boost yourself again using your Min+Mid dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -400,11 +400,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.PmjcXFxmb2HqWtBB"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.bprA4qHL033whpdc"
     },
     {
-      "_id": "OHO2ubpdkI1MV73o",
-      "name": "Devious Devising",
+      "_id": "yHrF16R0wG2WSxTZ",
+      "name": "The Glory of Mordengrad",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -414,11 +414,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>that bonus persistent and exclusive, or Boost yourself again using your Min+Mid dice. Attack using Inventions and at least one bonus. If you have multiple</p>"
+        "gameText": "<p>Attack using Inventions and at least one bonus. If you have multiple bonuses, you may also Attack another target using the Min die and one other bonus, and may also Attack a third target using the Max die and a third bonus.</p>"
       },
       "effects": [],
       "folder": null,
@@ -440,17 +440,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.OHO2ubpdkI1MV73o"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.yHrF16R0wG2WSxTZ"
     },
     {
-      "_id": "U1u6aF7FZRqE310C",
-      "name": "The Glory of",
+      "_id": "1rdMPkFfDAIuxE4C",
+      "name": "Battalion Backup",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>bonuses, you may also Attack another target using the Min die and</p>"
+        "gameText": "<p>Replenish your Blade Battalion minions up to the number of heroes.</p>"
       },
       "effects": [],
       "folder": null,
@@ -480,25 +480,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.U1u6aF7FZRqE310C"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.1rdMPkFfDAIuxE4C"
     },
     {
-      "_id": "BMYtkv35gLuPfOEm",
-      "name": "Mordengrad",
+      "_id": "DlF7fWOh87dkETsJ",
+      "name": "Master of Mad Science",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>one other bonus, and may also Attack a third target using the Max die and a third bonus.</p>"
+        "type": "I",
+        "gameText": "<p>As long you have access to materials, you can automatically succeed when Overcoming a challenge by using scientific principles and inventions.</p>"
       },
       "effects": [],
       "folder": null,
@@ -520,87 +520,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.BMYtkv35gLuPfOEm"
-    },
-    {
-      "_id": "gzRlR5RNo9LZLgWE",
-      "name": "Battalion Backup",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "A",
-        "gameText": "<p>Replenish your Blade Battalion minions up to the number of heroes. As long you have access to materials, you can automatically succeed</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 600000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.gzRlR5RNo9LZLgWE"
-    },
-    {
-      "_id": "ehit3WzMRksCKunT",
-      "name": "Master of Mad Science",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>when Overcoming a challenge by using scientific principles and inventions.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.ehit3WzMRksCKunT"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.DlF7fWOh87dkETsJ"
     }
   ],
   "effects": [],

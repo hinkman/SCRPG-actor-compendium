@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>die as a Hinder against them. Hinder multiple targets using Energy Shields. While a hero has this</p>"
+        "gameText": "<p>When a nearby hero that you can see invokes a twist, roll your Sonic die as a Hinder against them.</p>"
       },
       "effects": [],
       "folder": null,
@@ -330,15 +330,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>penalty, reduce all their power dice by one size. When Attacked by someone with a penalty you created, Defend by</p>"
+        "gameText": "<p>Hinder multiple targets using Energy Shields. While a hero has this penalty, reduce all their power dice by one size.</p>"
       },
       "effects": [],
       "folder": null,
@@ -371,14 +371,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>rolling your single status die, and the attacker also suffers that much damage. Select a nearby target. Either turn all bonuses on that target to</p>"
+        "gameText": "<p>When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage.</p>"
       },
       "effects": [],
       "folder": null,
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>equivalent penalties, or move a penalty from that target to another target that you can see. You cannot be damaged by anyone except yourself until the defense shield is destroyed. The defense shield has 40 Health, or can be</p>"
+        "gameText": "<p>Select a nearby target. Either turn all bonuses on that target to equivalent penalties, or move a penalty from that target to another target that you can see.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Overcome using Energy Shields. Use your Max die. On a success, remove one success from the deactivating challenge. Alternatively, deactivated with three Overcome successes. If a hero takes a minor twist working on the shield, you can make an Attack as a reaction by rolling your single Sonic die.</p>"
+        "gameText": "<p>You cannot be damaged by anyone except yourself until the defense shield is destroyed. The defense shield has 40 Health, or can be deactivated with three Overcome successes. If a hero takes a minor twist working on the shield, you can make an Attack as a reaction by rolling your single Sonic die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>instead of an Overcome, use the Max die to Recover that much of the defense shield’s Health. This ability cannot be used if the defense shield has been completely removed. If you have complete control over your immediate surroundings,</p>"
+        "gameText": "<p>Overcome using Energy Shields. Use your Max die. On a success, remove one success from the deactivating challenge. Alternatively, instead of an Overcome, use the Max die to Recover that much of the defense shield’s Health. This ability cannot be used if the defense shield has been completely removed.</p>"
       },
       "effects": [],
       "folder": null,
@@ -523,8 +523,8 @@
       "_key": "!actors.items!oTdOMHeMmlzl6nWD.DpesTVj8hYf62O9y"
     },
     {
-      "_id": "tzKF15nEkuFZxwQJ",
-      "name": "Master of Enforced",
+      "_id": "nSeM1ETgywzRylOG",
+      "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to organize rabble to</p>"
+        "gameText": "<p>If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.</p>"
       },
       "effects": [],
       "folder": null,
@@ -560,47 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.tzKF15nEkuFZxwQJ"
-    },
-    {
-      "_id": "1L87duCCzQAbosgP",
-      "name": "Order",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>accomplish a task.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.1L87duCCzQAbosgP"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.nSeM1ETgywzRylOG"
     }
   ],
   "effects": [],

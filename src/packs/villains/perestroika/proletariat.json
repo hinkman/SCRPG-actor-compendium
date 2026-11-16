@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and use the lowest rolling die amongst them for each minion’s result on that action. As long as you have at least 1 nearby ally, you may reroll all 1s on your</p>"
+        "gameText": "<p>Whenever multiple of your clone minions all take the same action against the same target, you must roll all of their dice at the same time and use the lowest rolling die amongst them for each minion’s result on that action.</p>"
       },
       "effects": [],
       "folder": null,
@@ -338,7 +338,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>dice. When you would take physical damage, prevent that damage and create a clone minion with a die size equal to your current status die</p>"
+        "gameText": "<p>As long as you have at least 1 nearby ally, you may reroll all 1s on your dice. When you would take physical damage, prevent that damage and</p>"
       },
       "effects": [],
       "folder": null,
@@ -370,7 +370,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>(including the newly made minion). You may use this reaction more than once a round, but each time you use this reaction after the first time, you take 1 irreducible damage. Attack using Close Combat and use your Max die. Add 1 to the Attack</p>"
+        "gameText": "<p>create a clone minion with a die size equal to your current status die (including the newly made minion). You may use this reaction more than once a round, but each time you use this reaction after the first</p>"
       },
       "effects": [],
       "folder": null,
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>for each other ally that Attacked that target since your last turn. Whenever a clone minion larger than a rolls a save against physical damage, if its save is successful, it splits into two dice of one smaller</p>"
+        "gameText": "<p>time, you take 1 irreducible damage. Attack using Close Combat and use your Max die. Add 1 to the Attack for each other ally that Attacked that target since your last turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Increase all of Proletariat’s power dice by one size. size instead of being reduced a die size, and you take 1 irreducible damage. If it fails its save, the minion is only reduced one die size, rather than being destroyed.</p>"
+        "gameText": "<p>Whenever a clone minion larger than a rolls a save against physical damage, if its save is successful, it splits into two dice of one smaller size instead of being reduced a die size, and you take 1 irreducible damage. If it fails its save, the minion is only reduced one die size,</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Proletariat has 20 additional Health.) As long as you are in command of your own forces, automatically</p>"
+        "gameText": "<p>rather than being destroyed. Increase all of Proletariat’s power dice by one size. (When using this upgrade, Proletariat has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>succeed at an Overcome involving seizing an area or capturing civilians.</p>"
+        "gameText": "<p>As long as you are in command of your own forces, automatically succeed at an Overcome involving seizing an area or capturing civilians.</p>"
       },
       "effects": [],
       "folder": null,

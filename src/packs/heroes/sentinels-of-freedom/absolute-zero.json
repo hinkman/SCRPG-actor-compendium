@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Hinder an opponent by rolling your Cold die.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -427,7 +427,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Defend using Cold. Use your Max die. Boost using your Min die. When you change personal zones, you may Boost by rolling your single</p>"
+        "gameText": "<p>Defend using Cold. Use your Max die. Boost using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -459,15 +459,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Cold die. Attack up to two targets using Cold. Also take an amount of damage equal</p>"
+        "gameText": "<p>When you change personal zones, you may Boost by rolling your single Cold die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -499,15 +499,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome in a situation related to or using your coolant suit. Use your Max to your Mid die.</p>"
+        "gameText": "<p>Attack up to two targets using Cold. Also take an amount of damage equal to your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -547,7 +547,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge involving Cold and use your Max die. You and each</p>"
+        "gameText": "<p>Overcome in a situation related to or using your coolant suit. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -579,15 +579,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>of your allies gain a hero point. When your personal zone changes, Attack all close enemy targets by rolling</p>"
+        "gameText": "<p>Overcome a challenge involving Cold and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -619,7 +619,7 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -627,7 +627,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>your single Cold die.</p>"
+        "gameText": "<p>When your personal zone changes, Attack all close enemy targets by rolling your single Cold die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -667,7 +667,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hinder any number of nearby targets using Absorption. Use your Max die. If you would take damage from Cold, instead reduce that damage to 0 and</p>"
+        "gameText": "<p>Hinder any number of nearby targets using Absorption. Use your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -700,14 +700,14 @@
         "aux": "yellow",
         "icon": {
           "attack": false,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": true
         },
         "type": "I",
-        "gameText": "<p>Recover that amount of Health instead. Whenever you are dealt damage, roll your single Absorption die to Defend</p>"
+        "gameText": "<p>If you would take damage from Cold, instead reduce that damage to 0 and Recover that amount of Health instead.</p>"
       },
       "effects": [],
       "folder": null,
@@ -740,14 +740,14 @@
         "aux": "red",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Whenever you Attack a target with an action, you may also Hinder that against the Attack and Boost yourself.</p>"
+        "gameText": "<p>Whenever you are dealt damage, roll your single Absorption die to Defend against the Attack and Boost yourself.</p>"
       },
       "effects": [],
       "folder": null,
@@ -782,12 +782,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>target with your Min die. Attack up to three targets, one of which must be you, using Cold. Assign</p>"
+        "gameText": "<p>Whenever you Attack a target with an action, you may also Hinder that target with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -819,7 +819,7 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -827,7 +827,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your Min, Mid, and Max dice as you choose among those targets.</p>"
+        "gameText": "<p>Attack up to three targets, one of which must be you, using Cold. Assign your Min, Mid, and Max dice as you choose among those targets.</p>"
       },
       "effects": [],
       "folder": null,

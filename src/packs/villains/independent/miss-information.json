@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack one of those targets with your Mid die. Hinder using Transmutation. That penalty is persistent and exclusive. As long as that penalty is in play, reduce damage dealt to you by 1 and</p>"
+        "gameText": "<p>Hinder using Presence against multiple targets and use your Max die. Attack one of those targets with your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -330,15 +330,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>whenever you are dealt damage, the target with this penalty takes 1 irreducible damage. When Attacked, Defend yourself by rolling your single Presence die.</p>"
+        "gameText": "<p>Hinder using Transmutation. That penalty is persistent and exclusive. As long as that penalty is in play, reduce damage dealt to you by 1 and whenever you are dealt damage, the target with this penalty takes 1 irreducible damage.</p>"
       },
       "effects": [],
       "folder": null,
@@ -370,15 +370,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Deal that much damage to a different nearby target.</p>"
+        "gameText": "<p>When Attacked, Defend yourself by rolling your single Presence die. Deal that much damage to a different nearby target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -412,13 +412,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Whenever you roll a 1, reroll that die. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist,</p>"
+        "gameText": "<p>Whenever you roll a 1, reroll that die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -452,13 +452,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>you may use a reaction to Hinder them by rolling your single Presence die. (When using this upgrade, Miss Information has 10 additional Health.) As long as you are manifesting effects related to a power you have at</p>"
+        "gameText": "<p>The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Presence die. (When using this upgrade, Miss Information has 10 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>, automatically succeed at an Overcome involving usage of those powers.</p>"
+        "gameText": "<p>As long as you are manifesting effects related to a power you have at , automatically succeed at an Overcome involving usage of those powers.</p>"
       },
       "effects": [],
       "folder": null,

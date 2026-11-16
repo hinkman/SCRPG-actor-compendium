@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Boost an ally by rolling your single Lightning Calculator die.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -459,7 +459,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>while in the Yellow zone, and 3 while in the Red zone.</p>"
+        "gameText": "<p>Reduce physical damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.</p>"
       },
       "effects": [],
       "folder": null,
@@ -492,14 +492,14 @@
         "aux": "green",
         "icon": {
           "attack": false,
-          "defend": true,
-          "overcome": true,
+          "defend": false,
+          "overcome": false,
           "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost yourself using Power Suit. Then change modes. Overcome a situation that requires you to hold the line and use you Max die OR use your Mid die and Defend with your Min die. You and each of</p>"
+        "gameText": "<p>Boost yourself using Power Suit. Then change modes.</p>"
       },
       "effects": [],
       "folder": null,
@@ -532,14 +532,14 @@
         "aux": "green",
         "icon": {
           "attack": false,
-          "defend": false,
+          "defend": true,
           "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your allies gain a hero point. Overcome when you can flashback to how you prepared for this exact</p>"
+        "gameText": "<p>Overcome a situation that requires you to hold the line and use you Max die OR use your Mid die and Defend with your Min die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -571,15 +571,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>situation. Use your Max die. You and each of your allies gain a hero point. Attack up to three different targets using RIOT Cannon. Apply your Max</p>"
+        "gameText": "<p>Overcome when you can flashback to how you prepared for this exact situation. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -611,15 +611,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die. Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is</p>"
+        "gameText": "<p>Attack up to three different targets using RIOT Cannon. Apply your Max die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -655,11 +655,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>persistent and exclusive. Destroy one bonus on you. Change modes, then take an action in the new</p>"
+        "gameText": "<p>Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is persistent and exclusive.</p>"
       },
       "effects": [],
       "folder": null,
@@ -691,7 +691,7 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -699,7 +699,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>mode. When you are hit with an Attack, you may change to any mode. If you do,</p>"
+        "gameText": "<p>Destroy one bonus on you. Change modes, then take an action in the new mode.</p>"
       },
       "effects": [],
       "folder": null,
@@ -739,7 +739,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>take extra damage equal to the Min die or take a minor twist. Attack multiple nearby targets using Power Suit. Use your Max+Mid dice</p>"
+        "gameText": "<p>When you are hit with an Attack, you may change to any mode. If you do, take extra damage equal to the Min die or take a minor twist.</p>"
       },
       "effects": [],
       "folder": null,
@@ -779,7 +779,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>against each. Take irreducible damage equal to your Min die. Attack using RIOT Cannon and at least one bonus. Use your Max+Mid+Min</p>"
+        "gameText": "<p>Attack multiple nearby targets using Power Suit. Use your Max+Mid dice against each. Take irreducible damage equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -819,7 +819,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.</p>"
+        "gameText": "<p>Attack using RIOT Cannon and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.</p>"
       },
       "effects": [],
       "folder": null,

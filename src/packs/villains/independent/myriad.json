@@ -392,11 +392,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Reroll any number of minion saves against the same Attack. Boost using Swarm Master for all your minions until the start of your</p>"
+        "gameText": "<p>Reroll any number of minion saves against the same Attack.</p>"
       },
       "effects": [],
       "folder": null,
@@ -428,15 +428,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>next turn. Attack using Shapeshifting and use your Max die. Defend against all</p>"
+        "gameText": "<p>Boost using Swarm Master for all your minions until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -469,14 +469,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attacks against you until the start of your next turn using the number of your minions. Use Part Detachment to create a number of minions equal to the</p>"
+        "gameText": "<p>Attack using Shapeshifting and use your Max die. Defend against all Attacks against you until the start of your next turn using the number of your minions.</p>"
       },
       "effects": [],
       "folder": null,
@@ -508,7 +508,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -516,7 +516,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>value of your Max die. The starting die size for those minions is the same as the size of your Min die. Attack using Insect Control and use your Max die, with a bonus equal</p>"
+        "gameText": "<p>Use Part Detachment to create a number of minions equal to the value of your Max die. The starting die size for those minions is the same as the size of your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -548,7 +548,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -556,7 +556,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Choose one group of minions in the scene. Upgrade all their dice one to the number of minions you control.</p>"
+        "gameText": "<p>Attack using Insect Control and use your Max die, with a bonus equal to the number of minions you control.</p>"
       },
       "effects": [],
       "folder": null,
@@ -596,7 +596,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>size (maximum ). (When using this upgrade, Myriad has 5 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+        "gameText": "<p>Choose one group of minions in the scene. Upgrade all their dice one ). size (maximum (When using this upgrade, Myriad has 5 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -636,7 +636,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+        "gameText": "<p>If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
       },
       "effects": [],
       "folder": null,

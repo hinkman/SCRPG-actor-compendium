@@ -261,12 +261,12 @@
           "attack": true,
           "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>die. Boost yourself by that amount. Attack using Swinging. Either Hinder that target using Max, or Defend</p>"
+        "gameText": "<p>When an ally is Attacked, Defend them by rolling your single Plants die. Boost yourself by that amount.</p>"
       },
       "effects": [],
       "folder": null,
@@ -299,14 +299,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>yourself using Min and you and that target end up elsewhere in the scene. Attack using Close Combat. Use your Max die. Recover Health equal to</p>"
+        "gameText": "<p>Attack using Swinging. Either Hinder that target using Max, or Defend yourself using Min and you and that target end up elsewhere in the scene.</p>"
       },
       "effects": [],
       "folder": null,
@@ -338,15 +338,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>your Min die.</p>"
+        "gameText": "<p>Attack using Close Combat. Use your Max die. Recover Health equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -381,12 +381,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": true,
-          "boost": true,
+          "hinder": false,
+          "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Reduce damage dealt to you by 2. Hinder multiple nearby targets using Plants. Boost yourself using your</p>"
+        "gameText": "<p>Reduce damage dealt to you by 2.</p>"
       },
       "effects": [],
       "folder": null,
@@ -418,15 +418,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
-          "boost": false,
+          "hinder": true,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>When you take an action that lets you make an Attack, also make an Max die.</p>"
+        "gameText": "<p>Hinder multiple nearby targets using Plants. Boost yourself using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -466,7 +466,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Attack using your Mid die. (When using this upgrade, Deep Root has 20 additional Health.) If you have complete control over your immediate surroundings,</p>"
+        "gameText": "<p>When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Deep Root has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -491,8 +491,8 @@
       "_key": "!actors.items!CJb2zbH8H2F1tTmp.rhlVNvrU5UsKktnp"
     },
     {
-      "_id": "0DSuM5QcAp8OiaoJ",
-      "name": "Master of Enforced",
+      "_id": "Gwk8WvI2HNG61Crr",
+      "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -506,7 +506,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to organize rabble to accomplish</p>"
+        "gameText": "<p>If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.</p>"
       },
       "effects": [],
       "folder": null,
@@ -528,47 +528,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.0DSuM5QcAp8OiaoJ"
-    },
-    {
-      "_id": "wgjSKPIqeRhuoII8",
-      "name": "Order",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>a task.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.wgjSKPIqeRhuoII8"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.Gwk8WvI2HNG61Crr"
     }
   ],
   "effects": [],

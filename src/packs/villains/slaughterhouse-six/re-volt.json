@@ -295,10 +295,10 @@
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>Mid die against a different target, and the Min die against a third target. If you Attack three different targets, the damage is irreducible. When Attacked with Electricity, Recover that amount of Health instead</p>"
+        "gameText": "<p>Attack using Ranged Combat, using the Max die against one target, Mid die against a different target, and the Min die against a third target. If you Attack three different targets, the damage is irreducible.</p>"
       },
       "effects": [],
       "folder": null,
@@ -335,10 +335,10 @@
           "overcome": false,
           "hinder": true,
           "boost": true,
-          "recover": false
+          "recover": true
         },
         "type": "R",
-        "gameText": "<p>of taking damage. When Hindered with Electricity, Boost yourself instead. Attack one target using Electricity. Use your Max die. That target cannot</p>"
+        "gameText": "<p>When Attacked with Electricity, Recover that amount of Health instead of taking damage. When Hindered with Electricity, Boost yourself instead.</p>"
       },
       "effects": [],
       "folder": null,
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die. Defend against an Attack against only you by rolling your single</p>"
+        "gameText": "<p>Attack one target using Electricity. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -411,14 +411,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Intangibility die. Boost yourself by the damage reduced. Attack multiple close targets using Living Lightning. Hinder each target</p>"
+        "gameText": "<p>Defend against an Attack against only you by rolling your single Intangibility die. Boost yourself by the damage reduced.</p>"
       },
       "effects": [],
       "folder": null,
@@ -450,15 +450,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
-          "hinder": false,
+          "overcome": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If using your Min die.</p>"
+        "gameText": "<p>Attack multiple close targets using Living Lightning. Hinder each target using your Min die. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’</p>"
       },
       "effects": [],
       "folder": null,
@@ -492,13 +492,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (While using this upgrade, Re-Volt has 10 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+        "gameText": "<p>quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest</p>"
       },
       "effects": [],
       "folder": null,
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+        "gameText": "<p>power die to represent the controlled version of that hero. (While using this upgrade, Re-Volt has 10 additional Health.) If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
       },
       "effects": [],
       "folder": null,

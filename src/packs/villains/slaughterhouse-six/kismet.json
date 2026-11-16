@@ -226,15 +226,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>reduce all their power dice by one size. When Attacked, Defend yourself by rolling your single status die. If the</p>"
+        "gameText": "<p>Hinder multiple targets using Presence. While a hero has this penalty, reduce all their power dice by one size.</p>"
       },
       "effects": [],
       "folder": null,
@@ -266,15 +266,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>damage is reduced to 0, you may move to anywhere else in the scene. Hinder using Karma and use your Max die; that penalty is persistent and</p>"
+        "gameText": "<p>When Attacked, Defend yourself by rolling your single status die. If the damage is reduced to 0, you may move to anywhere else in the scene.</p>"
       },
       "effects": [],
       "folder": null,
@@ -309,12 +309,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>exclusive. As long as that penalty is on the target, reduce their highest power die of your choice by one die size. Attack using your Mid die.</p>"
+        "gameText": "<p>Hinder using Karma and use your Max die; that penalty is persistent and exclusive. As long as that penalty is on the target, reduce their highest power die of your choice by one die size. Attack using your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -354,7 +354,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Lady Luck. Then remove all bonuses from the target. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with</p>"
+        "gameText": "<p>Attack using Lady Luck. Then remove all bonuses from the target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -394,7 +394,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Karma die. (When using this upgrade, Kismet has 10 additional Health.) If you have access to proper materials, automatically succeed at an</p>"
+        "gameText": "<p>The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Karma die. (When using this upgrade, Kismet has 10 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -434,7 +434,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Overcome in a situation involving harnessing magical forces.</p>"
+        "gameText": "<p>If you have access to proper materials, automatically succeed at an Overcome in a situation involving harnessing magical forces.</p>"
       },
       "effects": [],
       "folder": null,

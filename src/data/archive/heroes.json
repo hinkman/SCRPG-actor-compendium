@@ -9,7 +9,7 @@
           "alias": "Paul Parsons",
           "gender": "Male",
           "age": "Middle-Aged",
-          "height": "6’ 2”",
+          "height": "6\u2019 2\u201d",
           "eyes": "Blue",
           "hair": "Light Brown and Grey",
           "skin": "White",
@@ -30,7 +30,7 @@
               "name": "Principle of The Mentor",
               "roleplaying": "It is important to you to share your knowledge and experience with less-weathered heroes. Everyone grants you some measure of respect for your wisdom.",
               "minorTwist": "Which whippersnapper just showed you up?",
-              "majorTwist": "What has just proven that you’re too behind the times?"
+              "majorTwist": "What has just proven that you\u2019re too behind the times?"
             }
           ],
           "collections": [
@@ -65,7 +65,7 @@
           ],
           "qualities": [
             {
-              "name": "America’s Finest",
+              "name": "America\u2019s Finest",
               "dieType": "d8",
               "dieTypeKnown": true
             },
@@ -90,7 +90,21 @@
               "name": "Fortitude",
               "type": "I",
               "aux": "green",
-              "gameText": "Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Boost using Leadership. Apply that bonus to all hero Attack and Overcome",
+              "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Galvanize",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Boost using Leadership. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -101,28 +115,14 @@
               }
             },
             {
-              "name": "Galvanize",
+              "name": "Motivational Charge",
               "type": "A",
               "aux": "green",
-              "gameText": "actions until the start of your next turn. Attack using Leadership. Other nearby heroes in the Yellow or Red zone",
+              "gameText": "Attack using Leadership. Other nearby heroes in the Yellow or Red zone Recover equal to your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Motivational Charge",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Overcome a challenge where you can organize other people. Use your Max Recover equal to your Min die.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": true
@@ -132,7 +132,7 @@
               "name": "Principle of Order",
               "type": "A",
               "aux": "green",
-              "gameText": "die. You and each of your allies gain a hero point. Overcome a challenge that someone else younger already tried and failed.",
+              "gameText": "Overcome a challenge where you can organize other people. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -146,11 +146,11 @@
               "name": "Principle of the Mentor",
               "type": "A",
               "aux": "green",
-              "gameText": "Use your Max die. You and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by",
+              "gameText": "Overcome a challenge that someone else younger already tried and failed. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
+                "attack": false,
+                "defend": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -160,10 +160,10 @@
               "name": "Danger Sense",
               "type": "R",
               "aux": "yellow",
-              "gameText": "rolling your single Awareness die. Attack using Strength. The target of that Attack must take the Attack action",
+              "gameText": "When damaged by an environment target or a surprise Attack, Defend by rolling your single Awareness die.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -174,13 +174,13 @@
               "name": "Lead from the Front",
               "type": "A",
               "aux": "yellow",
-              "gameText": "against you as its next turn, if possible. Boost yourself using Vitality, then either remove a penalty on yourself or",
+              "gameText": "Attack using Strength. The target of that Attack must take the Attack action against you as its next turn, if possible.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
@@ -188,13 +188,13 @@
               "name": "Steel Yourself",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Recover using your Min die. When an opponent Attacks, you may become the target of the Attack and",
+              "gameText": "Boost yourself using Vitality, then either remove a penalty on yourself or Recover using your Min die.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": true
               }
             },
@@ -202,12 +202,12 @@
               "name": "Heroic Interception",
               "type": "R",
               "aux": "red",
-              "gameText": "Defend by rolling your single Red zone die. Attack using Flight. Use your Max die. Then, Hinder that target using your",
+              "gameText": "When an opponent Attacks, you may become the target of the Attack and Defend by rolling your single Red zone die.",
               "icon": {
                 "attack": true,
                 "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -216,18 +216,18 @@
               "name": "Take Down",
               "type": "A",
               "aux": "red",
-              "gameText": "Mid+Min dice.",
+              "gameText": "Attack using Flight. Use your Max die. Then, Hinder that target using your Mid+Min dice.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
             }
           ],
-          "out": "",
+          "out": "Boost an ally by rolling your single History die.",
           "statusDie": {
             "green": "d6",
             "yellow": "d8",
@@ -241,7 +241,7 @@
             "redLow": 1,
             "max": 32
           },
-          "biographyHtml": "<p>296\n296\nBiography \nFor decades, the name Paul Parsons was \nsynonymous with Legacy, arguably the world’s \ngreatest hero. Whenever the fighting was thickest, \nhe would be there, holding back the tide. Wherever \ninjustice reared its ugly head, a flash of white and \nblue would appear and save the day. Whenever a \nmadman with a plan for world domination laughed \nmaniacally and declared that he was invincible, \nLegacy would be there at the last moment to show \nhim just how wrong he was. In the darkest times, \neven the bravest heroes would look to him for \ninspiration, and he was always prepared to put his \nlife on the line for the freedom of others. \nPaul, like all of the firstborn Parsons before him, \nknew that he would likely die on the front lines \nof the fight against insurmountable odds, leaving \nthe next generation to take up the mantle. His \nfamily accepted and supported this, ready to face \nwhatever came with grace. \nWhen OblivAeon came to destroy all that was \nand would ever be, Paul knew that it would likely \nbe his final battle. In order to save all of existence, \nhe prepared to face the cosmic being with his \nfellow heroes (and greatest enemy) at his side, \nhis daughter prepared to fully take up the name \nof Legacy should he fall. It was an epic battle that \ntaxed his limits, and many times it seemed that he \nwould need to make the ultimate sacrifice. When \nthe time came, then, he was astonished to find that \nit was his greatest enemy, Baron Blade, who died to \nsave the world.\nLegacy was at a crossroads. He knew that his \ndaughter was ready to be a hero in her own right, \nand it was fitting that she inherit the name of Legacy. \nHowever, he couldn’t simply hand off responsibility \nand stop helping others. After consulting with \nhis family and friends, he reached a decision. Paul \nParsons would continue to be a hero under the \nname Heritage, leaving his daughter Felicia free to \nstep into the role of Legacy. The OblivAeon event \nproved that the world needed more heroes, so he \nwould focus on educating the next generation as a \nteacher at the newly proposed Freedom Plaza, and \nas an ambassador to the new multinational group \nG.L.O.B.A.L. Heritage would become a beacon of \nlight, showing the way for the next generation… \nbut if he ever sees a kid crying because their kitten \nis stuck in a tree, well, he always makes time to help \nthose in need.\nAlias: Paul Parsons\nGender: Male\nAge: Middle-Aged\nHeight: 6’2”\nEyes: Blue\nHair: Light brown and grey\nSkin: White\nBuild: Athletic\nCostume/Equipment: Form-fitting blue and silver \nbodysuit, a high silver collar, blue gloves, all black \nboots, with a stylized silver lantern logo on each \nshoulder.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Physical Powerhouse\nPersonality: Natural Leader\nHeritage\nHeroes</p>",
+          "biographyHtml": "<p>296\n296\nBiography \nFor decades, the name Paul Parsons was \nsynonymous with Legacy, arguably the world\u2019s \ngreatest hero. Whenever the fighting was thickest, \nhe would be there, holding back the tide. Wherever \ninjustice reared its ugly head, a flash of white and \nblue would appear and save the day. Whenever a \nmadman with a plan for world domination laughed \nmaniacally and declared that he was invincible, \nLegacy would be there at the last moment to show \nhim just how wrong he was. In the darkest times, \neven the bravest heroes would look to him for \ninspiration, and he was always prepared to put his \nlife on the line for the freedom of others. \nPaul, like all of the firstborn Parsons before him, \nknew that he would likely die on the front lines \nof the fight against insurmountable odds, leaving \nthe next generation to take up the mantle. His \nfamily accepted and supported this, ready to face \nwhatever came with grace. \nWhen OblivAeon came to destroy all that was \nand would ever be, Paul knew that it would likely \nbe his final battle. In order to save all of existence, \nhe prepared to face the cosmic being with his \nfellow heroes (and greatest enemy) at his side, \nhis daughter prepared to fully take up the name \nof Legacy should he fall. It was an epic battle that \ntaxed his limits, and many times it seemed that he \nwould need to make the ultimate sacrifice. When \nthe time came, then, he was astonished to find that \nit was his greatest enemy, Baron Blade, who died to \nsave the world.\nLegacy was at a crossroads. He knew that his \ndaughter was ready to be a hero in her own right, \nand it was fitting that she inherit the name of Legacy. \nHowever, he couldn\u2019t simply hand off responsibility \nand stop helping others. After consulting with \nhis family and friends, he reached a decision. Paul \nParsons would continue to be a hero under the \nname Heritage, leaving his daughter Felicia free to \nstep into the role of Legacy. The OblivAeon event \nproved that the world needed more heroes, so he \nwould focus on educating the next generation as a \nteacher at the newly proposed Freedom Plaza, and \nas an ambassador to the new multinational group \nG.L.O.B.A.L. Heritage would become a beacon of \nlight, showing the way for the next generation\u2026 \nbut if he ever sees a kid crying because their kitten \nis stuck in a tree, well, he always makes time to help \nthose in need.\nAlias: Paul Parsons\nGender: Male\nAge: Middle-Aged\nHeight: 6\u20192\u201d\nEyes: Blue\nHair: Light brown and grey\nSkin: White\nBuild: Athletic\nCostume/Equipment: Form-fitting blue and silver \nbodysuit, a high silver collar, blue gloves, all black \nboots, with a stylized silver lantern logo on each \nshoulder.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Physical Powerhouse\nPersonality: Natural Leader\nHeritage\nHeroes</p>",
           "sourcePages": {
             "attr": 294,
             "ability": 295,
@@ -253,7 +253,7 @@
           "alias": "Jim Brooks",
           "gender": "Male",
           "age": "Middle-Aged",
-          "height": "5’ 11”",
+          "height": "5\u2019 11\u201d",
           "eyes": "Brown",
           "hair": "Brown",
           "skin": "Tan",
@@ -266,7 +266,7 @@
           "principles": [
             {
               "name": "Principle of the Time Traveler",
-              "roleplaying": "You are far from your own time and are often unsure how to act in this time. You have an innate sense for when time is not quite right in the era you’re in.",
+              "roleplaying": "You are far from your own time and are often unsure how to act in this time. You have an innate sense for when time is not quite right in the era you\u2019re in.",
               "minorTwist": "What detail of this era did you not previously know about?",
               "majorTwist": "What effects are happening as you discorporate in time?"
             },
@@ -348,27 +348,27 @@
               "name": "Sit a Spell",
               "type": "A",
               "aux": "green",
-              "gameText": "Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also",
+              "gameText": "Attack a target using Power Arm. Hinder that target with your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
             {
-              "name": "Takin’ My Time",
+              "name": "Takin\u2019 My Time",
               "type": "A",
               "aux": "green",
-              "gameText": "Overcome a problem using knowledge from your home era and use your Attack using your Mid die.",
+              "gameText": "Boost using Power Arm. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
-                "overcome": true,
+                "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
@@ -376,7 +376,7 @@
               "name": "Principle of the Time Traveler",
               "type": "A",
               "aux": "green",
-              "gameText": "Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way",
+              "gameText": "Overcome a problem using knowledge from your home era and use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -390,7 +390,21 @@
               "name": "Principle of Whispers",
               "type": "A",
               "aux": "green",
-              "gameText": "of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.",
+              "gameText": "Overcome against a challenge that involves information that you have no real way of knowing and use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Fan the Hammer",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Attack multiple targets using Time Revolver, using your Min die against each.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -401,30 +415,16 @@
               }
             },
             {
-              "name": "Fan the Hammer",
+              "name": "Localized Acceleration",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Boost yourself using Power Arm. Then, either remove a penalty on yourself",
+              "gameText": "Boost yourself using Power Arm. Then, either remove a penalty on yourself or Recover using your Min die.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Localized Acceleration",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
                 "recover": true
               }
             },
@@ -432,7 +432,21 @@
               "name": "Stack the Deck",
               "type": "R",
               "aux": "yellow",
-              "gameText": "it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent",
+              "gameText": "When a nearby enemy would create a bonus or penalty, you may remove it immediately.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Get Out of Dodge",
+              "type": "A",
+              "aux": "red",
+              "gameText": "Attack using Robot Horse. Use your Max die. Hinder each nearby opponent with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -443,30 +457,16 @@
               }
             },
             {
-              "name": "Get Out of Dodge",
-              "type": "A",
-              "aux": "red",
-              "gameText": "with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Showdown",
               "type": "A",
               "aux": "red",
-              "gameText": "Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for",
+              "gameText": "Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
@@ -474,18 +474,18 @@
               "name": "Temporal Bootstrap",
               "type": "A",
               "aux": "red",
-              "gameText": "the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.",
+              "gameText": "Boost another hero using Postcognition. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             }
           ],
-          "out": "",
+          "out": "Boost an ally by rolling your History die.",
           "statusDie": {
             "green": "d8",
             "yellow": "d8",
@@ -499,7 +499,7 @@
             "redLow": 1,
             "max": 30
           },
-          "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression — dynamiting his recently \npainted fences — was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn’t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>",
+          "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression \u2014 dynamiting his recently \npainted fences \u2014 was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn\u2019t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5\u201911\u201d\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>",
           "sourcePages": {
             "attr": 320,
             "ability": 321,
@@ -514,10 +514,10 @@
       "members": [
         {
           "name": "Legacy",
-          "alias": "Pauline “Felicia Fields” Parsons",
+          "alias": "Pauline \u201cFelicia Fields\u201d Parsons",
           "gender": "Female",
           "age": "Early-20s",
-          "height": "5’10”",
+          "height": "5\u201910\u201d",
           "eyes": "Blue",
           "hair": "Blonde",
           "skin": "Fair",
@@ -532,7 +532,7 @@
               "name": "Principle of the Hero",
               "roleplaying": "Because of your abilities, you have a calling to protect others.",
               "minorTwist": "Your immediate need to help someone else causes you to drop the ball in your personal life. What was it?",
-              "majorTwist": "You’re given an ultimatum between your life as a hero and something else you value. What do you give up?"
+              "majorTwist": "You\u2019re given an ultimatum between your life as a hero and something else you value. What do you give up?"
             },
             {
               "name": "Principle of Justice",
@@ -568,7 +568,7 @@
           ],
           "qualities": [
             {
-              "name": "America’s Favorite",
+              "name": "America\u2019s Favorite",
               "dieType": "d8",
               "dieTypeKnown": true
             },
@@ -598,18 +598,18 @@
               "name": "Eyes in the Sky",
               "type": "A",
               "aux": "green",
-              "gameText": "actions until the start of your next turn.",
+              "gameText": "Boost using Insight. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
-                "overcome": false,
+                "overcome": true,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
             {
-              "name": "Furthering your Father’s",
+              "name": "Furthering your Father\u2019s Legacy",
               "type": "A",
               "aux": "green",
               "gameText": "Boost yourself using Insight. That bonus is persistent and exclusive.",
@@ -623,28 +623,14 @@
               }
             },
             {
-              "name": "Legacy",
+              "name": "Sideswipe",
               "type": "A",
               "aux": "green",
-              "gameText": "",
+              "gameText": "Hinder multiple targets using Flight. Apply your Min die to each of them.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Sideswipe",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Overcome in a situation in which innocent people are in immediate danger. Hinder multiple targets using Flight. Apply your Min die to each of them.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
                 "hinder": true,
                 "boost": false,
                 "recover": false
@@ -654,7 +640,7 @@
               "name": "Principle of the Hero",
               "type": "A",
               "aux": "green",
-              "gameText": "Use your Max die. You and each of your allies gain a hero point. Overcome to stop an act of injustice in progress and use your Max die. You",
+              "gameText": "Overcome in a situation in which innocent people are in immediate danger. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -668,11 +654,11 @@
               "name": "Principle of Justice",
               "type": "A",
               "aux": "green",
-              "gameText": "and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by",
+              "gameText": "Overcome to stop an act of injustice in progress and use your Max die. You and each of your allies gain a hero point.",
               "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
+                "attack": false,
+                "defend": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -682,7 +668,7 @@
               "name": "Danger Sense",
               "type": "R",
               "aux": "yellow",
-              "gameText": "rolling your single Flight die. Attack using Flight, then Defend against all attacks against you until your",
+              "gameText": "When damaged by an environment target or a surprise Attack, Defend by rolling your single Flight die.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -696,10 +682,10 @@
               "name": "Evasive Assault",
               "type": "A",
               "aux": "yellow",
-              "gameText": "next turn equal to your Min die.",
+              "gameText": "Attack using Flight, then Defend against all attacks against you until your next turn equal to your Min die.",
               "icon": {
-                "attack": false,
-                "defend": false,
+                "attack": true,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -710,7 +696,21 @@
               "name": "Sweeping Gaze",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Attack multiple targets using Atomic Glare, using your Min die against each. Boost yourself using Atomic Glare. Use your Max die. That bonus is",
+              "gameText": "Attack multiple targets using Atomic Glare, using your Min die against each.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Focused Blast",
+              "type": "A",
+              "aux": "red",
+              "gameText": "Boost yourself using Atomic Glare. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -721,10 +721,10 @@
               }
             },
             {
-              "name": "Focused Blast",
+              "name": "Head-On Collision",
               "type": "A",
               "aux": "red",
-              "gameText": "persistent and exclusive. Attack using your Mid die plus that bonus. Attack using Flight. Use your Max die. Then, Hinder that target using your",
+              "gameText": "Attack using Flight. Use your Max die. Then, Hinder that target using your Mid+Min dice.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -733,23 +733,9 @@
                 "boost": false,
                 "recover": false
               }
-            },
-            {
-              "name": "Head-On Collision",
-              "type": "A",
-              "aux": "red",
-              "gameText": "Mid+Min dice.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
             }
           ],
-          "out": "",
+          "out": "Boost an ally by rolling your single Vitality die.",
           "statusDie": {
             "green": "d10",
             "yellow": "d8",
@@ -763,7 +749,7 @@
             "redLow": 1,
             "max": 32
           },
-          "biographyHtml": "<p>302\n302\nBiography \nFelicia grew up knowing that she would one day \ncarry on her father’s work as a hero. Once her \npowers manifested, she was eager to prove herself. \nAfter she went out on patrol without her parents’ \npermission, Legacy realized the time for her training \nhad come. Taking flight as “Young Legacy”, Felicia \nhad to balance school and the demands of being \na hero. She quickly realized she wanted a secret \nidentity. Her father had no such secrets, and she \nsaw just how much he gave of himself wherever \nhe went; for Paul Parsons, there was no time off. \nFelicia wanted to have a social life with people who \ndidn’t know that she could crush a steel beam. She \nwanted to go to parties, attend a rally, or just sit \nand study. She wanted to be treated like a normal \nperson, not a statue on a pedestal.\nThe identity of “Felicia Fields, normal girl”, turned \nout to be tricky to maintain. Despite wanting a \nnormal life, she was every inch her father’s daughter, \nunable to turn aside when she saw something \nwrong. College was a hectic mix of studying, social \nengagements, and dealing with the occasional \nvillain. In between crises — be they exams or bank \nrobberies — she met two people who would go \non to become fixtures in her life. The first, Jimmy \nWong, rapidly became one of her best friends, even \nafter he discovered her secret identity. The second, \nMarissa Snow, rapidly became her rival, the two of \nthem constantly pushing each other. \nOblivAeon struck shortly before Felicia graduated, \nand she leapt into action alongside the heroes of the \nmultiverse to combat the singular entity. She and \nher father and time-displaced grandfather fought \nthe cosmic entity directly, keeping it busy while the \nrest of the heroes prepared a trap. When the trap \nwas sprung, OblivAeon and her fellow heroes were \ntransported away in a burst of energy, leaving her in \nMegalopolis. The fight wasn’t over for her, however. \nSoon after OblivAeon disappeared, a cosmically \nempowered Rainek Kel’Voss appeared in his place, \nhaving absorbed the power of OblivAeon. Felicia \nfought the Thorathian with heroes such as Tempest, \nSky-Scraper, and Guise, but they could not defeat \nhim, augmented as he was with the stolen energy. It \nwas only through the return of the Freedom Five, \nmagical assistance from the Harpy, and a cunning \ntriple-cross from Baron Blade that Voss was drained \nof power and ultimately defeated.\nGraduation was comparatively underwhelming \nafter saving the multiverse, but she had earned it.\nAlias: Pauline “Felicia Fields” Parsons\nGender: Female\nAge: Early-20s\nHeight: 5’ 10”\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Legacy wears the iconic \nLegacy costume, complete with Legacy insignia, \nblue cape, and tall red boots.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Flyer\nPersonality: Cheerful\nLegacy\nHeroes</p>",
+          "biographyHtml": "<p>302\n302\nBiography \nFelicia grew up knowing that she would one day \ncarry on her father\u2019s work as a hero. Once her \npowers manifested, she was eager to prove herself. \nAfter she went out on patrol without her parents\u2019 \npermission, Legacy realized the time for her training \nhad come. Taking flight as \u201cYoung Legacy\u201d, Felicia \nhad to balance school and the demands of being \na hero. She quickly realized she wanted a secret \nidentity. Her father had no such secrets, and she \nsaw just how much he gave of himself wherever \nhe went; for Paul Parsons, there was no time off. \nFelicia wanted to have a social life with people who \ndidn\u2019t know that she could crush a steel beam. She \nwanted to go to parties, attend a rally, or just sit \nand study. She wanted to be treated like a normal \nperson, not a statue on a pedestal.\nThe identity of \u201cFelicia Fields, normal girl\u201d, turned \nout to be tricky to maintain. Despite wanting a \nnormal life, she was every inch her father\u2019s daughter, \nunable to turn aside when she saw something \nwrong. College was a hectic mix of studying, social \nengagements, and dealing with the occasional \nvillain. In between crises \u2014 be they exams or bank \nrobberies \u2014 she met two people who would go \non to become fixtures in her life. The first, Jimmy \nWong, rapidly became one of her best friends, even \nafter he discovered her secret identity. The second, \nMarissa Snow, rapidly became her rival, the two of \nthem constantly pushing each other. \nOblivAeon struck shortly before Felicia graduated, \nand she leapt into action alongside the heroes of the \nmultiverse to combat the singular entity. She and \nher father and time-displaced grandfather fought \nthe cosmic entity directly, keeping it busy while the \nrest of the heroes prepared a trap. When the trap \nwas sprung, OblivAeon and her fellow heroes were \ntransported away in a burst of energy, leaving her in \nMegalopolis. The fight wasn\u2019t over for her, however. \nSoon after OblivAeon disappeared, a cosmically \nempowered Rainek Kel\u2019Voss appeared in his place, \nhaving absorbed the power of OblivAeon. Felicia \nfought the Thorathian with heroes such as Tempest, \nSky-Scraper, and Guise, but they could not defeat \nhim, augmented as he was with the stolen energy. It \nwas only through the return of the Freedom Five, \nmagical assistance from the Harpy, and a cunning \ntriple-cross from Baron Blade that Voss was drained \nof power and ultimately defeated.\nGraduation was comparatively underwhelming \nafter saving the multiverse, but she had earned it.\nAlias: Pauline \u201cFelicia Fields\u201d Parsons\nGender: Female\nAge: Early-20s\nHeight: 5\u2019 10\u201d\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Legacy wears the iconic \nLegacy costume, complete with Legacy insignia, \nblue cape, and tall red boots.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Flyer\nPersonality: Cheerful\nLegacy\nHeroes</p>",
           "sourcePages": {
             "attr": 300,
             "ability": 301,
@@ -775,7 +761,7 @@
           "alias": "Maia Adrianna Montgomery",
           "gender": "Female",
           "age": "Mid-20s",
-          "height": "5’ 7”",
+          "height": "5\u2019 7\u201d",
           "eyes": "Green",
           "hair": "Black",
           "skin": "Pale",
@@ -861,10 +847,10 @@
               "name": "Grappling Hook",
               "type": "A",
               "aux": "green",
-              "gameText": "Hinder a target using your Min die, or maneuver to a new location in your environment. Attack using Stealth. Defend using your Min die against all Attacks until your",
+              "gameText": "Attack using Ranged Combat. Remove one physical bonus or penalty, Hinder a target using your Min die, or maneuver to a new location in your environment.",
               "icon": {
                 "attack": true,
-                "defend": true,
+                "defend": false,
                 "overcome": false,
                 "hinder": true,
                 "boost": false,
@@ -875,11 +861,11 @@
               "name": "Strike from the Shadows",
               "type": "A",
               "aux": "green",
-              "gameText": "next turn. Overcome to learn hidden information and use your Max die. You and each",
+              "gameText": "Attack using Stealth. Defend using your Min die against all Attacks until your next turn.",
               "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
+                "attack": true,
+                "defend": true,
+                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -889,7 +875,7 @@
               "name": "Principle of the Detective",
               "type": "A",
               "aux": "green",
-              "gameText": "of your allies gain a hero point. Overcome to infiltrate somewhere or avoid detection and use your Max",
+              "gameText": "Overcome to learn hidden information and use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -903,7 +889,21 @@
               "name": "Principle of Stealth",
               "type": "A",
               "aux": "green",
-              "gameText": "die. You and each of your allies gain a hero point. When you are Attacked by a nearby enemy, the attacker also takes an equal",
+              "gameText": "Overcome to infiltrate somewhere or avoid detection and use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Combat Stance",
+              "type": "R",
+              "aux": "yellow",
+              "gameText": "When you are Attacked by a nearby enemy, the attacker also takes an equal amount of damage.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -914,10 +914,10 @@
               }
             },
             {
-              "name": "Combat Stance",
+              "name": "Smoke Bombs",
               "type": "R",
               "aux": "yellow",
-              "gameText": "amount of damage. When you would take damage, Defend against that damage by rolling your",
+              "gameText": "When you would take damage, Defend against that damage by rolling your single Stealth die.",
               "icon": {
                 "attack": false,
                 "defend": true,
@@ -928,24 +928,10 @@
               }
             },
             {
-              "name": "Smoke Bombs",
-              "type": "R",
-              "aux": "yellow",
-              "gameText": "single Stealth die. Boost yourself using Gadgets. That bonus is persistent and exclusive. Then,",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
               "name": "Utility Belt",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Attack using your Min die. You may use the bonus you just created on that Attack. Boost yourself using Throwing Knives. Use your Max die. That bonus is",
+              "gameText": "Boost yourself using Gadgets. That bonus is persistent and exclusive. Then, Attack using your Min die. You may use the bonus you just created on that Attack.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -959,10 +945,10 @@
               "name": "Favorite Knife",
               "type": "A",
               "aux": "red",
-              "gameText": "persistent and exclusive. Attack using your Mid die plus that bonus. Boost using Investigation and use your Max die. Defend against all Attacks",
+              "gameText": "Boost yourself using Throwing Knives. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",
               "icon": {
                 "attack": true,
-                "defend": true,
+                "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": true,
@@ -973,13 +959,13 @@
               "name": "Run the Numbers",
               "type": "A",
               "aux": "red",
-              "gameText": "against you using your Mid die until your next turn. Note your Min die: as a Reaction, until your next turn, you may Hinder an attacker using that die. When taking any action using Deduction, you may reroll your Min die",
+              "gameText": "Boost using Investigation and use your Max die. Defend against all Attacks against you using your Mid die until your next turn. Note your Min die: as a Reaction, until your next turn, you may Hinder an attacker using that die.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
                 "hinder": true,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
@@ -987,7 +973,7 @@
               "name": "Street Smarts",
               "type": "I",
               "aux": "red",
-              "gameText": "before determining effects.",
+              "gameText": "When taking any action using Deduction, you may reroll your Min die before determining effects.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -998,7 +984,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Remove a bonus or penalty of your choice.",
           "statusDie": {
             "green": "d10",
             "yellow": "d8",
@@ -1012,7 +998,7 @@
             "redLow": 1,
             "max": 28
           },
-          "biographyHtml": "<p>306\n306\nBiography \nAfter an assault in college left her hospitalized \nand her boyfriend dead, Maia Montgomery lay in \nrecovery, thinking of the advice her father gave her \nwhen she was afraid of the dark as a child. Wrapping \na blanket around her as a cloak, he told her that \nshe should be a wraith so that the monsters in \nthe dark would be scared of her instead. As she \nlay in traction, she decided to finally become that \nwraith. As she healed, she began training in combat, \ncritical thinking, and investigation. Her parents \nwere the CEO’s of Montgomery Industries, so \nno expense was spared as she trained her body \nand mind. When she recovered, they handed the \nreins of the company to her. During the day, she \nwas the charming and intelligent young CEO of \nMontgomery Industries, and at night, she became \nthe shadows!\nRook City rapidly taught her that crime was \neverywhere. She would need every trick if she \nwanted to survive as a crimefighter. With no powers, \nevery fight needed to be carefully considered \nto avoid a situation where she couldn’t win. She \nneeded to strike quickly and decisively, avoiding \npunching matches with massive thugs. She made \nher own gadgets, as the corrupt police certainly \nwouldn’t allow her into their forensics labs. And she \nlearned how to track her foes, understand criminal \npsychology, and master a multitude of ways of \nthinking. Wraith did all this to become something to \nfear — an alpha predator stalking the worst her city \nhad to offer from the shadows, all while maintaining \nher secret identity.\nWhen she was contacted by Legacy, she was \nsurprised. He said that he was forming a new team, \nand that he wanted her in it. She joined, mostly out \nof curiosity, and quickly proved that the Freedom \nFive needed her analytical skills, gadgets, and training. \nTogether, the team saved the world more times \nthat could easily be counted, fighting aliens, robots, \nmonsters, and doomsday devices of all types. She \nmade friends she never expected, including more \nrecently finding love again with Tyler Vance, her \nteammate and the pilot of the Bunker suit.\nOblivAeon put her skills to the ultimate test. \nAlong with the rest of the Freedom Five, she put \nherself in front of the godlike being and, against \nall odds, won. There was loss, but she had learned \nearly on that success always had a price. In the \naftermath, she pledged her company’s resources \nto reconstruction, and took stock of things with \nthe rest of the Freedom Five, joining them in the \ndecision to teach the next generation of heroes.\nAlias: Maia Adrianna Montgomery\nGender: Female\nAge: Mid-20s\nHeight: 5’ 7”\nEyes: Green\nHair: Black\nSkin: Pale\nBuild: Fit\nCostume/Equipment: Dark purple cloak with a \nhood, red bodysuit, and purple gloves and boots. \nPurple bands around her arms and legs, and a \npurple mask on the lower half of her face. Pouches \nfor gadgets on her belt.\nBackground: Upper Class\nPower Source: Training\nArchetype: Shadow\nPersonality: Analytical\nWraith\nHeroes</p>",
+          "biographyHtml": "<p>306\n306\nBiography \nAfter an assault in college left her hospitalized \nand her boyfriend dead, Maia Montgomery lay in \nrecovery, thinking of the advice her father gave her \nwhen she was afraid of the dark as a child. Wrapping \na blanket around her as a cloak, he told her that \nshe should be a wraith so that the monsters in \nthe dark would be scared of her instead. As she \nlay in traction, she decided to finally become that \nwraith. As she healed, she began training in combat, \ncritical thinking, and investigation. Her parents \nwere the CEO\u2019s of Montgomery Industries, so \nno expense was spared as she trained her body \nand mind. When she recovered, they handed the \nreins of the company to her. During the day, she \nwas the charming and intelligent young CEO of \nMontgomery Industries, and at night, she became \nthe shadows!\nRook City rapidly taught her that crime was \neverywhere. She would need every trick if she \nwanted to survive as a crimefighter. With no powers, \nevery fight needed to be carefully considered \nto avoid a situation where she couldn\u2019t win. She \nneeded to strike quickly and decisively, avoiding \npunching matches with massive thugs. She made \nher own gadgets, as the corrupt police certainly \nwouldn\u2019t allow her into their forensics labs. And she \nlearned how to track her foes, understand criminal \npsychology, and master a multitude of ways of \nthinking. Wraith did all this to become something to \nfear \u2014 an alpha predator stalking the worst her city \nhad to offer from the shadows, all while maintaining \nher secret identity.\nWhen she was contacted by Legacy, she was \nsurprised. He said that he was forming a new team, \nand that he wanted her in it. She joined, mostly out \nof curiosity, and quickly proved that the Freedom \nFive needed her analytical skills, gadgets, and training. \nTogether, the team saved the world more times \nthat could easily be counted, fighting aliens, robots, \nmonsters, and doomsday devices of all types. She \nmade friends she never expected, including more \nrecently finding love again with Tyler Vance, her \nteammate and the pilot of the Bunker suit.\nOblivAeon put her skills to the ultimate test. \nAlong with the rest of the Freedom Five, she put \nherself in front of the godlike being and, against \nall odds, won. There was loss, but she had learned \nearly on that success always had a price. In the \naftermath, she pledged her company\u2019s resources \nto reconstruction, and took stock of things with \nthe rest of the Freedom Five, joining them in the \ndecision to teach the next generation of heroes.\nAlias: Maia Adrianna Montgomery\nGender: Female\nAge: Mid-20s\nHeight: 5\u2019 7\u201d\nEyes: Green\nHair: Black\nSkin: Pale\nBuild: Fit\nCostume/Equipment: Dark purple cloak with a \nhood, red bodysuit, and purple gloves and boots. \nPurple bands around her arms and legs, and a \npurple mask on the lower half of her face. Pouches \nfor gadgets on her belt.\nBackground: Upper Class\nPower Source: Training\nArchetype: Shadow\nPersonality: Analytical\nWraith\nHeroes</p>",
           "sourcePages": {
             "attr": 304,
             "ability": 305,
@@ -1024,7 +1010,7 @@
           "alias": "Captain Tyler Vance",
           "gender": "Male",
           "age": "Late-20s",
-          "height": "5’8”",
+          "height": "5\u20198\u201d",
           "eyes": "Green",
           "hair": "Brown",
           "skin": "White",
@@ -1037,7 +1023,7 @@
           "principles": [
             {
               "name": "Principle of The Defender",
-              "roleplaying": "You will put yourself in harm’s way to defend another without a second thought.",
+              "roleplaying": "You will put yourself in harm\u2019s way to defend another without a second thought.",
               "minorTwist": "How do your actions put you in more danger than before?",
               "majorTwist": "What great sacrifice did you just make to succeed?"
             },
@@ -1105,7 +1091,7 @@
               "name": "Armored Plating",
               "type": "I",
               "aux": "green",
-              "gameText": "while in the Yellow zone, and 3 while in the Red zone.",
+              "gameText": "Reduce physical damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1119,11 +1105,11 @@
               "name": "Satellite-Based Mode Shift",
               "type": "A",
               "aux": "green",
-              "gameText": "Boost yourself using Power Suit. Then change modes. Overcome a situation that requires you to hold the line and use you Max die OR use your Mid die and Defend with your Min die. You and each of",
+              "gameText": "Boost yourself using Power Suit. Then change modes.",
               "icon": {
                 "attack": false,
-                "defend": true,
-                "overcome": true,
+                "defend": false,
+                "overcome": false,
                 "hinder": false,
                 "boost": true,
                 "recover": false
@@ -1133,10 +1119,10 @@
               "name": "Principle of the Defender",
               "type": "A",
               "aux": "green",
-              "gameText": "your allies gain a hero point. Overcome when you can flashback to how you prepared for this exact",
+              "gameText": "Overcome a situation that requires you to hold the line and use you Max die OR use your Mid die and Defend with your Min die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
-                "defend": false,
+                "defend": true,
                 "overcome": true,
                 "hinder": false,
                 "boost": false,
@@ -1147,7 +1133,21 @@
               "name": "Principle of the Tactician",
               "type": "A",
               "aux": "green",
-              "gameText": "situation. Use your Max die. You and each of your allies gain a hero point. Attack up to three different targets using RIOT Cannon. Apply your Max",
+              "gameText": "Overcome when you can flashback to how you prepared for this exact situation. Use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Decoupled Barrage",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Attack up to three different targets using RIOT Cannon. Apply your Max die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1158,10 +1158,10 @@
               }
             },
             {
-              "name": "Decoupled Barrage",
+              "name": "MagnaRail Upgrade",
               "type": "A",
               "aux": "yellow",
-              "gameText": "die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die. Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is",
+              "gameText": "Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is persistent and exclusive.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1172,26 +1172,12 @@
               }
             },
             {
-              "name": "MagnaRail Upgrade",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "persistent and exclusive. Destroy one bonus on you. Change modes, then take an action in the new",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Satellite Recall",
               "type": "A",
               "aux": "yellow",
-              "gameText": "mode. When you are hit with an Attack, you may change to any mode. If you do,",
+              "gameText": "Destroy one bonus on you. Change modes, then take an action in the new mode.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -1203,7 +1189,7 @@
               "name": "Emergency Reconfiguration",
               "type": "R",
               "aux": "red",
-              "gameText": "take extra damage equal to the Min die or take a minor twist. Attack multiple nearby targets using Power Suit. Use your Max+Mid dice",
+              "gameText": "When you are hit with an Attack, you may change to any mode. If you do, take extra damage equal to the Min die or take a minor twist.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1217,7 +1203,7 @@
               "name": "External Combustion",
               "type": "A",
               "aux": "red",
-              "gameText": "against each. Take irreducible damage equal to your Min die. Attack using RIOT Cannon and at least one bonus. Use your Max+Mid+Min",
+              "gameText": "Attack multiple nearby targets using Power Suit. Use your Max+Mid dice against each. Take irreducible damage equal to your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1231,7 +1217,7 @@
               "name": "RIOT-Blast",
               "type": "A",
               "aux": "red",
-              "gameText": "dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",
+              "gameText": "Attack using RIOT Cannon and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1242,7 +1228,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Boost an ally by rolling your single Lightning Calculator die.",
           "statusDie": {
             "green": "d8",
             "yellow": "d8",
@@ -1268,7 +1254,7 @@
           "alias": "Dr. Meredith Stinson",
           "gender": "Female",
           "age": "Middle-Aged",
-          "height": "6’ 0”",
+          "height": "6\u2019 0\u201d",
           "eyes": "Blue",
           "hair": "Strawberry Blonde",
           "skin": "White",
@@ -1281,7 +1267,7 @@
           "principles": [
             {
               "name": "Principle of Speed",
-              "roleplaying": "You’re fast, and you don’t like to waste time. You like to be on your way as quickly as possible.",
+              "roleplaying": "You\u2019re fast, and you don\u2019t like to waste time. You like to be on your way as quickly as possible.",
               "minorTwist": "What physical drawbacks do you suffer from going too fast?",
               "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
             },
@@ -1344,12 +1330,12 @@
               "name": "Hypersonic Assault",
               "type": "A",
               "aux": "green",
-              "gameText": "equal to your Mid die. When a new target enters the scene close to you, you may Attack it by",
+              "gameText": "Attack multiple targets using Finesse. Use your Min die. Hinder each target equal to your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -1358,9 +1344,23 @@
               "name": "Nimble Strike",
               "type": "R",
               "aux": "green",
-              "gameText": "rolling your single Speed die. Boost or Hinder using Lightning Calculator. Use your Max die. If you roll",
+              "gameText": "When a new target enters the scene close to you, you may Attack it by rolling your single Speed die.",
               "icon": {
-                "attack": false,
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Quick Insight",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Boost or Hinder using Lightning Calculator. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",
+              "icon": {
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -1369,24 +1369,10 @@
               }
             },
             {
-              "name": "Quick Insight",
-              "type": "A",
-              "aux": "green",
-              "gameText": "When you successfully Overcome, you may end up anywhere in the current doubles, you may also Attack using your Mid die.",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Principle of Speed",
               "type": "I",
               "aux": "green",
-              "gameText": "environment. You and each of your allies gain a hero point. Overcome while applying specific scientific principles. Use your Max die.",
+              "gameText": "When you successfully Overcome, you may end up anywhere in the current environment. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1400,11 +1386,11 @@
               "name": "Principle of Science",
               "type": "A",
               "aux": "green",
-              "gameText": "You and each of your allies gain a hero point. After rolling during your turn, you may take 1 irreducible damage to reroll",
+              "gameText": "Overcome while applying specific scientific principles. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
-                "overcome": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1414,13 +1400,13 @@
               "name": "Margin of Error",
               "type": "R",
               "aux": "yellow",
-              "gameText": "your entire dice pool. Boost yourself using Inventions. Then, either remove a penalty on yourself",
+              "gameText": "After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
@@ -1428,13 +1414,13 @@
               "name": "Stabilization Device",
               "type": "A",
               "aux": "yellow",
-              "gameText": "or recover using your Min die.",
+              "gameText": "Boost yourself using Inventions. Then, either remove a penalty on yourself or recover using your Min die.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": true
               }
             },
@@ -1442,28 +1428,28 @@
               "name": "Tech on the Fly",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Boost multiple targets using Inventions. Use your Max die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your",
+              "gameText": "Boost multiple targets using Inventions. Use your Max die.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
-                "recover": true
+                "recover": false
               }
             },
             {
               "name": "Rapid Response",
               "type": "A",
               "aux": "red",
-              "gameText": "Max+Mid dice.",
+              "gameText": "Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
-                "recover": false
+                "recover": true
               }
             },
             {
@@ -1481,7 +1467,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Choose an ally. Until your next turn, that ally may reroll one of their dice by using a reaction.",
           "statusDie": {
             "green": "d6",
             "yellow": "d8",
@@ -1495,7 +1481,7 @@
             "redLow": 1,
             "max": 27
           },
-          "biographyHtml": "<p>314\n314\nBiography \nMeredith Stinson was always brilliant. When other \nkids were playing baseball, she was studying the \ntrajectory of the ball and devising optimal swing \nspeeds, with detailed notes. Her inquisitive nature \nand meticulous approach served her well in college, \nand she rapidly began accumulating accolades in \nthe sciences. She patented her first invention in \nsophomore year: a layered crystal composites and \nmicrocircuitry translucent screen that could display \nimages and record data from both sides. This \ntechnology would later serve as the basis for her \nH.U.D. goggles, but more importantly, it started her \non the road to scientific legend.\nShe also met the woman who would go on to \nbecome the love of her life. Her college roommate \nDana Bertrand was one of the only people she had \never met that she could talk about things other than \nscience and not get bored, though she did end up \ndevising a new formula of eyeliner in the lab when \nDana lamented that she was running out of the \nstuff she liked. Dana, in turn, enjoyed how Meredith \ncould start at one topic and end up somewhere \ncompletely different (like, in a lab, nervously asking \nDana to try on something she had made for her). \nAfter Meredith graduated with three degrees \nin physics, chemistry, and mathematics, Eaken-\nRubendall labs in Megalopolis offered her a full ride \nto any doctoral program she wanted (and as many \nof them as she wanted), if she would come and \nwork for them. Dana got a modeling contract in \nMegalopolis at about the same time, and the two of \nthem decided that they should get a place together, \nsince they already knew that they got along. \nThey started dating two months later, celebrating \nMeredith completing her doctorate in physics, and \nmarried two years later, celebrating Dana becoming \nthe face of Cosmotique’s entire line.\nDuring one of her experiments, Dr. Meredith \nStinson was bombarded by tachyon particles, a \npreviously theoretical particle that travels faster than \nlight. The tachyons flooded and accelerated her cells, \nenabling her to move at phenomenal speeds and \nprotect herself from the negative consequences of \nsuch extreme velocity. As far as she was concerned, \nthis was fantastic. Not only could she study her \nown powers, it would allow her to run concurrent \nexperiments! When Legacy asked her to join the \nFreedom Five, she agreed to do so only so long \nas she still had time (and some additional funding) \nfor her experiments. In her career as a hero, there \nwas only one time when speed utterly failed her. \nIn fighting the monstrous cosmic construct called \nAlias: Dr. Meredith Stinson\nGender: Female\nAge: Middle-Aged\nHeight: 6’0”\nEyes: Blue \nHair: Strawberry Blonde\nSkin: White\nBuild: Lithe\nCostume/Equipment: White form-fitting outfit \nwith blue sides. Red glowing circles on her thighs. \nStabilizing device on her left forearm. Proprietary \nH.U.D. goggles. High-tech running shoes.\nBackground: Academic\nPower Source: Radiation\nArchetype: Speedster\nPersonality: Inquisitive\nTachyon\nHeroes</p>",
+          "biographyHtml": "<p>314\n314\nBiography \nMeredith Stinson was always brilliant. When other \nkids were playing baseball, she was studying the \ntrajectory of the ball and devising optimal swing \nspeeds, with detailed notes. Her inquisitive nature \nand meticulous approach served her well in college, \nand she rapidly began accumulating accolades in \nthe sciences. She patented her first invention in \nsophomore year: a layered crystal composites and \nmicrocircuitry translucent screen that could display \nimages and record data from both sides. This \ntechnology would later serve as the basis for her \nH.U.D. goggles, but more importantly, it started her \non the road to scientific legend.\nShe also met the woman who would go on to \nbecome the love of her life. Her college roommate \nDana Bertrand was one of the only people she had \never met that she could talk about things other than \nscience and not get bored, though she did end up \ndevising a new formula of eyeliner in the lab when \nDana lamented that she was running out of the \nstuff she liked. Dana, in turn, enjoyed how Meredith \ncould start at one topic and end up somewhere \ncompletely different (like, in a lab, nervously asking \nDana to try on something she had made for her). \nAfter Meredith graduated with three degrees \nin physics, chemistry, and mathematics, Eaken-\nRubendall labs in Megalopolis offered her a full ride \nto any doctoral program she wanted (and as many \nof them as she wanted), if she would come and \nwork for them. Dana got a modeling contract in \nMegalopolis at about the same time, and the two of \nthem decided that they should get a place together, \nsince they already knew that they got along. \nThey started dating two months later, celebrating \nMeredith completing her doctorate in physics, and \nmarried two years later, celebrating Dana becoming \nthe face of Cosmotique\u2019s entire line.\nDuring one of her experiments, Dr. Meredith \nStinson was bombarded by tachyon particles, a \npreviously theoretical particle that travels faster than \nlight. The tachyons flooded and accelerated her cells, \nenabling her to move at phenomenal speeds and \nprotect herself from the negative consequences of \nsuch extreme velocity. As far as she was concerned, \nthis was fantastic. Not only could she study her \nown powers, it would allow her to run concurrent \nexperiments! When Legacy asked her to join the \nFreedom Five, she agreed to do so only so long \nas she still had time (and some additional funding) \nfor her experiments. In her career as a hero, there \nwas only one time when speed utterly failed her. \nIn fighting the monstrous cosmic construct called \nAlias: Dr. Meredith Stinson\nGender: Female\nAge: Middle-Aged\nHeight: 6\u20190\u201d\nEyes: Blue \nHair: Strawberry Blonde\nSkin: White\nBuild: Lithe\nCostume/Equipment: White form-fitting outfit \nwith blue sides. Red glowing circles on her thighs. \nStabilizing device on her left forearm. Proprietary \nH.U.D. goggles. High-tech running shoes.\nBackground: Academic\nPower Source: Radiation\nArchetype: Speedster\nPersonality: Inquisitive\nTachyon\nHeroes</p>",
           "sourcePages": {
             "attr": 312,
             "ability": 313,
@@ -1507,7 +1493,7 @@
           "alias": "Ryan Frost",
           "gender": "Male",
           "age": "Middle-Aged",
-          "height": "5’7”",
+          "height": "5\u20197\u201d",
           "eyes": "White",
           "hair": "None",
           "skin": "Blueish White",
@@ -1583,7 +1569,7 @@
               "name": "Ice Shield",
               "type": "A",
               "aux": "green",
-              "gameText": "Defend using Cold. Use your Max die. Boost using your Min die. When you change personal zones, you may Boost by rolling your single",
+              "gameText": "Defend using Cold. Use your Max die. Boost using your Min die.",
               "icon": {
                 "attack": false,
                 "defend": true,
@@ -1597,7 +1583,21 @@
               "name": "Thermodynamics",
               "type": "R",
               "aux": "green",
-              "gameText": "Cold die. Attack up to two targets using Cold. Also take an amount of damage equal",
+              "gameText": "When you change personal zones, you may Boost by rolling your single Cold die.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
+              "name": "Modular Realignment",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Attack up to two targets using Cold. Also take an amount of damage equal to your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1608,24 +1608,10 @@
               }
             },
             {
-              "name": "Modular Realignment",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Overcome in a situation related to or using your coolant suit. Use your Max to your Mid die.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Principle of Dependence",
               "type": "A",
               "aux": "green",
-              "gameText": "die. You and each of your allies gain a hero point. Overcome a challenge involving Cold and use your Max die. You and each",
+              "gameText": "Overcome in a situation related to or using your coolant suit. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1639,11 +1625,11 @@
               "name": "Principle of Cold",
               "type": "A",
               "aux": "green",
-              "gameText": "of your allies gain a hero point. When your personal zone changes, Attack all close enemy targets by rolling",
+              "gameText": "Overcome a challenge involving Cold and use your Max die. You and each of your allies gain a hero point.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
-                "overcome": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1653,9 +1639,9 @@
               "name": "Coolant Blast",
               "type": "R",
               "aux": "yellow",
-              "gameText": "your single Cold die.",
+              "gameText": "When your personal zone changes, Attack all close enemy targets by rolling your single Cold die.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -1667,7 +1653,7 @@
               "name": "Heat Sink",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Hinder any number of nearby targets using Absorption. Use your Max die. If you would take damage from Cold, instead reduce that damage to 0 and",
+              "gameText": "Hinder any number of nearby targets using Absorption. Use your Max die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1681,10 +1667,10 @@
               "name": "Null-Point Calibrator",
               "type": "I",
               "aux": "yellow",
-              "gameText": "Recover that amount of Health instead. Whenever you are dealt damage, roll your single Absorption die to Defend",
+              "gameText": "If you would take damage from Cold, instead reduce that damage to 0 and Recover that amount of Health instead.",
               "icon": {
                 "attack": false,
-                "defend": true,
+                "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -1695,12 +1681,12 @@
               "name": "Colder Than Ice",
               "type": "R",
               "aux": "red",
-              "gameText": "Whenever you Attack a target with an action, you may also Hinder that against the Attack and Boost yourself.",
+              "gameText": "Whenever you are dealt damage, roll your single Absorption die to Defend against the Attack and Boost yourself.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
                 "recover": false
               }
@@ -1709,12 +1695,12 @@
               "name": "Subzero Atmosphere",
               "type": "I",
               "aux": "red",
-              "gameText": "target with your Min die. Attack up to three targets, one of which must be you, using Cold. Assign",
+              "gameText": "Whenever you Attack a target with an action, you may also Hinder that target with your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -1723,9 +1709,9 @@
               "name": "Thermal Shockwave",
               "type": "A",
               "aux": "red",
-              "gameText": "your Min, Mid, and Max dice as you choose among those targets.",
+              "gameText": "Attack up to three targets, one of which must be you, using Cold. Assign your Min, Mid, and Max dice as you choose among those targets.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -1734,7 +1720,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Hinder an opponent by rolling your Cold die.",
           "statusDie": {
             "green": "d8",
             "yellow": "d8",
@@ -1748,7 +1734,7 @@
             "redLow": 1,
             "max": 29
           },
-          "biographyHtml": "<p>318\n318\nBiography \nRyan Frost had it all. Stunning apartment with \na view of the Rook City skyline, ‘67 Jaguar in the \nparking lot, dream job on the way, and a gorgeous \nfiancee who always knew how to make him laugh. \nThe night it all fell apart was an ordinary one. They \nwere stressed because of wedding planning, and \na stupid argument about groceries had escalated \ninto a yelling match. They’d weathered arguments \nbefore, frequently facilitated by Christine going for a \ndrive to cool off. But she never came back from this \ndrive. The police told him that she had died instantly. \nThe other car had been going nearly a hundred \nmiles an hour. Drunk driving, repeat offender… \nRyan stopped listening. He stopped doing a lot of \nthings. He never showed up for the interview, didn’t \npay rent, stopped showering, just moved through a \ngray and lifeless world like a walking corpse. \nWhen the money ran out, he took the first job \nhe stumbled across, doing janitorial work at Pike \nCryogenics. He signed where they told him to sign, \nmopped up unidentifiable substances, and during the \nday he slept. He got used to the chill of the vapors \nrolling off of the liquid helium tanks, the leaks from \nthe vats, and the moisture everywhere. The nights \nticked by until the shoddy maintenance practices \ncaught up to the lab. Ryan was waxing the floor \nwhen a pressurization value failed, and the resulting \nexplosion doused him in cryogenic compounds. In \nfractions of a second, his body cooled to subzero \ntemperatures, and then, unbelievably, kept dropping. \nThe alarms brought the response team, but it was \ntoo late. Ryan was lying in a gelatinous chemical \nmixture that was rapidly crystallizing around him. \nSomehow he was still alive, but his biology had \nchanged drastically. He was put in stasis right away, \nand eventually orders came from higher up in the \ncorporate hierarchy that they were to put him in \ncold storage. Pike Industries had military contacts \nthat might want him later. \n“Later” ended up being ten years, when the \nmilitary decided that they would give him to Dr. \nStinson to be part of the F5 initiative. Devising a \ncryogenic surgical ward, she brought him out of \nthe coma. The military gave him a choice: he could \nstay in the cryo chamber, or he could put on the \nmobility suit that she had created and be a part \nof something bigger. The world needed heroes, and \nhis unique biology in combination with Tachyon’s \ntechnology could give him a measure of freedom \nas he helped to save the world. Ryan didn’t have \nto think twice about it: he said no. “Better bored in \nhere than dead out there.”\nAlias: Ryan Frost\nGender: Male\nAge: Middle-Aged\nHeight: 5’7”\nEyes: White\nHair: none\nSkin: Bluish White\nBuild: Slight\nCostume/Equipment: When not in a cryo \nchamber, always wearing his white, blue, and \ncarbon-black coolant suit, complete with glowing \nblue faceplate, palm apertures, chest vents, and a \nmid-chest triangle.\nBackground: Tragic\nPower Source: Accident\nArchetype: Elemental Manipulator\nPersonality: Sarcastic\nAbsolute Zero\nHeroes</p>",
+          "biographyHtml": "<p>318\n318\nBiography \nRyan Frost had it all. Stunning apartment with \na view of the Rook City skyline, \u201867 Jaguar in the \nparking lot, dream job on the way, and a gorgeous \nfiancee who always knew how to make him laugh. \nThe night it all fell apart was an ordinary one. They \nwere stressed because of wedding planning, and \na stupid argument about groceries had escalated \ninto a yelling match. They\u2019d weathered arguments \nbefore, frequently facilitated by Christine going for a \ndrive to cool off. But she never came back from this \ndrive. The police told him that she had died instantly. \nThe other car had been going nearly a hundred \nmiles an hour. Drunk driving, repeat offender\u2026 \nRyan stopped listening. He stopped doing a lot of \nthings. He never showed up for the interview, didn\u2019t \npay rent, stopped showering, just moved through a \ngray and lifeless world like a walking corpse. \nWhen the money ran out, he took the first job \nhe stumbled across, doing janitorial work at Pike \nCryogenics. He signed where they told him to sign, \nmopped up unidentifiable substances, and during the \nday he slept. He got used to the chill of the vapors \nrolling off of the liquid helium tanks, the leaks from \nthe vats, and the moisture everywhere. The nights \nticked by until the shoddy maintenance practices \ncaught up to the lab. Ryan was waxing the floor \nwhen a pressurization value failed, and the resulting \nexplosion doused him in cryogenic compounds. In \nfractions of a second, his body cooled to subzero \ntemperatures, and then, unbelievably, kept dropping. \nThe alarms brought the response team, but it was \ntoo late. Ryan was lying in a gelatinous chemical \nmixture that was rapidly crystallizing around him. \nSomehow he was still alive, but his biology had \nchanged drastically. He was put in stasis right away, \nand eventually orders came from higher up in the \ncorporate hierarchy that they were to put him in \ncold storage. Pike Industries had military contacts \nthat might want him later. \n\u201cLater\u201d ended up being ten years, when the \nmilitary decided that they would give him to Dr. \nStinson to be part of the F5 initiative. Devising a \ncryogenic surgical ward, she brought him out of \nthe coma. The military gave him a choice: he could \nstay in the cryo chamber, or he could put on the \nmobility suit that she had created and be a part \nof something bigger. The world needed heroes, and \nhis unique biology in combination with Tachyon\u2019s \ntechnology could give him a measure of freedom \nas he helped to save the world. Ryan didn\u2019t have \nto think twice about it: he said no. \u201cBetter bored in \nhere than dead out there.\u201d\nAlias: Ryan Frost\nGender: Male\nAge: Middle-Aged\nHeight: 5\u20197\u201d\nEyes: White\nHair: none\nSkin: Bluish White\nBuild: Slight\nCostume/Equipment: When not in a cryo \nchamber, always wearing his white, blue, and \ncarbon-black coolant suit, complete with glowing \nblue faceplate, palm apertures, chest vents, and a \nmid-chest triangle.\nBackground: Tragic\nPower Source: Accident\nArchetype: Elemental Manipulator\nPersonality: Sarcastic\nAbsolute Zero\nHeroes</p>",
           "sourcePages": {
             "attr": 316,
             "ability": 317,
@@ -1766,12 +1752,12 @@
           "alias": "Brandon Bradley",
           "gender": "Male",
           "age": "Late-Teens",
-          "height": "5’10”",
+          "height": "5\u201910\u201d",
           "eyes": "Brown",
           "hair": "Dark Brown",
           "skin": "Dark",
           "build": "Athletic",
-          "costume": "Headlong’s sleeveless red bodysuit with blue energy arrows is made to fit under his work clothes. He always keeps his red gloves, dark red domino mask, and grey kneepads in his grey messenger bag, ready to change into costume at any time.",
+          "costume": "Headlong\u2019s sleeveless red bodysuit with blue energy arrows is made to fit under his work clothes. He always keeps his red gloves, dark red domino mask, and grey kneepads in his grey messenger bag, ready to change into costume at any time.",
           "background": "Struggling",
           "powerSource": "Relic",
           "archetype": "Transporter",
@@ -1785,7 +1771,7 @@
             },
             {
               "name": "Principle of Speed",
-              "roleplaying": "You’re fast, but you don’t like to waste time. You like to be on your way to your destinations as quickly as possible.",
+              "roleplaying": "You\u2019re fast, but you don\u2019t like to waste time. You like to be on your way to your destinations as quickly as possible.",
               "minorTwist": "What physical drawbacks do you suffer from going too fast?",
               "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
             }
@@ -1837,7 +1823,7 @@
               "dieTypeKnown": true
             },
             {
-              "name": "Hustlin’",
+              "name": "Hustlin\u2019",
               "dieType": "d8",
               "dieTypeKnown": true
             },
@@ -1852,12 +1838,12 @@
               "name": "Frictionless Shove",
               "type": "A",
               "aux": "green",
-              "gameText": "move them somewhere else in the scene.",
+              "gameText": "Attack using Momentum. Either Hinder your target with your Min die or move them somewhere else in the scene.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -1866,10 +1852,10 @@
               "name": "Get Moving",
               "type": "A",
               "aux": "green",
-              "gameText": "Boost yourself using Momentum. That bonus is persistent and exclusive. Attack using Agility. Defend against all attacks against you until your next",
+              "gameText": "Boost yourself using Momentum. That bonus is persistent and exclusive.",
               "icon": {
-                "attack": true,
-                "defend": true,
+                "attack": false,
+                "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": true,
@@ -1880,11 +1866,11 @@
               "name": "Slip & Slide",
               "type": "A",
               "aux": "green",
-              "gameText": "Overcome using knowledge from your civilian life and use your Max die. You turn with your Min die.",
+              "gameText": "Attack using Agility. Defend against all attacks against you until your next turn with your Min die.",
               "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
+                "attack": true,
+                "defend": true,
+                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1894,7 +1880,7 @@
               "name": "Principle of the Mask",
               "type": "A",
               "aux": "green",
-              "gameText": "and each of your allies gain a hero point. Whenever you successfully Overcome, you may end up anywhere in the",
+              "gameText": "Overcome using knowledge from your civilian life and use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1908,11 +1894,11 @@
               "name": "Principle of Speed",
               "type": "I",
               "aux": "green",
-              "gameText": "current environment. Then, you and each of your allies gain a hero point.",
+              "gameText": "Whenever you successfully Overcome, you may end up anywhere in the current environment. Then, you and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
-                "overcome": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1922,23 +1908,9 @@
               "name": "Bowl Over",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Attack multiple targets using Momentum. Use your Min die against each. Boost yourself using Momentum. Use your Max die. Hinder a nearby",
+              "gameText": "Attack multiple targets using Momentum. Use your Min die against each.",
               "icon": {
                 "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": true,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Friction Transfer",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "opponent with your Min die. When another hero in the Yellow or Red zone would take damage, you may",
-              "icon": {
-                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -1947,15 +1919,29 @@
               }
             },
             {
+              "name": "Friction Transfer",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Boost yourself using Momentum. Use your Max die. Hinder a nearby opponent with your Min die.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
               "name": "Smooth Move",
               "type": "R",
               "aux": "yellow",
-              "gameText": "Defend them by rolling your single Intuition die. Hinder multiple nearby targets using Acrobatics. Use your Max die. End your",
+              "gameText": "When another hero in the Yellow or Red zone would take damage, you may Defend them by rolling your single Intuition die.",
               "icon": {
                 "attack": false,
                 "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -1964,9 +1950,9 @@
               "name": "Slippery Surface",
               "type": "A",
               "aux": "red",
-              "gameText": "turn elsewhere in the scene. Attack using Momentum. Use your Max die. Hinder that target with your",
+              "gameText": "Hinder multiple nearby targets using Acrobatics. Use your Max die. End your turn elsewhere in the scene.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -1978,21 +1964,21 @@
               "name": "Spin Out",
               "type": "A",
               "aux": "red",
-              "gameText": "Mid+Min dice. When an enemy Attacks an ally you can see, you may become the target",
+              "gameText": "Attack using Momentum. Use your Max die. Hinder that target with your Mid+Min dice.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
             },
             {
-              "name": "Wheelin’ & Dealin’",
+              "name": "Wheelin\u2019 & Dealin\u2019",
               "type": "R",
               "aux": "red",
-              "gameText": "of that Attack and Defend against that Attack by rolling your single Red status die.",
+              "gameText": "When an enemy Attacks an ally you can see, you may become the target of that Attack and Defend against that Attack by rolling your single Red status die.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -2003,7 +1989,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Hinder a minion or lieutenant using Persuasion. Increase that penalty by 1.",
           "statusDie": {
             "green": "d6",
             "yellow": "d8",
@@ -2017,7 +2003,7 @@
             "redLow": 1,
             "max": 28
           },
-          "biographyHtml": "<p>328\n328\nBiography \nBrandon’s family hit hard times after the death of \nhis mom, who died giving birth to his sister Delilah. \nBetween the medical bills and their lack of insurance, \nthe family was in dire straits, and Brandon’s father \nfound that he couldn’t pay the debt collectors and \nhis union dues. He chose the lesser evil, and found \nhimself looking for work as a non-union electrician. \nThis did not help the money situation, so Brandon’s \nolder brother Max decided to chip in. After all, \ndealers were always looking for runners. It was \ngood money, and it let the family stay afloat while \nBrandon took care of Delilah. Then, Max got caught \nwith a paper bag full of pills. The officer was one of \nthe few clean cops in Rook City — he let Max off \nwith a warning, but told him that he’d be checking \nup on him to make sure he didn’t get involved \nwith the criminal life again. He even followed \nthrough, which was more of a rarity. \nUnsurprisingly, the debt collectors started \ncalling again. With Max no longer bringing in \nmoney, Brandon stepped up. He got a job as a \ncourier. It was the same basic principle as what \nhis brother had done, but for far less money. It \nhelped, but only barely. Brandon started taking \non more and more jobs, running himself ragged \ntransporting packages around the city. One \nevening, after a particularly grueling day moving \nboxes of documents between law offices, he got a \njob transporting a parcel wrapped in brown paper \ntied with a red cord. It was a bit weird, but it was \ngoing to an antique shop so it made sense that \nit looked strange. He set out quickly, but as tired \nas he was, he didn’t hear the exterminator’s van \nuntil it barrelled around the corner right in front \nof him. He was sent flying one way, the package \nanother, and the last thing he remembered before \nhe passed out in a pile of trash was the sound of \nswarming bugs. \nWhen Brandon opened his eyes, he saw the \npackage burst open on the street. Shards of glass \nwere everywhere, but a strange resin seal tied to \nthe end of the red cord caught his eye. He picked \nup the seal, thinking that he might still be able to \ndeliver it… and fell over. Then again. Over and over, \neach time he tried to stand, it was like the world \nwas made of ice. When he dropped the seal, the \nconcrete under his feet returned to its normally \nnon-slippery surface. The seal imparted some sort \nof frictionless transference, and with that realization \ncame a measure of control, and thus balance. He \ntried to deliver the remnants of the broken package, \nbut he could never find the shop. For some reason, \nAlias: Brandon Bradley\nGender: Male\nAge: Late-Teens\nHeight: 5’10”\nEyes: Brown\nHair: Dark Brown\nSkin: Brown\nBuild: Athletic\nCostume/Equipment: Headlong’s sleeveless red \nbodysuit with blue energy arrows is made to fit \nunder his work clothes. He always keeps his red \ngloves, dark red domino mask, and grey knee pads \nin his grey messenger bag, ready to change into \ncostume at any time.\nBackground: Struggling\nPower Source: Relic\nArchetype: Transporter\nPersonality: Fast Talking\nHeadlong\nHeroes</p>",
+          "biographyHtml": "<p>328\n328\nBiography \nBrandon\u2019s family hit hard times after the death of \nhis mom, who died giving birth to his sister Delilah. \nBetween the medical bills and their lack of insurance, \nthe family was in dire straits, and Brandon\u2019s father \nfound that he couldn\u2019t pay the debt collectors and \nhis union dues. He chose the lesser evil, and found \nhimself looking for work as a non-union electrician. \nThis did not help the money situation, so Brandon\u2019s \nolder brother Max decided to chip in. After all, \ndealers were always looking for runners. It was \ngood money, and it let the family stay afloat while \nBrandon took care of Delilah. Then, Max got caught \nwith a paper bag full of pills. The officer was one of \nthe few clean cops in Rook City \u2014 he let Max off \nwith a warning, but told him that he\u2019d be checking \nup on him to make sure he didn\u2019t get involved \nwith the criminal life again. He even followed \nthrough, which was more of a rarity. \nUnsurprisingly, the debt collectors started \ncalling again. With Max no longer bringing in \nmoney, Brandon stepped up. He got a job as a \ncourier. It was the same basic principle as what \nhis brother had done, but for far less money. It \nhelped, but only barely. Brandon started taking \non more and more jobs, running himself ragged \ntransporting packages around the city. One \nevening, after a particularly grueling day moving \nboxes of documents between law offices, he got a \njob transporting a parcel wrapped in brown paper \ntied with a red cord. It was a bit weird, but it was \ngoing to an antique shop so it made sense that \nit looked strange. He set out quickly, but as tired \nas he was, he didn\u2019t hear the exterminator\u2019s van \nuntil it barrelled around the corner right in front \nof him. He was sent flying one way, the package \nanother, and the last thing he remembered before \nhe passed out in a pile of trash was the sound of \nswarming bugs. \nWhen Brandon opened his eyes, he saw the \npackage burst open on the street. Shards of glass \nwere everywhere, but a strange resin seal tied to \nthe end of the red cord caught his eye. He picked \nup the seal, thinking that he might still be able to \ndeliver it\u2026 and fell over. Then again. Over and over, \neach time he tried to stand, it was like the world \nwas made of ice. When he dropped the seal, the \nconcrete under his feet returned to its normally \nnon-slippery surface. The seal imparted some sort \nof frictionless transference, and with that realization \ncame a measure of control, and thus balance. He \ntried to deliver the remnants of the broken package, \nbut he could never find the shop. For some reason, \nAlias: Brandon Bradley\nGender: Male\nAge: Late-Teens\nHeight: 5\u201910\u201d\nEyes: Brown\nHair: Dark Brown\nSkin: Brown\nBuild: Athletic\nCostume/Equipment: Headlong\u2019s sleeveless red \nbodysuit with blue energy arrows is made to fit \nunder his work clothes. He always keeps his red \ngloves, dark red domino mask, and grey knee pads \nin his grey messenger bag, ready to change into \ncostume at any time.\nBackground: Struggling\nPower Source: Relic\nArchetype: Transporter\nPersonality: Fast Talking\nHeadlong\nHeroes</p>",
           "sourcePages": {
             "attr": 326,
             "ability": 327,
@@ -2026,10 +2012,10 @@
         },
         {
           "name": "Rockstar",
-          "alias": "Megan “The Hammer” Lee",
+          "alias": "Megan \u201cThe Hammer\u201d Lee",
           "gender": "Female",
           "age": "Late-Teens",
-          "height": "5’7”",
+          "height": "5\u20197\u201d",
           "eyes": "Blue",
           "hair": "Blonde",
           "skin": "Fair",
@@ -2105,13 +2091,13 @@
               "name": "Rock Out",
               "type": "R",
               "aux": "green",
-              "gameText": "Transmutation die. Reduce any physical or energy damage you take by 1 while you are in the",
+              "gameText": "When you change personal zones, you may Boost by rolling your single Transmutation die.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
@@ -2119,9 +2105,9 @@
               "name": "Shake It Off",
               "type": "I",
               "aux": "green",
-              "gameText": "Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Attack using Strength. The target of that Attack must take the Attack action",
+              "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2133,11 +2119,11 @@
               "name": "Wicked Solo",
               "type": "A",
               "aux": "green",
-              "gameText": "Overcome a situation where someone else has given you a bonus from a against you on its next turn, if possible.",
+              "gameText": "Attack using Strength. The target of that Attack must take the Attack action against you on its next turn, if possible.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
-                "overcome": true,
+                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -2147,7 +2133,7 @@
               "name": "Principle of Ambition",
               "type": "A",
               "aux": "green",
-              "gameText": "Boost. Use your Max die. You and each of your allies gain a hero point. Overcome using brute force. Use your Max die. You and each of your allies gain",
+              "gameText": "Overcome a situation where someone else has given you a bonus from a Boost. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2161,11 +2147,11 @@
               "name": "Principle of Strength",
               "type": "A",
               "aux": "green",
-              "gameText": "a hero point.",
+              "gameText": "Overcome using brute force. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
-                "overcome": false,
+                "overcome": true,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -2175,7 +2161,7 @@
               "name": "Drop the Hammer",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Attack using Strength. Hinder that same target using your Min die. When your personal zone changes, Attack all close enemy targets by rolling",
+              "gameText": "Attack using Strength. Hinder that same target using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2189,7 +2175,21 @@
               "name": "Shard Shatter",
               "type": "R",
               "aux": "yellow",
-              "gameText": "your single Stone die. When you eliminate a minion with an Attack using Close Combat, Recover",
+              "gameText": "When your personal zone changes, Attack all close enemy targets by rolling your single Stone die.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Standing Ovation",
+              "type": "R",
+              "aux": "yellow",
+              "gameText": "When you eliminate a minion with an Attack using Close Combat, Recover health equal to your min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2200,10 +2200,10 @@
               }
             },
             {
-              "name": "Standing Ovation",
-              "type": "R",
-              "aux": "yellow",
-              "gameText": "health equal to your min die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your",
+              "name": "Encore!",
+              "type": "A",
+              "aux": "red",
+              "gameText": "Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2211,20 +2211,6 @@
                 "hinder": true,
                 "boost": false,
                 "recover": true
-              }
-            },
-            {
-              "name": "Encore!",
-              "type": "A",
-              "aux": "red",
-              "gameText": "Max+Mid dice.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
               }
             },
             {
@@ -2242,7 +2228,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Hinder an opponent using Stone.",
           "statusDie": {
             "green": "d10",
             "yellow": "d8",
@@ -2256,7 +2242,7 @@
             "redLow": 1,
             "max": 30
           },
-          "biographyHtml": "<p>332\n332\nBiography \nMegan Lee spent a lot of time daydreaming. When \nher dad Rick had talked about spending the summer \ntogether, she had thought it would be more exciting \nthan poking rocks, but “father-daughter bonding \ntime” turned out to be a series of dig sites as her \ngeologist father measured rocks. She was hoping for \nexplosives, but it turned out most geology was just \nhitting rocks with tiny hammers and then scribbling \nin tiny notebooks. There was only so much waiting \naround she could stand, and hitting rocks was only \nfun when she could hit them hard and make them \nbreak into a million pieces. Eventually, in every dig \nsite, Megan gave up and found a spot to listen to \nmusic while her dad worked. It was still nice that \nshe got to spend time with him — no mom, no \nsister, no chores — just going places with her dad. \nEven if each new one turned out to be boring. \nDig Site 17 was much like any other. A dirty cave \nin some state park or another in Arizona. Megan \ngot bored pretty quick and went for a walk. Majestic \nvistas were nice and all, but it wasn’t long before \nshe stopped looking where she was going. It was \nmore interesting to see if she could throw her rock \nhammer in time to the music and still catch it. If \nshe’d been paying attention, she might have noticed \nthe quarry, but suddenly her left foot came down \non nothing and she fell. She tumbled down dozens \nof feet through the air, too shocked to scream, and \nlanded hard in a shallow puddle at the bottom. \nSomehow, she had survived, but had the wind \nthoroughly knocked out of her. As she climbed the \nstairs out of the quarry, she was amazed. The fall \nwas more than a hundred feet! If it hadn’t been for \nthat shallow puddle, she would have died! It didn’t \nmake sense to her that the puddle had saved her \nlife, but it must have, right?\nAs she shakily walked back to where her dad \nwas working, she realized that the fall had bent the \nmetal handle of her rock hammer. She grabbed at \nit… in a flash her hands were covered in rock as \nshe pulled it straight as if it were a paperclip. She \nstared in amazement as the rocks flaked off. She \nhad powers?! Megan spent her junior year learning \nabout her powers — not by practicing with them, \nthat’s way too boring— but as things happened \nto her. Like when she got hit in the head with a \nbaseball and realized that the rocks would protect \nher even against things she didn’t notice, or when \nher favorite eyeliner rolled under the dresser and \nshe lifted the heavy piece of furniture with one \nrocky hand. All in all, it was pretty sweet. Not, like, \nrecord deal sweet, but still pretty good.\nAlias: Megan “The Hammer” Lee\nGender: Female\nAge: Late-Teens\nHeight: 5’7”\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Rockstar changes her outfit \nwith some regularity, always looking for more hip \nand/or audacious stage clothes. She also changes \nthe color of the ends of her hair, but always paints \nthe star over her right eye to match.\nBackground: Unremarkable\nPower Source: Accident\nArchetype: Physical Powerhouse\nPersonality: Arrogant\nRockstar\nHeroes</p>",
+          "biographyHtml": "<p>332\n332\nBiography \nMegan Lee spent a lot of time daydreaming. When \nher dad Rick had talked about spending the summer \ntogether, she had thought it would be more exciting \nthan poking rocks, but \u201cfather-daughter bonding \ntime\u201d turned out to be a series of dig sites as her \ngeologist father measured rocks. She was hoping for \nexplosives, but it turned out most geology was just \nhitting rocks with tiny hammers and then scribbling \nin tiny notebooks. There was only so much waiting \naround she could stand, and hitting rocks was only \nfun when she could hit them hard and make them \nbreak into a million pieces. Eventually, in every dig \nsite, Megan gave up and found a spot to listen to \nmusic while her dad worked. It was still nice that \nshe got to spend time with him \u2014 no mom, no \nsister, no chores \u2014 just going places with her dad. \nEven if each new one turned out to be boring. \nDig Site 17 was much like any other. A dirty cave \nin some state park or another in Arizona. Megan \ngot bored pretty quick and went for a walk. Majestic \nvistas were nice and all, but it wasn\u2019t long before \nshe stopped looking where she was going. It was \nmore interesting to see if she could throw her rock \nhammer in time to the music and still catch it. If \nshe\u2019d been paying attention, she might have noticed \nthe quarry, but suddenly her left foot came down \non nothing and she fell. She tumbled down dozens \nof feet through the air, too shocked to scream, and \nlanded hard in a shallow puddle at the bottom. \nSomehow, she had survived, but had the wind \nthoroughly knocked out of her. As she climbed the \nstairs out of the quarry, she was amazed. The fall \nwas more than a hundred feet! If it hadn\u2019t been for \nthat shallow puddle, she would have died! It didn\u2019t \nmake sense to her that the puddle had saved her \nlife, but it must have, right?\nAs she shakily walked back to where her dad \nwas working, she realized that the fall had bent the \nmetal handle of her rock hammer. She grabbed at \nit\u2026 in a flash her hands were covered in rock as \nshe pulled it straight as if it were a paperclip. She \nstared in amazement as the rocks flaked off. She \nhad powers?! Megan spent her junior year learning \nabout her powers \u2014 not by practicing with them, \nthat\u2019s way too boring\u2014 but as things happened \nto her. Like when she got hit in the head with a \nbaseball and realized that the rocks would protect \nher even against things she didn\u2019t notice, or when \nher favorite eyeliner rolled under the dresser and \nshe lifted the heavy piece of furniture with one \nrocky hand. All in all, it was pretty sweet. Not, like, \nrecord deal sweet, but still pretty good.\nAlias: Megan \u201cThe Hammer\u201d Lee\nGender: Female\nAge: Late-Teens\nHeight: 5\u20197\u201d\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Rockstar changes her outfit \nwith some regularity, always looking for more hip \nand/or audacious stage clothes. She also changes \nthe color of the ends of her hair, but always paints \nthe star over her right eye to match.\nBackground: Unremarkable\nPower Source: Accident\nArchetype: Physical Powerhouse\nPersonality: Arrogant\nRockstar\nHeroes</p>",
           "sourcePages": {
             "attr": 330,
             "ability": 331,
@@ -2268,7 +2254,7 @@
           "alias": "Vanessa Long",
           "gender": "Female",
           "age": "Early-Teens",
-          "height": "4’10”",
+          "height": "4\u201910\u201d",
           "eyes": "Violet",
           "hair": "Black",
           "skin": "Pale",
@@ -2354,13 +2340,13 @@
               "name": "Mental Block",
               "type": "A",
               "aux": "green",
-              "gameText": "Attack using Suggestion. Hinder the target using your Min die. Boost using Telepathy. Apply that bonus to all hero Attack and Overcome",
+              "gameText": "Attack using Suggestion. Hinder the target using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
-                "overcome": true,
+                "overcome": false,
                 "hinder": true,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
@@ -2368,13 +2354,13 @@
               "name": "Your Best Selves",
               "type": "A",
               "aux": "green",
-              "gameText": "actions until your next turn. Overcome in a situation that uses your powers in a new way. Use your Max",
+              "gameText": "Boost using Telepathy. Apply that bonus to all hero Attack and Overcome actions until your next turn.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": true,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
@@ -2382,7 +2368,7 @@
               "name": "Principle of Mastery",
               "type": "A",
               "aux": "green",
-              "gameText": "die. You and each of your allies gain a hero point. Overcome a challenge by tapping into your dark psyche. Use your Max die.",
+              "gameText": "Overcome in a situation that uses your powers in a new way. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2396,7 +2382,21 @@
               "name": "Principle of the Inner Demon",
               "type": "A",
               "aux": "green",
-              "gameText": "You and each of your allies gain a hero point. Hinder multiple targets using Illusions. Use your Mid die for one and your",
+              "gameText": "Overcome a challenge by tapping into your dark psyche. Use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Conjured Nightmare",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Hinder multiple targets using Illusions. Use your Mid die for one and your Min die for the rest.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2407,12 +2407,12 @@
               }
             },
             {
-              "name": "Conjured Nightmare",
+              "name": "Open Your Inner Eye",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Min die for the rest. Boost yourself using Intuition. Use your Max die. That Bonus is persistent",
+              "gameText": "Boost yourself using Intuition. Use your Max die. That Bonus is persistent and exclusive. Attack using your Min die.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2421,24 +2421,10 @@
               }
             },
             {
-              "name": "Open Your Inner Eye",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "and exclusive. Attack using your Min die. Attack a minion using Suggestion. If that minion would be removed, instead,",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Overwhelmed Mind",
               "type": "A",
               "aux": "yellow",
-              "gameText": "you control its next action and then remove it. Otherwise, Hinder it with your Min die. Attack using Telepathy. Use your Max die. Hinder the target with your Min",
+              "gameText": "Attack a minion using Suggestion. If that minion would be removed, instead, you control its next action and then remove it. Otherwise, Hinder it with your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2452,9 +2438,9 @@
               "name": "Twist Your Mind",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Hinder using Suggestion. Use your Max+Mid dice. Damage yourself equal die. That penalty is persistent.",
+              "gameText": "Attack using Telepathy. Use your Max die. Hinder the target with your Min die. That penalty is persistent.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -2466,12 +2452,12 @@
               "name": "Debilitate",
               "type": "A",
               "aux": "red",
-              "gameText": "to your Min die. Then if you rolled doubles, Attack the target with your Mid+Min dice. As long as you have at least one bonus created from Insight, treat Suggestion",
+              "gameText": "Hinder using Suggestion. Use your Max+Mid dice. Damage yourself equal to your Min die. Then if you rolled doubles, Attack the target with your Mid+Min dice.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -2480,7 +2466,7 @@
               "name": "Perfect Intuition",
               "type": "I",
               "aux": "red",
-              "gameText": "as one size higher ( ).",
+              "gameText": "As long as you have at least one bonus created from Insight, treat Suggestion as one size higher ( ).",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2505,7 +2491,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Boost an ally using Insight.",
           "statusDie": {
             "green": "d6",
             "yellow": "d6",
@@ -2519,7 +2505,7 @@
             "redLow": 1,
             "max": 29
           },
-          "biographyHtml": "<p>336\n336\nBiography \nVanessa Long’s parents were informed that she had \nnot survived birth. In truth she had, but was taken by \nProject Cocoon, a secret program looking to create \npsychic soldiers that had identified her psionic \npotential. There, she was to be experimented on to \nexpand her powers and training to focus them until \nshe was the perfect weapon. However, the reality-\njumping intervention of Visionary, an alternate \nreality’s version of Vanessa Long who had gone \nthrough such training, saved her from such a fate. \nVisionary rescued her and Project Cocoon was \ndemolished. The infant was returned to her parents, \nand she was given a normal childhood in the small \ntown of Ravenwood, just outside Rook City. \nWhen Vanessa was 6 years old, her psychic \npowers manifested. She fell into a coma and her \nmind unleashed creatures born of her nightmares. \nMany heroes had to work together to defeat the \nnightmarish projections of The Dreamer. After \npinpointing her as the source, Visionary psionically \neased the young girl out of her coma, stopping \nthe manifestations, but leaving everyone shaken. \nVisionary had hoped that by saving the child from \nCocoon, she had prevented her from developing \nsuch powers, but it was all too apparent that \nyoung Vanessa had the makings of a powerful \npsychic. Vanessa tried to resume her home life, \nbut her parents were terrified by the thing they \nno longer considered their daughter. Sensing the \ngirl’s distress, Dark Visionary (now an evil version \nof herself that had previously been imprisoned), \nremoved the memories of The Dreamer from her \nparents and everyone around. Young Vanessa Long \ncould finally live in peace — albeit a peace secured \nby invasive psychic surgery.\nVanessa had no way of knowing that her parents’ \nmemories had been altered, but she remembered \nhow uneasy everyone had been about her powers. \nShe refused to use them for years, until later in \nmiddle school when she started to practice in \nsecret. This revealed truths that she wasn’t ready \nfor: hidden lies that everyone told themselves to \nhide their own darker impulses, or even to prevent \nthemselves from being incredible. Things like “No \none will know,” or “I’m too dumb to try that.” \nThis led to her experimenting with her powers to \ninfluence those inner feelings, bolstering confidence \nand removing doubt to bring the best out in \npeople, or removing thoughts urging people to \ntheir worst selves. This experimentation also led to \nher discovery, around the time of OblivAeon, of the \nmental blocks on her parents, which she decided to \nAlias: Vanessa Long\nGender: Female\nAge: Early-Teens\nHeight: 4’10”\nEyes: Violet\nHair: Black\nSkin: Pale\nBuild: Slight\nCostume/Equipment: Muse wears a simple purple \ntank top with pink accents, purple torn leggings \nover pink tights, and purple boots. She also wears a \npink hip sash, and a purple face mask, emblazoned \nwith a third eye in the middle of her forehead.\nBackground: Former Villain\nPower Source: The Multiverse\nArchetype: Psychic\nPersonality: Nurturing\nMuse\nHeroes</p>",
+          "biographyHtml": "<p>336\n336\nBiography \nVanessa Long\u2019s parents were informed that she had \nnot survived birth. In truth she had, but was taken by \nProject Cocoon, a secret program looking to create \npsychic soldiers that had identified her psionic \npotential. There, she was to be experimented on to \nexpand her powers and training to focus them until \nshe was the perfect weapon. However, the reality-\njumping intervention of Visionary, an alternate \nreality\u2019s version of Vanessa Long who had gone \nthrough such training, saved her from such a fate. \nVisionary rescued her and Project Cocoon was \ndemolished. The infant was returned to her parents, \nand she was given a normal childhood in the small \ntown of Ravenwood, just outside Rook City. \nWhen Vanessa was 6 years old, her psychic \npowers manifested. She fell into a coma and her \nmind unleashed creatures born of her nightmares. \nMany heroes had to work together to defeat the \nnightmarish projections of The Dreamer. After \npinpointing her as the source, Visionary psionically \neased the young girl out of her coma, stopping \nthe manifestations, but leaving everyone shaken. \nVisionary had hoped that by saving the child from \nCocoon, she had prevented her from developing \nsuch powers, but it was all too apparent that \nyoung Vanessa had the makings of a powerful \npsychic. Vanessa tried to resume her home life, \nbut her parents were terrified by the thing they \nno longer considered their daughter. Sensing the \ngirl\u2019s distress, Dark Visionary (now an evil version \nof herself that had previously been imprisoned), \nremoved the memories of The Dreamer from her \nparents and everyone around. Young Vanessa Long \ncould finally live in peace \u2014 albeit a peace secured \nby invasive psychic surgery.\nVanessa had no way of knowing that her parents\u2019 \nmemories had been altered, but she remembered \nhow uneasy everyone had been about her powers. \nShe refused to use them for years, until later in \nmiddle school when she started to practice in \nsecret. This revealed truths that she wasn\u2019t ready \nfor: hidden lies that everyone told themselves to \nhide their own darker impulses, or even to prevent \nthemselves from being incredible. Things like \u201cNo \none will know,\u201d or \u201cI\u2019m too dumb to try that.\u201d \nThis led to her experimenting with her powers to \ninfluence those inner feelings, bolstering confidence \nand removing doubt to bring the best out in \npeople, or removing thoughts urging people to \ntheir worst selves. This experimentation also led to \nher discovery, around the time of OblivAeon, of the \nmental blocks on her parents, which she decided to \nAlias: Vanessa Long\nGender: Female\nAge: Early-Teens\nHeight: 4\u201910\u201d\nEyes: Violet\nHair: Black\nSkin: Pale\nBuild: Slight\nCostume/Equipment: Muse wears a simple purple \ntank top with pink accents, purple torn leggings \nover pink tights, and purple boots. She also wears a \npink hip sash, and a purple face mask, emblazoned \nwith a third eye in the middle of her forehead.\nBackground: Former Villain\nPower Source: The Multiverse\nArchetype: Psychic\nPersonality: Nurturing\nMuse\nHeroes</p>",
           "sourcePages": {
             "attr": 334,
             "ability": 335,
@@ -2531,12 +2517,12 @@
           "alias": "Windy Farrum",
           "gender": "Female",
           "age": "A Few Months",
-          "height": "5’5” (usually)",
+          "height": "5\u20195\u201d (usually)",
           "eyes": "White",
           "hair": "Silver",
           "skin": "Metallic",
           "build": "Impressionable",
-          "costume": "Aeon Girl’s dark metallic skin and silvery hair speak to her cosmic origins, though her innate orange and yellow outfit and signature blue energy make her look eerily similar to a minion of OblivAeon, as opposed to her own person.",
+          "costume": "Aeon Girl\u2019s dark metallic skin and silvery hair speak to her cosmic origins, though her innate orange and yellow outfit and signature blue energy make her look eerily similar to a minion of OblivAeon, as opposed to her own person.",
           "background": "Blank Slate",
           "powerSource": "Higher Power",
           "archetype": "Blaster",
@@ -2612,21 +2598,7 @@
               "name": "Cosmic Nature",
               "type": "I",
               "aux": "green",
-              "gameText": "At the start of your turn, remove any -1 penalties on you. Attack using Cosmic. Ignore all penalties on this attack, ignore any Defend",
-              "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Inevitable Blast",
-              "type": "A",
-              "aux": "green",
-              "gameText": "actions, and it cannot be affected by Reactions.",
+              "gameText": "At the start of your turn, remove any -1 penalties on you.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2637,14 +2609,28 @@
               }
             },
             {
+              "name": "Inevitable Blast",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Attack using Cosmic. Ignore all penalties on this attack, ignore any Defend actions, and it cannot be affected by Reactions.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
               "name": "Withering Blast",
               "type": "A",
               "aux": "green",
-              "gameText": "Overcome a dire situation where your jokes prevent demoralization. Use Attack using Infernal. Hinder a target with your Min die.",
+              "gameText": "Attack using Infernal. Hinder a target with your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
-                "overcome": true,
+                "overcome": false,
                 "hinder": true,
                 "boost": false,
                 "recover": false
@@ -2654,7 +2640,7 @@
               "name": "Principle of Levity",
               "type": "A",
               "aux": "green",
-              "gameText": "your Max die. You and each of your allies gain a hero point. Overcome a challenge involving cosmic energy. Use your Max die. You and",
+              "gameText": "Overcome a dire situation where your jokes prevent demoralization. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2668,7 +2654,21 @@
               "name": "Principle of Cosmic Energy",
               "type": "A",
               "aux": "green",
-              "gameText": "each of your allies gain a hero point. When you would take damage from Cosmic energy, recover that amount",
+              "gameText": "Overcome a challenge involving cosmic energy. Use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Cosmic Form",
+              "type": "I",
+              "aux": "yellow",
+              "gameText": "When you would take damage from Cosmic energy, recover that amount of health instead.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2679,30 +2679,16 @@
               }
             },
             {
-              "name": "Cosmic Form",
-              "type": "I",
+              "name": "Energy Battery",
+              "type": "A",
               "aux": "yellow",
-              "gameText": "of health instead. Boost yourself using Absorption. Then, remove a penalty on yourself or",
+              "gameText": "Boost yourself using Absorption. Then, remove a penalty on yourself or recover health equal to your Min die.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Energy Battery",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "recover health equal to your Min die. Attack using Flight. Use your Max die. If you choose another hero to go",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
                 "recover": true
               }
             },
@@ -2710,12 +2696,12 @@
               "name": "Fly Interference",
               "type": "A",
               "aux": "yellow",
-              "gameText": "next, Boost that hero with your Mid die. Attack all nearby opponents using Infernal. Hinder any targets damaged by",
+              "gameText": "Attack using Flight. Use your Max die. If you choose another hero to go next, Boost that hero with your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
                 "recover": false
               }
@@ -2724,7 +2710,7 @@
               "name": "Internal Cataclysm",
               "type": "A",
               "aux": "yellow",
-              "gameText": "this ability with your Min die. Hinder yourself with your Max die. When multiple allies are Attacked, you may take all the damage instead. If you",
+              "gameText": "Attack all nearby opponents using Infernal. Hinder any targets damaged by this ability with your Min die. Hinder yourself with your Max die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2738,9 +2724,9 @@
               "name": "Interposing Jaunt",
               "type": "R",
               "aux": "red",
-              "gameText": "Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, do, roll your Teleportation+Red status die and reduce the damage by that much.",
+              "gameText": "When multiple allies are Attacked, you may take all the damage instead. If you do, roll your Teleportation+Red status die and reduce the damage by that much.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2752,9 +2738,9 @@
               "name": "Reconstitution",
               "type": "I",
               "aux": "red",
-              "gameText": "and Red status dice. Your health becomes the sum of that roll. Attack using Cosmic and at least one bonus. Use your Max+Mid+Min dice.",
+              "gameText": "Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, and Red status dice. Your health becomes the sum of that roll.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2766,7 +2752,7 @@
               "name": "Unleashed Oblivion",
               "type": "A",
               "aux": "red",
-              "gameText": "Destroy all of your bonuses, adding each of them to this attack first, even if they are exclusive.",
+              "gameText": "Attack using Cosmic and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this attack first, even if they are exclusive.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2777,7 +2763,7 @@
               }
             }
           ],
-          "out": "",
+          "out": "Hinder an opponent using Cosmic.",
           "statusDie": {
             "green": "d6",
             "yellow": "d6",
@@ -2791,7 +2777,7 @@
             "redLow": 1,
             "max": 35
           },
-          "biographyHtml": "<p>340\n340\nBiography \nDuring the fight against OblivAeon, one of the major \nthreats came from the Aeon Men, led by the scion \ncalled Aeon Master. Semi-autonomous splinters \nof OblivAeon’s power that he shed when he was \ndealt damage, these minions engaged the heroes \nand wreaked havoc for their master. One hero was \nuniquely suited to destroying them — Tarogath, \nthe last Procitor. Known as the hero Lifeline, he \nabsorbed and directed the natural energy found in \nley lines. This natural energy absorption was further \naugmented by dark blood magic to the point \nwhere he could directly absorb the life essence \nof other beings. As the hordes of Aeon Men and \nAeon Master itself attacked the military base Fort \nAdamant, Lifeline hatched a plan with other heroes \nto absorb the entirety of Aeon Master’s energy, \ncompletely nullifying the Aeon Men by ridding the \nworld of the force directing them. He managed to \nbarely survive doing so, but could not contain such a \nvast amount of cosmic power for long. He directed \nsome of it in an attack against OblivAeon directly, \nbut the remaining power demanded release.\nAfter the fight, Lifeline and his fellow endling \nSlamara tapped the power inside of him, releasing \nit to take on its own shape. He channeled all of \nit into a new being — not an Aeon Man, not a \ncreation of OblivAeon, but something born of \ncosmic energy, natural magic, and shaped by \nblood magic. Something entirely new. Thus, Aeon \nGirl came into existence. This new being had full \nawareness, consciousness, and access to knowledge \nof the cosmos that OblivAeon’s power carried, but \nwas entirely her own being — pure power given \nshape. With a tangled history of terrible deeds for \nwhat he saw as the greater good, Lifeline knew he \nwas not the right teacher for this innocent creature. \nShe needed to learn how to survive in the universe \nwithout being warped into someone as twisted as \nLifeline saw himself to be. Knowing and respecting \nthe various heroes of Earth, he left this new entity \nwith them in the hopes that they could teach her \nhow to be a good person and a true hero. \nAeon Girl set to learning who she was with a will. \nIn an effort to fit in among the other students, she \ntook on a new name: “Windy” because she liked \nthe way the wind was everywhere and nowhere, \nand “Farrum” because it was Lifeline’s clan name. \nShe was one of the first students at the Freedom \nAcademy, and was a diligent if somewhat easily \ndistracted student. Her capacity for learning seems \nlimitless, but so do her interests. She’s still learning \nwhat she likes, and what she doesn’t like.\nAlias: Windy Farrum\nGender: Female\nAge: A Few Months\nHeight: 5’5” (usually)\nEyes: White\nHair: Silver\nSkin: Metallic\nBuild: Impressionable\nCostume/Equipment: Aeon Girl’s dark metallic \nskin and silvery hair speak to her cosmic origins, \nthough her innate orange and yellow outfit and \nsignature blue energy make her look eerily similar \nto a minion of OblivAeon, as opposed to her own \nperson.\nBackground: Blank Slate\nPower Source: Higher Power\nArchetype: Blaster\nPersonality: Naive\nAeon Girl\nHeroes</p>",
+          "biographyHtml": "<p>340\n340\nBiography \nDuring the fight against OblivAeon, one of the major \nthreats came from the Aeon Men, led by the scion \ncalled Aeon Master. Semi-autonomous splinters \nof OblivAeon\u2019s power that he shed when he was \ndealt damage, these minions engaged the heroes \nand wreaked havoc for their master. One hero was \nuniquely suited to destroying them \u2014 Tarogath, \nthe last Procitor. Known as the hero Lifeline, he \nabsorbed and directed the natural energy found in \nley lines. This natural energy absorption was further \naugmented by dark blood magic to the point \nwhere he could directly absorb the life essence \nof other beings. As the hordes of Aeon Men and \nAeon Master itself attacked the military base Fort \nAdamant, Lifeline hatched a plan with other heroes \nto absorb the entirety of Aeon Master\u2019s energy, \ncompletely nullifying the Aeon Men by ridding the \nworld of the force directing them. He managed to \nbarely survive doing so, but could not contain such a \nvast amount of cosmic power for long. He directed \nsome of it in an attack against OblivAeon directly, \nbut the remaining power demanded release.\nAfter the fight, Lifeline and his fellow endling \nSlamara tapped the power inside of him, releasing \nit to take on its own shape. He channeled all of \nit into a new being \u2014 not an Aeon Man, not a \ncreation of OblivAeon, but something born of \ncosmic energy, natural magic, and shaped by \nblood magic. Something entirely new. Thus, Aeon \nGirl came into existence. This new being had full \nawareness, consciousness, and access to knowledge \nof the cosmos that OblivAeon\u2019s power carried, but \nwas entirely her own being \u2014 pure power given \nshape. With a tangled history of terrible deeds for \nwhat he saw as the greater good, Lifeline knew he \nwas not the right teacher for this innocent creature. \nShe needed to learn how to survive in the universe \nwithout being warped into someone as twisted as \nLifeline saw himself to be. Knowing and respecting \nthe various heroes of Earth, he left this new entity \nwith them in the hopes that they could teach her \nhow to be a good person and a true hero. \nAeon Girl set to learning who she was with a will. \nIn an effort to fit in among the other students, she \ntook on a new name: \u201cWindy\u201d because she liked \nthe way the wind was everywhere and nowhere, \nand \u201cFarrum\u201d because it was Lifeline\u2019s clan name. \nShe was one of the first students at the Freedom \nAcademy, and was a diligent if somewhat easily \ndistracted student. Her capacity for learning seems \nlimitless, but so do her interests. She\u2019s still learning \nwhat she likes, and what she doesn\u2019t like.\nAlias: Windy Farrum\nGender: Female\nAge: A Few Months\nHeight: 5\u20195\u201d (usually)\nEyes: White\nHair: Silver\nSkin: Metallic\nBuild: Impressionable\nCostume/Equipment: Aeon Girl\u2019s dark metallic \nskin and silvery hair speak to her cosmic origins, \nthough her innate orange and yellow outfit and \nsignature blue energy make her look eerily similar \nto a minion of OblivAeon, as opposed to her own \nperson.\nBackground: Blank Slate\nPower Source: Higher Power\nArchetype: Blaster\nPersonality: Naive\nAeon Girl\nHeroes</p>",
           "sourcePages": {
             "attr": 338,
             "ability": 339,
@@ -2803,7 +2789,7 @@
           "alias": "Thiago Diaz",
           "gender": "Male",
           "age": "Mid-Teens (at death)",
-          "height": "5’ (usually)",
+          "height": "5\u2019 (usually)",
           "eyes": "None",
           "hair": "None",
           "skin": "None",
@@ -2816,7 +2802,7 @@
           "principles": [
             {
               "name": "Principle of The Gearhead",
-              "roleplaying": "You always know the general state of repair or function of an item of technology, whether it’s a simple toaster or an alien orbital defense system.",
+              "roleplaying": "You always know the general state of repair or function of an item of technology, whether it\u2019s a simple toaster or an alien orbital defense system.",
               "minorTwist": "What mechanical device just shorted out?",
               "majorTwist": "What machine just went terribly off the rails?"
             },
@@ -2837,7 +2823,7 @@
               "dieTypeKnown": true
             },
             {
-              "name": "Electricity",
+              "name": "Electricity (Ghost)",
               "dieType": "d8",
               "dieTypeKnown": true
             },
@@ -2847,7 +2833,17 @@
               "dieTypeKnown": true
             },
             {
-              "name": "Remote Viewing",
+              "name": "Part Detachment (Electronic)",
+              "dieType": "d6",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Power Suit (Electronic)",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Remote Viewing (Ghost)",
               "dieType": "d8",
               "dieTypeKnown": true
             }
@@ -2879,7 +2875,21 @@
               "name": "Calavera Wisp",
               "type": "A",
               "aux": "green",
-              "gameText": "your auxiliary sheet. Overcome using Technology. On a success, enter an Electronics form on",
+              "gameText": "Take a basic action using Intangibility. Then switch to your Ghost form on your auxiliary sheet.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Haunt Electronics",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Overcome using Technology. On a success, enter an Electronics form on your auxiliary sheet. Then, take a basic action with your Min die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2890,10 +2900,10 @@
               }
             },
             {
-              "name": "Haunt Electronics",
+              "name": "Polterheist",
               "type": "A",
               "aux": "green",
-              "gameText": "your auxiliary sheet. Then, take a basic action with your Min die. Attack using Intangibility and use your Max die. Then change to any available",
+              "gameText": "Attack using Intangibility and use your Max die. Then change to any available form.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2904,24 +2914,10 @@
               }
             },
             {
-              "name": "Polterheist",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Overcome a technological challenge. Use your Max die. You and each of form.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Principle of the Gearhead",
               "type": "A",
               "aux": "green",
-              "gameText": "your allies gain a hero point. Overcome using knowledge from your civilian life. Use your Max die. You",
+              "gameText": "Overcome a technological challenge. Use your Max die. You and each of your allies gain a hero point.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2935,7 +2931,21 @@
               "name": "Principle of the mask",
               "type": "A",
               "aux": "green",
-              "gameText": "and each of your allies gain a hero point. Boost yourself using Intangibility. Use your Max die. That bonus is persistent",
+              "gameText": "Overcome using knowledge from your civilian life. Use your Max die. You and each of your allies gain a hero point.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Absorbed Apparatus",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Boost yourself using Intangibility. Use your Max die. That bonus is persistent and exclusive.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2946,24 +2956,10 @@
               }
             },
             {
-              "name": "Absorbed Apparatus",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "and exclusive.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Electro-Field",
               "type": "A",
               "aux": "yellow",
-              "gameText": "Boost or Hinder multiple nearby targets using Electricity. Whenever you take an action using Awareness, you may reroll your Min die",
+              "gameText": "Boost or Hinder multiple nearby targets using Electricity.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2977,7 +2973,21 @@
               "name": "Sense the Unseen",
               "type": "I",
               "aux": "red",
-              "gameText": "Hinder yourself using Intangibility. Use your Min die. Recover health equal before determining effects.",
+              "gameText": "Whenever you take an action using Awareness, you may reroll your Min die before determining effects.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Stop and Refocus",
+              "type": "A",
+              "aux": "red",
+              "gameText": "Hinder yourself using Intangibility. Use your Min die. Recover health equal to your Max+Mid dice.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2988,10 +2998,10 @@
               }
             },
             {
-              "name": "Stop and Refocus",
-              "type": "A",
+              "name": "Quick Shift",
+              "type": "R",
               "aux": "red",
-              "gameText": "to your Max+Mid dice. When Attacked, change to any form before resolving the attack. Take a",
+              "gameText": "When Attacked, change to any form before resolving the attack. Take a minor twist.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -3000,23 +3010,9 @@
                 "boost": false,
                 "recover": false
               }
-            },
-            {
-              "name": "Quick Shift",
-              "type": "R",
-              "aux": "red",
-              "gameText": "minor twist.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
             }
           ],
-          "out": "",
+          "out": "Remove a bonus of your choice.",
           "statusDie": {
             "green": "d10",
             "yellow": "d8",
@@ -3030,7 +3026,7 @@
             "redLow": 1,
             "max": 25
           },
-          "biographyHtml": "<p>344\n344\nDivided Info\nAuxiliary Sheet\nMuerto has two different forms: one as a ghost, and one while haunting \ntechnology. He has a few forms he can assume depending on the technology \nthat he is haunting. While in ghost form, he has access to any Powers and \nQualities marked as Ghost. While in an electronics form, he has access to \nany Powers and Qualities marked as Electronic. He always has access to all \nhis other Powers and Qualities.</p><p>To take control of an electronic form, Muerto can use his Haunt Electronics \nability to enter one of the electronics forms below. To leave one of those \nforms and return to ghost form, he can use his Calavera Wisp ability. He \ncan also Attack and change to any form at a cost, using his Polterheist ability.</p><p>His electronics forms have different power dice than his ghost form. \nHe always has access to the Minuscule form (such as a cell phone or a \nremote control) and the Tough form (his standard metal body, or any \nother similarly durable form). Being in the Minuscule or Tough form do \nnot change any of his Powers or Qualities, and he is most frequently \nfound in his Tough form, the metal body he is depicted as inhabiting.</p><p>While in the Yellow or Red zone, he also gains access to the Towering \nform (a single massive piece of technology or a giant pile of parts). While \n in this form, his Qualities stay the same, but his Powers are altered from \nhis Green zone electronics forms, as listed below.\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTough Form\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTowering Form\nYELLOW ZONE\nGREEN ZONE\nPOWERS\nDIE TYPE\nAwareness\n Intangibility \nPart Detachment\nPower Suit\nICON\nNAME\nTYPE\nGAME TEXT\nSturdy Body\nI\nReduce any physical or energy damage you take by 1 \nwhile you are in the Green zone, 2 while in the Yellow \nzone, and 3 while in the Red zone.\nMinuscule Form\nMODE DESCRIPTION\nThe primary form that Muerto inhabits. It’s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn’t his standard body.\nICON\nNAME\nTYPE\nGAME TEXT\nSelf-Diagnostic\nA\nDefend using Power Suit. Use your Max die. Remove all \npenalties on you.\nMODE DESCRIPTION\nSomething small, like a cell phone, remote control, doomsday device activator, etc.\nMODE DESCRIPTION\nEither a large device, like a vehicle or a colossal machine, or a pile of tech all inhabited at once.\nICON\nNAME\nTYPE\nGAME TEXT\nTech Whirlwind\nA\nAttack multiple targets using Part Detachment. \nForms Key\nGhost:\n•Ghost Form\nElectronics:\n•Tough Form\n•Miniscule Form\n•Towering Form\nPOWERS\n DIE TYPE\nAwareness\n Electricity \nIntagibility\nRemote Viewing\nGhost Form \nGREEN ZONE\nHeroes</p>",
+          "biographyHtml": "<p>344\n344\nDivided Info\nAuxiliary Sheet\nMuerto has two different forms: one as a ghost, and one while haunting \ntechnology. He has a few forms he can assume depending on the technology \nthat he is haunting. While in ghost form, he has access to any Powers and \nQualities marked as Ghost. While in an electronics form, he has access to \nany Powers and Qualities marked as Electronic. He always has access to all \nhis other Powers and Qualities.</p><p>To take control of an electronic form, Muerto can use his Haunt Electronics \nability to enter one of the electronics forms below. To leave one of those \nforms and return to ghost form, he can use his Calavera Wisp ability. He \ncan also Attack and change to any form at a cost, using his Polterheist ability.</p><p>His electronics forms have different power dice than his ghost form. \nHe always has access to the Minuscule form (such as a cell phone or a \nremote control) and the Tough form (his standard metal body, or any \nother similarly durable form). Being in the Minuscule or Tough form do \nnot change any of his Powers or Qualities, and he is most frequently \nfound in his Tough form, the metal body he is depicted as inhabiting.</p><p>While in the Yellow or Red zone, he also gains access to the Towering \nform (a single massive piece of technology or a giant pile of parts). While \n in this form, his Qualities stay the same, but his Powers are altered from \nhis Green zone electronics forms, as listed below.\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTough Form\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTowering Form\nYELLOW ZONE\nGREEN ZONE\nPOWERS\nDIE TYPE\nAwareness\n Intangibility \nPart Detachment\nPower Suit\nICON\nNAME\nTYPE\nGAME TEXT\nSturdy Body\nI\nReduce any physical or energy damage you take by 1 \nwhile you are in the Green zone, 2 while in the Yellow \nzone, and 3 while in the Red zone.\nMinuscule Form\nMODE DESCRIPTION\nThe primary form that Muerto inhabits. It\u2019s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn\u2019t his standard body.\nICON\nNAME\nTYPE\nGAME TEXT\nSelf-Diagnostic\nA\nDefend using Power Suit. Use your Max die. Remove all \npenalties on you.\nMODE DESCRIPTION\nSomething small, like a cell phone, remote control, doomsday device activator, etc.\nMODE DESCRIPTION\nEither a large device, like a vehicle or a colossal machine, or a pile of tech all inhabited at once.\nICON\nNAME\nTYPE\nGAME TEXT\nTech Whirlwind\nA\nAttack multiple targets using Part Detachment. \nForms Key\nGhost:\n\u2022Ghost Form\nElectronics:\n\u2022Tough Form\n\u2022Miniscule Form\n\u2022Towering Form\nPOWERS\n DIE TYPE\nAwareness\n Electricity \nIntagibility\nRemote Viewing\nGhost Form \nGREEN ZONE\nHeroes</p>",
           "sourcePages": {
             "attr": 342,
             "ability": 343,
@@ -3048,7 +3044,7 @@
               },
               "green1": {
                 "name": "Tough Form",
-                "description": "The primary form that Muerto inhabits. It’s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn’t his standard body.",
+                "description": "The primary form that Muerto inhabits. It\u2019s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn\u2019t his standard body.",
                 "displayed": true,
                 "powers": [
                   {

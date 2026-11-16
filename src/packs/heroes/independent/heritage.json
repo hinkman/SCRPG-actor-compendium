@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Boost an ally by rolling your single History die.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -452,15 +452,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Boost using Leadership. Apply that bonus to all hero Attack and Overcome</p>"
+        "gameText": "<p>Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.</p>"
       },
       "effects": [],
       "folder": null,
@@ -494,13 +494,13 @@
         "icon": {
           "attack": true,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>actions until the start of your next turn. Attack using Leadership. Other nearby heroes in the Yellow or Red zone</p>"
+        "gameText": "<p>Boost using Leadership. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -532,15 +532,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>Overcome a challenge where you can organize other people. Use your Max Recover equal to your Min die.</p>"
+        "gameText": "<p>Attack using Leadership. Other nearby heroes in the Yellow or Red zone Recover equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -580,7 +580,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge that someone else younger already tried and failed.</p>"
+        "gameText": "<p>Overcome a challenge where you can organize other people. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -612,15 +612,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
-          "defend": true,
-          "overcome": false,
+          "attack": false,
+          "defend": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Use your Max die. You and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by</p>"
+        "gameText": "<p>Overcome a challenge that someone else younger already tried and failed. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -653,14 +653,14 @@
         "aux": "yellow",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>rolling your single Awareness die. Attack using Strength. The target of that Attack must take the Attack action</p>"
+        "gameText": "<p>When damaged by an environment target or a surprise Attack, Defend by rolling your single Awareness die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -692,15 +692,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>against you as its next turn, if possible. Boost yourself using Vitality, then either remove a penalty on yourself or</p>"
+        "gameText": "<p>Attack using Strength. The target of that Attack must take the Attack action against you as its next turn, if possible.</p>"
       },
       "effects": [],
       "folder": null,
@@ -732,15 +732,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>Recover using your Min die. When an opponent Attacks, you may become the target of the Attack and</p>"
+        "gameText": "<p>Boost yourself using Vitality, then either remove a penalty on yourself or Recover using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -775,12 +775,12 @@
           "attack": true,
           "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Defend by rolling your single Red zone die. Attack using Flight. Use your Max die. Then, Hinder that target using your</p>"
+        "gameText": "<p>When an opponent Attacks, you may become the target of the Attack and Defend by rolling your single Red zone die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -812,15 +812,15 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Mid+Min dice.</p>"
+        "gameText": "<p>Attack using Flight. Use your Max die. Then, Hinder that target using your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,

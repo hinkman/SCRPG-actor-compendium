@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Remove a bonus of your choice.</p>",
     "modeName": {
       "main": "Ghost Form",
       "green1": "Tough Form",
@@ -185,8 +185,8 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.qRNTFeFwlVtn6VSy"
     },
     {
-      "_id": "IyIowyOUvpI6BUKg",
-      "name": "Electricity",
+      "_id": "xVlBNlngEAC39pE9",
+      "name": "Electricity (Ghost)",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -215,7 +215,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.IyIowyOUvpI6BUKg"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.xVlBNlngEAC39pE9"
     },
     {
       "_id": "TZKpnCcK8xCCW6ag",
@@ -251,12 +251,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.TZKpnCcK8xCCW6ag"
     },
     {
-      "_id": "T6XGnjVbVnAt6tfn",
-      "name": "Remote Viewing",
+      "_id": "fPyGstTkhHDbFIgf",
+      "name": "Part Detachment (Electronic)",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -281,7 +281,73 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.T6XGnjVbVnAt6tfn"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.fPyGstTkhHDbFIgf"
+    },
+    {
+      "_id": "iwUzTF57l5nFXkWL",
+      "name": "Power Suit (Electronic)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.iwUzTF57l5nFXkWL"
+    },
+    {
+      "_id": "uJY3YLDwibIU6HwY",
+      "name": "Remote Viewing (Ghost)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.uJY3YLDwibIU6HwY"
     },
     {
       "_id": "RCJsfe6hPqCuBQI5",
@@ -421,13 +487,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your auxiliary sheet. Overcome using Technology. On a success, enter an Electronics form on</p>"
+        "gameText": "<p>Take a basic action using Intangibility. Then switch to your Ghost form on your auxiliary sheet.</p>"
       },
       "effects": [],
       "folder": null,
@@ -459,15 +525,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your auxiliary sheet. Then, take a basic action with your Min die. Attack using Intangibility and use your Max die. Then change to any available</p>"
+        "gameText": "<p>Overcome using Technology. On a success, enter an Electronics form on your auxiliary sheet. Then, take a basic action with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -499,15 +565,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome a technological challenge. Use your Max die. You and each of form.</p>"
+        "gameText": "<p>Attack using Intangibility and use your Max die. Then change to any available form.</p>"
       },
       "effects": [],
       "folder": null,
@@ -547,7 +613,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your allies gain a hero point. Overcome using knowledge from your civilian life. Use your Max die. You</p>"
+        "gameText": "<p>Overcome a technological challenge. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -581,13 +647,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and each of your allies gain a hero point. Boost yourself using Intangibility. Use your Max die. That bonus is persistent</p>"
+        "gameText": "<p>Overcome using knowledge from your civilian life. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -623,11 +689,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and exclusive.</p>"
+        "gameText": "<p>Boost yourself using Intangibility. Use your Max die. That bonus is persistent and exclusive.</p>"
       },
       "effects": [],
       "folder": null,
@@ -667,7 +733,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost or Hinder multiple nearby targets using Electricity. Whenever you take an action using Awareness, you may reroll your Min die</p>"
+        "gameText": "<p>Boost or Hinder multiple nearby targets using Electricity.</p>"
       },
       "effects": [],
       "folder": null,
@@ -702,12 +768,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "I",
-        "gameText": "<p>Hinder yourself using Intangibility. Use your Min die. Recover health equal before determining effects.</p>"
+        "gameText": "<p>Whenever you take an action using Awareness, you may reroll your Min die before determining effects.</p>"
       },
       "effects": [],
       "folder": null,
@@ -739,15 +805,15 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>to your Max+Mid dice. When Attacked, change to any form before resolving the attack. Take a</p>"
+        "gameText": "<p>Hinder yourself using Intangibility. Use your Min die. Recover health equal to your Max+Mid dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -779,7 +845,7 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -787,7 +853,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>minor twist.</p>"
+        "gameText": "<p>When Attacked, change to any form before resolving the attack. Take a minor twist.</p>"
       },
       "effects": [],
       "folder": null,
@@ -812,78 +878,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.Z8hrM0fQJMBoFYBZ"
     },
     {
-      "_id": "uc1FmDTwQZzhF4um",
+      "_id": "lTpTSsFbs8WncwyV",
       "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
         "dieType": "d10",
-        "aux": "green1",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.uc1FmDTwQZzhF4um"
-    },
-    {
-      "_id": "AtmqPH4Lnw1WQ2Jp",
-      "name": "Intangibility",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d10",
-        "aux": "green1",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 500000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.AtmqPH4Lnw1WQ2Jp"
-    },
-    {
-      "_id": "yALXEm9sFuGvP1t2",
-      "name": "Part Detachment",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d6",
         "aux": "green1",
         "selected": "",
         "description": ""
@@ -908,15 +908,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.yALXEm9sFuGvP1t2"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.lTpTSsFbs8WncwyV"
     },
     {
-      "_id": "NlvtzHGLCOwb7F5f",
-      "name": "Power Suit",
+      "_id": "LgEIBIZHZd4UecYT",
+      "name": "Intangibility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "green1",
         "selected": "",
         "description": ""
@@ -941,7 +941,73 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.NlvtzHGLCOwb7F5f"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.LgEIBIZHZd4UecYT"
+    },
+    {
+      "_id": "FA2BhSjZKGsRyr2E",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.FA2BhSjZKGsRyr2E"
+    },
+    {
+      "_id": "CUscZXcSriM1Be10",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.CUscZXcSriM1Be10"
     },
     {
       "_id": "zB5ibLVnjgyat5p2",
@@ -984,78 +1050,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.zB5ibLVnjgyat5p2"
     },
     {
-      "_id": "MFQAwRfnTjhusdM4",
+      "_id": "dAz5bpiGeAtjro7U",
       "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
         "dieType": "d10",
-        "aux": "green2",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 800000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.MFQAwRfnTjhusdM4"
-    },
-    {
-      "_id": "G6N90HRuKYjfWaq1",
-      "name": "Intangibility",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d10",
-        "aux": "green2",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 900000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.G6N90HRuKYjfWaq1"
-    },
-    {
-      "_id": "b35NN4cGZ3say0FQ",
-      "name": "Part Detachment",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d6",
         "aux": "green2",
         "selected": "",
         "description": ""
@@ -1080,15 +1080,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.b35NN4cGZ3say0FQ"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.dAz5bpiGeAtjro7U"
     },
     {
-      "_id": "VafnqjAiA7kpZW3L",
-      "name": "Power Suit",
+      "_id": "mLuXAt3ZqNXDB9Gi",
+      "name": "Intangibility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "green2",
         "selected": "",
         "description": ""
@@ -1113,7 +1113,73 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.VafnqjAiA7kpZW3L"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.mLuXAt3ZqNXDB9Gi"
+    },
+    {
+      "_id": "2fKzkSjy2yPUSltb",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.2fKzkSjy2yPUSltb"
+    },
+    {
+      "_id": "8BahbZGHs3R1GdMH",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.8BahbZGHs3R1GdMH"
     },
     {
       "_id": "KhzPurOS9qwv6cdN",
@@ -1156,78 +1222,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.KhzPurOS9qwv6cdN"
     },
     {
-      "_id": "H92EqGGVVc1zpOen",
+      "_id": "v3jKCMXofc6BMMgO",
       "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
         "dieType": "d6",
-        "aux": "yellow1",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 1200000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.H92EqGGVVc1zpOen"
-    },
-    {
-      "_id": "hzoAgYG9QcquaVwo",
-      "name": "Intangibility",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d10",
-        "aux": "yellow1",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 1300000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.hzoAgYG9QcquaVwo"
-    },
-    {
-      "_id": "qy3T9BjL9ECC4gDz",
-      "name": "Part Detachment",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d12",
         "aux": "yellow1",
         "selected": "",
         "description": ""
@@ -1252,11 +1252,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.qy3T9BjL9ECC4gDz"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.v3jKCMXofc6BMMgO"
     },
     {
-      "_id": "x1y9aEFWEdlpTh2f",
-      "name": "Power Suit",
+      "_id": "fzCsNskdRYM2Qw4U",
+      "name": "Intangibility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -1285,7 +1285,73 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.x1y9aEFWEdlpTh2f"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.fzCsNskdRYM2Qw4U"
+    },
+    {
+      "_id": "AxQkRuN9gz1PyF1O",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d12",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.AxQkRuN9gz1PyF1O"
+    },
+    {
+      "_id": "LdgwJAXd0v5f5Avo",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.LdgwJAXd0v5f5Avo"
     },
     {
       "_id": "fJtBgHiCXVkNLpat",

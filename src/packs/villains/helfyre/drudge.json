@@ -290,15 +290,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
           "hinder": true,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>number of targets Hindered this way. When Attacked, Defend yourself by rolling your single Presence die. If</p>"
+        "gameText": "<p>Hinder multiple targets using Infernal. Recover Health equal to the number of targets Hindered this way.</p>"
       },
       "effects": [],
       "folder": null,
@@ -331,14 +331,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": true,
           "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll. Attack using Close Combat. Use your Max die. Hinder that target with your</p>"
+        "gameText": "<p>When Attacked, Defend yourself by rolling your single Presence die. If this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll.</p>"
       },
       "effects": [],
       "folder": null,
@@ -378,7 +378,7 @@
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>Mid die. Recover Health equal to your Min die. When you would be Hindered or when an Attack would reduce you</p>"
+        "gameText": "<p>Attack using Close Combat. Use your Max die. Hinder that target with your Mid die. Recover Health equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -410,15 +410,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
-          "hinder": false,
+          "overcome": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>to 0 Health, reduce the penalty to -1 or reduce that damage to 1. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes.</p>"
+        "gameText": "<p>When you would be Hindered or when an Attack would reduce you to 0 Health, reduce the penalty to -1 or reduce that damage to 1. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice</p>"
       },
       "effects": [],
       "folder": null,
@@ -452,13 +452,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (When using this upgrade, Drudge has 10 additional Health.) If you have access to proper materials, automatically succeed at an</p>"
+        "gameText": "<p>at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Overcome in a situation involving harnessing magical forces.</p>"
+        "gameText": "<p>controlled version of that hero. (When using this upgrade, Drudge has 10 additional Health.) If you have access to proper materials, automatically succeed at an Overcome in a situation involving harnessing magical forces.</p>"
       },
       "effects": [],
       "folder": null,

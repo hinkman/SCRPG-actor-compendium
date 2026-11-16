@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Choose an ally. Until your next turn, that ally may reroll one of their dice by using a reaction.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -422,12 +422,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>equal to your Mid die. When a new target enters the scene close to you, you may Attack it by</p>"
+        "gameText": "<p>Attack multiple targets using Finesse. Use your Min die. Hinder each target equal to your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -459,15 +459,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
-          "boost": true,
+          "hinder": false,
+          "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>rolling your single Speed die. Boost or Hinder using Lightning Calculator. Use your Max die. If you roll</p>"
+        "gameText": "<p>When a new target enters the scene close to you, you may Attack it by rolling your single Speed die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -501,13 +501,13 @@
         "icon": {
           "attack": true,
           "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>When you successfully Overcome, you may end up anywhere in the current doubles, you may also Attack using your Mid die.</p>"
+        "gameText": "<p>Boost or Hinder using Lightning Calculator. Use your Max die. If you roll doubles, you may also Attack using your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -547,7 +547,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>environment. You and each of your allies gain a hero point. Overcome while applying specific scientific principles. Use your Max die.</p>"
+        "gameText": "<p>When you successfully Overcome, you may end up anywhere in the current environment. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -581,13 +581,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>You and each of your allies gain a hero point. After rolling during your turn, you may take 1 irreducible damage to reroll</p>"
+        "gameText": "<p>Overcome while applying specific scientific principles. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -623,11 +623,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>your entire dice pool. Boost yourself using Inventions. Then, either remove a penalty on yourself</p>"
+        "gameText": "<p>After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.</p>"
       },
       "effects": [],
       "folder": null,
@@ -663,11 +663,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>or recover using your Min die.</p>"
+        "gameText": "<p>Boost yourself using Inventions. Then, either remove a penalty on yourself or recover using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -702,12 +702,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost multiple targets using Inventions. Use your Max die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your</p>"
+        "gameText": "<p>Boost multiple targets using Inventions. Use your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -742,12 +742,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>Max+Mid dice.</p>"
+        "gameText": "<p>Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.</p>"
       },
       "effects": [],
       "folder": null,

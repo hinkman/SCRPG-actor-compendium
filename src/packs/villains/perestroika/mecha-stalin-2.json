@@ -226,7 +226,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -234,7 +234,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>other powers to . Then take a basic action using that power. On your turn, whenever you Attack a target you haven’t dealt damage</p>"
+        "gameText": "<p>Lower two of your powers by one die size each. Increase one of your . Then take a basic action using that power. other powers to</p>"
       },
       "effects": [],
       "folder": null,
@@ -274,7 +274,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>to yet this scene, also Boost yourself using your Max die. When a nearby ally would be Attacked, you may become the target of</p>"
+        "gameText": "<p>On your turn, whenever you Attack a target you haven’t dealt damage to yet this scene, also Boost yourself using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -314,7 +314,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>that Attack instead. You may use this reaction any number of times in a round by taking 1 irreducible damage for each time past the first. Attack using Strength. If you are Green status, use your Max die. If you</p>"
+        "gameText": "<p>When a nearby ally would be Attacked, you may become the target of that Attack instead. You may use this reaction any number of times in a round by taking 1 irreducible damage for each time past the first.</p>"
       },
       "effects": [],
       "folder": null,
@@ -350,11 +350,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another. Boost using Presence and use your Max die. Attack with your Mid die.</p>"
+        "gameText": "<p>Attack using Strength. If you are Green status, use your Max die. If you are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another.</p>"
       },
       "effects": [],
       "folder": null,
@@ -386,15 +386,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": true,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Mecha-Stalin has the use of cutting-edge military technology, including Defend with your Min die.</p>"
+        "gameText": "<p>Boost using Presence and use your Max die. Attack with your Mid die. Defend with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -419,8 +419,8 @@
       "_key": "!actors.items!R6vrD9HwUp2vEC8j.e3NkR5nGpRrcsdy1"
     },
     {
-      "_id": "NskJOZAqBdLeDnAF",
-      "name": "New Soviet",
+      "_id": "bnHnhfGKElQFxL7M",
+      "name": "New Soviet Hover-Tank",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -434,7 +434,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>a hover-tank lieutenant with the Sturdy, Bombard, and Minion</p>"
+        "gameText": "<p>Mecha-Stalin has the use of cutting-edge military technology, including a hover-tank lieutenant with the Sturdy, Bombard, and Minion Deployment abilities from page 236. (When using this upgrade, Mecha-Stalin has 15 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -456,11 +456,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.NskJOZAqBdLeDnAF"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.bnHnhfGKElQFxL7M"
     },
     {
-      "_id": "ll6K5VRyqiMcGJZh",
-      "name": "Hover-Tank",
+      "_id": "A6fXUnAd5W1NsuHn",
+      "name": "Master of Superiority",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -468,13 +468,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>Deployment abilities from page 236. (When using this upgrade, Mecha-Stalin has 15 additional Health.) As long as you are manifesting effects related to a power you have at</p>"
+        "type": "I",
+        "gameText": "<p>As long as you are manifesting effects related to a power you have at automatically succeed at an Overcome involving usage of those powers.</p>"
       },
       "effects": [],
       "folder": null,
@@ -496,47 +496,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.ll6K5VRyqiMcGJZh"
-    },
-    {
-      "_id": "iAd9XUNAsPjfUTbD",
-      "name": "Master of Superiority",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>automatically succeed at an Overcome involving usage of those powers.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.iAd9XUNAsPjfUTbD"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.A6fXUnAd5W1NsuHn"
     }
   ],
   "effects": [],

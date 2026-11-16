@@ -290,15 +290,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>start of your next turn with your Mid die.</p>"
+        "gameText": "<p>Attack one target using Close Combat. Use your Max+Min dice. Defend against all Attacks against you by all other targets until the start of your next turn with your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -338,7 +338,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Reduce all damage dealt to you by 2. At the start of your turn, gain a bonus equal to the number of</p>"
+        "gameText": "<p>Reduce all damage dealt to you by 2.</p>"
       },
       "effects": [],
       "folder": null,
@@ -373,12 +373,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>opponents that Attacked you since your last turn. Attack multiple close targets using Strength. Hinder each target using</p>"
+        "gameText": "<p>At the start of your turn, gain a bonus equal to the number of opponents that Attacked you since your last turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -410,15 +410,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your Min die. Increase all of Iron Curtain’s quality dice by one size, except for Iron Heir.</p>"
+        "gameText": "<p>Attack multiple close targets using Strength. Hinder each target using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Iron Curtain has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,</p>"
+        "gameText": "<p>Increase all of Iron Curtain’s quality dice by one size, except for Iron Heir. (When using this upgrade, Iron Curtain has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+        "gameText": "<p>If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
       },
       "effects": [],
       "folder": null,

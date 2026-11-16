@@ -283,8 +283,8 @@
       "_key": "!actors.items!hFPRXRnq04vI3fzW.tHh5NM1EciWXFmNg"
     },
     {
-      "_id": "LizzEI8kEXaHWSBl",
-      "name": "Contingencies Upon",
+      "_id": "PqxJVD3gb41HxQZo",
+      "name": "Contingencies Upon Contingencies",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>damage and reduce all your power dice by one size. If this reduces any</p>"
+        "gameText": "<p>Whenever you would be reduced to 0 or fewer Health, prevent that damage and reduce all your power dice by one size. If this reduces any dice to below a , you are knocked out.</p>"
       },
       "effects": [],
       "folder": null,
@@ -320,25 +320,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.LizzEI8kEXaHWSBl"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.PqxJVD3gb41HxQZo"
     },
     {
-      "_id": "PH3jnqocbVw7jXmr",
-      "name": "Contingencies",
+      "_id": "cu8M2ICE1F2kO9Mr",
+      "name": "Prepared For Anything",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": true,
           "boost": true,
           "recover": false
         },
-        "type": "I",
-        "gameText": "<p>dice to below a , you are knocked out. Boost using Inventions. Use your Max die. Hinder using your Mid die.</p>"
+        "type": "A",
+        "gameText": "<p>Boost using Inventions. Use your Max die. Hinder using your Mid die. Attack using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -360,11 +360,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.PH3jnqocbVw7jXmr"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.cu8M2ICE1F2kO9Mr"
     },
     {
-      "_id": "rG9xQfpRODPQqAPR",
-      "name": "Prepared For Anything",
+      "_id": "nwlU83xJ8lZ4Lb3w",
+      "name": "Ramshackle Creation",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using your Min die. Boost using Inventions and use your Max die, also Boost with your Mid</p>"
+        "gameText": "<p>Boost using Inventions and use your Max die, also Boost with your Mid die, and either make one of those bonuses persistent and exclusive or Attack with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -400,11 +400,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.rG9xQfpRODPQqAPR"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.nwlU83xJ8lZ4Lb3w"
     },
     {
-      "_id": "blFIiseCbuMFSICg",
-      "name": "Ramshackle Creation",
+      "_id": "uvo4qwhvNvbD8ben",
+      "name": "Tinfoil Components",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -417,8 +417,8 @@
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>die, and either make one of those bonuses persistent and exclusive or Attack with your Min die. Discard one of your bonuses to Defend against all Attacks against you</p>"
+        "type": "R",
+        "gameText": "<p>Discard one of your bonuses to Defend against all Attacks against you until your next turn, using that bonus value as the Defend result.</p>"
       },
       "effects": [],
       "folder": null,
@@ -440,25 +440,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.blFIiseCbuMFSICg"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.uvo4qwhvNvbD8ben"
     },
     {
-      "_id": "utVU1DejwAjk98nq",
-      "name": "Tinfoil Components",
+      "_id": "XJ4Fg5GpIDmLBAGv",
+      "name": "Unexpected Accuracy",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "R",
-        "gameText": "<p>until your next turn, using that bonus value as the Defend result. Attack using Gadgets. If you roll doubles, add that value to your Attack.</p>"
+        "type": "A",
+        "gameText": "<p>Attack using Gadgets. If you roll doubles, add that value to your Attack. If you roll triples, add all three dice to your Attack.</p>"
       },
       "effects": [],
       "folder": null,
@@ -480,11 +480,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.utVU1DejwAjk98nq"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.XJ4Fg5GpIDmLBAGv"
     },
     {
-      "_id": "Et49YygPkAkO9AgQ",
-      "name": "Unexpected Accuracy",
+      "_id": "EXubjYnNd4GcuBLj",
+      "name": "The Manta Body",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -495,10 +495,10 @@
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>Ray Manta built a bigger, semi-autonomous suit for himself, represented as a lieutenant with the Distance Attack, Escape Plan, Reliable, and If you roll triples, add all three dice to your Attack.</p>"
+        "gameText": "<p>Ray Manta built a bigger, semi-autonomous suit for himself, represented lieutenant with the Distance Attack, Escape Plan, Reliable, and as a Recovery abilities from page 236. (When using this upgrade, Ray Manta has 15 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -520,11 +520,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.Et49YygPkAkO9AgQ"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.EXubjYnNd4GcuBLj"
     },
     {
-      "_id": "goq263k1ubCfZo73",
-      "name": "The Manta Body",
+      "_id": "aix5THJeCs0pzEUe",
+      "name": "Master of Mad Science",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -535,10 +535,10 @@
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
-        "type": "A",
-        "gameText": "<p>Recovery abilities from page 236. (When using this upgrade, Ray Manta has 15 additional Health.) As long as you have access to materials, you can automatically succeed</p>"
+        "type": "I",
+        "gameText": "<p>As long as you have access to materials, you can automatically succeed when Overcoming a challenge by using scientific principles and inventions.</p>"
       },
       "effects": [],
       "folder": null,
@@ -560,47 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.goq263k1ubCfZo73"
-    },
-    {
-      "_id": "iShHX8ScEYoYuH0g",
-      "name": "Master of Mad Science",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>when Overcoming a challenge by using scientific principles and inventions.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.iShHX8ScEYoYuH0g"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.aix5THJeCs0pzEUe"
     }
   ],
   "effects": [],
