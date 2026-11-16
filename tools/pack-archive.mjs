@@ -262,6 +262,29 @@ function applyFormChanger(actor, hero, actorSeed) {
     return actor;
 }
 
+function escapeHtml(text) {
+    return String(text ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+}
+
+function environmentChallenges(twist) {
+    const challenges = Array.isArray(twist.challenges) ? twist.challenges : [];
+    return challenges
+        .filter((c) => c && typeof c.name === "string" && c.name.trim())
+        .map((c) => {
+            const boxes = Array.isArray(c.boxes)
+                ? c.boxes.map((v) => Boolean(v))
+                : [];
+            return {
+                name: c.name.trim(),
+                description: typeof c.description === "string" ? c.description : "",
+                boxes
+            };
+        });
+}
+
 function environmentTwistItem(actorId, actorSeed, twist, index) {
     const id = itemId(`${actorSeed}:twist:${index}:${slug(twist.name)}`);
     return attachItemKey(actorId, {
@@ -272,11 +295,9 @@ function environmentTwistItem(actorId, actorSeed, twist, index) {
         system: {
             type: twist.type || "greenminor",
             description: twist.description
-                ? `<p>${twist.description
-                    .replaceAll("&", "&amp;")
-                    .replaceAll("<", "&lt;")
-                    .replaceAll(">", "&gt;")}</p>`
-                : ""
+                ? `<p>${escapeHtml(twist.description)}</p>`
+                : "",
+            challenges: environmentChallenges(twist)
         },
         effects: [],
         folder: null,
@@ -543,6 +564,7 @@ function buildEnvironmentActor(env, folderId) {
     const id = foundryId(seed);
     const items = (env.twists || []).map((t, i) => environmentTwistItem(id, seed, t, i));
     const dice = env.dice || {};
+    const dieNames = env.dieNames || {};
     return {
         name: env.name,
         type: "environment",
@@ -551,9 +573,9 @@ function buildEnvironmentActor(env, folderId) {
             firstDie: dice.firstDie || "d10",
             secondDie: dice.secondDie || "d8",
             thirdDie: dice.thirdDie || "d6",
-            firstDieName: "Environment",
-            secondDieName: "Environment",
-            thirdDieName: "Environment",
+            firstDieName: dieNames.firstDieName || "Environment",
+            secondDieName: dieNames.secondDieName || "Environment",
+            thirdDieName: dieNames.thirdDieName || "Environment",
             description: env.descriptionHtml || ""
         },
         items,

@@ -4,11 +4,11 @@
   "img": "icons/svg/city.svg",
   "system": {
     "firstDie": "d10",
-    "secondDie": "d8",
-    "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "secondDie": "d6",
+    "thirdDie": "d8",
+    "firstDieName": "Experimental Tech",
+    "secondDieName": "Pervasive Red Dust",
+    "thirdDieName": "Cosmic Weather",
     "description": "<p>424\n424\nNations initially participating in the Wagner Mars \nBase project: United States, England, France, \nRussia, Germany, Canada, Italy, Israel, Japan, China \nCOSPAR ID: 2018-023F\nCall Sign: Beta, Mars Station\nCrew: up to 1500\nCurrently posted: 857\nLaunch pad: Kennedy LC-39 and CCAFS\nPortal teleportation link: Wagner Space Center, \nMegalopolis, CT\nAtmospheric Pressure: 101.3 kPa (14.7 psi; 1.0 \natm) oxygen 21%, nitrogen 79%\nAverage distance from earth: approximately 225 \nmillion km\nStation Power Source: Nuclear Reactor\nPortal Power Source: Classified\nResearch: Government and Civilian\nThe circumstances of the destruction of the \noriginal Wagner Mars Research Base are shrouded \nin mystery. All that is known is that the self-destruct \ncode was triggered from within the base during the \nglobal catastrophe caused by the cosmic entity now \nknown as OblivAeon. Exactly why the self-destruct \nwas triggered remain unknown to the general \npublic as the base black box was classified during \nthe multinational investigation, and representatives \nof the participating governments released a \njoint statement to a hostile alien occupation. \nThe only clue is a single transmission that was\nreleased prior to the base\ndestruction:\n \n“Scion took the place, but they dinna get ta keep \nit. Bydand!”, followed by a bagpipe song that has \nbeen identified as “Cock o’ the North.” Both are \nassociated with the Gordon Highlanders, a former \nScottish regiment of the British army, and Clan \nGordon of Scotland. The governments of Scotland \nand Great Britain, as well as representatives of Clan \nGordon, have disavowed all involvement with the \ndestruction of the base.\nIn 2018, the Wagner space program was \nreinstated as a joint venture between multiple \nnational space agencies and private research \nlaboratories as a two-phase program. The new \nWagner base was constructed largely on earth \nat the Wagner Space Center in Megalopolis, with \nonly a single Mars mission necessary to set up the \ndestination node for an experimental teleportation \ngate network. Using this gate, sections of the base \ncould be constructed on earth and sent through \nthe origin node at Wagner Space Center to the \ndestination gate on Mars. This also allowed most \nbase personnel and researchers to commute to \nMars instead of being stationed there on a semi-\npermanent basis.\nConstruction of the gate was made possible with \ntechnical assistance from the Maerynian embassy \nand Stinson labs, both of which had the condition \nthat no one nation could control the base or \nthe gate network. Therefore, the primary nation \npartners decided that a new multi-national agency \nwould be needed, and the The Mars Space Agency \n(MSA) was etablished. Composed of military and \ncivilian personnel from all member nations who \nhave renounced their former citizenship and \nvolunteered to be stationed on Mars permanently, \nthe MSA is responsible for safety, administration, \nand the future expansion of the base. At this time, \nMars is treated its own member nation within the \nproject, with future ownership and expansion of \nMars still being disputed.\nWagner II \nMars Base\n424\n424\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>The base’s energy matrix has taken</p>"
+        "description": "<p>The base’s energy matrix has taken some damage here, resulting in a dangerous lash of energy! Roll the environment dice. Attack one hero with the Max die and Attack another hero with the Mid die. Hinder both of them with the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>The fire-suppression system</p>"
+        "description": "<p>The fire-suppression system is on the fritz, disrupting visibility and mobility. Roll the environment dice. Hinder the closest hero with the Max die. Hinder the closest enemy with the Mid die. Defend all targets using the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -79,7 +81,26 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>The life-support systems</p>"
+        "description": "<p>The life-support systems have been compromised!</p>",
+        "challenges": [
+          {
+            "name": "Bring Life Support Back Online",
+            "description": "There’s enough oxygen left in the base, for now. The air scrubbers are offline, and that’s going to be a problem soon. Everytime the scene tracker advances, check off a Timer space as well. If the Timer runs out before the challenge is completed, advance the scene tracker to the second to the last space.",
+            "boxes": [
+              false,
+              false
+            ]
+          },
+          {
+            "name": "Timer",
+            "description": "",
+            "boxes": [
+              false,
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -109,7 +130,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>Your foes have gotten their</p>"
+        "description": "<p>Your foes have gotten their hands on some experimental devices and are using them against you! Roll the environment dice. Boost all enemy lieutenants and villains using the Mid die. Make those bonuses persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -139,7 +161,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>Unexpectedly, more foes</p>"
+        "description": "<p>Unexpectedly, more foes step through the portal to join the fray. Something must be going on back in Megalopolis! Roll the environment dice. Introduce a number of appropriate minions equal to the Max die of a die size equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +192,17 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>Something has broken the base’s</p>"
+        "description": "<p>Something has broken the base’s seal. The contained atmosphere is pouring out and red dust is pouring in!</p>",
+        "challenges": [
+          {
+            "name": "Seal the Leak",
+            "description": "Until this challenge is completed, every time the scene tracker advances, check off two spaces instead of just one.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -198,8 +231,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Some Martian scientists had</p>"
+        "type": "redminor",
+        "description": "<p>Some Martian scientists had been quarantined with an unidentified space sickness. The fight has broken that quarantine, and the disease seems to be airborne! Roll the environment dice. Hinder all targets using the Max die. Make those penalties persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -228,8 +262,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Micro-meteors pelt the base,</p>"
+        "type": "redminor",
+        "description": "<p>Micro-meteors pelt the base, damaging equipment and threatening life and limb. Roll the environment dice. Attack all targets with the Max die and Hinder all targets with the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -259,7 +294,17 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": "<p>The Wagner II Mars</p>"
+        "description": "<p>The Wagner II Mars Base has been constructed to self-destruct if anything would catastrophically destabilize the portal, thus threatening the city of Megalopolis and potentially the rest of planet Earth. Things are bad enough that the Protocol is kicking in!</p>",
+        "challenges": [
+          {
+            "name": "Timer",
+            "description": "Every time the scene tracker advances, mark a Timer space as well. If the Timer runs out before the scene ends, check off all of the remaining spaces on the scene tracker.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -296,9 +341,7 @@
         "intro": 424,
         "twists": 425
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

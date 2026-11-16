@@ -3,12 +3,12 @@
   "type": "environment",
   "img": "icons/svg/city.svg",
   "system": {
-    "firstDie": "d10",
-    "secondDie": "d8",
-    "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "firstDie": "d8",
+    "secondDie": "d6",
+    "thirdDie": "d10",
+    "firstDieName": "Cutting-Edge Facilities",
+    "secondDieName": "Heroes in Training",
+    "thirdDieName": "Superpowered Professors",
     "description": "<p>422\n422\nFull Name: Sentinels of Freedom Academy of \nHeroics and Justice\nMotto: Nulla enim minantis auctoritas apud \nliberos est\nMotto Translation: To freemen, threats are \npowerless.\nEstablished: 2018\nAdministrator: Paul Parsons\nLocation: Megalopolis, Connecticut, United States\nCampus Size: 960 acres\nStaff: 417 (including academic staff and operations \nemployees)\nStudents: 63 (full time), 109 (part time)\nNewspaper: The Silver Sentinel\nColors: Blue and Silver\nOpen to the Public from 9AM - 7PM\nTo inquire about space for meetings and events, \nplease contact: steph.dismas@SF_Plaza.com or \ncall 959-555-4376\nFreedom Plaza\nThe sprawling campus known as the Sentinels \nof Freedom Academy was established in the \naftermath of the devastating OblivAeon event as a \nplace where a new generation of heroes could be \ntrained, equipped, and brought together to protect \nagainst the threats of this world and beyond. It \nserves multiple purposes, from the headquarters \nof the Sentinels of Freedom hero team, to the \nFreedom Academy campus, to the research \nlaboratories of Dr. Stinson, and more. \nThe hero Heritage is the primary administrator \nof the Sentinels of Freedom Academy, though \nwith his responsibilities with G.L.O.B.A.L., he is \noften seen as a figurehead at Freedom Academy. \nEach of the heroes on the Sentinels of Freedom \nteam teach a variety of courses here, including \nsome adjunct team members, such as Time-Slinger, \nVisionary, and Argent Adept. Courses are taught \non a wide breadth of heroing topics — everything \nfrom Crimefighting 101 to Identifying Doomsday \nDevices and Color Coordinating Your Hero Outfit. \nFreedom Plaza is more than just a school for \nwould-be heroes. The Freedom Academy is \ncertainly part a major part of Freedom Plaza, but \nthe site of the destruction of Freedom Tower is \nhome to a vast network of interconnected sites. \nThere you can find Legacy Park, a memorial park \nto the heroes who have protected the city of \nMegalopolis and the world from all manner of \nthreats. The Akash’Flora tree grows there, as well. \nThere are museums, monuments, and more, all \nnear the campus of the Freedom Academy. \nHeroes of all ages and experience levels are \nencouraged to enroll in the Freedom Academy, \nboth for the sake of learning more and growing \nas a community of heroic individuals, as well as \nkeeping closely guarded records on as many \nheroes as possible. The registrar’s office has \nsome of the most intense security, as keeping the \nidentities and personal information of the heroes \nsecret and safe is of utmost importance, but the \nSentinels of Freedom also depend on having that \ninformation so they can best deploy heroes to deal \nwith unexpected threats all over the world. And \nFreedom Plaza is just the place from which to \ndeploy this new generation of heroes.\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>Dangerous creatures under study here</p>"
+        "description": "<p>Dangerous creatures under study here have broken loose! Roll the environment dice. Introduce a number of minions equal to the Mid die of a die size equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>The fight runs into a</p>"
+        "description": "<p>The fight runs into a group of potential students! Roll the environment dice. Hinder one hero using the Max die. If you roll doubles, use that die value as an attack against the nearest enemy.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -79,7 +81,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>The alert system is engaged. Roll</p>"
+        "description": "<p>The alert system is engaged. Roll the environment dice. Defend all targets equal to the Max die. Hinder all targets equal to the Mid die. Advance the scene tracker a number of spaces equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -109,7 +112,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>A classroom full of bewildered</p>"
+        "description": "<p>A classroom full of bewildered students. Roll the environment dice. Hinder all heroes using the Max die. If you roll doubles, use that die value as an attack against the nearest enemy.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -139,7 +143,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>Your foe found a weapons locker! Roll</p>"
+        "description": "<p>Your foe found a weapons locker! Roll the environment dice. Boost the nearest enemy with the Max die. Make that bonus persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +174,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>A hero in training</p>"
+        "description": "<p>A hero in training arrives. Roll the environment dice. Introduce a lieutenant to the scene that is a hero ally. The Min die size is the die size of the lieutenant. Use the Mid and Max dice on this chart to determine the name of the hero. (Or make up your own name.)</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -198,8 +204,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>The conflict has damaged a</p>"
+        "type": "redminor",
+        "description": "<p>The conflict has damaged a wing of the research labs here, releasing hazardous materials! Roll the environment dice. Hinder one hero with the Mid die, making the penalty persistent and exclusive. Hinder all targets in the scene with the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -228,8 +235,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Your foes have</p>"
+        "type": "redminor",
+        "description": "<p>Your foes have taken refuge in the training simulator, hiding amongst the holographic villain, and they have even hacked the simulator to work against you! Roll the environment dice. Defend all villains, minions, and lieutenants opposed to the heroes using the Max die. If you roll doubles, use that die value as an attack against each hero.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -259,7 +267,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": ""
+        "description": "<p>One of the defensive measures used for either protecting the school or in testing in one of the labs has been compromised! Roll the environment dice. Attack all targets with the Max die. Hinder all targets with the Mid die. If you roll doubles, apply those effects only to the heroes, and any villains Recover Health equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -296,9 +305,7 @@
         "intro": 422,
         "twists": 423
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

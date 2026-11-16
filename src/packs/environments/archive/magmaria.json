@@ -4,11 +4,11 @@
   "img": "icons/svg/city.svg",
   "system": {
     "firstDie": "d10",
-    "secondDie": "d8",
-    "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "secondDie": "d12",
+    "thirdDie": "d10",
+    "firstDieName": "Scorching Temperatures",
+    "secondDieName": "Magma",
+    "thirdDieName": "Subterranean Dwellers",
     "description": "<p>426\n426\nMagmarians first appeared on the surface in 1952, \nwhen a trio emerged from the Megalopolis sewers. \nTheir first act on the surface was to consume the \ncontents of a jewelry store. It was only due to the \nintervention of the hero Legacy that fatalities were \navoided and the jewels recovered. The Magmarians \nescaped into the sewers and were observed \nentering tunnels that collapsed behind them. \nContact over the following year was \nsporadic and frequently violent, as the \nMagmen seemed intent on injesting \nprecious metals and gems. This all \nchanged in 1984 when Dr. Meredith \nStinson created a Magmarian \ntranslation device.\nShe learned that Magmarians require crystalline \ncompounds to survive, and that earlier hostilities \nwere the result of lost harvesters attempting to find \na way to survive the “cold” of the surface world. \nFollowing this revelation, Dr. Stinson designed a \nsynthetic high energy crystal that could sustain them \nand led the first human expedition to Magmaria.\nSince then, several exploratory expeditions by \nvarious private and government organizations have \ngathered some information about the environment \nof this fascinating place. Magmaria is composed of \na network of caves and tunnels roughly halfway \nto the planet’s core. Geophysicists are currently \nresearching how a cave system at that depth and \npressure can have a temperature that can sustain \nhuman life, with the leading theory involving the \nunique mineral compounds known as “magma \ncrystals” acting as a kind of “heat battery”, creating \nzones of tolerable temperature around them. How \nthis process works is not well understood, as it is \nimpossible to recreate on the surface. Magmaria’s \natmosphere is even less understood, save that it has \none with roughly the same nitrogen/oxygen mix as \nthe surface world. \nMany questions about their culture remain \nunanswered. Their language appears to have \nsignificant non-verbal components, akin to telepathy, \nand their culture seems to revolve around the \nacquisition and ritualistic consumption of magma \ncrystals. They have been observed harvesting \nand consuming these crystals, led by “ember \nshamans”. The exact position of these shamans \nin the Magmarian hierarchy is unclear, but they \nseem to have a great deal of influence over the \nother Magmarians. Hieroglyphics and carvings on \nMagmarian structures indicate a complex religion, \nbut as of yet, no Magmarian shaman has ever \nanswered questions about their religious beliefs. \nThe land of Magmaria currently has no embassies \nor ambassadors to the surface world.\nStatus: Independent Nation\nFlag: None\nCapital: Unknown\nLanguage: Magmarian\nReligion: Magma Crystal-based Animism\nDemonym(s): Magmarian, Magmen\nGovernment: Theocracy\nLeader: Unknown\nWorld Organization Membership: None\nApproximate Area: 200,000 sq mi (321,868.8 km2)\nApproximate distance to the earth’s crust: 1802 \nmiles / 2900 km\nApproximate distance to the earth’s core: 2188 \nmiles / 3521 km\nApproximate temperature range: 129 F / 54 C - \n2200 F/ Kelvin\nEstimated Population: 230,000 \nTravel Advisory Level: Red: Do not travel\nMagmaria\n426\n426\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>It’s too hot here for surface dwellers.</p>"
+        "description": "<p>It’s too hot here for surface dwellers. Roll the environment dice. Hinder any targets that do not have a reason to be unaffected by the temperature using the Mid die. Make that penalty persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>A leader of the Magmarian</p>"
+        "description": "<p>A leader of the Magmarian people approaches. They seem interested in making peace with the surface dwellers. Introduce an Ember Shaman (page 411) to the scene. As long as that Ember Shaman is in play and at its full die size, Magmarian targets will not Attack heroes. However, if the Ember Shaman is ever lower than a or defeated, Magmarians consider heroes their foes.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -79,7 +81,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>The unique properties of</p>"
+        "description": "<p>The unique properties of heat and pressure in this realm creates Magma Crystals from anything broken down here. Destroy one mod on each target. For each mod destroyed this way, add a Crystal Collector minion (page 411) to the scene.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -109,7 +112,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>You doubt you</p>"
+        "description": "<p>You doubt you could survive this heat for much longer… Roll the environment dice. Attack all targets not immune to fire using the Mid die. Hinder any targets that do not have a reason to be unaffected by the temperature using the Max die. Make that penalty persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -139,7 +143,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>A spout of magma explodes</p>"
+        "description": "<p>A spout of magma explodes from a rock wall, showering everyone with deadly superheated liquid rock! Roll the environment dice. Attack the three closest targets with the Max die. Attack all other targets with the Mid die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +174,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>The rock tunnels have been</p>"
+        "description": "<p>The rock tunnels have been damaged by the conflict and are beginning to collapse in on themselves! Roll the environment dice. Introduce a number of Inner Core Tunneler minions (page 411) to the scene equal to the Mid die. Advance the scene tracker a number of spaces equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -198,8 +204,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>It is so hot in this area</p>"
+        "type": "redminor",
+        "description": "<p>It is so hot in this area that long-term exposure to the temperatures is likely to literally boil the blood in your body. Roll the environment dice. Attack all targets not immune to fire using the Max die. Hinder any targets not immune to fire using the Mid+Min dice. Make that penalty persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -228,8 +235,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Due to the chaos created by the</p>"
+        "type": "redminor",
+        "description": "<p>Due to the chaos created by the conflict, soldiers from the Magmarian warrior class have joined the fray to stop anyone who threatens the Magmarian people. Roll the environment dice. Introduce a number of Seismic Defender minions (page 412) to the scene equal to the Mid die. If there are no Ember Shamans in the scene, Attack all targets with the Max die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -259,7 +267,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": "<p>A massive Ur-Crystal</p>"
+        "description": "<p>A massive Ur-Crystal Behemoth leaps from a ledge, intent on killing any thermogenic life form! Introduce an Ur-Crystal Behemoth (page 412) to the scene. It acts next in the action order.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -296,9 +305,7 @@
         "intro": 426,
         "twists": 427
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {
