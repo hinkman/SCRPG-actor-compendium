@@ -116,32 +116,32 @@
     "scene": "green",
     "out": "",
     "modeName": {
-      "main": "",
-      "green1": "",
-      "green2": "",
-      "yellow1": "",
+      "main": "Ghost Form",
+      "green1": "Tough Form",
+      "green2": "Miniscule Form",
+      "yellow1": "Towering Form",
       "yellow2": "",
       "red1": ""
     },
     "modeDescription": {
-      "main": "",
-      "green1": "",
-      "green2": "",
-      "yellow1": "",
+      "main": "<p>Ghost form. Access Powers and Qualities marked Ghost, plus unmarked Powers/Qualities. Leave electronics forms with Calavera Wisp; enter them with Haunt Electronics or Polterheist.</p>",
+      "green1": "<p>The primary form that Muerto inhabits. It’s sturdy, reliable, and reminds him of his dream to be a hero.</p><p>This form can also be used for a different, similarly sized form that isn’t his standard body.</p>",
+      "green2": "<p>Something small, like a cell phone, remote control, doomsday device activator, etc.</p>",
+      "yellow1": "<p>Either a large device, like a vehicle or a colossal machine, or a pile of tech all inhabited at once.</p>",
       "yellow2": "",
       "red1": ""
     },
     "modeDisplayed": {
-      "main": false,
-      "green1": false,
-      "green2": false,
-      "yellow1": false,
+      "main": true,
+      "green1": true,
+      "green2": true,
+      "yellow1": true,
       "yellow2": false,
       "red1": false
     },
     "modular": false,
-    "powerless": false,
-    "formchanger": false,
+    "powerless": true,
+    "formchanger": true,
     "divided": false,
     "dividedPsyche": false,
     "dividedStatus": false,
@@ -185,8 +185,8 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.qRNTFeFwlVtn6VSy"
     },
     {
-      "_id": "xVlBNlngEAC39pE9",
-      "name": "Electricity (Ghost)",
+      "_id": "IyIowyOUvpI6BUKg",
+      "name": "Electricity",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -215,7 +215,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.xVlBNlngEAC39pE9"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.IyIowyOUvpI6BUKg"
     },
     {
       "_id": "TZKpnCcK8xCCW6ag",
@@ -251,12 +251,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.TZKpnCcK8xCCW6ag"
     },
     {
-      "_id": "fPyGstTkhHDbFIgf",
-      "name": "Part Detachment (Electronic)",
+      "_id": "T6XGnjVbVnAt6tfn",
+      "name": "Remote Viewing",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d6",
+        "dieType": "d8",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -281,73 +281,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.fPyGstTkhHDbFIgf"
-    },
-    {
-      "_id": "iwUzTF57l5nFXkWL",
-      "name": "Power Suit (Electronic)",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.iwUzTF57l5nFXkWL"
-    },
-    {
-      "_id": "uJY3YLDwibIU6HwY",
-      "name": "Remote Viewing (Ghost)",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 500000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.uJY3YLDwibIU6HwY"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.T6XGnjVbVnAt6tfn"
     },
     {
       "_id": "RCJsfe6hPqCuBQI5",
@@ -876,6 +810,522 @@
         "lastModifiedBy": null
       },
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.Z8hrM0fQJMBoFYBZ"
+    },
+    {
+      "_id": "uc1FmDTwQZzhF4um",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.uc1FmDTwQZzhF4um"
+    },
+    {
+      "_id": "AtmqPH4Lnw1WQ2Jp",
+      "name": "Intangibility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.AtmqPH4Lnw1WQ2Jp"
+    },
+    {
+      "_id": "yALXEm9sFuGvP1t2",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.yALXEm9sFuGvP1t2"
+    },
+    {
+      "_id": "NlvtzHGLCOwb7F5f",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "green1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.NlvtzHGLCOwb7F5f"
+    },
+    {
+      "_id": "zB5ibLVnjgyat5p2",
+      "name": "Sturdy Body",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green1",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.zB5ibLVnjgyat5p2"
+    },
+    {
+      "_id": "MFQAwRfnTjhusdM4",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.MFQAwRfnTjhusdM4"
+    },
+    {
+      "_id": "G6N90HRuKYjfWaq1",
+      "name": "Intangibility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.G6N90HRuKYjfWaq1"
+    },
+    {
+      "_id": "b35NN4cGZ3say0FQ",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.b35NN4cGZ3say0FQ"
+    },
+    {
+      "_id": "VafnqjAiA7kpZW3L",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "green2",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.VafnqjAiA7kpZW3L"
+    },
+    {
+      "_id": "KhzPurOS9qwv6cdN",
+      "name": "Self-Diagnostic",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green2",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend using Power Suit. Use your Max die. Remove all penalties on you.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.KhzPurOS9qwv6cdN"
+    },
+    {
+      "_id": "H92EqGGVVc1zpOen",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.H92EqGGVVc1zpOen"
+    },
+    {
+      "_id": "hzoAgYG9QcquaVwo",
+      "name": "Intangibility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.hzoAgYG9QcquaVwo"
+    },
+    {
+      "_id": "qy3T9BjL9ECC4gDz",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d12",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.qy3T9BjL9ECC4gDz"
+    },
+    {
+      "_id": "x1y9aEFWEdlpTh2f",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "yellow1",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.x1y9aEFWEdlpTh2f"
+    },
+    {
+      "_id": "fJtBgHiCXVkNLpat",
+      "name": "Tech Whirlwind",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow1",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack multiple targets using Part Detachment.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.fJtBgHiCXVkNLpat"
     }
   ],
   "effects": [],

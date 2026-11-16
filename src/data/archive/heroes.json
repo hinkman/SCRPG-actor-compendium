@@ -2837,7 +2837,7 @@
               "dieTypeKnown": true
             },
             {
-              "name": "Electricity (Ghost)",
+              "name": "Electricity",
               "dieType": "d8",
               "dieTypeKnown": true
             },
@@ -2847,17 +2847,7 @@
               "dieTypeKnown": true
             },
             {
-              "name": "Part Detachment (Electronic)",
-              "dieType": "d6",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Power Suit (Electronic)",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Remote Viewing (Ghost)",
+              "name": "Remote Viewing",
               "dieType": "d8",
               "dieTypeKnown": true
             }
@@ -3045,6 +3035,144 @@
             "attr": 342,
             "ability": 343,
             "bio": 344
+          },
+          "formChanger": {
+            "enabled": true,
+            "forms": {
+              "main": {
+                "name": "Ghost Form",
+                "description": "Ghost form. Access Powers and Qualities marked Ghost, plus unmarked Powers/Qualities. Leave electronics forms with Calavera Wisp; enter them with Haunt Electronics or Polterheist.",
+                "displayed": true,
+                "powers": [],
+                "abilities": []
+              },
+              "green1": {
+                "name": "Tough Form",
+                "description": "The primary form that Muerto inhabits. It’s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn’t his standard body.",
+                "displayed": true,
+                "powers": [
+                  {
+                    "name": "Awareness",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Intangibility",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Part Detachment",
+                    "dieType": "d6",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Power Suit",
+                    "dieType": "d8",
+                    "dieTypeKnown": true
+                  }
+                ],
+                "abilities": [
+                  {
+                    "name": "Sturdy Body",
+                    "type": "I",
+                    "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",
+                    "icon": {
+                      "attack": false,
+                      "defend": false,
+                      "overcome": false,
+                      "hinder": false,
+                      "boost": false,
+                      "recover": false
+                    }
+                  }
+                ]
+              },
+              "green2": {
+                "name": "Miniscule Form",
+                "description": "Something small, like a cell phone, remote control, doomsday device activator, etc.",
+                "displayed": true,
+                "powers": [
+                  {
+                    "name": "Awareness",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Intangibility",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Part Detachment",
+                    "dieType": "d6",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Power Suit",
+                    "dieType": "d8",
+                    "dieTypeKnown": true
+                  }
+                ],
+                "abilities": [
+                  {
+                    "name": "Self-Diagnostic",
+                    "type": "A",
+                    "gameText": "Defend using Power Suit. Use your Max die. Remove all penalties on you.",
+                    "icon": {
+                      "attack": false,
+                      "defend": true,
+                      "overcome": false,
+                      "hinder": false,
+                      "boost": false,
+                      "recover": false
+                    }
+                  }
+                ]
+              },
+              "yellow1": {
+                "name": "Towering Form",
+                "description": "Either a large device, like a vehicle or a colossal machine, or a pile of tech all inhabited at once.",
+                "displayed": true,
+                "powers": [
+                  {
+                    "name": "Awareness",
+                    "dieType": "d6",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Intangibility",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Part Detachment",
+                    "dieType": "d12",
+                    "dieTypeKnown": true
+                  },
+                  {
+                    "name": "Power Suit",
+                    "dieType": "d10",
+                    "dieTypeKnown": true
+                  }
+                ],
+                "abilities": [
+                  {
+                    "name": "Tech Whirlwind",
+                    "type": "A",
+                    "gameText": "Attack multiple targets using Part Detachment.",
+                    "icon": {
+                      "attack": true,
+                      "defend": false,
+                      "overcome": false,
+                      "hinder": false,
+                      "boost": false,
+                      "recover": false
+                    }
+                  }
+                ]
+              }
+            }
           }
         }
       ]
