@@ -3,12 +3,12 @@
   "type": "environment",
   "img": "icons/svg/city.svg",
   "system": {
-    "firstDie": "d10",
-    "secondDie": "d8",
-    "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "firstDie": "d8",
+    "secondDie": "d10",
+    "thirdDie": "d8",
+    "firstDieName": "City of the Future",
+    "secondDieName": "Akash'Flora Symbiosis",
+    "thirdDieName": "Monorail",
     "description": "<p>420\n420\nCountry: United States\nState: Connecticut\nSettled: circa 1691\nIncorporated as town of New Colchester: 1784\nIncorporated as city of New Colchester: 1876\nRenamed Megalopolis: July 4, 1976\nArea: 405 sq mi (1049 km2)\nElevation: 36 ft (11 m)\nPopulation: 8.5 million\nDemonyms: Megalopolan, Megalopolite\nTime zone: UTC−05:00 (EST)\nMegalopolis\nEstablished in 1876 as New Colchester, an \neconomic hub for local farming villages, the massive \ncity now known as Megalopolis has grown and \nflourished significantly over the decades. With a \nvibrant downtown and economic growth driven \nby a series of innovative infrastructure projects, \nMegalopolis has become a hub of finance, culture, \nand entrepreneurship. Thousands of tourists enjoy \nthe museums and restaurants along the historic \nriverfront every day, or take the monorail to the \narts district for cutting edge theatre and music.\nThe beautiful city skyline is dominated by a \nmassive tree, several orders of magnitude larger \nthan any other known tree on Earth. This tree is the \n“Akash’Flora” tree — a remnant of a terrible battle \nknown as the “OblivAeon Event”, which took place \nnot just across the entire planet, but throughout \nthe cosmos and across multiple realities as well. The \ntree grew to protect the city and its inhabitants \nfrom the forces of OblivAeon, and in the \nreconstruction efforts in the OblivAeon \naftermath, the tree became an integral \npart of Megalopolis. \nThe roots of the Akash’Flora tree run throughout \nthe infrastructure of the entire city, and the \nMegalopolis power grid is supplemented by the \ntree’s natural energy, making Megalopolis the most \n“green” city in the world.\nFor all of its beauty and positive qualities, \nMegalopolis has also been the site of great tragedy. \nNumerous villainous foes have attacked the city, \neach with their own agenda and plot. From Baron \nBlade’s attempt to bring down the moon to defeat \nhis greatest nemesis, to Citizen Dawn’s destruction \nof the wealth of the city, to Omnitron’s robotic \nrampage, to Grand Warlord Voss’s gene-bound \nalien invasion, Megalopolis is no stranger to the \nvillainous forces of the world.\nThough many major crises have struck the city \nover the decades, Megalopolis has been home to \ntwo generations of America’s finest hero, Legacy, \nand the hero team known as the Freedom Five, \nwho served as both guardians and inspirations \nto its citizens. They protected Megalopolis against \ncountless incursions and deadly plots, making \ntheir home in the Freedom Tower Headquarters. \nHowever, in the aftermath of the destruction of \nFreedom Tower during the OblivAeon event, much \nhas changed. \nRecently, the Freedom Five became something \nmore, renaming themselves the Sentinels of \nFreedom and taking on more of a role as teachers \nand stewards within their new headquarters and \noutreach location, Freedom Plaza. Megalopolis has \nalways had its heroes to protect it, and with the \nSentinels of Freedom based here, it always will.\n420\n420\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>Megalopolis Police officers show</p>"
+        "description": "<p>Megalopolis Police officers show up to help out. Roll the environment dice. Either use the Max die as an Overcome against a challenge in the scene or use the Min die as an Attack against all opponents of the heroes.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>The conflict is causing a mess of</p>"
+        "description": "<p>The conflict is causing a mess of the roadways. This is going to make things more complicated, especially for anyone trying to get around. Roll the environment dice as a Hinder using the Mid die against any heroes on foot in or near the streets.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -79,7 +81,17 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>A villain or minions thereof</p>"
+        "description": "<p>A villain or minions thereof have taken some civilians hostage!</p>",
+        "challenges": [
+          {
+            "name": "Save the civilians!",
+            "description": "Roll the environment dice. Hinder all heroes with the Min die. That penalty is persistent until this challenge is completed.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -109,7 +121,16 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>The danger has risen to a level</p>"
+        "description": "<p>The danger has risen to a level that the public has lost all faith in the heroes to save them. Roll the environment dice. Hinder each hero with the Mid die.</p>",
+        "challenges": [
+          {
+            "name": "Calm the crowd.",
+            "description": "Until this challenge is completed, on each environment turn, each hero must destroy one of their Bonuses.",
+            "boxes": [
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -139,7 +160,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>The press have arrived</p>"
+        "description": "<p>The press have arrived to cover whatever is going on, and though they’re giving positive press for the heroes, they’re still getting in the way. Roll the environment dice. Boost the hero who most recently acted with the Min die. Hinder all other heroes with the Max die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +191,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>The fighting has exposed a</p>"
+        "description": "<p>The fighting has exposed a major root section of the Akash’Flora tree! It would be bad for the tree and for the city if it gets damaged. Add a Lieutenant to the scene called “Root System”. On its turn, roll its die and Restore that much Health to the closest hero. If that Lieutenant is ever destroyed, advance the scene tracker one space. Then, roll the environment dice. Attack and Hinder each target in the scene using the Mid die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -198,8 +221,17 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>An innocent Megalopolis</p>"
+        "type": "redminor",
+        "description": "<p>An innocent Megalopolis citizen is directly in harm’s way! Can you get to them in time?</p>",
+        "challenges": [
+          {
+            "name": "Save the citizen",
+            "description": "If this challenge is not completed before the next environment turn, roll the environment dice. Hinder all heroes with the Mid die.",
+            "boxes": [
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -228,8 +260,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Megalopolis has devolved</p>"
+        "type": "redminor",
+        "description": "<p>Megalopolis has devolved to chaos! Roll the environment dice. Hinder each hero with the Max die. Boost each villain and their minions and lieutenants with the Mid die. Attack each hero with the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -259,7 +292,16 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": "<p>A monorail car has been</p>"
+        "description": "<p>A monorail car has been knocked loose from the tracks!</p>",
+        "challenges": [
+          {
+            "name": "Prevent the monorail car from crashing to the ground",
+            "description": "If this challenge is not completed before the next Environment turn, the resulting explosion is devastating. Roll the environment dice. Attack each target in the scene with the Max+Min dice. Hinder each surviving target with the Mid die. That penalty is persistent and exclusive.",
+            "boxes": [
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -296,9 +338,7 @@
         "intro": 420,
         "twists": 421
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

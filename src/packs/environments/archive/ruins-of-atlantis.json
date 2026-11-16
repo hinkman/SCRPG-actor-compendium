@@ -3,12 +3,12 @@
   "type": "environment",
   "img": "icons/svg/city.svg",
   "system": {
-    "firstDie": "d10",
-    "secondDie": "d8",
-    "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "firstDie": "d8",
+    "secondDie": "d10",
+    "thirdDie": "d12",
+    "firstDieName": "Mystical Defenses",
+    "secondDieName": "Guardian Kraken",
+    "thirdDieName": "Atlantean Font of Power",
     "description": "<p>430\n430\nLocation: South Atlantic Ocean\nCoordinates: 34° 37’ 59” N, 12° 16’ 57’’ W\nDepth: 5698m (18694 feet)\nType: City/Magical Ward\nArea: approximately 73 ha (180 acres)\nAccessible area: approximately 40 ha (98 acres)\nFounded: unknown\nAbandoned: unknown\nCause of abandonment: unknown\nUNESCO World Heritage Site\nOfficial name: Archaeological area of Atlantis\nType: Scientific, cultural, technological\nDesignated: 2019\nRegion: International\nResearchers: 14\nKrakens: 1\nKraken Tentacles: Uncountable\nRuins of\nAtlantis\nResearchers have known about the existence \nof the place called Atlantis for years, but traveling \nto the bottom of the Atlantic Ocean has made \narchaeological expeditions prohibitively difficult. \nThe waters around Atlantis is patrolled by an \naggressive cephalopod of unknown classification, \nand while the ruins are sealed and pressurized by \nsome ancient unknowable technology, researchers \nwould have to contend with the ruin’s still-active \ninternal defenses, powered by Atlantean artifacts \nwhich defy all scientific explanation. \nDespite these challenges, a multinational team \nof researchers has set up a base within the ruins \nthemselves, protected by a pressurized water \nbarrier around the site. The crews of the Atlantis \nexpeditions have learned a healthy respect for the \nkraken, who seems content to lurk about near the \nedges of the water barrier, but will reach into the \ncomplex if it considers the ruins threatened in any \nway. Still, deep within the ruins, archaeologists are \nfinding evidence that challenges all conventional \ntheories on human evolution and civilization. \nHistorians estimate that both the founding \nand abandonment of Atlantis occurred many \nthousands of years before the earliest known \nhuman settlement of Jebel Irhoud, potentially just \nunder a million years before the human civilization \nof Mesopotamia. Indeed, it seems the citizens of \nAtlantis were creating complex technologies about \nthe same time as Neanderthals were learning that \nstones could be used to hit things. \nAtlantean magic is so far beyond current \nunderstanding that even to those who are familiar \nwith the weaving of arcane energies cannot \naccount for how it worked, making the fall of \ntheir society all the more perplexing. They could \nseal their city in such a way that it would survive \nsinking to the bottom of the ocean, but why? What \npossible catastrophe could cause an entire culture \nto abandon their city?\nWhen the Atlanteans left their city, it seems they \ntook the secrets of their ancient magic with them. \nWhile we can examine their marvels and learn \nstaggering truths about our own history, there are \nsome secrets that seem to have been lost forever.\n430\n430\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>Roll the environment dice.</p>"
+        "description": "<p>Roll the environment dice. Hinder three targets nearest the water barrier using the Mid die. Introduce a number of Kraken Tentacles to the scene equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,17 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>A stray projectile or</p>"
+        "description": "<p>A stray projectile or spark of energy has disrupted the water barrier.</p>",
+        "challenges": [
+          {
+            "name": "Stabilize the Barrier",
+            "description": "Until this challenge is resolved, all actions made here have a -1 penalty.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -79,7 +90,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>Giant crystalline pillars pulse with</p>"
+        "description": "<p>Giant crystalline pillars pulse with energy, radiating waves of power. Until the end of the scene, increase all of the Power dice of the nearest hero and villain by one size.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -109,7 +121,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>Roll the environment dice.</p>"
+        "description": "<p>Roll the environment dice. Hinder three targets near entryways or exits using the Max die. Introduce a number of Kraken Tentacles to the scene equal to the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -139,7 +152,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>A magical ward has been</p>"
+        "description": "<p>A magical ward has been activated with bizarre effect! Roll the environment dice. Hinder a target with the Max die. That penalty is persistent and exclusive. If you roll doubles, Attack that target with the rolled value. However, if you roll triples, neither Hinder nor Attack that target. Instead, Boost that target with the rolled value. That bonus is persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +183,26 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>A segment of the water</p>"
+        "description": "<p>A segment of the water barrier begins to flicker, signaling its impending failure.</p>",
+        "challenges": [
+          {
+            "name": "Fix the Water Barrier",
+            "description": "Every time the scene tracker advances, check off a Timer space as well. If the Timer runs out before the challenge is resolved, roll the environment dice. Attack all targets not in sealed structures with the Mid+Min dice. Hinder those targets with the Max dice. That penalty is persistent until the target gets inside a sealed structure. The Ruins of Atlantis are once again full of water, and the scientific research is paused if not entirely ruined.",
+            "boxes": [
+              false,
+              false
+            ]
+          },
+          {
+            "name": "Timer",
+            "description": "",
+            "boxes": [
+              false,
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -198,8 +231,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Roll the environment dice.</p>"
+        "type": "redminor",
+        "description": "<p>Roll the environment dice. Attack three targets near entryways or exits using the Max+Min dice. Hinder three targets near entryways or exits using the Max+Mid dice. Introduce a number of Kraken Tentacles to the scene equal to the Mid+Min dice.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -228,8 +262,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>Something has gone awry</p>"
+        "type": "redminor",
+        "description": "<p>Something has gone awry with the Atlantean defenses. They are now acting as if one of your foes somehow belongs there, providing your foe with protection and power! Roll the environment dice. Defend the most powerful or otherwise notable enemy in the scene using the Max die. Boost that enemy using the Mid+Min dice. That bonus is persistent and exclusive.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -259,7 +294,17 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": "<p>With a thrumming</p>"
+        "description": "<p>With a thrumming sound, a translucent green aura fills the area, slowing the minds of all within.</p>",
+        "challenges": [
+          {
+            "name": "Disable the Field",
+            "description": "Until this challenge is resolved, all heroes lose access to all of their Reaction and Inherent abilities.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -296,9 +341,7 @@
         "intro": 430,
         "twists": 431
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

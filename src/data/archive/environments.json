@@ -7,61 +7,106 @@
         {
           "name": "Public Defenders",
           "type": "greenminor",
-          "description": "Megalopolis Police officers show"
+          "description": "Megalopolis Police officers show up to help out. Roll the environment dice. Either use the Max die as an Overcome against a challenge in the scene or use the Min die as an Attack against all opponents of the heroes.",
+          "challenges": []
         },
         {
           "name": "Traffic Pileup",
           "type": "greenminor",
-          "description": "The conflict is causing a mess of"
+          "description": "The conflict is causing a mess of the roadways. This is going to make things more complicated, especially for anyone trying to get around. Roll the environment dice as a Hinder using the Mid die against any heroes on foot in or near the streets.",
+          "challenges": []
         },
         {
           "name": "Hostage Situation",
           "type": "greenmajor",
-          "description": "A villain or minions thereof"
+          "description": "A villain or minions thereof have taken some civilians hostage!",
+          "challenges": [
+            {
+              "name": "Save the civilians!",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Roll the environment dice. Hinder all heroes with the Min die. That penalty is persistent until this challenge is completed."
+            }
+          ]
         },
         {
           "name": "Panicking Crowds",
           "type": "yellowminor",
-          "description": "The danger has risen to a level"
+          "description": "The danger has risen to a level that the public has lost all faith in the heroes to save them. Roll the environment dice. Hinder each hero with the Mid die.",
+          "challenges": [
+            {
+              "name": "Calm the crowd.",
+              "boxes": [
+                false
+              ],
+              "description": "Until this challenge is completed, on each environment turn, each hero must destroy one of their Bonuses."
+            }
+          ]
         },
         {
           "name": "Paparazzi on the Scene",
           "type": "yellowminor",
-          "description": "The press have arrived"
+          "description": "The press have arrived to cover whatever is going on, and though they’re giving positive press for the heroes, they’re still getting in the way. Roll the environment dice. Boost the hero who most recently acted with the Min die. Hinder all other heroes with the Max die.",
+          "challenges": []
         },
         {
           "name": "Exposed Root System",
           "type": "yellowmajor",
-          "description": "The fighting has exposed a"
+          "description": "The fighting has exposed a major root section of the Akash’Flora tree! It would be bad for the tree and for the city if it gets damaged. Add a Lieutenant to the scene called “Root System”. On its turn, roll its die and Restore that much Health to the closest hero. If that Lieutenant is ever destroyed, advance the scene tracker one space. Then, roll the environment dice. Attack and Hinder each target in the scene using the Mid die.",
+          "challenges": []
         },
         {
           "name": "Impending Casualty",
-          "type": "redmajor",
-          "description": "An innocent Megalopolis"
+          "type": "redminor",
+          "description": "An innocent Megalopolis citizen is directly in harm’s way! Can you get to them in time?",
+          "challenges": [
+            {
+              "name": "Save the citizen",
+              "boxes": [
+                false
+              ],
+              "description": "If this challenge is not completed before the next environment turn, roll the environment dice. Hinder all heroes with the Mid die."
+            }
+          ]
         },
         {
           "name": "Rioting in the Streets",
-          "type": "redmajor",
-          "description": "Megalopolis has devolved"
+          "type": "redminor",
+          "description": "Megalopolis has devolved to chaos! Roll the environment dice. Hinder each hero with the Max die. Boost each villain and their minions and lieutenants with the Mid die. Attack each hero with the Min die.",
+          "challenges": []
         },
         {
           "name": "Plummeting Monorail",
           "type": "redmajor",
-          "description": "A monorail car has been"
+          "description": "A monorail car has been knocked loose from the tracks!",
+          "challenges": [
+            {
+              "name": "Prevent the monorail car from crashing to the ground",
+              "boxes": [
+                false
+              ],
+              "description": "If this challenge is not completed before the next Environment turn, the resulting explosion is devastating. Roll the environment dice. Attack each target in the scene with the Max+Min dice. Hinder each surviving target with the Mid die. That penalty is persistent and exclusive."
+            }
+          ]
         }
       ],
       "dice": {
-        "firstDie": "d10",
-        "secondDie": "d8",
-        "thirdDie": "d6"
+        "firstDie": "d8",
+        "secondDie": "d10",
+        "thirdDie": "d8"
+      },
+      "dieNames": {
+        "firstDieName": "City of the Future",
+        "secondDieName": "Akash'Flora Symbiosis",
+        "thirdDieName": "Monorail"
       },
       "sourcePages": {
         "intro": 420,
         "twists": 421
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     },
     {
       "name": "Freedom Plaza",
@@ -70,61 +115,73 @@
         {
           "name": "Breakout",
           "type": "greenminor",
-          "description": "Dangerous creatures under study here"
+          "description": "Dangerous creatures under study here have broken loose! Roll the environment dice. Introduce a number of minions equal to the Mid die of a die size equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Campus Tour, Interrupted",
           "type": "greenminor",
-          "description": "The fight runs into a"
+          "description": "The fight runs into a group of potential students! Roll the environment dice. Hinder one hero using the Max die. If you roll doubles, use that die value as an attack against the nearest enemy.",
+          "challenges": []
         },
         {
           "name": "Campus Alert",
           "type": "greenmajor",
-          "description": "The alert system is engaged. Roll"
+          "description": "The alert system is engaged. Roll the environment dice. Defend all targets equal to the Max die. Hinder all targets equal to the Mid die. Advance the scene tracker a number of spaces equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Class is Cancelled!",
           "type": "yellowminor",
-          "description": "A classroom full of bewildered"
+          "description": "A classroom full of bewildered students. Roll the environment dice. Hinder all heroes using the Max die. If you roll doubles, use that die value as an attack against the nearest enemy.",
+          "challenges": []
         },
         {
           "name": "Found Arsenal",
           "type": "yellowminor",
-          "description": "Your foe found a weapons locker! Roll"
+          "description": "Your foe found a weapons locker! Roll the environment dice. Boost the nearest enemy with the Max die. Make that bonus persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "A New Hero on the Scene",
           "type": "yellowmajor",
-          "description": "A hero in training"
+          "description": "A hero in training arrives. Roll the environment dice. Introduce a lieutenant to the scene that is a hero ally. The Min die size is the die size of the lieutenant. Use the Mid and Max dice on this chart to determine the name of the hero. (Or make up your own name.)",
+          "challenges": []
         },
         {
           "name": "Containment Failure",
-          "type": "redmajor",
-          "description": "The conflict has damaged a"
+          "type": "redminor",
+          "description": "The conflict has damaged a wing of the research labs here, releasing hazardous materials! Roll the environment dice. Hinder one hero with the Mid die, making the penalty persistent and exclusive. Hinder all targets in the scene with the Min die.",
+          "challenges": []
         },
         {
           "name": "Hiding in the Training Simulator",
-          "type": "redmajor",
-          "description": "Your foes have"
+          "type": "redminor",
+          "description": "Your foes have taken refuge in the training simulator, hiding amongst the holographic villain, and they have even hacked the simulator to work against you! Roll the environment dice. Defend all villains, minions, and lieutenants opposed to the heroes using the Max die. If you roll doubles, use that die value as an attack against each hero.",
+          "challenges": []
         },
         {
           "name": "Experimental Defense System Gone Haywire",
           "type": "redmajor",
-          "description": ""
+          "description": "One of the defensive measures used for either protecting the school or in testing in one of the labs has been compromised! Roll the environment dice. Attack all targets with the Max die. Hinder all targets with the Mid die. If you roll doubles, apply those effects only to the heroes, and any villains Recover Health equal to the Min die.",
+          "challenges": []
         }
       ],
       "dice": {
-        "firstDie": "d10",
-        "secondDie": "d8",
-        "thirdDie": "d6"
+        "firstDie": "d8",
+        "secondDie": "d6",
+        "thirdDie": "d10"
+      },
+      "dieNames": {
+        "firstDieName": "Cutting-Edge Facilities",
+        "secondDieName": "Heroes in Training",
+        "thirdDieName": "Superpowered Professors"
       },
       "sourcePages": {
         "intro": 422,
         "twists": 423
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     },
     {
       "name": "Wagner II Mars Base",
@@ -133,61 +190,109 @@
         {
           "name": "Energy Flare",
           "type": "greenminor",
-          "description": "The base’s energy matrix has taken"
+          "description": "The base’s energy matrix has taken some damage here, resulting in a dangerous lash of energy! Roll the environment dice. Attack one hero with the Max die and Attack another hero with the Mid die. Hinder both of them with the Min die.",
+          "challenges": []
         },
         {
           "name": "Sprinkler Malfunction",
           "type": "greenminor",
-          "description": "The fire-suppression system"
+          "description": "The fire-suppression system is on the fritz, disrupting visibility and mobility. Roll the environment dice. Hinder the closest hero with the Max die. Hinder the closest enemy with the Mid die. Defend all targets using the Min die.",
+          "challenges": []
         },
         {
           "name": "Trouble in the Biosphere",
           "type": "greenmajor",
-          "description": "The life-support systems"
+          "description": "The life-support systems have been compromised!",
+          "challenges": [
+            {
+              "name": "Bring Life Support Back Online",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "There’s enough oxygen left in the base, for now. The air scrubbers are offline, and that’s going to be a problem soon. Everytime the scene tracker advances, check off a Timer space as well. If the Timer runs out before the challenge is completed, advance the scene tracker to the second to the last space."
+            },
+            {
+              "name": "Timer",
+              "boxes": [
+                false,
+                false,
+                false
+              ],
+              "description": ""
+            }
+          ]
         },
         {
           "name": "In the Wrong Hands",
           "type": "yellowminor",
-          "description": "Your foes have gotten their"
+          "description": "Your foes have gotten their hands on some experimental devices and are using them against you! Roll the environment dice. Boost all enemy lieutenants and villains using the Mid die. Make those bonuses persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Untimely Interference",
           "type": "yellowminor",
-          "description": "Unexpectedly, more foes"
+          "description": "Unexpectedly, more foes step through the portal to join the fray. Something must be going on back in Megalopolis! Roll the environment dice. Introduce a number of appropriate minions equal to the Max die of a die size equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Oxygen Leak",
           "type": "yellowmajor",
-          "description": "Something has broken the base’s"
+          "description": "Something has broken the base’s seal. The contained atmosphere is pouring out and red dust is pouring in!",
+          "challenges": [
+            {
+              "name": "Seal the Leak",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Until this challenge is completed, every time the scene tracker advances, check off two spaces instead of just one."
+            }
+          ]
         },
         {
           "name": "Quarantine Breach",
-          "type": "redmajor",
-          "description": "Some Martian scientists had"
+          "type": "redminor",
+          "description": "Some Martian scientists had been quarantined with an unidentified space sickness. The fight has broken that quarantine, and the disease seems to be airborne! Roll the environment dice. Hinder all targets using the Max die. Make those penalties persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Meteor Storm",
-          "type": "redmajor",
-          "description": "Micro-meteors pelt the base,"
+          "type": "redminor",
+          "description": "Micro-meteors pelt the base, damaging equipment and threatening life and limb. Roll the environment dice. Attack all targets with the Max die and Hinder all targets with the Min die.",
+          "challenges": []
         },
         {
           "name": "Emergency Portal Protocol",
           "type": "redmajor",
-          "description": "The Wagner II Mars"
+          "description": "The Wagner II Mars Base has been constructed to self-destruct if anything would catastrophically destabilize the portal, thus threatening the city of Megalopolis and potentially the rest of planet Earth. Things are bad enough that the Protocol is kicking in!",
+          "challenges": [
+            {
+              "name": "Timer",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Every time the scene tracker advances, mark a Timer space as well. If the Timer runs out before the scene ends, check off all of the remaining spaces on the scene tracker."
+            }
+          ]
         }
       ],
       "dice": {
         "firstDie": "d10",
-        "secondDie": "d8",
-        "thirdDie": "d6"
+        "secondDie": "d6",
+        "thirdDie": "d8"
+      },
+      "dieNames": {
+        "firstDieName": "Experimental Tech",
+        "secondDieName": "Pervasive Red Dust",
+        "thirdDieName": "Cosmic Weather"
       },
       "sourcePages": {
         "intro": 424,
         "twists": 425
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     },
     {
       "name": "Magmaria",
@@ -196,61 +301,73 @@
         {
           "name": "Very Hot",
           "type": "greenminor",
-          "description": "It’s too hot here for surface dwellers."
+          "description": "It’s too hot here for surface dwellers. Roll the environment dice. Hinder any targets that do not have a reason to be unaffected by the temperature using the Mid die. Make that penalty persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Magmarian Envoy",
           "type": "greenminor",
-          "description": "A leader of the Magmarian"
+          "description": "A leader of the Magmarian people approaches. They seem interested in making peace with the surface dwellers. Introduce an Ember Shaman (page 411) to the scene. As long as that Ember Shaman is in play and at its full die size, Magmarian targets will not Attack heroes. However, if the Ember Shaman is ever lower than a or defeated, Magmarians consider heroes their foes.",
+          "challenges": []
         },
         {
           "name": "Magma Crystallization",
           "type": "greenmajor",
-          "description": "The unique properties of"
+          "description": "The unique properties of heat and pressure in this realm creates Magma Crystals from anything broken down here. Destroy one mod on each target. For each mod destroyed this way, add a Crystal Collector minion (page 411) to the scene.",
+          "challenges": []
         },
         {
           "name": "Incredibly High Temperatures",
           "type": "yellowminor",
-          "description": "You doubt you"
+          "description": "You doubt you could survive this heat for much longer… Roll the environment dice. Attack all targets not immune to fire using the Mid die. Hinder any targets that do not have a reason to be unaffected by the temperature using the Max die. Make that penalty persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Magma Eruption",
           "type": "yellowminor",
-          "description": "A spout of magma explodes"
+          "description": "A spout of magma explodes from a rock wall, showering everyone with deadly superheated liquid rock! Roll the environment dice. Attack the three closest targets with the Max die. Attack all other targets with the Mid die.",
+          "challenges": []
         },
         {
           "name": "Structural Collapse",
           "type": "yellowmajor",
-          "description": "The rock tunnels have been"
+          "description": "The rock tunnels have been damaged by the conflict and are beginning to collapse in on themselves! Roll the environment dice. Introduce a number of Inner Core Tunneler minions (page 411) to the scene equal to the Mid die. Advance the scene tracker a number of spaces equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Hot Enough to Boil Stone",
-          "type": "redmajor",
-          "description": "It is so hot in this area"
+          "type": "redminor",
+          "description": "It is so hot in this area that long-term exposure to the temperatures is likely to literally boil the blood in your body. Roll the environment dice. Attack all targets not immune to fire using the Max die. Hinder any targets not immune to fire using the Mid+Min dice. Make that penalty persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Magmaria at War",
-          "type": "redmajor",
-          "description": "Due to the chaos created by the"
+          "type": "redminor",
+          "description": "Due to the chaos created by the conflict, soldiers from the Magmarian warrior class have joined the fray to stop anyone who threatens the Magmarian people. Roll the environment dice. Introduce a number of Seismic Defender minions (page 412) to the scene equal to the Mid die. If there are no Ember Shamans in the scene, Attack all targets with the Max die.",
+          "challenges": []
         },
         {
           "name": "Ancient Behemoth Rampage",
           "type": "redmajor",
-          "description": "A massive Ur-Crystal"
+          "description": "A massive Ur-Crystal Behemoth leaps from a ledge, intent on killing any thermogenic life form! Introduce an Ur-Crystal Behemoth (page 412) to the scene. It acts next in the action order.",
+          "challenges": []
         }
       ],
       "dice": {
         "firstDie": "d10",
-        "secondDie": "d8",
-        "thirdDie": "d6"
+        "secondDie": "d12",
+        "thirdDie": "d10"
+      },
+      "dieNames": {
+        "firstDieName": "Scorching Temperatures",
+        "secondDieName": "Magma",
+        "thirdDieName": "Subterranean Dwellers"
       },
       "sourcePages": {
         "intro": 426,
         "twists": 427
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     },
     {
       "name": "Mordengrad",
@@ -259,47 +376,65 @@
         {
           "name": "Battalion Patrols",
           "type": "greenminor",
-          "description": "Blade Battalions patrol the streets,"
+          "description": "Blade Battalions patrol the streets, protecting the Mordengradi people and keeping an eye out for any so-called heroes. Introduce Technical Trooper minions (page 407) to the scene.",
+          "challenges": []
         },
         {
           "name": "Dance With The Goat!",
           "type": "greenminor",
-          "description": "You find yourself in a festival,"
+          "description": "You find yourself in a festival, with Mordengradi citizens enjoying music, food, and dancing. You’re not welcome. Roll the environment dice. Hinder all heroes with the Max die.",
+          "challenges": []
         },
         {
           "name": "Battalion Leader",
           "type": "greenmajor",
-          "description": "A military leader has arrived to"
+          "description": "A military leader has arrived to coordinate forces against you. Introduce a Battalion Commander lieutenant (page 406) to the scene.",
+          "challenges": []
         },
         {
           "name": "Auto-Drone-Deployment",
           "type": "yellowminor",
-          "description": "Drones for observations"
+          "description": "Drones for observations and protection are nigh ubiquitous in Mordengrad. Introduce 2 Hover Drone minions (page 408) and 2 Defensive Drones (page 408) to the scene.",
+          "challenges": []
         },
         {
           "name": "In Memory of the Baron",
           "type": "yellowminor",
-          "description": "A soldier shouts"
+          "description": "A soldier shouts something in Mordengradi. You catch the name “Ramonat”. The other soldiers seem invigorated by the shout. Roll the environment dice. Boost all biological enemies in earshot with the Max die. Defend all biological enemies in earshot with the Min die.",
+          "challenges": []
         },
         {
           "name": "Loyalist",
           "type": "yellowmajor",
-          "description": "A Mordengradi citizen joins the fight against"
+          "description": "A Mordengradi citizen joins the fight against the foes of Baron Blade! Roll the environment dice. Introduce a lieutenant to the scene. The Max die size is the die size of the lieutenant. Use the Min and Mid dice on this chart to determine the name of the hero. (Or make up your own name.)",
+          "challenges": []
         },
         {
           "name": "Watching from the Shadows",
-          "type": "redmajor",
-          "description": "You have an"
+          "type": "redminor",
+          "description": "You have an inescapable feeling that you’re being watched… Introduce Stealth Trooper minions (page 407) to the scene. You may choose to not tell the players that the Stealth Troopers have been introduced yet.",
+          "challenges": []
         },
         {
           "name": "The People of Mordengrad",
-          "type": "redmajor",
-          "description": "In the midst of the"
+          "type": "redminor",
+          "description": "In the midst of the conflict, the inhabitants have taken to the streets to impede your progress. You are surrounded by innocent civilians, old men, women, and children. Proceed with care.",
+          "challenges": [
+            {
+              "name": "Avoid the Crowds",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Until this challenge is resolved, all heroes act as if they are in the green zone for purposes of access to and use of abilities and size of status dice."
+            }
+          ]
         },
         {
           "name": "All Hands Response",
           "type": "redmajor",
-          "description": "Mordengrad is going into"
+          "description": "Mordengrad is going into lockdown in response to your incursion. Introduce Roboticized Trooper minions (page 407) and 1 Walking Tank lieutenant (page 410) to the scene. always equals the number of heroes in a scene.",
+          "challenges": []
         }
       ],
       "dice": {
@@ -307,13 +442,16 @@
         "secondDie": "d8",
         "thirdDie": "d6"
       },
+      "dieNames": {
+        "firstDieName": "Techno-Industrial Optimization",
+        "secondDieName": "Blade Battalion Army",
+        "thirdDieName": "Loyal Citizens"
+      },
       "sourcePages": {
         "intro": 428,
         "twists": 429
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     },
     {
       "name": "Ruins of Atlantis",
@@ -322,61 +460,109 @@
         {
           "name": "The Kraken Seeks Prey",
           "type": "greenminor",
-          "description": "Roll the environment dice."
+          "description": "Roll the environment dice. Hinder three targets nearest the water barrier using the Mid die. Introduce a number of Kraken Tentacles to the scene equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Water Barrier Disturbances",
           "type": "greenminor",
-          "description": "A stray projectile or"
+          "description": "A stray projectile or spark of energy has disrupted the water barrier.",
+          "challenges": [
+            {
+              "name": "Stabilize the Barrier",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Until this challenge is resolved, all actions made here have a -1 penalty."
+            }
+          ]
         },
         {
           "name": "Activated Pillars",
           "type": "greenmajor",
-          "description": "Giant crystalline pillars pulse with"
+          "description": "Giant crystalline pillars pulse with energy, radiating waves of power. Until the end of the scene, increase all of the Power dice of the nearest hero and villain by one size.",
+          "challenges": []
         },
         {
           "name": "The Kraken Is Angered",
           "type": "yellowminor",
-          "description": "Roll the environment dice."
+          "description": "Roll the environment dice. Hinder three targets near entryways or exits using the Max die. Introduce a number of Kraken Tentacles to the scene equal to the Min die.",
+          "challenges": []
         },
         {
           "name": "Forgotten Magics",
           "type": "yellowminor",
-          "description": "A magical ward has been"
+          "description": "A magical ward has been activated with bizarre effect! Roll the environment dice. Hinder a target with the Max die. That penalty is persistent and exclusive. If you roll doubles, Attack that target with the rolled value. However, if you roll triples, neither Hinder nor Attack that target. Instead, Boost that target with the rolled value. That bonus is persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Water Barrier Fault",
           "type": "yellowmajor",
-          "description": "A segment of the water"
+          "description": "A segment of the water barrier begins to flicker, signaling its impending failure.",
+          "challenges": [
+            {
+              "name": "Fix the Water Barrier",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Every time the scene tracker advances, check off a Timer space as well. If the Timer runs out before the challenge is resolved, roll the environment dice. Attack all targets not in sealed structures with the Mid+Min dice. Hinder those targets with the Max dice. That penalty is persistent until the target gets inside a sealed structure. The Ruins of Atlantis are once again full of water, and the scientific research is paused if not entirely ruined."
+            },
+            {
+              "name": "Timer",
+              "boxes": [
+                false,
+                false,
+                false
+              ],
+              "description": ""
+            }
+          ]
         },
         {
           "name": "The Kraken Thrashes",
-          "type": "redmajor",
-          "description": "Roll the environment dice."
+          "type": "redminor",
+          "description": "Roll the environment dice. Attack three targets near entryways or exits using the Max+Min dice. Hinder three targets near entryways or exits using the Max+Mid dice. Introduce a number of Kraken Tentacles to the scene equal to the Mid+Min dice.",
+          "challenges": []
         },
         {
           "name": "Misapplied Protection",
-          "type": "redmajor",
-          "description": "Something has gone awry"
+          "type": "redminor",
+          "description": "Something has gone awry with the Atlantean defenses. They are now acting as if one of your foes somehow belongs there, providing your foe with protection and power! Roll the environment dice. Defend the most powerful or otherwise notable enemy in the scene using the Max die. Boost that enemy using the Mid+Min dice. That bonus is persistent and exclusive.",
+          "challenges": []
         },
         {
           "name": "Defensive Impairing Field",
           "type": "redmajor",
-          "description": "With a thrumming"
+          "description": "With a thrumming sound, a translucent green aura fills the area, slowing the minds of all within.",
+          "challenges": [
+            {
+              "name": "Disable the Field",
+              "boxes": [
+                false,
+                false
+              ],
+              "description": "Until this challenge is resolved, all heroes lose access to all of their Reaction and Inherent abilities."
+            }
+          ]
         }
       ],
       "dice": {
-        "firstDie": "d10",
-        "secondDie": "d8",
-        "thirdDie": "d6"
+        "firstDie": "d8",
+        "secondDie": "d10",
+        "thirdDie": "d12"
+      },
+      "dieNames": {
+        "firstDieName": "Mystical Defenses",
+        "secondDieName": "Guardian Kraken",
+        "thirdDieName": "Atlantean Font of Power"
       },
       "sourcePages": {
         "intro": 430,
         "twists": 431
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   ]
 }

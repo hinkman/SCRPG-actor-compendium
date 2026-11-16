@@ -16,6 +16,8 @@ OUT = ROOT / "src" / "data" / "archive"
 BOOK_TO_PDF = 8  # book page N → PDF page N+8 (1-based)
 VILLAIN_DICE_PATH = OUT / "villain-dice.json"
 MINION_DICE_PATH = OUT / "minion-dice.json"
+ENVIRONMENT_DICE_PATH = OUT / "environment-dice.json"
+CHECKBOX_CHAR = "\uf06f"
 
 
 def load_villain_dice() -> dict:
@@ -71,6 +73,36 @@ def apply_minion_die(member: dict, curated_by_page: dict) -> dict:
             "gaps": gaps,
         }
     return {**member, "typicalDie": die, "dieTypeKnown": True, "gaps": gaps}
+
+
+def load_environment_dice() -> dict:
+    """Curated environment trait names + die glyphs (by environment name)."""
+    if not ENVIRONMENT_DICE_PATH.exists():
+        return {}
+    try:
+        return json.loads(ENVIRONMENT_DICE_PATH.read_text())
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def environment_dice_fields(env_name: str, curated: dict) -> tuple[dict, list[str], list[str]]:
+    """Return dice dict, die name list, and gaps for one environment."""
+    traits = curated.get(env_name) or []
+    gaps: list[str] = []
+    if len(traits) != 3:
+        gaps.append(
+            f"Environment dice missing/incomplete in environment-dice.json for {env_name}."
+        )
+        return (
+            {"firstDie": "d10", "secondDie": "d8", "thirdDie": "d6"},
+            ["Environment", "Environment", "Environment"],
+            gaps,
+        )
+    keys = ("firstDie", "secondDie", "thirdDie")
+    dice = {keys[i]: traits[i]["die"] for i in range(3)}
+    names = [traits[i]["name"] for i in range(3)]
+    return dice, names, gaps
+
 
 CHROME = {
     "Playing", "the Game", "the", "Bullpen", "Adventure", "Issues", "Creating",
@@ -1331,6 +1363,178 @@ def extract_minions(doc: pymupdf.Document) -> dict:
     return {"teams": teams_list, "gaps": gaps}
 
 
+ENV_ZONE_HEADERS = {"Green", "Yellow", "Red", "Green ", "Yellow ", "Red "}
+ENV_MINOR_HEADERS = {"Minor Twists", "Minor Twist"}
+ENV_MAJOR_HEADERS = {"Major Twist", "Major Twists"}
+ENV_STOP_HEADERS = {"Environments", "ROLL", "MID DIE RESULT", "MAX DIE RESULT", "MIN DIE RESULT"}
+
+
+def _env_clean_line(raw: str) -> str:
+    """Strip PDF control chars / soft hyphens while preserving checkbox markers."""
+    text = raw.replace("\x07", "").replace("\u00ad", "")
+    return text.strip()
+
+
+def _env_is_chrome(line: str, env_name: str) -> bool:
+    if not line:
+        return True
+    if line in CHROME or re.fullmatch(r"\d{3}", line):
+        return True
+    if line == env_name:
+        return True
+    if line in ENV_STOP_HEADERS:
+        return True
+    return False
+
+
+def _env_is_twist_title(line: str) -> bool:
+    """True when a line starts a new Named Twist: body… entry."""
+    if CHECKBOX_CHAR in line:
+        return False
+    if ":" not in line or line.startswith("http"):
+        return False
+    title, _, _ = line.partition(":")
+    title = title.strip()
+    if not title or len(title) >= 60:
+        return False
+    if title in ENV_ZONE_HEADERS | ENV_MINOR_HEADERS | ENV_MAJOR_HEADERS | ENV_STOP_HEADERS:
+        return False
+    # Reject lines that are clearly mid-sentence (lowercase start after join artifacts).
+    if title[0].islower():
+        return False
+    return True
+
+
+def _env_parse_checkbox_line(line: str) -> dict | None:
+    """Parse '☐☐ Name' into {name, boxes} or None."""
+    if CHECKBOX_CHAR not in line:
+        return None
+    # Count leading checkbox glyphs (allow spaces between).
+    boxes = 0
+    i = 0
+    while i < len(line):
+        ch = line[i]
+        if ch == CHECKBOX_CHAR:
+            boxes += 1
+            i += 1
+            continue
+        if ch in " \t":
+            i += 1
+            continue
+        break
+    if boxes < 1:
+        return None
+    name = line[i:].strip(" \t\u200b")
+    name = re.sub(r"\s+", " ", name).strip()
+    if not name:
+        return None
+    return {"name": name, "boxes": [False] * boxes, "description": ""}
+
+
+def _env_split_twist_body(body_lines: list[str]) -> tuple[str, list[dict]]:
+    """Split twist body into description prose + challenges[] from checkbox lines."""
+    pre: list[str] = []
+    challenges: list[dict] = []
+    post: list[str] = []
+    seen_challenge = False
+    awaiting_name_wrap = False
+    for raw in body_lines:
+        line = _env_clean_line(raw)
+        if not line:
+            continue
+        challenge = _env_parse_checkbox_line(line)
+        if challenge:
+            seen_challenge = True
+            awaiting_name_wrap = True
+            challenges.append(challenge)
+            continue
+        # Wrapped challenge titles continue on the next line in lowercase
+        # (e.g. "Prevent the monorail car from crashing to" / "the ground").
+        if (
+            awaiting_name_wrap
+            and challenges
+            and line[:1].islower()
+            and CHECKBOX_CHAR not in line
+        ):
+            challenges[-1]["name"] = re.sub(
+                r"\s+", " ", f"{challenges[-1]['name']} {line}"
+            ).strip()
+            awaiting_name_wrap = False
+            continue
+        awaiting_name_wrap = False
+        if seen_challenge:
+            post.append(line)
+        else:
+            pre.append(line)
+    description = re.sub(r"\s+", " ", " ".join(pre)).strip()
+    post_text = re.sub(r"\s+", " ", " ".join(post)).strip()
+    if challenges and post_text:
+        # Shared mechanical text after checkbox titles belongs on the first challenge.
+        challenges[0]["description"] = post_text
+    return description, challenges
+
+
+def parse_environment_twists(twists_text: str, env_name: str) -> list[dict]:
+    """Parse full multi-line environment twists + embedded challenges."""
+    current_zone = "green"
+    current_major = False
+    twists: list[dict] = []
+    current: dict | None = None
+    body_lines: list[str] = []
+
+    def flush() -> None:
+        nonlocal current, body_lines
+        if not current:
+            body_lines = []
+            return
+        description, challenges = _env_split_twist_body(body_lines)
+        current["description"] = description
+        current["challenges"] = challenges
+        twists.append(current)
+        current = None
+        body_lines = []
+
+    for raw in twists_text.splitlines():
+        line = _env_clean_line(raw)
+        if _env_is_chrome(line, env_name):
+            # Stop once the roll-result chart / footer begins after twists.
+            if line in ENV_STOP_HEADERS and twists:
+                flush()
+                break
+            continue
+
+        zone_key = line.rstrip()
+        if zone_key in {"Green", "Yellow", "Red"}:
+            flush()
+            current_zone = zone_key.lower()
+            continue
+        if line in ENV_MINOR_HEADERS:
+            flush()
+            current_major = False
+            continue
+        if line in ENV_MAJOR_HEADERS:
+            flush()
+            current_major = True
+            continue
+
+        if _env_is_twist_title(line):
+            flush()
+            title, _, body = line.partition(":")
+            current = {
+                "name": title.strip(),
+                "type": f"{current_zone}{'major' if current_major else 'minor'}",
+            }
+            remainder = body.strip()
+            body_lines = [remainder] if remainder else []
+            continue
+
+        if current is not None:
+            body_lines.append(line)
+
+    flush()
+    return twists
+
+
 def extract_environments(doc: pymupdf.Document) -> dict:
     envs = [
         {"name": "Megalopolis", "intro": 420, "twists": 421},
@@ -1340,47 +1544,26 @@ def extract_environments(doc: pymupdf.Document) -> dict:
         {"name": "Mordengrad", "intro": 428, "twists": 429},
         {"name": "Ruins of Atlantis", "intro": 430, "twists": 431},
     ]
+    curated = load_environment_dice()
     out = []
     for env in envs:
         intro = page_text(book_page(doc, env["intro"]))
         twists_text = page_text(book_page(doc, env["twists"]))
-        twists = []
-        # Parse twist titles as "Name: text"
-        current_zone = "green"
-        current_major = False
-        for raw in twists_text.splitlines():
-            line = raw.strip()
-            if not line or line in CHROME or re.fullmatch(r"\d{3}", line):
-                continue
-            if line in {"Green", "Yellow", "Red"}:
-                current_zone = line.lower()
-                continue
-            if line == "Minor Twists":
-                current_major = False
-                continue
-            if line == "Major Twist":
-                current_major = True
-                continue
-            if ":" in line and not line.startswith("http"):
-                title, _, body = line.partition(":")
-                if len(title) < 60:
-                    twists.append(
-                        {
-                            "name": title.strip(),
-                            "type": f"{current_zone}{'major' if current_major else 'minor'}",
-                            "description": body.strip(),
-                        }
-                    )
+        twists = parse_environment_twists(twists_text, env["name"])
+        dice, die_names, gaps = environment_dice_fields(env["name"], curated)
         out.append(
             {
                 "name": env["name"],
                 "descriptionHtml": paragraphs(intro),
                 "twists": twists,
-                "dice": {"firstDie": "d10", "secondDie": "d8", "thirdDie": "d6"},
+                "dice": dice,
+                "dieNames": {
+                    "firstDieName": die_names[0],
+                    "secondDieName": die_names[1],
+                    "thirdDieName": die_names[2],
+                },
                 "sourcePages": {"intro": env["intro"], "twists": env["twists"]},
-                "gaps": [
-                    "Environment dice pool defaults to d10/d8/d6 when not printed as text.",
-                ],
+                "gaps": gaps,
             }
         )
     return {"environments": out}

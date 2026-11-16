@@ -6,9 +6,9 @@
     "firstDie": "d10",
     "secondDie": "d8",
     "thirdDie": "d6",
-    "firstDieName": "Environment",
-    "secondDieName": "Environment",
-    "thirdDieName": "Environment",
+    "firstDieName": "Techno-Industrial Optimization",
+    "secondDieName": "Blade Battalion Army",
+    "thirdDieName": "Loyal Citizens",
     "description": "<p>428\n428\n428\n428\nLocation: Eastern Europe\nCapital: Mordengrad\nLeader: Ivan Ramonat (Title: Baron Blade) \nAnthem: Mordengrad Amžinai (Mordengrad \nForever)\nMotto: We Write Our Own Future\nEthnic Groups: Mordengradi (100%)\nDemonyms: Mordengradi, Mordengradian\nPopulation: 40,000 (Approximate: the \nMordengradi government is fiercely secretive of \ncensus information and does not allow outside \nstudy of the country)\nType of Government: Meritocracy (Baron Blade is \nacknowledged by law to have the most merit)\nLanguages:Lithuanian, Latvian, Russian, English, \nMordengradi (local dialect)\nGDP: estimated 20 billion* (Mordengrad does \nnot export or import, so GDP approximation \nmay be incorrect)\nCurrency: The Mordengradi Luna\nTravel Advisory Level: Orange: Reconsider \nTraveling\nTravel Advisory Supplemental: As of Jan 1, 1998, \nit is illegal for anyone named “Paul” or “Pauline” to \nenter Mordengrad\nMordengrad\nHail Mordengrad! Mordengrad the invincible! \nMordengrad the technological wonder of the \nworld! Mordengrad, where no citizen goes hungry \nor lacks for a place to sleep, and where sickness \nand crime are things of the past. Mordengrad, \nwhere Ivan Ramonat leads with \nwisdom and strength!\nThese are the virtues claimed by Mordengrad’s \nambassadors, ignoring compulsory military service, \nforced labor, and doomsday device related risks. \nMordengrad’s ruler Ivan Ramonat, AKA the villain \nBaron Blade, has entered the world stage multiple \ntimes over the years. The baron’s flying fortress \nhas heralded raids by his loyal blade battalions, his \ninventions have brought the world to the brink of \ndisaster. Baron Blade has clashed with Legacy and \nthe heroes of the world, and countless times has \ndodged consequences, returning to the city where \nhe rules unquestioned. That may have ended now, \nwith his death during the fight against OblivAeon, \nwhere he heroically gave his life so that the Freedom \nFive could end the cosmic threat once and for all. \nHis body was returned to Mordengrad, so that the \ncity could mourn their beloved leader, but rumors \npersist that he still lives…\nWhatever the case, the engines of Mordengrad \nchurn on endlessly. The people have assignments \nto complete, orders to fill, and experiments to run. \nThe military remains in a state of readiness, and \ntheir walking tanks are ever vigilant against those \nwho would seek to enter uninvited. One thing has \nchanged, however. For the first time, Mordengrad \nis seeking people with substantial technical skills to \nimmigrate to Mordengrad, though their immigration \nofficers remain quiet about why Mordengrad \nis seeking an influx of mechanical, chemical, and \nelectrical engineers, particularly if they also have a \nbackground in applied science. \nFor better or for worse, the world will have to \nwait and see. Knowing what has \ncome from Mordengrad before, \nthere’s no telling what the baron \nis up to.\nEnvironments</p>"
   },
   "items": [
@@ -19,7 +19,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>Blade Battalions patrol the streets,</p>"
+        "description": "<p>Blade Battalions patrol the streets, protecting the Mordengradi people and keeping an eye out for any so-called heroes. Introduce Technical Trooper minions (page 407) to the scene.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -49,7 +50,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenminor",
-        "description": "<p>You find yourself in a festival,</p>"
+        "description": "<p>You find yourself in a festival, with Mordengradi citizens enjoying music, food, and dancing. You’re not welcome. Roll the environment dice. Hinder all heroes with the Max die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -79,7 +81,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "greenmajor",
-        "description": "<p>A military leader has arrived to</p>"
+        "description": "<p>A military leader has arrived to coordinate forces against you. Introduce a Battalion Commander lieutenant (page 406) to the scene.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -109,7 +112,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>Drones for observations</p>"
+        "description": "<p>Drones for observations and protection are nigh ubiquitous in Mordengrad. Introduce 2 Hover Drone minions (page 408) and 2 Defensive Drones (page 408) to the scene.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -139,7 +143,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowminor",
-        "description": "<p>A soldier shouts</p>"
+        "description": "<p>A soldier shouts something in Mordengradi. You catch the name “Ramonat”. The other soldiers seem invigorated by the shout. Roll the environment dice. Boost all biological enemies in earshot with the Max die. Defend all biological enemies in earshot with the Min die.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -169,7 +174,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "yellowmajor",
-        "description": "<p>A Mordengradi citizen joins the fight against</p>"
+        "description": "<p>A Mordengradi citizen joins the fight against the foes of Baron Blade! Roll the environment dice. Introduce a lieutenant to the scene. The Max die size is the die size of the lieutenant. Use the Min and Mid dice on this chart to determine the name of the hero. (Or make up your own name.)</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -198,8 +204,9 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>You have an</p>"
+        "type": "redminor",
+        "description": "<p>You have an inescapable feeling that you’re being watched… Introduce Stealth Trooper minions (page 407) to the scene. You may choose to not tell the players that the Stealth Troopers have been introduced yet.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -228,8 +235,18 @@
       "type": "environmentTwist",
       "img": "icons/svg/explosion.svg",
       "system": {
-        "type": "redmajor",
-        "description": "<p>In the midst of the</p>"
+        "type": "redminor",
+        "description": "<p>In the midst of the conflict, the inhabitants have taken to the streets to impede your progress. You are surrounded by innocent civilians, old men, women, and children. Proceed with care.</p>",
+        "challenges": [
+          {
+            "name": "Avoid the Crowds",
+            "description": "Until this challenge is resolved, all heroes act as if they are in the green zone for purposes of access to and use of abilities and size of status dice.",
+            "boxes": [
+              false,
+              false
+            ]
+          }
+        ]
       },
       "effects": [],
       "folder": null,
@@ -259,7 +276,8 @@
       "img": "icons/svg/explosion.svg",
       "system": {
         "type": "redmajor",
-        "description": "<p>Mordengrad is going into</p>"
+        "description": "<p>Mordengrad is going into lockdown in response to your incursion. Introduce Roboticized Trooper minions (page 407) and 1 Walking Tank lieutenant (page 410) to the scene. always equals the number of heroes in a scene.</p>",
+        "challenges": []
       },
       "effects": [],
       "folder": null,
@@ -296,9 +314,7 @@
         "intro": 428,
         "twists": 429
       },
-      "gaps": [
-        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

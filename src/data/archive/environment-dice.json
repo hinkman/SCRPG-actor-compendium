@@ -1,0 +1,32 @@
+{
+  "Megalopolis": [
+    { "name": "City of the Future", "die": "d8" },
+    { "name": "Akash'Flora Symbiosis", "die": "d10" },
+    { "name": "Monorail", "die": "d8" }
+  ],
+  "Freedom Plaza": [
+    { "name": "Cutting-Edge Facilities", "die": "d8" },
+    { "name": "Heroes in Training", "die": "d6" },
+    { "name": "Superpowered Professors", "die": "d10" }
+  ],
+  "Wagner II Mars Base": [
+    { "name": "Experimental Tech", "die": "d10" },
+    { "name": "Pervasive Red Dust", "die": "d6" },
+    { "name": "Cosmic Weather", "die": "d8" }
+  ],
+  "Magmaria": [
+    { "name": "Scorching Temperatures", "die": "d10" },
+    { "name": "Magma", "die": "d12" },
+    { "name": "Subterranean Dwellers", "die": "d10" }
+  ],
+  "Mordengrad": [
+    { "name": "Techno-Industrial Optimization", "die": "d10" },
+    { "name": "Blade Battalion Army", "die": "d8" },
+    { "name": "Loyal Citizens", "die": "d6" }
+  ],
+  "Ruins of Atlantis": [
+    { "name": "Mystical Defenses", "die": "d8" },
+    { "name": "Guardian Kraken", "die": "d10" },
+    { "name": "Atlantean Font of Power", "die": "d12" }
+  ]
+}
