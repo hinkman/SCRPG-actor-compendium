@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "5V9lvDoFhhpCtg1J",
-      "name": "45",
+      "_id": "hi4dDkrUhwWkheF7",
+      "name": "Infernal",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.5V9lvDoFhhpCtg1J"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.hi4dDkrUhwWkheF7"
     },
     {
-      "_id": "i2eI6khsNFUmDfOm",
-      "name": "Infernal",
+      "_id": "iohlSosAXqDLDcA2",
+      "name": "Presence",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.i2eI6khsNFUmDfOm"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.iohlSosAXqDLDcA2"
     },
     {
-      "_id": "M8GmN7qGXNFQ26x1",
-      "name": "Alertness",
+      "_id": "ukkikxh6SUZ9DFgs",
+      "name": "Vitality",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,16 +118,111 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.M8GmN7qGXNFQ26x1"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.ukkikxh6SUZ9DFgs"
     },
     {
-      "_id": "WDH58PIXLE7eJa66",
-      "name": "Presence",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "37tvXFFsVkFylsXE",
+      "name": "Alertness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.37tvXFFsVkFylsXE"
+    },
+    {
+      "_id": "sUznlTYvE6YqVUxI",
+      "name": "Blood Sucking Fiend",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.sUznlTYvE6YqVUxI"
+    },
+    {
+      "_id": "RsyOMCyRnPz2sIMz",
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.RsyOMCyRnPz2sIMz"
+    },
+    {
+      "_id": "pvSMnE6BQkJ9hZQk",
+      "name": "Persuasion",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -151,50 +246,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.WDH58PIXLE7eJa66"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.pvSMnE6BQkJ9hZQk"
     },
     {
-      "_id": "zDUEu2ndMcVjBPfh",
-      "name": "Blood Sucking Fiend",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "xEuWeX1tnro752oL",
+      "name": "0 Other Villains in the Scene",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.zDUEu2ndMcVjBPfh"
-    },
-    {
-      "_id": "wlzXsLMTRAPPzTcR",
-      "name": "Other Villains",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -205,7 +267,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -216,17 +279,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.wlzXsLMTRAPPzTcR"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.xEuWeX1tnro752oL"
     },
     {
-      "_id": "2yx5es6Va6PjnG5K",
-      "name": "0 Other Villains in the Scene",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "dTnEB9spEb4UA2oG",
+      "name": "1-2 Other Villains in the Scene",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -237,7 +300,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -248,17 +312,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.2yx5es6Va6PjnG5K"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.dTnEB9spEb4UA2oG"
     },
     {
-      "_id": "ERUrOuW31mmUxz7b",
-      "name": "1-2 Other Villains in the Scene",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "lLwKODb3OGbzUAHc",
+      "name": "3+ Other Villains in the Scene",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,7 +333,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -280,15 +345,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.ERUrOuW31mmUxz7b"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.lLwKODb3OGbzUAHc"
     },
     {
-      "_id": "EzkYwrS0R227QuDP",
+      "_id": "bEE9AXDDgzdw9gzC",
       "name": "Consume their Lifeforce",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +374,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +385,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.EzkYwrS0R227QuDP"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.bEE9AXDDgzdw9gzC"
     },
     {
-      "_id": "MHiqUiUQ7RbHjQTv",
+      "_id": "yZOOy0F8olOfzjTt",
       "name": "Enthralling Target",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -349,7 +414,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +425,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.MHiqUiUQ7RbHjQTv"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.yZOOy0F8olOfzjTt"
     },
     {
-      "_id": "1OPEeYN5j9a4zFro",
+      "_id": "1kzhrQTPPQHaLIcq",
       "name": "Feast on the Living",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -389,7 +454,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +465,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.1OPEeYN5j9a4zFro"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.1kzhrQTPPQHaLIcq"
     },
     {
-      "_id": "JSwI1b8gLuoYcwGm",
+      "_id": "VTNpJUnC9oup6emZ",
       "name": "Immortal Form",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +494,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +505,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.JSwI1b8gLuoYcwGm"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.VTNpJUnC9oup6emZ"
     },
     {
-      "_id": "6tez0WYImUnCp5Gs",
+      "_id": "9Av0R62fNknSArX0",
       "name": "Vampiric Aura",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +534,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +545,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.6tez0WYImUnCp5Gs"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.9Av0R62fNknSArX0"
     },
     {
-      "_id": "O9T9Zgg0vMg7K0a0",
+      "_id": "vzHZ7zT7QzWv25C9",
       "name": "Master of Mysticism",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +574,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +585,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!sQgF5VuqQda7QSHv.O9T9Zgg0vMg7K0a0"
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.vzHZ7zT7QzWv25C9"
     }
   ],
   "effects": [],
@@ -535,9 +600,9 @@
       "team": "helfyre",
       "sourcePage": 374,
       "biographyHtml": "<p>375\n375\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs a child, “Jasper Felwind” (he admits to no other \nname) grew up listening to his grandmother’s stories \nof her youth in Romania. She told of the yearly lottery \nfestival where one person became royalty for one year. \nStories of how everyone knew to lay salt across the \nwindowsill on festival night and close their ears as the \nRoyal Ladies of the Court of Blood came to collect \nthe previous festival ruler. As a young man seeking \nimmortality and riches, he sought out the village, taking \nthe place of that year’s king so he could bargain with \nthe Court to join them. He soon learned his folly. After \nyears of washing the Court’s halls, he decided that \nstaying in the Court as a laborer and source of food \nwasn’t worth it. Scrubbing his face raw to remove \nKatarina’s blood sigils of ownership, he vanished into \nthe night to seek his fortune away from the Court.\nCapabilities and Motivations\nDrudge has all the speed and strength of a vampire, \nas well as their ability to enthrall, but his greatest \nstrength is in manipulation. He wants to live an \nimmortal life of luxury, and he knows that if the \nCourt of Blood ever finds him, they will either kill \nhim outright or bind him into a truly inescapable \nslavery. He’s got mesmerizing skills, cunning, and an \neye for flair, all of which he uses to try and make \nhimself indispensable to the band’s success.\nUpgrades\nDrudge has barely begun to explore the limits of \nthe effects his mesmerizing presence can have. He \nhas barely scratched the surface of Blood Magic, but \nhe knows it is vital to know more so that he stands \na chance at surviving long term, especially if the \nCourt comes calling. He’s aware of Snare’s interest, \nand is quite willing to encourage it — an admirer \nwho can create impenetrable shields sounds good \nto him.\nAlias: “Jasper Felwind”\nGender: Male\nAge: Unknown, looks in his mid-20s\nHeight: 6’\nEyes: Smoldering\nHair: An exquisite red mane\nSkin: Pale, only glitters when using glitter makeup\nBuild: Fashionably slender \nCostume/Equipment: A broadcloth topcoat over \nvelvet vest and open shirt with lace cuffs. Often \nstained with fake blood, as that is much easier to \nget out of fabric than real blood. Trousers that \nare a bit too tight. Pointed ears, claws, and fangs \n(usually displayed in a smirk).\nApproach: Leech\nArchetype: Loner\nDrudge</p>",
+      "statusTheme": "Other Villains",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

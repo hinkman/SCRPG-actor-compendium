@@ -697,6 +697,75 @@ VILLAIN_ENTRIES = [
 ]
 
 
+def parse_villain_powers_qualities_status(
+    spans: list[dict], abilities_y: float
+) -> tuple[list[dict], list[dict], list[dict], str]:
+    """Split villain sheet columns by X: Powers | Qualities | Status.
+
+    Archive villain sheets place:
+      Powers   ~x 47–60
+      Qualities ~x 199–210
+      Status   ~x 350+
+    A previous split at x<220 folded Qualities into Powers and Status into Qualities.
+    """
+    powers: list[dict] = []
+    qualities: list[dict] = []
+    statuses: list[dict] = []
+    status_theme = ""
+
+    header_y = next(
+        (s["y"] for s in spans if s["t"] in {"Powers", "Qualities", "Status:"}),
+        205.0,
+    )
+    # Status category labels sit on the same row as Powers/Qualities/Status headers.
+    # Light name rows begin a little below that header band.
+    y_min = header_y + 8
+    y_max = abilities_y - 8
+    theme_y_min = header_y - 4
+    theme_y_max = header_y + 14
+
+    for span in sorted(spans, key=lambda s: (s["y"], s["x"])):
+        if "GillSans" not in span["font"] or span["size"] < 10:
+            continue
+        text = span["t"]
+        if text in CHROME or text in {"Status:", "Powers", "Qualities"}:
+            continue
+        if re.fullmatch(r"\d+", text):
+            continue
+
+        # Non-Light GillSans in the Status column is the status category label
+        # (e.g. "Heroes with Penalties", "Inventions (Mods)", "Health").
+        if (
+            "Light" not in span["font"]
+            and span["x"] >= 320
+            and theme_y_min <= span["y"] <= theme_y_max
+            and not status_theme
+        ):
+            status_theme = text
+            continue
+
+        if span["y"] < y_min or span["y"] > y_max:
+            continue
+        if "Light" not in span["font"]:
+            continue
+        # Power/quality names never contain ":", but status tracks often do
+        # ("Green Zone: 65-45"). Only reject colon labels outside Status.
+        if ":" in text and span["x"] < 320:
+            continue
+
+        entry = {"name": text, "dieType": "d8", "dieTypeKnown": False}
+        if span["x"] < 150:
+            powers.append(entry)
+        elif span["x"] < 320:
+            qualities.append(entry)
+        else:
+            if status_theme:
+                entry = {**entry, "category": status_theme}
+            statuses.append(entry)
+
+    return powers, qualities, statuses, status_theme
+
+
 def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
     page = book_page(doc, book)
     text = page_text(page)
@@ -751,29 +820,15 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
             approach = "Adaptive"
             archetype = "Squad"
 
-    # powers / qualities: collect short name-like lines before long ability texts
-    powers, qualities, abilities = [], [], []
-    # Fall back: use ability name lines from bold-ish short titles in text after health block
-    # Extract ability blocks: Title lines followed by game text
-    # Heuristic from sheet text: ability titles are Title Case short lines before long sentences
-    body = "\n".join(chunk)
-    # Pull power/quality candidate names from known lists via spans
     spans = page_spans(page)
-    pq_names = []
-    for span in spans:
-        if 90 < span["y"] < 260 and "GillSans" in span["font"] and span["size"] >= 9:
-            if span["t"] not in CHROME and not re.search(r"[:]", span["t"]):
-                pq_names.append((span["x"], span["y"], span["t"]))
-    pq_names.sort(key=lambda x: (round(x[1], 1), x[0]))
-    for x, _y, t in pq_names:
-        if x < 220:
-            powers.append({"name": t, "dieType": "d8", "dieTypeKnown": False})
-        else:
-            qualities.append({"name": t, "dieType": "d8", "dieTypeKnown": False})
-
     # Abilities start below the Abilities header; power/quality Light labels sit
     # lower on villain sheets than on heroes, so y>250 alone is too loose.
     abilities_y = next((s["y"] for s in spans if s["t"] == "Abilities"), 370.0)
+    powers, qualities, statuses, status_theme = parse_villain_powers_qualities_status(
+        spans, abilities_y
+    )
+
+    abilities: list[dict] = []
     name_spans = [
         s
         for s in spans
@@ -806,11 +861,12 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
             t["t"] for t in sorted(buckets[index], key=lambda s: (s["y"], s["x"]))
         ]
         game_text = re.sub(r"\s+", " ", " ".join(lines_txt)).strip()
+        # Villain sheet abilitiestable filters on system.aux === "villain".
         abilities.append(
             {
                 "name": anchor["name"],
                 "type": typ,
-                "aux": "main",
+                "aux": "villain",
                 "gameText": game_text,
                 "icon": infer_icons(game_text),
             }
@@ -822,7 +878,15 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
         if m:
             health = int(m.group(1))
 
-    return {
+    gaps = [
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified.",
+    ]
+    if not statuses:
+        gaps.append("No villain status tracks parsed from sheet Status column.")
+    if not abilities:
+        gaps.append("No villain abilities parsed below Abilities header.")
+
+    result = {
         "name": name,
         "alias": alias,
         "approach": approach,
@@ -830,13 +894,14 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
         "health": health,
         "powers": powers,
         "qualities": qualities,
+        "statuses": statuses,
         "abilities": abilities,
         "sourcePage": book,
-        "gaps": [
-            "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-            "Villain status dice (conditional) are not fully modeled beyond health max.",
-        ],
+        "gaps": gaps,
     }
+    if status_theme:
+        result["statusTheme"] = status_theme
+    return result
 
 
 def extract_heroes(doc: pymupdf.Document) -> dict:

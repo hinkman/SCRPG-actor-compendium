@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "wTIc1prkWDpkzzRW",
-      "name": "40",
+      "_id": "G2aIml4pGlrkW4Qq",
+      "name": "Gadgets",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.wTIc1prkWDpkzzRW"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.G2aIml4pGlrkW4Qq"
     },
     {
-      "_id": "TSgrifOhI5bJH3DN",
-      "name": "Gadgets",
+      "_id": "nUYmkk0lBBadw7x5",
+      "name": "Inventions",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.TSgrifOhI5bJH3DN"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.nUYmkk0lBBadw7x5"
     },
     {
-      "_id": "P6ZKsOZWnaYTTNIx",
-      "name": "Conspiracy Theorist",
+      "_id": "gbVgded8CTU097mZ",
+      "name": "Lightning Calculator",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.P6ZKsOZWnaYTTNIx"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.gbVgded8CTU097mZ"
     },
     {
-      "_id": "P87DjC1Xrv2XBRxz",
-      "name": "Inventions",
+      "_id": "oROtT4tYP0fJ3lRd",
+      "name": "Power Suit",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.P87DjC1Xrv2XBRxz"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.oROtT4tYP0fJ3lRd"
     },
     {
-      "_id": "YKbJQXujTYohtTE9",
-      "name": "Conviction",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.YKbJQXujTYohtTE9"
-    },
-    {
-      "_id": "ZcWz4FQjduUpm31L",
-      "name": "Invention Mods",
+      "_id": "7ls1kQAbXhG9t34w",
+      "name": "Conspiracy Theorist",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +183,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.ZcWz4FQjduUpm31L"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.7ls1kQAbXhG9t34w"
     },
     {
-      "_id": "nFkpKAcEZZhKrS4o",
-      "name": "4+ Invention Mods",
+      "_id": "jpx5wpIc5X1Kd0oG",
+      "name": "Conviction",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +215,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.nFkpKAcEZZhKrS4o"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.jpx5wpIc5X1Kd0oG"
     },
     {
-      "_id": "tHh5NM1EciWXFmNg",
-      "name": "2-3 Invention Mods",
+      "_id": "TJJlNB0naQ0iXodv",
+      "name": "Creativity",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +247,179 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.tHh5NM1EciWXFmNg"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.TJJlNB0naQ0iXodv"
     },
     {
-      "_id": "PqxJVD3gb41HxQZo",
+      "_id": "iGgiB0XnR8gaUN4z",
+      "name": "Investigation",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.iGgiB0XnR8gaUN4z"
+    },
+    {
+      "_id": "NqqinLVszKFADIwh",
+      "name": "4+ Invention Mods",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Invention Mods</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Invention Mods"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.NqqinLVszKFADIwh"
+    },
+    {
+      "_id": "fhlceZZm3YwD2NlF",
+      "name": "2-3 Invention Mods",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Invention Mods</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Invention Mods"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.fhlceZZm3YwD2NlF"
+    },
+    {
+      "_id": "H93RnAZHjfaz31Fg",
+      "name": "1 Invention Mod",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Invention Mods</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Invention Mods"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.H93RnAZHjfaz31Fg"
+    },
+    {
+      "_id": "yxBi9H3IqvqrzCwH",
+      "name": "0 Invention Mods",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Invention Mods</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Invention Mods"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.yxBi9H3IqvqrzCwH"
+    },
+    {
+      "_id": "IsF57N9di9s98oLT",
       "name": "Contingencies Upon Contingencies",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +440,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +451,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.PqxJVD3gb41HxQZo"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.IsF57N9di9s98oLT"
     },
     {
-      "_id": "cu8M2ICE1F2kO9Mr",
+      "_id": "AyiLvxwRLN9DNF65",
       "name": "Prepared For Anything",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -349,7 +480,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +491,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.cu8M2ICE1F2kO9Mr"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.AyiLvxwRLN9DNF65"
     },
     {
-      "_id": "nwlU83xJ8lZ4Lb3w",
+      "_id": "CWAilAnixz05Idiy",
       "name": "Ramshackle Creation",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -389,7 +520,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +531,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.nwlU83xJ8lZ4Lb3w"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.CWAilAnixz05Idiy"
     },
     {
-      "_id": "uvo4qwhvNvbD8ben",
+      "_id": "oJ7h3yKDXyDleLwG",
       "name": "Tinfoil Components",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -429,7 +560,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +571,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.uvo4qwhvNvbD8ben"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.oJ7h3yKDXyDleLwG"
     },
     {
-      "_id": "XJ4Fg5GpIDmLBAGv",
+      "_id": "5Lyqbd5amF7d8aPc",
       "name": "Unexpected Accuracy",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -469,7 +600,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +611,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.XJ4Fg5GpIDmLBAGv"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.5Lyqbd5amF7d8aPc"
     },
     {
-      "_id": "EXubjYnNd4GcuBLj",
+      "_id": "UKHd09jVSo8jziNd",
       "name": "The Manta Body",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -509,7 +640,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,15 +651,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.EXubjYnNd4GcuBLj"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.UKHd09jVSo8jziNd"
     },
     {
-      "_id": "aix5THJeCs0pzEUe",
+      "_id": "3xy5fpMLZsCuYovc",
       "name": "Master of Mad Science",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -549,7 +680,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -560,7 +691,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!hFPRXRnq04vI3fzW.aix5THJeCs0pzEUe"
+      "_key": "!actors.items!hFPRXRnq04vI3fzW.3xy5fpMLZsCuYovc"
     }
   ],
   "effects": [],
@@ -575,9 +706,9 @@
       "team": "slaughterhouse-six",
       "sourcePage": 400,
       "biographyHtml": "<p>401\n401\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nRaymond Mantey was one of RevoCorp’s most \nbrilliant weapon developers, responsible for some \nof the best-selling products in their off-the-books \nvillain supply division. If a client wanted a custom \nbattlesuit or specialized cybernetics, Ray was the \none to talk to. Few chose to do so more than once, \ngiven Ray’s proclivity for talking endlessly about \nconspiracies and robots at every opportunity. As \ntime went on, management decided that he was \ntoo useful to get rid of, but too weird for clients. \nWhen he made a manta-themed battle suit for \nhimself, fitted with anti-robot technology, they \nwere only too happy to transfer him to the active \nduty wing, and when Ambuscade came looking for \nmembers for a villain team, everyone at RevoCorp \nwas a bit relieved to see Raymond go. Glamour’s \nreveal as the true leader didn’t really surprise \nhim. After all, an illusionist creating a \nleader with illusions seemed \nentirely logical to him.\nCapabilities \nAnd Motivations\nRaymond Mantey has a mind \nthat is constantly making connections, for better \nand for worse. He can look at a camera and see \nhow the principles involved could be adapted into \na set of goggles that bypass the eye and directly \ntransmit to the brain, or look at a grapefruit and \nsee a vast conspiracy by the secretive international \nfruit council to sedate the populace through their \nchoice of breakfast citrus. He is constantly making \nnew inventions and new conspiracies in equal \nmeasure. The rest of the Slaughterhouse Six team \nhave learned not to ask him to go into detail and \nwork around his desire to wake people up to the \nmany truths he can see everywhere.\nUpgrades\nRay Manta has been in enough scrapes to know \nthat up close and personal isn’t for him. He’s been \nworking on suit upgrades to give his suit limited \nautonomy to get him out of trouble, like having a \nmedevac looking over his shoulder at all times. In \ntheory, it could even do some of the fighting for \nhim. But just because it can make decisions and act \non its own does NOT mean it is a robot.\nVillains\nAlias: Raymond Mantey...wait, why do you want \nto know?\nGender: Male, but gender is an artificial construct \nthey use to divide us.\nAge: Mid-40s, but impossible to truly be sure since \nwe are all programs in a simulation.\nHeight: 5’-ish. Slouches to throw off the satellites. \nEyes: Blue, constantly looking around for the \nhidden cameras.\nHair: Brown and greasy, because shampoo has \nsedatives to pacify the population. \nSkin: Pasty, unwashed to avoid the nanomachines \nin the water.\nBuild: Overweight and furtive\nCostume/Equipment: A blue smock and grey pants \nwith brown satchel. Backpack with a prehensile \ntail that ends in a gold spade-head with a laser. \nCloak made of reinforced tin-foil, split down the \nmiddle into two wings. Reinforced tin helmet with \nradar-jamming peaks and multi-lensed goggles.\nApproach: Underpowered\nArchetype: Inventor\nRay Manta</p>",
+      "statusTheme": "Invention Mods",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

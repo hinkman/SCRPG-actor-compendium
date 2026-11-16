@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "OoHxQ6ityD0u52vr",
-      "name": "60",
+      "_id": "SS9rWEe7SQCtKAes",
+      "name": "Agility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.OoHxQ6ityD0u52vr"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.SS9rWEe7SQCtKAes"
     },
     {
-      "_id": "a2ncmUUHkqdaZFXu",
-      "name": "Agility",
+      "_id": "PSxe2m4lqF4GUF4g",
+      "name": "Infernal",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.a2ncmUUHkqdaZFXu"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.PSxe2m4lqF4GUF4g"
     },
     {
-      "_id": "WZmJMhmAco9xJUCd",
-      "name": "Acrobatics",
+      "_id": "Vg1IsDYCzAnc6zVf",
+      "name": "Remote Viewing",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.WZmJMhmAco9xJUCd"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.Vg1IsDYCzAnc6zVf"
     },
     {
-      "_id": "feAs8tu1zTW1Sdr3",
-      "name": "Infernal",
+      "_id": "c8ITFYfGZia5p3Bb",
+      "name": "Speed",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,11 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.feAs8tu1zTW1Sdr3"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.c8ITFYfGZia5p3Bb"
     },
     {
-      "_id": "dWhqieYxxZ2hbNBE",
-      "name": "Close Combat",
+      "_id": "ZCaZHiOESSigf5xT",
+      "name": "The Jade Talon",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -184,11 +184,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.dWhqieYxxZ2hbNBE"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.ZCaZHiOESSigf5xT"
     },
     {
-      "_id": "MTpOjhgVJDX4zBMK",
-      "name": "Engaged Opponents",
+      "_id": "MHGhlJOAxYbjrb3L",
+      "name": "Acrobatics",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +216,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.MTpOjhgVJDX4zBMK"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.MHGhlJOAxYbjrb3L"
     },
     {
-      "_id": "c2N0GAN09wMURuff",
-      "name": "4+ Engaged Opponents",
+      "_id": "pzmCTCOEoFiT35KL",
+      "name": "Close Combat",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +248,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.c2N0GAN09wMURuff"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.pzmCTCOEoFiT35KL"
     },
     {
-      "_id": "wH3cEwDBgeS8CvX0",
-      "name": "2-3 Engaged Opponents",
+      "_id": "gzq19faBvbASoYQo",
+      "name": "Criminal Underworld Info",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +280,178 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.wH3cEwDBgeS8CvX0"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.gzq19faBvbASoYQo"
     },
     {
-      "_id": "k0hNH1NqarD1IKGU",
+      "_id": "5R0kaiGKE1X4e0gM",
+      "name": "Investigation",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.5R0kaiGKE1X4e0gM"
+    },
+    {
+      "_id": "OzBLSI1rRhprHOhs",
+      "name": "Student of Many Masters",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.OzBLSI1rRhprHOhs"
+    },
+    {
+      "_id": "TMnTH9zzO8gC7g9w",
+      "name": "4+ Engaged Opponents",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Engaged Opponents</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Engaged Opponents"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.TMnTH9zzO8gC7g9w"
+    },
+    {
+      "_id": "oMjoo4hY8ud20I3y",
+      "name": "2-3 Engaged Opponents",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Engaged Opponents</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Engaged Opponents"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.oMjoo4hY8ud20I3y"
+    },
+    {
+      "_id": "6D9yJaoH0mxdLlnQ",
+      "name": "0-1 Engaged Opponents",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Engaged Opponents</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Engaged Opponents"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.6D9yJaoH0mxdLlnQ"
+    },
+    {
+      "_id": "9R4nJ4SC8mq8forS",
       "name": "A Cornered Dragon Closes its Wings",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +472,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +483,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.k0hNH1NqarD1IKGU"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.9R4nJ4SC8mq8forS"
     },
     {
-      "_id": "eF872hfLqyzK5QzC",
+      "_id": "gw2aUCBpske5fiVv",
       "name": "Drive Back Their Blades",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -349,7 +512,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +523,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.eF872hfLqyzK5QzC"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.gw2aUCBpske5fiVv"
     },
     {
-      "_id": "ljQgxfMLeHUCr3Z6",
+      "_id": "XNyGYpvLnSngi0uP",
       "name": "Step as the Crane through the Reeds",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -389,7 +552,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +563,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.ljQgxfMLeHUCr3Z6"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.XNyGYpvLnSngi0uP"
     },
     {
-      "_id": "1o2ErFUp9V1TaWeu",
+      "_id": "AahanjhelmASS0AK",
       "name": "Strike True, Learn Your Foe, Be Unknowable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +592,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +603,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.1o2ErFUp9V1TaWeu"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.AahanjhelmASS0AK"
     },
     {
-      "_id": "uyWW8YGdVxkCGzs3",
+      "_id": "6ZDqkyZ89qjtSAwT",
       "name": "One with the Fray",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -469,7 +632,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +643,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.uyWW8YGdVxkCGzs3"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.6ZDqkyZ89qjtSAwT"
     },
     {
-      "_id": "luYN4zpEAB7tpWGx",
+      "_id": "3pvPAfv7REPpfyHX",
       "name": "Master of Conquest",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +672,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +683,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.luYN4zpEAB7tpWGx"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.3pvPAfv7REPpfyHX"
     }
   ],
   "effects": [],
@@ -535,9 +698,9 @@
       "team": "independent",
       "sourcePage": 360,
       "biographyHtml": "<p>361\n361\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nSophia Anna Isabel DeLeon has served many masters \nand learned many things. From “Slim” Walker, her \nfirst master, she learned her own strength. When \nhe shut down his dojo, she learned to use that \nstrength for herself. Her second master, Graham \nPike, taught her how to understand herself and \ncontrol her foes as his Operative. When he \nsacrificed her to pay off a debt, she learned \nto trust no one. Zhu Long, the mystic that \nordered her death, brought her back from \nbeyond the grave and became her new \nmaster, showing her there was still much \nto learn. Bound by Zhu Long’s magic, \nshe carried out his orders as assassin, \ncourier, and emissary. The Dragon \nMaster taught her lessons in poison, \nmagic, and furthered her skills in the \nmartial arts. Here, she learned that \nshe could never defeat an opponent \nwhose capabilities she could not \ndiscover and whose motives she \ncould not understand. Though she seeks \nto escape Zhu Long’s control, she has \nbecome his greatest weapon. As the Dragon’s \nClaw, she has a measure of freedom, though \nshe is ever aware of the leash.\nCapabilities and Motivations\nDragonclaw is among the most capable \ncombatants in the world. The hero Mantra, \nformerly known as Mr. Fixer, is perhaps the only \nliving martial artist who could stand against her \nin hand-to-hand combat. Her fighting style flows \neffortlessly between grace and brutality. Even \nwithout her sword and magic, Dragonclaw can \nvanquish a room of armed professional soldiers \nthat were forewarned of her arrival. While she has \nspecific objectives as Zhu Long’s agent, like stealing \nrare relics or sending a lesson to an enemy, the larger \nplan she is working toward is often inscrutable. She \nis ever testing the bounds of the Dragon’s control, \nthough she knows that the dragon is always \nwatching her. With no way to become the master \nof her own fate, her loyalty to Zhu Long is absolute.\nUpgrades\nIn a ritual of her own devising, Dragonclaw created the \nJade Talon, a stone blade that serves both as a weapon \nand magical focus. Not only can it cut through flesh, \nstone, and metal with equal ease, it allows her to tread \nfarther down the mystical path than ever before. She \ncan channel this power in a variety of ways, with the \nmost terrifying being the power to bring the tattoos \non her body to life to fight with her.\nAlias: Sophia DeLeon\nGender: Female\nAge: Early middle-aged, appears early-20s\nHeight: 5’ 3”\nEyes: Brown\nHair: Black\nSkin: Olive, elaborate dragon tattoos \nBuild: Lithe\nCostume/Equipment: A red body wrap with green \nborders, belted with a red cord that goes around \nher torso multiple times, the tassels streaming \nbehind her. Loose black hair that reaches to her \nmid-back. Elaborate dragon tattoos on her arms \nand legs, with a red one circling her eyes. Left \nwrist wrapped with black cloth. Mid-calf black and \ngreen soft-soled boots. A leather scabbard slung \nover one shoulder that holds the mystical green \nstone blade The Jade Talon.\nApproach: Ninja\nArchetype: Guerilla\nDragonclaw\nVillains</p>",
+      "statusTheme": "Engaged Opponents",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

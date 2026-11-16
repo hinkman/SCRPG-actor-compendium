@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "neI6epwHJgkWe4UB",
-      "name": "50",
+      "_id": "taffF9TgqQQH33YF",
+      "name": "Adaptive Mercurium Limb",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.neI6epwHJgkWe4UB"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.taffF9TgqQQH33YF"
     },
     {
-      "_id": "QDT81gATfUfgNMrG",
-      "name": "Conviction",
+      "_id": "akpW60eyLxAMAjAf",
+      "name": "Intuition",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.QDT81gATfUfgNMrG"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.akpW60eyLxAMAjAf"
     },
     {
-      "_id": "BPTGxZsHv9OVpStA",
-      "name": "Adaptive Mercurium Limb",
+      "_id": "jYAyE7UVvrwVHHQD",
+      "name": "Inventions",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,16 +118,111 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.BPTGxZsHv9OVpStA"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.jYAyE7UVvrwVHHQD"
     },
     {
-      "_id": "btUnKcg1USgdrVD6",
-      "name": "Intuition",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "Ur8cyeGmRTpJXzQZ",
+      "name": "Conviction",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.Ur8cyeGmRTpJXzQZ"
+    },
+    {
+      "_id": "wb2olGYOmX9PfQDa",
+      "name": "Finesse",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.wb2olGYOmX9PfQDa"
+    },
+    {
+      "_id": "x0VdgyMO9SCDKiCY",
+      "name": "Leadership",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.x0VdgyMO9SCDKiCY"
+    },
+    {
+      "_id": "CMn8sAivdbN33Z5V",
+      "name": "Ruler of Mordengrad",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -151,16 +246,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.btUnKcg1USgdrVD6"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.CMn8sAivdbN33Z5V"
     },
     {
-      "_id": "EyaHn8642YdIqMCX",
-      "name": "Finesse",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "tbZ9KWCPMwoqxW8v",
+      "name": "Science",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
         "selected": "",
         "description": ""
       },
@@ -184,17 +278,49 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.EyaHn8642YdIqMCX"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.tbZ9KWCPMwoqxW8v"
     },
     {
-      "_id": "Y6HqB7ieFmqtVl8P",
-      "name": "Inventions (Mods)",
+      "_id": "svf0K3BYQQhTF4BF",
+      "name": "Technology",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
         "selected": "",
         "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.svf0K3BYQQhTF4BF"
+    },
+    {
+      "_id": "NqQrvmG2zdmRiwfX",
+      "name": "4+ Inventions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Inventions (Mods)</p>"
       },
       "effects": [],
       "folder": null,
@@ -205,7 +331,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Inventions (Mods)"
         }
       },
       "_stats": {
@@ -216,17 +343,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.Y6HqB7ieFmqtVl8P"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.NqQrvmG2zdmRiwfX"
     },
     {
-      "_id": "dChk7ItOf6WRxTyK",
-      "name": "4+ Inventions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "mXCYQFXMOA7kUZzd",
+      "name": "2-3 Inventions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Inventions (Mods)</p>"
       },
       "effects": [],
       "folder": null,
@@ -237,7 +364,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Inventions (Mods)"
         }
       },
       "_stats": {
@@ -248,17 +376,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.dChk7ItOf6WRxTyK"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.mXCYQFXMOA7kUZzd"
     },
     {
-      "_id": "Fq7yDKk7qGouOLnM",
-      "name": "2-3 Inventions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "x3RIQLzbyutfbTCo",
+      "name": "1 Invention",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Inventions (Mods)</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,7 +397,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Inventions (Mods)"
         }
       },
       "_stats": {
@@ -280,15 +409,48 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.Fq7yDKk7qGouOLnM"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.x3RIQLzbyutfbTCo"
     },
     {
-      "_id": "CZSiXTs8ElpUlyGM",
+      "_id": "6z3KfVuLGbuJDpe1",
+      "name": "0 Inventions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Inventions (Mods)</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Inventions (Mods)"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!r49fgQLpRyixWDvl.6z3KfVuLGbuJDpe1"
+    },
+    {
+      "_id": "pyaWmS5GSGsCd64h",
       "name": "Brilliant Inventor",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +471,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +482,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.CZSiXTs8ElpUlyGM"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.pyaWmS5GSGsCd64h"
     },
     {
-      "_id": "9LsoJDKAHYC1eJAD",
+      "_id": "TlLPX3gr3p7HBFX0",
       "name": "“Consider the Price of Victory”",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -349,7 +511,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +522,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.9LsoJDKAHYC1eJAD"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.TlLPX3gr3p7HBFX0"
     },
     {
-      "_id": "bprA4qHL033whpdc",
+      "_id": "axX61tnqVwgDkXoU",
       "name": "Devious Devising",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -389,7 +551,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +562,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.bprA4qHL033whpdc"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.axX61tnqVwgDkXoU"
     },
     {
-      "_id": "yHrF16R0wG2WSxTZ",
+      "_id": "dLBXf2pKFcVYsoED",
       "name": "The Glory of Mordengrad",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +591,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +602,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.yHrF16R0wG2WSxTZ"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.dLBXf2pKFcVYsoED"
     },
     {
-      "_id": "1rdMPkFfDAIuxE4C",
+      "_id": "QqRxKjy9wUCkDyut",
       "name": "Battalion Backup",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +631,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +642,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.1rdMPkFfDAIuxE4C"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.QqRxKjy9wUCkDyut"
     },
     {
-      "_id": "DlF7fWOh87dkETsJ",
+      "_id": "4woDzhhVcARvF4eo",
       "name": "Master of Mad Science",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +671,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +682,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!r49fgQLpRyixWDvl.DlF7fWOh87dkETsJ"
+      "_key": "!actors.items!r49fgQLpRyixWDvl.4woDzhhVcARvF4eo"
     }
   ],
   "effects": [],
@@ -535,9 +697,9 @@
       "team": "independent",
       "sourcePage": 348,
       "biographyHtml": "<p>349\n349\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nFyodor Ramonat made weapons and machines of \nwar for many powerful nations, but he ultimately \npaid the price when heroes of those nations’ \nenemies destroyed his weapons factories, led by \nthe Legacy of that time. Fyodor’s son Ivan was so \nenraged by the death of his father that he took \nover his hometown of Mordengrad in Lithuania, \ndeclaring himself, Baron Blade, the leader of this \nsovereign nation. Like his father, Ivan was a brilliant \ninventor, but far more clever and ruthless, and now \nhe had a hatred of all so-called heroes. Across \nthe past few decades, Baron Blade has enacted \nnumerous maniacal plans to threaten the existence \nof all heroes, especially those in the Legacy line.\nCapabilities and Motivations\nBaron Blade is a devilishly imaginative inventor, \ncreating all manner of doomsday devices and \nconcocting outlandish plots, both for the glory of \nhis home country Mordengrad and also for the \ndownfall of his foes. His loyal army — the Blade \nBattalion — is well-equipped with cutting edge \ndevices and armor, but greater still is their fanatic \nloyalty to the Baron. Over the years of his villainous \ncareer, he has made use of many bizarre devices \nwith overly complicated workings — everything \nfrom drilling into the Earth’s core, to pulling the \nMoon into the Earth, to injecting himself with a \ndangerous serum meant to give him the means to \ndefeat his foes at any cost — however his goals \nhave always been quite clear: defend and elevate \nglorious Mordengrad, and destroy any foolhardy \nheroes who would call themselves Legacy.\nUpgrades\nBaron Blade is known to make use of various \npowered suits, from towering walking tanks, to \nsleek, cutting edge body armor, to utilitarian power \nlifters. The type of armored suit he dons is usually \ntailored to his particular plot, though they all have \nvarious advantages for both defense and combat.\nAlias: Ivan Grigori Ramonat\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Left eye: Brown / Right eye: Pale with scar\nHair: Black and grey\nSkin: Pale\nBuild: Athletic\nCostume/Equipment: A long purple coat with silver \npiping and accents, lined in dark red. A purple body \nsuit accented with lines of red energy running from \nhis Organic Sustaining Module installed on his chest. \nHis right eye is covered by his red, glowing Nether \nLens Monocle. His left hand and forearm are made \nof silvery metal, which he can control to take various \nshapes and applications.\nApproach: Mastermind\nArchetype: Inventor\nBaron Blade\nVillains</p>",
+      "statusTheme": "Inventions (Mods)",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },
