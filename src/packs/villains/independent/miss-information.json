@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -158,7 +158,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": "",
         "description": ""
       },
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -222,7 +222,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -288,7 +288,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -301,7 +301,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -569,9 +569,7 @@
       "sourcePage": 350,
       "biographyHtml": "<p>351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAminia Twain died hating the Freedom Five, impaled \non a girder during a villain’s attack, with one question \non her mind. Why didn’t they save me? She had \nbeen their loyal secretary for years, organizing and \nsmoothing things behind the scenes so that they \ncould stop crimes and still lead normal lives. But, \ninstead of dying and slipping away from existence, \na timespace fracture resulted in her coming to \nin the body of the Aminia Twain of some other \nreality! Reborn as Miss Information, she spent \nyears conducting behind-the-\nscenes sabotage on the \nheroes. This ended \nwhen the hero Parse \nsaw through her ruse, \nwhich ultimately led \nto Miss Information \ngetting doused with \ntoxic chemicals. The \naccident that burned her body \nalso opened her mind to \nother versions of Aminia \nTwain in the Multiverse. \nIt also allowed her to \nrewrite reality itself, \nwith the only thing \npreventing her from being \na world-ending threat is her \never-changing whim and \ninability to focus.\nCapabilities and Motivations\nThe disconnection of this universe from the rest of \nthe multiverse has allowed Miss Information to regain \nsome of her focus as her mind heals from being many \npossible versions of Aminia Twain at the same time. \nMiss Information is a master of logistics, coordination, \nand intelligence gathering, able to formulate complex \nplots to trap heroes and tailor illusion-augmented \ntraps to their specific fears and capabilities. When \nthis fails, she can warp reality itself as long as she can \nconcentrate, changing the world to suit her desires. \nShe could make a Megalopolis where all heroes were \nhated, a temple where the Freedom Five served her \nwine in chains, or a diner that only served pickles.\nUpgrades\nIn the aftermath of OblivAeon, Miss Information \nacquired the Pandemonium Key, an artifact from the \nEnclave of the Endlings that augments her ability to \ncreate illusions and make them real. It is also a window \ninto the disconnected, wider multiverse, allowing her \nto peer into other realities and remember things from \nher multitude of other lifetimes. This, unfortunately, \ndoes not help her mental state.\nAlias: Aminia Twain\nGender: Female\nAge: Middle-Aged\nHeight: 5’ 4”\nEyes: Originally grey, now glowing gold\nHair: Chestnut\nSkin: Pale\nBuild: Slim\nCostume/Equipment: A black bodysuit with gold \ngloves, boots, and belt. Black cape with gold inner \nlining. Form fitting white porcelain mask that \nmoves with her facial expressions. \nApproach: Overpowered\nArchetype: Inhibitor\nMiss Information\n351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\n351\n351\nAppendices\nAppendices\nVillains</p>",
       "statusTheme": "Heroes with Penalties",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

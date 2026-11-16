@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -254,7 +254,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -267,7 +267,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -299,7 +299,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -318,7 +318,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": false,
         "description": "<p>Inventions (Mods)</p>"
       },
@@ -331,7 +331,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Inventions (Mods)"
         }
       },
@@ -351,7 +351,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Inventions (Mods)</p>"
       },
@@ -364,7 +364,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Inventions (Mods)"
         }
       },
@@ -397,7 +397,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Inventions (Mods)"
         }
       },
@@ -417,7 +417,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Inventions (Mods)</p>"
       },
@@ -430,7 +430,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Inventions (Mods)"
         }
       },
@@ -698,9 +698,7 @@
       "sourcePage": 348,
       "biographyHtml": "<p>349\n349\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nFyodor Ramonat made weapons and machines of \nwar for many powerful nations, but he ultimately \npaid the price when heroes of those nations’ \nenemies destroyed his weapons factories, led by \nthe Legacy of that time. Fyodor’s son Ivan was so \nenraged by the death of his father that he took \nover his hometown of Mordengrad in Lithuania, \ndeclaring himself, Baron Blade, the leader of this \nsovereign nation. Like his father, Ivan was a brilliant \ninventor, but far more clever and ruthless, and now \nhe had a hatred of all so-called heroes. Across \nthe past few decades, Baron Blade has enacted \nnumerous maniacal plans to threaten the existence \nof all heroes, especially those in the Legacy line.\nCapabilities and Motivations\nBaron Blade is a devilishly imaginative inventor, \ncreating all manner of doomsday devices and \nconcocting outlandish plots, both for the glory of \nhis home country Mordengrad and also for the \ndownfall of his foes. His loyal army — the Blade \nBattalion — is well-equipped with cutting edge \ndevices and armor, but greater still is their fanatic \nloyalty to the Baron. Over the years of his villainous \ncareer, he has made use of many bizarre devices \nwith overly complicated workings — everything \nfrom drilling into the Earth’s core, to pulling the \nMoon into the Earth, to injecting himself with a \ndangerous serum meant to give him the means to \ndefeat his foes at any cost — however his goals \nhave always been quite clear: defend and elevate \nglorious Mordengrad, and destroy any foolhardy \nheroes who would call themselves Legacy.\nUpgrades\nBaron Blade is known to make use of various \npowered suits, from towering walking tanks, to \nsleek, cutting edge body armor, to utilitarian power \nlifters. The type of armored suit he dons is usually \ntailored to his particular plot, though they all have \nvarious advantages for both defense and combat.\nAlias: Ivan Grigori Ramonat\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Left eye: Brown / Right eye: Pale with scar\nHair: Black and grey\nSkin: Pale\nBuild: Athletic\nCostume/Equipment: A long purple coat with silver \npiping and accents, lined in dark red. A purple body \nsuit accented with lines of red energy running from \nhis Organic Sustaining Module installed on his chest. \nHis right eye is covered by his red, glowing Nether \nLens Monocle. His left hand and forearm are made \nof silvery metal, which he can control to take various \nshapes and applications.\nApproach: Mastermind\nArchetype: Inventor\nBaron Blade\nVillains</p>",
       "statusTheme": "Inventions (Mods)",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

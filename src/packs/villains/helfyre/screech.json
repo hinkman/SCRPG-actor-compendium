@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -159,7 +159,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -287,7 +287,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -353,7 +353,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -366,7 +366,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -634,9 +634,7 @@
       "sourcePage": 366,
       "biographyHtml": "<p>367\n367\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nDamien Belter was the kind of kid who never \ndiscovered the concept of an “inside voice.” The \nchild of a CPA and a forensic accountant, Damien \ndecided at an early age that he was going to go in a \nvery different direction from his parents. School was \nboring and didn’t involve nearly enough yelling, so he \nditched at every opportunity. Music fascinated him, \nand he took every opportunity to go to a live show, \nthe louder the better! Convinced that volume was the \nmajor qualification for a singer, he formed a band with \nsome of his friends. When that one failed he formed \nanother, then another, then went solo for a while, then \nformed yet another band, which ended up sticking \ntogether, largely because everyone in it had some \nmeasure of power and a similar feeling that they were \ndestined for greatness. Sure, they would need to beg, \nborrow, and steal to get off the ground, but so what?\nCapabilities and Motivations\nScreech’s musical aptitude can most favorably be \ndescribed as “loud.” He was a loud kid, and as he \naged his vocal range only expanded. His jaw and \nlungs also changed, allowing him to unhinge his jaw \nfor even greater volume, along with a lung capacity \nthat let him sustain a note for minutes at a time. \nSadly, none of these things proved to be a good \nsubstitute for practice, talent, or any understanding \nof “pitch”. As the vocalist for Helfyre, he spends \nmuch of his singing time using his voice to stun and \ndebilitate his “audience”, including the annoying \ncops that want them to stop practicing due to noise \ncomplaints, or the even more annoying heroes that \nwant them to stop robbing gas stations for snacks.\nUpgrades\nAfter Wager Master granted him more power, \nScreech’s vocal range vastly expanded, with shrill \nhigh notes that shatter glass and deep bass notes \nthat shake stone when he drops to his lowest \noctave. When he really lets loose, a physical wall of \nsound knocks down the audience, doors, walls, and \nthe occasional low-flying police helicopter.\nAlias: Damien Belter \nGender: Male\nAge: Mid-20s\nHeight: 5’8\nEyes: Blue\nHair: Black mohawk\nSkin: Pale\nBuild: strung out rocker\nCostume/Equipment: Tight pants, studded belt, \nand a variety of ripped tops with no sleeves. Has \na variety of wristbands, chain necklaces, and pointy \nearrings. \nApproach: Disruptive\nArchetype: Inhibitor\nScreech</p>",
       "statusTheme": "Heroes with Penalties",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

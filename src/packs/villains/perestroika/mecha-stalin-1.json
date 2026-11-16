@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -223,7 +223,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -287,7 +287,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -353,7 +353,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -366,7 +366,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -674,9 +674,7 @@
       "sourcePage": 378,
       "biographyHtml": "<p>379\n379\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nMecha-Stalin’s exact nature is unclear. Theories range \nfrom him being a Cold War attempt to clone Stalin, to \na robot, to the actual Stalin’s head, cut from his aging \nbody and preserved through Soviet science. With all the \nmemories of the original, the members of Perestroika \ncertainly believed in his authenticity. He masterminded \nthe rise of Perestroika, assembled the members and \nset forth the goal of creating a new Soviet Union. \nWith immense resources and a substantial force of \nwell-trained troops, Mecha-Stalin came close to taking \nover Megalopolis and turning it into a power base, but \nwas destroyed along with Perestroika’s hidden base \nin a conflict with the Sentinels of Freedom when he \nengaged the base’s self-destruct. Though the rest of \nPerestroika were taken into custody, Mecha-Stalin’s \ndestruction leaves many questions unanswered.\nCapabilities and Motivations\nMecha-Stalin’s body may have been a patchwork \namalgam of technology, but it was still extremely \ndangerous and deceptively durable. The multiple \nredundancies and lack of needing to protect a pilot \nmeant that the suit could pack more armor, pound \nfor pound, than the Bunker suit, and could take more \nhits in close combat. This let Mecha-Stalin utilize his \nflamethrower and crushing hand to full effect, and if \nthings got too intense, he fell back behind his allies \nto provide fire support with his autocannon. His \nmechanical body was arguably the least dangerous \naspect, however, as his technologically enhanced brain \nhad all of Stalin’s memories and ability to create a cult \nof personality, as well as the strategic wherewithal to \ncreate a multi-layered long-term plan for domination.\nUpgrades\nMecha-Stalin has ports for offensive and defensive \nupgrades, but discovery of the base precluded such \nupgrades. As a result, Mecha-Stalin’s body was hastily \nassembled and poorly charged. Weaponry like missile \npods would make the suit more offensively capable, \nand an increase in available energy would substantially \nincrease the speed, dexterity, and strength.\nAlias: Joseph Stalin?\nGender: Male\nAge: If he is the original: 142 years. Possibly some \ntype of newer creation.\nHeight: 7’3”\nEyes: One brown, one red lens\nHair: Brown\nSkin: A patchwork of flesh, steel, and brass.\nBuild: Hulking\nCostume/Equipment: A mechanical suit made \nof a hodgepodge of technologies and materials, \nincluding iron, steel, and brass. Right arm mounts \na flamethrower, and the left shoulder has a large \nradiator for getting rid of waste heat. A multi-\nbarrel cannon juts above the right shoulder. The \nhead is the only organic part, with the left part \nof the cranium replaced with steel and left eye \nreplaced with a glowing lens\nApproach: Adaptive\nArchetype: Squad\nMecha Stalin 1</p>",
       "statusTheme": "Other Villains",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -106,7 +106,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -125,7 +125,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -138,7 +138,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -170,7 +170,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -189,7 +189,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -202,7 +202,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -255,7 +255,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -576,9 +576,7 @@
       "sourcePage": 394,
       "biographyHtml": "<p>395\n395\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs far as Sean Vargas was concerned, the life of \na RevoCorp enforcer was pretty good. Sure, he \nhad to kidnap the occasional scientist or kill the \noccasional whistleblower, but a job with great \nmedical, two weeks extra vacation, and generous \nperformance bonuses? Worth it. The transfer to \nFort Adamant seemed like just another assignment. \nHe started worrying when a bright-eyed doctor \nnamed Demikahv had him put on a slab and started \nhooking up electrodes. She told him that she had \ncut a deal with RevoCorp and he’d been written \noff. Then she threw the switch, overloading his \npowers and causing him to stop thinking altogether. \nWhen he finally came to, he realized that his body \nwas no longer on the slab. Then came the horrific \nrealization that his body was no longer on the slab \nbecause it was a pile of electrically charged ash \nhovering around him. That’s when the panic set in.\nCapabilities and Motivations\nGlamour has given Re-Volt a purpose. The loss of \nhis humanity expanded his powers exponentially, \nbut being part of the crew makes him feel more \nhuman, which he desperately needs. Ideally, he \nwants to regain his humanity, but he’s not about to \nput what little he has left of himself into the hands \nof doctors anytime soon. Reduced to a cloud of \nelectric impulses that can assume his old shape, he \ncan now travel over wires and absorb electricity to \naugment his powers, in addition to shooting even \nmore lightning than before.\nUpgrades\nAs his humanity fades, Re-Volt has begun to explore \nthe limits of the neuro-electricity that constitutes \nhis new form. By manipulating the electricity in the \nnervous systems of other people, he can debilitate \nand suppress his enemies. He can even take them \nover briefly, moving an unconscious body around \nby using their own nervous system as a host for his \nbioelectric impulses. This ability might one day grow \nto be the way he could acquire a new body.\nAlias: Sean Vargas\nGender: Male\nAge: Early-30s\nHeight: 5’8”/an indeterminate cloud of electrical \nimpulses\nEyes: Glowing blue\nHair: None\nSkin: Matte black, not actually skin\nBuild: Presents as a stout\nCostume/Equipment: When appearing as a \nperson, he has a carbon black body with glowing \nlightning jags on the head and chest, with lightning \narcing all over the body.\nApproach: Focused\nArchetype: Guerrilla\nRe-volt</p>",
       "statusTheme": "Engaged Opponents",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

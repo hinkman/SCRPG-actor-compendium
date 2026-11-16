@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -222,7 +222,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -267,7 +267,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -286,7 +286,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -299,7 +299,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -318,7 +318,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d4",
         "selected": false,
         "description": "<p>Penalties</p>"
       },
@@ -331,7 +331,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Penalties"
         }
       },
@@ -364,7 +364,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Penalties"
         }
       },
@@ -384,7 +384,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": false,
         "description": "<p>Penalties</p>"
       },
@@ -397,7 +397,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Penalties"
         }
       },
@@ -665,9 +665,7 @@
       "sourcePage": 354,
       "biographyHtml": "<p>355\n355\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nCassandra Lilya grew up in Rook City, where she \nlearned at a very early age that crime actually paid \nquite well and was far easier than silly things like \n“time” or “hard work.” At night, she broke into \nsupposedly secure areas and plundered riches under \nthe identity of Ermine. During the day, she used her \nill-gotten gains to fuel an extravagant lifestyle. When \nthe world’s largest diamond went on exhibition \nat the Rook City museum, she couldn’t \nresist stealing it. This proved to be her \nundoing as it caused her to cross \npaths with the hero Wraith, \nwho defeated her and ended \nthe secret of her dual life. While \nshe stayed out of jail, the revealing \nof her secret identity left her \nreputation in tatters. Her hatred \nof Wraith, as much as her skill as \na thief, were what caused Baron \nBlade to offer her a spot on his villain \nteam, the Vengeful Five. When that \nteam eventually fell apart, Ermine went \nback to a life of thievery, though she \nwould occasionally deign to help other \nvillains with their schemes, particularly if \nit meant a payout.\nCapabilities and Motivations\nErmine is extremely self-centered and rarely has \nlong term plans. While she’s quite adept at making \na complex plan to bypass a security system, she \ntends not to think much beyond the acquisition of \nwhatever shiny thing caught her eye. The thievery \nitself is what excites her, with the proceeds funding \na life of luxury. A gifted acrobat, sneak, and con \nartist, Ermine can get into many “secure” locations, \nand when she comes across something that has a \nbit more security, she’s happy to have someone act \nas a distraction for her. When things go wrong she’s \nextremely good at improvising her way out of the \nconsequences, leaving others with the aftermath. \nLately, she has teamed up with Fright Train for her \nheists, with his muscle and one-track mind pairing \nwell with her stealth and skill.\nUpgrades\nTaking a lesson from Wraith, Ermine has been \nacquiring a variety of gadgets. Instead of the fashion \ndisaster of Wraith’s clunky utility belt, Ermine’s \njewels can be used in many ways: granting her \ntemporary invisibility, creating holograms, deflecting \nlasers, and more. Truly a girl’s best friend.\nVillains\nAlias: Cassandra Lilya\nGender: Female\nAge: Late-20s\nHeight: 5’3”\nEyes: Amber\nHair: Blonde\nSkin: Tan\nBuild: Gymnast\nCostume/Equipment: A white and grey bodysuit \nwith gold piping that leaves her shoulders bare, \naccented by blue diamonds and a blue visor.\nApproach: Skilled\nArchetype: Formidable\nErmine</p>",
       "statusTheme": "Penalties",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

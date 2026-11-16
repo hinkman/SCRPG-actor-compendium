@@ -1,0 +1,479 @@
+{
+  "348": {
+    "name": "Baron Blade",
+    "powers": {
+      "Adaptive Mercurium Limb": "d10",
+      "Intuition": "d8",
+      "Inventions": "d12"
+    },
+    "qualities": {
+      "Conviction": "d8",
+      "Finesse": "d8",
+      "Leadership": "d8",
+      "Ruler of Mordengrad": "d8",
+      "Science": "d10",
+      "Technology": "d8"
+    },
+    "statuses": {
+      "4+ Inventions": "d12",
+      "2-3 Inventions": "d10",
+      "1 Invention": "d8",
+      "0 Inventions": "d6"
+    }
+  },
+  "350": {
+    "name": "Miss Information",
+    "powers": {
+      "Illusions": "d10",
+      "Presence": "d12",
+      "Transmutation": "d10"
+    },
+    "qualities": {
+      "Insight": "d8",
+      "Persuasion": "d6",
+      "Unhinged from Reality": "d8"
+    },
+    "statuses": {
+      "3+ Heroes with at least one Penalty": "d10",
+      "1-2 Heroes with at least one Penalty": "d8",
+      "0 Heroes with at least one Penalty": "d6"
+    }
+  },
+  "352": {
+    "name": "Fright Train",
+    "powers": {
+      "Momentum": "d10",
+      "Railway Gun": "d8",
+      "Strength": "d10",
+      "Vitality": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d10",
+      "Imposing": "d8",
+      "Off the Rails": "d8",
+      "Ranged Combat": "d8"
+    },
+    "statuses": {
+      "Green Zone: 60-41": "d6",
+      "Yellow Zone: 40-17": "d8",
+      "Red Zone: 16-1": "d10"
+    }
+  },
+  "354": {
+    "name": "Ermine",
+    "powers": {
+      "Agility": "d10",
+      "Gadgets": "d8",
+      "Invisibility": "d6"
+    },
+    "qualities": {
+      "Acrobatics": "d8",
+      "Banter": "d8",
+      "Criminal Underworld Info": "d8",
+      "Finesse": "d10",
+      "Flashy Felon": "d8",
+      "Stealth": "d10"
+    },
+    "statuses": {
+      "Any Penalties and No Bonuses": "d4",
+      "Some Penalties and Some Bonuses": "d8",
+      "No Penalties": "d12"
+    }
+  },
+  "356": {
+    "name": "Biomancer",
+    "powers": {
+      "Fleshcrafting": "d10",
+      "Presence": "d8",
+      "Robotics": "d6",
+      "Vitality": "d8"
+    },
+    "qualities": {
+      "Creativity": "d10",
+      "Fleshfather": "d8",
+      "History": "d8",
+      "Insight": "d8",
+      "Magical Lore": "d8"
+    },
+    "statuses": {
+      "9+ minions": "d4",
+      "5-8 minions": "d6",
+      "3-4 minions": "d8",
+      "1-2 minions": "d10",
+      "0 minions": "d12"
+    }
+  },
+  "358": {
+    "name": "Myriad",
+    "powers": {
+      "Flight": "d8",
+      "Insect Control": "d10",
+      "Part Detachment": "d8",
+      "Shapeshifting": "d6"
+    },
+    "qualities": {
+      "Alertness": "d8",
+      "Banter": "d8",
+      "Close Combat": "d8",
+      "Imposing": "d10",
+      "Swarm Master": "d8"
+    },
+    "statuses": {
+      "9+ minions": "d12",
+      "5-8 minions": "d10",
+      "3-4 minions": "d8",
+      "1-2 minions": "d6",
+      "0 minions": "d4"
+    }
+  },
+  "360": {
+    "name": "Dragonclaw",
+    "powers": {
+      "Agility": "d10",
+      "Infernal": "d8",
+      "Remote Viewing": "d8",
+      "Speed": "d6",
+      "The Jade Talon": "d10"
+    },
+    "qualities": {
+      "Acrobatics": "d10",
+      "Close Combat": "d10",
+      "Criminal Underworld Info": "d8",
+      "Investigation": "d8",
+      "Student of Many Masters": "d8"
+    },
+    "statuses": {
+      "4+ Engaged Opponents": "d10",
+      "2-3 Engaged Opponents": "d8",
+      "0-1 Engaged Opponents": "d6"
+    }
+  },
+  "362": {
+    "name": "xxtz’Hulissh",
+    "powers": {
+      "Cosmic": "d10",
+      "Horror": "d12",
+      "Presence": "d10",
+      "Size Changing": "d8"
+    },
+    "qualities": {
+      "Conviction": "d8",
+      "Imposing": "d12",
+      "Otherworldly Mythos": "d12",
+      "Magical Lore": "d10",
+      "Unspeakable": "d8"
+    },
+    "statuses": {
+      "Unchallenged": "d12",
+      "Expose a vulnerability": "d10",
+      "Take advantage of the weakness": "d8"
+    }
+  },
+  "366": {
+    "name": "Screech",
+    "powers": {
+      "Leaping": "d8",
+      "Presence": "d10",
+      "Sonic": "d10",
+      "Vitality": "d8"
+    },
+    "qualities": {
+      "Banter": "d10",
+      "Creativity": "d8",
+      "Ranged Combat": "d8",
+      "Screamo": "d8"
+    },
+    "statuses": {
+      "3+ Heroes with Penalties": "d10",
+      "1-2 Heroes with Penalties": "d8",
+      "0 Heroes with Penalties": "d6"
+    }
+  },
+  "368": {
+    "name": "Blister",
+    "powers": {
+      "Fire": "d12",
+      "Presence": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d8",
+      "Creativity": "d10",
+      "Hot Licks": "d8"
+    },
+    "statuses": {
+      "Green: 30-23": "d10",
+      "Yellow: 22-12": "d8",
+      "Red: 11-1": "d6"
+    }
+  },
+  "370": {
+    "name": "Deeproot",
+    "powers": {
+      "Awareness": "d6",
+      "Plants": "d10",
+      "Strength": "d8",
+      "Swinging": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d6",
+      "Imposing": "d10",
+      "Self-Discipline": "d8",
+      "Steady Rhythm": "d8"
+    },
+    "statuses": {
+      "Always": "d8"
+    }
+  },
+  "372": {
+    "name": "Snare",
+    "powers": {
+      "Drum Throne": "d8",
+      "Energy Shields": "d10",
+      "Sonic": "d8"
+    },
+    "qualities": {
+      "Conviction": "d10",
+      "Insight": "d8",
+      "Magical Lore": "d8",
+      "Percussionist": "d8"
+    },
+    "statuses": {
+      "3+ Heroes with Penalties": "d10",
+      "1-2 Heroes with Penalties": "d8",
+      "0 Heroes with Penalties": "d6"
+    }
+  },
+  "374": {
+    "name": "Drudge",
+    "powers": {
+      "Infernal": "d10",
+      "Presence": "d8",
+      "Vitality": "d6"
+    },
+    "qualities": {
+      "Alertness": "d8",
+      "Blood Sucking Fiend": "d8",
+      "Close Combat": "d8",
+      "Persuasion": "d8"
+    },
+    "statuses": {
+      "0 Other Villains in the Scene": "d10",
+      "1-2 Other Villains in the Scene": "d8",
+      "3+ Other Villains in the Scene": "d6"
+    }
+  },
+  "378": {
+    "name": "Mecha-Stalin 1",
+    "powers": {
+      "Flamethrower": "d8",
+      "Power Suit": "d10",
+      "Presence": "d6",
+      "Strength": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d8",
+      "Leadership": "d8",
+      "Ranged Combat": "d10",
+      "The Means of Production": "d8"
+    },
+    "statuses": {
+      "0 Other Villains in the Scene": "d6",
+      "1-2 Other Villains in the Scene": "d8",
+      "3+ Other Villains in the Scene": "d10"
+    }
+  },
+  "380": {
+    "name": "Mecha-Stalin 2",
+    "powers": {
+      "Nuclear": "d6",
+      "Power Suit": "d10",
+      "Presence": "d8",
+      "Strength": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d10",
+      "Conviction": "d8",
+      "Leadership": "d8",
+      "Soviet of Steel": "d8"
+    },
+    "statuses": {
+      "Green Zone: 55-38": "d6",
+      "Yellow Zone: 37-17": "d8",
+      "Red Zone: 16-1": "d10"
+    }
+  },
+  "382": {
+    "name": "Proletariat",
+    "powers": {
+      "Awareness": "d6",
+      "Sickle and Hammer": "d8",
+      "Strength": "d6",
+      "Vitality": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d10",
+      "Cold Warrior": "d8",
+      "Conviction": "d8",
+      "Self-Discipline": "d6"
+    },
+    "statuses": {
+      "9+ Clones": "d4",
+      "5-8 Clones": "d6",
+      "3-4 Clones": "d8",
+      "1-2 Clones": "d10",
+      "0 Clones": "d12"
+    }
+  },
+  "384": {
+    "name": "Iron Curtain",
+    "powers": {
+      "Leaping": "d8",
+      "Presence": "d10",
+      "Strength": "d10",
+      "Vitality": "d10"
+    },
+    "qualities": {
+      "Close Combat": "d10",
+      "Conviction": "d10",
+      "History": "d8",
+      "Imposing": "d8",
+      "Iron Heir": "d8"
+    },
+    "statuses": {
+      "4+ Engaged Opponents": "d10",
+      "2-3 Engaged Opponents": "d8",
+      "0-1 Engaged Opponents": "d6"
+    }
+  },
+  "386": {
+    "name": "Marsman",
+    "powers": {
+      "Custom Sniper Rifle": "d10",
+      "Intuition": "d8"
+    },
+    "qualities": {
+      "Ranged Combat": "d12",
+      "Reactivated": "d8",
+      "Stealth": "d8"
+    },
+    "statuses": {
+      "0-1 Engaged Opponents": "d10",
+      "2-3 Engaged Opponents": "d8",
+      "4+ Engaged Opponents": "d6"
+    }
+  },
+  "390": {
+    "name": "Glamour",
+    "powers": {
+      "Awareness": "d8",
+      "Illusions": "d10",
+      "Presence": "d10",
+      "Sonic": "d8"
+    },
+    "qualities": {
+      "Creativity": "d10",
+      "Criminal Underworld Info": "d8",
+      "Leadership": "d8",
+      "Mirror Image": "d8"
+    },
+    "statuses": {
+      "3+ Heroes with at least one Penalty": "d10",
+      "1-2 Heroes with at least one Penalty": "d8",
+      "0 Heroes with at least one Penalty": "d6"
+    }
+  },
+  "392": {
+    "name": "Desert Eagle",
+    "powers": {
+      "Eagle Eye System": "d10",
+      "Energy Bolt Launchers": "d6",
+      "Flight": "d8"
+    },
+    "qualities": {
+      "Acrobatics": "d8",
+      "Alertness": "d6",
+      "Eye on the Prize": "d8",
+      "Ranged Combat": "d10"
+    },
+    "statuses": {
+      "0 Other Villains": "d10",
+      "1-2 Other Villains": "d8",
+      "3+ Other Villains": "d6"
+    }
+  },
+  "394": {
+    "name": "Re-Volt",
+    "powers": {
+      "Electricity": "d12",
+      "Intangibility": "d8"
+    },
+    "qualities": {
+      "Living Lightning": "d8",
+      "Ranged Combat": "d10",
+      "Self-Discipline": "d8"
+    },
+    "statuses": {
+      "4+ Engaged Opponents": "d10",
+      "2-3 Engaged Opponents": "d8",
+      "0-1 Engaged Opponents": "d6"
+    }
+  },
+  "396": {
+    "name": "Hippo",
+    "powers": {
+      "Power Suit": "d8",
+      "Strength": "d10",
+      "Vitality": "d8"
+    },
+    "qualities": {
+      "Close Combat": "d8",
+      "Fitness": "d8",
+      "Hungry Hungry": "d8"
+    },
+    "statuses": {
+      "Green Zone: 65-45": "d6",
+      "Yellow Zone: 44-18": "d8",
+      "Red Zone: 17-1": "d10"
+    }
+  },
+  "398": {
+    "name": "Kismet",
+    "powers": {
+      "Intuition": "d8",
+      "Karma": "d10",
+      "Presence": "d8"
+    },
+    "qualities": {
+      "Creativity": "d10",
+      "Insight": "d8",
+      "Lady Luck": "d8",
+      "Persuasion": "d8"
+    },
+    "statuses": {
+      "Green Zone: 40-30": "d10",
+      "Yellow Zone: 29-15": "d8",
+      "Red Zone: 14-1": "d6"
+    }
+  },
+  "400": {
+    "name": "Ray Manta",
+    "powers": {
+      "Gadgets": "d6",
+      "Inventions": "d8",
+      "Lightning Calculator": "d6",
+      "Power Suit": "d6"
+    },
+    "qualities": {
+      "Conspiracy Theorist": "d8",
+      "Conviction": "d8",
+      "Creativity": "d6",
+      "Investigation": "d10"
+    },
+    "statuses": {
+      "4+ Invention Mods": "d12",
+      "2-3 Invention Mods": "d10",
+      "1 Invention Mod": "d8",
+      "0 Invention Mods": "d6"
+    }
+  }
+}

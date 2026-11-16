@@ -14,6 +14,36 @@ ROOT = Path(__file__).resolve().parents[1]
 PDF = Path.home() / "Desktop" / "Sentinel_Comics_RPG.pdf"
 OUT = ROOT / "src" / "data" / "archive"
 BOOK_TO_PDF = 8  # book page N → PDF page N+8 (1-based)
+VILLAIN_DICE_PATH = OUT / "villain-dice.json"
+
+
+def load_villain_dice() -> dict:
+    """Curated die sizes read from Archive sheet die glyphs (by book page)."""
+    if not VILLAIN_DICE_PATH.exists():
+        return {}
+    try:
+        return json.loads(VILLAIN_DICE_PATH.read_text())
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def apply_villain_dice(
+    entries: list[dict], curated: dict[str, str] | None
+) -> tuple[list[dict], list[str]]:
+    """Apply curated dieType map; return updated entries and unmatched names."""
+    if not curated:
+        return entries, [e["name"] for e in entries]
+    unmatched: list[str] = []
+    updated: list[dict] = []
+    for entry in entries:
+        name = entry["name"]
+        die = curated.get(name)
+        if not die:
+            unmatched.append(name)
+            updated.append({**entry, "dieType": entry.get("dieType", "d8"), "dieTypeKnown": False})
+            continue
+        updated.append({**entry, "dieType": die, "dieTypeKnown": True})
+    return updated, unmatched
 
 CHROME = {
     "Playing", "the Game", "the", "Bullpen", "Adventure", "Issues", "Creating",
@@ -878,9 +908,24 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
         if m:
             health = int(m.group(1))
 
-    gaps = [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified.",
-    ]
+    # Die glyphs are image art; apply curated sizes from villain-dice.json.
+    dice = load_villain_dice().get(str(book), {})
+    powers, miss_p = apply_villain_dice(powers, dice.get("powers"))
+    qualities, miss_q = apply_villain_dice(qualities, dice.get("qualities"))
+    statuses, miss_s = apply_villain_dice(statuses, dice.get("statuses"))
+
+    gaps: list[str] = []
+    if not dice:
+        gaps.append(
+            "Villain power/quality/status die sizes missing from villain-dice.json; defaulted to d8."
+        )
+    for label, missing in (
+        ("power", miss_p),
+        ("quality", miss_q),
+        ("status", miss_s),
+    ):
+        for item_name in missing:
+            gaps.append(f"Unverified {label} die for {item_name}; defaulted to d8.")
     if not statuses:
         gaps.append("No villain status tracks parsed from sheet Status column.")
     if not abilities:

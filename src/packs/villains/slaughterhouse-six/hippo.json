@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -222,7 +222,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Health</p>"
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -288,7 +288,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Health</p>"
       },
@@ -301,7 +301,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -569,9 +569,7 @@
       "sourcePage": 396,
       "biographyHtml": "<p>397\n397\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEddie liked to hit things, he liked to be bigger than \nthe things he was hitting, and he liked money. On \nthe Rook City Renegades baseball team, he got \nall of those things. The team was sponsored by \nPike Industries, and they liked their players on the \nthuggish side. With the wide variety of pharmaceutical \nenhancements available, Eddie decided his favorite \ntype of muscle growth pill was “all of them.” Kicked off \nthe team for being too flagrantly juiced, he became \na crime syndicate hired muscle, a career path all too \ncommon in Rook City. After hearing that hippos were \nsurprisingly dangerous animals, he decided that he \nneeded a costume to enhance his tough guy image, \nand Hippo was born. He’s not the brightest, but \nthere’s always a place for a tough guy who doesn’t \nquestion orders and likes a good fight.\nCapabilities and Motivations\nIn addition to his own substantial strength, the “skin” \nof Hippo’s suit is actually a type of liquid armor \nsandwiched between layers of polymer, able to turn \naside nearly anything with minimal impact to the \nuser. Eddie stole it from a military depot on an odd \njob boosting prototype weapons. After the heist, \nhe found a seedy lab that was more than happy to \nmake him a suit out of the ultra-durable material \n(after a full analysis and sample so that they could \nreplicate it, of course). It’s made him an even more \neffective thug, which Glamour noticed when she \nstarted looking for muscle for her group. He’s the \nSlaughterhouse Six’s blunt instrument, and content \nin that role.\nUpgrades\nWhile pharmacology has taken Hippo’s strength \nabove and beyond the human norm, he’s hit the \nlimit when it comes to conventional steroids. With \nenough funding and a little technologic genius from \nRay Manta, the Hippo suit could be upgraded with \ncybernetic enhancements and interfacing. In addition \nto increasing his strength tenfold, he’d be able to \nmove in it as if it truly was his skin. Sure, there would \nprobably be a few downsides, but Eddie isn’t the \ntype to worry too much about that sort of thing.\nVillains\nAlias: Eddie Wagner\nGender: Male\nAge: Late-40s\nHeight: 7’2” \nEyes: White\nHair: Brown\nSkin: White\nBuild: Extremely muscular\nCostume/Equipment: Eddie wears a full body \nsuit that resembles an actual hippo, with the head \nof the hippo covering his own. The suit covers \neverything except his face, which can be seen \nbetween the upper and lower jaws of the hippo, \nframed by the teeth of the suit. \nApproach: Bully\nArchetype: Bruiser\nHippo</p>",
       "statusTheme": "Health",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

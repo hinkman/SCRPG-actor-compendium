@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": "",
         "description": ""
       },
@@ -106,7 +106,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -138,7 +138,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -170,7 +170,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -189,7 +189,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -202,7 +202,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -255,7 +255,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -576,9 +576,7 @@
       "sourcePage": 386,
       "biographyHtml": "<p>387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nPavel was in Stalingrad at age 17 when the Nazis \ninvaded. The ammunition factory where his parents \nworked was an early target, and after their death he \njoined the Red Army Unit 23. After the surrender of \nthe Axis forces in Stalingrad, he was deployed all along \nthe Eastern Front including Kursk, Finland, and Warsaw \nto destabilize axis operations in advance of Soviet \nforces. He was then recruited for the NKVD’s covert \nkill squad to eliminate political dissidents, disrupt CIA \nand MI6 agents, and assassinate foreign scientists \nstudying space travel. In 1950, the NKVD established \na sleeper program by order of Joseph Stalin. He was \nembedded in La Paz, Bolivia, ordered to maintain \nreadiness until activated.\nActivations:\nApr. 15, 1951: Nuclear test team 5 | Nuclear testing \nsite 5, Nevada\nJune 26, 1951: Korean theater command | The \nPentagon, Arlington, VA\nMar. 18, 1952: CIA Chief and Assistant | CIA HQ \nLangley, VA\nNov. 22, 1963: John F. Kennedy | Dallas, TX\nJun 23, 1967: Lyndon Baines Johnson | Glassboro NJ | \nMISSION ABORT, authorization A. Kosygin\nCapabilities and Motivations\nMarxman might be considered history’s greatest sniper, \nwere his service records not thoroughly redacted. His \ntalent for ballistic calculation honed by decades of \npractice allows him to make precise shots at extreme \nrange. He stalks his targets for days, preparing his \napproach, retreat, and contingent positions. For him, \nthe mission is all. Long ago, he made his choice to give \nhis life to the Soviet Union. Mecha-Stalin’s knowledge \nof his activation code gives him authority to command, \nand Marxman is ready to serve.\nUpgrades\nMecha-Stalin knows that keeping Marxman out of \ndirect fighting is paramount, so along with better \nweapons that extend his range, he wears a prototype \nexoskeleton under his fatigues that serves a variety \nof functions. It monitors his vitals, regulates his bodily \nfunctions, and augments his mobility.\n387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAlias: Pavel Vladislavovich Koslovski\nGender: Male\nAge: 97\nHeight: 5’ 5”\nEyes: Blue\nHair: Bald with a grey beard\nSkin: Pale, wrinkled, and spotted \nBuild: Excellent for his age\nCostume/Equipment: A grey and rust-red body \nsuit with white fur shawl around the neck and \nleft shoulder. White and grey camo combat pants. \nDark grey gloves and boots. Often wears a white \nmetal helmet with a rectangular red eye slit on the \nleft and a round one with the hammer and sickle \ndesign on the right. Frequently carries a bandoleer \nof heavily customized ammunition and a heavily \nmodified designated marksman rifle (DMR) or \nsniper rifle with scope.\nApproach: Specialized\nArchetype: Predator\nMarxman</p>",
       "statusTheme": "Engaged Opponents",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {
