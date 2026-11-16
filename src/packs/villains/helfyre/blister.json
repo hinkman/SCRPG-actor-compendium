@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "8LdHUDpLXhuZmpix",
-      "name": "30",
+      "_id": "y1GNTnH5lZz5cdok",
+      "name": "Fire",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.8LdHUDpLXhuZmpix"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.y1GNTnH5lZz5cdok"
     },
     {
-      "_id": "2GyWhzqH5k6BmCQn",
-      "name": "Fire",
+      "_id": "4ieGpw9LXCHSB7Ro",
+      "name": "Presence",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,110 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.2GyWhzqH5k6BmCQn"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4ieGpw9LXCHSB7Ro"
     },
     {
-      "_id": "iPKwdQ0Tzql4Noxg",
+      "_id": "sL1wxhdtPUsxKF5C",
       "name": "Close Combat",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 200000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.iPKwdQ0Tzql4Noxg"
-    },
-    {
-      "_id": "4oaulGiGhPdjbyh0",
-      "name": "Presence",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 300000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4oaulGiGhPdjbyh0"
-    },
-    {
-      "_id": "lcLOy0b3pINF1HvN",
-      "name": "Creativity",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.lcLOy0b3pINF1HvN"
-    },
-    {
-      "_id": "Kuwpmb2Z41G36a0T",
-      "name": "Health",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,15 +117,178 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.Kuwpmb2Z41G36a0T"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.sL1wxhdtPUsxKF5C"
     },
     {
-      "_id": "O31GcxpZJ61jBL9C",
+      "_id": "4MLu77HdhBJr7KLF",
+      "name": "Creativity",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4MLu77HdhBJr7KLF"
+    },
+    {
+      "_id": "pjGi4A2nYlglSNKh",
+      "name": "Hot Licks",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.pjGi4A2nYlglSNKh"
+    },
+    {
+      "_id": "WWE5KQ1TihC7v4iX",
+      "name": "Green: 30-23",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.WWE5KQ1TihC7v4iX"
+    },
+    {
+      "_id": "YCW5dkFZreGyMktS",
+      "name": "Yellow: 22-12",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.YCW5dkFZreGyMktS"
+    },
+    {
+      "_id": "cR9sUA4A7JqpyZVX",
+      "name": "Red: 11-1",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.cR9sUA4A7JqpyZVX"
+    },
+    {
+      "_id": "4nKlYJadTWNEhgss",
       "name": "Blazing Axe",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -245,7 +309,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -256,15 +320,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.O31GcxpZJ61jBL9C"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4nKlYJadTWNEhgss"
     },
     {
-      "_id": "K1ZwDlvvUGqH9I14",
+      "_id": "OdAcaa8nw0mTS3Zd",
       "name": "Blistering Solo",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -285,7 +349,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -296,15 +360,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.K1ZwDlvvUGqH9I14"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.OdAcaa8nw0mTS3Zd"
     },
     {
-      "_id": "tUvyGqmfYMZzL1Al",
+      "_id": "4DpMkvxI9f0EBLkp",
       "name": "Burning Melody",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -325,7 +389,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -336,15 +400,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.tUvyGqmfYMZzL1Al"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4DpMkvxI9f0EBLkp"
     },
     {
-      "_id": "G1DblX0tzTgPFvIW",
+      "_id": "1K2smKdCGaJfpKe4",
       "name": "Sleep Now in the Fire",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -365,7 +429,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -376,15 +440,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.G1DblX0tzTgPFvIW"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.1K2smKdCGaJfpKe4"
     },
     {
-      "_id": "i2hF2fruguHc0oKn",
+      "_id": "LzZ3fOvNKDiBENmS",
       "name": "Stage Dive",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -405,7 +469,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -416,15 +480,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.i2hF2fruguHc0oKn"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.LzZ3fOvNKDiBENmS"
     },
     {
-      "_id": "138bUgb8RjYrsxtU",
+      "_id": "AeD9KkHbCBsFOIlg",
       "name": "Quality Upgrade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -445,7 +509,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -456,15 +520,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.138bUgb8RjYrsxtU"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.AeD9KkHbCBsFOIlg"
     },
     {
-      "_id": "Pz4ux8CjWhdmYiVJ",
+      "_id": "vAvBrEfQEyCwhRC8",
       "name": "Master of Annihilation",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -485,7 +549,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -496,7 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!OhDNjRcJt0P4rQK2.Pz4ux8CjWhdmYiVJ"
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.vAvBrEfQEyCwhRC8"
     }
   ],
   "effects": [],
@@ -511,9 +575,9 @@
       "team": "helfyre",
       "sourcePage": 368,
       "biographyHtml": "<p>369\n369\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nThe daughter of a roadie, Cinder spent her life on \ntour. She learned a great deal about how to play \nfrom a wide variety of bands, demonstrating an \naptitude for the guitar. This led to her discovering \nher powers one day when she was particularly in \nthe groove and her guitar burst into flames where \nher fingers touched the strings; fire which quickly \nspread to the rest of the guitar and herself. In \nthis moment, she learned several things. First, she \nlearned that she was completely immune to fire, as \nwas anything close to her skin. Second, she learned \nthat playing a flaming guitar while immune to fire \nwas AWESOME. Third and finally, she learned that \nguitars, unlike her, burned quite well. She would \nrequire a steady supply of guitars on her road to \ngreatness. A band of people with powers looking for \na guitarist was too good an opportunity to pass up.\nCapabilities and Motivations\nCinder is by far the most musically adept member \nof Helfyre. She has a natural talent for music, enjoys \nplaying the guitar, and has a desire to get better that \ndrives her to constantly practice. She could easily be \nthe heart of the team, but isn’t interested in helping \nthem get better. As far as Blister is concerned, the \nrest of Helfyre is mostly there to keep the crowd \nwarmed up between her solos. She’d be happy if \nthey got on her level... just as long as they do it on \ntheir own time and don’t get in her way.\nUpgrades\nWhile Wager Master certainly increased Blister’s \ncontrol, her constant practice has allowed her \nto work on flashier, hotter, and more sustained \napplications of her fire. The most apparent is that \nshe can keep her instruments from burning quite \nas fast, though she’s never had one survive a solo. \nShe’s still a long way from the control she would \nneed to stop a fire once it really got going, but that \nkind of mastery is potentially within her reach.\nAlias: Cinder Azarian\nGender: Female\nAge: Early-20s\nHeight: 5’ 0’\nEyes: Orange, frequently on fire\nHair: Red and black, frequently on fire\nSkin: Light brown, frequently on fire\nBuild: Very thin. Frequently on fire\nCostume/Equipment: Red tights, black tank top, \ngigantic boots with multiple buckles and zippers, \nmostly ornamental. She has a variety of guitars, \nmostly because she tends to light them on fire.\nApproach: Focused\nArchetype: Fragile\nBlister</p>",
+      "statusTheme": "Health",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

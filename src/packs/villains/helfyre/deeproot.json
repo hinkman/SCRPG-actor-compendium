@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "7AIvDhtY0ecgDPKT",
-      "name": "65",
+      "_id": "RMGDHHog3AtdBQCK",
+      "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.7AIvDhtY0ecgDPKT"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.RMGDHHog3AtdBQCK"
     },
     {
-      "_id": "SV9jAVCfgpW56uyF",
-      "name": "Awareness",
+      "_id": "Aqg7lqj9HZGXFhUk",
+      "name": "Plants",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.SV9jAVCfgpW56uyF"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.Aqg7lqj9HZGXFhUk"
     },
     {
-      "_id": "detWmSxySG4bSSFG",
-      "name": "Close Combat",
+      "_id": "hmSHFOcJN4aZbYQD",
+      "name": "Strength",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.detWmSxySG4bSSFG"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.hmSHFOcJN4aZbYQD"
     },
     {
-      "_id": "FxAaTGMjlJftIHWc",
-      "name": "Plants",
+      "_id": "WSewAa9mvRFIVLNQ",
+      "name": "Swinging",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.FxAaTGMjlJftIHWc"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.WSewAa9mvRFIVLNQ"
     },
     {
-      "_id": "XweX0KWn560kKDY2",
-      "name": "Imposing",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.XweX0KWn560kKDY2"
-    },
-    {
-      "_id": "S2ZDvz8l7Gpfo7oB",
-      "name": "Constant",
+      "_id": "VKtRkoUDyhQE0Ugt",
+      "name": "Close Combat",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +183,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.S2ZDvz8l7Gpfo7oB"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.VKtRkoUDyhQE0Ugt"
     },
     {
-      "_id": "PUAFEFBQ7Db2wtaI",
-      "name": "Always",
+      "_id": "2pBquQ5oOGNoFFBe",
+      "name": "Imposing",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,15 +215,112 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.PUAFEFBQ7Db2wtaI"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.2pBquQ5oOGNoFFBe"
     },
     {
-      "_id": "MYl5E3Hp6EeCJ7GS",
+      "_id": "l51k8r2zfWFmS80l",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.l51k8r2zfWFmS80l"
+    },
+    {
+      "_id": "0WZQKzMLla1B0FSh",
+      "name": "Steady Rhythm",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.0WZQKzMLla1B0FSh"
+    },
+    {
+      "_id": "Q4gFVsAcVmt2iGWE",
+      "name": "Always",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Constant</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Constant"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.Q4gFVsAcVmt2iGWE"
+    },
+    {
+      "_id": "AFOeQELtcZwgymmI",
       "name": "Bark Shield",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -277,7 +341,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -288,15 +352,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.MYl5E3Hp6EeCJ7GS"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.AFOeQELtcZwgymmI"
     },
     {
-      "_id": "NYcIS8iqlIMHRK8h",
+      "_id": "zkjJfa22rUrwMWPO",
       "name": "Can’t Stop the Beatdown",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -317,7 +381,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -328,15 +392,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.NYcIS8iqlIMHRK8h"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.zkjJfa22rUrwMWPO"
     },
     {
-      "_id": "5aViWaSktIDKMQof",
+      "_id": "NwPdEmK2RciAXcNN",
       "name": "Photosynthestrike",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -357,7 +421,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -368,15 +432,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.5aViWaSktIDKMQof"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.NwPdEmK2RciAXcNN"
     },
     {
-      "_id": "K9S8ervQQGoTa3W0",
+      "_id": "FHFz1jkqn15AWmiP",
       "name": "Plant Life of the Party",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -397,7 +461,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -408,15 +472,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.K9S8ervQQGoTa3W0"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.FHFz1jkqn15AWmiP"
     },
     {
-      "_id": "gDBRKwDA7HN4GVsq",
+      "_id": "FDY9di7SAxMWXNUg",
       "name": "Writhing Flora",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -437,7 +501,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -448,15 +512,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.gDBRKwDA7HN4GVsq"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.FDY9di7SAxMWXNUg"
     },
     {
-      "_id": "rhlVNvrU5UsKktnp",
+      "_id": "CByEMO8wBApbS77F",
       "name": "With Ferns Like These…",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -477,7 +541,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -488,15 +552,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.rhlVNvrU5UsKktnp"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.CByEMO8wBApbS77F"
     },
     {
-      "_id": "Gwk8WvI2HNG61Crr",
+      "_id": "zNRkCPFe4O0bTj4F",
       "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -517,7 +581,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -528,7 +592,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CJb2zbH8H2F1tTmp.Gwk8WvI2HNG61Crr"
+      "_key": "!actors.items!CJb2zbH8H2F1tTmp.zNRkCPFe4O0bTj4F"
     }
   ],
   "effects": [],
@@ -543,9 +607,9 @@
       "team": "helfyre",
       "sourcePage": 370,
       "biographyHtml": "<p>371\n371\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nIf anyone bothered to ask Silvio about his life, he \ncould tell them how his mother and father met at \nthe Italian embassy in New Delhi. He could talk \nabout how the ambassador’s daughter fell madly in \nlove with the attaché for the Field Marshal of the \nIndian Army, and how they married in Rome with \nthe pope himself blessing their union. He could talk \nabout the trip to Tanzania that took their lives, and \nhow he swam against the current of the Kalambo \nriver after the crash only to go over the falls. He \ncould talk about how he came to on a riverbank, \ncovered in mud and wrapped in vines. He could talk \nabout the years he spent communing with plants \nas the legendary plant man of Tanganyika valley, or \nthe sea captain who took the feral boy in. He could \ntalk about the happy years on the fishing boat, the \nterrible storm that ended them, or the days he \nspent sustained by the sun, clutching a raft of kelp. \nHe could talk about drifting ashore in Hawaii, taking \nshelter at a concert, or the roadies that mistook him \nfor a stage hand and invited him to the afterparty. \nHe could talk about learning bass from Lemmy \nKilmister, Robert Trujillo, and Geddy Lee. \nOf course, why would they ask him? \nHe’s just the bassist.\nCapabilities and Motivations\nDeeproot can play a mean bass line as well as \ngrow and control plants, though those are the least \nimportant things he does for the band. He breaks up \nfights between members, keeps the fridge stocked \nwith the right kind of beer, throws out pizza boxes, \nand knows how to get the Thai place to break out \nreal spices for Snare’s order. He’s the glue that holds \nthe band together, and like his name implies, there is \na lot more to him beneath the surface.\nUpgrades\nDeeproot’s control over plants, as well as his range, \nhas only grown over time. Now he can make them \nstronger, force them to rapidly grow, and even \nrevive dead plants. As his connection with nature \ndeepens, he learns more and more about the \ninterconnection of all things.\nAlias: Silvio Thorne\nGender: Male\nAge: Early-30s\nHeight: 6’ 8”\nEyes: Glowing Green\nHair: Long, green, and greasy, with a mustache that \njust won’t quit\nSkin: grayish green\nBuild: Heavily muscled\nCostume/Equipment: Black shirt, grey jeans, \ncombat boots. Usually has a few vines twining \naround him.\nApproach: Generalist\nArchetype: Indomitable\nDeeproot\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\n371\n371\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nVillains\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe</p>",
+      "statusTheme": "Constant",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

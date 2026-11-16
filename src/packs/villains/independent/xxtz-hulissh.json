@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "pUv7Gt3m7ecWdAGd",
-      "name": "80",
+      "_id": "UuIjRAicBQBuDyqf",
+      "name": "Cosmic",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.pUv7Gt3m7ecWdAGd"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.UuIjRAicBQBuDyqf"
     },
     {
-      "_id": "YjPnzVkzV7VyqMe5",
-      "name": "Cosmic",
+      "_id": "emeqBQnBKchrxwGy",
+      "name": "Horror",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.YjPnzVkzV7VyqMe5"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.emeqBQnBKchrxwGy"
     },
     {
-      "_id": "MVE7FdCQZP5ermp6",
-      "name": "Conviction",
+      "_id": "LafxGA1CNSNkKTGT",
+      "name": "Presence",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.MVE7FdCQZP5ermp6"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.LafxGA1CNSNkKTGT"
     },
     {
-      "_id": "a3Bvicu9HeqFPcVG",
-      "name": "Horror",
+      "_id": "b4eQxsHWCELKdy2E",
+      "name": "Size Changing",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.a3Bvicu9HeqFPcVG"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.b4eQxsHWCELKdy2E"
     },
     {
-      "_id": "83J3f6qW0l5FM3Yd",
-      "name": "Imposing",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.83J3f6qW0l5FM3Yd"
-    },
-    {
-      "_id": "D1kFiiSvzlAMHKDF",
-      "name": "Titan’s Challenge",
+      "_id": "LlOxmBTDCedgwmvj",
+      "name": "Conviction",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +183,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.D1kFiiSvzlAMHKDF"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.LlOxmBTDCedgwmvj"
     },
     {
-      "_id": "p68lT6vSmcK9a77V",
-      "name": "Unchallenged",
+      "_id": "wOq1zXk3GEfXKBmv",
+      "name": "Imposing",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +215,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.p68lT6vSmcK9a77V"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.wOq1zXk3GEfXKBmv"
     },
     {
-      "_id": "rsmFVpPNMHYxaLGG",
-      "name": "Expose a vulnerability",
+      "_id": "sQR6Enq7Q8CwI4Yc",
+      "name": "Otherworldly Mythos",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +247,178 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.rsmFVpPNMHYxaLGG"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.sQR6Enq7Q8CwI4Yc"
     },
     {
-      "_id": "Y3d5ZjIxZOwYJlan",
+      "_id": "qfTW9BLQkXqGvQ0e",
+      "name": "Magical Lore",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.qfTW9BLQkXqGvQ0e"
+    },
+    {
+      "_id": "uK23vkvW1TTJBDou",
+      "name": "Unspeakable",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.uK23vkvW1TTJBDou"
+    },
+    {
+      "_id": "fMJuOJUvgyDHB298",
+      "name": "Unchallenged",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Titan’s Challenge</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Titan’s Challenge"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.fMJuOJUvgyDHB298"
+    },
+    {
+      "_id": "fhUybQYZonD0JUCP",
+      "name": "Expose a vulnerability",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Titan’s Challenge</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Titan’s Challenge"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.fhUybQYZonD0JUCP"
+    },
+    {
+      "_id": "UCaskKZrqDwveDnF",
+      "name": "Take advantage of the weakness",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Titan’s Challenge</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Titan’s Challenge"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.UCaskKZrqDwveDnF"
+    },
+    {
+      "_id": "WzYPB9zcCis1IHcp",
       "name": "Confront the Unknowable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -309,7 +439,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +450,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.Y3d5ZjIxZOwYJlan"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.WzYPB9zcCis1IHcp"
     },
     {
-      "_id": "mtJv7XhE8PjgU67j",
+      "_id": "5gXT7fNa8IyzDBxr",
       "name": "His Dread Presence",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -349,7 +479,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +490,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.mtJv7XhE8PjgU67j"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.5gXT7fNa8IyzDBxr"
     },
     {
-      "_id": "hIVFVykajrO37zFy",
+      "_id": "MTSxoad9vkWJxn3R",
       "name": "Pointless to Oppose Him",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -389,7 +519,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +530,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.hIVFVykajrO37zFy"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.MTSxoad9vkWJxn3R"
     },
     {
-      "_id": "jXiSbF9OVxHtDDWH",
+      "_id": "7gCBz7SdLGv7r0FX",
       "name": "Rend Hearts and Homes",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -429,7 +559,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +570,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.jXiSbF9OVxHtDDWH"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.7gCBz7SdLGv7r0FX"
     },
     {
-      "_id": "pQDUjIYc82LBU4BL",
+      "_id": "XrxUdwU1UtG6URCB",
       "name": "Swallowed Hul",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -469,7 +599,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +610,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.pQDUjIYc82LBU4BL"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.XrxUdwU1UtG6URCB"
     },
     {
-      "_id": "CG19i25amXEYANIZ",
+      "_id": "gG9G6mynehRMiBU8",
       "name": "Opened Maw",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +639,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,15 +650,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.CG19i25amXEYANIZ"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.gG9G6mynehRMiBU8"
     },
     {
-      "_id": "VODTEMQ62aLTNenL",
+      "_id": "hm1uILeNxcfhC1qX",
       "name": "Master of the Unfathomable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -549,7 +679,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -560,7 +690,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.VODTEMQ62aLTNenL"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.hm1uILeNxcfhC1qX"
     }
   ],
   "effects": [],
@@ -575,9 +705,9 @@
       "team": "independent",
       "sourcePage": 362,
       "biographyHtml": "<p>363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAll that the world knows is that an incomprehensible \nbehemoth has emerged from the depths of the \nAtlantic Ocean, moving towards an unknowable \ngoal with despair, destruction, and madness in its \nindifferent wake. If they could draw back the curtain \nof time, they might see how in a time long past, \nthe mages of Atlantis awoke something terrible. \nA beast from a nether dimension suddenly saw \na new, vital world and began to break through so \nthat it could summon its Hul-spawn and lay claim \nto the earth. To prevent devastation, the master \nmages of Atlantis enacted a terrible plan. Imbuing \nrelics of power with the collective sacrifice of their \npeople, they created twelve anchors to forever \nhold xxtz’Hulissh in place, then sank their city so \nthe relics would be forever safe. Perhaps, had they \nmore time, they could have found a kinder solution. \nPerhaps, had they more foresight, they could have \nanticipated the curiosity of future civilizations. \nPerhaps, had they more fortune, they might have \nsucceeded in sealing the dread being away forever.\nCapabilities and Motivations\nWith the removal of several of the Atlantean \nrelics, both by heroes and by researchers \nstudying Atlantis, the prison has been weakened. \nAn incomprehensible, unstoppable behemoth, \nxxtz’Hulissh has broken free and moves towards an \nunknown goal, destroying anything in the way and \nsending a wave of horror before it. To fight it is to \nbe trampled; to look upon it is to court madness.\nUpgrades\nxxtz’Hulissh’s biology, motives, and potential \nweaknesses seem impossible to discern. The \nlightless maw where its face should be is a portal to \nits realm, from whence it spews forth its spawn. The \nhorror that accompanies xxtz’Hulissh is enough to \nsend all but the strongest souls running, and those \nthat face it directly risk being shoved into the maw \nto the dimension where its hungry brood waits.\nAlias: None\nGender: Incomprehensible\nAge: Impossible\nHeight: Towering\nEyes: None \nHair: None\nSkin: Flabby, squamous, one fore-limb covered \nwith a carapace.\nBuild: Colossal\nCostume/Equipment: To look upon it is madness! \nIts barbed tentacles rising high above a headless \nneck from which the Hul-spawn peer and wait \nto be born from the darkness! The clawed feet \non legs that should crumble beneath its weight! \nSkin like the strongest armor, and a crushing claw \ncovered with shell that is stronger still! The tail that \nlashes, the claw that crushes! Beware! Look not \nupon it!\nApproach: Ancient\nArchetype: Titan\nxxtz’Hulissh\n363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>",
+      "statusTheme": "Titan’s Challenge",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

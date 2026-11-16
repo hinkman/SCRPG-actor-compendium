@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "0y3t18Iv5KHHhcRF",
-      "name": "35",
+      "_id": "G8MbRv17UhnFEk6n",
+      "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.0y3t18Iv5KHHhcRF"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.G8MbRv17UhnFEk6n"
     },
     {
-      "_id": "e10XDPiiUJLwy9bt",
-      "name": "Awareness",
+      "_id": "uykbpNywmdukhn1H",
+      "name": "Sickle and Hammer",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.e10XDPiiUJLwy9bt"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.uykbpNywmdukhn1H"
     },
     {
-      "_id": "dEwe9QoHdyZuNM6w",
-      "name": "Close Combat",
+      "_id": "jzrLsd1Zq4Nf7vA3",
+      "name": "Strength",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.dEwe9QoHdyZuNM6w"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.jzrLsd1Zq4Nf7vA3"
     },
     {
-      "_id": "kZ6Hj4wQvCwwZm7I",
-      "name": "Sickle and Hammer",
+      "_id": "O54TOeo8Eu9PZwjK",
+      "name": "Vitality",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.kZ6Hj4wQvCwwZm7I"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.O54TOeo8Eu9PZwjK"
     },
     {
-      "_id": "dPjwMfvWmOWFznm2",
-      "name": "Cold Warrior",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.dPjwMfvWmOWFznm2"
-    },
-    {
-      "_id": "RmChoqPJtfktpgup",
-      "name": "Number of Clones",
+      "_id": "DPeXSqP8DSzJ0OUx",
+      "name": "Close Combat",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +183,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.RmChoqPJtfktpgup"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.DPeXSqP8DSzJ0OUx"
     },
     {
-      "_id": "ZCnXay6U7OAz4yWk",
-      "name": "9+ Clones",
+      "_id": "kU0mmpzNshGNdHwe",
+      "name": "Cold Warrior",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +215,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.ZCnXay6U7OAz4yWk"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.kU0mmpzNshGNdHwe"
     },
     {
-      "_id": "GYQj9oDqZvBS6ILo",
-      "name": "5-8 Clones",
+      "_id": "9eTZwSpZFMUBfsBI",
+      "name": "Conviction",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +247,212 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.GYQj9oDqZvBS6ILo"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.9eTZwSpZFMUBfsBI"
     },
     {
-      "_id": "zjb6BZSeUEsJuM6x",
+      "_id": "5Ifz5sTXs0XOsa5I",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.5Ifz5sTXs0XOsa5I"
+    },
+    {
+      "_id": "HikFuvuMjyVlQ3d1",
+      "name": "9+ Clones",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Clones</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Clones"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.HikFuvuMjyVlQ3d1"
+    },
+    {
+      "_id": "fLFVtLnjvq0sjGAW",
+      "name": "5-8 Clones",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Clones</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Clones"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.fLFVtLnjvq0sjGAW"
+    },
+    {
+      "_id": "IbFpeGy7pmrR04Ee",
+      "name": "3-4 Clones",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Clones</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Clones"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.IbFpeGy7pmrR04Ee"
+    },
+    {
+      "_id": "M59AY03VtGBh04AX",
+      "name": "1-2 Clones",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Clones</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Clones"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.M59AY03VtGBh04AX"
+    },
+    {
+      "_id": "UBF6B0whPONk72x5",
+      "name": "0 Clones",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Clones</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Clones"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9VmPrkYm1YBODxch.UBF6B0whPONk72x5"
+    },
+    {
+      "_id": "0tyku5lIsgdlXozN",
       "name": "Coordination Issues",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +473,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +484,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.zjb6BZSeUEsJuM6x"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.0tyku5lIsgdlXozN"
     },
     {
-      "_id": "4oJrHfXQ7zGz35xR",
+      "_id": "NYQAknerIox1uvjD",
       "name": "Everyman’s Strength",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -349,7 +513,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +524,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.4oJrHfXQ7zGz35xR"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.NYQAknerIox1uvjD"
     },
     {
-      "_id": "x32PAJynMUkjGRyP",
+      "_id": "ZeqwJcfSM5UB4wHH",
       "name": "Join in the Struggle",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -389,7 +553,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +564,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.x32PAJynMUkjGRyP"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.ZeqwJcfSM5UB4wHH"
     },
     {
-      "_id": "Ek7FbH53DXEugSx3",
+      "_id": "5FMst9c9MECPPcuI",
       "name": "Overwhelm the Mighty",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +593,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +604,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.Ek7FbH53DXEugSx3"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.5FMst9c9MECPPcuI"
     },
     {
-      "_id": "JC0clwaqD4DiYCRV",
+      "_id": "etAuU0bdYtJngzsU",
       "name": "Quantity’s Quality",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +633,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +644,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.JC0clwaqD4DiYCRV"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.etAuU0bdYtJngzsU"
     },
     {
-      "_id": "o2I8sd4UJpxiGSAf",
+      "_id": "Bi87we68DW0RoozV",
       "name": "Power Upgrade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +673,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,15 +684,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.o2I8sd4UJpxiGSAf"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.Bi87we68DW0RoozV"
     },
     {
-      "_id": "j15C1eK5HsaDWRYx",
+      "_id": "2cOr6vQBm2NdTm0y",
       "name": "Master of Superiority",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -549,7 +713,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -560,7 +724,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9VmPrkYm1YBODxch.j15C1eK5HsaDWRYx"
+      "_key": "!actors.items!9VmPrkYm1YBODxch.2cOr6vQBm2NdTm0y"
     }
   ],
   "effects": [],
@@ -575,9 +739,9 @@
       "team": "perestroika",
       "sourcePage": 382,
       "biographyHtml": "<p>383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAt the end of WWII, Alexandr Tsarev was selected \nas a test subject for a secret Soviet program. \nExposed to radiation from a mysterious crystal, \nhe developed the power to duplicate himself. \nHe was cryogenically frozen, to later serve in the \nSoviet Union’s hour of greatest need. Decades later, \nBaron Blade discovered the lost facility and thawed \nhim out, tricking him into thinking the Freedom \nFive were enemies in his quest for vengeance. \nProletariat clashed with heroes as he looked for \nways to continue his mission and investigate other \nlost Soviet tech, eventually leading \nhim to a find a new purpose.\nCapabilities and Motivations\nProletariat is capable of duplicating himself on \ncontact and can absorb his duplicates to heal physical \nwounds. His consciousness is distributed across his \nduplicates, so there is no “main” Proletariat. Each \nduplicate acts independently, knowing everything \neach Proletariat knows. However, with more \ncopies comes more mental burden, reducing the \ncomplexity of tasks each one can do. What drives \nhim is the struggle for something bigger than himself. \nSomething like Perestroika gave him. A restored \nSoviet Union is less important to him than the act \nof fighting for something. After all, if it happened, \nhe’d be without purpose again.\nUpgrades\nWith his new cutting edge technology, Mecha-Stalin \noutfitted Proletariat with power armor designed to \nto work with his duplication, allowing him to hit \nharder and take more damage. \nAlias: Alexandr Tsarev\nGender: Male\nAge: Late-30s\nHeight: 5’9”\nEyes: Brown\nHair: Black\nSkin: Pale\nBuild: Stocky\nCostume/Equipment: Red bodysuit with white \npiping and red mask with a white star on the face. \nOlive drab combat pants with a black leather belt \nwith silver buckle and black combat boots. Short \ngrey high-collared jacket with red stars on the \narms.Black combat gloves. Proletariat wields a \nshort handled sledgehammer and sickle.\nApproach: Tactician\nArchetype: Legion\nProletariat\n383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>",
+      "statusTheme": "Number of Clones",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

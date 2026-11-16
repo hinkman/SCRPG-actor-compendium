@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "1a9eAfRO2LSSaDFI",
-      "name": "55",
+      "_id": "kyMx9i7JPFieHb5v",
+      "name": "Drum Throne",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.1a9eAfRO2LSSaDFI"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.kyMx9i7JPFieHb5v"
     },
     {
-      "_id": "Bg9O3YdVKYOuWHgg",
-      "name": "Drum Throne",
+      "_id": "XY6ISaWaVKyboq4i",
+      "name": "Energy Shields",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.Bg9O3YdVKYOuWHgg"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.XY6ISaWaVKyboq4i"
     },
     {
-      "_id": "pjHfLVt3JvhcEPzC",
-      "name": "Conviction",
+      "_id": "DQceXoECQzMEZlXF",
+      "name": "Sonic",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,16 +118,111 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.pjHfLVt3JvhcEPzC"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.DQceXoECQzMEZlXF"
     },
     {
-      "_id": "Ic7jDCzjwIwDUTsu",
-      "name": "Energy Shields",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "9wMSrM0ZDjpfC0xF",
+      "name": "Conviction",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.9wMSrM0ZDjpfC0xF"
+    },
+    {
+      "_id": "pNENdLWYBAs2xRa7",
+      "name": "Insight",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.pNENdLWYBAs2xRa7"
+    },
+    {
+      "_id": "PdPI0hwvQsX1bDNu",
+      "name": "Magical Lore",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.PdPI0hwvQsX1bDNu"
+    },
+    {
+      "_id": "apsvOxRXZWwvrHEb",
+      "name": "Percussionist",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -151,50 +246,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.Ic7jDCzjwIwDUTsu"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.apsvOxRXZWwvrHEb"
     },
     {
-      "_id": "zIb5tnDFfG5O9Pr8",
-      "name": "Insight",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "IdwRJvPWZgjJZLnv",
+      "name": "3+ Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.zIb5tnDFfG5O9Pr8"
-    },
-    {
-      "_id": "jSzLkoBxZClTAonD",
-      "name": "Heroes with Penalties",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -205,7 +267,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
         }
       },
       "_stats": {
@@ -216,17 +279,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.jSzLkoBxZClTAonD"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.IdwRJvPWZgjJZLnv"
     },
     {
-      "_id": "NfywJjAG0ZYXAkzg",
-      "name": "3+ Heroes with Penalties",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "tYULGz8X6EiM5GmO",
+      "name": "1-2 Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -237,7 +300,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
         }
       },
       "_stats": {
@@ -248,17 +312,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.NfywJjAG0ZYXAkzg"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.tYULGz8X6EiM5GmO"
     },
     {
-      "_id": "CaKwtSxodQxQGzGI",
-      "name": "1-2 Heroes with Penalties",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "6rIGyeuPhonB54D0",
+      "name": "0 Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,7 +333,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
         }
       },
       "_stats": {
@@ -280,15 +345,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.CaKwtSxodQxQGzGI"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.6rIGyeuPhonB54D0"
     },
     {
-      "_id": "kZP6MCZRuA4o0xBi",
+      "_id": "lND977YWCS9bMJmG",
       "name": "Drive the Beat Home",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +374,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +385,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.kZP6MCZRuA4o0xBi"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.lND977YWCS9bMJmG"
     },
     {
-      "_id": "fa9hSt8NgEQl1EGx",
+      "_id": "AopesG30TKUusd7E",
       "name": "Encapsulate",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -349,7 +414,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +425,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.fa9hSt8NgEQl1EGx"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.AopesG30TKUusd7E"
     },
     {
-      "_id": "XsmIsaGvxr2iomDb",
+      "_id": "WfGzAEn8Exz6RHeU",
       "name": "Resonant Shield",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -389,7 +454,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +465,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.XsmIsaGvxr2iomDb"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.WfGzAEn8Exz6RHeU"
     },
     {
-      "_id": "2YwWO15glip2UH7z",
+      "_id": "VtLR9Mq1Y8O7KoB3",
       "name": "Switch Up the Timing",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -429,7 +494,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +505,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.2YwWO15glip2UH7z"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.VtLR9Mq1Y8O7KoB3"
     },
     {
-      "_id": "H5p6caXekORV1ZJy",
+      "_id": "RZZaYAlVCJOrme6X",
       "name": "Impenetrable Shield",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -469,7 +534,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +545,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.H5p6caXekORV1ZJy"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.RZZaYAlVCJOrme6X"
     },
     {
-      "_id": "DpesTVj8hYf62O9y",
+      "_id": "qwDrxfmJgKUIm7sm",
       "name": "Double Down",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +574,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,15 +585,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.DpesTVj8hYf62O9y"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.qwDrxfmJgKUIm7sm"
     },
     {
-      "_id": "nSeM1ETgywzRylOG",
+      "_id": "NMFLvdrfJ46MleyK",
       "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -549,7 +614,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -560,7 +625,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oTdOMHeMmlzl6nWD.nSeM1ETgywzRylOG"
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.NMFLvdrfJ46MleyK"
     }
   ],
   "effects": [],
@@ -575,9 +640,9 @@
       "team": "helfyre",
       "sourcePage": 372,
       "biographyHtml": "<p>373\n373\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nAlias: Lilith Black\nGender: Female\nAge: Early-20s\nHeight: 6’5” (in chair)\nEyes: Glowing Red\nHair: Black and glossy\nSkin: Flawless\nBuild: Slight\nCostume/Equipment: A Giger-esque floating \nblack mobility chair decked out with spikes and \nskulls. When exercising her powers, a translucent \nred shield springs up around the chair, with \ntranslucent red drums inside it. \nApproach: Dampening\nArchetype: Inhibitor\nSnare\nVillains\nBiography\nLilith Black loved being behind the drum set. No \none looked at her legs, no one told her to “stay \npositive” and no one signed her up for risky \nexperiments “so that she could be a normal \ndaughter.” The final one was the shadiest, giving \nher a hoverchair in exchange for permission to try \nan experimental cocktail at their private clinic. As \nthe anesthesia began to take hold and the glowing \npurple chemicals flooded into her spinal cord, she \noverheard the doctor telling someone that he had \nthe data he needed, and that the disposal team \ncould get rid of the evidence. Fighting free of the \nsedatives, she reached out in rage and something in \nher mind reached with her. She saw a bubble of red \nenergy surround the doctor, the sound of drums as \nhe pounded at the resonant walls with his fists. She \ngot into her hoverchair and floated out of the place, \nencasing anyone that tried to stop her. She had the \npower now, and was done being poked.\nCapabilities and Motivations\nSnare’s shields are an extremely versatile form of \ntelekinesis. She can encase people or objects, shape \nthe shields, and control the sounds that they emit \nwhen struck. When she focuses fully on them, they \nare practically unbreakable. When Drudge made \nthem a more marketable band, Snare became the \ndriving force behind Helfyre’s musical and fighting \ncohesion, constantly working to balance the \ncompeting egos and keep the band moving to her \nbeat on and off the stage.\nUpgrades\nSnare is all-in for Helfyre, and could become their \nleader given a bit more time. She’s got a talent \nfor organization, a relentless internal drive, and \na bottomless well of rage at the fundamental \nunfairness of the world. The dark and mysterious \nDrudge has her intrigued by his stories of magic \nand smoldering eyes in equal measure, and she’s \nlooking forward to learning more about both.</p>",
+      "statusTheme": "Heroes with Penalties",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

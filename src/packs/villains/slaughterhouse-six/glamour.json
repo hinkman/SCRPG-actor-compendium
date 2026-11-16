@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "VrtpuGeUJZ30oKrU",
-      "name": "50",
+      "_id": "99t1X6kyfVNmLytF",
+      "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.VrtpuGeUJZ30oKrU"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.99t1X6kyfVNmLytF"
     },
     {
-      "_id": "4fCimYGchaGXNG6v",
-      "name": "Awareness",
+      "_id": "zHJAMUiJk6xLmMPI",
+      "name": "Illusions",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.4fCimYGchaGXNG6v"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.zHJAMUiJk6xLmMPI"
     },
     {
-      "_id": "phJDYOhKCmJ4VEYf",
-      "name": "Creativity",
+      "_id": "1ZnLRNWjEiANgZx0",
+      "name": "Presence",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.phJDYOhKCmJ4VEYf"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.1ZnLRNWjEiANgZx0"
     },
     {
-      "_id": "48vxZHoITh9c2H1P",
-      "name": "Illusions",
+      "_id": "VgvPgrrhEjc51uE9",
+      "name": "Sonic",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.48vxZHoITh9c2H1P"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.VgvPgrrhEjc51uE9"
     },
     {
-      "_id": "KHdoyLXFckNq9FAn",
-      "name": "Criminal Underworld Info",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.KHdoyLXFckNq9FAn"
-    },
-    {
-      "_id": "D0wBWFjWWrx03oD3",
-      "name": "Heroes with Penalties",
+      "_id": "VRguI8QY6gbIHO4K",
+      "name": "Creativity",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +183,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.D0wBWFjWWrx03oD3"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.VRguI8QY6gbIHO4K"
     },
     {
-      "_id": "0RHXKSnIZYaH4XC7",
-      "name": "3+ Heroes with at least one Penalty",
+      "_id": "uRLJQbHbG05x60Jp",
+      "name": "Criminal Underworld Info",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +215,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.0RHXKSnIZYaH4XC7"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.uRLJQbHbG05x60Jp"
     },
     {
-      "_id": "xBdfprwubonPqkog",
-      "name": "1-2 Heroes with at least one Penalty",
+      "_id": "PVYejNlBrkx1kYOA",
+      "name": "Leadership",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +247,146 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.xBdfprwubonPqkog"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.PVYejNlBrkx1kYOA"
     },
     {
-      "_id": "ZQ7J7nfeLewhZq3u",
+      "_id": "3ElhEVbKLZXiUAb5",
+      "name": "Mirror Image",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.3ElhEVbKLZXiUAb5"
+    },
+    {
+      "_id": "yzGlaXXifhnWu8PI",
+      "name": "3+ Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.yzGlaXXifhnWu8PI"
+    },
+    {
+      "_id": "z4d5m1Whw46CW4Tt",
+      "name": "1-2 Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.z4d5m1Whw46CW4Tt"
+    },
+    {
+      "_id": "G7rYy4sU0pS73igC",
+      "name": "0 Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.G7rYy4sU0pS73igC"
+    },
+    {
+      "_id": "rLbR5HhndcerCG45",
       "name": "Cracked Reflection",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -309,7 +407,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +418,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.ZQ7J7nfeLewhZq3u"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.rLbR5HhndcerCG45"
     },
     {
-      "_id": "3QmLobb1GHF8JGQy",
+      "_id": "lkyj4LgS2zLWO5vD",
       "name": "How Can You Trust What You See?",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": true,
@@ -349,7 +447,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +458,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.3QmLobb1GHF8JGQy"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.lkyj4LgS2zLWO5vD"
     },
     {
-      "_id": "JkXWEHRaVBzf2PjD",
+      "_id": "7VU9osBCKHTVXp3t",
       "name": "Step Through the Mirror",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -389,7 +487,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +498,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.JkXWEHRaVBzf2PjD"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.7VU9osBCKHTVXp3t"
     },
     {
-      "_id": "gBNOlORE9Q6mmtNO",
+      "_id": "448JCy4XUKhv0ZZY",
       "name": "Who Is Really Your Foe?",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +527,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +538,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.gBNOlORE9Q6mmtNO"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.448JCy4XUKhv0ZZY"
     },
     {
-      "_id": "0B0FPgeLVvw23rgB",
+      "_id": "elaAuvjAlhsJblcB",
       "name": "They Are What You Fear",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +567,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +578,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.0B0FPgeLVvw23rgB"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.elaAuvjAlhsJblcB"
     },
     {
-      "_id": "ssVGT785nyFooo6U",
+      "_id": "ny2Cg769u2ekETlP",
       "name": "Master of Enforced Order",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +607,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +618,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.ssVGT785nyFooo6U"
+      "_key": "!actors.items!oSp8EVZ2QwPRYmIs.ny2Cg769u2ekETlP"
     }
   ],
   "effects": [],
@@ -535,9 +633,9 @@
       "team": "slaughterhouse-six",
       "sourcePage": 390,
       "biographyHtml": "<p>391\n391\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAislin Allen used to be a hero. She fought the good \nfight alongside the other members of the first \niteration of the hero team called Freedom Five \nas the Shrieker, using her superhuman voice to \ndestroy and disorient. As time went on, she grew \ndisillusioned — she wanted more than to see all of \nthe money she recovered from a bank heist go right \nback into the vault while a sweaty bank manager \ngave her a limp handshake in gratitude. When her \nthroat was wounded and her powers faded, it was \ntime. She faked her death, and the Shrieker faded \naway. Opportunity knocked in the form of Baron \nBlade, who gave her tech that worked with the \nremnants of her vocal powers to create illusions \nand manipulate the senses. All in exchange for a \nsimple favor for the Baron. Taking up a mirrored \nmask, Aislin took the name Glamour and began to \nlive life according to her own terms.\nCapabilities and Motivations\nGlamour is a master of multilayered planning and \ndiversions. She prefers to work behind the curtain \nas long as possible, knowing that the timing of the \nbig reveal is all-important. This served her well in \nthe previous Slaughterhouse Six, where she used \nher powers for months to create an illusionary \nAmbuscade to act as the leader in her stead. Now \nthat she has stepped into the leadership role of the \nnew Slaughterhouse Six, the big question has to be \nwhat she is really after. With Glamour, nothing is \never what it seems.\nUpgrades\nGlamour has upgrades planned for her tech to \ntailor her illusions to specific targets within a crowd, \nwhich can combine with her vocal powers to make \nit all feel much more real than before. Causing \neveryone to see the same illusion is versatile, but \nmaking it so that each one sees something tailored \nspecifically to them… now that could really cause \nsome confusion.\nAlias: Aislin Allen\nGender: Female\nAge: Middle-Aged\nHeight: 5’3”\nEyes: Green\nHair: Red\nSkin: Freckled\nBuild: Slight and mysterious\nCostume/Equipment: A mirrored silver suit with \nwhite gloves black waist wrap, black thigh high \nboots and black cape with bright white inner lining. \nMirrored silver full head mask with no visible eyes \nor mouth. \nApproach: Disruptive\nArchetype: Inhibitor\nGlamour</p>",
+      "statusTheme": "Heroes with Penalties",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

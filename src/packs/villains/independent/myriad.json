@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "7CSii35CXOh79005",
-      "name": "50",
+      "_id": "LbCVDiBJguLoSC8D",
+      "name": "Flight",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.7CSii35CXOh79005"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.LbCVDiBJguLoSC8D"
     },
     {
-      "_id": "GlWmNiVIp5LwObQG",
-      "name": "Flight",
+      "_id": "dpHf2JF3eYOSEcZa",
+      "name": "Insect Control",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.GlWmNiVIp5LwObQG"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.dpHf2JF3eYOSEcZa"
     },
     {
-      "_id": "CEbaTmCQjyTdOAs7",
-      "name": "Alertness",
+      "_id": "co68WnJUMJlELzue",
+      "name": "Part Detachment",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.CEbaTmCQjyTdOAs7"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.co68WnJUMJlELzue"
     },
     {
-      "_id": "hP2Rzpu8V47JREtx",
-      "name": "Insect Control",
+      "_id": "fVhwLwqcCde8fUT6",
+      "name": "Shapeshifting",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,16 +151,143 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.hP2Rzpu8V47JREtx"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.fVhwLwqcCde8fUT6"
     },
     {
-      "_id": "OnFFMwxiTgOSPGgZ",
-      "name": "Banter",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "R0UGb8scMrBQ4JB5",
+      "name": "Alertness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.R0UGb8scMrBQ4JB5"
+    },
+    {
+      "_id": "igy9lpADNea6uISc",
+      "name": "Banter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.igy9lpADNea6uISc"
+    },
+    {
+      "_id": "Palob129NeYp37eh",
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.Palob129NeYp37eh"
+    },
+    {
+      "_id": "ntgbUqARAFSbUPKT",
+      "name": "Imposing",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.ntgbUqARAFSbUPKT"
+    },
+    {
+      "_id": "qoVNuX3HyiOe1rDH",
+      "name": "Swarm Master",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -184,83 +311,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.OnFFMwxiTgOSPGgZ"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.qoVNuX3HyiOe1rDH"
     },
     {
-      "_id": "3xB4HS7bCcRJGKND",
-      "name": "Part Detachment",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "rSmx8oO8mclsP2q8",
+      "name": "9+ minions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 500000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.3xB4HS7bCcRJGKND"
-    },
-    {
-      "_id": "XKBExr7RKNV2OzRO",
-      "name": "Close Combat",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 600000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.XKBExr7RKNV2OzRO"
-    },
-    {
-      "_id": "ZoVKFFIYAcTwGoZo",
-      "name": "Number of Minions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Number of Minions</p>"
       },
       "effects": [],
       "folder": null,
@@ -271,7 +332,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Number of Minions"
         }
       },
       "_stats": {
@@ -282,17 +344,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.ZoVKFFIYAcTwGoZo"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.rSmx8oO8mclsP2q8"
     },
     {
-      "_id": "mpKXvLU29nkxClgE",
-      "name": "9+ minions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "tfZQ1EKw166mEpVs",
+      "name": "5-8 minions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Number of Minions</p>"
       },
       "effects": [],
       "folder": null,
@@ -303,7 +365,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Number of Minions"
         }
       },
       "_stats": {
@@ -314,17 +377,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.mpKXvLU29nkxClgE"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.tfZQ1EKw166mEpVs"
     },
     {
-      "_id": "f0CPq3cEiegC5XQf",
-      "name": "5-8 minions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "5N2Ap9LL2ys6VJKP",
+      "name": "3-4 minions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Number of Minions</p>"
       },
       "effects": [],
       "folder": null,
@@ -335,7 +398,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Number of Minions"
         }
       },
       "_stats": {
@@ -346,17 +410,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.f0CPq3cEiegC5XQf"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.5N2Ap9LL2ys6VJKP"
     },
     {
-      "_id": "w0GCAfCdxDEs7yfA",
-      "name": "3-4 minions",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "irF8kTn2mCLw4dCj",
+      "name": "1-2 minions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Number of Minions</p>"
       },
       "effects": [],
       "folder": null,
@@ -367,7 +431,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Number of Minions"
         }
       },
       "_stats": {
@@ -378,15 +443,48 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.w0GCAfCdxDEs7yfA"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.irF8kTn2mCLw4dCj"
     },
     {
-      "_id": "cnyQznPiN5axHfII",
+      "_id": "mLFUJd7qSdWUXgLo",
+      "name": "0 minions",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Number of Minions</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Number of Minions"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.mLFUJd7qSdWUXgLo"
+    },
+    {
+      "_id": "j5RF3m45NNnTtX7Q",
       "name": "Elusive Infestation",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -407,7 +505,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -418,15 +516,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.cnyQznPiN5axHfII"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.j5RF3m45NNnTtX7Q"
     },
     {
-      "_id": "7o1FQWW3G8e17qHw",
+      "_id": "Qjh0hdkm67yvRF48",
       "name": "Infernally Empowered",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -447,7 +545,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -458,15 +556,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.7o1FQWW3G8e17qHw"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.Qjh0hdkm67yvRF48"
     },
     {
-      "_id": "9GYYhDVeiJSyNPZ5",
+      "_id": "jBasM3AeX2FmGOQX",
       "name": "Insectoid Armor",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -487,7 +585,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -498,15 +596,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.9GYYhDVeiJSyNPZ5"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.jBasM3AeX2FmGOQX"
     },
     {
-      "_id": "fmOtuglXzdg9OHdR",
+      "_id": "MslHlGbGcwSQMP7o",
       "name": "Release the Swarm",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -527,7 +625,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -538,15 +636,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.fmOtuglXzdg9OHdR"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.MslHlGbGcwSQMP7o"
     },
     {
-      "_id": "c5DqQQEj5HIBHVYf",
+      "_id": "ci837cPrDZbFsSNy",
       "name": "The Swarm Hungers",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -567,7 +665,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -578,15 +676,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.c5DqQQEj5HIBHVYf"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.ci837cPrDZbFsSNy"
     },
     {
-      "_id": "mYyOIXEgAEAhAjCE",
+      "_id": "TWN56m1tbFRHHbw2",
       "name": "Crawling Catastrophe",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -607,7 +705,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -618,15 +716,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.mYyOIXEgAEAhAjCE"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.TWN56m1tbFRHHbw2"
     },
     {
-      "_id": "MTjmruj6OydSPkws",
+      "_id": "NEuBupUcv0rGmsKO",
       "name": "Master of Total Chaos",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -647,7 +745,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -658,7 +756,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.MTjmruj6OydSPkws"
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.NEuBupUcv0rGmsKO"
     }
   ],
   "effects": [],
@@ -673,9 +771,9 @@
       "team": "independent",
       "sourcePage": 358,
       "biographyHtml": "<p>359\n359\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEdgar Black took pleasure \nin making things smaller than \nhim suffer. As an \nexterminator, he \nwent to work every \nday with a smile on \nhis face. On the way \nto one such \njob, \nhe \nclipped \na courier\nwith his van, destroying the package the boy \nwas carrying. Edgar sped away to avoid any \nconsequences, but the contents of the package had \nother ideas. The contents of the package turned \nout to be a demonic entity that had been trapped \nfor years by the hero NightMist. After her death, \nthe courier had been commissioned to transport it \nto another mage for safekeeping. With the prison \ndestroyed, the rapidly multiplying demonic swarm \nused Edgar as a host, and he became the central \npersonality of the villain Myriad. He has clashed \nwith the new hero team Daybreak several times as \nhe looks to cause a little chaos in the world.\nCapabilities and Motivations\nAs a person, Edgar Black’s malevolence was limited \nby his cowardice and lack of long-term planning. \nThe demon that possessed him was limited in that \nit needed a host to act as a focus, as without a core \npersonality to adhere to, the demon’s intelligence \nwas scattered throughout the entire swarm. As \nthe composite personality “Myriad,” they are even \nworse; Edgar’s desire to harm is bolstered by the \nDemon’s desire for chaos and inherent magic. \nWith nigh-infinite control over insects, Myriad has \nthe ability to see and hear just about anything, \nthough they still lack the long-term planning skill or \nintelligence to truly capitalize on anything they find \nout. Mostly, Myriad just wants to destroy things, and \nis happiest when wreaking havoc surrounded by an \ninfinite swarm of infernal bugs.\nUpgrades\nBeing made of insects gives Myriad a lot of \nflexibility when it comes to things like size and \nshape. He could be a single fly on the wall, or a \nface on a swarm of locusts blackening the sky, his \nvoice their collective chittering. The demon has a \nsubstantial well of innate magic that can be used \nfor simple spells, particularly ones revolving around \nsummoning infernal insects with nasty powers from \nhis home hell dimension.\nAlias: Edgar Black\nGender: A demonic swarm of bugs, identifies as \nMale\nAge: A demonic swarm of bugs, identifies as \nMiddle-Aged\nHeight: Variable\nEyes: Two glowing orange eyes, but the swarm’s \neyes are many\nHair: None\nSkin: Black Chitin\nBuild: Made of bugs\nCostume/Equipment: A mass of demon bugs \nthat have taken on a humanoid semblance with \nchitinous black skin, wings, and glowing orange \neyes and chest. \nApproach: Creator\nArchetype: Overlord\nMyriad\nVillains</p>",
+      "statusTheme": "Number of Minions",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

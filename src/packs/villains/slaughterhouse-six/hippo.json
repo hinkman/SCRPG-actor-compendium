@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "Z3dP8H8LxqKWcYtA",
-      "name": "65",
+      "_id": "fy3O5a2zkks01Pmg",
+      "name": "Power Suit",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.Z3dP8H8LxqKWcYtA"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.fy3O5a2zkks01Pmg"
     },
     {
-      "_id": "DsKtcS3i1XSxFzXg",
-      "name": "Power Suit",
+      "_id": "6S80LmKqdLfkMIJH",
+      "name": "Strength",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.DsKtcS3i1XSxFzXg"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.6S80LmKqdLfkMIJH"
     },
     {
-      "_id": "dsmG5oxPY2CaQusD",
-      "name": "Close Combat",
+      "_id": "Ca21CKw0BnajrRin",
+      "name": "Vitality",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,77 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.dsmG5oxPY2CaQusD"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.Ca21CKw0BnajrRin"
     },
     {
-      "_id": "8bRyfKSdEZQVCF36",
-      "name": "Strength",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 300000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.8bRyfKSdEZQVCF36"
-    },
-    {
-      "_id": "ikEP96skDpc8RfwV",
-      "name": "Fitness",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.ikEP96skDpc8RfwV"
-    },
-    {
-      "_id": "Z62NGps1HHay3Wtf",
-      "name": "Health",
+      "_id": "FCyFctx64Hviupu6",
+      "name": "Close Combat",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,15 +150,178 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.Z62NGps1HHay3Wtf"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.FCyFctx64Hviupu6"
     },
     {
-      "_id": "6X6sL0XTYhnr64PE",
+      "_id": "X9pUA7UqkQBT2WMf",
+      "name": "Fitness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.X9pUA7UqkQBT2WMf"
+    },
+    {
+      "_id": "CMBGqb7xKFtxMb5X",
+      "name": "Hungry Hungry",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.CMBGqb7xKFtxMb5X"
+    },
+    {
+      "_id": "h5ltureFwhGpjVtG",
+      "name": "Green Zone: 65-45",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.h5ltureFwhGpjVtG"
+    },
+    {
+      "_id": "sj9gunRgZIpw8PS8",
+      "name": "Yellow Zone: 44-18",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.sj9gunRgZIpw8PS8"
+    },
+    {
+      "_id": "9lIDjoNIpBDyp4wY",
+      "name": "Red Zone: 17-1",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.9lIDjoNIpBDyp4wY"
+    },
+    {
+      "_id": "AIUgUWPh8s7mq57f",
       "name": "Chomp and Chew",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -245,7 +342,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -256,15 +353,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.6X6sL0XTYhnr64PE"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.AIUgUWPh8s7mq57f"
     },
     {
-      "_id": "ZiMuNH6IhLA5FwaS",
+      "_id": "YEUOZd6P2wTyyZ6h",
       "name": "Hippo Hide",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -285,7 +382,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -296,15 +393,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.ZiMuNH6IhLA5FwaS"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.YEUOZd6P2wTyyZ6h"
     },
     {
-      "_id": "UfgrCknrxx4eLEHI",
+      "_id": "G7jQDADwMrjKW4FS",
       "name": "Hippo Rage",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -325,7 +422,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -336,15 +433,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.UfgrCknrxx4eLEHI"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.G7jQDADwMrjKW4FS"
     },
     {
-      "_id": "bBkrkMU64HcQf10O",
+      "_id": "c4sJPFbd76sxUw5q",
       "name": "Overhead Throw",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -365,7 +462,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -376,15 +473,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.bBkrkMU64HcQf10O"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.c4sJPFbd76sxUw5q"
     },
     {
-      "_id": "V8D5JZDHmtkgfKnM",
+      "_id": "aFhTkpgYxZ6uV0ES",
       "name": "Power Upgrade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -405,7 +502,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -416,15 +513,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.V8D5JZDHmtkgfKnM"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.aFhTkpgYxZ6uV0ES"
     },
     {
-      "_id": "gvmwAGRxmwViOIaN",
+      "_id": "N2qzK9itPXkKY9pT",
       "name": "Master Mercenary",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -445,7 +542,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -456,7 +553,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!eFX4cR6sCZnvcNbg.gvmwAGRxmwViOIaN"
+      "_key": "!actors.items!eFX4cR6sCZnvcNbg.N2qzK9itPXkKY9pT"
     }
   ],
   "effects": [],
@@ -471,9 +568,9 @@
       "team": "slaughterhouse-six",
       "sourcePage": 396,
       "biographyHtml": "<p>397\n397\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEddie liked to hit things, he liked to be bigger than \nthe things he was hitting, and he liked money. On \nthe Rook City Renegades baseball team, he got \nall of those things. The team was sponsored by \nPike Industries, and they liked their players on the \nthuggish side. With the wide variety of pharmaceutical \nenhancements available, Eddie decided his favorite \ntype of muscle growth pill was “all of them.” Kicked off \nthe team for being too flagrantly juiced, he became \na crime syndicate hired muscle, a career path all too \ncommon in Rook City. After hearing that hippos were \nsurprisingly dangerous animals, he decided that he \nneeded a costume to enhance his tough guy image, \nand Hippo was born. He’s not the brightest, but \nthere’s always a place for a tough guy who doesn’t \nquestion orders and likes a good fight.\nCapabilities and Motivations\nIn addition to his own substantial strength, the “skin” \nof Hippo’s suit is actually a type of liquid armor \nsandwiched between layers of polymer, able to turn \naside nearly anything with minimal impact to the \nuser. Eddie stole it from a military depot on an odd \njob boosting prototype weapons. After the heist, \nhe found a seedy lab that was more than happy to \nmake him a suit out of the ultra-durable material \n(after a full analysis and sample so that they could \nreplicate it, of course). It’s made him an even more \neffective thug, which Glamour noticed when she \nstarted looking for muscle for her group. He’s the \nSlaughterhouse Six’s blunt instrument, and content \nin that role.\nUpgrades\nWhile pharmacology has taken Hippo’s strength \nabove and beyond the human norm, he’s hit the \nlimit when it comes to conventional steroids. With \nenough funding and a little technologic genius from \nRay Manta, the Hippo suit could be upgraded with \ncybernetic enhancements and interfacing. In addition \nto increasing his strength tenfold, he’d be able to \nmove in it as if it truly was his skin. Sure, there would \nprobably be a few downsides, but Eddie isn’t the \ntype to worry too much about that sort of thing.\nVillains\nAlias: Eddie Wagner\nGender: Male\nAge: Late-40s\nHeight: 7’2” \nEyes: White\nHair: Brown\nSkin: White\nBuild: Extremely muscular\nCostume/Equipment: Eddie wears a full body \nsuit that resembles an actual hippo, with the head \nof the hippo covering his own. The suit covers \neverything except his face, which can be seen \nbetween the upper and lower jaws of the hippo, \nframed by the teeth of the suit. \nApproach: Bully\nArchetype: Bruiser\nHippo</p>",
+      "statusTheme": "Health",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

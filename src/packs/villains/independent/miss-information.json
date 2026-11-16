@@ -22,73 +22,7 @@
   },
   "items": [
     {
-      "_id": "yjbR2U3a6aqYUo0m",
-      "name": "65",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.yjbR2U3a6aqYUo0m"
-    },
-    {
-      "_id": "Hzx9jxFEDz9cPGBy",
-      "name": "Insight",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 100000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.Hzx9jxFEDz9cPGBy"
-    },
-    {
-      "_id": "OM1UfVPizieht4Ba",
+      "_id": "7zDb4muhvuf8VbDh",
       "name": "Illusions",
       "type": "power",
       "img": "icons/svg/aura.svg",
@@ -100,6 +34,72 @@
       },
       "effects": [],
       "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.7zDb4muhvuf8VbDh"
+    },
+    {
+      "_id": "rTNV19qMSdDx2aKQ",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.rTNV19qMSdDx2aKQ"
+    },
+    {
+      "_id": "z3FYrvH7ym6Eb5vS",
+      "name": "Transmutation",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
       "sort": 200000,
       "ownership": {
         "default": 0
@@ -118,77 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.OM1UfVPizieht4Ba"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.z3FYrvH7ym6Eb5vS"
     },
     {
-      "_id": "FByA3OOAmBEFQcJF",
-      "name": "Presence",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 300000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.FByA3OOAmBEFQcJF"
-    },
-    {
-      "_id": "BQ1WUmVLlhHYAvj6",
-      "name": "Persuasion",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.BQ1WUmVLlhHYAvj6"
-    },
-    {
-      "_id": "jaZB2LGDF0fGBD0z",
-      "name": "Heroes with Penalties",
+      "_id": "zPs1RNYJU6Ijofdy",
+      "name": "Insight",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,11 +150,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.jaZB2LGDF0fGBD0z"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.zPs1RNYJU6Ijofdy"
     },
     {
-      "_id": "kjeAb27QOqwJ6AD2",
-      "name": "3+ Heroes with at least one Penalty",
+      "_id": "tKBsfs7OQKQPEndR",
+      "name": "Persuasion",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -248,11 +182,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.kjeAb27QOqwJ6AD2"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.tKBsfs7OQKQPEndR"
     },
     {
-      "_id": "huSk2ZxxpF479F0D",
-      "name": "1-2 Heroes with at least one Penalty",
+      "_id": "K7feVBpl6r5rIkJB",
+      "name": "Unhinged from Reality",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -280,15 +214,114 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.huSk2ZxxpF479F0D"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.K7feVBpl6r5rIkJB"
     },
     {
-      "_id": "zUIgEtt7ClX1h593",
+      "_id": "MsK4vx1CSBIiRwCw",
+      "name": "3+ Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.MsK4vx1CSBIiRwCw"
+    },
+    {
+      "_id": "EwXnow31lGLUAcf7",
+      "name": "1-2 Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.EwXnow31lGLUAcf7"
+    },
+    {
+      "_id": "iJgrxM1fHzKm4yI9",
+      "name": "0 Heroes with at least one Penalty",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Heroes with Penalties</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Heroes with Penalties"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.iJgrxM1fHzKm4yI9"
+    },
+    {
+      "_id": "0ous9lfaUTSptN6S",
       "name": "AtmosFear",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -309,7 +342,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +353,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.zUIgEtt7ClX1h593"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.0ous9lfaUTSptN6S"
     },
     {
-      "_id": "OEzMLTHmPfzwrBme",
+      "_id": "TbgNmp5DVS3J9pyK",
       "name": "Cracked Mask",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -349,7 +382,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +393,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.OEzMLTHmPfzwrBme"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.TbgNmp5DVS3J9pyK"
     },
     {
-      "_id": "kirnnTBmCGNdDf6R",
+      "_id": "sA0rm7kW5C5fr0xX",
       "name": "Deviate Reality",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -389,7 +422,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +433,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.kirnnTBmCGNdDf6R"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.sA0rm7kW5C5fr0xX"
     },
     {
-      "_id": "Hu36EKaD9889GYCN",
+      "_id": "oO6Am9N0KAFCIyBy",
       "name": "Flawless Facade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -429,7 +462,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +473,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.Hu36EKaD9889GYCN"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.oO6Am9N0KAFCIyBy"
     },
     {
-      "_id": "KrBybFjn6u1MbW2R",
+      "_id": "pUYWkyVLoBQwNFUS",
       "name": "Rewrite Reality",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +502,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +513,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.KrBybFjn6u1MbW2R"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.pUYWkyVLoBQwNFUS"
     },
     {
-      "_id": "gmAA5sHIumXejpGQ",
+      "_id": "8yrFo7SpreXzYtdU",
       "name": "Master of Superiority",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +542,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +553,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CpTsXHCvGalBCLCc.gmAA5sHIumXejpGQ"
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.8yrFo7SpreXzYtdU"
     }
   ],
   "effects": [],
@@ -535,9 +568,9 @@
       "team": "independent",
       "sourcePage": 350,
       "biographyHtml": "<p>351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAminia Twain died hating the Freedom Five, impaled \non a girder during a villain’s attack, with one question \non her mind. Why didn’t they save me? She had \nbeen their loyal secretary for years, organizing and \nsmoothing things behind the scenes so that they \ncould stop crimes and still lead normal lives. But, \ninstead of dying and slipping away from existence, \na timespace fracture resulted in her coming to \nin the body of the Aminia Twain of some other \nreality! Reborn as Miss Information, she spent \nyears conducting behind-the-\nscenes sabotage on the \nheroes. This ended \nwhen the hero Parse \nsaw through her ruse, \nwhich ultimately led \nto Miss Information \ngetting doused with \ntoxic chemicals. The \naccident that burned her body \nalso opened her mind to \nother versions of Aminia \nTwain in the Multiverse. \nIt also allowed her to \nrewrite reality itself, \nwith the only thing \npreventing her from being \na world-ending threat is her \never-changing whim and \ninability to focus.\nCapabilities and Motivations\nThe disconnection of this universe from the rest of \nthe multiverse has allowed Miss Information to regain \nsome of her focus as her mind heals from being many \npossible versions of Aminia Twain at the same time. \nMiss Information is a master of logistics, coordination, \nand intelligence gathering, able to formulate complex \nplots to trap heroes and tailor illusion-augmented \ntraps to their specific fears and capabilities. When \nthis fails, she can warp reality itself as long as she can \nconcentrate, changing the world to suit her desires. \nShe could make a Megalopolis where all heroes were \nhated, a temple where the Freedom Five served her \nwine in chains, or a diner that only served pickles.\nUpgrades\nIn the aftermath of OblivAeon, Miss Information \nacquired the Pandemonium Key, an artifact from the \nEnclave of the Endlings that augments her ability to \ncreate illusions and make them real. It is also a window \ninto the disconnected, wider multiverse, allowing her \nto peer into other realities and remember things from \nher multitude of other lifetimes. This, unfortunately, \ndoes not help her mental state.\nAlias: Aminia Twain\nGender: Female\nAge: Middle-Aged\nHeight: 5’ 4”\nEyes: Originally grey, now glowing gold\nHair: Chestnut\nSkin: Pale\nBuild: Slim\nCostume/Equipment: A black bodysuit with gold \ngloves, boots, and belt. Black cape with gold inner \nlining. Form fitting white porcelain mask that \nmoves with her facial expressions. \nApproach: Overpowered\nArchetype: Inhibitor\nMiss Information\n351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\n351\n351\nAppendices\nAppendices\nVillains</p>",
+      "statusTheme": "Heroes with Penalties",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

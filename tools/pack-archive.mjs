@@ -146,6 +146,40 @@ function abilityZoneColor(aux) {
     return value;
 }
 
+function villainStatusItem(actorId, actorSeed, status, index) {
+    const id = itemId(`${actorSeed}:villainStatus:${index}:${slug(status.name)}`);
+    const category = status.category || status.description || "";
+    const description = category
+        ? `<p>${String(category)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")}</p>`
+        : "";
+    return attachItemKey(actorId, {
+        _id: id,
+        name: status.name,
+        type: "villainStatus",
+        img: "icons/svg/d20-grey.svg",
+        system: {
+            dieType: status.dieType || "d8",
+            selected: false,
+            description
+        },
+        effects: [],
+        folder: null,
+        sort: index * 100_000,
+        ownership: { default: 0 },
+        flags: {
+            "scrpg-actor-compendium": {
+                archive: true,
+                dieTypeKnown: status.dieTypeKnown !== false,
+                category: category || null
+            }
+        },
+        _stats: STATS
+    });
+}
+
 function abilityItem(actorId, actorSeed, ability, index) {
     const aux = ability.aux || "main";
     const id = itemId(`${actorSeed}:ability:${aux}:${index}:${slug(ability.name)}`);
@@ -375,12 +409,17 @@ function buildHeroActor(hero, folderId, teamKey) {
 function buildVillainActor(villain, folderId, teamKey) {
     const seed = `actor:villain:${teamKey}:${slug(villain.name)}`;
     const id = foundryId(seed);
+    // Villain sheet abilitiestable filters on system.aux === "villain".
+    const abilities = (villain.abilities || []).map((ability) => ({
+        ...ability,
+        aux: ability.aux && ability.aux !== "main" ? ability.aux : "villain"
+    }));
     const items = [
         ...(villain.powers || []).map((p, i) => powerItem(id, seed, p, i)),
         ...(villain.qualities || []).map((q, i) => qualityItem(id, seed, q, i)),
-        ...(villain.abilities || []).map((a, i) => abilityItem(id, seed, a, i))
+        ...(villain.statuses || []).map((s, i) => villainStatusItem(id, seed, s, i)),
+        ...abilities.map((a, i) => abilityItem(id, seed, a, i))
     ];
-    // Mark first villainStatus-like status isn't a separate item type for approach — use health as wounds.max
     return {
         name: villain.name,
         type: "villain",
@@ -411,6 +450,7 @@ function buildVillainActor(villain, folderId, teamKey) {
                 team: teamKey,
                 sourcePage: villain.sourcePage || null,
                 biographyHtml: villain.biographyHtml || "",
+                statusTheme: villain.statusTheme || null,
                 gaps: villain.gaps || []
             }
         },

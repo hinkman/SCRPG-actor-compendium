@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "NAhUarGgVMd7h50C",
-      "name": "60",
+      "_id": "FZOWfVR6dGUKLYDy",
+      "name": "Agility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.NAhUarGgVMd7h50C"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.FZOWfVR6dGUKLYDy"
     },
     {
-      "_id": "9V9msZIPauMgehKW",
-      "name": "Agility",
+      "_id": "DnKlY0nBHkHXeqka",
+      "name": "Gadgets",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.9V9msZIPauMgehKW"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.DnKlY0nBHkHXeqka"
     },
     {
-      "_id": "hFjvz4P9oMpUqh7m",
-      "name": "Acrobatics",
+      "_id": "iNkwm9ZGuFd9oESn",
+      "name": "Invisibility",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,16 +118,111 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.hFjvz4P9oMpUqh7m"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.iNkwm9ZGuFd9oESn"
     },
     {
-      "_id": "0Q7sYuLOA3BeA98z",
-      "name": "Gadgets",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "pYDwuvEftprdm26J",
+      "name": "Acrobatics",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.pYDwuvEftprdm26J"
+    },
+    {
+      "_id": "fv5593K4ZkVBHR83",
+      "name": "Banter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.fv5593K4ZkVBHR83"
+    },
+    {
+      "_id": "FkzmmagRw3AccyUz",
+      "name": "Criminal Underworld Info",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.FkzmmagRw3AccyUz"
+    },
+    {
+      "_id": "BEPP7ZRrBgA0dMpX",
+      "name": "Finesse",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -151,16 +246,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.0Q7sYuLOA3BeA98z"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.BEPP7ZRrBgA0dMpX"
     },
     {
-      "_id": "fKmIv460n5lYjy1B",
-      "name": "Banter",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "jAdbSY6thy6ZfFS1",
+      "name": "Flashy Felon",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
         "selected": "",
         "description": ""
       },
@@ -184,17 +278,49 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.fKmIv460n5lYjy1B"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.jAdbSY6thy6ZfFS1"
     },
     {
-      "_id": "hFHgCrOGyHI985aG",
-      "name": "Penalties",
+      "_id": "i4ijkQ0nFp5ywopH",
+      "name": "Stealth",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
         "selected": "",
         "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.i4ijkQ0nFp5ywopH"
+    },
+    {
+      "_id": "WlQDA4a2BjvSfQTi",
+      "name": "Any Penalties and No Bonuses",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -205,7 +331,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Penalties"
         }
       },
       "_stats": {
@@ -216,17 +343,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.hFHgCrOGyHI985aG"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.WlQDA4a2BjvSfQTi"
     },
     {
-      "_id": "eMU4EDqpxHj4t1DO",
-      "name": "Any Penalties and No Bonuses",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "bqfYvKM26u70AYAP",
+      "name": "Some Penalties and Some Bonuses",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -237,7 +364,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Penalties"
         }
       },
       "_stats": {
@@ -248,17 +376,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.eMU4EDqpxHj4t1DO"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.bqfYvKM26u70AYAP"
     },
     {
-      "_id": "pXL1hU7vErssfZxA",
-      "name": "Some Penalties and Some Bonuses",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "fGEYhkfSVCII5JkF",
+      "name": "No Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Penalties</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,7 +397,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Penalties"
         }
       },
       "_stats": {
@@ -280,15 +409,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.pXL1hU7vErssfZxA"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.fGEYhkfSVCII5JkF"
     },
     {
-      "_id": "Ikyfgl1DyhdS7Edm",
+      "_id": "Y4HD1IfX5rwE6A0c",
       "name": "Feint of Heart",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -309,7 +438,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +449,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.Ikyfgl1DyhdS7Edm"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.Y4HD1IfX5rwE6A0c"
     },
     {
-      "_id": "bBhtY5zMUpAbM7YO",
+      "_id": "zGt7XAOKKrRl0BRf",
       "name": "Flashbangle",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -349,7 +478,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +489,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.bBhtY5zMUpAbM7YO"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.zGt7XAOKKrRl0BRf"
     },
     {
-      "_id": "b1kvDTQn43xF9Vak",
+      "_id": "XImFUvjTnQSEGEqm",
       "name": "Least Favorite Diamond",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -389,7 +518,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +529,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.b1kvDTQn43xF9Vak"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.XImFUvjTnQSEGEqm"
     },
     {
-      "_id": "efEABcS5ekzKvnHH",
+      "_id": "LNHDaYuKJgGIFLSm",
       "name": "Uncatchable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -429,7 +558,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +569,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.efEABcS5ekzKvnHH"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.LNHDaYuKJgGIFLSm"
     },
     {
-      "_id": "OHpjAaBLSNOt0VAo",
+      "_id": "Zr12Ve8b4XcFvrJJ",
       "name": "Power Upgrade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +598,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +609,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.OHpjAaBLSNOt0VAo"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.Zr12Ve8b4XcFvrJJ"
     },
     {
-      "_id": "EnyygEz4hjJIQyS9",
+      "_id": "J8JV1XGXKyOMOwFp",
       "name": "Mastery of Profitability",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +638,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +649,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!A7veNPcLw2oqNdeP.EnyygEz4hjJIQyS9"
+      "_key": "!actors.items!A7veNPcLw2oqNdeP.J8JV1XGXKyOMOwFp"
     }
   ],
   "effects": [],
@@ -535,9 +664,9 @@
       "team": "independent",
       "sourcePage": 354,
       "biographyHtml": "<p>355\n355\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nCassandra Lilya grew up in Rook City, where she \nlearned at a very early age that crime actually paid \nquite well and was far easier than silly things like \n“time” or “hard work.” At night, she broke into \nsupposedly secure areas and plundered riches under \nthe identity of Ermine. During the day, she used her \nill-gotten gains to fuel an extravagant lifestyle. When \nthe world’s largest diamond went on exhibition \nat the Rook City museum, she couldn’t \nresist stealing it. This proved to be her \nundoing as it caused her to cross \npaths with the hero Wraith, \nwho defeated her and ended \nthe secret of her dual life. While \nshe stayed out of jail, the revealing \nof her secret identity left her \nreputation in tatters. Her hatred \nof Wraith, as much as her skill as \na thief, were what caused Baron \nBlade to offer her a spot on his villain \nteam, the Vengeful Five. When that \nteam eventually fell apart, Ermine went \nback to a life of thievery, though she \nwould occasionally deign to help other \nvillains with their schemes, particularly if \nit meant a payout.\nCapabilities and Motivations\nErmine is extremely self-centered and rarely has \nlong term plans. While she’s quite adept at making \na complex plan to bypass a security system, she \ntends not to think much beyond the acquisition of \nwhatever shiny thing caught her eye. The thievery \nitself is what excites her, with the proceeds funding \na life of luxury. A gifted acrobat, sneak, and con \nartist, Ermine can get into many “secure” locations, \nand when she comes across something that has a \nbit more security, she’s happy to have someone act \nas a distraction for her. When things go wrong she’s \nextremely good at improvising her way out of the \nconsequences, leaving others with the aftermath. \nLately, she has teamed up with Fright Train for her \nheists, with his muscle and one-track mind pairing \nwell with her stealth and skill.\nUpgrades\nTaking a lesson from Wraith, Ermine has been \nacquiring a variety of gadgets. Instead of the fashion \ndisaster of Wraith’s clunky utility belt, Ermine’s \njewels can be used in many ways: granting her \ntemporary invisibility, creating holograms, deflecting \nlasers, and more. Truly a girl’s best friend.\nVillains\nAlias: Cassandra Lilya\nGender: Female\nAge: Late-20s\nHeight: 5’3”\nEyes: Amber\nHair: Blonde\nSkin: Tan\nBuild: Gymnast\nCostume/Equipment: A white and grey bodysuit \nwith gold piping that leaves her shoulders bare, \naccented by blue diamonds and a blue visor.\nApproach: Skilled\nArchetype: Formidable\nErmine</p>",
+      "statusTheme": "Penalties",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

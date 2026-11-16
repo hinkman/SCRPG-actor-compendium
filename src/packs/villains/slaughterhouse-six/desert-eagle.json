@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "Hjyt0Kn95pdqqRyb",
-      "name": "50",
+      "_id": "PbXEkyhnPcWdD9Mq",
+      "name": "Eagle Eye System",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.Hjyt0Kn95pdqqRyb"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.PbXEkyhnPcWdD9Mq"
     },
     {
-      "_id": "rm1tiwPnJbWUv2lb",
-      "name": "Eagle Eye System",
+      "_id": "yST0C0ZF6a9NY5m1",
+      "name": "Energy Bolt Launchers",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.rm1tiwPnJbWUv2lb"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.yST0C0ZF6a9NY5m1"
     },
     {
-      "_id": "PHCmgl10fEcPZ3ax",
-      "name": "Acrobatics",
+      "_id": "nvi5TlJDXf4wDSUl",
+      "name": "Flight",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,16 +118,111 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.PHCmgl10fEcPZ3ax"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.nvi5TlJDXf4wDSUl"
     },
     {
-      "_id": "0RiWzI8F4Ng5TIAQ",
-      "name": "Energy Bolt Launchers",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "W7pQxYeLQQr1V4rd",
+      "name": "Acrobatics",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.W7pQxYeLQQr1V4rd"
+    },
+    {
+      "_id": "J59DPQVgxi6SadNI",
+      "name": "Alertness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.J59DPQVgxi6SadNI"
+    },
+    {
+      "_id": "Jtzh8BRCaEnw9F7j",
+      "name": "Eye on the Prize",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.Jtzh8BRCaEnw9F7j"
+    },
+    {
+      "_id": "x0m1rwdtCwZpoD4x",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -151,50 +246,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.0RiWzI8F4Ng5TIAQ"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.x0m1rwdtCwZpoD4x"
     },
     {
-      "_id": "mxckCy0wdw9FIWmC",
-      "name": "Alertness",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
+      "_id": "IpMuuVB3F0eutzms",
+      "name": "0 Other Villains",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.mxckCy0wdw9FIWmC"
-    },
-    {
-      "_id": "q2JBlTQT0MFMY90E",
-      "name": "Other Villains",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -205,7 +267,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -216,17 +279,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.q2JBlTQT0MFMY90E"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.IpMuuVB3F0eutzms"
     },
     {
-      "_id": "JMLp134nTlduHvkA",
-      "name": "0 Other Villains",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "jiGJePKfTIChIjuR",
+      "name": "1-2 Other Villains",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -237,7 +300,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -248,17 +312,17 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.JMLp134nTlduHvkA"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.jiGJePKfTIChIjuR"
     },
     {
-      "_id": "6WijCNFDeVvevCO2",
-      "name": "1-2 Other Villains",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
+      "_id": "j8BvOx5uRyqcx3z5",
+      "name": "3+ Other Villains",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
       "system": {
         "dieType": "d8",
-        "selected": "",
-        "description": ""
+        "selected": false,
+        "description": "<p>Other Villains</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,7 +333,8 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": false,
+          "category": "Other Villains"
         }
       },
       "_stats": {
@@ -280,15 +345,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.6WijCNFDeVvevCO2"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.j8BvOx5uRyqcx3z5"
     },
     {
-      "_id": "SFCIb9vQ7xPHEJMB",
+      "_id": "ZOQeAp7mpOKN8sG5",
       "name": "Debilitating Bolts",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -309,7 +374,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -320,15 +385,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.SFCIb9vQ7xPHEJMB"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.ZOQeAp7mpOKN8sG5"
     },
     {
-      "_id": "Ca0EpdNJV8SoKz6n",
+      "_id": "qfCl4aS5KkNt7hVa",
       "name": "Hard to Shake",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -349,7 +414,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -360,15 +425,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.Ca0EpdNJV8SoKz6n"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.qfCl4aS5KkNt7hVa"
     },
     {
-      "_id": "RZAYLbQ93UkMmZkH",
+      "_id": "xSxUgnYHgNzfXqLe",
       "name": "Locked on Target",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -389,7 +454,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -400,15 +465,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.RZAYLbQ93UkMmZkH"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.xSxUgnYHgNzfXqLe"
     },
     {
-      "_id": "X5wpDjeezDbqM93G",
+      "_id": "yLMqwEowwUUaw82U",
       "name": "Swoop and Blast",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -429,7 +494,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -440,15 +505,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.X5wpDjeezDbqM93G"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.yLMqwEowwUUaw82U"
     },
     {
-      "_id": "bWle2KslT1W4Upwo",
+      "_id": "F4Ws3iZRTcodxRvk",
       "name": "Power Upgrade",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -469,7 +534,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -480,15 +545,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.bWle2KslT1W4Upwo"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.F4Ws3iZRTcodxRvk"
     },
     {
-      "_id": "KDR0FvM3wkjA0CGc",
+      "_id": "gPm67Pu4XWUK3krO",
       "name": "Master Mercenary",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -509,7 +574,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -520,7 +585,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!v4tdIalWFfPkqhIJ.KDR0FvM3wkjA0CGc"
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.gPm67Pu4XWUK3krO"
     }
   ],
   "effects": [],
@@ -535,9 +600,9 @@
       "team": "slaughterhouse-six",
       "sourcePage": 392,
       "biographyHtml": "<p>393\n393\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs the goggles attached to the contacts that had \nbeen drilled into his skull, Mikal Jadoon remembered \nabandoning the Pakistani army for the mercenary \nlife of better pay and fewer rules. He remembered \njoining RevoCorp’s black ops team for the same \nreasons. He remembered the upgrades, the rush \nas he tried out the wings for the first time, and the \nEagle Eye system that let him see every crystal clear \ndetail, every nuance of his target. He remembered \nthe man who looked like living darkness, and \nthe terrible pain as that slice of shadow sent out \ntendrils that grabbed him by his eyes and pulled. He \nremembered being spit out of an endless darkness \nonly to realize that something was terribly wrong \nwith his vision. He remembered the weeks before \nhe was able to contact Ray Manta, seeing nothing \nbut writhing, hungry shadows. \nThen, Ray Manta made the \nfinal connections to Mikal’s \ntemple, lifting the darkness. \nCycling through the visual \nspectra, Mikal wondered if he \nwould ever sleep again.\nCapabilities and Motivations\nDesert Eagle is a skilled and dangerous aerial \ncombatant. The speed and maneuverability of his \nwing system allows him to attack from unpredictable \nangles and makes him a hard target to hit. Plus, he \nonly gets more lethal as the fight continues and \nhis Eagle Eye system analyzes target weaknesses. \nOnce the Eagle Eye system has locked on to a \ntarget, even the stealthiest heroes will find escaping \nDesert Eagle a difficult proposition.\nUpgrades\nRay Manta is tinkering with every aspect of Desert \nEagle’s gear. The next generation Eagle Eye system \nacquires target weaknesses faster and hits harder, \nthe barrier systems can generate a stronger barrier, \nand the wingsuit’s upgraded thrusters and G-force \ndampeners allow for tighter turns and a higher \noperational ceiling.\nAlias: Mikal Jadoon\nGender: Male\nAge: Early-30s\nHeight: 6’\nEyes: Completely black\nHair: Brown, windblown\nSkin: Brown\nBuild: Wiry gymnast\nCostume/Equipment: A brown bodysuit with \ngold piping, brown boots, and khaki arms and \nlegs. Khaki gloves with gold bracers fitted with \nglowing purple gems. A backpack fitted with large \nwings with metal feathers and thrusters. A black \nbreather mask covering the mouth and nose with \na hose leading to the backpack. Glowing purple \ngoggles covering the eyes.\nApproach: Reckless\nArchetype: Loner\nDesert Eagle</p>",
+      "statusTheme": "Other Villains",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },

@@ -22,8 +22,8 @@
   },
   "items": [
     {
-      "_id": "KJb8gHpoXqksn6R1",
-      "name": "55",
+      "_id": "ig9x9Wic9W5RjJ8D",
+      "name": "Nuclear",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -52,11 +52,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.KJb8gHpoXqksn6R1"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.ig9x9Wic9W5RjJ8D"
     },
     {
-      "_id": "SeELwRD9KWUfzb9H",
-      "name": "Nuclear",
+      "_id": "ymennVXjeqn2NhDH",
+      "name": "Power Suit",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -85,11 +85,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.SeELwRD9KWUfzb9H"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.ymennVXjeqn2NhDH"
     },
     {
-      "_id": "07AeijEAOMvDX7TT",
-      "name": "Close Combat",
+      "_id": "0zyMEcA2vsZYKOoc",
+      "name": "Presence",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -118,11 +118,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.07AeijEAOMvDX7TT"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.0zyMEcA2vsZYKOoc"
     },
     {
-      "_id": "9CGHAGaKu4duAKS4",
-      "name": "Power Suit",
+      "_id": "OAdKLdhw1vvNhFBR",
+      "name": "Strength",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -151,44 +151,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.9CGHAGaKu4duAKS4"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.OAdKLdhw1vvNhFBR"
     },
     {
-      "_id": "h5hqP47bTDjCwjb1",
-      "name": "Conviction",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d8",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 400000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": false
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.h5hqP47bTDjCwjb1"
-    },
-    {
-      "_id": "pTknqtFsIsJR2zDj",
-      "name": "Health",
+      "_id": "nlNJ65OvtVtlK1fD",
+      "name": "Close Combat",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
@@ -216,15 +183,210 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.pTknqtFsIsJR2zDj"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.nlNJ65OvtVtlK1fD"
     },
     {
-      "_id": "vwd4VP80YkqNGOld",
+      "_id": "BCOPPAME84Dl9quR",
+      "name": "Conviction",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.BCOPPAME84Dl9quR"
+    },
+    {
+      "_id": "jC2eg4dFIVqnBT3r",
+      "name": "Leadership",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.jC2eg4dFIVqnBT3r"
+    },
+    {
+      "_id": "nJB20eXxmr8PRSrB",
+      "name": "Soviet of Steel",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.nJB20eXxmr8PRSrB"
+    },
+    {
+      "_id": "Vdg4dMdPqXVwDU39",
+      "name": "Green Zone: 55-38",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.Vdg4dMdPqXVwDU39"
+    },
+    {
+      "_id": "6Xjt8hctuh4ACrVd",
+      "name": "Yellow Zone: 37-17",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.6Xjt8hctuh4ACrVd"
+    },
+    {
+      "_id": "ZHWGOPBEWhsLNE43",
+      "name": "Red Zone: 16-1",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": "<p>Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false,
+          "category": "Health"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.ZHWGOPBEWhsLNE43"
+    },
+    {
+      "_id": "KStBAntwFFmhWW1N",
       "name": "No Man - No Problem",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -245,7 +407,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -256,15 +418,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.vwd4VP80YkqNGOld"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.KStBAntwFFmhWW1N"
     },
     {
-      "_id": "DNRIxnie6xlXN88H",
+      "_id": "aA8XqSQHCU7knYkW",
       "name": "Show My True Strength",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -285,7 +447,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -296,15 +458,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.DNRIxnie6xlXN88H"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.aA8XqSQHCU7knYkW"
     },
     {
-      "_id": "qmyG31nNQg0REHu1",
+      "_id": "kBQ5LmHHf8RZC1YW",
       "name": "Soviet Block",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -325,7 +487,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -336,15 +498,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.qmyG31nNQg0REHu1"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.kBQ5LmHHf8RZC1YW"
     },
     {
-      "_id": "CXj7LRffvubWUdlS",
+      "_id": "7fr7NXwJbQLEZxB4",
       "name": "Steel Gloves",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": false,
@@ -365,7 +527,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -376,15 +538,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.CXj7LRffvubWUdlS"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.7fr7NXwJbQLEZxB4"
     },
     {
-      "_id": "e3NkR5nGpRrcsdy1",
+      "_id": "wPLkgIZTZpUc23j8",
       "name": "The New Soviet Power",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": true,
           "defend": true,
@@ -405,7 +567,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -416,15 +578,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.e3NkR5nGpRrcsdy1"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.wPLkgIZTZpUc23j8"
     },
     {
-      "_id": "bnHnhfGKElQFxL7M",
+      "_id": "qMxJoP4c0iBrw5Q1",
       "name": "New Soviet Hover-Tank",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -445,7 +607,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -456,15 +618,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.bnHnhfGKElQFxL7M"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.qMxJoP4c0iBrw5Q1"
     },
     {
-      "_id": "A6fXUnAd5W1NsuHn",
+      "_id": "XcD4AFa4BATM3oqJ",
       "name": "Master of Superiority",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "main",
+        "aux": "villain",
         "icon": {
           "attack": false,
           "defend": false,
@@ -485,7 +647,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "main"
+          "color": "villain"
         }
       },
       "_stats": {
@@ -496,7 +658,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!R6vrD9HwUp2vEC8j.A6fXUnAd5W1NsuHn"
+      "_key": "!actors.items!R6vrD9HwUp2vEC8j.XcD4AFa4BATM3oqJ"
     }
   ],
   "effects": [],
@@ -511,9 +673,9 @@
       "team": "perestroika",
       "sourcePage": 380,
       "biographyHtml": "<p>381\n381\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nMonths after his apparent death, Mecha-Stalin \nreappeared in Siberia in a new body and with a new \ncomplement of followers. Abandoning his plans to take \nover America, Mecha-Stalin has vowed to reunite the \nnations of the former Soviet Union. He has found or \nis being supplied with cutting edge military technology \nand has substantial forces at his disposal with which \nhe launches strikes from a hidden base somewhere \nin Siberia. Making the rescue of his comrades his first \npriority, Mecha-Stalin has freed the other members of \nPerestroika and outfitted them with customized tech \nthat enhances their already considerable abilities. The \ndebate about his origins remains unresolved, as does \nthe question of whether or not this is the same head, \nor just a copy of a copy.\nCapabilities and Motivations\nMecha-Stalin’s stated mission is to reunite the Soviet \nUnion, but he is also looking to the future and looking \nfor opportunities to destabilize other countries to make \nthem softer targets for takeover. The new body is even \nmore deadly than the last in close quarters action, able \nto tear through steel like paper and shrug off attacks \nwith ease. Internal hardpoints and manufacturing \nmodules render his form capable of creating a wide \nvariety of field upgrades, repairs, and modifications, \nand the smaller size and increased dexterity allow for \nMecha-Stalin to even wield conventional weapons if \nneeded. He has also demonstrated a willingness to \ntake hits for his comrades, making them all the more \nwilling to fight for him.\nUpgrades\nWhile the suit has no apparent weaponry, this does \nnot mean that it is unarmed. It is extremely likely \nthat the suit hides a variety of heavy weapons, and \nthe reactor itself outputs enough power that excess \nenergy could be theoretically used as a last-ditch \nweapon. He commands his troops on the field from a \ncustomized hover tank, though once battle begins he \noften joins the fray while the tank supports with heavy \nartillery linked to his on-board targeting systems.\nAlias: Joseph Stalin?\nGender: Male\nAge: If he is the original: 142 years. Possibly some \ntype of newer creation.\nHeight: 6’ 5”\nEyes: One brown, one red lens\nHair: Brown mustache, metal hat covering his \nhead\nSkin: Pale/metal\nBuild: Sturdy and metallic\nCostume/Equipment: Mecha-Stalin’s new body is \nconsiderably more streamlined than the previous \nversion. It has no visible weapons, and is composed \nof golden and silver high-tech alloys over steel \nmuscles and an internal nuclear reactor. He wears \na military topcoat and cap in the old Soviet style.\nApproach: Adaptive\nArchetype: Bruiser\nMecha Stalin 2</p>",
+      "statusTheme": "Health",
       "gaps": [
-        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
-        "Villain status dice (conditional) are not fully modeled beyond health max."
+        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
       ]
     }
   },
