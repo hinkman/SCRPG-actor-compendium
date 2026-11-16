@@ -290,15 +290,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>less status die, use your Max+Min dice; a status die, use your Max die; larger than a , use your Mid die. When an opponent moves away from you, you may follow them and</p>"
+        "gameText": "<p>or Attack and Hinder using Ranged Combat. If the target has: a less status die, use your Max+Min dice; a status die, use your Max die; larger than a , use your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -330,15 +330,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": true,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "R",
-        "gameText": "<p>roll your single status die as a Hinder against them. Attack using Eagle Eye System and use your Max die. Recover Health</p>"
+        "gameText": "<p>When an opponent moves away from you, you may follow them and roll your single status die as a Hinder against them.</p>"
       },
       "effects": [],
       "folder": null,
@@ -373,12 +373,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>equal to your Mid+Min dice. Attack multiple targets using Flight. Hinder each target with your Max</p>"
+        "gameText": "<p>Attack using Eagle Eye System and use your Max die. Recover Health equal to your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -410,15 +410,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. Increase all of Desert Eagle’s power dice by one size.</p>"
+        "gameText": "<p>Attack multiple targets using Flight. Hinder each target with your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Desert Eagle has 20 additional Health.) If you have been given a contract to perform a specific task, automatically</p>"
+        "gameText": "<p>Increase all of Desert Eagle’s power dice by one size. (When using this upgrade, Desert Eagle has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>succeed at an Overcome in a situation where the difference is getting paid and not getting paid.</p>"
+        "gameText": "<p>If you have been given a contract to perform a specific task, automatically succeed at an Overcome in a situation where the difference is getting paid and not getting paid.</p>"
       },
       "effects": [],
       "folder": null,

@@ -226,7 +226,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -234,7 +234,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another. Reduce damage taken by physical and energy sources by 1 while in</p>"
+        "gameText": "<p>Attack using Strength. If you are Green status, use your Max die. If you are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another.</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,12 +269,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>the Green zone, 2 in the Yellow zone, and 3 in the Red zone. Whenever a target takes a Hinder action against you, you may first</p>"
+        "gameText": "<p>Reduce damage taken by physical and energy sources by 1 while in the Green zone, 2 in the Yellow zone, and 3 in the Red zone.</p>"
       },
       "effects": [],
       "folder": null,
@@ -314,7 +314,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>roll your Momentum die as a Hinder on them. Hinder multiple targets using Imposing. You and any nearby allies</p>"
+        "gameText": "<p>Whenever a target takes a Hinder action against you, you may first roll your Momentum die as a Hinder on them.</p>"
       },
       "effects": [],
       "folder": null,
@@ -346,15 +346,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": true,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Defend using your Max die. When you take an action that lets you make an Attack, also make an</p>"
+        "gameText": "<p>Hinder multiple targets using Imposing. You and any nearby allies Defend using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -394,7 +394,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Attack using your Mid die. (When using this upgrade, Fright Train has 20 additional Health.) If you can cause massive collateral damage without regard for</p>"
+        "gameText": "<p>When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Fright Train has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -434,7 +434,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+        "gameText": "<p>If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
       },
       "effects": [],
       "folder": null,

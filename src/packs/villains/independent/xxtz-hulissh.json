@@ -290,7 +290,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": true,
@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>or Hindering you. Hinder using Presence against multiple targets and use your Max die.</p>"
+        "gameText": "<p>Take 1 irreducible damage to reroll a dice pool of someone Attacking or Hindering you.</p>"
       },
       "effects": [],
       "folder": null,
@@ -333,12 +333,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack each using your Mid+Min dice. Reduce all damage taken by 6 (if you have a status die), 4 (if you</p>"
+        "gameText": "<p>Hinder using Presence against multiple targets and use your Max die. Attack each using your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>have a status die) or 2 (if you have a or lower status die).</p>"
+        "gameText": "<p>Reduce all damage taken by 6 (if you have a status die), 4 (if you status die) or 2 (if you have a or lower status die). have a</p>"
       },
       "effects": [],
       "folder": null,
@@ -410,7 +410,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Activate one of the environment’s twists in its current zone. Attack using Horror and use your Max die. The target can either be</p>"
+        "gameText": "<p>Activate one of the environment’s twists in its current zone.</p>"
       },
       "effects": [],
       "folder": null,
@@ -450,7 +450,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": true,
           "hinder": true,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hindered equal to your Max+Mid+Min dice, or be unable to take any other actions other than using an Overcome to attempt to escape.</p>"
+        "gameText": "<p>Attack using Horror and use your Max die. The target can either be Hindered equal to your Max+Mid+Min dice, or be unable to take any other actions other than using an Overcome to attempt to escape.</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Replenish your Hul’Spawn squad up to the number of heroes. If you are involved with eldritch and disturbing forces, automatically</p>"
+        "gameText": "<p>Replenish your Hul’Spawn squad up to the number of heroes.</p>"
       },
       "effects": [],
       "folder": null,
@@ -523,8 +523,8 @@
       "_key": "!actors.items!Dd1FSaizhbTmrKx7.CG19i25amXEYANIZ"
     },
     {
-      "_id": "ZMDFXURf1rso9urM",
-      "name": "Master of the",
+      "_id": "VODTEMQ62aLTNenL",
+      "name": "Master of the Unfathomable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>succeed at an Overcome to do the bidding of a being beyond human</p>"
+        "gameText": "<p>If you are involved with eldritch and disturbing forces, automatically succeed at an Overcome to do the bidding of a being beyond human concerns.</p>"
       },
       "effects": [],
       "folder": null,
@@ -560,47 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.ZMDFXURf1rso9urM"
-    },
-    {
-      "_id": "TP3dNKKErNTALgft",
-      "name": "Unfathomable",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>concerns.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!Dd1FSaizhbTmrKx7.TP3dNKKErNTALgft"
+      "_key": "!actors.items!Dd1FSaizhbTmrKx7.VODTEMQ62aLTNenL"
     }
   ],
   "effects": [],

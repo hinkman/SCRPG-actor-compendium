@@ -283,8 +283,8 @@
       "_key": "!actors.items!a9uW4sk8gjDQzbPc.wH3cEwDBgeS8CvX0"
     },
     {
-      "_id": "mS9YkQz2LYUchXcw",
-      "name": "A Cornered Dragon",
+      "_id": "k0hNH1NqarD1IKGU",
+      "name": "A Cornered Dragon Closes its Wings",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -298,7 +298,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>If you are outnumbered by nearby opponents, reduce all damage</p>"
+        "gameText": "<p>If you are outnumbered by nearby opponents, reduce all damage dealt to you by 2.</p>"
       },
       "effects": [],
       "folder": null,
@@ -320,11 +320,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.mS9YkQz2LYUchXcw"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.k0hNH1NqarD1IKGU"
     },
     {
-      "_id": "rKIwzBvIPayrJxWv",
-      "name": "Closes its Wings",
+      "_id": "eF872hfLqyzK5QzC",
+      "name": "Drive Back Their Blades",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -337,8 +337,8 @@
           "boost": false,
           "recover": false
         },
-        "type": "I",
-        "gameText": "<p>dealt to you by 2. Attack using Close Combat and use your Max die. Defend against all</p>"
+        "type": "A",
+        "gameText": "<p>Attack using Close Combat and use your Max die. Defend against all Attacks against you with your Mid die until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -360,11 +360,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.rKIwzBvIPayrJxWv"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.eF872hfLqyzK5QzC"
     },
     {
-      "_id": "GeAsqX59XzQKppEz",
-      "name": "Drive Back Their Blades",
+      "_id": "ljQgxfMLeHUCr3Z6",
+      "name": "Step as the Crane through the Reeds",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attacks against you with your Mid die until the start of your next turn.</p>"
+        "gameText": "<p>Attack using Acrobatics, using your Max die against one target, Mid die against another, and Min die against any target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -400,11 +400,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.GeAsqX59XzQKppEz"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.ljQgxfMLeHUCr3Z6"
     },
     {
-      "_id": "Gy73F4zrJEqFLFBO",
-      "name": "Step as the Crane through",
+      "_id": "1o2ErFUp9V1TaWeu",
+      "name": "Strike True, Learn Your Foe, Be Unknowable",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -413,12 +413,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Acrobatics, using your Max die against one target, Mid die</p>"
+        "gameText": "<p>Attack multiple close targets using Student of Many Masters. Hinder each target using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -440,25 +440,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.Gy73F4zrJEqFLFBO"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.1o2ErFUp9V1TaWeu"
     },
     {
-      "_id": "0NioZ1krBiKtfUnU",
-      "name": "the Reeds",
+      "_id": "uyWW8YGdVxkCGzs3",
+      "name": "One with the Fray",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>against another, and Min die against any target.</p>"
+        "type": "I",
+        "gameText": "<p>When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Dragonclaw has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -480,25 +480,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.0NioZ1krBiKtfUnU"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.uyWW8YGdVxkCGzs3"
     },
     {
-      "_id": "TMJaGMWcaTt0QkH7",
-      "name": "Strike True, Learn Your",
+      "_id": "luYN4zpEAB7tpWGx",
+      "name": "Master of Conquest",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
-          "hinder": true,
+          "overcome": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
-        "type": "A",
-        "gameText": "<p>Attack multiple close targets using Student of Many Masters. Hinder</p>"
+        "type": "I",
+        "gameText": "<p>As long as you are in command of your own forces, automatically succeed at an Overcome involving seizing an area or capturing civilians.</p>"
       },
       "effects": [],
       "folder": null,
@@ -520,127 +520,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.TMJaGMWcaTt0QkH7"
-    },
-    {
-      "_id": "2oHIt7fIEQRQgLCD",
-      "name": "Foe, Be Unknowable",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": true,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "A",
-        "gameText": "<p>each target using your Min die. When you take an action that lets you make an Attack, also make an</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 600000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.2oHIt7fIEQRQgLCD"
-    },
-    {
-      "_id": "oTlgSfHtHoTmSaNs",
-      "name": "One with the Fray",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": true,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>Attack using your Mid die. (When using this upgrade, Dragonclaw has 20 additional Health.) As long as you are in command of your own forces, automatically</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.oTlgSfHtHoTmSaNs"
-    },
-    {
-      "_id": "nx8ndSn7y2tA6kJO",
-      "name": "Master of Conquest",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>succeed at an Overcome involving seizing an area or capturing civilians.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 800000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!a9uW4sk8gjDQzbPc.nx8ndSn7y2tA6kJO"
+      "_key": "!actors.items!a9uW4sk8gjDQzbPc.luYN4zpEAB7tpWGx"
     }
   ],
   "effects": [],

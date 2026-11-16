@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Hinder an opponent using Stone.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -423,11 +423,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Transmutation die. Reduce any physical or energy damage you take by 1 while you are in the</p>"
+        "gameText": "<p>When you change personal zones, you may Boost by rolling your single Transmutation die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -459,7 +459,7 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -467,7 +467,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Attack using Strength. The target of that Attack must take the Attack action</p>"
+        "gameText": "<p>Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.</p>"
       },
       "effects": [],
       "folder": null,
@@ -499,15 +499,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome a situation where someone else has given you a bonus from a against you on its next turn, if possible.</p>"
+        "gameText": "<p>Attack using Strength. The target of that Attack must take the Attack action against you on its next turn, if possible.</p>"
       },
       "effects": [],
       "folder": null,
@@ -547,7 +547,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost. Use your Max die. You and each of your allies gain a hero point. Overcome using brute force. Use your Max die. You and each of your allies gain</p>"
+        "gameText": "<p>Overcome a situation where someone else has given you a bonus from a Boost. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -581,13 +581,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>a hero point.</p>"
+        "gameText": "<p>Overcome using brute force. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -627,7 +627,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Strength. Hinder that same target using your Min die. When your personal zone changes, Attack all close enemy targets by rolling</p>"
+        "gameText": "<p>Attack using Strength. Hinder that same target using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -664,10 +664,10 @@
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "R",
-        "gameText": "<p>your single Stone die. When you eliminate a minion with an Attack using Close Combat, Recover</p>"
+        "gameText": "<p>When your personal zone changes, Attack all close enemy targets by rolling your single Stone die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -699,15 +699,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": true
         },
         "type": "R",
-        "gameText": "<p>health equal to your min die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your</p>"
+        "gameText": "<p>When you eliminate a minion with an Attack using Close Combat, Recover health equal to your min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -742,12 +742,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": false
+          "recover": true
         },
         "type": "A",
-        "gameText": "<p>Max+Mid dice.</p>"
+        "gameText": "<p>Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.</p>"
       },
       "effects": [],
       "folder": null,

@@ -70,10 +70,10 @@
               }
             },
             {
-              "name": "“Consider the",
+              "name": "“Consider the Price of Victory”",
               "type": "A",
               "aux": "main",
-              "gameText": "Hinder all opponents that can see or hear you using Conviction. Boost",
+              "gameText": "Hinder all opponents that can see or hear you using Conviction. Boost yourself using your Max die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -84,10 +84,10 @@
               }
             },
             {
-              "name": "Price of Victory”",
+              "name": "Devious Devising",
               "type": "A",
               "aux": "main",
-              "gameText": "yourself using your Max die. Boost yourself using Technology and use your Max die. Either make",
+              "gameText": "Boost yourself using Technology and use your Max die. Either make that bonus persistent and exclusive, or Boost yourself again using your Min+Mid dice.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -98,38 +98,10 @@
               }
             },
             {
-              "name": "Devious Devising",
+              "name": "The Glory of Mordengrad",
               "type": "A",
               "aux": "main",
-              "gameText": "that bonus persistent and exclusive, or Boost yourself again using your Min+Mid dice. Attack using Inventions and at least one bonus. If you have multiple",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "The Glory of",
-              "type": "A",
-              "aux": "main",
-              "gameText": "bonuses, you may also Attack another target using the Min die and",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Mordengrad",
-              "type": "A",
-              "aux": "main",
-              "gameText": "one other bonus, and may also Attack a third target using the Max die and a third bonus.",
+              "gameText": "Attack using Inventions and at least one bonus. If you have multiple bonuses, you may also Attack another target using the Min die and one other bonus, and may also Attack a third target using the Max die and a third bonus.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -143,7 +115,7 @@
               "name": "Battalion Backup",
               "type": "A",
               "aux": "main",
-              "gameText": "Replenish your Blade Battalion minions up to the number of heroes. As long you have access to materials, you can automatically succeed",
+              "gameText": "Replenish your Blade Battalion minions up to the number of heroes.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -157,7 +129,7 @@
               "name": "Master of Mad Science",
               "type": "I",
               "aux": "main",
-              "gameText": "when Overcoming a challenge by using scientific principles and inventions.",
+              "gameText": "As long you have access to materials, you can automatically succeed when Overcoming a challenge by using scientific principles and inventions.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -230,7 +202,7 @@
               "name": "AtmosFear",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack one of those targets with your Mid die. Hinder using Transmutation. That penalty is persistent and exclusive. As long as that penalty is in play, reduce damage dealt to you by 1 and",
+              "gameText": "Hinder using Presence against multiple targets and use your Max die. Attack one of those targets with your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -244,49 +216,7 @@
               "name": "Cracked Mask",
               "type": "A",
               "aux": "main",
-              "gameText": "whenever you are dealt damage, the target with this penalty takes 1 irreducible damage. When Attacked, Defend yourself by rolling your single Presence die.",
-              "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Deviate Reality",
-              "type": "R",
-              "aux": "main",
-              "gameText": "Deal that much damage to a different nearby target.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Flawless Facade",
-              "type": "I",
-              "aux": "main",
-              "gameText": "Whenever you roll a 1, reroll that die. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist,",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Rewrite Reality",
-              "type": "I",
-              "aux": "main",
-              "gameText": "you may use a reaction to Hinder them by rolling your single Presence die. (When using this upgrade, Miss Information has 10 additional Health.) As long as you are manifesting effects related to a power you have at",
+              "gameText": "Hinder using Transmutation. That penalty is persistent and exclusive. As long as that penalty is in play, reduce damage dealt to you by 1 and whenever you are dealt damage, the target with this penalty takes 1 irreducible damage.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -297,10 +227,52 @@
               }
             },
             {
+              "name": "Deviate Reality",
+              "type": "R",
+              "aux": "main",
+              "gameText": "When Attacked, Defend yourself by rolling your single Presence die. Deal that much damage to a different nearby target.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Flawless Facade",
+              "type": "I",
+              "aux": "main",
+              "gameText": "Whenever you roll a 1, reroll that die.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Rewrite Reality",
+              "type": "I",
+              "aux": "main",
+              "gameText": "The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Presence die. (When using this upgrade, Miss Information has 10 additional Health.)",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
               "name": "Master of Superiority",
               "type": "I",
               "aux": "main",
-              "gameText": ", automatically succeed at an Overcome involving usage of those powers.",
+              "gameText": "As long as you are manifesting effects related to a power you have at , automatically succeed at an Overcome involving usage of those powers.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -363,9 +335,9 @@
               "name": "All Aboard!",
               "type": "A",
               "aux": "main",
-              "gameText": "are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another. Reduce damage taken by physical and energy sources by 1 while in",
+              "gameText": "Attack using Strength. If you are Green status, use your Max die. If you are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -377,12 +349,12 @@
               "name": "Engine of Destruction",
               "type": "I",
               "aux": "main",
-              "gameText": "the Green zone, 2 in the Yellow zone, and 3 in the Red zone. Whenever a target takes a Hinder action against you, you may first",
+              "gameText": "Reduce damage taken by physical and energy sources by 1 while in the Green zone, 2 in the Yellow zone, and 3 in the Red zone.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -391,7 +363,7 @@
               "name": "Locomotivation",
               "type": "R",
               "aux": "main",
-              "gameText": "roll your Momentum die as a Hinder on them. Hinder multiple targets using Imposing. You and any nearby allies",
+              "gameText": "Whenever a target takes a Hinder action against you, you may first roll your Momentum die as a Hinder on them.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -405,12 +377,12 @@
               "name": "Plow Through",
               "type": "A",
               "aux": "main",
-              "gameText": "Defend using your Max die. When you take an action that lets you make an Attack, also make an",
+              "gameText": "Hinder multiple targets using Imposing. You and any nearby allies Defend using your Max die.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": true,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -419,7 +391,7 @@
               "name": "Trained Sights",
               "type": "I",
               "aux": "main",
-              "gameText": "Attack using your Mid die. (When using this upgrade, Fright Train has 20 additional Health.) If you can cause massive collateral damage without regard for",
+              "gameText": "When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Fright Train has 20 additional Health.)",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -433,7 +405,7 @@
               "name": "Master of Annihilation",
               "type": "I",
               "aux": "main",
-              "gameText": "casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
+              "gameText": "If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -506,12 +478,12 @@
               "name": "Feint of Heart",
               "type": "R",
               "aux": "main",
-              "gameText": "Deal that much damage to another target. Hinder multiple targets using Flashy Felon and use your Max die. If you",
+              "gameText": "When Attacked, Defend yourself by rolling your single Stealth die. Deal that much damage to another target.",
               "icon": {
-                "attack": false,
-                "defend": false,
+                "attack": true,
+                "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -520,12 +492,12 @@
               "name": "Flashbangle",
               "type": "A",
               "aux": "main",
-              "gameText": "roll doubles, also Attack each target with your Mid die. Destroy one of your bonuses. Deal each opponent damage equal to",
+              "gameText": "Hinder multiple targets using Flashy Felon and use your Max die. If you roll doubles, also Attack each target with your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -534,7 +506,21 @@
               "name": "Least Favorite Diamond",
               "type": "A",
               "aux": "main",
-              "gameText": "the value of that bonus. Boost using Gadgets and use your Max+Min dice. Remove all penalties",
+              "gameText": "Destroy one of your bonuses. Deal each opponent damage equal to the value of that bonus.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Uncatchable",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Boost using Gadgets and use your Max+Min dice. Remove all penalties on yourself.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -545,24 +531,10 @@
               }
             },
             {
-              "name": "Uncatchable",
-              "type": "A",
-              "aux": "main",
-              "gameText": "on yourself. Increase all of Ermine’s Powers by one die size. (When using this",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "upgrade, Ermine has 20 additional Health.) If you have access to great wealth and other resources, automatically",
+              "gameText": "Increase all of Ermine’s Powers by one die size. (When using this upgrade, Ermine has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -576,7 +548,7 @@
               "name": "Mastery of Profitability",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome to leverage those resources to get even richer, no matter who else pays the price.",
+              "gameText": "If you have access to great wealth and other resources, automatically succeed at an Overcome to leverage those resources to get even richer, no matter who else pays the price.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -649,7 +621,21 @@
               "name": "Bring in the Fleshchildren",
               "type": "A",
               "aux": "main",
-              "gameText": "status. When one of your minions is destroyed, roll its die. You Recover that",
+              "gameText": "Add two minions of size equal to one die size lower than your current status.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Flesh of my Flesh",
+              "type": "R",
+              "aux": "main",
+              "gameText": "When one of your minions is destroyed, roll its die. You Recover that much Health.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -660,24 +646,10 @@
               }
             },
             {
-              "name": "Flesh of my Flesh",
-              "type": "R",
-              "aux": "main",
-              "gameText": "much Health. Boost one of your minions using Fleshcrafting and use your Max die.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
               "name": "Lovingly Sculpted",
               "type": "A",
               "aux": "main",
-              "gameText": "If it is your only minion, also Boost yourself using your Mid die. If not, Boost each of your other minions using your Min die. Use Fleshfather to create a lieutenant of the same die size as your",
+              "gameText": "Boost one of your minions using Fleshcrafting and use your Max die. If it is your only minion, also Boost yourself using your Mid die. If not, Boost each of your other minions using your Min die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -691,7 +663,7 @@
               "name": "Mold the Homunculus",
               "type": "A",
               "aux": "main",
-              "gameText": "Max die. Whenever multiple of your minions all take the same action against the same target, you must roll all of their dice at the same time and",
+              "gameText": "Use Fleshfather to create a lieutenant of the same die size as your Max die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -705,7 +677,7 @@
               "name": "Pound of Flesh",
               "type": "I",
               "aux": "main",
-              "gameText": "use the lowest rolling die amongst them for each minion’s result on that action.",
+              "gameText": "Whenever multiple of your minions all take the same action against the same target, you must roll all of their dice at the same time and use the lowest rolling die amongst them for each minion’s result on that action.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -719,7 +691,7 @@
               "name": "Who Can You Trust?",
               "type": "A",
               "aux": "main",
-              "gameText": "Replenish your Fleshchildren up to the number of heroes. As long as you are not directly involved in the fray and are using",
+              "gameText": "Replenish your Fleshchildren up to the number of heroes.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -730,28 +702,14 @@
               }
             },
             {
-              "name": "Master Behind the",
+              "name": "Master Behind the Curtain",
               "type": "I",
               "aux": "main",
-              "gameText": "your influence indirectly, automatically succeed at an Overcome to",
+              "gameText": "As long as you are not directly involved in the fray and are using your influence indirectly, automatically succeed at an Overcome to manipulate a situation.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Curtain",
-              "type": "I",
-              "aux": "main",
-              "gameText": "manipulate a situation.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -835,9 +793,23 @@
               "name": "Elusive Infestation",
               "type": "R",
               "aux": "main",
-              "gameText": "Reroll any number of minion saves against the same Attack. Boost using Swarm Master for all your minions until the start of your",
+              "gameText": "Reroll any number of minion saves against the same Attack.",
               "icon": {
                 "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Infernally Empowered",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Boost using Swarm Master for all your minions until the start of your next turn.",
+              "icon": {
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -846,10 +818,10 @@
               }
             },
             {
-              "name": "Infernally Empowered",
+              "name": "Insectoid Armor",
               "type": "A",
               "aux": "main",
-              "gameText": "next turn. Attack using Shapeshifting and use your Max die. Defend against all",
+              "gameText": "Attack using Shapeshifting and use your Max die. Defend against all Attacks against you until the start of your next turn using the number of your minions.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -860,26 +832,12 @@
               }
             },
             {
-              "name": "Insectoid Armor",
-              "type": "A",
-              "aux": "main",
-              "gameText": "Attacks against you until the start of your next turn using the number of your minions. Use Part Detachment to create a number of minions equal to the",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Release the Swarm",
               "type": "A",
               "aux": "main",
-              "gameText": "value of your Max die. The starting die size for those minions is the same as the size of your Min die. Attack using Insect Control and use your Max die, with a bonus equal",
+              "gameText": "Use Part Detachment to create a number of minions equal to the value of your Max die. The starting die size for those minions is the same as the size of your Min die.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -891,9 +849,9 @@
               "name": "The Swarm Hungers",
               "type": "A",
               "aux": "main",
-              "gameText": "Choose one group of minions in the scene. Upgrade all their dice one to the number of minions you control.",
+              "gameText": "Attack using Insect Control and use your Max die, with a bonus equal to the number of minions you control.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -905,7 +863,7 @@
               "name": "Crawling Catastrophe",
               "type": "A",
               "aux": "main",
-              "gameText": "size (maximum ). (When using this upgrade, Myriad has 5 additional Health.) If you are in a situation where everything is spiraling out of control,",
+              "gameText": "Choose one group of minions in the scene. Upgrade all their dice one ). size (maximum (When using this upgrade, Myriad has 5 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -919,7 +877,7 @@
               "name": "Master of Total Chaos",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
+              "gameText": "If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -989,27 +947,13 @@
           ],
           "abilities": [
             {
-              "name": "A Cornered Dragon",
+              "name": "A Cornered Dragon Closes its Wings",
               "type": "I",
               "aux": "main",
-              "gameText": "If you are outnumbered by nearby opponents, reduce all damage",
+              "gameText": "If you are outnumbered by nearby opponents, reduce all damage dealt to you by 2.",
               "icon": {
                 "attack": false,
                 "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Closes its Wings",
-              "type": "I",
-              "aux": "main",
-              "gameText": "dealt to you by 2. Attack using Close Combat and use your Max die. Defend against all",
-              "icon": {
-                "attack": true,
-                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -1020,7 +964,21 @@
               "name": "Drive Back Their Blades",
               "type": "A",
               "aux": "main",
-              "gameText": "Attacks against you with your Mid die until the start of your next turn.",
+              "gameText": "Attack using Close Combat and use your Max die. Defend against all Attacks against you with your Mid die until the start of your next turn.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Step as the Crane through the Reeds",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Attack using Acrobatics, using your Max die against one target, Mid die against another, and Min die against any target.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1031,38 +989,10 @@
               }
             },
             {
-              "name": "Step as the Crane through",
+              "name": "Strike True, Learn Your Foe, Be Unknowable",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack using Acrobatics, using your Max die against one target, Mid die",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "the Reeds",
-              "type": "A",
-              "aux": "main",
-              "gameText": "against another, and Min die against any target.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Strike True, Learn Your",
-              "type": "A",
-              "aux": "main",
-              "gameText": "Attack multiple close targets using Student of Many Masters. Hinder",
+              "gameText": "Attack multiple close targets using Student of Many Masters. Hinder each target using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1073,24 +1003,10 @@
               }
             },
             {
-              "name": "Foe, Be Unknowable",
-              "type": "A",
-              "aux": "main",
-              "gameText": "each target using your Min die. When you take an action that lets you make an Attack, also make an",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "One with the Fray",
               "type": "I",
               "aux": "main",
-              "gameText": "Attack using your Mid die. (When using this upgrade, Dragonclaw has 20 additional Health.) As long as you are in command of your own forces, automatically",
+              "gameText": "When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Dragonclaw has 20 additional Health.)",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1104,7 +1020,7 @@
               "name": "Master of Conquest",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome involving seizing an area or capturing civilians.",
+              "gameText": "As long as you are in command of your own forces, automatically succeed at an Overcome involving seizing an area or capturing civilians.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1177,9 +1093,9 @@
               "name": "Confront the Unknowable",
               "type": "R",
               "aux": "main",
-              "gameText": "or Hindering you. Hinder using Presence against multiple targets and use your Max die.",
+              "gameText": "Take 1 irreducible damage to reroll a dice pool of someone Attacking or Hindering you.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -1191,12 +1107,12 @@
               "name": "His Dread Presence",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack each using your Mid+Min dice. Reduce all damage taken by 6 (if you have a status die), 4 (if you",
+              "gameText": "Hinder using Presence against multiple targets and use your Max die. Attack each using your Mid+Min dice.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -1205,7 +1121,7 @@
               "name": "Pointless to Oppose Him",
               "type": "I",
               "aux": "main",
-              "gameText": "have a status die) or 2 (if you have a or lower status die).",
+              "gameText": "Reduce all damage taken by 6 (if you have a status die), 4 (if you status die) or 2 (if you have a or lower status die). have a",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1219,9 +1135,9 @@
               "name": "Rend Hearts and Homes",
               "type": "A",
               "aux": "main",
-              "gameText": "Activate one of the environment’s twists in its current zone. Attack using Horror and use your Max die. The target can either be",
+              "gameText": "Activate one of the environment’s twists in its current zone.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -1233,9 +1149,9 @@
               "name": "Swallowed Hul",
               "type": "A",
               "aux": "main",
-              "gameText": "Hindered equal to your Max+Mid+Min dice, or be unable to take any other actions other than using an Overcome to attempt to escape.",
+              "gameText": "Attack using Horror and use your Max die. The target can either be Hindered equal to your Max+Mid+Min dice, or be unable to take any other actions other than using an Overcome to attempt to escape.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": true,
                 "hinder": true,
@@ -1247,7 +1163,7 @@
               "name": "Opened Maw",
               "type": "A",
               "aux": "main",
-              "gameText": "Replenish your Hul’Spawn squad up to the number of heroes. If you are involved with eldritch and disturbing forces, automatically",
+              "gameText": "Replenish your Hul’Spawn squad up to the number of heroes.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1258,28 +1174,14 @@
               }
             },
             {
-              "name": "Master of the",
+              "name": "Master of the Unfathomable",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome to do the bidding of a being beyond human",
+              "gameText": "If you are involved with eldritch and disturbing forces, automatically succeed at an Overcome to do the bidding of a being beyond human concerns.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Unfathomable",
-              "type": "I",
-              "aux": "main",
-              "gameText": "concerns.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1354,10 +1256,10 @@
               "name": "Earworm",
               "type": "R",
               "aux": "main",
-              "gameText": "rolling your single status die, and the attacker also suffers that much damage. Attack using Sonic. Use your Max die. A target dealt damage this way",
+              "gameText": "When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -1368,12 +1270,12 @@
               "name": "Ring their Ears",
               "type": "A",
               "aux": "main",
-              "gameText": "Attacks an ally by rolling their single largest power die. Hinder using Sonic and use your Max+Mid dice, or use your Max die",
+              "gameText": "Attack using Sonic. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -1382,7 +1284,7 @@
               "name": "Scream of Anger",
               "type": "A",
               "aux": "main",
-              "gameText": "and make it persistent and exclusive. Hinder multiple targets using Banter. Use your Mid die. You and any",
+              "gameText": "Hinder using Sonic and use your Max+Mid dice, or use your Max die and make it persistent and exclusive.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1396,12 +1298,12 @@
               "name": "Shout it Out Loud",
               "type": "A",
               "aux": "main",
-              "gameText": "nearby allies Defend using your Max die. Increase all of Screech’s Powers by one die size.",
+              "gameText": "Hinder multiple targets using Banter. Use your Mid die. You and any nearby allies Defend using your Max die.",
               "icon": {
                 "attack": false,
                 "defend": true,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -1410,7 +1312,7 @@
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Screech has 20 additional Health.) If you are in a situation where everything is spiraling out of control,",
+              "gameText": "Increase all of Screech’s Powers by one die size. (When using this upgrade, Screech has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1424,7 +1326,7 @@
               "name": "Master of Total Chaos",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
+              "gameText": "If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1487,7 +1389,7 @@
               "name": "Blazing Axe",
               "type": "A",
               "aux": "main",
-              "gameText": "Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.",
+              "gameText": "Attack one target using Fire. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -1501,12 +1403,12 @@
               "name": "Blistering Solo",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack using Creativity. Then remove all bonuses from the target. Hinder one target using Presence. Use your Max die. Attack that",
+              "gameText": "Attack using Creativity. Then remove all bonuses from the target.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": false,
                 "recover": false
               }
@@ -1515,35 +1417,35 @@
               "name": "Burning Melody",
               "type": "A",
               "aux": "main",
-              "gameText": "target using your Mid die. When Attacked with Fire, Recover that amount of Health instead of",
+              "gameText": "Hinder one target using Presence. Use your Max die. Attack that target using your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
-                "recover": true
+                "recover": false
               }
             },
             {
               "name": "Sleep Now in the Fire",
               "type": "R",
               "aux": "main",
-              "gameText": "taking damage. When Hindered with Fire, Boost yourself instead. Whenever your personal zone changes, you may immediately move",
+              "gameText": "When Attacked with Fire, Recover that amount of Health instead of taking damage. When Hindered with Fire, Boost yourself instead.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
                 "boost": true,
-                "recover": false
+                "recover": true
               }
             },
             {
               "name": "Stage Dive",
               "type": "I",
               "aux": "main",
-              "gameText": "Increase all of Blister’s Qualities by one die size. elsewhere in the scene.",
+              "gameText": "Whenever your personal zone changes, you may immediately move elsewhere in the scene.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1557,7 +1459,7 @@
               "name": "Quality Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Blister has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,",
+              "gameText": "Increase all of Blister’s Qualities by one die size. (When using this upgrade, Blister has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1571,7 +1473,7 @@
               "name": "Master of Annihilation",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
+              "gameText": "If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1639,12 +1541,12 @@
               "name": "Bark Shield",
               "type": "R",
               "aux": "main",
-              "gameText": "die. Boost yourself by that amount. Attack using Swinging. Either Hinder that target using Max, or Defend",
+              "gameText": "When an ally is Attacked, Defend them by rolling your single Plants die. Boost yourself by that amount.",
               "icon": {
                 "attack": true,
                 "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
                 "recover": false
               }
@@ -1653,7 +1555,21 @@
               "name": "Can’t Stop the Beatdown",
               "type": "A",
               "aux": "main",
-              "gameText": "yourself using Min and you and that target end up elsewhere in the scene. Attack using Close Combat. Use your Max die. Recover Health equal to",
+              "gameText": "Attack using Swinging. Either Hinder that target using Max, or Defend yourself using Min and you and that target end up elsewhere in the scene.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Photosynthestrike",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Attack using Close Combat. Use your Max die. Recover Health equal to your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1664,10 +1580,10 @@
               }
             },
             {
-              "name": "Photosynthestrike",
-              "type": "A",
+              "name": "Plant Life of the Party",
+              "type": "I",
               "aux": "main",
-              "gameText": "your Min die.",
+              "gameText": "Reduce damage dealt to you by 2.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1678,10 +1594,10 @@
               }
             },
             {
-              "name": "Plant Life of the Party",
-              "type": "I",
+              "name": "Writhing Flora",
+              "type": "A",
               "aux": "main",
-              "gameText": "Reduce damage dealt to you by 2. Hinder multiple nearby targets using Plants. Boost yourself using your",
+              "gameText": "Hinder multiple nearby targets using Plants. Boost yourself using your Max die.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1692,24 +1608,10 @@
               }
             },
             {
-              "name": "Writhing Flora",
-              "type": "A",
-              "aux": "main",
-              "gameText": "When you take an action that lets you make an Attack, also make an Max die.",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "With Ferns Like These…",
               "type": "I",
               "aux": "main",
-              "gameText": "Attack using your Mid die. (When using this upgrade, Deep Root has 20 additional Health.) If you have complete control over your immediate surroundings,",
+              "gameText": "When you take an action that lets you make an Attack, also make an Attack using your Mid die. (When using this upgrade, Deep Root has 20 additional Health.)",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1720,28 +1622,14 @@
               }
             },
             {
-              "name": "Master of Enforced",
+              "name": "Master of Enforced Order",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to organize rabble to accomplish",
+              "gameText": "If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Order",
-              "type": "I",
-              "aux": "main",
-              "gameText": "a task.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1810,7 +1698,7 @@
               "name": "Drive the Beat Home",
               "type": "R",
               "aux": "main",
-              "gameText": "die as a Hinder against them. Hinder multiple targets using Energy Shields. While a hero has this",
+              "gameText": "When a nearby hero that you can see invokes a twist, roll your Sonic die as a Hinder against them.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1824,7 +1712,21 @@
               "name": "Encapsulate",
               "type": "A",
               "aux": "main",
-              "gameText": "penalty, reduce all their power dice by one size. When Attacked by someone with a penalty you created, Defend by",
+              "gameText": "Hinder multiple targets using Energy Shields. While a hero has this penalty, reduce all their power dice by one size.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Resonant Shield",
+              "type": "R",
+              "aux": "main",
+              "gameText": "When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -1835,24 +1737,10 @@
               }
             },
             {
-              "name": "Resonant Shield",
-              "type": "R",
-              "aux": "main",
-              "gameText": "rolling your single status die, and the attacker also suffers that much damage. Select a nearby target. Either turn all bonuses on that target to",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Switch Up the Timing",
               "type": "A",
               "aux": "main",
-              "gameText": "equivalent penalties, or move a penalty from that target to another target that you can see. You cannot be damaged by anyone except yourself until the defense shield is destroyed. The defense shield has 40 Health, or can be",
+              "gameText": "Select a nearby target. Either turn all bonuses on that target to equivalent penalties, or move a penalty from that target to another target that you can see.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1866,7 +1754,7 @@
               "name": "Impenetrable Shield",
               "type": "I",
               "aux": "main",
-              "gameText": "Overcome using Energy Shields. Use your Max die. On a success, remove one success from the deactivating challenge. Alternatively, deactivated with three Overcome successes. If a hero takes a minor twist working on the shield, you can make an Attack as a reaction by rolling your single Sonic die.",
+              "gameText": "You cannot be damaged by anyone except yourself until the defense shield is destroyed. The defense shield has 40 Health, or can be deactivated with three Overcome successes. If a hero takes a minor twist working on the shield, you can make an Attack as a reaction by rolling your single Sonic die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -1880,7 +1768,7 @@
               "name": "Double Down",
               "type": "A",
               "aux": "main",
-              "gameText": "instead of an Overcome, use the Max die to Recover that much of the defense shield’s Health. This ability cannot be used if the defense shield has been completely removed. If you have complete control over your immediate surroundings,",
+              "gameText": "Overcome using Energy Shields. Use your Max die. On a success, remove one success from the deactivating challenge. Alternatively, instead of an Overcome, use the Max die to Recover that much of the defense shield’s Health. This ability cannot be used if the defense shield has been completely removed.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -1891,28 +1779,14 @@
               }
             },
             {
-              "name": "Master of Enforced",
+              "name": "Master of Enforced Order",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to organize rabble to",
+              "gameText": "If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Order",
-              "type": "I",
-              "aux": "main",
-              "gameText": "accomplish a task.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -1981,24 +1855,24 @@
               "name": "Consume their Lifeforce",
               "type": "A",
               "aux": "main",
-              "gameText": "number of targets Hindered this way. When Attacked, Defend yourself by rolling your single Presence die. If",
+              "gameText": "Hinder multiple targets using Infernal. Recover Health equal to the number of targets Hindered this way.",
               "icon": {
-                "attack": true,
-                "defend": true,
+                "attack": false,
+                "defend": false,
                 "overcome": false,
                 "hinder": true,
                 "boost": false,
-                "recover": false
+                "recover": true
               }
             },
             {
               "name": "Enthralling Target",
               "type": "R",
               "aux": "main",
-              "gameText": "this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll. Attack using Close Combat. Use your Max die. Hinder that target with your",
+              "gameText": "When Attacked, Defend yourself by rolling your single Presence die. If this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
                 "hinder": true,
                 "boost": true,
@@ -2009,7 +1883,7 @@
               "name": "Feast on the Living",
               "type": "A",
               "aux": "main",
-              "gameText": "Mid die. Recover Health equal to your Min die. When you would be Hindered or when an Attack would reduce you",
+              "gameText": "Attack using Close Combat. Use your Max die. Hinder that target with your Mid die. Recover Health equal to your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2023,7 +1897,21 @@
               "name": "Immortal Form",
               "type": "R",
               "aux": "main",
-              "gameText": "to 0 Health, reduce the penalty to -1 or reduce that damage to 1. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes.",
+              "gameText": "When you would be Hindered or when an Attack would reduce you to 0 Health, reduce the penalty to -1 or reduce that damage to 1. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Vampiric Aura",
+              "type": "I",
+              "aux": "main",
+              "gameText": "at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2034,24 +1922,10 @@
               }
             },
             {
-              "name": "Vampiric Aura",
-              "type": "I",
-              "aux": "main",
-              "gameText": "If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (When using this upgrade, Drudge has 10 additional Health.) If you have access to proper materials, automatically succeed at an",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Master of Mysticism",
               "type": "I",
               "aux": "main",
-              "gameText": "Overcome in a situation involving harnessing magical forces.",
+              "gameText": "controlled version of that hero. (When using this upgrade, Drudge has 10 additional Health.) If you have access to proper materials, automatically succeed at an Overcome in a situation involving harnessing magical forces.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2130,7 +2004,7 @@
               "name": "Hardened by Opposition",
               "type": "R",
               "aux": "main",
-              "gameText": "Boost yourself with the result of that die. Attack using Ranged Combat. Use your Max die. Defend all nearby",
+              "gameText": "When Attacked, Defend by rolling your single Power Suit die. Also Boost yourself with the result of that die.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -2144,10 +2018,10 @@
               "name": "No Invincible Armies",
               "type": "A",
               "aux": "main",
-              "gameText": "allies with your Mid+Min dice until the start of your next turn. Take irreducible damage. Increase all your powers by one die size",
+              "gameText": "Attack using Ranged Combat. Use your Max die. Defend all nearby allies with your Mid+Min dice until the start of your next turn.",
               "icon": {
-                "attack": false,
-                "defend": false,
+                "attack": true,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -2158,7 +2032,7 @@
               "name": "Not One Step Back!",
               "type": "A",
               "aux": "main",
-              "gameText": "each until the end of the scene.",
+              "gameText": "irreducible damage. Increase all your powers by one die size Take each until the end of the scene.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2172,24 +2046,10 @@
               "name": "Soviet Bloc",
               "type": "I",
               "aux": "main",
-              "gameText": "Increase damage you deal by the number of nearby non-minion allies. Boost using Presence and use your Max die. Attack with your Mid die.",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "The New Soviet Power",
-              "type": "A",
-              "aux": "main",
-              "gameText": "Defend with your Min die.",
+              "gameText": "Increase damage you deal by the number of nearby non-minion allies.",
               "icon": {
                 "attack": false,
-                "defend": true,
+                "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -2197,10 +2057,24 @@
               }
             },
             {
+              "name": "The New Soviet Power",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Boost using Presence and use your Max die. Attack with your Mid die. Defend with your Min die.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
               "name": "Red Army",
               "type": "A",
               "aux": "main",
-              "gameText": "Replenish your Soviet Soldiers minions up to the number of heroes. As long as you are in command of your own forces, automatically",
+              "gameText": "Replenish your Soviet Soldiers minions up to the number of heroes.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2214,7 +2088,7 @@
               "name": "Master of Conquest",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome involving seizing an area or capturing civilians.",
+              "gameText": "As long as you are in command of your own forces, automatically succeed at an Overcome involving seizing an area or capturing civilians.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2277,9 +2151,9 @@
               "name": "No Man - No Problem",
               "type": "A",
               "aux": "main",
-              "gameText": "other powers to . Then take a basic action using that power. On your turn, whenever you Attack a target you haven’t dealt damage",
+              "gameText": "Lower two of your powers by one die size each. Increase one of your . Then take a basic action using that power. other powers to",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2291,7 +2165,7 @@
               "name": "Show My True Strength",
               "type": "I",
               "aux": "main",
-              "gameText": "to yet this scene, also Boost yourself using your Max die. When a nearby ally would be Attacked, you may become the target of",
+              "gameText": "On your turn, whenever you Attack a target you haven’t dealt damage to yet this scene, also Boost yourself using your Max die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2305,7 +2179,7 @@
               "name": "Soviet Block",
               "type": "R",
               "aux": "main",
-              "gameText": "that Attack instead. You may use this reaction any number of times in a round by taking 1 irreducible damage for each time past the first. Attack using Strength. If you are Green status, use your Max die. If you",
+              "gameText": "When a nearby ally would be Attacked, you may become the target of that Attack instead. You may use this reaction any number of times in a round by taking 1 irreducible damage for each time past the first.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2319,13 +2193,13 @@
               "name": "Steel Gloves",
               "type": "A",
               "aux": "main",
-              "gameText": "are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another. Boost using Presence and use your Max die. Attack with your Mid die.",
+              "gameText": "Attack using Strength. If you are Green status, use your Max die. If you are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
-                "boost": true,
+                "boost": false,
                 "recover": false
               }
             },
@@ -2333,35 +2207,21 @@
               "name": "The New Soviet Power",
               "type": "A",
               "aux": "main",
-              "gameText": "Mecha-Stalin has the use of cutting-edge military technology, including Defend with your Min die.",
+              "gameText": "Boost using Presence and use your Max die. Attack with your Mid die. Defend with your Min die.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": true,
                 "overcome": false,
                 "hinder": false,
-                "boost": false,
+                "boost": true,
                 "recover": false
               }
             },
             {
-              "name": "New Soviet",
+              "name": "New Soviet Hover-Tank",
               "type": "A",
               "aux": "main",
-              "gameText": "a hover-tank lieutenant with the Sturdy, Bombard, and Minion",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Hover-Tank",
-              "type": "A",
-              "aux": "main",
-              "gameText": "Deployment abilities from page 236. (When using this upgrade, Mecha-Stalin has 15 additional Health.) As long as you are manifesting effects related to a power you have at",
+              "gameText": "Mecha-Stalin has the use of cutting-edge military technology, including a hover-tank lieutenant with the Sturdy, Bombard, and Minion Deployment abilities from page 236. (When using this upgrade, Mecha-Stalin has 15 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2375,7 +2235,7 @@
               "name": "Master of Superiority",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed at an Overcome involving usage of those powers.",
+              "gameText": "As long as you are manifesting effects related to a power you have at automatically succeed at an Overcome involving usage of those powers.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2448,7 +2308,7 @@
               "name": "Coordination Issues",
               "type": "A",
               "aux": "main",
-              "gameText": "and use the lowest rolling die amongst them for each minion’s result on that action. As long as you have at least 1 nearby ally, you may reroll all 1s on your",
+              "gameText": "Whenever multiple of your clone minions all take the same action against the same target, you must roll all of their dice at the same time and use the lowest rolling die amongst them for each minion’s result on that action.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2462,7 +2322,7 @@
               "name": "Everyman’s Strength",
               "type": "I",
               "aux": "main",
-              "gameText": "dice. When you would take physical damage, prevent that damage and create a clone minion with a die size equal to your current status die",
+              "gameText": "As long as you have at least 1 nearby ally, you may reroll all 1s on your dice. When you would take physical damage, prevent that damage and",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2476,9 +2336,9 @@
               "name": "Join in the Struggle",
               "type": "R",
               "aux": "main",
-              "gameText": "(including the newly made minion). You may use this reaction more than once a round, but each time you use this reaction after the first time, you take 1 irreducible damage. Attack using Close Combat and use your Max die. Add 1 to the Attack",
+              "gameText": "create a clone minion with a die size equal to your current status die (including the newly made minion). You may use this reaction more than once a round, but each time you use this reaction after the first",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2490,7 +2350,7 @@
               "name": "Overwhelm the Mighty",
               "type": "A",
               "aux": "main",
-              "gameText": "for each other ally that Attacked that target since your last turn. Whenever a clone minion larger than a rolls a save against physical damage, if its save is successful, it splits into two dice of one smaller",
+              "gameText": "time, you take 1 irreducible damage. Attack using Close Combat and use your Max die. Add 1 to the Attack for each other ally that Attacked that target since your last turn.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2504,7 +2364,7 @@
               "name": "Quantity’s Quality",
               "type": "I",
               "aux": "main",
-              "gameText": "Increase all of Proletariat’s power dice by one size. size instead of being reduced a die size, and you take 1 irreducible damage. If it fails its save, the minion is only reduced one die size, rather than being destroyed.",
+              "gameText": "Whenever a clone minion larger than a rolls a save against physical damage, if its save is successful, it splits into two dice of one smaller size instead of being reduced a die size, and you take 1 irreducible damage. If it fails its save, the minion is only reduced one die size,",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2518,7 +2378,7 @@
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Proletariat has 20 additional Health.) As long as you are in command of your own forces, automatically",
+              "gameText": "rather than being destroyed. Increase all of Proletariat’s power dice by one size. (When using this upgrade, Proletariat has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2532,7 +2392,7 @@
               "name": "Master of Superiority",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome involving seizing an area or capturing civilians.",
+              "gameText": "As long as you are in command of your own forces, automatically succeed at an Overcome involving seizing an area or capturing civilians.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2605,10 +2465,10 @@
               "name": "Iron Focus",
               "type": "A",
               "aux": "main",
-              "gameText": "start of your next turn with your Mid die.",
+              "gameText": "Attack one target using Close Combat. Use your Max+Min dice. Defend against all Attacks against you by all other targets until the start of your next turn with your Mid die.",
               "icon": {
-                "attack": false,
-                "defend": false,
+                "attack": true,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -2619,7 +2479,7 @@
               "name": "Metal Skin",
               "type": "I",
               "aux": "main",
-              "gameText": "Reduce all damage dealt to you by 2. At the start of your turn, gain a bonus equal to the number of",
+              "gameText": "Reduce all damage dealt to you by 2.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2633,7 +2493,21 @@
               "name": "Seeing Red",
               "type": "I",
               "aux": "main",
-              "gameText": "opponents that Attacked you since your last turn. Attack multiple close targets using Strength. Hinder each target using",
+              "gameText": "At the start of your turn, gain a bonus equal to the number of opponents that Attacked you since your last turn.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "The Curtain Sweep",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Attack multiple close targets using Strength. Hinder each target using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2644,24 +2518,10 @@
               }
             },
             {
-              "name": "The Curtain Sweep",
-              "type": "A",
-              "aux": "main",
-              "gameText": "your Min die. Increase all of Iron Curtain’s quality dice by one size, except for Iron Heir.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Quality Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Iron Curtain has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,",
+              "gameText": "Increase all of Iron Curtain’s quality dice by one size, except for Iron Heir. (When using this upgrade, Iron Curtain has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2675,7 +2535,7 @@
               "name": "Master of Annihilation",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
+              "gameText": "If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2748,10 +2608,10 @@
               "name": "Chosen Prey",
               "type": "I",
               "aux": "main",
-              "gameText": "once already in this scene, gain a +1 persistent and exclusive bonus against that target. Defend against an Attack where you’re the only target by rolling",
+              "gameText": "Whenever you Attack a target that you have dealt damage to at least once already in this scene, gain a +1 persistent and exclusive bonus against that target.",
               "icon": {
                 "attack": true,
-                "defend": true,
+                "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -2762,21 +2622,7 @@
               "name": "Deep Cover",
               "type": "R",
               "aux": "main",
-              "gameText": "your single Stealth die. One other nearby target takes an amount of damage equal to the damage reduced. Boost yourself using Stealth. Use your Max die. That bonus is persistent and",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Patient Study",
-              "type": "A",
-              "aux": "main",
-              "gameText": "exclusive. Defend yourself using your Mid die against all Attacks until the start of your next turn. Attack one target using Ranged Combat and use your Max+Min dice.",
+              "gameText": "Defend against an Attack where you’re the only target by rolling your single Stealth die. One other nearby target takes an amount of damage equal to the damage reduced.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -2787,10 +2633,24 @@
               }
             },
             {
+              "name": "Patient Study",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Boost yourself using Stealth. Use your Max die. That bonus is persistent and exclusive. Defend yourself using your Mid die against all Attacks until the start of your next turn.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
               "name": "Perfect Shot",
               "type": "A",
               "aux": "main",
-              "gameText": "That target cannot Defend or use reactions against this attack. Double any bonuses or penalties of your choice involved with taking",
+              "gameText": "Attack one target using Ranged Combat and use your Max+Min dice. That target cannot Defend or use reactions against this attack.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -2804,7 +2664,7 @@
               "name": "Unaware Quarry",
               "type": "I",
               "aux": "main",
-              "gameText": "Increase all of Marxman’s power dice by one size. action against a target that is unaware of your presence or distracted from remembering that you’re still around.",
+              "gameText": "Double any bonuses or penalties of your choice involved with taking action against a target that is unaware of your presence or distracted from remembering that you’re still around.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2818,7 +2678,7 @@
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Marxman has 20 additional Health.) As long as you are not directly involved in the fray and are using",
+              "gameText": "Increase all of Marxman’s power dice by one size. (When using this upgrade, Marxman has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -2829,28 +2689,14 @@
               }
             },
             {
-              "name": "Master Behind the",
+              "name": "Master Behind the Curtain",
               "type": "I",
               "aux": "main",
-              "gameText": "your influence indirectly, automatically succeed at an Overcome to",
+              "gameText": "As long as you are not directly involved in the fray and are using your influence indirectly, automatically succeed at an Overcome to manipulate a situation.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Curtain",
-              "type": "I",
-              "aux": "main",
-              "gameText": "manipulate a situation.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -2925,21 +2771,21 @@
               "name": "Cracked Reflection",
               "type": "A",
               "aux": "main",
-              "gameText": "die and make it persistent and exclusive.",
+              "gameText": "Hinder using Illusions and use your Max+Mid dice, or use your Max die and make it persistent and exclusive.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
             },
             {
-              "name": "How Can You Trust What",
+              "name": "How Can You Trust What You See?",
               "type": "A",
               "aux": "main",
-              "gameText": "Hinder multiple targets using Creativity. You and any nearby allies Defend",
+              "gameText": "Hinder multiple targets using Creativity. You and any nearby allies Defend using your Max die.",
               "icon": {
                 "attack": false,
                 "defend": true,
@@ -2950,26 +2796,12 @@
               }
             },
             {
-              "name": "You See?",
-              "type": "A",
-              "aux": "main",
-              "gameText": "using your Max die. Select a nearby target. Either turn all bonuses on that target to equivalent",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Step Through the Mirror",
               "type": "A",
               "aux": "main",
-              "gameText": "penalties, or move a penalty from that target to another target that you can see. Attack using Illusions. Use your Max die. A target dealt damage this way",
+              "gameText": "Select a nearby target. Either turn all bonuses on that target to equivalent penalties, or move a penalty from that target to another target that you can see.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -2981,7 +2813,7 @@
               "name": "Who Is Really Your Foe?",
               "type": "A",
               "aux": "main",
-              "gameText": "Attacks an ally by rolling their single largest power die.",
+              "gameText": "Attack using Illusions. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -2992,7 +2824,7 @@
               }
             },
             {
-              "name": "They Are What You",
+              "name": "They Are What You Fear",
               "type": "A",
               "aux": "main",
               "gameText": "Choose one group of minions in the scene. Upgrade all their dice one size (maximum ).",
@@ -3006,42 +2838,14 @@
               }
             },
             {
-              "name": "Fear",
-              "type": "A",
-              "aux": "main",
-              "gameText": "If you have complete control over your immediate surroundings,",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Master of Enforced",
+              "name": "Master of Enforced Order",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to organize rabble to accomplish",
+              "gameText": "If you have complete control over your immediate surroundings, automatically succeed in an Overcome to organize rabble to accomplish a task.",
               "icon": {
                 "attack": false,
                 "defend": false,
                 "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Order",
-              "type": "I",
-              "aux": "main",
-              "gameText": "a task.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
                 "hinder": false,
                 "boost": false,
                 "recover": false
@@ -3110,12 +2914,12 @@
               "name": "Debilitating Bolts",
               "type": "A",
               "aux": "main",
-              "gameText": "less status die, use your Max+Min dice; a status die, use your Max die; larger than a , use your Mid die. When an opponent moves away from you, you may follow them and",
+              "gameText": "or Attack and Hinder using Ranged Combat. If the target has: a less status die, use your Max+Min dice; a status die, use your Max die; larger than a , use your Mid die.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -3124,23 +2928,9 @@
               "name": "Hard to Shake",
               "type": "R",
               "aux": "main",
-              "gameText": "roll your single status die as a Hinder against them. Attack using Eagle Eye System and use your Max die. Recover Health",
+              "gameText": "When an opponent moves away from you, you may follow them and roll your single status die as a Hinder against them.",
               "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": true,
-                "boost": false,
-                "recover": true
-              }
-            },
-            {
-              "name": "Locked on Target",
-              "type": "A",
-              "aux": "main",
-              "gameText": "equal to your Mid+Min dice. Attack multiple targets using Flight. Hinder each target with your Max",
-              "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -3149,15 +2939,29 @@
               }
             },
             {
-              "name": "Swoop and Blast",
+              "name": "Locked on Target",
               "type": "A",
               "aux": "main",
-              "gameText": "die. Increase all of Desert Eagle’s power dice by one size.",
+              "gameText": "Attack using Eagle Eye System and use your Max die. Recover Health equal to your Mid+Min dice.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
+                "boost": false,
+                "recover": true
+              }
+            },
+            {
+              "name": "Swoop and Blast",
+              "type": "A",
+              "aux": "main",
+              "gameText": "Attack multiple targets using Flight. Hinder each target with your Max die.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -3166,7 +2970,7 @@
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Desert Eagle has 20 additional Health.) If you have been given a contract to perform a specific task, automatically",
+              "gameText": "Increase all of Desert Eagle’s power dice by one size. (When using this upgrade, Desert Eagle has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3180,7 +2984,7 @@
               "name": "Master Mercenary",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome in a situation where the difference is getting paid and not getting paid.",
+              "gameText": "If you have been given a contract to perform a specific task, automatically succeed at an Overcome in a situation where the difference is getting paid and not getting paid.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3253,35 +3057,35 @@
               "name": "Arcing Shock",
               "type": "A",
               "aux": "main",
-              "gameText": "Mid die against a different target, and the Min die against a third target. If you Attack three different targets, the damage is irreducible. When Attacked with Electricity, Recover that amount of Health instead",
+              "gameText": "Attack using Ranged Combat, using the Max die against one target, Mid die against a different target, and the Min die against a third target. If you Attack three different targets, the damage is irreducible.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
-                "recover": true
+                "recover": false
               }
             },
             {
               "name": "More Power",
               "type": "R",
               "aux": "main",
-              "gameText": "of taking damage. When Hindered with Electricity, Boost yourself instead. Attack one target using Electricity. Use your Max die. That target cannot",
+              "gameText": "When Attacked with Electricity, Recover that amount of Health instead of taking damage. When Hindered with Electricity, Boost yourself instead.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
                 "boost": true,
-                "recover": false
+                "recover": true
               }
             },
             {
               "name": "Overcharged",
               "type": "A",
               "aux": "main",
-              "gameText": "Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die. Defend against an Attack against only you by rolling your single",
+              "gameText": "Attack one target using Electricity. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -3295,12 +3099,12 @@
               "name": "Pass Through Connection",
               "type": "R",
               "aux": "main",
-              "gameText": "Intangibility die. Boost yourself by the damage reduced. Attack multiple close targets using Living Lightning. Hinder each target",
+              "gameText": "Defend against an Attack against only you by rolling your single Intangibility die. Boost yourself by the damage reduced.",
               "icon": {
                 "attack": true,
-                "defend": false,
+                "defend": true,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
                 "recover": false
               }
@@ -3309,7 +3113,21 @@
               "name": "Static Output",
               "type": "A",
               "aux": "main",
-              "gameText": "While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If using your Min die.",
+              "gameText": "Attack multiple close targets using Living Lightning. Hinder each target using your Min die. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Neural Takeover",
+              "type": "I",
+              "aux": "main",
+              "gameText": "quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3320,24 +3138,10 @@
               }
             },
             {
-              "name": "Neural Takeover",
-              "type": "I",
-              "aux": "main",
-              "gameText": "a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (While using this upgrade, Re-Volt has 10 additional Health.) If you are in a situation where everything is spiraling out of control,",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Master of Total Chaos",
               "type": "I",
               "aux": "main",
-              "gameText": "automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
+              "gameText": "power die to represent the controlled version of that hero. (While using this upgrade, Re-Volt has 10 additional Health.) If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3400,10 +3204,10 @@
               "name": "Chomp and Chew",
               "type": "A",
               "aux": "main",
-              "gameText": "from that target using your Mid die until the start of your next turn.",
+              "gameText": "Attack using Strength and use your Max die. Defend against all Attacks from that target using your Mid die until the start of your next turn.",
               "icon": {
-                "attack": false,
-                "defend": false,
+                "attack": true,
+                "defend": true,
                 "overcome": false,
                 "hinder": false,
                 "boost": false,
@@ -3414,9 +3218,9 @@
               "name": "Hippo Hide",
               "type": "I",
               "aux": "main",
-              "gameText": "Reduce all damage dealt to you by 2. When Attacked, use the amount of damage taken by the Attack to",
+              "gameText": "Reduce all damage dealt to you by 2.",
               "icon": {
-                "attack": true,
+                "attack": false,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -3428,12 +3232,12 @@
               "name": "Hippo Rage",
               "type": "R",
               "aux": "main",
-              "gameText": "Boost yourself. Attack using Strength and use your Max die. Either Hinder that target",
+              "gameText": "When Attacked, use the amount of damage taken by the Attack to Boost yourself.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": true,
+                "hinder": false,
                 "boost": true,
                 "recover": false
               }
@@ -3442,12 +3246,12 @@
               "name": "Overhead Throw",
               "type": "A",
               "aux": "main",
-              "gameText": "with your Mid die or Attack another nearby target with your Mid die. Increase all of Hippo’s power dice by one size.",
+              "gameText": "Attack using Strength and use your Max die. Either Hinder that target with your Mid die or Attack another nearby target with your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -3456,7 +3260,7 @@
               "name": "Power Upgrade",
               "type": "A",
               "aux": "main",
-              "gameText": "(When using this upgrade, Hippo has 20 additional Health.) If you have been given a contract to perform a specific task, automatically",
+              "gameText": "Increase all of Hippo’s power dice by one size. (When using this upgrade, Hippo has 20 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3470,7 +3274,7 @@
               "name": "Master Mercenary",
               "type": "I",
               "aux": "main",
-              "gameText": "succeed at an Overcome in a situation where the difference is getting paid and not getting paid.",
+              "gameText": "If you have been given a contract to perform a specific task, automatically succeed at an Overcome in a situation where the difference is getting paid and not getting paid.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3533,21 +3337,7 @@
               "name": "Karmic Disjunction",
               "type": "A",
               "aux": "main",
-              "gameText": "reduce all their power dice by one size. When Attacked, Defend yourself by rolling your single status die. If the",
-              "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Slippery Trickster",
-              "type": "R",
-              "aux": "main",
-              "gameText": "damage is reduced to 0, you may move to anywhere else in the scene. Hinder using Karma and use your Max die; that penalty is persistent and",
+              "gameText": "Hinder multiple targets using Presence. While a hero has this penalty, reduce all their power dice by one size.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3558,15 +3348,29 @@
               }
             },
             {
+              "name": "Slippery Trickster",
+              "type": "R",
+              "aux": "main",
+              "gameText": "When Attacked, Defend yourself by rolling your single status die. If the damage is reduced to 0, you may move to anywhere else in the scene.",
+              "icon": {
+                "attack": true,
+                "defend": true,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
               "name": "Twisted Jinx",
               "type": "A",
               "aux": "main",
-              "gameText": "exclusive. As long as that penalty is on the target, reduce their highest power die of your choice by one die size. Attack using your Mid die.",
+              "gameText": "Hinder using Karma and use your Max die; that penalty is persistent and exclusive. As long as that penalty is on the target, reduce their highest power die of your choice by one die size. Attack using your Mid die.",
               "icon": {
                 "attack": true,
                 "defend": false,
                 "overcome": false,
-                "hinder": false,
+                "hinder": true,
                 "boost": false,
                 "recover": false
               }
@@ -3575,7 +3379,7 @@
               "name": "Unlucky Break",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack using Lady Luck. Then remove all bonuses from the target. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with",
+              "gameText": "Attack using Lady Luck. Then remove all bonuses from the target.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -3589,7 +3393,7 @@
               "name": "Fortune’s Smile",
               "type": "I",
               "aux": "main",
-              "gameText": "three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Karma die. (When using this upgrade, Kismet has 10 additional Health.) If you have access to proper materials, automatically succeed at an",
+              "gameText": "The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist, you may use a reaction to Hinder them by rolling your single Karma die. (When using this upgrade, Kismet has 10 additional Health.)",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3603,7 +3407,7 @@
               "name": "Master of Mysticism",
               "type": "I",
               "aux": "main",
-              "gameText": "Overcome in a situation involving harnessing magical forces.",
+              "gameText": "If you have access to proper materials, automatically succeed at an Overcome in a situation involving harnessing magical forces.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3673,10 +3477,10 @@
           ],
           "abilities": [
             {
-              "name": "Contingencies Upon",
+              "name": "Contingencies Upon Contingencies",
               "type": "I",
               "aux": "main",
-              "gameText": "damage and reduce all your power dice by one size. If this reduces any",
+              "gameText": "Whenever you would be reduced to 0 or fewer Health, prevent that damage and reduce all your power dice by one size. If this reduces any dice to below a , you are knocked out.",
               "icon": {
                 "attack": false,
                 "defend": false,
@@ -3687,12 +3491,12 @@
               }
             },
             {
-              "name": "Contingencies",
-              "type": "I",
+              "name": "Prepared For Anything",
+              "type": "A",
               "aux": "main",
-              "gameText": "dice to below a , you are knocked out. Boost using Inventions. Use your Max die. Hinder using your Mid die.",
+              "gameText": "Boost using Inventions. Use your Max die. Hinder using your Mid die. Attack using your Min die.",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": true,
@@ -3701,10 +3505,10 @@
               }
             },
             {
-              "name": "Prepared For Anything",
+              "name": "Ramshackle Creation",
               "type": "A",
               "aux": "main",
-              "gameText": "Attack using your Min die. Boost using Inventions and use your Max die, also Boost with your Mid",
+              "gameText": "Boost using Inventions and use your Max die, also Boost with your Mid die, and either make one of those bonuses persistent and exclusive or Attack with your Min die.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -3715,24 +3519,10 @@
               }
             },
             {
-              "name": "Ramshackle Creation",
-              "type": "A",
-              "aux": "main",
-              "gameText": "die, and either make one of those bonuses persistent and exclusive or Attack with your Min die. Discard one of your bonuses to Defend against all Attacks against you",
-              "icon": {
-                "attack": true,
-                "defend": true,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
               "name": "Tinfoil Components",
               "type": "R",
               "aux": "main",
-              "gameText": "until your next turn, using that bonus value as the Defend result. Attack using Gadgets. If you roll doubles, add that value to your Attack.",
+              "gameText": "Discard one of your bonuses to Defend against all Attacks against you until your next turn, using that bonus value as the Defend result.",
               "icon": {
                 "attack": true,
                 "defend": true,
@@ -3746,7 +3536,7 @@
               "name": "Unexpected Accuracy",
               "type": "A",
               "aux": "main",
-              "gameText": "Ray Manta built a bigger, semi-autonomous suit for himself, represented as a lieutenant with the Distance Attack, Escape Plan, Reliable, and If you roll triples, add all three dice to your Attack.",
+              "gameText": "Attack using Gadgets. If you roll doubles, add that value to your Attack. If you roll triples, add all three dice to your Attack.",
               "icon": {
                 "attack": true,
                 "defend": false,
@@ -3760,9 +3550,9 @@
               "name": "The Manta Body",
               "type": "A",
               "aux": "main",
-              "gameText": "Recovery abilities from page 236. (When using this upgrade, Ray Manta has 15 additional Health.) As long as you have access to materials, you can automatically succeed",
+              "gameText": "Ray Manta built a bigger, semi-autonomous suit for himself, represented lieutenant with the Distance Attack, Escape Plan, Reliable, and as a Recovery abilities from page 236. (When using this upgrade, Ray Manta has 15 additional Health.)",
               "icon": {
-                "attack": false,
+                "attack": true,
                 "defend": false,
                 "overcome": false,
                 "hinder": false,
@@ -3774,7 +3564,7 @@
               "name": "Master of Mad Science",
               "type": "I",
               "aux": "main",
-              "gameText": "when Overcoming a challenge by using scientific principles and inventions.",
+              "gameText": "As long as you have access to materials, you can automatically succeed when Overcoming a challenge by using scientific principles and inventions.",
               "icon": {
                 "attack": false,
                 "defend": false,

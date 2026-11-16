@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Boost an ally using Insight.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -487,13 +487,13 @@
         "icon": {
           "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": true,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Suggestion. Hinder the target using your Min die. Boost using Telepathy. Apply that bonus to all hero Attack and Overcome</p>"
+        "gameText": "<p>Attack using Suggestion. Hinder the target using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -525,15 +525,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": true,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>actions until your next turn. Overcome in a situation that uses your powers in a new way. Use your Max</p>"
+        "gameText": "<p>Boost using Telepathy. Apply that bonus to all hero Attack and Overcome actions until your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -573,7 +573,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge by tapping into your dark psyche. Use your Max die.</p>"
+        "gameText": "<p>Overcome in a situation that uses your powers in a new way. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -607,13 +607,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
-          "hinder": true,
+          "overcome": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>You and each of your allies gain a hero point. Hinder multiple targets using Illusions. Use your Mid die for one and your</p>"
+        "gameText": "<p>Overcome a challenge by tapping into your dark psyche. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -648,12 +648,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
-          "boost": true,
+          "hinder": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Min die for the rest. Boost yourself using Intuition. Use your Max die. That Bonus is persistent</p>"
+        "gameText": "<p>Hinder multiple targets using Illusions. Use your Mid die for one and your Min die for the rest.</p>"
       },
       "effects": [],
       "folder": null,
@@ -689,11 +689,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and exclusive. Attack using your Min die. Attack a minion using Suggestion. If that minion would be removed, instead,</p>"
+        "gameText": "<p>Boost yourself using Intuition. Use your Max die. That Bonus is persistent and exclusive. Attack using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -733,7 +733,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>you control its next action and then remove it. Otherwise, Hinder it with your Min die. Attack using Telepathy. Use your Max die. Hinder the target with your Min</p>"
+        "gameText": "<p>Attack a minion using Suggestion. If that minion would be removed, instead, you control its next action and then remove it. Otherwise, Hinder it with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -765,7 +765,7 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": true,
@@ -773,7 +773,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Hinder using Suggestion. Use your Max+Mid dice. Damage yourself equal die. That penalty is persistent.</p>"
+        "gameText": "<p>Attack using Telepathy. Use your Max die. Hinder the target with your Min die. That penalty is persistent.</p>"
       },
       "effects": [],
       "folder": null,
@@ -808,12 +808,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>to your Min die. Then if you rolled doubles, Attack the target with your Mid+Min dice. As long as you have at least one bonus created from Insight, treat Suggestion</p>"
+        "gameText": "<p>Hinder using Suggestion. Use your Max+Mid dice. Damage yourself equal to your Min die. Then if you rolled doubles, Attack the target with your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -853,7 +853,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>as one size higher ( ).</p>"
+        "gameText": "<p>As long as you have at least one bonus created from Insight, treat Suggestion as one size higher ( ).</p>"
       },
       "effects": [],
       "folder": null,

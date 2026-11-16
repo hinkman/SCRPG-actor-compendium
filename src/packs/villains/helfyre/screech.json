@@ -291,14 +291,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": false,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>rolling your single status die, and the attacker also suffers that much damage. Attack using Sonic. Use your Max die. A target dealt damage this way</p>"
+        "gameText": "<p>When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage.</p>"
       },
       "effects": [],
       "folder": null,
@@ -333,12 +333,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attacks an ally by rolling their single largest power die. Hinder using Sonic and use your Max+Mid dice, or use your Max die</p>"
+        "gameText": "<p>Attack using Sonic. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and make it persistent and exclusive. Hinder multiple targets using Banter. Use your Mid die. You and any</p>"
+        "gameText": "<p>Hinder using Sonic and use your Max+Mid dice, or use your Max die and make it persistent and exclusive.</p>"
       },
       "effects": [],
       "folder": null,
@@ -413,12 +413,12 @@
           "attack": false,
           "defend": true,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>nearby allies Defend using your Max die. Increase all of Screech’s Powers by one die size.</p>"
+        "gameText": "<p>Hinder multiple targets using Banter. Use your Mid die. You and any nearby allies Defend using your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Screech has 20 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+        "gameText": "<p>Increase all of Screech’s Powers by one die size. (When using this upgrade, Screech has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+        "gameText": "<p>If you are in a situation where everything is spiraling out of control, automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
       },
       "effects": [],
       "folder": null,

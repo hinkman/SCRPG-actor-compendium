@@ -234,7 +234,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.</p>"
+        "gameText": "<p>Attack one target using Fire. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -269,12 +269,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Creativity. Then remove all bonuses from the target. Hinder one target using Presence. Use your Max die. Attack that</p>"
+        "gameText": "<p>Attack using Creativity. Then remove all bonuses from the target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -309,12 +309,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>target using your Mid die. When Attacked with Fire, Recover that amount of Health instead of</p>"
+        "gameText": "<p>Hinder one target using Presence. Use your Max die. Attack that target using your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -346,15 +346,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": true,
           "boost": true,
-          "recover": false
+          "recover": true
         },
         "type": "R",
-        "gameText": "<p>taking damage. When Hindered with Fire, Boost yourself instead. Whenever your personal zone changes, you may immediately move</p>"
+        "gameText": "<p>When Attacked with Fire, Recover that amount of Health instead of taking damage. When Hindered with Fire, Boost yourself instead.</p>"
       },
       "effects": [],
       "folder": null,
@@ -394,7 +394,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Increase all of Blister’s Qualities by one die size. elsewhere in the scene.</p>"
+        "gameText": "<p>Whenever your personal zone changes, you may immediately move elsewhere in the scene.</p>"
       },
       "effects": [],
       "folder": null,
@@ -434,7 +434,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Blister has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,</p>"
+        "gameText": "<p>Increase all of Blister’s Qualities by one die size. (When using this upgrade, Blister has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -474,7 +474,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+        "gameText": "<p>If you can cause massive collateral damage without regard for casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
       },
       "effects": [],
       "folder": null,

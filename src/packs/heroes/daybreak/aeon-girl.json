@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Hinder an opponent using Cosmic.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -453,15 +453,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>At the start of your turn, remove any -1 penalties on you. Attack using Cosmic. Ignore all penalties on this attack, ignore any Defend</p>"
+        "gameText": "<p>At the start of your turn, remove any -1 penalties on you.</p>"
       },
       "effects": [],
       "folder": null,
@@ -493,15 +493,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>actions, and it cannot be affected by Reactions.</p>"
+        "gameText": "<p>Attack using Cosmic. Ignore all penalties on this attack, ignore any Defend actions, and it cannot be affected by Reactions.</p>"
       },
       "effects": [],
       "folder": null,
@@ -535,13 +535,13 @@
         "icon": {
           "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome a dire situation where your jokes prevent demoralization. Use Attack using Infernal. Hinder a target with your Min die.</p>"
+        "gameText": "<p>Attack using Infernal. Hinder a target with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -581,7 +581,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>your Max die. You and each of your allies gain a hero point. Overcome a challenge involving cosmic energy. Use your Max die. You and</p>"
+        "gameText": "<p>Overcome a dire situation where your jokes prevent demoralization. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -615,13 +615,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>each of your allies gain a hero point. When you would take damage from Cosmic energy, recover that amount</p>"
+        "gameText": "<p>Overcome a challenge involving cosmic energy. Use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -657,11 +657,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
-          "recover": false
+          "boost": false,
+          "recover": true
         },
         "type": "I",
-        "gameText": "<p>of health instead. Boost yourself using Absorption. Then, remove a penalty on yourself or</p>"
+        "gameText": "<p>When you would take damage from Cosmic energy, recover that amount of health instead.</p>"
       },
       "effects": [],
       "folder": null,
@@ -693,15 +693,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>recover health equal to your Min die. Attack using Flight. Use your Max die. If you choose another hero to go</p>"
+        "gameText": "<p>Boost yourself using Absorption. Then, remove a penalty on yourself or recover health equal to your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -736,12 +736,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>next, Boost that hero with your Mid die. Attack all nearby opponents using Infernal. Hinder any targets damaged by</p>"
+        "gameText": "<p>Attack using Flight. Use your Max die. If you choose another hero to go next, Boost that hero with your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -781,7 +781,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>this ability with your Min die. Hinder yourself with your Max die. When multiple allies are Attacked, you may take all the damage instead. If you</p>"
+        "gameText": "<p>Attack all nearby opponents using Infernal. Hinder any targets damaged by this ability with your Min die. Hinder yourself with your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -813,7 +813,7 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -821,7 +821,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, do, roll your Teleportation+Red status die and reduce the damage by that much.</p>"
+        "gameText": "<p>When multiple allies are Attacked, you may take all the damage instead. If you do, roll your Teleportation+Red status die and reduce the damage by that much.</p>"
       },
       "effects": [],
       "folder": null,
@@ -853,7 +853,7 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -861,7 +861,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>and Red status dice. Your health becomes the sum of that roll. Attack using Cosmic and at least one bonus. Use your Max+Mid+Min dice.</p>"
+        "gameText": "<p>Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, and Red status dice. Your health becomes the sum of that roll.</p>"
       },
       "effects": [],
       "folder": null,
@@ -901,7 +901,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Destroy all of your bonuses, adding each of them to this attack first, even if they are exclusive.</p>"
+        "gameText": "<p>Attack using Cosmic and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this attack first, even if they are exclusive.</p>"
       },
       "effects": [],
       "folder": null,

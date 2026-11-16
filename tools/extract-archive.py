@@ -175,6 +175,46 @@ def classify_ability_zone(y: float, bands: dict[str, tuple[float, float]]) -> st
     return min(bands, key=lambda c: abs(((bands[c][0] + bands[c][1]) / 2) - y))
 
 
+def cluster_ability_names(name_spans: list[dict], max_gap: float = 18.0) -> list[dict]:
+    """Merge multi-line ability titles and expose a Y anchor for game-text matching.
+
+    Sheet titles are often vertically centered in their game-text cell; long names
+    may also wrap onto a second bold line. Clustering nearby name fragments keeps
+    both the full title and a stable midpoint for nearest-Y text assignment.
+    """
+    ordered = sorted(name_spans, key=lambda s: (round(s["y"], 1), s["x"]))
+    clusters: list[list[dict]] = []
+    for span in ordered:
+        if clusters and span["y"] - clusters[-1][-1]["y"] < max_gap:
+            clusters[-1].append(span)
+        else:
+            clusters.append([span])
+    anchors: list[dict] = []
+    for parts in clusters:
+        anchors.append(
+            {
+                "name": " ".join(part["t"] for part in parts),
+                "y": sum(part["y"] for part in parts) / len(parts),
+                "x": min(part["x"] for part in parts),
+                "parts": parts,
+            }
+        )
+    return anchors
+
+
+def assign_game_text_by_nearest_name(
+    text_spans: list[dict], anchors: list[dict]
+) -> dict[int, list[dict]]:
+    """Assign each GAME TEXT span to the nearest ability-name anchor by Y."""
+    buckets: dict[int, list[dict]] = {i: [] for i in range(len(anchors))}
+    if not anchors:
+        return buckets
+    for span in text_spans:
+        index = min(range(len(anchors)), key=lambda i: abs(anchors[i]["y"] - span["y"]))
+        buckets[index].append(span)
+    return buckets
+
+
 def parse_abilities(spans: list[dict], page: pymupdf.Page | None = None) -> list[dict]:
     bands = ability_zone_bands(page) if page is not None else {}
     # Label fallback only when band fills are unavailable; labels sit mid-band,
@@ -220,6 +260,9 @@ def parse_abilities(spans: list[dict], page: pymupdf.Page | None = None) -> list
         for s in spans
         if s["y"] > 250 and s["t"] in {"A", "I", "R"} and s["size"] < 12
     ]
+    # Ability titles are vertically centered in multi-line game-text cells, so
+    # the first line often sits above the name Y. Assign each GAME TEXT span to
+    # the nearest ability-name anchor by Y instead of clipping at name.y.
     text_spans = [
         s
         for s in spans
@@ -228,41 +271,45 @@ def parse_abilities(spans: list[dict], page: pymupdf.Page | None = None) -> list
         and s["x"] > 225
         and s["t"] not in {"A", "I", "R"}
         and not re.fullmatch(r"\d+", s["t"])
+        and s["y"] < out_y - 2
     ]
 
+    anchors = cluster_ability_names(names)
+    buckets = assign_game_text_by_nearest_name(text_spans, anchors)
+
     abilities = []
-    for name in sorted(names, key=lambda s: (round(s["y"], 1), s["x"])):
+    for index, anchor in enumerate(anchors):
         typ = next(
-            (t["t"] for t in types if abs(t["y"] - name["y"]) < 8 and t["x"] > name["x"]),
+            (
+                t["t"]
+                for t in types
+                if abs(t["y"] - anchor["y"]) < 12 and t["x"] > anchor["x"]
+            ),
             "A",
         )
-        # keep contiguous lines for this ability until next name
-        next_name_y = min(
-            (n["y"] for n in names if n["y"] > name["y"] + 2),
-            default=name["y"] + 55,
-        )
-        lines = [
-            t["t"]
-            for t in text_spans
-            if name["y"] - 2 <= t["y"] < next_name_y - 2
-        ]
-        game_text = " ".join(lines).strip()
-        game_text = re.sub(r"\s+", " ", game_text)
-        aux = classify_ability_zone(name["y"], bands) if bands else "green"
+        lines = sorted(buckets[index], key=lambda s: (s["y"], s["x"]))
+        game_text = re.sub(r"\s+", " ", " ".join(t["t"] for t in lines)).strip()
+        aux = classify_ability_zone(anchor["y"], bands) if bands else "green"
         abilities.append(
             {
-                "name": name["t"],
+                "name": anchor["name"],
                 "type": typ,
                 "aux": aux,
                 "gameText": game_text,
                 "icon": infer_icons(game_text),
             }
         )
-    # Out ability often has no bold name — capture orphan text below OUT
+    # Out ability often has no bold name — capture orphan text below OUT.
+    # OUT game text is left-aligned (~x=45), unlike the main GAME TEXT column.
     out_lines = [
         t["t"]
-        for t in text_spans
+        for t in sorted(spans, key=lambda s: (s["y"], s["x"]))
         if t["y"] >= out_y - 2
+        and "Light" in t["font"]
+        and "GillSans" in t["font"]
+        and t["t"] not in CHROME
+        and t["t"] not in {"A", "I", "R"}
+        and not re.fullmatch(r"\d+", t["t"])
     ]
     if out_lines and not any(a["aux"] == "out" and a["gameText"] for a in abilities):
         game_text = re.sub(r"\s+", " ", " ".join(out_lines)).strip()
@@ -724,31 +771,44 @@ def extract_villain_sheet(doc: pymupdf.Document, book: int, name: str) -> dict:
         else:
             qualities.append({"name": t, "dieType": "d8", "dieTypeKnown": False})
 
-    # Abilities: use spans similar to heroes but villains often lack zone headers
+    # Abilities start below the Abilities header; power/quality Light labels sit
+    # lower on villain sheets than on heroes, so y>250 alone is too loose.
+    abilities_y = next((s["y"] for s in spans if s["t"] == "Abilities"), 370.0)
     name_spans = [
         s
         for s in spans
-        if s["y"] > 250
+        if s["y"] > abilities_y
         and "GillSans" in s["font"]
         and "Light" not in s["font"]
         and s["size"] >= 9
         and s["t"] not in CHROME
         and not re.fullmatch(r"[AIRUM]", s["t"])
     ]
-    type_spans = [s for s in spans if s["y"] > 250 and s["t"] in {"A", "I", "R"}]
+    type_spans = [
+        s for s in spans if s["y"] > abilities_y and s["t"] in {"A", "I", "R"}
+    ]
     text_spans = [
         s
         for s in spans
-        if s["y"] > 250 and "Light" in s["font"] and s["x"] > 200 and s["t"] not in {"A", "I", "R"}
+        if s["y"] > abilities_y
+        and "Light" in s["font"]
+        and s["x"] > 200
+        and s["t"] not in {"A", "I", "R"}
     ]
-    for ns in sorted(name_spans, key=lambda s: (round(s["y"], 1), s["x"])):
-        typ = next((t["t"] for t in type_spans if abs(t["y"] - ns["y"]) < 10), "A")
-        next_y = min((n["y"] for n in name_spans if n["y"] > ns["y"] + 2), default=ns["y"] + 60)
-        lines_txt = [t["t"] for t in text_spans if ns["y"] - 2 <= t["y"] < next_y - 2]
+    anchors = cluster_ability_names(name_spans)
+    buckets = assign_game_text_by_nearest_name(text_spans, anchors)
+    for index, anchor in enumerate(anchors):
+        typ = next(
+            (t["t"] for t in type_spans if abs(t["y"] - anchor["y"]) < 14),
+            "A",
+        )
+        lines_txt = [
+            t["t"] for t in sorted(buckets[index], key=lambda s: (s["y"], s["x"]))
+        ]
         game_text = re.sub(r"\s+", " ", " ".join(lines_txt)).strip()
         abilities.append(
             {
-                "name": ns["t"],
+                "name": anchor["name"],
                 "type": typ,
                 "aux": "main",
                 "gameText": game_text,
@@ -1060,6 +1120,36 @@ def extract_environments(doc: pymupdf.Document) -> dict:
     return {"environments": out}
 
 
+# Hand-curated hero fields that OCR extract does not regenerate.
+PRESERVE_HERO_FIELDS = ("formChanger",)
+
+
+def merge_preserved_hero_fields(heroes: dict, previous_path: Path) -> list[str]:
+    """Copy curated fields (e.g. Muerto formChanger) from prior heroes.json."""
+    if not previous_path.exists():
+        return []
+    try:
+        previous = json.loads(previous_path.read_text())
+    except (OSError, json.JSONDecodeError):
+        return []
+    prior_by_name = {
+        member["name"]: member
+        for team in previous.get("teams", [])
+        for member in team.get("members", [])
+    }
+    restored: list[str] = []
+    for team in heroes.get("teams", []):
+        for member in team.get("members", []):
+            prior = prior_by_name.get(member.get("name", ""))
+            if not prior:
+                continue
+            for field in PRESERVE_HERO_FIELDS:
+                if field in prior and field not in member:
+                    member[field] = prior[field]
+                    restored.append(f"{member['name']}.{field}")
+    return restored
+
+
 def main() -> int:
     if not PDF.exists():
         print(f"PDF not found: {PDF}", file=sys.stderr)
@@ -1071,7 +1161,9 @@ def main() -> int:
     minions = extract_minions(doc)
     environments = extract_environments(doc)
 
-    (OUT / "heroes.json").write_text(json.dumps(heroes, indent=2, ensure_ascii=False) + "\n")
+    heroes_path = OUT / "heroes.json"
+    restored = merge_preserved_hero_fields(heroes, heroes_path)
+    heroes_path.write_text(json.dumps(heroes, indent=2, ensure_ascii=False) + "\n")
     (OUT / "villains.json").write_text(json.dumps(villains, indent=2, ensure_ascii=False) + "\n")
     (OUT / "minions.json").write_text(json.dumps(minions, indent=2, ensure_ascii=False) + "\n")
     (OUT / "environments.json").write_text(
@@ -1088,6 +1180,8 @@ def main() -> int:
         f"minions={minion_count} teams={len(minions['teams'])}; "
         f"environments={env_count}"
     )
+    if restored:
+        print(f"Preserved curated fields: {', '.join(restored)}")
     return 0
 
 

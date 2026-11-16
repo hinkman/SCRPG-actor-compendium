@@ -295,10 +295,10 @@
           "overcome": false,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>status. When one of your minions is destroyed, roll its die. You Recover that</p>"
+        "gameText": "<p>Add two minions of size equal to one die size lower than your current status.</p>"
       },
       "effects": [],
       "folder": null,
@@ -334,11 +334,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
-          "recover": false
+          "boost": false,
+          "recover": true
         },
         "type": "R",
-        "gameText": "<p>much Health. Boost one of your minions using Fleshcrafting and use your Max die.</p>"
+        "gameText": "<p>When one of your minions is destroyed, roll its die. You Recover that much Health.</p>"
       },
       "effects": [],
       "folder": null,
@@ -378,7 +378,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>If it is your only minion, also Boost yourself using your Mid die. If not, Boost each of your other minions using your Min die. Use Fleshfather to create a lieutenant of the same die size as your</p>"
+        "gameText": "<p>Boost one of your minions using Fleshcrafting and use your Max die. If it is your only minion, also Boost yourself using your Mid die. If not, Boost each of your other minions using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Max die. Whenever multiple of your minions all take the same action against the same target, you must roll all of their dice at the same time and</p>"
+        "gameText": "<p>Use Fleshfather to create a lieutenant of the same die size as your Max die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>use the lowest rolling die amongst them for each minion’s result on that action.</p>"
+        "gameText": "<p>Whenever multiple of your minions all take the same action against the same target, you must roll all of their dice at the same time and use the lowest rolling die amongst them for each minion’s result on that action.</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Replenish your Fleshchildren up to the number of heroes. As long as you are not directly involved in the fray and are using</p>"
+        "gameText": "<p>Replenish your Fleshchildren up to the number of heroes.</p>"
       },
       "effects": [],
       "folder": null,
@@ -523,8 +523,8 @@
       "_key": "!actors.items!CO96diK8aSQwNp6q.lOw4AdPFzhA78kP2"
     },
     {
-      "_id": "cv0pW5jgljDURtaD",
-      "name": "Master Behind the",
+      "_id": "RupEnZ1N3ghGeeBi",
+      "name": "Master Behind the Curtain",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>your influence indirectly, automatically succeed at an Overcome to</p>"
+        "gameText": "<p>As long as you are not directly involved in the fray and are using your influence indirectly, automatically succeed at an Overcome to manipulate a situation.</p>"
       },
       "effects": [],
       "folder": null,
@@ -560,47 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!CO96diK8aSQwNp6q.cv0pW5jgljDURtaD"
-    },
-    {
-      "_id": "NTH1r8K56vJmg3Qz",
-      "name": "Curtain",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>manipulate a situation.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!CO96diK8aSQwNp6q.NTH1r8K56vJmg3Qz"
+      "_key": "!actors.items!CO96diK8aSQwNp6q.RupEnZ1N3ghGeeBi"
     }
   ],
   "effects": [],

@@ -291,14 +291,14 @@
         "aux": "main",
         "icon": {
           "attack": true,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>once already in this scene, gain a +1 persistent and exclusive bonus against that target. Defend against an Attack where you’re the only target by rolling</p>"
+        "gameText": "<p>Whenever you Attack a target that you have dealt damage to at least once already in this scene, gain a +1 persistent and exclusive bonus against that target.</p>"
       },
       "effects": [],
       "folder": null,
@@ -330,15 +330,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>your single Stealth die. One other nearby target takes an amount of damage equal to the damage reduced. Boost yourself using Stealth. Use your Max die. That bonus is persistent and</p>"
+        "gameText": "<p>Defend against an Attack where you’re the only target by rolling your single Stealth die. One other nearby target takes an amount of damage equal to the damage reduced.</p>"
       },
       "effects": [],
       "folder": null,
@@ -374,11 +374,11 @@
           "defend": true,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>exclusive. Defend yourself using your Mid die against all Attacks until the start of your next turn. Attack one target using Ranged Combat and use your Max+Min dice.</p>"
+        "gameText": "<p>Boost yourself using Stealth. Use your Max die. That bonus is persistent and exclusive. Defend yourself using your Mid die against all Attacks until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -418,7 +418,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>That target cannot Defend or use reactions against this attack. Double any bonuses or penalties of your choice involved with taking</p>"
+        "gameText": "<p>Attack one target using Ranged Combat and use your Max+Min dice. That target cannot Defend or use reactions against this attack.</p>"
       },
       "effects": [],
       "folder": null,
@@ -458,7 +458,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Increase all of Marxman’s power dice by one size. action against a target that is unaware of your presence or distracted from remembering that you’re still around.</p>"
+        "gameText": "<p>Double any bonuses or penalties of your choice involved with taking action against a target that is unaware of your presence or distracted from remembering that you’re still around.</p>"
       },
       "effects": [],
       "folder": null,
@@ -498,7 +498,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Marxman has 20 additional Health.) As long as you are not directly involved in the fray and are using</p>"
+        "gameText": "<p>Increase all of Marxman’s power dice by one size. (When using this upgrade, Marxman has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -523,8 +523,8 @@
       "_key": "!actors.items!1JPUTWAjycwGmFs8.RD6fDnVDFTHDMp6c"
     },
     {
-      "_id": "rZ1shoMfcjSHngcX",
-      "name": "Master Behind the",
+      "_id": "8zRgH7FHc4uDkudl",
+      "name": "Master Behind the Curtain",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -538,7 +538,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>your influence indirectly, automatically succeed at an Overcome to</p>"
+        "gameText": "<p>As long as you are not directly involved in the fray and are using your influence indirectly, automatically succeed at an Overcome to manipulate a situation.</p>"
       },
       "effects": [],
       "folder": null,
@@ -560,47 +560,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!1JPUTWAjycwGmFs8.rZ1shoMfcjSHngcX"
-    },
-    {
-      "_id": "pL2oqFIB8dYdXLVj",
-      "name": "Curtain",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "main",
-        "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "I",
-        "gameText": "<p>manipulate a situation.</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 700000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "main"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!1JPUTWAjycwGmFs8.pL2oqFIB8dYdXLVj"
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.8zRgH7FHc4uDkudl"
     }
   ],
   "effects": [],

@@ -226,15 +226,15 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": false,
-          "defend": false,
+          "attack": true,
+          "defend": true,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>from that target using your Mid die until the start of your next turn.</p>"
+        "gameText": "<p>Attack using Strength and use your Max die. Defend against all Attacks from that target using your Mid die until the start of your next turn.</p>"
       },
       "effects": [],
       "folder": null,
@@ -266,7 +266,7 @@
       "system": {
         "aux": "main",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": false,
@@ -274,7 +274,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>Reduce all damage dealt to you by 2. When Attacked, use the amount of damage taken by the Attack to</p>"
+        "gameText": "<p>Reduce all damage dealt to you by 2.</p>"
       },
       "effects": [],
       "folder": null,
@@ -309,12 +309,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Boost yourself. Attack using Strength and use your Max die. Either Hinder that target</p>"
+        "gameText": "<p>When Attacked, use the amount of damage taken by the Attack to Boost yourself.</p>"
       },
       "effects": [],
       "folder": null,
@@ -349,12 +349,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>with your Mid die or Attack another nearby target with your Mid die. Increase all of Hippo’s power dice by one size.</p>"
+        "gameText": "<p>Attack using Strength and use your Max die. Either Hinder that target with your Mid die or Attack another nearby target with your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -394,7 +394,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>(When using this upgrade, Hippo has 20 additional Health.) If you have been given a contract to perform a specific task, automatically</p>"
+        "gameText": "<p>Increase all of Hippo’s power dice by one size. (When using this upgrade, Hippo has 20 additional Health.)</p>"
       },
       "effects": [],
       "folder": null,
@@ -434,7 +434,7 @@
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>succeed at an Overcome in a situation where the difference is getting paid and not getting paid.</p>"
+        "gameText": "<p>If you have been given a contract to perform a specific task, automatically succeed at an Overcome in a situation where the difference is getting paid and not getting paid.</p>"
       },
       "effects": [],
       "folder": null,

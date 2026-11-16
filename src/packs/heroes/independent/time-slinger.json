@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Boost an ally by rolling your History die.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -496,11 +496,11 @@
           "defend": false,
           "overcome": false,
           "hinder": true,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also</p>"
+        "gameText": "<p>Attack a target using Power Arm. Hinder that target with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -534,13 +534,13 @@
         "icon": {
           "attack": true,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome a problem using knowledge from your home era and use your Attack using your Mid die.</p>"
+        "gameText": "<p>Boost using Power Arm. Use your Max die. If you roll doubles, you may also Attack using your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -580,7 +580,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way</p>"
+        "gameText": "<p>Overcome a problem using knowledge from your home era and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -612,15 +612,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.</p>"
+        "gameText": "<p>Overcome against a challenge that involves information that you have no real way of knowing and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -652,15 +652,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost yourself using Power Arm. Then, either remove a penalty on yourself</p>"
+        "gameText": "<p>Attack multiple targets using Time Revolver, using your Min die against each.</p>"
       },
       "effects": [],
       "folder": null,
@@ -696,11 +696,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": true
         },
         "type": "A",
-        "gameText": "<p>or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove</p>"
+        "gameText": "<p>Boost yourself using Power Arm. Then, either remove a penalty on yourself or Recover using your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -732,15 +732,15 @@
       "system": {
         "aux": "yellow",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent</p>"
+        "gameText": "<p>When a nearby enemy would create a bonus or penalty, you may remove it immediately.</p>"
       },
       "effects": [],
       "folder": null,
@@ -772,15 +772,15 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.</p>"
+        "gameText": "<p>Attack using Robot Horse. Use your Max die. Hinder each nearby opponent with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.</p>"
       },
       "effects": [],
       "folder": null,
@@ -816,11 +816,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for</p>"
+        "gameText": "<p>Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist.</p>"
       },
       "effects": [],
       "folder": null,
@@ -856,11 +856,11 @@
           "defend": false,
           "overcome": false,
           "hinder": false,
-          "boost": false,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.</p>"
+        "gameText": "<p>Boost another hero using Postcognition. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.</p>"
       },
       "effects": [],
       "folder": null,

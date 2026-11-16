@@ -114,7 +114,7 @@
       "civilianRed": "d8"
     },
     "scene": "green",
-    "out": "",
+    "out": "<p>Hinder a minion or lieutenant using Persuasion. Increase that penalty by 1.</p>",
     "modeName": {
       "main": "",
       "green1": "",
@@ -484,15 +484,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>move them somewhere else in the scene.</p>"
+        "gameText": "<p>Attack using Momentum. Either Hinder your target with your Min die or move them somewhere else in the scene.</p>"
       },
       "effects": [],
       "folder": null,
@@ -524,15 +524,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
-          "defend": true,
+          "attack": false,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Boost yourself using Momentum. That bonus is persistent and exclusive. Attack using Agility. Defend against all attacks against you until your next</p>"
+        "gameText": "<p>Boost yourself using Momentum. That bonus is persistent and exclusive.</p>"
       },
       "effects": [],
       "folder": null,
@@ -564,15 +564,15 @@
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
-          "defend": false,
-          "overcome": true,
+          "attack": true,
+          "defend": true,
+          "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome using knowledge from your civilian life and use your Max die. You turn with your Min die.</p>"
+        "gameText": "<p>Attack using Agility. Defend against all attacks against you until your next turn with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -612,7 +612,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>and each of your allies gain a hero point. Whenever you successfully Overcome, you may end up anywhere in the</p>"
+        "gameText": "<p>Overcome using knowledge from your civilian life and use your Max die. You and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -646,13 +646,13 @@
         "icon": {
           "attack": false,
           "defend": false,
-          "overcome": false,
+          "overcome": true,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "I",
-        "gameText": "<p>current environment. Then, you and each of your allies gain a hero point.</p>"
+        "gameText": "<p>Whenever you successfully Overcome, you may end up anywhere in the current environment. Then, you and each of your allies gain a hero point.</p>"
       },
       "effects": [],
       "folder": null,
@@ -687,12 +687,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": true,
-          "boost": true,
+          "hinder": false,
+          "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Attack multiple targets using Momentum. Use your Min die against each. Boost yourself using Momentum. Use your Max die. Hinder a nearby</p>"
+        "gameText": "<p>Attack multiple targets using Momentum. Use your Min die against each.</p>"
       },
       "effects": [],
       "folder": null,
@@ -727,12 +727,12 @@
           "attack": false,
           "defend": false,
           "overcome": false,
-          "hinder": false,
-          "boost": false,
+          "hinder": true,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>opponent with your Min die. When another hero in the Yellow or Red zone would take damage, you may</p>"
+        "gameText": "<p>Boost yourself using Momentum. Use your Max die. Hinder a nearby opponent with your Min die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -767,12 +767,12 @@
           "attack": false,
           "defend": true,
           "overcome": false,
-          "hinder": true,
+          "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>Defend them by rolling your single Intuition die. Hinder multiple nearby targets using Acrobatics. Use your Max die. End your</p>"
+        "gameText": "<p>When another hero in the Yellow or Red zone would take damage, you may Defend them by rolling your single Intuition die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -804,7 +804,7 @@
       "system": {
         "aux": "red",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
           "overcome": false,
           "hinder": true,
@@ -812,7 +812,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>turn elsewhere in the scene. Attack using Momentum. Use your Max die. Hinder that target with your</p>"
+        "gameText": "<p>Hinder multiple nearby targets using Acrobatics. Use your Max die. End your turn elsewhere in the scene.</p>"
       },
       "effects": [],
       "folder": null,
@@ -847,12 +847,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Mid+Min dice. When an enemy Attacks an ally you can see, you may become the target</p>"
+        "gameText": "<p>Attack using Momentum. Use your Max die. Hinder that target with your Mid+Min dice.</p>"
       },
       "effects": [],
       "folder": null,
@@ -892,7 +892,7 @@
           "recover": false
         },
         "type": "R",
-        "gameText": "<p>of that Attack and Defend against that Attack by rolling your single Red status die.</p>"
+        "gameText": "<p>When an enemy Attacks an ally you can see, you may become the target of that Attack and Defend against that Attack by rolling your single Red status die.</p>"
       },
       "effects": [],
       "folder": null,
