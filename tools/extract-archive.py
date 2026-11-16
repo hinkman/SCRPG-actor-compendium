@@ -132,10 +132,78 @@ def parse_power_quality_names(spans: list[dict]) -> tuple[list[str], list[str]]:
     return powers, qualities
 
 
-def parse_abilities(spans: list[dict]) -> list[dict]:
-    yellow_y = next((s["y"] for s in spans if s["t"] == "YELLOW ZONE"), 10_000)
-    red_y = next((s["y"] for s in spans if s["t"] == "RED ZONE"), 10_000)
-    out_y = next((s["y"] for s in spans if s["t"] == "OUT"), 10_000)
+def ability_zone_bands(page: pymupdf.Page) -> dict[str, tuple[float, float]]:
+    """Detect Green/Yellow/Red/Out ability bands from colored sheet rectangles.
+
+    Zone sidebar labels are vertically centered in each band, so label Y alone
+    mis-assigns the first ability of Yellow/Red. Prefer filled band geometry.
+    """
+    best: dict[str, tuple[float, float, float]] = {}
+    for drawing in page.get_drawings():
+        fill = drawing.get("fill")
+        rect = drawing.get("rect")
+        if not fill or not rect:
+            continue
+        if rect.width < 400 or rect.height < 12:
+            continue
+        r, g, b = fill[0], fill[1], fill[2]
+        if g > 0.7 and r < 0.85 and b < 0.8 and g > r and g > b:
+            color = "green"
+        elif r > 0.9 and g > 0.85 and b < 0.85:
+            color = "yellow"
+        elif r > 0.85 and g < 0.85 and b < 0.8:
+            color = "red"
+        elif abs(r - g) < 0.05 and abs(g - b) < 0.05 and 0.7 < r < 0.95:
+            color = "out"
+        else:
+            continue
+        height = rect.y1 - rect.y0
+        if color not in best or height > best[color][2]:
+            best[color] = (rect.y0, rect.y1, height)
+    return {color: (y0, y1) for color, (y0, y1, _h) in best.items()}
+
+
+def classify_ability_zone(y: float, bands: dict[str, tuple[float, float]]) -> str:
+    for color in ("green", "yellow", "red", "out"):
+        if color not in bands:
+            continue
+        y0, y1 = bands[color]
+        if y0 - 2 <= y <= y1 + 2:
+            return color
+    if not bands:
+        return "green"
+    return min(bands, key=lambda c: abs(((bands[c][0] + bands[c][1]) / 2) - y))
+
+
+def parse_abilities(spans: list[dict], page: pymupdf.Page | None = None) -> list[dict]:
+    bands = ability_zone_bands(page) if page is not None else {}
+    # Label fallback only when band fills are unavailable; labels sit mid-band,
+    # so use midpoints between consecutive zone markers.
+    label_y = {
+        "yellow": next((s["y"] for s in spans if s["t"] == "YELLOW ZONE"), None),
+        "red": next((s["y"] for s in spans if s["t"] == "RED ZONE"), None),
+        "out": next((s["y"] for s in spans if s["t"] == "OUT"), None),
+        "green": next((s["y"] for s in spans if s["t"] == "GREEN ZONE"), None),
+    }
+    if not bands and label_y["yellow"] is not None and label_y["red"] is not None:
+        green_mid = label_y["green"] if label_y["green"] is not None else 300
+        yellow_start = (green_mid + label_y["yellow"]) / 2
+        red_start = (label_y["yellow"] + label_y["red"]) / 2
+        out_start = (
+            (label_y["red"] + label_y["out"]) / 2
+            if label_y["out"] is not None
+            else label_y["red"] + 40
+        )
+        bands = {
+            "green": (0, yellow_start),
+            "yellow": (yellow_start, red_start),
+            "red": (red_start, out_start),
+            "out": (out_start, 10_000),
+        }
+
+    out_y = bands.get("out", (10_000, 10_000))[0]
+    if label_y["out"] is not None:
+        out_y = min(out_y, label_y["out"])
 
     names = [
         s
@@ -168,11 +236,6 @@ def parse_abilities(spans: list[dict]) -> list[dict]:
             (t["t"] for t in types if abs(t["y"] - name["y"]) < 8 and t["x"] > name["x"]),
             "A",
         )
-        nearby = [
-            t["t"]
-            for t in text_spans
-            if name["y"] - 4 <= t["y"] <= name["y"] + 40
-        ]
         # keep contiguous lines for this ability until next name
         next_name_y = min(
             (n["y"] for n in names if n["y"] > name["y"] + 2),
@@ -185,14 +248,7 @@ def parse_abilities(spans: list[dict]) -> list[dict]:
         ]
         game_text = " ".join(lines).strip()
         game_text = re.sub(r"\s+", " ", game_text)
-        if name["y"] < yellow_y:
-            aux = "green"
-        elif name["y"] < red_y:
-            aux = "yellow"
-        elif name["y"] < out_y:
-            aux = "red"
-        else:
-            aux = "out"
+        aux = classify_ability_zone(name["y"], bands) if bands else "green"
         abilities.append(
             {
                 "name": name["t"],
@@ -225,6 +281,109 @@ def parse_abilities(spans: list[dict]) -> list[dict]:
 
 def parse_principles_from_attr(spans: list[dict]) -> list[str]:
     return [s["t"] for s in spans if s["t"].startswith("Principle of")]
+
+
+def parse_principle_details(spans: list[dict]) -> list[dict]:
+    """Import During Roleplaying / Minor Twist / Major Twist for each principle column."""
+    titles = sorted(
+        [s for s in spans if s["t"].startswith("Principle of")],
+        key=lambda s: (s["x"], s["y"]),
+    )
+    # Prefer the large italic title spans when duplicates exist
+    deduped: list[dict] = []
+    for title in titles:
+        if any(abs(title["x"] - t["x"]) < 40 and abs(title["y"] - t["y"]) < 20 for t in deduped):
+            continue
+        deduped.append(title)
+    titles = deduped[:2]
+    if not titles:
+        return []
+
+    mid_x = (titles[0]["x"] + titles[1]["x"]) / 2 if len(titles) == 2 else titles[0]["x"] + 200
+    section_labels = {
+        "DURING ROLEPLAYING": "roleplaying",
+        "MINOR TWIST": "minorTwist",
+        "MAJOR TWIST": "majorTwist",
+    }
+    footer_y = next(
+        (
+            s["y"]
+            for s in spans
+            if s["t"] in {"Back Issues", "Collections", "Hero Points", "This Issue:"}
+        ),
+        580,
+    )
+
+    principles: list[dict] = []
+    for index, title in enumerate(titles):
+        col_min = -1 if index == 0 else mid_x
+        col_max = mid_x if index == 0 else 10_000
+        headers: dict[str, float] = {}
+        for span in spans:
+            field = section_labels.get(span["t"])
+            if not field:
+                continue
+            if not (col_min <= span["x"] < col_max):
+                continue
+            headers[field] = span["y"]
+
+        def body_for(field: str) -> str:
+            start = headers.get(field)
+            if start is None:
+                return ""
+            ends = [y for key, y in headers.items() if y > start]
+            ends.append(footer_y)
+            end = min(ends)
+            lines = [
+                s["t"]
+                for s in sorted(spans, key=lambda s: (s["y"], s["x"]))
+                if "Light" in s["font"]
+                and col_min <= s["x"] < col_max
+                and start + 2 < s["y"] < end - 2
+                and s["t"] not in section_labels
+            ]
+            return re.sub(r"\s+", " ", " ".join(lines)).strip()
+
+        principles.append(
+            {
+                "name": title["t"],
+                "roleplaying": body_for("roleplaying"),
+                "minorTwist": body_for("minorTwist"),
+                "majorTwist": body_for("majorTwist"),
+            }
+        )
+    return principles
+
+
+def parse_collections(spans: list[dict]) -> list[str]:
+    """Collections checklist titles from the page-1 Collections box."""
+    header = next((s for s in spans if s["t"] == "Collections"), None)
+    if not header:
+        return []
+    items: list[str] = []
+    for span in sorted(spans, key=lambda s: (s["y"], s["x"])):
+        if span["y"] <= header["y"] + 2:
+            continue
+        if span["y"] > header["y"] + 130:
+            break
+        if span["x"] < header["x"] - 20:
+            continue
+        if "Light" not in span["font"]:
+            continue
+        if span["t"] in CHROME or re.fullmatch(r"\d+", span["t"]):
+            continue
+        if span["size"] < 8:
+            continue
+        items.append(span["t"])
+    # Preserve order, drop duplicates
+    seen: set[str] = set()
+    out: list[str] = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        out.append(item)
+    return out[:6]
 
 
 def parse_hero_attr_page(spans: list[dict]) -> dict:
@@ -427,16 +586,23 @@ HERO_DICE = {
 
 HERO_TEAMS = [
     {
+        "key": "independent",
+        "label": "Independent",
+        "heroes": [
+            # Heritage and Time-Slinger are Archive independents (not SoF).
+            {"attr": 294, "ability": 295, "bio": 296},
+            {"attr": 320, "ability": 321, "bio": 322},
+        ],
+    },
+    {
         "key": "sentinels-of-freedom",
         "label": "Sentinels of Freedom",
         "heroes": [
-            {"attr": 294, "ability": 295, "bio": 296},
             {"attr": 300, "ability": 301, "bio": 302},
             {"attr": 304, "ability": 305, "bio": 306},
             {"attr": 308, "ability": 309, "bio": 310},
             {"attr": 312, "ability": 313, "bio": 314},
             {"attr": 316, "ability": 317, "bio": 318},
-            {"attr": 320, "ability": 321, "bio": 322},
         ],
     },
     {
@@ -619,11 +785,13 @@ def extract_heroes(doc: pymupdf.Document) -> dict:
     for team in HERO_TEAMS:
         members = []
         for pages in team["heroes"]:
-            attr_spans = page_spans(book_page(doc, pages["attr"]))
-            ability_spans = page_spans(book_page(doc, pages["ability"]))
+            attr_page = book_page(doc, pages["attr"])
+            ability_page = book_page(doc, pages["ability"])
+            attr_spans = page_spans(attr_page)
+            ability_spans = page_spans(ability_page)
             bio_text = page_text(book_page(doc, pages["bio"]))
             attr = parse_hero_attr_page(attr_spans)
-            abilities = parse_abilities(ability_spans)
+            abilities = parse_abilities(ability_spans, ability_page)
             health = parse_health_ranges(ability_spans)
             dice = HERO_DICE.get(pages["ability"], {})
             powers = [
@@ -639,17 +807,23 @@ def extract_heroes(doc: pymupdf.Document) -> dict:
                 powers = [{"name": n, "dieType": "d8", "dieTypeKnown": False} for n in pnames]
                 qualities = [{"name": n, "dieType": "d8", "dieTypeKnown": False} for n in qnames]
                 gaps.append(f"{attr.get('name', pages['ability'])}: power/quality dice unverified")
-            # principle text lives on attr page after principle names; keep names on actor
-            principles = []
-            for pname in attr.get("principles", []):
-                principles.append(
-                    {
-                        "name": pname,
-                        "roleplaying": "",
-                        "minorTwist": "",
-                        "majorTwist": "",
-                    }
-                )
+            principles = parse_principle_details(attr_spans)
+            if not principles:
+                for pname in attr.get("principles", []):
+                    principles.append(
+                        {
+                            "name": pname,
+                            "roleplaying": "",
+                            "minorTwist": "",
+                            "majorTwist": "",
+                        }
+                    )
+                    gaps.append(
+                        f"{attr.get('name', pages['attr'])}: principle prose missing for {pname}"
+                    )
+            collections = parse_collections(attr_spans)
+            if not collections:
+                gaps.append(f"{attr.get('name', pages['attr'])}: no collections parsed")
             # out ability text
             out = next((a["gameText"] for a in abilities if a["aux"] == "out"), "")
             members.append(
@@ -669,6 +843,7 @@ def extract_heroes(doc: pymupdf.Document) -> dict:
                     "archetype": attr.get("archetype", ""),
                     "personality": attr.get("personality", ""),
                     "principles": principles,
+                    "collections": collections,
                     "powers": powers,
                     "qualities": qualities,
                     "abilities": [a for a in abilities if a["aux"] != "out"],

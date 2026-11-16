@@ -1,8 +1,8 @@
 {
   "teams": [
     {
-      "key": "sentinels-of-freedom",
-      "label": "Sentinels of Freedom",
+      "key": "independent",
+      "label": "Independent",
       "members": [
         {
           "name": "Heritage",
@@ -22,16 +22,19 @@
           "principles": [
             {
               "name": "Principle of Order",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You believe in organization and concordance. You always keep your head in the face of chaos.",
+              "minorTwist": "What element of disorder causes your plan to fall apart?",
+              "majorTwist": "How is your ordered existence ruined by chaos?"
             },
             {
               "name": "Principle of The Mentor",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "It is important to you to share your knowledge and experience with less-weathered heroes. Everyone grants you some measure of respect for your wisdom.",
+              "minorTwist": "Which whippersnapper just showed you up?",
+              "majorTwist": "What has just proven that you’re too behind the times?"
             }
+          ],
+          "collections": [
+            "Justice Comics, Vol 2"
           ],
           "powers": [
             {
@@ -156,7 +159,7 @@
             {
               "name": "Danger Sense",
               "type": "R",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "rolling your single Awareness die. Attack using Strength. The target of that Attack must take the Attack action",
               "icon": {
                 "attack": true,
@@ -198,7 +201,7 @@
             {
               "name": "Heroic Interception",
               "type": "R",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Defend by rolling your single Red zone die. Attack using Flight. Use your Max die. Then, Hinder that target using your",
               "icon": {
                 "attack": true,
@@ -246,6 +249,270 @@
           }
         },
         {
+          "name": "Time-Slinger",
+          "alias": "Jim Brooks",
+          "gender": "Male",
+          "age": "Middle-Aged",
+          "height": "5’ 11”",
+          "eyes": "Brown",
+          "hair": "Brown",
+          "skin": "Tan",
+          "build": "Rugged",
+          "costume": "Cowboy hat, worn jeans, brown leather boots. Blue collared shirt emblazoned with golden clock arms. Golden left arm. Golden time-gun. Glowing blue eyepiece over left eye. Has robot horse named Masadah.",
+          "background": "Anachronistic",
+          "powerSource": "Tech Upgrades",
+          "archetype": "Reality Shaper",
+          "personality": "Lone Wolf",
+          "principles": [
+            {
+              "name": "Principle of the Time Traveler",
+              "roleplaying": "You are far from your own time and are often unsure how to act in this time. You have an innate sense for when time is not quite right in the era you’re in.",
+              "minorTwist": "What detail of this era did you not previously know about?",
+              "majorTwist": "What effects are happening as you discorporate in time?"
+            },
+            {
+              "name": "Principle of Whispers",
+              "roleplaying": "You hear a voice in your head that no one else hears. That voice tells you things, which might be true or false, but the voice certainly seems to know a lot.",
+              "minorTwist": "How did the voice in your head just distract you?",
+              "majorTwist": "What is the voice demanding of you now?"
+            }
+          ],
+          "collections": [
+            "Time-Slinger, Vol. 1"
+          ],
+          "powers": [
+            {
+              "name": "Awareness",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Postcognition",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Power Arm",
+              "dieType": "d10",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Robot Horse",
+              "dieType": "d6",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Time Revolver",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            }
+          ],
+          "qualities": [
+            {
+              "name": "History",
+              "dieType": "d10",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Ranged Combat",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Self-Discipline",
+              "dieType": "d10",
+              "dieTypeKnown": true
+            },
+            {
+              "name": "Time-Lost Sheriff",
+              "dieType": "d8",
+              "dieTypeKnown": true
+            }
+          ],
+          "abilities": [
+            {
+              "name": "Altered Scan",
+              "type": "R",
+              "aux": "green",
+              "gameText": "After a die pool is rolled, adjust one die up or down one value on the die.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Sit a Spell",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
+              "name": "Takin’ My Time",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Overcome a problem using knowledge from your home era and use your Attack using your Mid die.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Principle of the Time Traveler",
+              "type": "A",
+              "aux": "green",
+              "gameText": "Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": true,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Principle of Whispers",
+              "type": "A",
+              "aux": "green",
+              "gameText": "of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Fan the Hammer",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "Boost yourself using Power Arm. Then, either remove a penalty on yourself",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
+              "name": "Localized Acceleration",
+              "type": "A",
+              "aux": "yellow",
+              "gameText": "or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": true
+              }
+            },
+            {
+              "name": "Stack the Deck",
+              "type": "R",
+              "aux": "yellow",
+              "gameText": "it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": true,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Get Out of Dodge",
+              "type": "A",
+              "aux": "red",
+              "gameText": "with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            },
+            {
+              "name": "Showdown",
+              "type": "A",
+              "aux": "red",
+              "gameText": "Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for",
+              "icon": {
+                "attack": true,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": true,
+                "recover": false
+              }
+            },
+            {
+              "name": "Temporal Bootstrap",
+              "type": "A",
+              "aux": "red",
+              "gameText": "the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.",
+              "icon": {
+                "attack": false,
+                "defend": false,
+                "overcome": false,
+                "hinder": false,
+                "boost": false,
+                "recover": false
+              }
+            }
+          ],
+          "out": "",
+          "statusDie": {
+            "green": "d8",
+            "yellow": "d8",
+            "red": "d8"
+          },
+          "health": {
+            "greenLow": 23,
+            "yellowHigh": 22,
+            "yellowLow": 12,
+            "redHigh": 11,
+            "redLow": 1,
+            "max": 30
+          },
+          "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression — dynamiting his recently \npainted fences — was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn’t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>",
+          "sourcePages": {
+            "attr": 320,
+            "ability": 321,
+            "bio": 322
+          }
+        }
+      ]
+    },
+    {
+      "key": "sentinels-of-freedom",
+      "label": "Sentinels of Freedom",
+      "members": [
+        {
           "name": "Legacy",
           "alias": "Pauline “Felicia Fields” Parsons",
           "gender": "Female",
@@ -263,16 +530,19 @@
           "principles": [
             {
               "name": "Principle of the Hero",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "Because of your abilities, you have a calling to protect others.",
+              "minorTwist": "Your immediate need to help someone else causes you to drop the ball in your personal life. What was it?",
+              "majorTwist": "You’re given an ultimatum between your life as a hero and something else you value. What do you give up?"
             },
             {
               "name": "Principle of Justice",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You are always aware of acts of injustice in your environment and those who have committed them.",
+              "minorTwist": "How are you taking extra time to show yourself as a shining example of justice?",
+              "majorTwist": "How do you unnerve your allies in the single-minded pursuit of justice?"
             }
+          ],
+          "collections": [
+            "Sentinels of Freedom, Vol. 1"
           ],
           "powers": [
             {
@@ -411,7 +681,7 @@
             {
               "name": "Danger Sense",
               "type": "R",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "rolling your single Flight die. Attack using Flight, then Defend against all attacks against you until your",
               "icon": {
                 "attack": true,
@@ -453,7 +723,7 @@
             {
               "name": "Focused Blast",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "persistent and exclusive. Attack using your Mid die plus that bonus. Attack using Flight. Use your Max die. Then, Hinder that target using your",
               "icon": {
                 "attack": true,
@@ -518,16 +788,19 @@
           "principles": [
             {
               "name": "Principle of the Detective",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You can always tell when an important piece of information is being left out or obscured, though you might not know exactly what it is.",
+              "minorTwist": "What important clue did you miss?",
+              "majorTwist": "What major secret was just revealed that you would rather have stayed hidden?"
             },
             {
               "name": "Principle of Stealth",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You always know the most efficient method to enter or leave a location.",
+              "minorTwist": "What evidence of your presence did you just leave behind?",
+              "majorTwist": "What just happened that identified you as an obvious threat?"
             }
+          ],
+          "collections": [
+            "Sentinels of Freedom, Vol. 1"
           ],
           "powers": [
             {
@@ -643,7 +916,7 @@
             {
               "name": "Combat Stance",
               "type": "R",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "amount of damage. When you would take damage, Defend against that damage by rolling your",
               "icon": {
                 "attack": false,
@@ -685,7 +958,7 @@
             {
               "name": "Favorite Knife",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "persistent and exclusive. Attack using your Mid die plus that bonus. Boost using Investigation and use your Max die. Defend against all Attacks",
               "icon": {
                 "attack": true,
@@ -764,16 +1037,19 @@
           "principles": [
             {
               "name": "Principle of The Defender",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You will put yourself in harm’s way to defend another without a second thought.",
+              "minorTwist": "How do your actions put you in more danger than before?",
+              "majorTwist": "What great sacrifice did you just make to succeed?"
             },
             {
               "name": "Principle of The Tactician",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You are constantly assessing the situation, making plans and backup plans, and then reassessing the situation.",
+              "minorTwist": "What one variable did your plan not account for?",
+              "majorTwist": "What major threat is revealed that invalidates all your plans?"
             }
+          ],
+          "collections": [
+            "Sentinels of Freedom, Vol. 1"
           ],
           "powers": [
             {
@@ -884,7 +1160,7 @@
             {
               "name": "Decoupled Barrage",
               "type": "A",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die. Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is",
               "icon": {
                 "attack": false,
@@ -926,7 +1202,7 @@
             {
               "name": "Emergency Reconfiguration",
               "type": "R",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "take extra damage equal to the Min die or take a minor twist. Attack multiple nearby targets using Power Suit. Use your Max+Mid dice",
               "icon": {
                 "attack": true,
@@ -1005,16 +1281,19 @@
           "principles": [
             {
               "name": "Principle of Speed",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You’re fast, and you don’t like to waste time. You like to be on your way as quickly as possible.",
+              "minorTwist": "What physical drawbacks do you suffer from going too fast?",
+              "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
             },
             {
               "name": "Principle of Science",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You are up to date on and understand most modern scientific theories and research and can quote from them during conversations.",
+              "minorTwist": "What were the surprising effects of leveraging that scientific principle in this situation?",
+              "majorTwist": "Oh heck! What just blew up?"
             }
+          ],
+          "collections": [
+            "Sentinels of Freedom, Vol. 1"
           ],
           "powers": [
             {
@@ -1134,7 +1413,7 @@
             {
               "name": "Margin of Error",
               "type": "R",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "your entire dice pool. Boost yourself using Inventions. Then, either remove a penalty on yourself",
               "icon": {
                 "attack": false,
@@ -1176,7 +1455,7 @@
             {
               "name": "Rapid Response",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Max+Mid dice.",
               "icon": {
                 "attack": false,
@@ -1241,16 +1520,19 @@
           "principles": [
             {
               "name": "Principle of Dependence",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You are reliant on your coolant suit and cannot normally function without it.",
+              "minorTwist": "How did part of your coolant suit get damaged or lost?",
+              "majorTwist": "How is your dependence on your coolant suit preventing you from functioning as a hero?"
             },
             {
               "name": "Principle of Cold",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You have an affinity to the cold. You can interact with cold temperatures and effects with ease.",
+              "minorTwist": "What other energy/element is currently causing your powers to go on the fritz?",
+              "majorTwist": "What source of energy/element is currently dampening all your powers?"
             }
+          ],
+          "collections": [
+            "Sentinels of Freedom, Vol. 1"
           ],
           "powers": [
             {
@@ -1370,7 +1652,7 @@
             {
               "name": "Coolant Blast",
               "type": "R",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "your single Cold die.",
               "icon": {
                 "attack": false,
@@ -1412,7 +1694,7 @@
             {
               "name": "Colder Than Ice",
               "type": "R",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Whenever you Attack a target with an action, you may also Hinder that against the Attack and Boost yourself.",
               "icon": {
                 "attack": true,
@@ -1472,261 +1754,6 @@
             "ability": 317,
             "bio": 318
           }
-        },
-        {
-          "name": "Time-Slinger",
-          "alias": "Jim Brooks",
-          "gender": "Male",
-          "age": "Middle-Aged",
-          "height": "5’ 11”",
-          "eyes": "Brown",
-          "hair": "Brown",
-          "skin": "Tan",
-          "build": "Rugged",
-          "costume": "Cowboy hat, worn jeans, brown leather boots. Blue collared shirt emblazoned with golden clock arms. Golden left arm. Golden time-gun. Glowing blue eyepiece over left eye. Has robot horse named Masadah.",
-          "background": "Anachronistic",
-          "powerSource": "Tech Upgrades",
-          "archetype": "Reality Shaper",
-          "personality": "Lone Wolf",
-          "principles": [
-            {
-              "name": "Principle of the Time Traveler",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
-            },
-            {
-              "name": "Principle of Whispers",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
-            }
-          ],
-          "powers": [
-            {
-              "name": "Awareness",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Postcognition",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Power Arm",
-              "dieType": "d10",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Robot Horse",
-              "dieType": "d6",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Time Revolver",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            }
-          ],
-          "qualities": [
-            {
-              "name": "History",
-              "dieType": "d10",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Ranged Combat",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Self-Discipline",
-              "dieType": "d10",
-              "dieTypeKnown": true
-            },
-            {
-              "name": "Time-Lost Sheriff",
-              "dieType": "d8",
-              "dieTypeKnown": true
-            }
-          ],
-          "abilities": [
-            {
-              "name": "Altered Scan",
-              "type": "R",
-              "aux": "green",
-              "gameText": "After a die pool is rolled, adjust one die up or down one value on the die.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Sit a Spell",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": true,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Takin’ My Time",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Overcome a problem using knowledge from your home era and use your Attack using your Mid die.",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Principle of the Time Traveler",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": true,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Principle of Whispers",
-              "type": "A",
-              "aux": "green",
-              "gameText": "of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Fan the Hammer",
-              "type": "A",
-              "aux": "green",
-              "gameText": "Boost yourself using Power Arm. Then, either remove a penalty on yourself",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Localized Acceleration",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": true
-              }
-            },
-            {
-              "name": "Stack the Deck",
-              "type": "R",
-              "aux": "yellow",
-              "gameText": "it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": true,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Get Out of Dodge",
-              "type": "A",
-              "aux": "yellow",
-              "gameText": "with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            },
-            {
-              "name": "Showdown",
-              "type": "A",
-              "aux": "red",
-              "gameText": "Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for",
-              "icon": {
-                "attack": true,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": true,
-                "recover": false
-              }
-            },
-            {
-              "name": "Temporal Bootstrap",
-              "type": "A",
-              "aux": "red",
-              "gameText": "the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.",
-              "icon": {
-                "attack": false,
-                "defend": false,
-                "overcome": false,
-                "hinder": false,
-                "boost": false,
-                "recover": false
-              }
-            }
-          ],
-          "out": "",
-          "statusDie": {
-            "green": "d8",
-            "yellow": "d8",
-            "red": "d8"
-          },
-          "health": {
-            "greenLow": 23,
-            "yellowHigh": 22,
-            "yellowLow": 12,
-            "redHigh": 11,
-            "redLow": 1,
-            "max": 30
-          },
-          "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression — dynamiting his recently \npainted fences — was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn’t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>",
-          "sourcePages": {
-            "attr": 320,
-            "ability": 321,
-            "bio": 322
-          }
         }
       ]
     },
@@ -1752,16 +1779,19 @@
           "principles": [
             {
               "name": "Principle of the Mask",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "It is vitally important that you hide your true identity. You have a career that allows you to slip between identities when necessary.",
+              "minorTwist": "What clue did you leave behind towards your real identity?",
+              "majorTwist": "Who from your civilian life is now in imminent danger?"
             },
             {
               "name": "Principle of Speed",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You’re fast, but you don’t like to waste time. You like to be on your way to your destinations as quickly as possible.",
+              "minorTwist": "What physical drawbacks do you suffer from going too fast?",
+              "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
             }
+          ],
+          "collections": [
+            "Daybreak Vol. 1"
           ],
           "powers": [
             {
@@ -1891,7 +1921,7 @@
             {
               "name": "Bowl Over",
               "type": "A",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "Attack multiple targets using Momentum. Use your Min die against each. Boost yourself using Momentum. Use your Max die. Hinder a nearby",
               "icon": {
                 "attack": true,
@@ -1933,7 +1963,7 @@
             {
               "name": "Slippery Surface",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "turn elsewhere in the scene. Attack using Momentum. Use your Max die. Hinder that target with your",
               "icon": {
                 "attack": true,
@@ -2012,16 +2042,19 @@
           "principles": [
             {
               "name": "Principle of Ambition",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "There is something you want, and you will strive towards achieving your goals, no matter the cost. You see paths to victory that no one else will.",
+              "minorTwist": "How are the pursuit of your goals getting in the way of being a hero in this situation?",
+              "majorTwist": "What did you just pass up or miss that could have helped you achieve your biggest goal at last?"
             },
             {
               "name": "Principle of Strength",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You are very strong, so you must be careful to not crush delicate things. You do not need to roll to perform mundane acts of great strength.",
+              "minorTwist": "What just broke?",
+              "majorTwist": "Who just broke?"
             }
+          ],
+          "collections": [
+            "Daybreak Vol. 1"
           ],
           "powers": [
             {
@@ -2141,7 +2174,7 @@
             {
               "name": "Drop the Hammer",
               "type": "A",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "Attack using Strength. Hinder that same target using your Min die. When your personal zone changes, Attack all close enemy targets by rolling",
               "icon": {
                 "attack": true,
@@ -2183,7 +2216,7 @@
             {
               "name": "Encore!",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Max+Mid dice.",
               "icon": {
                 "attack": false,
@@ -2248,16 +2281,19 @@
           "principles": [
             {
               "name": "Principle of Mastery",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You have thoroughly studied your own powers and are proud of your mastery of them.",
+              "minorTwist": "How did your powers fail you in the moment?",
+              "majorTwist": "What side effects are you suffering from your powers?"
             },
             {
               "name": "Principle of the Inner Demon",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You have a darkness in you that you strive to keep suppressed. You can connect with your dark side for connection with similar forces.",
+              "minorTwist": "What sinister act comes from tapping into your dark side?",
+              "majorTwist": "What havoc does your dark side inflict as you allow it to take control?"
             }
+          ],
+          "collections": [
+            "Daybreak Vol. 1"
           ],
           "powers": [
             {
@@ -2373,7 +2409,7 @@
             {
               "name": "Conjured Nightmare",
               "type": "A",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "Min die for the rest. Boost yourself using Intuition. Use your Max die. That Bonus is persistent",
               "icon": {
                 "attack": false,
@@ -2429,7 +2465,7 @@
             {
               "name": "Debilitate",
               "type": "A",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "to your Min die. Then if you rolled doubles, Attack the target with your Mid+Min dice. As long as you have at least one bonus created from Insight, treat Suggestion",
               "icon": {
                 "attack": true,
@@ -2508,16 +2544,19 @@
           "principles": [
             {
               "name": "Principle of Levity",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You keep your positive outlook even when all hope is lost. Your spirit is nearly impossible to break.",
+              "minorTwist": "Who did you offend by making light at the wrong time?",
+              "majorTwist": "What has occurred to finally break your good spirits?"
             },
             {
               "name": "Principle of Cosmic Energy",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You have an affinity with cosmic energy. You can interact with cosmic energy with ease.",
+              "minorTwist": "What other energy/element is currently causing your powers to go on the fritz?",
+              "majorTwist": "What source of energy/element is currently dampening all your powers?"
             }
+          ],
+          "collections": [
+            "Daybreak Vol. 1"
           ],
           "powers": [
             {
@@ -2642,7 +2681,7 @@
             {
               "name": "Cosmic Form",
               "type": "I",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "of health instead. Boost yourself using Absorption. Then, remove a penalty on yourself or",
               "icon": {
                 "attack": false,
@@ -2698,7 +2737,7 @@
             {
               "name": "Interposing Jaunt",
               "type": "R",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, do, roll your Teleportation+Red status die and reduce the damage by that much.",
               "icon": {
                 "attack": false,
@@ -2777,16 +2816,19 @@
           "principles": [
             {
               "name": "Principle of The Gearhead",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "You always know the general state of repair or function of an item of technology, whether it’s a simple toaster or an alien orbital defense system.",
+              "minorTwist": "What mechanical device just shorted out?",
+              "majorTwist": "What machine just went terribly off the rails?"
             },
             {
               "name": "Principle of The Mask",
-              "roleplaying": "",
-              "minorTwist": "",
-              "majorTwist": ""
+              "roleplaying": "It is vitally important that you hide your true identity. You have a career that allows you to slip between identities when necessary.",
+              "minorTwist": "What clue did you leave behind towards your real identity?",
+              "majorTwist": "Who from your civilian life is now in imminent danger?"
             }
+          ],
+          "collections": [
+            "Daybreak Vol. 1"
           ],
           "powers": [
             {
@@ -2916,7 +2958,7 @@
             {
               "name": "Absorbed Apparatus",
               "type": "A",
-              "aux": "green",
+              "aux": "yellow",
               "gameText": "and exclusive.",
               "icon": {
                 "attack": false,
@@ -2944,7 +2986,7 @@
             {
               "name": "Sense the Unseen",
               "type": "I",
-              "aux": "yellow",
+              "aux": "red",
               "gameText": "Hinder yourself using Intangibility. Use your Min die. Recover health equal before determining effects.",
               "icon": {
                 "attack": false,

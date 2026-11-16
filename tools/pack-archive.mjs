@@ -207,6 +207,11 @@ function buildHeroActor(hero, folderId, teamKey) {
     const health = hero.health || {};
     const first = hero.principles?.[0] || {};
     const second = hero.principles?.[1] || {};
+    const collectionSlots = ["one", "two", "three", "four", "five", "six"];
+    const collections = Object.fromEntries(collectionSlots.map((key) => [key, ""]));
+    for (const [index, title] of (hero.collections || []).slice(0, 6).entries()) {
+        collections[collectionSlots[index]] = title;
+    }
     return {
         name: hero.name,
         type: "hero",
@@ -237,7 +242,7 @@ function buildHeroActor(hero, folderId, teamKey) {
                 majorTwist: second.majorTwist || ""
             },
             backIssue: { one: "", two: "", three: "", four: "", five: "", six: "" },
-            collections: { one: "", two: "", three: "", four: "", five: "", six: "" },
+            collections,
             collectionsUsed: { one: false, two: false, three: false, four: false, five: false, six: false },
             heroPoints: {
                 game: { one: false, two: false, three: false, four: false, five: false },

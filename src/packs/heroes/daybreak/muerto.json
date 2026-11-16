@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of The Gearhead",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You always know the general state of repair or function of an item of technology, whether it’s a simple toaster or an alien orbital defense system.",
+      "minorTwist": "What mechanical device just shorted out?",
+      "majorTwist": "What machine just went terribly off the rails?"
     },
     "secondPrinciple": {
       "name": "Principle of The Mask",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "It is vitally important that you hide your true identity. You have a career that allows you to slip between identities when necessary.",
+      "minorTwist": "What clue did you leave behind towards your real identity?",
+      "majorTwist": "Who from your civilian life is now in imminent danger?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Daybreak Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -678,12 +678,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.jR0zV6mFyNPnCQvD"
     },
     {
-      "_id": "jPOJtBWEathDFEud",
+      "_id": "sm03z6G8EYHiuRNW",
       "name": "Absorbed Apparatus",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -704,7 +704,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -715,7 +715,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.jPOJtBWEathDFEud"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.sm03z6G8EYHiuRNW"
     },
     {
       "_id": "U5fj3RNFMzs4ChZo",
@@ -758,12 +758,12 @@
       "_key": "!actors.items!G2GVAuo0vvXgIWOi.U5fj3RNFMzs4ChZo"
     },
     {
-      "_id": "ljcFCcGiKJth65Mg",
+      "_id": "Jqy0g02ggipaLGQc",
       "name": "Sense the Unseen",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": false,
           "defend": false,
@@ -784,7 +784,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -795,7 +795,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!G2GVAuo0vvXgIWOi.ljcFCcGiKJth65Mg"
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.Jqy0g02ggipaLGQc"
     },
     {
       "_id": "FTzquM7nsf8Q3qOC",

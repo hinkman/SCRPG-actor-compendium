@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of Mastery",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You have thoroughly studied your own powers and are proud of your mastery of them.",
+      "minorTwist": "How did your powers fail you in the moment?",
+      "majorTwist": "What side effects are you suffering from your powers?"
     },
     "secondPrinciple": {
       "name": "Principle of the Inner Demon",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You have a darkness in you that you strive to keep suppressed. You can connect with your dark side for connection with similar forces.",
+      "minorTwist": "What sinister act comes from tapping into your dark side?",
+      "majorTwist": "What havoc does your dark side inflict as you allow it to take control?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Daybreak Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -638,12 +638,12 @@
       "_key": "!actors.items!aHyZT8e1d7b424Gv.smSnbzumG3ibZmTV"
     },
     {
-      "_id": "GcHpIkbM8UE3EFvH",
+      "_id": "jwTg0fqnPUO3pu41",
       "name": "Conjured Nightmare",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -664,7 +664,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -675,7 +675,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!aHyZT8e1d7b424Gv.GcHpIkbM8UE3EFvH"
+      "_key": "!actors.items!aHyZT8e1d7b424Gv.jwTg0fqnPUO3pu41"
     },
     {
       "_id": "no5H8RGFKNYjlvFb",
@@ -798,12 +798,12 @@
       "_key": "!actors.items!aHyZT8e1d7b424Gv.1OA0wvOgSxFk1jXR"
     },
     {
-      "_id": "NG7OLsOD8ABDbVVl",
+      "_id": "q9byQHxNaIT7u3ZY",
       "name": "Debilitate",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -824,7 +824,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -835,7 +835,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!aHyZT8e1d7b424Gv.NG7OLsOD8ABDbVVl"
+      "_key": "!actors.items!aHyZT8e1d7b424Gv.q9byQHxNaIT7u3ZY"
     },
     {
       "_id": "5SNEsA1fTDtNnFDQ",

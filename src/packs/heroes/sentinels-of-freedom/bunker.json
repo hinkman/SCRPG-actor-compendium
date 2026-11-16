@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of The Defender",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You will put yourself in harm’s way to defend another without a second thought.",
+      "minorTwist": "How do your actions put you in more danger than before?",
+      "majorTwist": "What great sacrifice did you just make to succeed?"
     },
     "secondPrinciple": {
       "name": "Principle of The Tactician",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You are constantly assessing the situation, making plans and backup plans, and then reassessing the situation.",
+      "minorTwist": "What one variable did your plan not account for?",
+      "majorTwist": "What major threat is revealed that invalidates all your plans?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Sentinels of Freedom, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -604,12 +604,12 @@
       "_key": "!actors.items!nBRbTdPejWUr0SJH.gVbsdPQZbeaRkFjb"
     },
     {
-      "_id": "GCsMr9NeKne7oDeL",
+      "_id": "Mo9aE2DAZzzzffj2",
       "name": "Decoupled Barrage",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -630,7 +630,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -641,7 +641,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!nBRbTdPejWUr0SJH.GCsMr9NeKne7oDeL"
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.Mo9aE2DAZzzzffj2"
     },
     {
       "_id": "lgmmf0eM4J2SIc6L",
@@ -724,12 +724,12 @@
       "_key": "!actors.items!nBRbTdPejWUr0SJH.zL4ZLe5Vs2XmHb1c"
     },
     {
-      "_id": "usjHG2140tXfYDzn",
+      "_id": "0M2ofjUVVwCqaBSD",
       "name": "Emergency Reconfiguration",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -750,7 +750,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -761,7 +761,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!nBRbTdPejWUr0SJH.usjHG2140tXfYDzn"
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.0M2ofjUVVwCqaBSD"
     },
     {
       "_id": "BM3UDP2XewqfTIeJ",

@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of the Mask",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "It is vitally important that you hide your true identity. You have a career that allows you to slip between identities when necessary.",
+      "minorTwist": "What clue did you leave behind towards your real identity?",
+      "majorTwist": "Who from your civilian life is now in imminent danger?"
     },
     "secondPrinciple": {
       "name": "Principle of Speed",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You’re fast, but you don’t like to waste time. You like to be on your way to your destinations as quickly as possible.",
+      "minorTwist": "What physical drawbacks do you suffer from going too fast?",
+      "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Daybreak Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -677,12 +677,12 @@
       "_key": "!actors.items!f3m8yUmYGBn8tyIg.N4tVIVVjXca2KMoe"
     },
     {
-      "_id": "vFl4lC6PyKdfUDpQ",
+      "_id": "5cA3SNUGDDa5DW8t",
       "name": "Bowl Over",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": true,
           "defend": false,
@@ -703,7 +703,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -714,7 +714,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!f3m8yUmYGBn8tyIg.vFl4lC6PyKdfUDpQ"
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.5cA3SNUGDDa5DW8t"
     },
     {
       "_id": "67b1jGGzOotntnNz",
@@ -797,12 +797,12 @@
       "_key": "!actors.items!f3m8yUmYGBn8tyIg.XYbH1bMDucjPpO7I"
     },
     {
-      "_id": "Fa5YNz3F1gixGdCP",
+      "_id": "7EIbFujs1GbBCuBd",
       "name": "Slippery Surface",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -823,7 +823,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -834,7 +834,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!f3m8yUmYGBn8tyIg.Fa5YNz3F1gixGdCP"
+      "_key": "!actors.items!f3m8yUmYGBn8tyIg.7EIbFujs1GbBCuBd"
     },
     {
       "_id": "s2e5YgrOEOzjV8KP",

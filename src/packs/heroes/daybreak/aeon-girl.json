@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of Levity",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You keep your positive outlook even when all hope is lost. Your spirit is nearly impossible to break.",
+      "minorTwist": "Who did you offend by making light at the wrong time?",
+      "majorTwist": "What has occurred to finally break your good spirits?"
     },
     "secondPrinciple": {
       "name": "Principle of Cosmic Energy",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You have an affinity with cosmic energy. You can interact with cosmic energy with ease.",
+      "minorTwist": "What other energy/element is currently causing your powers to go on the fritz?",
+      "majorTwist": "What source of energy/element is currently dampening all your powers?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Daybreak Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -646,12 +646,12 @@
       "_key": "!actors.items!99bvd5m0XIaVpGae.ACCRaGBFW10lRQr7"
     },
     {
-      "_id": "6AAOJMr5lpG0xBBf",
+      "_id": "Pr263cHVxsvg8bkr",
       "name": "Cosmic Form",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -672,7 +672,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -683,7 +683,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!99bvd5m0XIaVpGae.6AAOJMr5lpG0xBBf"
+      "_key": "!actors.items!99bvd5m0XIaVpGae.Pr263cHVxsvg8bkr"
     },
     {
       "_id": "sXTBI8KIfk2U4Ps4",
@@ -806,12 +806,12 @@
       "_key": "!actors.items!99bvd5m0XIaVpGae.PST0IZFGleyeNsWV"
     },
     {
-      "_id": "PF5j57aLeiStJkov",
+      "_id": "46QyZpDNMgJ3jOWU",
       "name": "Interposing Jaunt",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": false,
           "defend": false,
@@ -832,7 +832,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -843,7 +843,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!99bvd5m0XIaVpGae.PF5j57aLeiStJkov"
+      "_key": "!actors.items!99bvd5m0XIaVpGae.46QyZpDNMgJ3jOWU"
     },
     {
       "_id": "GSlvZDrai5nEwz1e",

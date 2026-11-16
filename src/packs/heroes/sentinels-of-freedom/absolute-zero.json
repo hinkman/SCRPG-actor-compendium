@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of Dependence",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You are reliant on your coolant suit and cannot normally function without it.",
+      "minorTwist": "How did part of your coolant suit get damaged or lost?",
+      "majorTwist": "How is your dependence on your coolant suit preventing you from functioning as a hero?"
     },
     "secondPrinciple": {
       "name": "Principle of Cold",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You have an affinity to the cold. You can interact with cold temperatures and effects with ease.",
+      "minorTwist": "What other energy/element is currently causing your powers to go on the fritz?",
+      "majorTwist": "What source of energy/element is currently dampening all your powers?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Sentinels of Freedom, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -612,12 +612,12 @@
       "_key": "!actors.items!gmbpqyvg3UW9X6U5.6NvwZrm0zJ8lLAUK"
     },
     {
-      "_id": "KA7GxZkIpXXaeU67",
+      "_id": "tCehh1MebOeOeYkc",
       "name": "Coolant Blast",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -638,7 +638,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -649,7 +649,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!gmbpqyvg3UW9X6U5.KA7GxZkIpXXaeU67"
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.tCehh1MebOeOeYkc"
     },
     {
       "_id": "uk0BPTDZEglgCQNi",
@@ -732,12 +732,12 @@
       "_key": "!actors.items!gmbpqyvg3UW9X6U5.GVIXbZeSNu5MhvG2"
     },
     {
-      "_id": "OhIEam7B2SK9KjCy",
+      "_id": "5OHVqQwBxTPXMzkR",
       "name": "Colder Than Ice",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -758,7 +758,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -769,7 +769,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!gmbpqyvg3UW9X6U5.OhIEam7B2SK9KjCy"
+      "_key": "!actors.items!gmbpqyvg3UW9X6U5.5OHVqQwBxTPXMzkR"
     },
     {
       "_id": "lb5dikqyWqJEH05S",
