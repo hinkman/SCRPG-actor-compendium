@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "The Seer used to be a mortal man who dabbled in extradimensional power to take on heroes such as Fanatic and Argent Adept. Then, he was imprisoned in the Void and has only recently reappeared, his form clearly twisted by his time in the Void.",
+    "tactics": "Seer is able to step in and out of the Void, but not without cost. When he does, he leaves damage to the fabric of reality. He cares little for such things, though — he Hinders his foes and moves about the battlefield with reckless abandon.",
     "groups": "1",
     "groupName": {
       "one": "“Seer”",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "fI1takKMyu7PcuuC",
-      "name": "Stealthy Strike",
+      "_id": "vXP2qPPpJanndKaV",
+      "name": "Void Host",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Ninjas have a +1 to Attacks and Hinders made against combatants that are unaware of them or who have lost track of them.</p>",
+        "description": "<p>Whenever Seer takes a Hinder action, make the resulting penalty Persistent and Exclusive. Then, Seer may end up anywhere else in the scene.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!cbKT8XJr1a2x5ACF.fI1takKMyu7PcuuC"
+      "_key": "!actors.items!cbKT8XJr1a2x5ACF.vXP2qPPpJanndKaV"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "lieutenant",
-      "description": "Sneaking unseen through defenses, striking from the shadows, and wielding specialized weapons with great skill are all hallmarks of the ninja.",
       "sourcePage": 416,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "When you’re a big fella with big fists, sometimes you just lean into that.",
+    "tactics": "Pugilists are all about Attacking. They’ll only take another action if they really need to.",
     "groups": "1",
     "groupName": {
       "one": "Mean Streets Pugilist",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "K0qDesKnW2fTBJee",
-      "name": "Unstable Ignition",
+      "_id": "YnAAs4yG39oZUQwB",
+      "name": "Scrapper",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Whenever Firearm Attacks, roll his die twice and use the higher result. If he rolled the same number twice, reduce his die size by one.</p>",
+        "description": "<p>Mean Streets Pugilists have a +1 to Attack actions.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,43 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!k6vApg81OK6UZQnv.K0qDesKnW2fTBJee"
-    },
-    {
-      "_id": "nVxoDDyGZ4yAPl9N",
-      "name": "Firewall",
-      "type": "minionForm",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "description": "<p>Whenever Firearm succeeds at his save, use that roll as an Attack against his attacker.</p>",
-        "bonus": "one",
-        "group": 1
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 100000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!k6vApg81OK6UZQnv.nVxoDDyGZ4yAPl9N"
+      "_key": "!actors.items!k6vApg81OK6UZQnv.YnAAs4yG39oZUQwB"
     }
   ],
   "effects": [],
@@ -103,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "Mean Streets Rioter Mean Streets Rioter Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
       "sourcePage": 414,
       "dieTypeKnown": false
     }
@@ -112,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

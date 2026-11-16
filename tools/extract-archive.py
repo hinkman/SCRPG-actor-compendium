@@ -1053,124 +1053,247 @@ def extract_villains(doc: pymupdf.Document) -> dict:
     return {"teams": list(teams.values())}
 
 
+MINION_TEAM_HEADERS = {
+    404: ("aliens", "Aliens"),
+    406: ("blade-battalion", "Blade Battalion"),
+    408: ("blade-drones", "Blade Drones"),
+    409: ("devices", "Devices"),
+    411: ("magmarian-foes", "Magmarian Foes"),
+    413: ("thematic-enemies", "Thematic Enemies"),
+    414: ("typical-combatants", "Typical Combatants"),
+}
+
+MINION_COL_SPLIT = 300.0
+MINION_NAME_CHROME = CHROME | {
+    "Aliens",
+    "Blade",
+    "Battalion",
+    "Devices",
+    "Blade Drones",
+    "Magmarian Foes",
+    "Thematic Enemies",
+    "Typical Combatants",
+}
+
+
+def _join_span_text(parts: list[str]) -> str:
+    return re.sub(r"\s+", " ", " ".join(p for p in parts if p)).strip()
+
+
+def _minion_name_column(name_x: float) -> str:
+    return "left" if name_x < 320 else "right"
+
+
+def _minion_section_column(sec_x: float) -> str:
+    return "left" if sec_x < 200 else "right"
+
+
+def _minion_column_x_range(col: str) -> tuple[float, float]:
+    if col == "left":
+        return (40.0, MINION_COL_SPLIT)
+    return (MINION_COL_SPLIT - 5.0, 560.0)
+
+
+def parse_minion_page(spans: list[dict], book: int) -> list[dict]:
+    """Parse Archive minion/lieutenant entries on one page via span geometry.
+
+    PDF text order mixes entries; Description/Ability/Tactics belong to the
+    name whose Y-band and column (left/right) own that section header.
+    """
+    name_cands = [
+        s
+        for s in spans
+        if 19.5 <= s["size"] <= 22.5
+        and s["y"] <= 700
+        and s["t"] not in MINION_NAME_CHROME
+        and not re.fullmatch(r"\d{3}", s["t"])
+        and "Minions" not in s["t"]
+    ]
+    names: list[dict] = []
+    for span in sorted(name_cands, key=lambda z: (z["y"], z["x"])):
+        if any(abs(span["y"] - n["y"]) < 8 and span["t"] == n["name"] for n in names):
+            continue
+        roles = [
+            r
+            for r in spans
+            if r["t"] in {"Minion", "Lieutenant"} and span["y"] < r["y"] < span["y"] + 40
+        ]
+        if not roles:
+            continue
+        role = min(roles, key=lambda r: (abs(r["x"] - (span["x"] + 40)), r["y"]))
+        if abs(role["x"] - span["x"]) > 220 and abs(role["y"] - span["y"]) > 35:
+            continue
+        names.append(
+            {
+                "name": span["t"],
+                "x": span["x"],
+                "y": span["y"],
+                "role": role["t"].lower(),
+                "col": _minion_name_column(span["x"]),
+            }
+        )
+
+    sections = [
+        s for s in spans if s["t"] in {"Description", "Ability", "Tactics"} and 11 <= s["size"] <= 13
+    ]
+    desc_headers = [s for s in sections if s["t"] == "Description"]
+    ownership: dict[int, dict] = {}
+    for desc in desc_headers:
+        dcol = _minion_section_column(desc["x"])
+        cands = [n for n in names if n["col"] == dcol and n["y"] < desc["y"] - 5]
+        if not cands:
+            cands = [n for n in names if n["y"] < desc["y"] - 5]
+        if not cands:
+            continue
+        ownership[id(desc)] = min(
+            cands, key=lambda n: (desc["y"] - n["y"]) + abs(n["x"] - desc["x"]) * 0.3
+        )
+
+    members: list[dict] = []
+    for entry in names:
+        my_descs = [d for d in desc_headers if ownership.get(id(d)) is entry]
+        if not my_descs:
+            members.append(
+                {
+                    "name": entry["name"],
+                    "role": entry["role"],
+                    "kind": entry["role"],
+                    "description": "",
+                    "tactics": "",
+                    "abilities": [],
+                    "typicalDie": "d8",
+                    "dieTypeKnown": False,
+                    "sourcePage": book,
+                    "gaps": ["Missing Description block for this entry."],
+                }
+            )
+            continue
+
+        desc = my_descs[0]
+        dcol = _minion_section_column(desc["x"])
+        x_min, x_max = _minion_column_x_range(dcol)
+        later = [
+            d
+            for d in desc_headers
+            if _minion_section_column(d["x"]) == dcol and d["y"] > desc["y"] + 10
+        ]
+        y_max = later[0]["y"] - 2 if later else 730.0
+        later_names = [n for n in names if n["col"] == entry["col"] and n["y"] > entry["y"] + 10]
+        if later_names:
+            y_max = min(y_max, later_names[0]["y"] - 2)
+
+        my_secs = sorted(
+            [
+                s
+                for s in sections
+                if _minion_section_column(s["x"]) == dcol and entry["y"] + 5 < s["y"] < y_max
+            ],
+            key=lambda s: s["y"],
+        )
+
+        def body_between(y0: float, y1: float) -> str:
+            parts = [
+                s
+                for s in spans
+                if s["size"] <= 13
+                and s["t"] not in {"Description", "Ability", "Tactics"}
+                and y0 < s["y"] < y1
+                and x_min <= s["x"] <= x_max
+                and s["y"] <= 720
+            ]
+            parts.sort(key=lambda z: (round(z["y"], 1), z["x"]))
+            return _join_span_text([p["t"] for p in parts])
+
+        description = ""
+        tactics = ""
+        abilities: list[dict] = []
+        for j, sec in enumerate(my_secs):
+            y0 = sec["y"] + 1
+            y1 = my_secs[j + 1]["y"] - 1 if j + 1 < len(my_secs) else y_max
+            if sec["t"] == "Description":
+                description = body_between(y0, y1)
+            elif sec["t"] == "Tactics":
+                tactics = body_between(y0, y1)
+            elif sec["t"] == "Ability":
+                ab_spans = [
+                    s
+                    for s in spans
+                    if y0 < s["y"] < y1
+                    and x_min <= s["x"] <= x_max
+                    and s["size"] <= 13
+                    and s["t"] not in {"Description", "Ability", "Tactics"}
+                ]
+                ab_spans.sort(key=lambda z: (round(z["y"], 1), z["x"]))
+                current: dict | None = None
+                for span in ab_spans:
+                    title = None
+                    rest = None
+                    if span["t"].endswith(":") and len(span["t"]) < 45:
+                        title = span["t"][:-1].strip()
+                    elif ":" in span["t"] and len(span["t"].split(":", 1)[0]) < 40:
+                        title, rest = span["t"].split(":", 1)
+                        title = title.strip()
+                        rest = rest.strip()
+                    if title:
+                        if current:
+                            abilities.append(current)
+                        current = {"name": title, "description": rest or ""}
+                    elif current is not None:
+                        current["description"] = _join_span_text(
+                            [current["description"], span["t"]]
+                        )
+                if current:
+                    abilities.append(current)
+                for ability in abilities:
+                    ability["description"] = re.sub(r"\s+", " ", ability["description"]).strip()
+
+        gaps: list[str] = []
+        if not description:
+            gaps.append("Empty description.")
+        if not tactics:
+            gaps.append("Empty tactics.")
+        if not abilities:
+            gaps.append("No abilities parsed.")
+
+        members.append(
+            {
+                "name": entry["name"],
+                "role": entry["role"],
+                "kind": entry["role"],
+                "description": description,
+                "tactics": tactics,
+                "abilities": abilities,
+                "typicalDie": "d8",
+                "dieTypeKnown": False,
+                "sourcePage": book,
+                "gaps": gaps,
+            }
+        )
+    return members
+
+
 def extract_minions(doc: pymupdf.Document) -> dict:
     """Parse minion/lieutenant entries from book pages 404–417 into team folders."""
     teams: dict[str, dict] = {}
     current_team = {"key": "general", "label": "General", "members": []}
     teams["general"] = current_team
 
-    # Known team header pages / names from chapter layout (size-30 titles)
-    team_headers = {
-        404: ("aliens", "Aliens"),
-        406: ("blade-battalion", "Blade Battalion"),
-        408: ("blade-drones", "Blade Drones"),
-        409: ("devices", "Devices"),
-        411: ("magmarian-foes", "Magmarian Foes"),
-        413: ("thematic-enemies", "Thematic Enemies"),
-        414: ("typical-combatants", "Typical Combatants"),
-    }
-
-    # Collect entries by scanning for duplicated Name lines + Minion/Lieutenant tags
     for book in range(404, 418):
-        if book in team_headers:
-            key, label = team_headers[book]
+        if book in MINION_TEAM_HEADERS:
+            key, label = MINION_TEAM_HEADERS[book]
             current_team = teams.setdefault(key, {"key": key, "label": label, "members": []})
-        text = page_text(book_page(doc, book))
-        lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-        # Find patterns: Name repeated twice, then Minion or Lieutenant nearby
-        i = 0
-        while i < len(lines) - 1:
-            a, b = lines[i], lines[i + 1]
-            if (
-                a == b
-                and a not in CHROME
-                and len(a) < 60
-                and not a.endswith(":")
-                and not a.startswith("Whenever")
-                and a not in {"Minion", "Lieutenant"}
-            ):
-                # look ahead for type
-                kind = None
-                for j in range(i, min(i + 8, len(lines))):
-                    if lines[j] in {"Minion", "Lieutenant"}:
-                        kind = lines[j].lower()
-                        break
-                # also check previous lines
-                if not kind:
-                    for j in range(max(0, i - 4), i):
-                        if lines[j] in {"Minion", "Lieutenant"}:
-                            kind = lines[j].lower()
-                            break
-                if kind and not re.fullmatch(r"\d{3}", a):
-                    # description: following prose until Ability
-                    desc_parts = []
-                    abilities = []
-                    k = i + 2
-                    while k < len(lines) and lines[k] not in {"Ability", "Ability OPTIONS", "Tactics"}:
-                        if lines[k] in {"Minion", "Lieutenant", a}:
-                            k += 1
-                            continue
-                        if lines[k] in CHROME or re.fullmatch(r"\d{3}", lines[k]):
-                            k += 1
-                            continue
-                        desc_parts.append(lines[k])
-                        k += 1
-                    # abilities: lines like "Name: text"
-                    while k < len(lines):
-                        if lines[k] in {"Tactics", "Description"}:
-                            break
-                        if lines[k] == "Ability":
-                            k += 1
-                            continue
-                        if ":" in lines[k]:
-                            title, _, body = lines[k].partition(":")
-                            if len(title) > 60:
-                                k += 1
-                                continue
-                            body_parts = [body.strip()]
-                            k += 1
-                            while k < len(lines) and ":" not in lines[k] and lines[k] not in {
-                                "Tactics",
-                                "Description",
-                                "Ability",
-                                "Minion",
-                                "Lieutenant",
-                            }:
-                                if lines[k] not in CHROME and not re.fullmatch(r"\d{3}", lines[k]):
-                                    body_parts.append(lines[k])
-                                k += 1
-                            abilities.append(
-                                {
-                                    "name": title.strip(),
-                                    "description": re.sub(r"\s+", " ", " ".join(body_parts)).strip(),
-                                }
-                            )
-                            continue
-                        k += 1
-                    member = {
-                        "name": a,
-                        "kind": kind,
-                        "team": current_team["key"],
-                        "description": re.sub(r"\s+", " ", " ".join(desc_parts)).strip(),
-                        "abilities": abilities,
-                        "typicalDie": "d8",
-                        "dieTypeKnown": False,
-                        "sourcePage": book,
-                    }
-                    # dedupe by name within team
-                    if not any(m["name"] == a for m in current_team["members"]):
-                        current_team["members"].append(member)
-                    i += 2
-                    continue
-            i += 1
+        members = parse_minion_page(page_spans(book_page(doc, book)), book)
+        for member in members:
+            member["team"] = current_team["key"]
+            if any(m["name"] == member["name"] for m in current_team["members"]):
+                continue
+            current_team["members"].append(member)
 
-    # Drop empty general if unused
     teams_list = [t for t in teams.values() if t["members"]]
     return {
         "teams": teams_list,
         "gaps": [
-            "Minion/lieutenant die sizes are often icon-only in the PDF; defaulted to d8.",
-            "Some multi-entry pages may miss alternate names if text extraction collapsed labels.",
+            "Minion/lieutenant die sizes are icon-only in the PDF; defaulted to d8.",
         ],
     }
 

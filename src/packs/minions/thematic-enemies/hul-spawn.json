@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "The spawn of the dread xxtz’Hulissh are as varied in appearance as the leaves from a thousand trees or the flakes of snow in a blizzard. They’re also incredibly creepy.",
+    "tactics": "Hul-Spawn are the uncountable inhabitants of the demon-dimension within the gaping maw of xxtz’Hulissh, and he can let them loose in great numbers. They are not native to this realm, and seek to leave it as quickly as possible by either throwing themselves into combat or sacrificing themselves for their dread leader.",
     "groups": "1",
     "groupName": {
       "one": "Hul-Spawn",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "6iXVCSDLaLHEQj2m",
-      "name": "If You See One",
+      "_id": "zCtm9kG3AkKjVY6U",
+      "name": "Gaze of the Archfiend",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>While a Demonoid Insect is larger than a , it can use an action to roll its die to add that many sized Demonoid Insects to the scene.</p>",
+        "description": "<p>When Hul-Spawn take a Hinder action, they may destroy themselves to apply that penalty to all non-Hulissh targets that can see the Hul-Spawn and/or xxtz’Hulissh.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!HHSWP5VGzzKeYnJE.6iXVCSDLaLHEQj2m"
+      "_key": "!actors.items!HHSWP5VGzzKeYnJE.zCtm9kG3AkKjVY6U"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "thematic-enemies",
-      "kind": "minion",
-      "description": "Thematic Enemies Homunculus Homunculus Demonoid Insect Demonoid Insect Fleshchildren Fleshchildren This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
       "sourcePage": 413,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

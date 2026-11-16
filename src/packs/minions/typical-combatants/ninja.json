@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Sneaking unseen through defenses, striking from the shadows, and wielding specialized weapons with great skill are all hallmarks of the ninja.",
+    "tactics": "Ninjas stick to the shadows, leaping in and out of combat to distract and damage their foes without ever losing the upper hand of stealth and surprise.",
     "groups": "1",
     "groupName": {
       "one": "Ninja",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "fC0CCWYD5YxFjrbr",
+      "name": "Stealthy Strike",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Ninjas have a +1 to Attacks and Hinders made against combatants that are unaware of them or who have lost track of them.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!UKYQG8EsLM8BXsBc.fC0CCWYD5YxFjrbr"
+    }
+  ],
   "effects": [],
   "folder": "8yoyf8EYLbV3NdiJ",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "",
       "sourcePage": 416,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

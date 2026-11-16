@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "This most basic drone is mostly used for information gathering, or for timely explosions.",
+    "tactics": "Ambulatory Drones are often deployed in trios to disrupt enemy formations, knowing that even in failure, they’ll at least make a mess.",
     "groups": "1",
     "groupName": {
       "one": "Ambulatory Drone",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-drones",
-      "kind": "minion",
-      "description": "Defensive Drone Defensive Drone Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
       "sourcePage": 408,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

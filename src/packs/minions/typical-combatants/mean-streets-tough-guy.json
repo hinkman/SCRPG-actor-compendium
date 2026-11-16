@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Toughs speak loudly and carry a big stick with nails in it! Nuance is not one of their strong suits.",
+    "tactics": "As Toughs are particularly hardy, they like to get to close range with their foes and stay there, letting other thugs handle the more elaborate parts of whatever conflict they’re engaged in.",
     "groups": "1",
     "groupName": {
       "one": "Mean Streets Tough Guy",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "NTKIIfZfWnfGNhzW",
-      "name": "Pistols Akimbo",
+      "_id": "lPrqEIB5PcjQX1zR",
+      "name": "Big Fella",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>When Mean Streets Shooters make Attack actions, they can Attack up to 3 targets in range.</p>",
+        "description": "<p>Mean Streets Toughs have a +1 to their save rolls.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!RohSBZHqEMXOkrx9.NTKIIfZfWnfGNhzW"
+      "_key": "!actors.items!RohSBZHqEMXOkrx9.lPrqEIB5PcjQX1zR"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "Mean Streets Shooter Mean Streets Shooter These thugs aren’t particularly good at aiming, shooting, or any of the proper care and cleaning of their guns, but they have guns and a willingness to use them.",
       "sourcePage": 415,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

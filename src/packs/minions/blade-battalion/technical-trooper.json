@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Entry-level Blade Battalion troops are frequently outfitted with special gear to help compensate for their lack of experience. If they can survive their first year of service, they are considered above average.",
+    "tactics": "Technical Troopers depend on other troops to be any good at all. When alongside allies, they stand firm and even rush their opponents, but without support, they scatter.",
     "groups": "1",
     "groupName": {
       "one": "Technical Trooper",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "CfM9teFmlrZbEre4",
+      "name": "Protégé",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>If any other minions or lieutenants are nearby, this minion has a +1 to their actions. If not, they have a -1 to their actions.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!88ugrRDyM2ev7T4I.CfM9teFmlrZbEre4"
+    }
+  ],
   "effects": [],
   "folder": "SuEVG788fN24PhAr",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-battalion",
-      "kind": "minion",
-      "description": "Roboticized Trooper Roboticized Trooper",
       "sourcePage": 407,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

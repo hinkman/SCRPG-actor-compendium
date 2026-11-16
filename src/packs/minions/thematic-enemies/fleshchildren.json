@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "These very normal looking and seeming people are, in fact, flesh and metal creations of the nefarious Biomancer! But you might have never figured it out...",
+    "tactics": "While not yet discovered or activated, Fleshchildren seek to be as “normal” as possible. Most don’t even know they’re not the real deal, yet! However, once revealed, they fight without regard for their survival, mobbing whoever Biomancer directs",
     "groups": "1",
     "groupName": {
       "one": "Fleshchildren",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "LzESCrLCFLYkRCs1",
-      "name": "If You See One",
+      "_id": "VpqE28UhDvUkOnQu",
+      "name": "Blend In",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>While a Demonoid Insect is larger than a , it can use an action to roll its die to add that many sized Demonoid Insects to the scene.</p>",
+        "description": "<p>Fleshchildren have +1 to all actions while not yet exposed as a Fleshchild.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!i4AKnz9ktCDL49tC.LzESCrLCFLYkRCs1"
+      "_key": "!actors.items!i4AKnz9ktCDL49tC.VpqE28UhDvUkOnQu"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "thematic-enemies",
-      "kind": "minion",
-      "description": "This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
       "sourcePage": 413,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

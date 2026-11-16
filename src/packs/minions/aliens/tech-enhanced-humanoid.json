@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Unsurprisingly, many aliens have technology that far outstrips the technological level that humanity has reached. Unfortunately, many aliens use that tech as weaponry.",
+    "tactics": "Tech-Enhanced Humanoids work well in pairs, keeping their foes on their toes. They tend to go after weaker combatants, whittling down their opposition one target at a time.",
     "groups": "1",
     "groupName": {
       "one": "Tech-Enhanced Humanoid",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "LHRIQlGBaVud0A9g",
-      "name": "Brain Power",
+      "_id": "i8snL9uCEQGdBQep",
+      "name": "Alien Gadgetry",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Mentally-Empowered Humanoids have a +1 to Hinder or Overcome actions.</p>",
+        "description": "<p>Tech-Enhanced Humanoids have a +1 to Attack actions.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oUd3wtFCUWDLo7PF.LHRIQlGBaVud0A9g"
+      "_key": "!actors.items!oUd3wtFCUWDLo7PF.i8snL9uCEQGdBQep"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "aliens",
-      "kind": "minion",
-      "description": "Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
       "sourcePage": 405,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

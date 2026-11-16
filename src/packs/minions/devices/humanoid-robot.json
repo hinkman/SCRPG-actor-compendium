@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Some humanoid robots have been programmed to follow a series of laws and serve their masters and creators. Others are created to have a semblance of free will or at least act like they do.",
+    "tactics": "Humanoid Robots are frequently jack-of-all-trades. They can be programmed for any sort of actions, so their tactics depend entirely on the type of situation they find themselves in. Much like humans. What is humanity, even?",
     "groups": "1",
     "groupName": {
       "one": "Humanoid Robot",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "tgdUNlTvVkRC07Ky",
+      "name": "Metal Parts",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Humanoid Robots have a +1 to their save rolls.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RcpIemEWgXuO0iSQ.tgdUNlTvVkRC07Ky"
+    }
+  ],
   "effects": [],
   "folder": "y7Nbp19rKOVIwasz",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "devices",
-      "kind": "minion",
-      "description": "",
       "sourcePage": 410,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

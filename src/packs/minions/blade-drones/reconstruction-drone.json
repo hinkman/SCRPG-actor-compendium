@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Reconstruction drones are mostly spare parts, by volume. They need very few components to operate and are built to cannibalize themselves and other mechanical devices to repair their fellow drones in the field.",
+    "tactics": "These drones can keep an army of drones operating for a long time. They avoid conflict, repairing the",
     "groups": "1",
     "groupName": {
       "one": "Reconstruction Drone",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "Im7U3kCD3qgqtLtl",
-      "name": "Volatile",
+      "_id": "DY26BhxW34FgyykG",
+      "name": "Field Repair",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets.</p>",
+        "description": "<p>This drone can make an Overcome action to repair another drone. It does not have to take minor twists. On a success, it restores the drone it is repairing to its starting die size.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!YhWsnwWE6LORTKyZ.Im7U3kCD3qgqtLtl"
+      "_key": "!actors.items!YhWsnwWE6LORTKyZ.DY26BhxW34FgyykG"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-drones",
-      "kind": "minion",
-      "description": "This most basic drone is mostly used for information gathering, or for timely explosions.",
       "sourcePage": 408,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "A former gladiator of the now-destroyed Bloodsworn Colosseum, Dymkharn the Fearless may be stuck on Earth, but he still finds plenty of fights worth fighting here on this new world.",
+    "tactics": "Dymkharn always wants to take on the biggest threat in the room, or ideally the biggest pair of threats at once. He’ll attack the two biggest or most powerful looking targets, getting in extra attacks wherever he can.",
     "groups": "1",
     "groupName": {
       "one": "“Dymkharn the Gladiator”",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "gB72AiskmdGYdeIR",
-      "name": "Alien Venom",
+      "_id": "tlBXyQprGuFSHHTO",
+      "name": "Twin Blades",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Whenever a Bestial Chomper damages a target, that target gains a -1 penalty.</p>",
+        "description": "<p>Whenever Dymkharn Attacks, he can Attack up to two close targets with the same roll.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,43 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!WbpKuDDPAnfTHYSy.gB72AiskmdGYdeIR"
+      "_key": "!actors.items!WbpKuDDPAnfTHYSy.tlBXyQprGuFSHHTO"
+    },
+    {
+      "_id": "UNx5KWcB8Tb6cokR",
+      "name": "Fearless",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever Dymkharn succeeds at his save, he gains a +1 bonus to his next Attack.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!WbpKuDDPAnfTHYSy.UNx5KWcB8Tb6cokR"
     }
   ],
   "effects": [],
@@ -72,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "aliens",
-      "kind": "lieutenant",
-      "description": "It’s hard to imagine the type of planet that this rock-plated foe originated from. It evolved to have jaws strong enough to crush rocks, sharp teeth and fangs, and an appetite for costumed heroes, apparently.",
       "sourcePage": 404,
       "dieTypeKnown": false
     }
@@ -81,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Very few Blade Battalion Covert Troopers have ever been seen. That means they’re good at their job.",
+    "tactics": "Covert Troopers get in, get the job done, and get out. If they find themselves in an actual fight, they prefer to take cover, usually depending on other troops as a distraction.",
     "groups": "1",
     "groupName": {
       "one": "Covert Trooper",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "gWfvylmIJhXL9lKN",
+      "name": "Without a Trace",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever a Covert Trooper takes an action while unobserved or undetected, it rolls its die twice and takes the higher result.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ewqJhb8Mg4zgN6dC.gWfvylmIJhXL9lKN"
+    }
+  ],
   "effects": [],
   "folder": "SuEVG788fN24PhAr",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-battalion",
-      "kind": "minion",
-      "description": "",
       "sourcePage": 406,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

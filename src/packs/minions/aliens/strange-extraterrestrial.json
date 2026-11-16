@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "This floating creature seems from a place with a very different atmosphere and gravity than Earth. It moves freely and easily, considering its unwieldy appearance.",
+    "tactics": "Strange Extraterrestrials are naturally loners, due to their tendency to lash out at others. It’s rare — and dangerous — to find a group of them.",
     "groups": "1",
     "groupName": {
       "one": "strange extraterrestrial",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "B8Pyl7amP3Am2MRp",
-      "name": "Brain Power",
+      "_id": "BMGLi9wuOqfA6Zln",
+      "name": "Lashing",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Mentally-Empowered Humanoids have a +1 to Hinder or Overcome actions.</p>",
+        "description": "<p>Whenever a Strange Extraterrestrial makes an Attack, roll its die twice and take the lower result. Apply that result as an attack against all nearby opposed targets.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!UbdybcJA04nhgUuJ.B8Pyl7amP3Am2MRp"
+      "_key": "!actors.items!UbdybcJA04nhgUuJ.BMGLi9wuOqfA6Zln"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "aliens",
-      "kind": "minion",
-      "description": "Mentally-Empowered Humanoid Mentally-Empowered Humanoid Tech-Enhanced Humanoid Tech-Enhanced Humanoid Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
       "sourcePage": 405,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

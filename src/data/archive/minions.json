@@ -5,10 +5,11 @@
       "label": "Aliens",
       "members": [
         {
-          "name": "“Dymkharn the Gladiator”",
-          "kind": "lieutenant",
-          "team": "aliens",
+          "name": "Bestial Chomper",
+          "role": "minion",
+          "kind": "minion",
           "description": "It’s hard to imagine the type of planet that this rock-plated foe originated from. It evolved to have jaws strong enough to crush rocks, sharp teeth and fangs, and an appetite for costumed heroes, apparently.",
+          "tactics": "Bestial Chompers like to fight in packs, letting the venom from their bites wear down their opponents as they try to tear them into bite-sized pieces.",
           "abilities": [
             {
               "name": "Alien Venom",
@@ -17,38 +18,38 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 404
+          "sourcePage": 404,
+          "gaps": [],
+          "team": "aliens"
         },
         {
-          "name": "Bestial Chomper",
-          "kind": "minion",
-          "team": "aliens",
-          "description": "",
-          "abilities": [],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 404
-        },
-        {
-          "name": "strange extraterrestrial",
-          "kind": "minion",
-          "team": "aliens",
-          "description": "Mentally-Empowered Humanoid Mentally-Empowered Humanoid Tech-Enhanced Humanoid Tech-Enhanced Humanoid Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
+          "name": "“Dymkharn the Gladiator”",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "A former gladiator of the now-destroyed Bloodsworn Colosseum, Dymkharn the Fearless may be stuck on Earth, but he still finds plenty of fights worth fighting here on this new world.",
+          "tactics": "Dymkharn always wants to take on the biggest threat in the room, or ideally the biggest pair of threats at once. He’ll attack the two biggest or most powerful looking targets, getting in extra attacks wherever he can.",
           "abilities": [
             {
-              "name": "Brain Power",
-              "description": "Mentally-Empowered Humanoids have a +1 to Hinder or Overcome actions."
+              "name": "Twin Blades",
+              "description": "Whenever Dymkharn Attacks, he can Attack up to two close targets with the same roll."
+            },
+            {
+              "name": "Fearless",
+              "description": "Whenever Dymkharn succeeds at his save, he gains a +1 bonus to his next Attack."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 405
+          "sourcePage": 404,
+          "gaps": [],
+          "team": "aliens"
         },
         {
           "name": "Mentally-Empowered Humanoid",
+          "role": "minion",
           "kind": "minion",
-          "team": "aliens",
-          "description": "Tech-Enhanced Humanoid Tech-Enhanced Humanoid Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
+          "description": "Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
+          "tactics": "Mentally-Empowered Humanoids tend to be problem solvers rather than combatants. In a combat situation, they seek to find ways to trick their opponents, rather than match them in violence.",
           "abilities": [
             {
               "name": "Brain Power",
@@ -57,22 +58,45 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 405
+          "sourcePage": 405,
+          "gaps": [],
+          "team": "aliens"
         },
         {
           "name": "Tech-Enhanced Humanoid",
+          "role": "minion",
           "kind": "minion",
-          "team": "aliens",
-          "description": "Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
+          "description": "Unsurprisingly, many aliens have technology that far outstrips the technological level that humanity has reached. Unfortunately, many aliens use that tech as weaponry.",
+          "tactics": "Tech-Enhanced Humanoids work well in pairs, keeping their foes on their toes. They tend to go after weaker combatants, whittling down their opposition one target at a time.",
           "abilities": [
             {
-              "name": "Brain Power",
-              "description": "Mentally-Empowered Humanoids have a +1 to Hinder or Overcome actions."
+              "name": "Alien Gadgetry",
+              "description": "Tech-Enhanced Humanoids have a +1 to Attack actions."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 405
+          "sourcePage": 405,
+          "gaps": [],
+          "team": "aliens"
+        },
+        {
+          "name": "strange extraterrestrial",
+          "role": "minion",
+          "kind": "minion",
+          "description": "This floating creature seems from a place with a very different atmosphere and gravity than Earth. It moves freely and easily, considering its unwieldy appearance.",
+          "tactics": "Strange Extraterrestrials are naturally loners, due to their tendency to lash out at others. It’s rare — and dangerous — to find a group of them.",
+          "abilities": [
+            {
+              "name": "Lashing",
+              "description": "Whenever a Strange Extraterrestrial makes an Attack, roll its die twice and take the lower result. Apply that result as an attack against all nearby opposed targets."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 405,
+          "gaps": [],
+          "team": "aliens"
         }
       ]
     },
@@ -81,10 +105,29 @@
       "label": "Blade Battalion",
       "members": [
         {
+          "name": "Covert Trooper",
+          "role": "minion",
+          "kind": "minion",
+          "description": "Very few Blade Battalion Covert Troopers have ever been seen. That means they’re good at their job.",
+          "tactics": "Covert Troopers get in, get the job done, and get out. If they find themselves in an actual fight, they prefer to take cover, usually depending on other troops as a distraction.",
+          "abilities": [
+            {
+              "name": "Without a Trace",
+              "description": "Whenever a Covert Trooper takes an action while unobserved or undetected, it rolls its die twice and takes the higher result."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 406,
+          "gaps": [],
+          "team": "blade-battalion"
+        },
+        {
           "name": "Battalion Commander",
+          "role": "lieutenant",
           "kind": "lieutenant",
-          "team": "blade-battalion",
           "description": "Blade Battalion Commanders have all risen through the ranks. This is an impressive feat, considering how dangerous life is as a Blade Battalion Trooper. As a result, they should be feared not just because of the troops under their command, but also due to their own combat capabilities.",
+          "tactics": "Battalion Commanders tend to neither lead from the front nor the back - they like to be in the midst of their troops. No strangers to combat themselves, they want to be close enough to the heroes to take advantage of their baton sidearms, as well as effectively boost their allied minions.",
           "abilities": [
             {
               "name": "Hold The Line",
@@ -97,47 +140,63 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 406
-        },
-        {
-          "name": "Covert Trooper",
-          "kind": "minion",
-          "team": "blade-battalion",
-          "description": "",
-          "abilities": [],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 406
+          "sourcePage": 406,
+          "gaps": [],
+          "team": "blade-battalion"
         },
         {
           "name": "Force Trooper",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-battalion",
-          "description": "Technical Trooper Technical Trooper Roboticized Trooper Roboticized Trooper",
-          "abilities": [],
+          "description": "Only the stoutest and strongest soldiers in Baron Blade’s armies gain the distinction of Force Trooper. Outfitted with heavy armor and powerful melee weapons, Force Troopers are the gatecrashers of the Blade Battalion.",
+          "tactics": "Given their size and their armor, Force Troopers seek to take damage so their less defensive allies have room to do their jobs. They attempt to engage the most dangerous targets to distract them.",
+          "abilities": [
+            {
+              "name": "Tough",
+              "description": "Force Troopers have a +2 to their save roll."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 407
+          "sourcePage": 407,
+          "gaps": [],
+          "team": "blade-battalion"
         },
         {
           "name": "Technical Trooper",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-battalion",
-          "description": "Roboticized Trooper Roboticized Trooper",
-          "abilities": [],
+          "description": "Entry-level Blade Battalion troops are frequently outfitted with special gear to help compensate for their lack of experience. If they can survive their first year of service, they are considered above average.",
+          "tactics": "Technical Troopers depend on other troops to be any good at all. When alongside allies, they stand firm and even rush their opponents, but without support, they scatter.",
+          "abilities": [
+            {
+              "name": "Protégé",
+              "description": "If any other minions or lieutenants are nearby, this minion has a +1 to their actions. If not, they have a -1 to their actions."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 407
+          "sourcePage": 407,
+          "gaps": [],
+          "team": "blade-battalion"
         },
         {
           "name": "Roboticized Trooper",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-battalion",
-          "description": "",
-          "abilities": [],
+          "description": "These robotic soldiers are more metal than man. They wield fearsome bionic weapons built into their forms.",
+          "tactics": "Roboticized Troopers attempt to engage and isolate individual heroes, Hindering them first to take advantage of their ability.",
+          "abilities": [
+            {
+              "name": "Battalion Powers",
+              "description": "When Hindering a hero or Attacking a hero with a penalty, roll their die twice and use the higher result."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 407
+          "sourcePage": 407,
+          "gaps": [],
+          "team": "blade-battalion"
         }
       ]
     },
@@ -147,24 +206,28 @@
       "members": [
         {
           "name": "Hover Drone",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-drones",
-          "description": "Ambulatory Drone Ambulatory Drone Defensive Drone Defensive Drone Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
+          "description": "Baron Blade’s Hover Drones have a seemingly- impossible maximum hover height, able to reach the upper atmosphere under their own power. As a trade-off, they’re quite light and can carry very little.",
+          "tactics": "Hover Drones attempt to stay high above the fight, imparting bonuses to their allies and providing intel without being part of the fight themselves.",
           "abilities": [
             {
-              "name": "Volatile",
-              "description": "When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets."
+              "name": "Observation",
+              "description": "When Boosting using info gained from observation, Hover Drones can make that bonus Persistent and Exclusive by reducing their die size by 1 (minimum )."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 408
+          "sourcePage": 408,
+          "gaps": [],
+          "team": "blade-drones"
         },
         {
           "name": "Ambulatory Drone",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-drones",
-          "description": "Defensive Drone Defensive Drone Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
+          "description": "This most basic drone is mostly used for information gathering, or for timely explosions.",
+          "tactics": "Ambulatory Drones are often deployed in trios to disrupt enemy formations, knowing that even in failure, they’ll at least make a mess.",
           "abilities": [
             {
               "name": "Volatile",
@@ -173,37 +236,45 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 408
-        },
-        {
-          "name": "Defensive Drone",
-          "kind": "minion",
-          "team": "blade-drones",
-          "description": "Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
-          "abilities": [
-            {
-              "name": "Volatile",
-              "description": "When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 408
+          "sourcePage": 408,
+          "gaps": [],
+          "team": "blade-drones"
         },
         {
           "name": "Reconstruction Drone",
+          "role": "minion",
           "kind": "minion",
-          "team": "blade-drones",
-          "description": "This most basic drone is mostly used for information gathering, or for timely explosions.",
+          "description": "Reconstruction drones are mostly spare parts, by volume. They need very few components to operate and are built to cannibalize themselves and other mechanical devices to repair their fellow drones in the field.",
+          "tactics": "These drones can keep an army of drones operating for a long time. They avoid conflict, repairing the",
           "abilities": [
             {
-              "name": "Volatile",
-              "description": "When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets."
+              "name": "Field Repair",
+              "description": "This drone can make an Overcome action to repair another drone. It does not have to take minor twists. On a success, it restores the drone it is repairing to its starting die size."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 408
+          "sourcePage": 408,
+          "gaps": [],
+          "team": "blade-drones"
+        },
+        {
+          "name": "Defensive Drone",
+          "role": "minion",
+          "kind": "minion",
+          "description": "This sturdy drone has the capability to project an impressive barrier, using similar technology to the shielding on Baron Blade’s Mobile Defense Platform.",
+          "tactics": "Defensive Drones are expensive to produce and maintain, so they are used sparingly, mostly to defend high value targets. It’s rare to see more than one on the same target, though Baron Blade himself has used this tactic before.",
+          "abilities": [
+            {
+              "name": "Shield Projector",
+              "description": "Defensive Drones have a +2 to Defend actions taken to Defend targets other than themselves."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 408,
+          "gaps": [],
+          "team": "blade-drones"
         }
       ]
     },
@@ -212,25 +283,33 @@
       "label": "Devices",
       "members": [
         {
-          "name": "Auto-Turret",
-          "kind": "minion",
-          "team": "devices",
-          "description": "Colossal Robot Colossal Robot Sturdy turrets, often built into a structure or large vehicle, come with their own power source and ammunition supply. They aim and fire automatically as the heroes enter their range.",
-          "abilities": [
-            {
-              "name": "Well Built",
-              "description": "Auto-Turrets have a +1 to minion save rolls. However, they can be destroyed with a successful Overcome action."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 409
-        },
-        {
           "name": "Colossal Robot",
+          "role": "lieutenant",
           "kind": "lieutenant",
-          "team": "devices",
+          "description": "Who would have built a robot this huge? It’s far too big. Something must be done about it.",
+          "tactics": "This robot is so gigantic, it doesn’t even need tactics. It stomps around, heading towards whatever location it has been programmed to attack. When deploying a Colossal Robot, one should do so with a plan in mind.",
+          "abilities": [
+            {
+              "name": "Several Stories High",
+              "description": "The Colossal Robot has a +2 to its save rolls. However, while its die is a or , it can be reduced one size by a successful Overcome action."
+            },
+            {
+              "name": "Massive Stomp",
+              "description": "When the Colossal Robot Attacks, it deals damage to all nearby targets."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 409,
+          "gaps": [],
+          "team": "devices"
+        },
+        {
+          "name": "Auto-Turret",
+          "role": "minion",
+          "kind": "minion",
           "description": "Sturdy turrets, often built into a structure or large vehicle, come with their own power source and ammunition supply. They aim and fire automatically as the heroes enter their range.",
+          "tactics": "Auto-Turrets shoot at any moving thing that they haven’t specifically been programmed to ignore. The heroes tend to be the most notable moving things, but if they’re holding still or somehow obscured, the turrets will either find other targets or simply go into standby mode.",
           "abilities": [
             {
               "name": "Well Built",
@@ -239,28 +318,16 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 409
-        },
-        {
-          "name": "Walking Tank",
-          "kind": "lieutenant",
-          "team": "devices",
-          "description": "Heavy Plated MegaTruck Heavy Plated MegaTruck This truck is awesome. You couldn’t ask for a better truck to ride into a wasteland, or drive over a series of other vehicles. Even the tires and the windows are shielded.",
-          "abilities": [
-            {
-              "name": "Run Over",
-              "description": "After the Heavy Plated MegaTruck makes an Attack, it may then end up elsewhere in the scene."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 410
+          "sourcePage": 409,
+          "gaps": [],
+          "team": "devices"
         },
         {
           "name": "Heavy Plated MegaTruck",
+          "role": "minion",
           "kind": "minion",
-          "team": "devices",
           "description": "This truck is awesome. You couldn’t ask for a better truck to ride into a wasteland, or drive over a series of other vehicles. Even the tires and the windows are shielded.",
+          "tactics": "A MegaTruck exists to protect its passengers and get them from one place to another. Though they are not attack vehicles, they’re not out of place in a combat situation. Still, they generally avoid being under direct fire, as they’re much more about the “MegaTruck” part than they are the “Heavy Plated”.",
           "abilities": [
             {
               "name": "Run Over",
@@ -269,17 +336,49 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 410
+          "sourcePage": 410,
+          "gaps": [],
+          "team": "devices"
+        },
+        {
+          "name": "Walking Tank",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "These tanks do not have wheels — they have legs! More moving parts to maintain can lead to tricky locomotion issues, but it does provide advantages, such as easily handling more difficult terrain.",
+          "tactics": "With their plating and weaponry, Walking Tanks do not need to worry about being nimble or quick. They wade into combat, unleash on the easiest to hit targets, and block attacks against weaker allied targets.",
+          "abilities": [
+            {
+              "name": "Planted Blast",
+              "description": "When targeting a large or slow moving target, Walking Tanks have a +2 to Attack."
+            },
+            {
+              "name": "Walking Target",
+              "description": "If attacked while moving, Walking Tanks roll their save twice and use the higher result."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 410,
+          "gaps": [],
+          "team": "devices"
         },
         {
           "name": "Humanoid Robot",
+          "role": "minion",
           "kind": "minion",
-          "team": "devices",
-          "description": "",
-          "abilities": [],
+          "description": "Some humanoid robots have been programmed to follow a series of laws and serve their masters and creators. Others are created to have a semblance of free will or at least act like they do.",
+          "tactics": "Humanoid Robots are frequently jack-of-all-trades. They can be programmed for any sort of actions, so their tactics depend entirely on the type of situation they find themselves in. Much like humans. What is humanity, even?",
+          "abilities": [
+            {
+              "name": "Metal Parts",
+              "description": "Humanoid Robots have a +1 to their save rolls."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 410
+          "sourcePage": 410,
+          "gaps": [],
+          "team": "devices"
         }
       ]
     },
@@ -288,25 +387,29 @@
       "label": "Magmarian Foes",
       "members": [
         {
-          "name": "Crystal Collector",
-          "kind": "minion",
-          "team": "magmarian-foes",
-          "description": "Ember Shaman Ember Shaman Inner Core Tunneler Inner Core Tunneler The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+          "name": "Ember Shaman",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "Some Magmarians become leaders in a way that seems to be both spiritual and logistical, involved in coordinating the city building and distribution of crystals, but also in the little understood Magman rituals.",
+          "tactics": "The role of the Ember Shaman in combat seems similar to most other non-combatant Magmarians — stay out of the way until the warrior classes arrive. Fortunately, the Ember Shaman can bring the warriors into combat faster.",
           "abilities": [
             {
-              "name": "Harvest",
-              "description": "As an action, a Crystal Collector can remove a bonus or penalty from a nearby target. If it does so while its die is lower than a , increase its current die size by one."
+              "name": "Fiery Flock",
+              "description": "As an action, the Ember Shaman can roll its die twice and introduce a number of other Magmarian minions to the scene equal to the lower roll."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 411
+          "sourcePage": 411,
+          "gaps": [],
+          "team": "magmarian-foes"
         },
         {
-          "name": "Ember Shaman",
-          "kind": "lieutenant",
-          "team": "magmarian-foes",
-          "description": "Inner Core Tunneler Inner Core Tunneler The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+          "name": "Crystal Collector",
+          "role": "minion",
+          "kind": "minion",
+          "description": "The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+          "tactics": "Crystal Collectors are not warriors. They can use their superheated form to crystallize almost anything, so if pressed in combat, they will attempt to take items from their foes in crystal form.",
           "abilities": [
             {
               "name": "Harvest",
@@ -315,43 +418,34 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 411
+          "sourcePage": 411,
+          "gaps": [],
+          "team": "magmarian-foes"
         },
         {
           "name": "Inner Core Tunneler",
+          "role": "minion",
           "kind": "minion",
-          "team": "magmarian-foes",
-          "description": "The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+          "description": "The most animalistic of the Magmarians, Inner Core Tunnelers are mole-like in many ways, but many orders of magnitude larger and hotter.",
+          "tactics": "Inner Core Tunnelers exist to move a lot of earth and stone fast, even able to consume material to produce more magma. In combat, they build walls to help allies and hinder foes.",
           "abilities": [
             {
-              "name": "Harvest",
-              "description": "As an action, a Crystal Collector can remove a bonus or penalty from a nearby target. If it does so while its die is lower than a , increase its current die size by one."
+              "name": "Dig Deep",
+              "description": "Inner Core Tunnelers have a +1 to Hindering by digging."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 411
+          "sourcePage": 411,
+          "gaps": [],
+          "team": "magmarian-foes"
         },
         {
           "name": "Magman Rebel",
+          "role": "minion",
           "kind": "minion",
-          "team": "magmarian-foes",
-          "description": "Seismic Defender Seismic Defender The magma crystals consumed by the Magmarians are strictly rationed so everyone gets what they need. However, occasionally, a Magmarian will consume more than their share, leading to them being exiled.",
-          "abilities": [
-            {
-              "name": "Firebrand",
-              "description": "Whenever a Magman Rebel Attacks, it may Attack 2 nearby targets."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 412
-        },
-        {
-          "name": "Seismic Defender",
-          "kind": "minion",
-          "team": "magmarian-foes",
           "description": "The magma crystals consumed by the Magmarians are strictly rationed so everyone gets what they need. However, occasionally, a Magmarian will consume more than their share, leading to them being exiled.",
+          "tactics": "Magman Rebels are outcasts and thus have no regular access to the necessary magma crystals. They search for any crystalline compounds to consume, some even questing to the surface world for sustenance. They lash out at any who draw near.",
           "abilities": [
             {
               "name": "Firebrand",
@@ -360,17 +454,49 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 412
+          "sourcePage": 412,
+          "gaps": [],
+          "team": "magmarian-foes"
         },
         {
           "name": "Ur-Crystal Behemoth",
+          "role": "lieutenant",
           "kind": "lieutenant",
-          "team": "magmarian-foes",
-          "description": "",
-          "abilities": [],
+          "description": "Crystalloid Behemoths were a subterranean creature that grew naturally in the magma crystal fields. They were thought to be hunted to extinction by the Magmarians, but now a more primordial form of the Behemoths has emerged, more intent on the destruction of any living creatures, Magmarian or otherwise.",
+          "tactics": "Ur-crystal Behemoths seem genetically imbued with a hatred of warm creatures. They hunt down and destroy whatever hottest and most vulnerable targets they can reach.",
+          "abilities": [
+            {
+              "name": "Fire-Eater",
+              "description": "Whenever an Ur-crystal Behemoth destroys a Magmarian or other notable source of heat, increase its current die size by one (maximum )."
+            },
+            {
+              "name": "From the Stone",
+              "description": "Ur-crystal Behemoths have a +1 to their save rolls."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 412
+          "sourcePage": 412,
+          "gaps": [],
+          "team": "magmarian-foes"
+        },
+        {
+          "name": "Seismic Defender",
+          "role": "minion",
+          "kind": "minion",
+          "description": "The warrior class of the Magmarian people. Seismic Defenders are powered by additional crystals embedded in their bodies, and can form and wield weapons and shields made from the rock of their homes.",
+          "tactics": "Seismic Defenders wade into combat with relish, swinging wildly with their massive stone weapons. They exist to fight so other Magmarians don’t have to, so they do not fear being extinguished in combat.",
+          "abilities": [
+            {
+              "name": "Crystal Powered",
+              "description": "Whenever a Seismic Defender succeeds at its save, it rolls its die as an Attack against all nearby non-Magmarian targets."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 412,
+          "gaps": [],
+          "team": "magmarian-foes"
         }
       ]
     },
@@ -379,40 +505,29 @@
       "label": "Thematic Enemies",
       "members": [
         {
-          "name": "Hul-Spawn",
-          "kind": "minion",
-          "team": "thematic-enemies",
-          "description": "Thematic Enemies Homunculus Homunculus Demonoid Insect Demonoid Insect Fleshchildren Fleshchildren This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
-          "abilities": [
-            {
-              "name": "If You See One",
-              "description": "While a Demonoid Insect is larger than a , it can use an action to roll its die to add that many sized Demonoid Insects to the scene."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 413
-        },
-        {
           "name": "Homunculus",
+          "role": "lieutenant",
           "kind": "lieutenant",
-          "team": "thematic-enemies",
-          "description": "Demonoid Insect Demonoid Insect Fleshchildren Fleshchildren This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
+          "description": "The flesh-shaping Biomancer will occasionally make a far larger and more powerful creation. The Homunculus is no good at blending in, but is very good at violence.",
+          "tactics": "The Homunculus is a blunt instrument, made for heavy lifting and heavier punching. Biomancer most commonly uses them to oppose physically powerful threats.",
           "abilities": [
             {
-              "name": "If You See One",
-              "description": "While a Demonoid Insect is larger than a , it can use an action to roll its die to add that many sized Demonoid Insects to the scene."
+              "name": "Wall of Flesh",
+              "description": "The Homunculus has +1 to Attacks and to save rolls."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 413
+          "sourcePage": 413,
+          "gaps": [],
+          "team": "thematic-enemies"
         },
         {
           "name": "Demonoid Insect",
+          "role": "minion",
           "kind": "minion",
-          "team": "thematic-enemies",
-          "description": "Fleshchildren Fleshchildren This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
+          "description": "This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
+          "tactics": "A single Demonoid Insect seeks to swarm by taking its special action as often as possible. However, if there are many Demonoid Insects, they attempt to swarm whatever targets seem most digestable.",
           "abilities": [
             {
               "name": "If You See One",
@@ -421,22 +536,45 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 413
+          "sourcePage": 413,
+          "gaps": [],
+          "team": "thematic-enemies"
+        },
+        {
+          "name": "Hul-Spawn",
+          "role": "minion",
+          "kind": "minion",
+          "description": "The spawn of the dread xxtz’Hulissh are as varied in appearance as the leaves from a thousand trees or the flakes of snow in a blizzard. They’re also incredibly creepy.",
+          "tactics": "Hul-Spawn are the uncountable inhabitants of the demon-dimension within the gaping maw of xxtz’Hulissh, and he can let them loose in great numbers. They are not native to this realm, and seek to leave it as quickly as possible by either throwing themselves into combat or sacrificing themselves for their dread leader.",
+          "abilities": [
+            {
+              "name": "Gaze of the Archfiend",
+              "description": "When Hul-Spawn take a Hinder action, they may destroy themselves to apply that penalty to all non-Hulissh targets that can see the Hul-Spawn and/or xxtz’Hulissh."
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 413,
+          "gaps": [],
+          "team": "thematic-enemies"
         },
         {
           "name": "Fleshchildren",
+          "role": "minion",
           "kind": "minion",
-          "team": "thematic-enemies",
-          "description": "This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
+          "description": "These very normal looking and seeming people are, in fact, flesh and metal creations of the nefarious Biomancer! But you might have never figured it out...",
+          "tactics": "While not yet discovered or activated, Fleshchildren seek to be as “normal” as possible. Most don’t even know they’re not the real deal, yet! However, once revealed, they fight without regard for their survival, mobbing whoever Biomancer directs",
           "abilities": [
             {
-              "name": "If You See One",
-              "description": "While a Demonoid Insect is larger than a , it can use an action to roll its die to add that many sized Demonoid Insects to the scene."
+              "name": "Blend In",
+              "description": "Fleshchildren have +1 to all actions while not yet exposed as a Fleshchild."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 413
+          "sourcePage": 413,
+          "gaps": [],
+          "team": "thematic-enemies"
         }
       ]
     },
@@ -445,29 +583,29 @@
       "label": "Typical Combatants",
       "members": [
         {
-          "name": "“Firearm”",
-          "kind": "lieutenant",
-          "team": "typical-combatants",
-          "description": "Mean Streets Pugilist Mean Streets Pugilist Mean Streets Rioter Mean Streets Rioter Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+          "name": "Mean Streets Pugilist",
+          "role": "minion",
+          "kind": "minion",
+          "description": "When you’re a big fella with big fists, sometimes you just lean into that.",
+          "tactics": "Pugilists are all about Attacking. They’ll only take another action if they really need to.",
           "abilities": [
             {
-              "name": "Unstable Ignition",
-              "description": "Whenever Firearm Attacks, roll his die twice and use the higher result. If he rolled the same number twice, reduce his die size by one."
-            },
-            {
-              "name": "Firewall",
-              "description": "Whenever Firearm succeeds at his save, use that roll as an Attack against his attacker."
+              "name": "Scrapper",
+              "description": "Mean Streets Pugilists have a +1 to Attack actions."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 414
+          "sourcePage": 414,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
-          "name": "Mean Streets Pugilist",
-          "kind": "minion",
-          "team": "typical-combatants",
-          "description": "Mean Streets Rioter Mean Streets Rioter Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+          "name": "“Firearm”",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+          "tactics": "Firearm gets into the thick of combat, swinging his arms of fire in an attempt to ignite as many opponents as possible.",
           "abilities": [
             {
               "name": "Unstable Ignition",
@@ -480,32 +618,34 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 414
+          "sourcePage": 414,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Mean Streets Rioter",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
-          "description": "Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+          "description": "Fight the man! Burn it down! These rioters might not know what exactly it is they’re lashing out against, but that won’t stop them from lashing out!",
+          "tactics": "Rioters want to make as much of a mess as possible. They disrupt groups and cause chaos.",
           "abilities": [
             {
-              "name": "Unstable Ignition",
-              "description": "Whenever Firearm Attacks, roll his die twice and use the higher result. If he rolled the same number twice, reduce his die size by one."
-            },
-            {
-              "name": "Firewall",
-              "description": "Whenever Firearm succeeds at his save, use that roll as an Attack against his attacker."
+              "name": "Molotov",
+              "description": "When Mean Streets Rioters make Hinder actions, they can Hinder up to 3 nearby targets."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 414
+          "sourcePage": 414,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Gangster",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
           "description": "Gangsters are often well connected and have a handle on social and societal pressures, using that information to their advantage.",
+          "tactics": "Gangsters avoid physical confrontations, preferring social conflicts where they can leverage their info against any who would harm their profits.",
           "abilities": [
             {
               "name": "Extortion",
@@ -514,28 +654,34 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 414
+          "sourcePage": 414,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Mean Streets Tough Guy",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
-          "description": "Mean Streets Shooter Mean Streets Shooter These thugs aren’t particularly good at aiming, shooting, or any of the proper care and cleaning of their guns, but they have guns and a willingness to use them.",
+          "description": "Toughs speak loudly and carry a big stick with nails in it! Nuance is not one of their strong suits.",
+          "tactics": "As Toughs are particularly hardy, they like to get to close range with their foes and stay there, letting other thugs handle the more elaborate parts of whatever conflict they’re engaged in.",
           "abilities": [
             {
-              "name": "Pistols Akimbo",
-              "description": "When Mean Streets Shooters make Attack actions, they can Attack up to 3 targets in range."
+              "name": "Big Fella",
+              "description": "Mean Streets Toughs have a +1 to their save rolls."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 415
+          "sourcePage": 415,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Mean Streets Shooter",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
           "description": "These thugs aren’t particularly good at aiming, shooting, or any of the proper care and cleaning of their guns, but they have guns and a willingness to use them.",
+          "tactics": "Shooters try to get to a place where they can shoot at as many opposing targets as possible, while staying out of melee range.",
           "abilities": [
             {
               "name": "Pistols Akimbo",
@@ -544,23 +690,34 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 415
+          "sourcePage": 415,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Mean Streets Wrecker",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
-          "description": "",
-          "abilities": [],
+          "description": "Some street toughs don’t stoop to the standard fare of fists, clubs, or guns. Instead, they fight with some flair.",
+          "tactics": "Wreckers are best when supported by other minions who can take advantage of their penalties. Alone, they’ll alternate between Hindering and Attacking.",
+          "abilities": [
+            {
+              "name": "Chain Whipping",
+              "description": "Mean Streets Wreckers have a +1 to Hinder actions."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 415
+          "sourcePage": 415,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
-          "name": "“Seer”",
-          "kind": "lieutenant",
-          "team": "typical-combatants",
+          "name": "Ninja",
+          "role": "minion",
+          "kind": "minion",
           "description": "Sneaking unseen through defenses, striking from the shadows, and wielding specialized weapons with great skill are all hallmarks of the ninja.",
+          "tactics": "Ninjas stick to the shadows, leaping in and out of combat to distract and damage their foes without ever losing the upper hand of stealth and surprise.",
           "abilities": [
             {
               "name": "Stealthy Strike",
@@ -569,53 +726,52 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 416
+          "sourcePage": 416,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
-          "name": "Ninja",
-          "kind": "minion",
-          "team": "typical-combatants",
-          "description": "",
-          "abilities": [],
+          "name": "“Seer”",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "The Seer used to be a mortal man who dabbled in extradimensional power to take on heroes such as Fanatic and Argent Adept. Then, he was imprisoned in the Void and has only recently reappeared, his form clearly twisted by his time in the Void.",
+          "tactics": "Seer is able to step in and out of the Void, but not without cost. When he does, he leaves damage to the fabric of reality. He cares little for such things, though — he Hinders his foes and moves about the battlefield with reckless abandon.",
+          "abilities": [
+            {
+              "name": "Void Host",
+              "description": "Whenever Seer takes a Hinder action, make the resulting penalty Persistent and Exclusive. Then, Seer may end up anywhere else in the scene."
+            }
+          ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 416
+          "sourcePage": 416,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Technician",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
-          "description": "Soldier Sergeant Soldier Sergeant Soldier Grunt Soldier Grunt A standard military soldier, outfitted with standard modern military gear.",
+          "description": "Maybe they’re operating machinery at a dig site, or taking readings in an alien warehouse, or monitoring a bank of fancy computers. Regardless, these are scientists, not fighters.",
+          "tactics": "In combat, they flee and/or cower. But if they have a specific job to work on overcoming a challenge and feel adequately protected, they can be quite effective.",
           "abilities": [
             {
-              "name": "Squad Goals",
-              "description": "Soldier Grunts have +1 to Attack and Boost actions while near other Soldier Grunts or Soldier Sergeants."
+              "name": "Specialized",
+              "description": "Technicians cannot Attack or Defend, but they have a +3 to Overcome actions."
             }
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 417
-        },
-        {
-          "name": "Soldier Sergeant",
-          "kind": "lieutenant",
-          "team": "typical-combatants",
-          "description": "Soldier Grunt Soldier Grunt A standard military soldier, outfitted with standard modern military gear.",
-          "abilities": [
-            {
-              "name": "Squad Goals",
-              "description": "Soldier Grunts have +1 to Attack and Boost actions while near other Soldier Grunts or Soldier Sergeants."
-            }
-          ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
-          "sourcePage": 417
+          "sourcePage": 417,
+          "gaps": [],
+          "team": "typical-combatants"
         },
         {
           "name": "Soldier Grunt",
+          "role": "minion",
           "kind": "minion",
-          "team": "typical-combatants",
           "description": "A standard military soldier, outfitted with standard modern military gear.",
+          "tactics": "Soldiers work best in their squads, or at least supported by a Sergeant. They attempt to move and work as a unit, Boosting each other to maximize their impact.",
           "abilities": [
             {
               "name": "Squad Goals",
@@ -624,13 +780,36 @@
           ],
           "typicalDie": "d8",
           "dieTypeKnown": false,
-          "sourcePage": 417
+          "sourcePage": 417,
+          "gaps": [],
+          "team": "typical-combatants"
+        },
+        {
+          "name": "Soldier Sergeant",
+          "role": "lieutenant",
+          "kind": "lieutenant",
+          "description": "A military leader who is directly involved in the conflict, fighting alongside the other soldiers.",
+          "tactics": "Soldier Sergeants are excellent force multipliers for Soldier Grunts, both from their potent bonuses and also their ability to make squads of soldiers much more survivable.",
+          "abilities": [
+            {
+              "name": "Know Your Troops",
+              "description": "Whenever a Soldier Sergeant Boosts a Soldier Grunt, they roll their die twice and use the higher result."
+            },
+            {
+              "name": "Get Back In There!",
+              "description": "Whenever a nearby Soldier Grunt at succeeds on their save roll, increase their die size by one"
+            }
+          ],
+          "typicalDie": "d8",
+          "dieTypeKnown": false,
+          "sourcePage": 417,
+          "gaps": [],
+          "team": "typical-combatants"
         }
       ]
     }
   ],
   "gaps": [
-    "Minion/lieutenant die sizes are often icon-only in the PDF; defaulted to d8.",
-    "Some multi-entry pages may miss alternate names if text extraction collapsed labels."
+    "Minion/lieutenant die sizes are icon-only in the PDF; defaulted to d8."
   ]
 }

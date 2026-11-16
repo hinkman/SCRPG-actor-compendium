@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "Crystalloid Behemoths were a subterranean creature that grew naturally in the magma crystal fields. They were thought to be hunted to extinction by the Magmarians, but now a more primordial form of the Behemoths has emerged, more intent on the destruction of any living creatures, Magmarian or otherwise.",
+    "tactics": "Ur-crystal Behemoths seem genetically imbued with a hatred of warm creatures. They hunt down and destroy whatever hottest and most vulnerable targets they can reach.",
     "groups": "1",
     "groupName": {
       "one": "Ur-Crystal Behemoth",
@@ -29,7 +32,70 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "vQQpNVrfqb62Dvsc",
+      "name": "Fire-Eater",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever an Ur-crystal Behemoth destroys a Magmarian or other notable source of heat, increase its current die size by one (maximum ).</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!PQFR8dmylWacDP0j.vQQpNVrfqb62Dvsc"
+    },
+    {
+      "_id": "F9n7BFjfJuKGgL8p",
+      "name": "From the Stone",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Ur-crystal Behemoths have a +1 to their save rolls.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!PQFR8dmylWacDP0j.F9n7BFjfJuKGgL8p"
+    }
+  ],
   "effects": [],
   "folder": "XcA25JQpqxB6aSGg",
   "sort": 0,
@@ -40,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "lieutenant",
-      "description": "",
       "sourcePage": 412,
       "dieTypeKnown": false
     }
@@ -49,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

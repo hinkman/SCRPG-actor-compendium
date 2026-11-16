@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Only the stoutest and strongest soldiers in Baron Blade’s armies gain the distinction of Force Trooper. Outfitted with heavy armor and powerful melee weapons, Force Troopers are the gatecrashers of the Blade Battalion.",
+    "tactics": "Given their size and their armor, Force Troopers seek to take damage so their less defensive allies have room to do their jobs. They attempt to engage the most dangerous targets to distract them.",
     "groups": "1",
     "groupName": {
       "one": "Force Trooper",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "hpPcLaE07YehVksK",
+      "name": "Tough",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Force Troopers have a +2 to their save roll.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CH1DSBwSYdFJapl1.hpPcLaE07YehVksK"
+    }
+  ],
   "effects": [],
   "folder": "SuEVG788fN24PhAr",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-battalion",
-      "kind": "minion",
-      "description": "Technical Trooper Technical Trooper Roboticized Trooper Roboticized Trooper",
       "sourcePage": 407,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

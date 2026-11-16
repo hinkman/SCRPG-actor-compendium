@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Some street toughs don’t stoop to the standard fare of fists, clubs, or guns. Instead, they fight with some flair.",
+    "tactics": "Wreckers are best when supported by other minions who can take advantage of their penalties. Alone, they’ll alternate between Hindering and Attacking.",
     "groups": "1",
     "groupName": {
       "one": "Mean Streets Wrecker",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "y7poeBKP37MCC7m7",
+      "name": "Chain Whipping",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Mean Streets Wreckers have a +1 to Hinder actions.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!LXGl8zXL5JNgSCQ6.y7poeBKP37MCC7m7"
+    }
+  ],
   "effects": [],
   "folder": "8yoyf8EYLbV3NdiJ",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "",
       "sourcePage": 415,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

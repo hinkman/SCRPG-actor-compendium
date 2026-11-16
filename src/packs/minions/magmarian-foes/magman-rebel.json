@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "The magma crystals consumed by the Magmarians are strictly rationed so everyone gets what they need. However, occasionally, a Magmarian will consume more than their share, leading to them being exiled.",
+    "tactics": "Magman Rebels are outcasts and thus have no regular access to the necessary magma crystals. They search for any crystalline compounds to consume, some even questing to the surface world for sustenance. They lash out at any who draw near.",
     "groups": "1",
     "groupName": {
       "one": "Magman Rebel",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "minion",
-      "description": "Seismic Defender Seismic Defender The magma crystals consumed by the Magmarians are strictly rationed so everyone gets what they need. However, occasionally, a Magmarian will consume more than their share, leading to them being exiled.",
       "sourcePage": 412,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

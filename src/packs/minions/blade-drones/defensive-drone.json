@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "This sturdy drone has the capability to project an impressive barrier, using similar technology to the shielding on Baron Blade’s Mobile Defense Platform.",
+    "tactics": "Defensive Drones are expensive to produce and maintain, so they are used sparingly, mostly to defend high value targets. It’s rare to see more than one on the same target, though Baron Blade himself has used this tactic before.",
     "groups": "1",
     "groupName": {
       "one": "Defensive Drone",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "QiabI5OGDGU2VJc6",
-      "name": "Volatile",
+      "_id": "gwR8cDDmQ6avvNGF",
+      "name": "Shield Projector",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets.</p>",
+        "description": "<p>Defensive Drones have a +2 to Defend actions taken to Defend targets other than themselves.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!oAXpHKlxPtO1B88R.QiabI5OGDGU2VJc6"
+      "_key": "!actors.items!oAXpHKlxPtO1B88R.gwR8cDDmQ6avvNGF"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-drones",
-      "kind": "minion",
-      "description": "Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
       "sourcePage": 408,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

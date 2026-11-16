@@ -14,7 +14,7 @@ const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 const STATS = {
     coreVersion: "14.000",
     systemId: "scrpg-foundry",
-    systemVersion: "0.9.23",
+    systemVersion: "0.9.24",
     createdTime: 1763270000000,
     modifiedTime: 1763270000000,
     lastModifiedBy: null
@@ -464,6 +464,7 @@ function buildMinionActor(minion, folderId, teamKey) {
     const seed = `actor:minion:${teamKey}:${slug(minion.name)}`;
     const id = foundryId(seed);
     const die = minion.typicalDie || "d8";
+    const role = minion.role || minion.kind || "minion";
     const items = (minion.abilities || []).map((ability, index) => attachItemKey(id, {
         _id: itemId(`${seed}:minion-ability:${index}:${slug(ability.name)}`),
         name: ability.name,
@@ -489,6 +490,9 @@ function buildMinionActor(minion, folderId, teamKey) {
         type: "minion",
         img: "icons/svg/cowled.svg",
         system: {
+            role,
+            description: minion.description || "",
+            tactics: minion.tactics || "",
             groups: "1",
             groupName: {
                 one: minion.name,
@@ -524,8 +528,6 @@ function buildMinionActor(minion, folderId, teamKey) {
             "scrpg-actor-compendium": {
                 archive: true,
                 team: teamKey,
-                kind: minion.kind || "minion",
-                description: minion.description || "",
                 sourcePage: minion.sourcePage || null,
                 dieTypeKnown: minion.dieTypeKnown === true
             }

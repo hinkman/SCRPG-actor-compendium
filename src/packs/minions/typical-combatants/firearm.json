@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+    "tactics": "Firearm gets into the thick of combat, swinging his arms of fire in an attempt to ignite as many opponents as possible.",
     "groups": "1",
     "groupName": {
       "one": "“Firearm”",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -85,7 +88,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -103,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "lieutenant",
-      "description": "Mean Streets Pugilist Mean Streets Pugilist Mean Streets Rioter Mean Streets Rioter Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
       "sourcePage": 414,
       "dieTypeKnown": false
     }
@@ -112,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

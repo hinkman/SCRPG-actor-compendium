@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
+    "tactics": "Mentally-Empowered Humanoids tend to be problem solvers rather than combatants. In a combat situation, they seek to find ways to trick their opponents, rather than match them in violence.",
     "groups": "1",
     "groupName": {
       "one": "Mentally-Empowered Humanoid",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "aliens",
-      "kind": "minion",
-      "description": "Tech-Enhanced Humanoid Tech-Enhanced Humanoid Some alien races have a far higher mental aptitude than humans can even comprehend, manifesting as extreme intelligence and psychic powers.",
       "sourcePage": 405,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

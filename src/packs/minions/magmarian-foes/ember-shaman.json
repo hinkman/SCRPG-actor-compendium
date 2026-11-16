@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "Some Magmarians become leaders in a way that seems to be both spiritual and logistical, involved in coordinating the city building and distribution of crystals, but also in the little understood Magman rituals.",
+    "tactics": "The role of the Ember Shaman in combat seems similar to most other non-combatant Magmarians — stay out of the way until the warrior classes arrive. Fortunately, the Ember Shaman can bring the warriors into combat faster.",
     "groups": "1",
     "groupName": {
       "one": "Ember Shaman",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "BdYhBJWgJXqndSym",
-      "name": "Harvest",
+      "_id": "yfJQn222dxRcDfy5",
+      "name": "Fiery Flock",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>As an action, a Crystal Collector can remove a bonus or penalty from a nearby target. If it does so while its die is lower than a , increase its current die size by one.</p>",
+        "description": "<p>As an action, the Ember Shaman can roll its die twice and introduce a number of other Magmarian minions to the scene equal to the lower roll.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!7xBvoXACzVpEZZ9e.BdYhBJWgJXqndSym"
+      "_key": "!actors.items!7xBvoXACzVpEZZ9e.yfJQn222dxRcDfy5"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "lieutenant",
-      "description": "Inner Core Tunneler Inner Core Tunneler The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
       "sourcePage": 411,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null
