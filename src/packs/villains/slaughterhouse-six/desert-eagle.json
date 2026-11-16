@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -158,7 +158,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": "",
         "description": ""
       },
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -222,7 +222,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -254,7 +254,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -267,7 +267,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -320,7 +320,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -601,9 +601,7 @@
       "sourcePage": 392,
       "biographyHtml": "<p>393\n393\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs the goggles attached to the contacts that had \nbeen drilled into his skull, Mikal Jadoon remembered \nabandoning the Pakistani army for the mercenary \nlife of better pay and fewer rules. He remembered \njoining RevoCorp’s black ops team for the same \nreasons. He remembered the upgrades, the rush \nas he tried out the wings for the first time, and the \nEagle Eye system that let him see every crystal clear \ndetail, every nuance of his target. He remembered \nthe man who looked like living darkness, and \nthe terrible pain as that slice of shadow sent out \ntendrils that grabbed him by his eyes and pulled. He \nremembered being spit out of an endless darkness \nonly to realize that something was terribly wrong \nwith his vision. He remembered the weeks before \nhe was able to contact Ray Manta, seeing nothing \nbut writhing, hungry shadows. \nThen, Ray Manta made the \nfinal connections to Mikal’s \ntemple, lifting the darkness. \nCycling through the visual \nspectra, Mikal wondered if he \nwould ever sleep again.\nCapabilities and Motivations\nDesert Eagle is a skilled and dangerous aerial \ncombatant. The speed and maneuverability of his \nwing system allows him to attack from unpredictable \nangles and makes him a hard target to hit. Plus, he \nonly gets more lethal as the fight continues and \nhis Eagle Eye system analyzes target weaknesses. \nOnce the Eagle Eye system has locked on to a \ntarget, even the stealthiest heroes will find escaping \nDesert Eagle a difficult proposition.\nUpgrades\nRay Manta is tinkering with every aspect of Desert \nEagle’s gear. The next generation Eagle Eye system \nacquires target weaknesses faster and hits harder, \nthe barrier systems can generate a stronger barrier, \nand the wingsuit’s upgraded thrusters and G-force \ndampeners allow for tighter turns and a higher \noperational ceiling.\nAlias: Mikal Jadoon\nGender: Male\nAge: Early-30s\nHeight: 6’\nEyes: Completely black\nHair: Brown, windblown\nSkin: Brown\nBuild: Wiry gymnast\nCostume/Equipment: A brown bodysuit with \ngold piping, brown boots, and khaki arms and \nlegs. Khaki gloves with gold bracers fitted with \nglowing purple gems. A backpack fitted with large \nwings with metal feathers and thrusters. A black \nbreather mask covering the mouth and nose with \na hose leading to the backpack. Glowing purple \ngoggles covering the eyes.\nApproach: Reckless\nArchetype: Loner\nDesert Eagle</p>",
       "statusTheme": "Other Villains",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

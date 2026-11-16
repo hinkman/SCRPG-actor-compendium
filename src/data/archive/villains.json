@@ -13,75 +13,75 @@
           "powers": [
             {
               "name": "Adaptive Mercurium Limb",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Intuition",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Inventions",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Conviction",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Finesse",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Leadership",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ruler of Mordengrad",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Science",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Technology",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "4+ Inventions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Inventions (Mods)"
             },
             {
               "name": "2-3 Inventions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Inventions (Mods)"
             },
             {
               "name": "1 Invention",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Inventions (Mods)"
             },
             {
               "name": "0 Inventions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Inventions (Mods)"
             }
           ],
@@ -172,9 +172,7 @@
             }
           ],
           "sourcePage": 348,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Inventions (Mods)",
           "biographyHtml": "<p>349\n349\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nFyodor Ramonat made weapons and machines of \nwar for many powerful nations, but he ultimately \npaid the price when heroes of those nations’ \nenemies destroyed his weapons factories, led by \nthe Legacy of that time. Fyodor’s son Ivan was so \nenraged by the death of his father that he took \nover his hometown of Mordengrad in Lithuania, \ndeclaring himself, Baron Blade, the leader of this \nsovereign nation. Like his father, Ivan was a brilliant \ninventor, but far more clever and ruthless, and now \nhe had a hatred of all so-called heroes. Across \nthe past few decades, Baron Blade has enacted \nnumerous maniacal plans to threaten the existence \nof all heroes, especially those in the Legacy line.\nCapabilities and Motivations\nBaron Blade is a devilishly imaginative inventor, \ncreating all manner of doomsday devices and \nconcocting outlandish plots, both for the glory of \nhis home country Mordengrad and also for the \ndownfall of his foes. His loyal army — the Blade \nBattalion — is well-equipped with cutting edge \ndevices and armor, but greater still is their fanatic \nloyalty to the Baron. Over the years of his villainous \ncareer, he has made use of many bizarre devices \nwith overly complicated workings — everything \nfrom drilling into the Earth’s core, to pulling the \nMoon into the Earth, to injecting himself with a \ndangerous serum meant to give him the means to \ndefeat his foes at any cost — however his goals \nhave always been quite clear: defend and elevate \nglorious Mordengrad, and destroy any foolhardy \nheroes who would call themselves Legacy.\nUpgrades\nBaron Blade is known to make use of various \npowered suits, from towering walking tanks, to \nsleek, cutting edge body armor, to utilitarian power \nlifters. The type of armored suit he dons is usually \ntailored to his particular plot, though they all have \nvarious advantages for both defense and combat.\nAlias: Ivan Grigori Ramonat\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Left eye: Brown / Right eye: Pale with scar\nHair: Black and grey\nSkin: Pale\nBuild: Athletic\nCostume/Equipment: A long purple coat with silver \npiping and accents, lined in dark red. A purple body \nsuit accented with lines of red energy running from \nhis Organic Sustaining Module installed on his chest. \nHis right eye is covered by his red, glowing Nether \nLens Monocle. His left hand and forearm are made \nof silvery metal, which he can control to take various \nshapes and applications.\nApproach: Mastermind\nArchetype: Inventor\nBaron Blade\nVillains</p>"
         },
@@ -187,54 +185,54 @@
           "powers": [
             {
               "name": "Illusions",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Transmutation",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Insight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Persuasion",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Unhinged from Reality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "3+ Heroes with at least one Penalty",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "1-2 Heroes with at least one Penalty",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "0 Heroes with at least one Penalty",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             }
           ],
@@ -325,9 +323,7 @@
             }
           ],
           "sourcePage": 350,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Heroes with Penalties",
           "biographyHtml": "<p>351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAminia Twain died hating the Freedom Five, impaled \non a girder during a villain’s attack, with one question \non her mind. Why didn’t they save me? She had \nbeen their loyal secretary for years, organizing and \nsmoothing things behind the scenes so that they \ncould stop crimes and still lead normal lives. But, \ninstead of dying and slipping away from existence, \na timespace fracture resulted in her coming to \nin the body of the Aminia Twain of some other \nreality! Reborn as Miss Information, she spent \nyears conducting behind-the-\nscenes sabotage on the \nheroes. This ended \nwhen the hero Parse \nsaw through her ruse, \nwhich ultimately led \nto Miss Information \ngetting doused with \ntoxic chemicals. The \naccident that burned her body \nalso opened her mind to \nother versions of Aminia \nTwain in the Multiverse. \nIt also allowed her to \nrewrite reality itself, \nwith the only thing \npreventing her from being \na world-ending threat is her \never-changing whim and \ninability to focus.\nCapabilities and Motivations\nThe disconnection of this universe from the rest of \nthe multiverse has allowed Miss Information to regain \nsome of her focus as her mind heals from being many \npossible versions of Aminia Twain at the same time. \nMiss Information is a master of logistics, coordination, \nand intelligence gathering, able to formulate complex \nplots to trap heroes and tailor illusion-augmented \ntraps to their specific fears and capabilities. When \nthis fails, she can warp reality itself as long as she can \nconcentrate, changing the world to suit her desires. \nShe could make a Megalopolis where all heroes were \nhated, a temple where the Freedom Five served her \nwine in chains, or a diner that only served pickles.\nUpgrades\nIn the aftermath of OblivAeon, Miss Information \nacquired the Pandemonium Key, an artifact from the \nEnclave of the Endlings that augments her ability to \ncreate illusions and make them real. It is also a window \ninto the disconnected, wider multiverse, allowing her \nto peer into other realities and remember things from \nher multitude of other lifetimes. This, unfortunately, \ndoes not help her mental state.\nAlias: Aminia Twain\nGender: Female\nAge: Middle-Aged\nHeight: 5’ 4”\nEyes: Originally grey, now glowing gold\nHair: Chestnut\nSkin: Pale\nBuild: Slim\nCostume/Equipment: A black bodysuit with gold \ngloves, boots, and belt. Black cape with gold inner \nlining. Form fitting white porcelain mask that \nmoves with her facial expressions. \nApproach: Overpowered\nArchetype: Inhibitor\nMiss Information\n351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\n351\n351\nAppendices\nAppendices\nVillains</p>"
         },
@@ -340,64 +336,64 @@
           "powers": [
             {
               "name": "Momentum",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Railway Gun",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Imposing",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Off the Rails",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ranged Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Green Zone: 60-41",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Yellow Zone: 40-17",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Red Zone: 16-1",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Health"
             }
           ],
@@ -488,9 +484,7 @@
             }
           ],
           "sourcePage": 352,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Health",
           "biographyHtml": "<p>353\n353\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nSteven Graves served in the same unit as his rival \nLt. Vance, until he was wounded in battle. After his \nhonorable discharge, Steven Graves put his size and \ntraining to use as private security for various shady \nenterprises. To further his abilities, he underwent \nbiological and mechanical modifications to increase \nhis size and strength, as well as gaining the distinctive \nhelmet that earned him the name “Fright Train.” After \na stint in the extradimensional fortress known as The \nBlock, Fright Train was broken out by Baron Blade in \na plot to form a villain team to gain his vengeance \nagainst the Freedom Five. Further augmenting his \nstrength and durability, the Baron ensured that Fright \nTrain would be able to go toe to toe with the Bunker \nsuit. After the ultimate failure of the team, Fright Train \nreturned to being a hired thug, ready to provide \nmayhem and train references \nfor other criminals.\nCapabilities and Motivations\nWhen it comes to hired muscle, few can compete \nwith Fright Train. Though his style of fighting is best \ndescribed as “indiscriminate mayhem,” he can go toe \nto toe with even the strongest heroes, and his loyalty \nto his allies means those who employ him know he \nwon’t abandon the mission if things go wrong. Very \nfew things can stop him in his tracks once he builds up \nsome steam, though this single minded focus can be \nused against him. Fright Train has lately been teaming \nup with his old Vengeance team member \nErmine, and the pairing of his strength with her \nskill is proving to be a highly successful team \nfor heists, especially when things go wrong and she \ncan depend on him to power through. Though it is \nnot, strictly speaking, a superpower, Fright Train can \ncome up with a train reference to fit any situation.\nUpgrades\nAfter years of fighting Bunker, Fright Train has come \naround the bend to the idea of a powered suit. He’s \ngot ideas for a full body armored suit later down the \nline, but for now he’s got a cannon on his back that \nuses kinetic energy generated by the pistons on his \nlegs and stored in his chestpiece.\nVillains\nAlias: Steven Graves\nGender: Male\nAge: Mid-30s\nHeight: 8’ 3”\nEyes: Brown \nHair: Black\nSkin: Brown\nBuild: Heavily muscled\nCostume/Equipment: \nOlive-drab \npants, \ntan \ngloves that reach his elbows, and steel boots with \npistons attaching to braces on his legs. A steel \nchestpiece with a cannon mounted on the back \nthat holds and stores kinetic energy from the \npistons. A domed steel helmet that connects to \nthe chestpiece, covering his head and neck, with a \ngrill on the front. \nApproach: Disruptive\nArchetype: Bruiser\nFright Train</p>"
         },
@@ -503,69 +497,69 @@
           "powers": [
             {
               "name": "Agility",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Gadgets",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Invisibility",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Acrobatics",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Banter",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Criminal Underworld Info",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Finesse",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Flashy Felon",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Stealth",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Any Penalties and No Bonuses",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d4",
+              "dieTypeKnown": true,
               "category": "Penalties"
             },
             {
               "name": "Some Penalties and Some Bonuses",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Penalties"
             },
             {
               "name": "No Penalties",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Penalties"
             }
           ],
@@ -656,9 +650,7 @@
             }
           ],
           "sourcePage": 354,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Penalties",
           "biographyHtml": "<p>355\n355\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nCassandra Lilya grew up in Rook City, where she \nlearned at a very early age that crime actually paid \nquite well and was far easier than silly things like \n“time” or “hard work.” At night, she broke into \nsupposedly secure areas and plundered riches under \nthe identity of Ermine. During the day, she used her \nill-gotten gains to fuel an extravagant lifestyle. When \nthe world’s largest diamond went on exhibition \nat the Rook City museum, she couldn’t \nresist stealing it. This proved to be her \nundoing as it caused her to cross \npaths with the hero Wraith, \nwho defeated her and ended \nthe secret of her dual life. While \nshe stayed out of jail, the revealing \nof her secret identity left her \nreputation in tatters. Her hatred \nof Wraith, as much as her skill as \na thief, were what caused Baron \nBlade to offer her a spot on his villain \nteam, the Vengeful Five. When that \nteam eventually fell apart, Ermine went \nback to a life of thievery, though she \nwould occasionally deign to help other \nvillains with their schemes, particularly if \nit meant a payout.\nCapabilities and Motivations\nErmine is extremely self-centered and rarely has \nlong term plans. While she’s quite adept at making \na complex plan to bypass a security system, she \ntends not to think much beyond the acquisition of \nwhatever shiny thing caught her eye. The thievery \nitself is what excites her, with the proceeds funding \na life of luxury. A gifted acrobat, sneak, and con \nartist, Ermine can get into many “secure” locations, \nand when she comes across something that has a \nbit more security, she’s happy to have someone act \nas a distraction for her. When things go wrong she’s \nextremely good at improvising her way out of the \nconsequences, leaving others with the aftermath. \nLately, she has teamed up with Fright Train for her \nheists, with his muscle and one-track mind pairing \nwell with her stealth and skill.\nUpgrades\nTaking a lesson from Wraith, Ermine has been \nacquiring a variety of gadgets. Instead of the fashion \ndisaster of Wraith’s clunky utility belt, Ermine’s \njewels can be used in many ways: granting her \ntemporary invisibility, creating holograms, deflecting \nlasers, and more. Truly a girl’s best friend.\nVillains\nAlias: Cassandra Lilya\nGender: Female\nAge: Late-20s\nHeight: 5’3”\nEyes: Amber\nHair: Blonde\nSkin: Tan\nBuild: Gymnast\nCostume/Equipment: A white and grey bodysuit \nwith gold piping that leaves her shoulders bare, \naccented by blue diamonds and a blue visor.\nApproach: Skilled\nArchetype: Formidable\nErmine</p>"
         },
@@ -671,81 +663,81 @@
           "powers": [
             {
               "name": "Fleshcrafting",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Robotics",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Creativity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Fleshfather",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "History",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Insight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Magical Lore",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "9+ minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d4",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "5-8 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "3-4 minions",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "1-2 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "0 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             }
           ],
@@ -850,9 +842,7 @@
             }
           ],
           "sourcePage": 356,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Number of Minions",
           "biographyHtml": "<p>357\n357\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nZosimos of Panopolis was the first magician to \nsuccessfully combine science and magic into a \ndiscipline that would come to be called Alchemy, \nwhich he then used to ensure his own immortality \nthrough the preservation and manipulation of flesh. \nWith the ravages of time conquered, he continued \nto study the building blocks of life and refine his \ncraft, eventually leading to the construction of his \nfirst “fleshchild”, stolen flesh laid over a constructed \nskeleton given temporary life via magic. Over the \nages, he made these simulacra more realistic, using \nthem to gather secrets and manipulate the world. \nHeroes have encountered his creations many times \nover the years, and he has even created fleshchild \nversions of the heroes to sow discord. He has \nnot been seen for some years after his last defeat \nat the hands of the hero Writhe, but with his \nproven ability to survive as well as to create \nfleshchild versions of himself, no one \nbelieves that he is gone for good.\nCapabilities and Motivations\nBiomancer is a master of indirect plots, orchestrating \nevents that result in other villains and heroes \nto dance to his unseen strings. He can create \nfleshchildren that are identical to the original, even \nto the point where the fleshchild thinks that it IS \nthe original. His creations infiltrate society, fooling \neven close friends and family as they work towards \nhis goals. With a DNA sample from a person with \npowers, he can create a fleshchild that can use that \nperson’s powers, though without a steady supply \nof that person’s DNA, the fleshchild will rapidly \ndegrade. Biomancer’s plots are labyrinthian to \nthe point where even a hero victory may well be \nsimply part of his larger plan. They can take years to \ncome to fruition as he moves pieces into place, and \nhe is quite content to remain in the background \nindefinitely if all is going according to plan.\nUpgrades\nBiomancer has improved at fleshchild creation, \nmaking them more realistic and durable. With \nhis ability to create fleshchildren that think they \nare real, anyone could actually be his minion, just \nwaiting for the activation order.\nAlias: Zosimos Alchemista\nGender: Male\nAge: Ancient, looks middle-aged\nHeight: 5’11”\nEyes: Gold\nHair: None\nSkin: Pasty\nBuild: Artificial\nCostume/Equipment: Red bodysuit, with a full \nlength white 17th century doctor’s robe over top. \nWhite elbow length gloves with buttons. Beaked \nred mask reminiscent of a 17th century plague \ndoctor. \nApproach: Creator\nArchetype: Legion\nBiomancer\nVillains</p>"
         },
@@ -866,80 +856,80 @@
             {
               "name": "Flight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Insect Control",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Part Detachment",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Shapeshifting",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Alertness",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Banter",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Close Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Imposing",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Swarm Master",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "9+ minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "5-8 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "3-4 minions",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "1-2 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             },
             {
               "name": "0 minions",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d4",
+              "dieTypeKnown": true,
               "category": "Number of Minions"
             }
           ],
@@ -1044,9 +1034,7 @@
             }
           ],
           "sourcePage": 358,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Number of Minions",
           "biographyHtml": "<p>359\n359\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEdgar Black took pleasure \nin making things smaller than \nhim suffer. As an \nexterminator, he \nwent to work every \nday with a smile on \nhis face. On the way \nto one such \njob, \nhe \nclipped \na courier\nwith his van, destroying the package the boy \nwas carrying. Edgar sped away to avoid any \nconsequences, but the contents of the package had \nother ideas. The contents of the package turned \nout to be a demonic entity that had been trapped \nfor years by the hero NightMist. After her death, \nthe courier had been commissioned to transport it \nto another mage for safekeeping. With the prison \ndestroyed, the rapidly multiplying demonic swarm \nused Edgar as a host, and he became the central \npersonality of the villain Myriad. He has clashed \nwith the new hero team Daybreak several times as \nhe looks to cause a little chaos in the world.\nCapabilities and Motivations\nAs a person, Edgar Black’s malevolence was limited \nby his cowardice and lack of long-term planning. \nThe demon that possessed him was limited in that \nit needed a host to act as a focus, as without a core \npersonality to adhere to, the demon’s intelligence \nwas scattered throughout the entire swarm. As \nthe composite personality “Myriad,” they are even \nworse; Edgar’s desire to harm is bolstered by the \nDemon’s desire for chaos and inherent magic. \nWith nigh-infinite control over insects, Myriad has \nthe ability to see and hear just about anything, \nthough they still lack the long-term planning skill or \nintelligence to truly capitalize on anything they find \nout. Mostly, Myriad just wants to destroy things, and \nis happiest when wreaking havoc surrounded by an \ninfinite swarm of infernal bugs.\nUpgrades\nBeing made of insects gives Myriad a lot of \nflexibility when it comes to things like size and \nshape. He could be a single fly on the wall, or a \nface on a swarm of locusts blackening the sky, his \nvoice their collective chittering. The demon has a \nsubstantial well of innate magic that can be used \nfor simple spells, particularly ones revolving around \nsummoning infernal insects with nasty powers from \nhis home hell dimension.\nAlias: Edgar Black\nGender: A demonic swarm of bugs, identifies as \nMale\nAge: A demonic swarm of bugs, identifies as \nMiddle-Aged\nHeight: Variable\nEyes: Two glowing orange eyes, but the swarm’s \neyes are many\nHair: None\nSkin: Black Chitin\nBuild: Made of bugs\nCostume/Equipment: A mass of demon bugs \nthat have taken on a humanoid semblance with \nchitinous black skin, wings, and glowing orange \neyes and chest. \nApproach: Creator\nArchetype: Overlord\nMyriad\nVillains</p>"
         },
@@ -1059,74 +1047,74 @@
           "powers": [
             {
               "name": "Agility",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Infernal",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Remote Viewing",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Speed",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "The Jade Talon",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Acrobatics",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Criminal Underworld Info",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Investigation",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Student of Many Masters",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "4+ Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "2-3 Engaged Opponents",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "0-1 Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             }
           ],
@@ -1217,9 +1205,7 @@
             }
           ],
           "sourcePage": 360,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Engaged Opponents",
           "biographyHtml": "<p>361\n361\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nSophia Anna Isabel DeLeon has served many masters \nand learned many things. From “Slim” Walker, her \nfirst master, she learned her own strength. When \nhe shut down his dojo, she learned to use that \nstrength for herself. Her second master, Graham \nPike, taught her how to understand herself and \ncontrol her foes as his Operative. When he \nsacrificed her to pay off a debt, she learned \nto trust no one. Zhu Long, the mystic that \nordered her death, brought her back from \nbeyond the grave and became her new \nmaster, showing her there was still much \nto learn. Bound by Zhu Long’s magic, \nshe carried out his orders as assassin, \ncourier, and emissary. The Dragon \nMaster taught her lessons in poison, \nmagic, and furthered her skills in the \nmartial arts. Here, she learned that \nshe could never defeat an opponent \nwhose capabilities she could not \ndiscover and whose motives she \ncould not understand. Though she seeks \nto escape Zhu Long’s control, she has \nbecome his greatest weapon. As the Dragon’s \nClaw, she has a measure of freedom, though \nshe is ever aware of the leash.\nCapabilities and Motivations\nDragonclaw is among the most capable \ncombatants in the world. The hero Mantra, \nformerly known as Mr. Fixer, is perhaps the only \nliving martial artist who could stand against her \nin hand-to-hand combat. Her fighting style flows \neffortlessly between grace and brutality. Even \nwithout her sword and magic, Dragonclaw can \nvanquish a room of armed professional soldiers \nthat were forewarned of her arrival. While she has \nspecific objectives as Zhu Long’s agent, like stealing \nrare relics or sending a lesson to an enemy, the larger \nplan she is working toward is often inscrutable. She \nis ever testing the bounds of the Dragon’s control, \nthough she knows that the dragon is always \nwatching her. With no way to become the master \nof her own fate, her loyalty to Zhu Long is absolute.\nUpgrades\nIn a ritual of her own devising, Dragonclaw created the \nJade Talon, a stone blade that serves both as a weapon \nand magical focus. Not only can it cut through flesh, \nstone, and metal with equal ease, it allows her to tread \nfarther down the mystical path than ever before. She \ncan channel this power in a variety of ways, with the \nmost terrifying being the power to bring the tattoos \non her body to life to fight with her.\nAlias: Sophia DeLeon\nGender: Female\nAge: Early middle-aged, appears early-20s\nHeight: 5’ 3”\nEyes: Brown\nHair: Black\nSkin: Olive, elaborate dragon tattoos \nBuild: Lithe\nCostume/Equipment: A red body wrap with green \nborders, belted with a red cord that goes around \nher torso multiple times, the tassels streaming \nbehind her. Loose black hair that reaches to her \nmid-back. Elaborate dragon tattoos on her arms \nand legs, with a red one circling her eyes. Left \nwrist wrapped with black cloth. Mid-calf black and \ngreen soft-soled boots. A leather scabbard slung \nover one shoulder that holds the mystical green \nstone blade The Jade Talon.\nApproach: Ninja\nArchetype: Guerilla\nDragonclaw\nVillains</p>"
         },
@@ -1232,69 +1218,69 @@
           "powers": [
             {
               "name": "Cosmic",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Horror",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Size Changing",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Conviction",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Imposing",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Otherworldly Mythos",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Magical Lore",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Unspeakable",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Unchallenged",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Titan’s Challenge"
             },
             {
               "name": "Expose a vulnerability",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Titan’s Challenge"
             },
             {
               "name": "Take advantage of the weakness",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Titan’s Challenge"
             }
           ],
@@ -1399,9 +1385,7 @@
             }
           ],
           "sourcePage": 362,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Titan’s Challenge",
           "biographyHtml": "<p>363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAll that the world knows is that an incomprehensible \nbehemoth has emerged from the depths of the \nAtlantic Ocean, moving towards an unknowable \ngoal with despair, destruction, and madness in its \nindifferent wake. If they could draw back the curtain \nof time, they might see how in a time long past, \nthe mages of Atlantis awoke something terrible. \nA beast from a nether dimension suddenly saw \na new, vital world and began to break through so \nthat it could summon its Hul-spawn and lay claim \nto the earth. To prevent devastation, the master \nmages of Atlantis enacted a terrible plan. Imbuing \nrelics of power with the collective sacrifice of their \npeople, they created twelve anchors to forever \nhold xxtz’Hulissh in place, then sank their city so \nthe relics would be forever safe. Perhaps, had they \nmore time, they could have found a kinder solution. \nPerhaps, had they more foresight, they could have \nanticipated the curiosity of future civilizations. \nPerhaps, had they more fortune, they might have \nsucceeded in sealing the dread being away forever.\nCapabilities and Motivations\nWith the removal of several of the Atlantean \nrelics, both by heroes and by researchers \nstudying Atlantis, the prison has been weakened. \nAn incomprehensible, unstoppable behemoth, \nxxtz’Hulissh has broken free and moves towards an \nunknown goal, destroying anything in the way and \nsending a wave of horror before it. To fight it is to \nbe trampled; to look upon it is to court madness.\nUpgrades\nxxtz’Hulissh’s biology, motives, and potential \nweaknesses seem impossible to discern. The \nlightless maw where its face should be is a portal to \nits realm, from whence it spews forth its spawn. The \nhorror that accompanies xxtz’Hulissh is enough to \nsend all but the strongest souls running, and those \nthat face it directly risk being shoved into the maw \nto the dimension where its hungry brood waits.\nAlias: None\nGender: Incomprehensible\nAge: Impossible\nHeight: Towering\nEyes: None \nHair: None\nSkin: Flabby, squamous, one fore-limb covered \nwith a carapace.\nBuild: Colossal\nCostume/Equipment: To look upon it is madness! \nIts barbed tentacles rising high above a headless \nneck from which the Hul-spawn peer and wait \nto be born from the darkness! The clawed feet \non legs that should crumble beneath its weight! \nSkin like the strongest armor, and a crushing claw \ncovered with shell that is stronger still! The tail that \nlashes, the claw that crushes! Beware! Look not \nupon it!\nApproach: Ancient\nArchetype: Titan\nxxtz’Hulissh\n363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>"
         }
@@ -1421,63 +1405,63 @@
             {
               "name": "Leaping",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Sonic",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Banter",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Creativity",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ranged Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Screamo",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "3+ Heroes with Penalties",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "1-2 Heroes with Penalties",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "0 Heroes with Penalties",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             }
           ],
@@ -1568,9 +1552,7 @@
             }
           ],
           "sourcePage": 366,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Heroes with Penalties",
           "biographyHtml": "<p>367\n367\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nDamien Belter was the kind of kid who never \ndiscovered the concept of an “inside voice.” The \nchild of a CPA and a forensic accountant, Damien \ndecided at an early age that he was going to go in a \nvery different direction from his parents. School was \nboring and didn’t involve nearly enough yelling, so he \nditched at every opportunity. Music fascinated him, \nand he took every opportunity to go to a live show, \nthe louder the better! Convinced that volume was the \nmajor qualification for a singer, he formed a band with \nsome of his friends. When that one failed he formed \nanother, then another, then went solo for a while, then \nformed yet another band, which ended up sticking \ntogether, largely because everyone in it had some \nmeasure of power and a similar feeling that they were \ndestined for greatness. Sure, they would need to beg, \nborrow, and steal to get off the ground, but so what?\nCapabilities and Motivations\nScreech’s musical aptitude can most favorably be \ndescribed as “loud.” He was a loud kid, and as he \naged his vocal range only expanded. His jaw and \nlungs also changed, allowing him to unhinge his jaw \nfor even greater volume, along with a lung capacity \nthat let him sustain a note for minutes at a time. \nSadly, none of these things proved to be a good \nsubstitute for practice, talent, or any understanding \nof “pitch”. As the vocalist for Helfyre, he spends \nmuch of his singing time using his voice to stun and \ndebilitate his “audience”, including the annoying \ncops that want them to stop practicing due to noise \ncomplaints, or the even more annoying heroes that \nwant them to stop robbing gas stations for snacks.\nUpgrades\nAfter Wager Master granted him more power, \nScreech’s vocal range vastly expanded, with shrill \nhigh notes that shatter glass and deep bass notes \nthat shake stone when he drops to his lowest \noctave. When he really lets loose, a physical wall of \nsound knocks down the audience, doors, walls, and \nthe occasional low-flying police helicopter.\nAlias: Damien Belter \nGender: Male\nAge: Mid-20s\nHeight: 5’8\nEyes: Blue\nHair: Black mohawk\nSkin: Pale\nBuild: strung out rocker\nCostume/Equipment: Tight pants, studded belt, \nand a variety of ripped tops with no sleeves. Has \na variety of wristbands, chain necklaces, and pointy \nearrings. \nApproach: Disruptive\nArchetype: Inhibitor\nScreech</p>"
         },
@@ -1583,49 +1565,49 @@
           "powers": [
             {
               "name": "Fire",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Creativity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Hot Licks",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Green: 30-23",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Yellow: 22-12",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Red: 11-1",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Health"
             }
           ],
@@ -1730,9 +1712,7 @@
             }
           ],
           "sourcePage": 368,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Health",
           "biographyHtml": "<p>369\n369\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nThe daughter of a roadie, Cinder spent her life on \ntour. She learned a great deal about how to play \nfrom a wide variety of bands, demonstrating an \naptitude for the guitar. This led to her discovering \nher powers one day when she was particularly in \nthe groove and her guitar burst into flames where \nher fingers touched the strings; fire which quickly \nspread to the rest of the guitar and herself. In \nthis moment, she learned several things. First, she \nlearned that she was completely immune to fire, as \nwas anything close to her skin. Second, she learned \nthat playing a flaming guitar while immune to fire \nwas AWESOME. Third and finally, she learned that \nguitars, unlike her, burned quite well. She would \nrequire a steady supply of guitars on her road to \ngreatness. A band of people with powers looking for \na guitarist was too good an opportunity to pass up.\nCapabilities and Motivations\nCinder is by far the most musically adept member \nof Helfyre. She has a natural talent for music, enjoys \nplaying the guitar, and has a desire to get better that \ndrives her to constantly practice. She could easily be \nthe heart of the team, but isn’t interested in helping \nthem get better. As far as Blister is concerned, the \nrest of Helfyre is mostly there to keep the crowd \nwarmed up between her solos. She’d be happy if \nthey got on her level... just as long as they do it on \ntheir own time and don’t get in her way.\nUpgrades\nWhile Wager Master certainly increased Blister’s \ncontrol, her constant practice has allowed her \nto work on flashier, hotter, and more sustained \napplications of her fire. The most apparent is that \nshe can keep her instruments from burning quite \nas fast, though she’s never had one survive a solo. \nShe’s still a long way from the control she would \nneed to stop a fire once it really got going, but that \nkind of mastery is potentially within her reach.\nAlias: Cinder Azarian\nGender: Female\nAge: Early-20s\nHeight: 5’ 0’\nEyes: Orange, frequently on fire\nHair: Red and black, frequently on fire\nSkin: Light brown, frequently on fire\nBuild: Very thin. Frequently on fire\nCostume/Equipment: Red tights, black tank top, \ngigantic boots with multiple buckles and zippers, \nmostly ornamental. She has a variety of guitars, \nmostly because she tends to light them on fire.\nApproach: Focused\nArchetype: Fragile\nBlister</p>"
         },
@@ -1745,52 +1725,52 @@
           "powers": [
             {
               "name": "Awareness",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Plants",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Swinging",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Imposing",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Self-Discipline",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Steady Rhythm",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Always",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Constant"
             }
           ],
@@ -1895,9 +1875,7 @@
             }
           ],
           "sourcePage": 370,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Constant",
           "biographyHtml": "<p>371\n371\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nIf anyone bothered to ask Silvio about his life, he \ncould tell them how his mother and father met at \nthe Italian embassy in New Delhi. He could talk \nabout how the ambassador’s daughter fell madly in \nlove with the attaché for the Field Marshal of the \nIndian Army, and how they married in Rome with \nthe pope himself blessing their union. He could talk \nabout the trip to Tanzania that took their lives, and \nhow he swam against the current of the Kalambo \nriver after the crash only to go over the falls. He \ncould talk about how he came to on a riverbank, \ncovered in mud and wrapped in vines. He could talk \nabout the years he spent communing with plants \nas the legendary plant man of Tanganyika valley, or \nthe sea captain who took the feral boy in. He could \ntalk about the happy years on the fishing boat, the \nterrible storm that ended them, or the days he \nspent sustained by the sun, clutching a raft of kelp. \nHe could talk about drifting ashore in Hawaii, taking \nshelter at a concert, or the roadies that mistook him \nfor a stage hand and invited him to the afterparty. \nHe could talk about learning bass from Lemmy \nKilmister, Robert Trujillo, and Geddy Lee. \nOf course, why would they ask him? \nHe’s just the bassist.\nCapabilities and Motivations\nDeeproot can play a mean bass line as well as \ngrow and control plants, though those are the least \nimportant things he does for the band. He breaks up \nfights between members, keeps the fridge stocked \nwith the right kind of beer, throws out pizza boxes, \nand knows how to get the Thai place to break out \nreal spices for Snare’s order. He’s the glue that holds \nthe band together, and like his name implies, there is \na lot more to him beneath the surface.\nUpgrades\nDeeproot’s control over plants, as well as his range, \nhas only grown over time. Now he can make them \nstronger, force them to rapidly grow, and even \nrevive dead plants. As his connection with nature \ndeepens, he learns more and more about the \ninterconnection of all things.\nAlias: Silvio Thorne\nGender: Male\nAge: Early-30s\nHeight: 6’ 8”\nEyes: Glowing Green\nHair: Long, green, and greasy, with a mustache that \njust won’t quit\nSkin: grayish green\nBuild: Heavily muscled\nCostume/Equipment: Black shirt, grey jeans, \ncombat boots. Usually has a few vines twining \naround him.\nApproach: Generalist\nArchetype: Indomitable\nDeeproot\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\n371\n371\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nVillains\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe</p>"
         },
@@ -1911,58 +1889,58 @@
             {
               "name": "Drum Throne",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Energy Shields",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Sonic",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Conviction",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Insight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Magical Lore",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Percussionist",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "3+ Heroes with Penalties",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "1-2 Heroes with Penalties",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "0 Heroes with Penalties",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             }
           ],
@@ -2067,9 +2045,7 @@
             }
           ],
           "sourcePage": 372,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Heroes with Penalties",
           "biographyHtml": "<p>373\n373\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nAlias: Lilith Black\nGender: Female\nAge: Early-20s\nHeight: 6’5” (in chair)\nEyes: Glowing Red\nHair: Black and glossy\nSkin: Flawless\nBuild: Slight\nCostume/Equipment: A Giger-esque floating \nblack mobility chair decked out with spikes and \nskulls. When exercising her powers, a translucent \nred shield springs up around the chair, with \ntranslucent red drums inside it. \nApproach: Dampening\nArchetype: Inhibitor\nSnare\nVillains\nBiography\nLilith Black loved being behind the drum set. No \none looked at her legs, no one told her to “stay \npositive” and no one signed her up for risky \nexperiments “so that she could be a normal \ndaughter.” The final one was the shadiest, giving \nher a hoverchair in exchange for permission to try \nan experimental cocktail at their private clinic. As \nthe anesthesia began to take hold and the glowing \npurple chemicals flooded into her spinal cord, she \noverheard the doctor telling someone that he had \nthe data he needed, and that the disposal team \ncould get rid of the evidence. Fighting free of the \nsedatives, she reached out in rage and something in \nher mind reached with her. She saw a bubble of red \nenergy surround the doctor, the sound of drums as \nhe pounded at the resonant walls with his fists. She \ngot into her hoverchair and floated out of the place, \nencasing anyone that tried to stop her. She had the \npower now, and was done being poked.\nCapabilities and Motivations\nSnare’s shields are an extremely versatile form of \ntelekinesis. She can encase people or objects, shape \nthe shields, and control the sounds that they emit \nwhen struck. When she focuses fully on them, they \nare practically unbreakable. When Drudge made \nthem a more marketable band, Snare became the \ndriving force behind Helfyre’s musical and fighting \ncohesion, constantly working to balance the \ncompeting egos and keep the band moving to her \nbeat on and off the stage.\nUpgrades\nSnare is all-in for Helfyre, and could become their \nleader given a bit more time. She’s got a talent \nfor organization, a relentless internal drive, and \na bottomless well of rage at the fundamental \nunfairness of the world. The dark and mysterious \nDrudge has her intrigued by his stories of magic \nand smoldering eyes in equal measure, and she’s \nlooking forward to learning more about both.</p>"
         },
@@ -2082,59 +2058,59 @@
           "powers": [
             {
               "name": "Infernal",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Alertness",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Blood Sucking Fiend",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Close Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Persuasion",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "0 Other Villains in the Scene",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "1-2 Other Villains in the Scene",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "3+ Other Villains in the Scene",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             }
           ],
@@ -2225,9 +2201,7 @@
             }
           ],
           "sourcePage": 374,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Other Villains",
           "biographyHtml": "<p>375\n375\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs a child, “Jasper Felwind” (he admits to no other \nname) grew up listening to his grandmother’s stories \nof her youth in Romania. She told of the yearly lottery \nfestival where one person became royalty for one year. \nStories of how everyone knew to lay salt across the \nwindowsill on festival night and close their ears as the \nRoyal Ladies of the Court of Blood came to collect \nthe previous festival ruler. As a young man seeking \nimmortality and riches, he sought out the village, taking \nthe place of that year’s king so he could bargain with \nthe Court to join them. He soon learned his folly. After \nyears of washing the Court’s halls, he decided that \nstaying in the Court as a laborer and source of food \nwasn’t worth it. Scrubbing his face raw to remove \nKatarina’s blood sigils of ownership, he vanished into \nthe night to seek his fortune away from the Court.\nCapabilities and Motivations\nDrudge has all the speed and strength of a vampire, \nas well as their ability to enthrall, but his greatest \nstrength is in manipulation. He wants to live an \nimmortal life of luxury, and he knows that if the \nCourt of Blood ever finds him, they will either kill \nhim outright or bind him into a truly inescapable \nslavery. He’s got mesmerizing skills, cunning, and an \neye for flair, all of which he uses to try and make \nhimself indispensable to the band’s success.\nUpgrades\nDrudge has barely begun to explore the limits of \nthe effects his mesmerizing presence can have. He \nhas barely scratched the surface of Blood Magic, but \nhe knows it is vital to know more so that he stands \na chance at surviving long term, especially if the \nCourt comes calling. He’s aware of Snare’s interest, \nand is quite willing to encourage it — an admirer \nwho can create impenetrable shields sounds good \nto him.\nAlias: “Jasper Felwind”\nGender: Male\nAge: Unknown, looks in his mid-20s\nHeight: 6’\nEyes: Smoldering\nHair: An exquisite red mane\nSkin: Pale, only glitters when using glitter makeup\nBuild: Fashionably slender \nCostume/Equipment: A broadcloth topcoat over \nvelvet vest and open shirt with lace cuffs. Often \nstained with fake blood, as that is much easier to \nget out of fabric than real blood. Trousers that \nare a bit too tight. Pointed ears, claws, and fangs \n(usually displayed in a smirk).\nApproach: Leech\nArchetype: Loner\nDrudge</p>"
         }
@@ -2247,63 +2221,63 @@
             {
               "name": "Flamethrower",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Power Suit",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Leadership",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ranged Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "The Means of Production",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "0 Other Villains in the Scene",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "1-2 Other Villains in the Scene",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "3+ Other Villains in the Scene",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             }
           ],
@@ -2408,9 +2382,7 @@
             }
           ],
           "sourcePage": 378,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Other Villains",
           "biographyHtml": "<p>379\n379\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nMecha-Stalin’s exact nature is unclear. Theories range \nfrom him being a Cold War attempt to clone Stalin, to \na robot, to the actual Stalin’s head, cut from his aging \nbody and preserved through Soviet science. With all the \nmemories of the original, the members of Perestroika \ncertainly believed in his authenticity. He masterminded \nthe rise of Perestroika, assembled the members and \nset forth the goal of creating a new Soviet Union. \nWith immense resources and a substantial force of \nwell-trained troops, Mecha-Stalin came close to taking \nover Megalopolis and turning it into a power base, but \nwas destroyed along with Perestroika’s hidden base \nin a conflict with the Sentinels of Freedom when he \nengaged the base’s self-destruct. Though the rest of \nPerestroika were taken into custody, Mecha-Stalin’s \ndestruction leaves many questions unanswered.\nCapabilities and Motivations\nMecha-Stalin’s body may have been a patchwork \namalgam of technology, but it was still extremely \ndangerous and deceptively durable. The multiple \nredundancies and lack of needing to protect a pilot \nmeant that the suit could pack more armor, pound \nfor pound, than the Bunker suit, and could take more \nhits in close combat. This let Mecha-Stalin utilize his \nflamethrower and crushing hand to full effect, and if \nthings got too intense, he fell back behind his allies \nto provide fire support with his autocannon. His \nmechanical body was arguably the least dangerous \naspect, however, as his technologically enhanced brain \nhad all of Stalin’s memories and ability to create a cult \nof personality, as well as the strategic wherewithal to \ncreate a multi-layered long-term plan for domination.\nUpgrades\nMecha-Stalin has ports for offensive and defensive \nupgrades, but discovery of the base precluded such \nupgrades. As a result, Mecha-Stalin’s body was hastily \nassembled and poorly charged. Weaponry like missile \npods would make the suit more offensively capable, \nand an increase in available energy would substantially \nincrease the speed, dexterity, and strength.\nAlias: Joseph Stalin?\nGender: Male\nAge: If he is the original: 142 years. Possibly some \ntype of newer creation.\nHeight: 7’3”\nEyes: One brown, one red lens\nHair: Brown\nSkin: A patchwork of flesh, steel, and brass.\nBuild: Hulking\nCostume/Equipment: A mechanical suit made \nof a hodgepodge of technologies and materials, \nincluding iron, steel, and brass. Right arm mounts \na flamethrower, and the left shoulder has a large \nradiator for getting rid of waste heat. A multi-\nbarrel cannon juts above the right shoulder. The \nhead is the only organic part, with the left part \nof the cranium replaced with steel and left eye \nreplaced with a glowing lens\nApproach: Adaptive\nArchetype: Squad\nMecha Stalin 1</p>"
         },
@@ -2423,64 +2395,64 @@
           "powers": [
             {
               "name": "Nuclear",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Power Suit",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Conviction",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Leadership",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Soviet of Steel",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Green Zone: 55-38",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Yellow Zone: 37-17",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Red Zone: 16-1",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Health"
             }
           ],
@@ -2585,9 +2557,7 @@
             }
           ],
           "sourcePage": 380,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Health",
           "biographyHtml": "<p>381\n381\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nMonths after his apparent death, Mecha-Stalin \nreappeared in Siberia in a new body and with a new \ncomplement of followers. Abandoning his plans to take \nover America, Mecha-Stalin has vowed to reunite the \nnations of the former Soviet Union. He has found or \nis being supplied with cutting edge military technology \nand has substantial forces at his disposal with which \nhe launches strikes from a hidden base somewhere \nin Siberia. Making the rescue of his comrades his first \npriority, Mecha-Stalin has freed the other members of \nPerestroika and outfitted them with customized tech \nthat enhances their already considerable abilities. The \ndebate about his origins remains unresolved, as does \nthe question of whether or not this is the same head, \nor just a copy of a copy.\nCapabilities and Motivations\nMecha-Stalin’s stated mission is to reunite the Soviet \nUnion, but he is also looking to the future and looking \nfor opportunities to destabilize other countries to make \nthem softer targets for takeover. The new body is even \nmore deadly than the last in close quarters action, able \nto tear through steel like paper and shrug off attacks \nwith ease. Internal hardpoints and manufacturing \nmodules render his form capable of creating a wide \nvariety of field upgrades, repairs, and modifications, \nand the smaller size and increased dexterity allow for \nMecha-Stalin to even wield conventional weapons if \nneeded. He has also demonstrated a willingness to \ntake hits for his comrades, making them all the more \nwilling to fight for him.\nUpgrades\nWhile the suit has no apparent weaponry, this does \nnot mean that it is unarmed. It is extremely likely \nthat the suit hides a variety of heavy weapons, and \nthe reactor itself outputs enough power that excess \nenergy could be theoretically used as a last-ditch \nweapon. He commands his troops on the field from a \ncustomized hover tank, though once battle begins he \noften joins the fray while the tank supports with heavy \nartillery linked to his on-board targeting systems.\nAlias: Joseph Stalin?\nGender: Male\nAge: If he is the original: 142 years. Possibly some \ntype of newer creation.\nHeight: 6’ 5”\nEyes: One brown, one red lens\nHair: Brown mustache, metal hat covering his \nhead\nSkin: Pale/metal\nBuild: Sturdy and metallic\nCostume/Equipment: Mecha-Stalin’s new body is \nconsiderably more streamlined than the previous \nversion. It has no visible weapons, and is composed \nof golden and silver high-tech alloys over steel \nmuscles and an internal nuclear reactor. He wears \na military topcoat and cap in the old Soviet style.\nApproach: Adaptive\nArchetype: Bruiser\nMecha Stalin 2</p>"
         },
@@ -2600,76 +2570,76 @@
           "powers": [
             {
               "name": "Awareness",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Sickle and Hammer",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Cold Warrior",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Conviction",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Self-Discipline",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "9+ Clones",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d4",
+              "dieTypeKnown": true,
               "category": "Number of Clones"
             },
             {
               "name": "5-8 Clones",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Number of Clones"
             },
             {
               "name": "3-4 Clones",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Number of Clones"
             },
             {
               "name": "1-2 Clones",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Number of Clones"
             },
             {
               "name": "0 Clones",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Number of Clones"
             }
           ],
@@ -2774,9 +2744,7 @@
             }
           ],
           "sourcePage": 382,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Number of Clones",
           "biographyHtml": "<p>383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAt the end of WWII, Alexandr Tsarev was selected \nas a test subject for a secret Soviet program. \nExposed to radiation from a mysterious crystal, \nhe developed the power to duplicate himself. \nHe was cryogenically frozen, to later serve in the \nSoviet Union’s hour of greatest need. Decades later, \nBaron Blade discovered the lost facility and thawed \nhim out, tricking him into thinking the Freedom \nFive were enemies in his quest for vengeance. \nProletariat clashed with heroes as he looked for \nways to continue his mission and investigate other \nlost Soviet tech, eventually leading \nhim to a find a new purpose.\nCapabilities and Motivations\nProletariat is capable of duplicating himself on \ncontact and can absorb his duplicates to heal physical \nwounds. His consciousness is distributed across his \nduplicates, so there is no “main” Proletariat. Each \nduplicate acts independently, knowing everything \neach Proletariat knows. However, with more \ncopies comes more mental burden, reducing the \ncomplexity of tasks each one can do. What drives \nhim is the struggle for something bigger than himself. \nSomething like Perestroika gave him. A restored \nSoviet Union is less important to him than the act \nof fighting for something. After all, if it happened, \nhe’d be without purpose again.\nUpgrades\nWith his new cutting edge technology, Mecha-Stalin \noutfitted Proletariat with power armor designed to \nto work with his duplication, allowing him to hit \nharder and take more damage. \nAlias: Alexandr Tsarev\nGender: Male\nAge: Late-30s\nHeight: 5’9”\nEyes: Brown\nHair: Black\nSkin: Pale\nBuild: Stocky\nCostume/Equipment: Red bodysuit with white \npiping and red mask with a white star on the face. \nOlive drab combat pants with a black leather belt \nwith silver buckle and black combat boots. Short \ngrey high-collared jacket with red stars on the \narms.Black combat gloves. Proletariat wields a \nshort handled sledgehammer and sickle.\nApproach: Tactician\nArchetype: Legion\nProletariat\n383\n383\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>"
         },
@@ -2790,68 +2758,68 @@
             {
               "name": "Leaping",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Conviction",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "History",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Imposing",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Iron Heir",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "4+ Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "2-3 Engaged Opponents",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "0-1 Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             }
           ],
@@ -2942,9 +2910,7 @@
             }
           ],
           "sourcePage": 384,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Engaged Opponents",
           "biographyHtml": "<p>385\n385\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nBarrikada is the second to bear the name “Iron \nCurtain.” Her father was the first, frequently clashing \nwith previous Legacies during the Cold War. As the \nSoviet Union crumbled, Barrikada witnessed her \nfather’s spiral into depression and alcoholism as he \ncould not adapt to the changing world. He died a \nbroken man, but tried to put his angry daughter on \na better path with his dying words. Those words fell \non deaf ears. Mecha-Stalin’s message of a cause to \nfight for as well as a promise of strong foes to test \nherself against proved irresistible. After Perestroika’s \ndefeat at the hands of the Sentinels of Freedom, \nIron Curtain is eager for a rematch!\nCapabilities and Motivations\nIron Curtain’s metal flesh is both a blessing and \na curse. Where her father could transition to \nmetal and back at will, her skin is always metallic. \nThis grants her immense strength and durability, \nallowing her to fight against powerhouses like \nLegacy on equal footing, but greatly reduces her \nsense of touch and taste. While she can register \nheat and cold, she is immune to all but the most \nextreme ranges. Seeking to experience sensations \nand break the numbness, she is most at home in \nthe middle of a fight against an opponent who can \ntest her enough to finally make her feel something.\nUpgrades\nTaking advantage of Iron Curtain’s resilience, Mecha-\nStalin has used the technology at his disposal to \ncreate an electrified exoskeleton that makes her \neven more dangerous in close combat. With Iron \nCurtain’s formidable strength and durability, this \nelectric field ensures that she can last even longer \nand do even more damage. While she isn’t immune \nto the electricity it produces, she welcomes the \nadded spice it brings to the fight.\nAlias: Barrikada Dmitriyevna Petrov\nGender: Female\nAge: Early-20s\nHeight: 6’2”\nEyes: White\nHair: dark grey, metallic\nSkin: Silver, metallic\nBuild: Very Muscular\nCostume/Equipment: A red unitard, gloves, and \nknee-high boots. Red bands around thighs and \nupper arms, and a red star on each shoulder.\nApproach: Prideful\nArchetype: Guerrilla\nIron Curtain</p>"
         },
@@ -2957,49 +2923,49 @@
           "powers": [
             {
               "name": "Custom Sniper Rifle",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Intuition",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Ranged Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Reactivated",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Stealth",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "0-1 Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "2-3 Engaged Opponents",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "4+ Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             }
           ],
@@ -3104,9 +3070,7 @@
             }
           ],
           "sourcePage": 386,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Engaged Opponents",
           "biographyHtml": "<p>387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nPavel was in Stalingrad at age 17 when the Nazis \ninvaded. The ammunition factory where his parents \nworked was an early target, and after their death he \njoined the Red Army Unit 23. After the surrender of \nthe Axis forces in Stalingrad, he was deployed all along \nthe Eastern Front including Kursk, Finland, and Warsaw \nto destabilize axis operations in advance of Soviet \nforces. He was then recruited for the NKVD’s covert \nkill squad to eliminate political dissidents, disrupt CIA \nand MI6 agents, and assassinate foreign scientists \nstudying space travel. In 1950, the NKVD established \na sleeper program by order of Joseph Stalin. He was \nembedded in La Paz, Bolivia, ordered to maintain \nreadiness until activated.\nActivations:\nApr. 15, 1951: Nuclear test team 5 | Nuclear testing \nsite 5, Nevada\nJune 26, 1951: Korean theater command | The \nPentagon, Arlington, VA\nMar. 18, 1952: CIA Chief and Assistant | CIA HQ \nLangley, VA\nNov. 22, 1963: John F. Kennedy | Dallas, TX\nJun 23, 1967: Lyndon Baines Johnson | Glassboro NJ | \nMISSION ABORT, authorization A. Kosygin\nCapabilities and Motivations\nMarxman might be considered history’s greatest sniper, \nwere his service records not thoroughly redacted. His \ntalent for ballistic calculation honed by decades of \npractice allows him to make precise shots at extreme \nrange. He stalks his targets for days, preparing his \napproach, retreat, and contingent positions. For him, \nthe mission is all. Long ago, he made his choice to give \nhis life to the Soviet Union. Mecha-Stalin’s knowledge \nof his activation code gives him authority to command, \nand Marxman is ready to serve.\nUpgrades\nMecha-Stalin knows that keeping Marxman out of \ndirect fighting is paramount, so along with better \nweapons that extend his range, he wears a prototype \nexoskeleton under his fatigues that serves a variety \nof functions. It monitors his vitals, regulates his bodily \nfunctions, and augments his mobility.\n387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAlias: Pavel Vladislavovich Koslovski\nGender: Male\nAge: 97\nHeight: 5’ 5”\nEyes: Blue\nHair: Bald with a grey beard\nSkin: Pale, wrinkled, and spotted \nBuild: Excellent for his age\nCostume/Equipment: A grey and rust-red body \nsuit with white fur shawl around the neck and \nleft shoulder. White and grey camo combat pants. \nDark grey gloves and boots. Often wears a white \nmetal helmet with a rectangular red eye slit on the \nleft and a round one with the hammer and sickle \ndesign on the right. Frequently carries a bandoleer \nof heavily customized ammunition and a heavily \nmodified designated marksman rifle (DMR) or \nsniper rifle with scope.\nApproach: Specialized\nArchetype: Predator\nMarxman</p>"
         }
@@ -3126,63 +3090,63 @@
             {
               "name": "Awareness",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Illusions",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Sonic",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Creativity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Criminal Underworld Info",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Leadership",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Mirror Image",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "3+ Heroes with at least one Penalty",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "1-2 Heroes with at least one Penalty",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             },
             {
               "name": "0 Heroes with at least one Penalty",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Heroes with Penalties"
             }
           ],
@@ -3273,9 +3237,7 @@
             }
           ],
           "sourcePage": 390,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Heroes with Penalties",
           "biographyHtml": "<p>391\n391\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAislin Allen used to be a hero. She fought the good \nfight alongside the other members of the first \niteration of the hero team called Freedom Five \nas the Shrieker, using her superhuman voice to \ndestroy and disorient. As time went on, she grew \ndisillusioned — she wanted more than to see all of \nthe money she recovered from a bank heist go right \nback into the vault while a sweaty bank manager \ngave her a limp handshake in gratitude. When her \nthroat was wounded and her powers faded, it was \ntime. She faked her death, and the Shrieker faded \naway. Opportunity knocked in the form of Baron \nBlade, who gave her tech that worked with the \nremnants of her vocal powers to create illusions \nand manipulate the senses. All in exchange for a \nsimple favor for the Baron. Taking up a mirrored \nmask, Aislin took the name Glamour and began to \nlive life according to her own terms.\nCapabilities and Motivations\nGlamour is a master of multilayered planning and \ndiversions. She prefers to work behind the curtain \nas long as possible, knowing that the timing of the \nbig reveal is all-important. This served her well in \nthe previous Slaughterhouse Six, where she used \nher powers for months to create an illusionary \nAmbuscade to act as the leader in her stead. Now \nthat she has stepped into the leadership role of the \nnew Slaughterhouse Six, the big question has to be \nwhat she is really after. With Glamour, nothing is \never what it seems.\nUpgrades\nGlamour has upgrades planned for her tech to \ntailor her illusions to specific targets within a crowd, \nwhich can combine with her vocal powers to make \nit all feel much more real than before. Causing \neveryone to see the same illusion is versatile, but \nmaking it so that each one sees something tailored \nspecifically to them… now that could really cause \nsome confusion.\nAlias: Aislin Allen\nGender: Female\nAge: Middle-Aged\nHeight: 5’3”\nEyes: Green\nHair: Red\nSkin: Freckled\nBuild: Slight and mysterious\nCostume/Equipment: A mirrored silver suit with \nwhite gloves black waist wrap, black thigh high \nboots and black cape with bright white inner lining. \nMirrored silver full head mask with no visible eyes \nor mouth. \nApproach: Disruptive\nArchetype: Inhibitor\nGlamour</p>"
         },
@@ -3288,59 +3250,59 @@
           "powers": [
             {
               "name": "Eagle Eye System",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Energy Bolt Launchers",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Flight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Acrobatics",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Alertness",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Eye on the Prize",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ranged Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "0 Other Villains",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "1-2 Other Villains",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Other Villains"
             },
             {
               "name": "3+ Other Villains",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Other Villains"
             }
           ],
@@ -3431,9 +3393,7 @@
             }
           ],
           "sourcePage": 392,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Other Villains",
           "biographyHtml": "<p>393\n393\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs the goggles attached to the contacts that had \nbeen drilled into his skull, Mikal Jadoon remembered \nabandoning the Pakistani army for the mercenary \nlife of better pay and fewer rules. He remembered \njoining RevoCorp’s black ops team for the same \nreasons. He remembered the upgrades, the rush \nas he tried out the wings for the first time, and the \nEagle Eye system that let him see every crystal clear \ndetail, every nuance of his target. He remembered \nthe man who looked like living darkness, and \nthe terrible pain as that slice of shadow sent out \ntendrils that grabbed him by his eyes and pulled. He \nremembered being spit out of an endless darkness \nonly to realize that something was terribly wrong \nwith his vision. He remembered the weeks before \nhe was able to contact Ray Manta, seeing nothing \nbut writhing, hungry shadows. \nThen, Ray Manta made the \nfinal connections to Mikal’s \ntemple, lifting the darkness. \nCycling through the visual \nspectra, Mikal wondered if he \nwould ever sleep again.\nCapabilities and Motivations\nDesert Eagle is a skilled and dangerous aerial \ncombatant. The speed and maneuverability of his \nwing system allows him to attack from unpredictable \nangles and makes him a hard target to hit. Plus, he \nonly gets more lethal as the fight continues and \nhis Eagle Eye system analyzes target weaknesses. \nOnce the Eagle Eye system has locked on to a \ntarget, even the stealthiest heroes will find escaping \nDesert Eagle a difficult proposition.\nUpgrades\nRay Manta is tinkering with every aspect of Desert \nEagle’s gear. The next generation Eagle Eye system \nacquires target weaknesses faster and hits harder, \nthe barrier systems can generate a stronger barrier, \nand the wingsuit’s upgraded thrusters and G-force \ndampeners allow for tighter turns and a higher \noperational ceiling.\nAlias: Mikal Jadoon\nGender: Male\nAge: Early-30s\nHeight: 6’\nEyes: Completely black\nHair: Brown, windblown\nSkin: Brown\nBuild: Wiry gymnast\nCostume/Equipment: A brown bodysuit with \ngold piping, brown boots, and khaki arms and \nlegs. Khaki gloves with gold bracers fitted with \nglowing purple gems. A backpack fitted with large \nwings with metal feathers and thrusters. A black \nbreather mask covering the mouth and nose with \na hose leading to the backpack. Glowing purple \ngoggles covering the eyes.\nApproach: Reckless\nArchetype: Loner\nDesert Eagle</p>"
         },
@@ -3446,49 +3406,49 @@
           "powers": [
             {
               "name": "Electricity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d12",
+              "dieTypeKnown": true
             },
             {
               "name": "Intangibility",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Living Lightning",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Ranged Combat",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Self-Discipline",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "4+ Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "2-3 Engaged Opponents",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             },
             {
               "name": "0-1 Engaged Opponents",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Engaged Opponents"
             }
           ],
@@ -3593,9 +3553,7 @@
             }
           ],
           "sourcePage": 394,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Engaged Opponents",
           "biographyHtml": "<p>395\n395\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs far as Sean Vargas was concerned, the life of \na RevoCorp enforcer was pretty good. Sure, he \nhad to kidnap the occasional scientist or kill the \noccasional whistleblower, but a job with great \nmedical, two weeks extra vacation, and generous \nperformance bonuses? Worth it. The transfer to \nFort Adamant seemed like just another assignment. \nHe started worrying when a bright-eyed doctor \nnamed Demikahv had him put on a slab and started \nhooking up electrodes. She told him that she had \ncut a deal with RevoCorp and he’d been written \noff. Then she threw the switch, overloading his \npowers and causing him to stop thinking altogether. \nWhen he finally came to, he realized that his body \nwas no longer on the slab. Then came the horrific \nrealization that his body was no longer on the slab \nbecause it was a pile of electrically charged ash \nhovering around him. That’s when the panic set in.\nCapabilities and Motivations\nGlamour has given Re-Volt a purpose. The loss of \nhis humanity expanded his powers exponentially, \nbut being part of the crew makes him feel more \nhuman, which he desperately needs. Ideally, he \nwants to regain his humanity, but he’s not about to \nput what little he has left of himself into the hands \nof doctors anytime soon. Reduced to a cloud of \nelectric impulses that can assume his old shape, he \ncan now travel over wires and absorb electricity to \naugment his powers, in addition to shooting even \nmore lightning than before.\nUpgrades\nAs his humanity fades, Re-Volt has begun to explore \nthe limits of the neuro-electricity that constitutes \nhis new form. By manipulating the electricity in the \nnervous systems of other people, he can debilitate \nand suppress his enemies. He can even take them \nover briefly, moving an unconscious body around \nby using their own nervous system as a host for his \nbioelectric impulses. This ability might one day grow \nto be the way he could acquire a new body.\nAlias: Sean Vargas\nGender: Male\nAge: Early-30s\nHeight: 5’8”/an indeterminate cloud of electrical \nimpulses\nEyes: Glowing blue\nHair: None\nSkin: Matte black, not actually skin\nBuild: Presents as a stout\nCostume/Equipment: When appearing as a \nperson, he has a carbon black body with glowing \nlightning jags on the head and chest, with lightning \narcing all over the body.\nApproach: Focused\nArchetype: Guerrilla\nRe-volt</p>"
         },
@@ -3609,53 +3567,53 @@
             {
               "name": "Power Suit",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Strength",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Vitality",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Close Combat",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Fitness",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Hungry Hungry",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Green Zone: 65-45",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Yellow Zone: 44-18",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Red Zone: 17-1",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Health"
             }
           ],
@@ -3746,9 +3704,7 @@
             }
           ],
           "sourcePage": 396,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Health",
           "biographyHtml": "<p>397\n397\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEddie liked to hit things, he liked to be bigger than \nthe things he was hitting, and he liked money. On \nthe Rook City Renegades baseball team, he got \nall of those things. The team was sponsored by \nPike Industries, and they liked their players on the \nthuggish side. With the wide variety of pharmaceutical \nenhancements available, Eddie decided his favorite \ntype of muscle growth pill was “all of them.” Kicked off \nthe team for being too flagrantly juiced, he became \na crime syndicate hired muscle, a career path all too \ncommon in Rook City. After hearing that hippos were \nsurprisingly dangerous animals, he decided that he \nneeded a costume to enhance his tough guy image, \nand Hippo was born. He’s not the brightest, but \nthere’s always a place for a tough guy who doesn’t \nquestion orders and likes a good fight.\nCapabilities and Motivations\nIn addition to his own substantial strength, the “skin” \nof Hippo’s suit is actually a type of liquid armor \nsandwiched between layers of polymer, able to turn \naside nearly anything with minimal impact to the \nuser. Eddie stole it from a military depot on an odd \njob boosting prototype weapons. After the heist, \nhe found a seedy lab that was more than happy to \nmake him a suit out of the ultra-durable material \n(after a full analysis and sample so that they could \nreplicate it, of course). It’s made him an even more \neffective thug, which Glamour noticed when she \nstarted looking for muscle for her group. He’s the \nSlaughterhouse Six’s blunt instrument, and content \nin that role.\nUpgrades\nWhile pharmacology has taken Hippo’s strength \nabove and beyond the human norm, he’s hit the \nlimit when it comes to conventional steroids. With \nenough funding and a little technologic genius from \nRay Manta, the Hippo suit could be upgraded with \ncybernetic enhancements and interfacing. In addition \nto increasing his strength tenfold, he’d be able to \nmove in it as if it truly was his skin. Sure, there would \nprobably be a few downsides, but Eddie isn’t the \ntype to worry too much about that sort of thing.\nVillains\nAlias: Eddie Wagner\nGender: Male\nAge: Late-40s\nHeight: 7’2” \nEyes: White\nHair: Brown\nSkin: White\nBuild: Extremely muscular\nCostume/Equipment: Eddie wears a full body \nsuit that resembles an actual hippo, with the head \nof the hippo covering his own. The suit covers \neverything except his face, which can be seen \nbetween the upper and lower jaws of the hippo, \nframed by the teeth of the suit. \nApproach: Bully\nArchetype: Bruiser\nHippo</p>"
         },
@@ -3762,58 +3718,58 @@
             {
               "name": "Intuition",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Karma",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Presence",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Creativity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             },
             {
               "name": "Insight",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Lady Luck",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Persuasion",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "Green Zone: 40-30",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Yellow Zone: 29-15",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Health"
             },
             {
               "name": "Red Zone: 14-1",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Health"
             }
           ],
@@ -3904,9 +3860,7 @@
             }
           ],
           "sourcePage": 398,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Health",
           "biographyHtml": "<p>399\n399\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nGabrielle Adhin grew up hearing stories about her \nfamily’s legendary luck, but they didn’t sit quite right \nwith her. Lucky people won the lottery; they didn’t \nwear secondhand clothing and have to move every \nfew months. After meeting the man she thought \nwas her soulmate and then having to move away, \nGabrielle was fed up. She left, and she took her \nfamily’s lucky talisman with her. As soon as she \ntouched it, she saw the strings of probability, and \nhow if she pulled on a string just so, she’d be able to \npush luck the way she wanted. She quickly learned \nthat if she made herself lucky, then there would be \na backlash that would cancel it out. But she could \nmake someone else unlucky, and capitalize on their \nmisfortune. And capitalize she did. Thus, Kismet \nbecame a perennial nuisance for heroes.\nCapabilities and Motivations\nKismet can alter probability, usually at the expense \nof her opponents. She can make a hero stumble \nat crucial moments, a punch land on a particularly \npainful spot, or a hand shake while aiming. The more \nshe pushes, the more drastic the result… but always \nwith a corresponding surge the other way. Making \nsomeone unnaturally unlucky means that they will \ndefinitely be lucky later, and making someone lucky \nmeans that anything they gained would be lost soon \nafter when the universe pushed back. Fortunately \nfor her and unfortunately for everyone else, Kismet \nhas become quite practiced at managing the waves \nof luck and unluck to her benefit.\nUpgrades\nWhen push comes to shove, Kismet will use her \npowers on herself to enhance her luck, though only \nin the most dire situations. When she exerts her \npowers broadly, heroes have a lot more things go \nwrong and have to be cautious about how they \nuse their powers, as anything they do might cause \nunexpected results! Kismet, on the other hand, is \ncalm and in control. Things just tend to go her way.\nAlias: Gabrielle Adhin\nGender: Female\nAge: Early-30s\nHeight: 5’7”\nEyes: Dark brown, glow green when using powers\nHair: Black with red streaks\nSkin: Light brown, full sleeve tattoo on right arm\nBuild: Curvaceous\nCostume/Equipment: A red dress that leaves her \narms and shoulders bare, cut to the thigh. Ripped \nred leggings. Translucent grey mesh overcoat. \nCarries an intricately carved stone talisman that \nglows green when she uses her powers. \nApproach: Dampening\nArchetype: Fragile\nKismet</p>"
         },
@@ -3919,70 +3873,70 @@
           "powers": [
             {
               "name": "Gadgets",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Inventions",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Lightning Calculator",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Power Suit",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             }
           ],
           "qualities": [
             {
               "name": "Conspiracy Theorist",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Conviction",
               "dieType": "d8",
-              "dieTypeKnown": false
+              "dieTypeKnown": true
             },
             {
               "name": "Creativity",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d6",
+              "dieTypeKnown": true
             },
             {
               "name": "Investigation",
-              "dieType": "d8",
-              "dieTypeKnown": false
+              "dieType": "d10",
+              "dieTypeKnown": true
             }
           ],
           "statuses": [
             {
               "name": "4+ Invention Mods",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d12",
+              "dieTypeKnown": true,
               "category": "Invention Mods"
             },
             {
               "name": "2-3 Invention Mods",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d10",
+              "dieTypeKnown": true,
               "category": "Invention Mods"
             },
             {
               "name": "1 Invention Mod",
               "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieTypeKnown": true,
               "category": "Invention Mods"
             },
             {
               "name": "0 Invention Mods",
-              "dieType": "d8",
-              "dieTypeKnown": false,
+              "dieType": "d6",
+              "dieTypeKnown": true,
               "category": "Invention Mods"
             }
           ],
@@ -4087,9 +4041,7 @@
             }
           ],
           "sourcePage": 400,
-          "gaps": [
-            "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-          ],
+          "gaps": [],
           "statusTheme": "Invention Mods",
           "biographyHtml": "<p>401\n401\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nRaymond Mantey was one of RevoCorp’s most \nbrilliant weapon developers, responsible for some \nof the best-selling products in their off-the-books \nvillain supply division. If a client wanted a custom \nbattlesuit or specialized cybernetics, Ray was the \none to talk to. Few chose to do so more than once, \ngiven Ray’s proclivity for talking endlessly about \nconspiracies and robots at every opportunity. As \ntime went on, management decided that he was \ntoo useful to get rid of, but too weird for clients. \nWhen he made a manta-themed battle suit for \nhimself, fitted with anti-robot technology, they \nwere only too happy to transfer him to the active \nduty wing, and when Ambuscade came looking for \nmembers for a villain team, everyone at RevoCorp \nwas a bit relieved to see Raymond go. Glamour’s \nreveal as the true leader didn’t really surprise \nhim. After all, an illusionist creating a \nleader with illusions seemed \nentirely logical to him.\nCapabilities \nAnd Motivations\nRaymond Mantey has a mind \nthat is constantly making connections, for better \nand for worse. He can look at a camera and see \nhow the principles involved could be adapted into \na set of goggles that bypass the eye and directly \ntransmit to the brain, or look at a grapefruit and \nsee a vast conspiracy by the secretive international \nfruit council to sedate the populace through their \nchoice of breakfast citrus. He is constantly making \nnew inventions and new conspiracies in equal \nmeasure. The rest of the Slaughterhouse Six team \nhave learned not to ask him to go into detail and \nwork around his desire to wake people up to the \nmany truths he can see everywhere.\nUpgrades\nRay Manta has been in enough scrapes to know \nthat up close and personal isn’t for him. He’s been \nworking on suit upgrades to give his suit limited \nautonomy to get him out of trouble, like having a \nmedevac looking over his shoulder at all times. In \ntheory, it could even do some of the fighting for \nhim. But just because it can make decisions and act \non its own does NOT mean it is a robot.\nVillains\nAlias: Raymond Mantey...wait, why do you want \nto know?\nGender: Male, but gender is an artificial construct \nthey use to divide us.\nAge: Mid-40s, but impossible to truly be sure since \nwe are all programs in a simulation.\nHeight: 5’-ish. Slouches to throw off the satellites. \nEyes: Blue, constantly looking around for the \nhidden cameras.\nHair: Brown and greasy, because shampoo has \nsedatives to pacify the population. \nSkin: Pasty, unwashed to avoid the nanomachines \nin the water.\nBuild: Overweight and furtive\nCostume/Equipment: A blue smock and grey pants \nwith brown satchel. Backpack with a prehensile \ntail that ends in a gold spade-head with a laser. \nCloak made of reinforced tin-foil, split down the \nmiddle into two wings. Reinforced tin helmet with \nradar-jamming peaks and multi-lensed goggles.\nApproach: Underpowered\nArchetype: Inventor\nRay Manta</p>"
         }

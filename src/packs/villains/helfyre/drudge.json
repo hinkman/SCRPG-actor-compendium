@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -139,7 +139,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -171,7 +171,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -203,7 +203,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -254,7 +254,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -267,7 +267,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -320,7 +320,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Other Villains</p>"
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Other Villains"
         }
       },
@@ -601,9 +601,7 @@
       "sourcePage": 374,
       "biographyHtml": "<p>375\n375\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs a child, “Jasper Felwind” (he admits to no other \nname) grew up listening to his grandmother’s stories \nof her youth in Romania. She told of the yearly lottery \nfestival where one person became royalty for one year. \nStories of how everyone knew to lay salt across the \nwindowsill on festival night and close their ears as the \nRoyal Ladies of the Court of Blood came to collect \nthe previous festival ruler. As a young man seeking \nimmortality and riches, he sought out the village, taking \nthe place of that year’s king so he could bargain with \nthe Court to join them. He soon learned his folly. After \nyears of washing the Court’s halls, he decided that \nstaying in the Court as a laborer and source of food \nwasn’t worth it. Scrubbing his face raw to remove \nKatarina’s blood sigils of ownership, he vanished into \nthe night to seek his fortune away from the Court.\nCapabilities and Motivations\nDrudge has all the speed and strength of a vampire, \nas well as their ability to enthrall, but his greatest \nstrength is in manipulation. He wants to live an \nimmortal life of luxury, and he knows that if the \nCourt of Blood ever finds him, they will either kill \nhim outright or bind him into a truly inescapable \nslavery. He’s got mesmerizing skills, cunning, and an \neye for flair, all of which he uses to try and make \nhimself indispensable to the band’s success.\nUpgrades\nDrudge has barely begun to explore the limits of \nthe effects his mesmerizing presence can have. He \nhas barely scratched the surface of Blood Magic, but \nhe knows it is vital to know more so that he stands \na chance at surviving long term, especially if the \nCourt comes calling. He’s aware of Snare’s interest, \nand is quite willing to encourage it — an admirer \nwho can create impenetrable shields sounds good \nto him.\nAlias: “Jasper Felwind”\nGender: Male\nAge: Unknown, looks in his mid-20s\nHeight: 6’\nEyes: Smoldering\nHair: An exquisite red mane\nSkin: Pale, only glitters when using glitter makeup\nBuild: Fashionably slender \nCostume/Equipment: A broadcloth topcoat over \nvelvet vest and open shirt with lace cuffs. Often \nstained with fake blood, as that is much easier to \nget out of fabric than real blood. Trousers that \nare a bit too tight. Pointed ears, claws, and fangs \n(usually displayed in a smirk).\nApproach: Leech\nArchetype: Loner\nDrudge</p>",
       "statusTheme": "Other Villains",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

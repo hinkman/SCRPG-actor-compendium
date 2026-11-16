@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -191,7 +191,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": "",
         "description": ""
       },
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -223,7 +223,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": "",
         "description": ""
       },
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -255,7 +255,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -319,7 +319,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": false,
         "description": "<p>Titan’s Challenge</p>"
       },
@@ -332,7 +332,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Titan’s Challenge"
         }
       },
@@ -352,7 +352,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Titan’s Challenge</p>"
       },
@@ -365,7 +365,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Titan’s Challenge"
         }
       },
@@ -398,7 +398,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Titan’s Challenge"
         }
       },
@@ -706,9 +706,7 @@
       "sourcePage": 362,
       "biographyHtml": "<p>363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAll that the world knows is that an incomprehensible \nbehemoth has emerged from the depths of the \nAtlantic Ocean, moving towards an unknowable \ngoal with despair, destruction, and madness in its \nindifferent wake. If they could draw back the curtain \nof time, they might see how in a time long past, \nthe mages of Atlantis awoke something terrible. \nA beast from a nether dimension suddenly saw \na new, vital world and began to break through so \nthat it could summon its Hul-spawn and lay claim \nto the earth. To prevent devastation, the master \nmages of Atlantis enacted a terrible plan. Imbuing \nrelics of power with the collective sacrifice of their \npeople, they created twelve anchors to forever \nhold xxtz’Hulissh in place, then sank their city so \nthe relics would be forever safe. Perhaps, had they \nmore time, they could have found a kinder solution. \nPerhaps, had they more foresight, they could have \nanticipated the curiosity of future civilizations. \nPerhaps, had they more fortune, they might have \nsucceeded in sealing the dread being away forever.\nCapabilities and Motivations\nWith the removal of several of the Atlantean \nrelics, both by heroes and by researchers \nstudying Atlantis, the prison has been weakened. \nAn incomprehensible, unstoppable behemoth, \nxxtz’Hulissh has broken free and moves towards an \nunknown goal, destroying anything in the way and \nsending a wave of horror before it. To fight it is to \nbe trampled; to look upon it is to court madness.\nUpgrades\nxxtz’Hulissh’s biology, motives, and potential \nweaknesses seem impossible to discern. The \nlightless maw where its face should be is a portal to \nits realm, from whence it spews forth its spawn. The \nhorror that accompanies xxtz’Hulissh is enough to \nsend all but the strongest souls running, and those \nthat face it directly risk being shoved into the maw \nto the dimension where its hungry brood waits.\nAlias: None\nGender: Incomprehensible\nAge: Impossible\nHeight: Towering\nEyes: None \nHair: None\nSkin: Flabby, squamous, one fore-limb covered \nwith a carapace.\nBuild: Colossal\nCostume/Equipment: To look upon it is madness! \nIts barbed tentacles rising high above a headless \nneck from which the Hul-spawn peer and wait \nto be born from the darkness! The clawed feet \non legs that should crumble beneath its weight! \nSkin like the strongest armor, and a crushing claw \ncovered with shell that is stronger still! The tail that \nlashes, the claw that crushes! Beware! Look not \nupon it!\nApproach: Ancient\nArchetype: Titan\nxxtz’Hulissh\n363\n363\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nVillains</p>",
       "statusTheme": "Titan’s Challenge",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

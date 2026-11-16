@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -126,7 +126,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -223,7 +223,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": "",
         "description": ""
       },
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -255,7 +255,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -287,7 +287,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": false,
         "description": "<p>Invention Mods</p>"
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Invention Mods"
         }
       },
@@ -320,7 +320,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Invention Mods</p>"
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Invention Mods"
         }
       },
@@ -366,7 +366,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Invention Mods"
         }
       },
@@ -386,7 +386,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Invention Mods</p>"
       },
@@ -399,7 +399,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Invention Mods"
         }
       },
@@ -707,9 +707,7 @@
       "sourcePage": 400,
       "biographyHtml": "<p>401\n401\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nRaymond Mantey was one of RevoCorp’s most \nbrilliant weapon developers, responsible for some \nof the best-selling products in their off-the-books \nvillain supply division. If a client wanted a custom \nbattlesuit or specialized cybernetics, Ray was the \none to talk to. Few chose to do so more than once, \ngiven Ray’s proclivity for talking endlessly about \nconspiracies and robots at every opportunity. As \ntime went on, management decided that he was \ntoo useful to get rid of, but too weird for clients. \nWhen he made a manta-themed battle suit for \nhimself, fitted with anti-robot technology, they \nwere only too happy to transfer him to the active \nduty wing, and when Ambuscade came looking for \nmembers for a villain team, everyone at RevoCorp \nwas a bit relieved to see Raymond go. Glamour’s \nreveal as the true leader didn’t really surprise \nhim. After all, an illusionist creating a \nleader with illusions seemed \nentirely logical to him.\nCapabilities \nAnd Motivations\nRaymond Mantey has a mind \nthat is constantly making connections, for better \nand for worse. He can look at a camera and see \nhow the principles involved could be adapted into \na set of goggles that bypass the eye and directly \ntransmit to the brain, or look at a grapefruit and \nsee a vast conspiracy by the secretive international \nfruit council to sedate the populace through their \nchoice of breakfast citrus. He is constantly making \nnew inventions and new conspiracies in equal \nmeasure. The rest of the Slaughterhouse Six team \nhave learned not to ask him to go into detail and \nwork around his desire to wake people up to the \nmany truths he can see everywhere.\nUpgrades\nRay Manta has been in enough scrapes to know \nthat up close and personal isn’t for him. He’s been \nworking on suit upgrades to give his suit limited \nautonomy to get him out of trouble, like having a \nmedevac looking over his shoulder at all times. In \ntheory, it could even do some of the fighting for \nhim. But just because it can make decisions and act \non its own does NOT mean it is a robot.\nVillains\nAlias: Raymond Mantey...wait, why do you want \nto know?\nGender: Male, but gender is an artificial construct \nthey use to divide us.\nAge: Mid-40s, but impossible to truly be sure since \nwe are all programs in a simulation.\nHeight: 5’-ish. Slouches to throw off the satellites. \nEyes: Blue, constantly looking around for the \nhidden cameras.\nHair: Brown and greasy, because shampoo has \nsedatives to pacify the population. \nSkin: Pasty, unwashed to avoid the nanomachines \nin the water.\nBuild: Overweight and furtive\nCostume/Equipment: A blue smock and grey pants \nwith brown satchel. Backpack with a prehensile \ntail that ends in a gold spade-head with a laser. \nCloak made of reinforced tin-foil, split down the \nmiddle into two wings. Reinforced tin helmet with \nradar-jamming peaks and multi-lensed goggles.\nApproach: Underpowered\nArchetype: Inventor\nRay Manta</p>",
       "statusTheme": "Invention Mods",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

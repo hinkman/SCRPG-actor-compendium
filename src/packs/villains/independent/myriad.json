@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -126,7 +126,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -255,7 +255,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -319,7 +319,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "selected": false,
         "description": "<p>Number of Minions</p>"
       },
@@ -332,7 +332,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Number of Minions"
         }
       },
@@ -352,7 +352,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Number of Minions</p>"
       },
@@ -365,7 +365,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Number of Minions"
         }
       },
@@ -398,7 +398,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Number of Minions"
         }
       },
@@ -418,7 +418,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Number of Minions</p>"
       },
@@ -431,7 +431,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Number of Minions"
         }
       },
@@ -451,7 +451,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d4",
         "selected": false,
         "description": "<p>Number of Minions</p>"
       },
@@ -464,7 +464,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Number of Minions"
         }
       },
@@ -772,9 +772,7 @@
       "sourcePage": 358,
       "biographyHtml": "<p>359\n359\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEdgar Black took pleasure \nin making things smaller than \nhim suffer. As an \nexterminator, he \nwent to work every \nday with a smile on \nhis face. On the way \nto one such \njob, \nhe \nclipped \na courier\nwith his van, destroying the package the boy \nwas carrying. Edgar sped away to avoid any \nconsequences, but the contents of the package had \nother ideas. The contents of the package turned \nout to be a demonic entity that had been trapped \nfor years by the hero NightMist. After her death, \nthe courier had been commissioned to transport it \nto another mage for safekeeping. With the prison \ndestroyed, the rapidly multiplying demonic swarm \nused Edgar as a host, and he became the central \npersonality of the villain Myriad. He has clashed \nwith the new hero team Daybreak several times as \nhe looks to cause a little chaos in the world.\nCapabilities and Motivations\nAs a person, Edgar Black’s malevolence was limited \nby his cowardice and lack of long-term planning. \nThe demon that possessed him was limited in that \nit needed a host to act as a focus, as without a core \npersonality to adhere to, the demon’s intelligence \nwas scattered throughout the entire swarm. As \nthe composite personality “Myriad,” they are even \nworse; Edgar’s desire to harm is bolstered by the \nDemon’s desire for chaos and inherent magic. \nWith nigh-infinite control over insects, Myriad has \nthe ability to see and hear just about anything, \nthough they still lack the long-term planning skill or \nintelligence to truly capitalize on anything they find \nout. Mostly, Myriad just wants to destroy things, and \nis happiest when wreaking havoc surrounded by an \ninfinite swarm of infernal bugs.\nUpgrades\nBeing made of insects gives Myriad a lot of \nflexibility when it comes to things like size and \nshape. He could be a single fly on the wall, or a \nface on a swarm of locusts blackening the sky, his \nvoice their collective chittering. The demon has a \nsubstantial well of innate magic that can be used \nfor simple spells, particularly ones revolving around \nsummoning infernal insects with nasty powers from \nhis home hell dimension.\nAlias: Edgar Black\nGender: A demonic swarm of bugs, identifies as \nMale\nAge: A demonic swarm of bugs, identifies as \nMiddle-Aged\nHeight: Variable\nEyes: Two glowing orange eyes, but the swarm’s \neyes are many\nHair: None\nSkin: Black Chitin\nBuild: Made of bugs\nCostume/Equipment: A mass of demon bugs \nthat have taken on a humanoid semblance with \nchitinous black skin, wings, and glowing orange \neyes and chest. \nApproach: Creator\nArchetype: Overlord\nMyriad\nVillains</p>",
       "statusTheme": "Number of Minions",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

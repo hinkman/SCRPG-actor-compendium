@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -159,7 +159,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -287,7 +287,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -333,7 +333,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -353,7 +353,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Heroes with Penalties</p>"
       },
@@ -366,7 +366,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Heroes with Penalties"
         }
       },
@@ -634,9 +634,7 @@
       "sourcePage": 390,
       "biographyHtml": "<p>391\n391\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAislin Allen used to be a hero. She fought the good \nfight alongside the other members of the first \niteration of the hero team called Freedom Five \nas the Shrieker, using her superhuman voice to \ndestroy and disorient. As time went on, she grew \ndisillusioned — she wanted more than to see all of \nthe money she recovered from a bank heist go right \nback into the vault while a sweaty bank manager \ngave her a limp handshake in gratitude. When her \nthroat was wounded and her powers faded, it was \ntime. She faked her death, and the Shrieker faded \naway. Opportunity knocked in the form of Baron \nBlade, who gave her tech that worked with the \nremnants of her vocal powers to create illusions \nand manipulate the senses. All in exchange for a \nsimple favor for the Baron. Taking up a mirrored \nmask, Aislin took the name Glamour and began to \nlive life according to her own terms.\nCapabilities and Motivations\nGlamour is a master of multilayered planning and \ndiversions. She prefers to work behind the curtain \nas long as possible, knowing that the timing of the \nbig reveal is all-important. This served her well in \nthe previous Slaughterhouse Six, where she used \nher powers for months to create an illusionary \nAmbuscade to act as the leader in her stead. Now \nthat she has stepped into the leadership role of the \nnew Slaughterhouse Six, the big question has to be \nwhat she is really after. With Glamour, nothing is \never what it seems.\nUpgrades\nGlamour has upgrades planned for her tech to \ntailor her illusions to specific targets within a crowd, \nwhich can combine with her vocal powers to make \nit all feel much more real than before. Causing \neveryone to see the same illusion is versatile, but \nmaking it so that each one sees something tailored \nspecifically to them… now that could really cause \nsome confusion.\nAlias: Aislin Allen\nGender: Female\nAge: Middle-Aged\nHeight: 5’3”\nEyes: Green\nHair: Red\nSkin: Freckled\nBuild: Slight and mysterious\nCostume/Equipment: A mirrored silver suit with \nwhite gloves black waist wrap, black thigh high \nboots and black cape with bright white inner lining. \nMirrored silver full head mask with no visible eyes \nor mouth. \nApproach: Disruptive\nArchetype: Inhibitor\nGlamour</p>",
       "statusTheme": "Heroes with Penalties",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

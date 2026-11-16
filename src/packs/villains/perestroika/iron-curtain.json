@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -60,7 +60,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -93,7 +93,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -107,7 +107,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -126,7 +126,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -140,7 +140,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -159,7 +159,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -172,7 +172,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -191,7 +191,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -204,7 +204,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -236,7 +236,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -300,7 +300,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -319,7 +319,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -332,7 +332,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -365,7 +365,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -385,7 +385,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Engaged Opponents</p>"
       },
@@ -398,7 +398,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Engaged Opponents"
         }
       },
@@ -666,9 +666,7 @@
       "sourcePage": 384,
       "biographyHtml": "<p>385\n385\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nBarrikada is the second to bear the name “Iron \nCurtain.” Her father was the first, frequently clashing \nwith previous Legacies during the Cold War. As the \nSoviet Union crumbled, Barrikada witnessed her \nfather’s spiral into depression and alcoholism as he \ncould not adapt to the changing world. He died a \nbroken man, but tried to put his angry daughter on \na better path with his dying words. Those words fell \non deaf ears. Mecha-Stalin’s message of a cause to \nfight for as well as a promise of strong foes to test \nherself against proved irresistible. After Perestroika’s \ndefeat at the hands of the Sentinels of Freedom, \nIron Curtain is eager for a rematch!\nCapabilities and Motivations\nIron Curtain’s metal flesh is both a blessing and \na curse. Where her father could transition to \nmetal and back at will, her skin is always metallic. \nThis grants her immense strength and durability, \nallowing her to fight against powerhouses like \nLegacy on equal footing, but greatly reduces her \nsense of touch and taste. While she can register \nheat and cold, she is immune to all but the most \nextreme ranges. Seeking to experience sensations \nand break the numbness, she is most at home in \nthe middle of a fight against an opponent who can \ntest her enough to finally make her feel something.\nUpgrades\nTaking advantage of Iron Curtain’s resilience, Mecha-\nStalin has used the technology at his disposal to \ncreate an electrified exoskeleton that makes her \neven more dangerous in close combat. With Iron \nCurtain’s formidable strength and durability, this \nelectric field ensures that she can last even longer \nand do even more damage. While she isn’t immune \nto the electricity it produces, she welcomes the \nadded spice it brings to the fight.\nAlias: Barrikada Dmitriyevna Petrov\nGender: Female\nAge: Early-20s\nHeight: 6’2”\nEyes: White\nHair: dark grey, metallic\nSkin: Silver, metallic\nBuild: Very Muscular\nCostume/Equipment: A red unitard, gloves, and \nknee-high boots. Red bands around thighs and \nupper arms, and a red star on each shoulder.\nApproach: Prideful\nArchetype: Guerrilla\nIron Curtain</p>",
       "statusTheme": "Engaged Opponents",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {

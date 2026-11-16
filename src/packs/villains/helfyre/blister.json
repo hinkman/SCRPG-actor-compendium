@@ -27,7 +27,7 @@
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d12",
         "aux": "main",
         "selected": "",
         "description": ""
@@ -41,7 +41,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -74,7 +74,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -106,7 +106,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -125,7 +125,7 @@
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": "",
         "description": ""
       },
@@ -138,7 +138,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -170,7 +170,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false
+          "dieTypeKnown": true
         }
       },
       "_stats": {
@@ -189,7 +189,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d10",
         "selected": false,
         "description": "<p>Health</p>"
       },
@@ -202,7 +202,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -235,7 +235,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -255,7 +255,7 @@
       "type": "villainStatus",
       "img": "icons/svg/d20-grey.svg",
       "system": {
-        "dieType": "d8",
+        "dieType": "d6",
         "selected": false,
         "description": "<p>Health</p>"
       },
@@ -268,7 +268,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "category": "Health"
         }
       },
@@ -576,9 +576,7 @@
       "sourcePage": 368,
       "biographyHtml": "<p>369\n369\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nThe daughter of a roadie, Cinder spent her life on \ntour. She learned a great deal about how to play \nfrom a wide variety of bands, demonstrating an \naptitude for the guitar. This led to her discovering \nher powers one day when she was particularly in \nthe groove and her guitar burst into flames where \nher fingers touched the strings; fire which quickly \nspread to the rest of the guitar and herself. In \nthis moment, she learned several things. First, she \nlearned that she was completely immune to fire, as \nwas anything close to her skin. Second, she learned \nthat playing a flaming guitar while immune to fire \nwas AWESOME. Third and finally, she learned that \nguitars, unlike her, burned quite well. She would \nrequire a steady supply of guitars on her road to \ngreatness. A band of people with powers looking for \na guitarist was too good an opportunity to pass up.\nCapabilities and Motivations\nCinder is by far the most musically adept member \nof Helfyre. She has a natural talent for music, enjoys \nplaying the guitar, and has a desire to get better that \ndrives her to constantly practice. She could easily be \nthe heart of the team, but isn’t interested in helping \nthem get better. As far as Blister is concerned, the \nrest of Helfyre is mostly there to keep the crowd \nwarmed up between her solos. She’d be happy if \nthey got on her level... just as long as they do it on \ntheir own time and don’t get in her way.\nUpgrades\nWhile Wager Master certainly increased Blister’s \ncontrol, her constant practice has allowed her \nto work on flashier, hotter, and more sustained \napplications of her fire. The most apparent is that \nshe can keep her instruments from burning quite \nas fast, though she’s never had one survive a solo. \nShe’s still a long way from the control she would \nneed to stop a fire once it really got going, but that \nkind of mastery is potentially within her reach.\nAlias: Cinder Azarian\nGender: Female\nAge: Early-20s\nHeight: 5’ 0’\nEyes: Orange, frequently on fire\nHair: Red and black, frequently on fire\nSkin: Light brown, frequently on fire\nBuild: Very thin. Frequently on fire\nCostume/Equipment: Red tights, black tank top, \ngigantic boots with multiple buckles and zippers, \nmostly ornamental. She has a variety of guitars, \nmostly because she tends to light them on fire.\nApproach: Focused\nArchetype: Fragile\nBlister</p>",
       "statusTheme": "Health",
-      "gaps": [
-        "Villain power/quality/status die sizes are image glyphs; defaulted to d8 until visually verified."
-      ]
+      "gaps": []
     }
   },
   "_stats": {
