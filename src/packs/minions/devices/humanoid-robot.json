@@ -20,7 +20,7 @@
       "ten": "Group 10"
     },
     "typicalDie": {
-      "one": "d8",
+      "one": "d6",
       "two": "d4",
       "three": "d4",
       "four": "d4",
@@ -76,7 +76,7 @@
       "archive": true,
       "team": "devices",
       "sourcePage": 410,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

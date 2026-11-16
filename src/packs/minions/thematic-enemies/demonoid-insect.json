@@ -76,7 +76,7 @@
       "archive": true,
       "team": "thematic-enemies",
       "sourcePage": 413,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

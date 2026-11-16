@@ -76,7 +76,7 @@
       "archive": true,
       "team": "blade-drones",
       "sourcePage": 408,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

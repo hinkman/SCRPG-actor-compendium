@@ -76,7 +76,7 @@
       "archive": true,
       "team": "magmarian-foes",
       "sourcePage": 412,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {
