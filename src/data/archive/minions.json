@@ -17,7 +17,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 404,
           "gaps": [],
           "team": "aliens"
@@ -38,8 +38,8 @@
               "description": "Whenever Dymkharn succeeds at his save, he gains a +1 bonus to his next Attack."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 404,
           "gaps": [],
           "team": "aliens"
@@ -56,8 +56,8 @@
               "description": "Mentally-Empowered Humanoids have a +1 to Hinder or Overcome actions."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d12",
+          "dieTypeKnown": true,
           "sourcePage": 405,
           "gaps": [],
           "team": "aliens"
@@ -74,8 +74,8 @@
               "description": "Tech-Enhanced Humanoids have a +1 to Attack actions."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 405,
           "gaps": [],
           "team": "aliens"
@@ -92,8 +92,8 @@
               "description": "Whenever a Strange Extraterrestrial makes an Attack, roll its die twice and take the lower result. Apply that result as an attack against all nearby opposed targets."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 405,
           "gaps": [],
           "team": "aliens"
@@ -117,7 +117,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 406,
           "gaps": [],
           "team": "blade-battalion"
@@ -139,7 +139,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 406,
           "gaps": [],
           "team": "blade-battalion"
@@ -156,8 +156,8 @@
               "description": "Force Troopers have a +2 to their save roll."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 407,
           "gaps": [],
           "team": "blade-battalion"
@@ -174,8 +174,8 @@
               "description": "If any other minions or lieutenants are nearby, this minion has a +1 to their actions. If not, they have a -1 to their actions."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 407,
           "gaps": [],
           "team": "blade-battalion"
@@ -192,8 +192,8 @@
               "description": "When Hindering a hero or Attacking a hero with a penalty, roll their die twice and use the higher result."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 407,
           "gaps": [],
           "team": "blade-battalion"
@@ -216,8 +216,8 @@
               "description": "When Boosting using info gained from observation, Hover Drones can make that bonus Persistent and Exclusive by reducing their die size by 1 (minimum )."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 408,
           "gaps": [],
           "team": "blade-drones"
@@ -234,8 +234,8 @@
               "description": "When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 408,
           "gaps": [],
           "team": "blade-drones"
@@ -253,7 +253,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 408,
           "gaps": [],
           "team": "blade-drones"
@@ -271,7 +271,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 408,
           "gaps": [],
           "team": "blade-drones"
@@ -298,8 +298,8 @@
               "description": "When the Colossal Robot Attacks, it deals damage to all nearby targets."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d12",
+          "dieTypeKnown": true,
           "sourcePage": 409,
           "gaps": [],
           "team": "devices"
@@ -317,7 +317,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 409,
           "gaps": [],
           "team": "devices"
@@ -334,8 +334,8 @@
               "description": "After the Heavy Plated MegaTruck makes an Attack, it may then end up elsewhere in the scene."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 410,
           "gaps": [],
           "team": "devices"
@@ -356,8 +356,8 @@
               "description": "If attacked while moving, Walking Tanks roll their save twice and use the higher result."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 410,
           "gaps": [],
           "team": "devices"
@@ -374,8 +374,8 @@
               "description": "Humanoid Robots have a +1 to their save rolls."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 410,
           "gaps": [],
           "team": "devices"
@@ -399,7 +399,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 411,
           "gaps": [],
           "team": "magmarian-foes"
@@ -417,7 +417,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 411,
           "gaps": [],
           "team": "magmarian-foes"
@@ -434,8 +434,8 @@
               "description": "Inner Core Tunnelers have a +1 to Hindering by digging."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 411,
           "gaps": [],
           "team": "magmarian-foes"
@@ -453,7 +453,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 412,
           "gaps": [],
           "team": "magmarian-foes"
@@ -474,8 +474,8 @@
               "description": "Ur-crystal Behemoths have a +1 to their save rolls."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 412,
           "gaps": [],
           "team": "magmarian-foes"
@@ -492,8 +492,8 @@
               "description": "Whenever a Seismic Defender succeeds at its save, it rolls its die as an Attack against all nearby non-Magmarian targets."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d12",
+          "dieTypeKnown": true,
           "sourcePage": 412,
           "gaps": [],
           "team": "magmarian-foes"
@@ -516,8 +516,8 @@
               "description": "The Homunculus has +1 to Attacks and to save rolls."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 413,
           "gaps": [],
           "team": "thematic-enemies"
@@ -535,7 +535,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 413,
           "gaps": [],
           "team": "thematic-enemies"
@@ -553,7 +553,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 413,
           "gaps": [],
           "team": "thematic-enemies"
@@ -570,8 +570,8 @@
               "description": "Fleshchildren have +1 to all actions while not yet exposed as a Fleshchild."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 413,
           "gaps": [],
           "team": "thematic-enemies"
@@ -595,7 +595,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 414,
           "gaps": [],
           "team": "typical-combatants"
@@ -617,7 +617,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 414,
           "gaps": [],
           "team": "typical-combatants"
@@ -634,8 +634,8 @@
               "description": "When Mean Streets Rioters make Hinder actions, they can Hinder up to 3 nearby targets."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 414,
           "gaps": [],
           "team": "typical-combatants"
@@ -652,8 +652,8 @@
               "description": "Gangsters have a +1 to all Overcome, Boost, and Hinder actions in a situation where they have sensitive information."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 414,
           "gaps": [],
           "team": "typical-combatants"
@@ -671,7 +671,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 415,
           "gaps": [],
           "team": "typical-combatants"
@@ -688,8 +688,8 @@
               "description": "When Mean Streets Shooters make Attack actions, they can Attack up to 3 targets in range."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 415,
           "gaps": [],
           "team": "typical-combatants"
@@ -706,8 +706,8 @@
               "description": "Mean Streets Wreckers have a +1 to Hinder actions."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 415,
           "gaps": [],
           "team": "typical-combatants"
@@ -724,8 +724,8 @@
               "description": "Ninjas have a +1 to Attacks and Hinders made against combatants that are unaware of them or who have lost track of them."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 416,
           "gaps": [],
           "team": "typical-combatants"
@@ -742,8 +742,8 @@
               "description": "Whenever Seer takes a Hinder action, make the resulting penalty Persistent and Exclusive. Then, Seer may end up anywhere else in the scene."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d10",
+          "dieTypeKnown": true,
           "sourcePage": 416,
           "gaps": [],
           "team": "typical-combatants"
@@ -760,8 +760,8 @@
               "description": "Technicians cannot Attack or Defend, but they have a +3 to Overcome actions."
             }
           ],
-          "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "typicalDie": "d6",
+          "dieTypeKnown": true,
           "sourcePage": 417,
           "gaps": [],
           "team": "typical-combatants"
@@ -779,7 +779,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 417,
           "gaps": [],
           "team": "typical-combatants"
@@ -801,7 +801,7 @@
             }
           ],
           "typicalDie": "d8",
-          "dieTypeKnown": false,
+          "dieTypeKnown": true,
           "sourcePage": 417,
           "gaps": [],
           "team": "typical-combatants"
@@ -809,7 +809,5 @@
       ]
     }
   ],
-  "gaps": [
-    "Minion/lieutenant die sizes are icon-only in the PDF; defaulted to d8."
-  ]
+  "gaps": []
 }

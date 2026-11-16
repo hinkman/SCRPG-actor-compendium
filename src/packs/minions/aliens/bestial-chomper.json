@@ -76,7 +76,7 @@
       "archive": true,
       "team": "aliens",
       "sourcePage": 404,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

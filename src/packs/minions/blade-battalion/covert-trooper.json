@@ -76,7 +76,7 @@
       "archive": true,
       "team": "blade-battalion",
       "sourcePage": 406,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

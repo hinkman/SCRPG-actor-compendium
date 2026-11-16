@@ -15,6 +15,7 @@ PDF = Path.home() / "Desktop" / "Sentinel_Comics_RPG.pdf"
 OUT = ROOT / "src" / "data" / "archive"
 BOOK_TO_PDF = 8  # book page N → PDF page N+8 (1-based)
 VILLAIN_DICE_PATH = OUT / "villain-dice.json"
+MINION_DICE_PATH = OUT / "minion-dice.json"
 
 
 def load_villain_dice() -> dict:
@@ -44,6 +45,32 @@ def apply_villain_dice(
             continue
         updated.append({**entry, "dieType": die, "dieTypeKnown": True})
     return updated, unmatched
+
+
+def load_minion_dice() -> dict:
+    """Curated typicalDie sizes from Archive minion/lieutenant die glyphs."""
+    if not MINION_DICE_PATH.exists():
+        return {}
+    try:
+        return json.loads(MINION_DICE_PATH.read_text())
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def apply_minion_die(member: dict, curated_by_page: dict) -> dict:
+    """Set typicalDie from curated page map; leave gap if missing."""
+    page_map = curated_by_page.get(str(member.get("sourcePage")), {}) or {}
+    die = page_map.get(member["name"])
+    gaps = list(member.get("gaps") or [])
+    if not die:
+        gaps.append(f"Die glyph missing from minion-dice.json for {member['name']}.")
+        return {
+            **member,
+            "typicalDie": member.get("typicalDie", "d8"),
+            "dieTypeKnown": False,
+            "gaps": gaps,
+        }
+    return {**member, "typicalDie": die, "dieTypeKnown": True, "gaps": gaps}
 
 CHROME = {
     "Playing", "the Game", "the", "Bullpen", "Adventure", "Issues", "Creating",
@@ -1277,6 +1304,8 @@ def extract_minions(doc: pymupdf.Document) -> dict:
     teams: dict[str, dict] = {}
     current_team = {"key": "general", "label": "General", "members": []}
     teams["general"] = current_team
+    curated_dice = load_minion_dice()
+    unknown_dice: list[str] = []
 
     for book in range(404, 418):
         if book in MINION_TEAM_HEADERS:
@@ -1285,17 +1314,21 @@ def extract_minions(doc: pymupdf.Document) -> dict:
         members = parse_minion_page(page_spans(book_page(doc, book)), book)
         for member in members:
             member["team"] = current_team["key"]
+            member = apply_minion_die(member, curated_dice)
+            if not member.get("dieTypeKnown"):
+                unknown_dice.append(member["name"])
             if any(m["name"] == member["name"] for m in current_team["members"]):
                 continue
             current_team["members"].append(member)
 
     teams_list = [t for t in teams.values() if t["members"]]
-    return {
-        "teams": teams_list,
-        "gaps": [
-            "Minion/lieutenant die sizes are icon-only in the PDF; defaulted to d8.",
-        ],
-    }
+    gaps = []
+    if unknown_dice:
+        gaps.append(
+            "Unverified minion/lieutenant die glyphs (missing from minion-dice.json): "
+            + ", ".join(unknown_dice)
+        )
+    return {"teams": teams_list, "gaps": gaps}
 
 
 def extract_environments(doc: pymupdf.Document) -> dict:

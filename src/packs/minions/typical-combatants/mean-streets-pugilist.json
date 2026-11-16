@@ -76,7 +76,7 @@
       "archive": true,
       "team": "typical-combatants",
       "sourcePage": 414,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {

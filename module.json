@@ -2,7 +2,7 @@
     "id": "scrpg-actor-compendium",
     "title": "Sentinel Comics RPG Actor Compendium",
     "description": "Compendium items and Archive actors from Sentinel Comics: The Roleplaying Game for the scrpg-foundry system. Includes powers, qualities, principles, personalities, archetypes, power sources, backgrounds, abilities, twist roll tables, and Archive heroes/villains/minions/environments.",
-    "version": "0.9.27",
+    "version": "0.9.28",
     "compatibility": {
         "minimum": "14",
         "verified": "14"
@@ -190,5 +190,5 @@
     ],
     "url": "https://github.com/hinkman/SCRPG-actor-compendium",
     "manifest": "https://raw.githubusercontent.com/hinkman/SCRPG-actor-compendium/main/module.json",
-    "download": "https://github.com/hinkman/SCRPG-actor-compendium/releases/download/v0.9.27/scrpg-actor-compendium.zip"
+    "download": "https://github.com/hinkman/SCRPG-actor-compendium/releases/download/v0.9.28/scrpg-actor-compendium.zip"
 }

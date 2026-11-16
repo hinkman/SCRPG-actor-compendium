@@ -1,0 +1,71 @@
+{
+  "404": {
+    "Bestial Chomper": "d8",
+    "“Dymkharn the Gladiator”": "d10"
+  },
+  "405": {
+    "Mentally-Empowered Humanoid": "d12",
+    "Tech-Enhanced Humanoid": "d10",
+    "strange extraterrestrial": "d6"
+  },
+  "406": {
+    "Covert Trooper": "d8",
+    "Battalion Commander": "d8"
+  },
+  "407": {
+    "Force Trooper": "d10",
+    "Technical Trooper": "d6",
+    "Roboticized Trooper": "d10"
+  },
+  "408": {
+    "Hover Drone": "d10",
+    "Ambulatory Drone": "d6",
+    "Defensive Drone": "d8",
+    "Reconstruction Drone": "d8"
+  },
+  "409": {
+    "Auto-Turret": "d8",
+    "Colossal Robot": "d12"
+  },
+  "410": {
+    "Heavy Plated MegaTruck": "d10",
+    "Walking Tank": "d10",
+    "Humanoid Robot": "d6"
+  },
+  "411": {
+    "Crystal Collector": "d8",
+    "Ember Shaman": "d8",
+    "Inner Core Tunneler": "d10"
+  },
+  "412": {
+    "Magman Rebel": "d8",
+    "Ur-Crystal Behemoth": "d10",
+    "Seismic Defender": "d12"
+  },
+  "413": {
+    "Hul-Spawn": "d8",
+    "Homunculus": "d10",
+    "Demonoid Insect": "d8",
+    "Fleshchildren": "d10"
+  },
+  "414": {
+    "“Firearm”": "d8",
+    "Mean Streets Pugilist": "d8",
+    "Mean Streets Rioter": "d6",
+    "Gangster": "d10"
+  },
+  "415": {
+    "Mean Streets Tough Guy": "d8",
+    "Mean Streets Shooter": "d6",
+    "Mean Streets Wrecker": "d6"
+  },
+  "416": {
+    "Ninja": "d10",
+    "“Seer”": "d10"
+  },
+  "417": {
+    "Technician": "d6",
+    "Soldier Grunt": "d8",
+    "Soldier Sergeant": "d8"
+  }
+}

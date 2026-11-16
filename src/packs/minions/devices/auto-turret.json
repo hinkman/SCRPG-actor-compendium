@@ -76,7 +76,7 @@
       "archive": true,
       "team": "devices",
       "sourcePage": 409,
-      "dieTypeKnown": false
+      "dieTypeKnown": true
     }
   },
   "_stats": {
