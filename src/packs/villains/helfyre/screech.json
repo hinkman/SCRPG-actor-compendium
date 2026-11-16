@@ -1,0 +1,554 @@
+{
+  "name": "Screech",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Damian Belter",
+    "archetype": "Inhibitor",
+    "approach": "Disruptive",
+    "wounds": {
+      "value": 0,
+      "max": 50
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "4Gm4cXrNC6GWTytn",
+      "name": "50",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.4Gm4cXrNC6GWTytn"
+    },
+    {
+      "_id": "kQdiAIEEZM5LEefp",
+      "name": "Leaping",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.kQdiAIEEZM5LEefp"
+    },
+    {
+      "_id": "82jyj00z3knDhtUD",
+      "name": "Banter",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.82jyj00z3knDhtUD"
+    },
+    {
+      "_id": "6LMpocNdQ4Fxrtb3",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.6LMpocNdQ4Fxrtb3"
+    },
+    {
+      "_id": "ESLKhPPRVEFOe4kb",
+      "name": "Creativity",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.ESLKhPPRVEFOe4kb"
+    },
+    {
+      "_id": "VAy4TfO4WWzHNMQd",
+      "name": "Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.VAy4TfO4WWzHNMQd"
+    },
+    {
+      "_id": "8MNKS0vUxivOmbUX",
+      "name": "3+ Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.8MNKS0vUxivOmbUX"
+    },
+    {
+      "_id": "3DM0SFxujFcbS6vA",
+      "name": "1-2 Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.3DM0SFxujFcbS6vA"
+    },
+    {
+      "_id": "tXzjonnAQ3pWB3MC",
+      "name": "Earworm",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>rolling your single status die, and the attacker also suffers that much damage. Attack using Sonic. Use your Max die. A target dealt damage this way</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.tXzjonnAQ3pWB3MC"
+    },
+    {
+      "_id": "uC7UPQMQA3eF6p34",
+      "name": "Ring their Ears",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attacks an ally by rolling their single largest power die. Hinder using Sonic and use your Max+Mid dice, or use your Max die</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.uC7UPQMQA3eF6p34"
+    },
+    {
+      "_id": "lIdHfDRjqXYdEDeN",
+      "name": "Scream of Anger",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and make it persistent and exclusive. Hinder multiple targets using Banter. Use your Mid die. You and any</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.lIdHfDRjqXYdEDeN"
+    },
+    {
+      "_id": "USTh2uCnOB7B7Hvn",
+      "name": "Shout it Out Loud",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>nearby allies Defend using your Max die. Increase all of Screech’s Powers by one die size.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.USTh2uCnOB7B7Hvn"
+    },
+    {
+      "_id": "lwfXBfGE8Fted3h3",
+      "name": "Power Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Screech has 20 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.lwfXBfGE8Fted3h3"
+    },
+    {
+      "_id": "1KKMAop25h1fphbM",
+      "name": "Master of Total Chaos",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!aJpWCnYsXKPtvsO5.1KKMAop25h1fphbM"
+    }
+  ],
+  "effects": [],
+  "folder": "oH7fMOVc623lrDfQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "helfyre",
+      "sourcePage": 366,
+      "biographyHtml": "<p>367\n367\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nDamien Belter was the kind of kid who never \ndiscovered the concept of an “inside voice.” The \nchild of a CPA and a forensic accountant, Damien \ndecided at an early age that he was going to go in a \nvery different direction from his parents. School was \nboring and didn’t involve nearly enough yelling, so he \nditched at every opportunity. Music fascinated him, \nand he took every opportunity to go to a live show, \nthe louder the better! Convinced that volume was the \nmajor qualification for a singer, he formed a band with \nsome of his friends. When that one failed he formed \nanother, then another, then went solo for a while, then \nformed yet another band, which ended up sticking \ntogether, largely because everyone in it had some \nmeasure of power and a similar feeling that they were \ndestined for greatness. Sure, they would need to beg, \nborrow, and steal to get off the ground, but so what?\nCapabilities and Motivations\nScreech’s musical aptitude can most favorably be \ndescribed as “loud.” He was a loud kid, and as he \naged his vocal range only expanded. His jaw and \nlungs also changed, allowing him to unhinge his jaw \nfor even greater volume, along with a lung capacity \nthat let him sustain a note for minutes at a time. \nSadly, none of these things proved to be a good \nsubstitute for practice, talent, or any understanding \nof “pitch”. As the vocalist for Helfyre, he spends \nmuch of his singing time using his voice to stun and \ndebilitate his “audience”, including the annoying \ncops that want them to stop practicing due to noise \ncomplaints, or the even more annoying heroes that \nwant them to stop robbing gas stations for snacks.\nUpgrades\nAfter Wager Master granted him more power, \nScreech’s vocal range vastly expanded, with shrill \nhigh notes that shatter glass and deep bass notes \nthat shake stone when he drops to his lowest \noctave. When he really lets loose, a physical wall of \nsound knocks down the audience, doors, walls, and \nthe occasional low-flying police helicopter.\nAlias: Damien Belter \nGender: Male\nAge: Mid-20s\nHeight: 5’8\nEyes: Blue\nHair: Black mohawk\nSkin: Pale\nBuild: strung out rocker\nCostume/Equipment: Tight pants, studded belt, \nand a variety of ripped tops with no sleeves. Has \na variety of wristbands, chain necklaces, and pointy \nearrings. \nApproach: Disruptive\nArchetype: Inhibitor\nScreech</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "aJpWCnYsXKPtvsO5",
+  "_key": "!actors!aJpWCnYsXKPtvsO5"
+}

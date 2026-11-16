@@ -1,0 +1,692 @@
+{
+  "name": "Myriad",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Edgar Black",
+    "archetype": "Overlord",
+    "approach": "Creator",
+    "wounds": {
+      "value": 0,
+      "max": 50
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "7CSii35CXOh79005",
+      "name": "50",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.7CSii35CXOh79005"
+    },
+    {
+      "_id": "GlWmNiVIp5LwObQG",
+      "name": "Flight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.GlWmNiVIp5LwObQG"
+    },
+    {
+      "_id": "CEbaTmCQjyTdOAs7",
+      "name": "Alertness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.CEbaTmCQjyTdOAs7"
+    },
+    {
+      "_id": "hP2Rzpu8V47JREtx",
+      "name": "Insect Control",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.hP2Rzpu8V47JREtx"
+    },
+    {
+      "_id": "OnFFMwxiTgOSPGgZ",
+      "name": "Banter",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.OnFFMwxiTgOSPGgZ"
+    },
+    {
+      "_id": "3xB4HS7bCcRJGKND",
+      "name": "Part Detachment",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.3xB4HS7bCcRJGKND"
+    },
+    {
+      "_id": "XKBExr7RKNV2OzRO",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.XKBExr7RKNV2OzRO"
+    },
+    {
+      "_id": "ZoVKFFIYAcTwGoZo",
+      "name": "Number of Minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.ZoVKFFIYAcTwGoZo"
+    },
+    {
+      "_id": "mpKXvLU29nkxClgE",
+      "name": "9+ minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.mpKXvLU29nkxClgE"
+    },
+    {
+      "_id": "f0CPq3cEiegC5XQf",
+      "name": "5-8 minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.f0CPq3cEiegC5XQf"
+    },
+    {
+      "_id": "w0GCAfCdxDEs7yfA",
+      "name": "3-4 minions",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.w0GCAfCdxDEs7yfA"
+    },
+    {
+      "_id": "cnyQznPiN5axHfII",
+      "name": "Elusive Infestation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Reroll any number of minion saves against the same Attack. Boost using Swarm Master for all your minions until the start of your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.cnyQznPiN5axHfII"
+    },
+    {
+      "_id": "7o1FQWW3G8e17qHw",
+      "name": "Infernally Empowered",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>next turn. Attack using Shapeshifting and use your Max die. Defend against all</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.7o1FQWW3G8e17qHw"
+    },
+    {
+      "_id": "9GYYhDVeiJSyNPZ5",
+      "name": "Insectoid Armor",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attacks against you until the start of your next turn using the number of your minions. Use Part Detachment to create a number of minions equal to the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.9GYYhDVeiJSyNPZ5"
+    },
+    {
+      "_id": "fmOtuglXzdg9OHdR",
+      "name": "Release the Swarm",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>value of your Max die. The starting die size for those minions is the same as the size of your Min die. Attack using Insect Control and use your Max die, with a bonus equal</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.fmOtuglXzdg9OHdR"
+    },
+    {
+      "_id": "c5DqQQEj5HIBHVYf",
+      "name": "The Swarm Hungers",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Choose one group of minions in the scene. Upgrade all their dice one to the number of minions you control.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.c5DqQQEj5HIBHVYf"
+    },
+    {
+      "_id": "mYyOIXEgAEAhAjCE",
+      "name": "Crawling Catastrophe",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>size (maximum ). (When using this upgrade, Myriad has 5 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.mYyOIXEgAEAhAjCE"
+    },
+    {
+      "_id": "MTjmruj6OydSPkws",
+      "name": "Master of Total Chaos",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ZBKHCPrKh4Ppk5lj.MTjmruj6OydSPkws"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 358,
+      "biographyHtml": "<p>359\n359\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nEdgar Black took pleasure \nin making things smaller than \nhim suffer. As an \nexterminator, he \nwent to work every \nday with a smile on \nhis face. On the way \nto one such \njob, \nhe \nclipped \na courier\nwith his van, destroying the package the boy \nwas carrying. Edgar sped away to avoid any \nconsequences, but the contents of the package had \nother ideas. The contents of the package turned \nout to be a demonic entity that had been trapped \nfor years by the hero NightMist. After her death, \nthe courier had been commissioned to transport it \nto another mage for safekeeping. With the prison \ndestroyed, the rapidly multiplying demonic swarm \nused Edgar as a host, and he became the central \npersonality of the villain Myriad. He has clashed \nwith the new hero team Daybreak several times as \nhe looks to cause a little chaos in the world.\nCapabilities and Motivations\nAs a person, Edgar Black’s malevolence was limited \nby his cowardice and lack of long-term planning. \nThe demon that possessed him was limited in that \nit needed a host to act as a focus, as without a core \npersonality to adhere to, the demon’s intelligence \nwas scattered throughout the entire swarm. As \nthe composite personality “Myriad,” they are even \nworse; Edgar’s desire to harm is bolstered by the \nDemon’s desire for chaos and inherent magic. \nWith nigh-infinite control over insects, Myriad has \nthe ability to see and hear just about anything, \nthough they still lack the long-term planning skill or \nintelligence to truly capitalize on anything they find \nout. Mostly, Myriad just wants to destroy things, and \nis happiest when wreaking havoc surrounded by an \ninfinite swarm of infernal bugs.\nUpgrades\nBeing made of insects gives Myriad a lot of \nflexibility when it comes to things like size and \nshape. He could be a single fly on the wall, or a \nface on a swarm of locusts blackening the sky, his \nvoice their collective chittering. The demon has a \nsubstantial well of innate magic that can be used \nfor simple spells, particularly ones revolving around \nsummoning infernal insects with nasty powers from \nhis home hell dimension.\nAlias: Edgar Black\nGender: A demonic swarm of bugs, identifies as \nMale\nAge: A demonic swarm of bugs, identifies as \nMiddle-Aged\nHeight: Variable\nEyes: Two glowing orange eyes, but the swarm’s \neyes are many\nHair: None\nSkin: Black Chitin\nBuild: Made of bugs\nCostume/Equipment: A mass of demon bugs \nthat have taken on a humanoid semblance with \nchitinous black skin, wings, and glowing orange \neyes and chest. \nApproach: Creator\nArchetype: Overlord\nMyriad\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "ZBKHCPrKh4Ppk5lj",
+  "_key": "!actors!ZBKHCPrKh4Ppk5lj"
+}

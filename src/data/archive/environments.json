@@ -1,0 +1,382 @@
+{
+  "environments": [
+    {
+      "name": "Megalopolis",
+      "descriptionHtml": "<p>420\n420\nCountry: United States\nState: Connecticut\nSettled: circa 1691\nIncorporated as town of New Colchester: 1784\nIncorporated as city of New Colchester: 1876\nRenamed Megalopolis: July 4, 1976\nArea: 405 sq mi (1049 km2)\nElevation: 36 ft (11 m)\nPopulation: 8.5 million\nDemonyms: Megalopolan, Megalopolite\nTime zone: UTC−05:00 (EST)\nMegalopolis\nEstablished in 1876 as New Colchester, an \neconomic hub for local farming villages, the massive \ncity now known as Megalopolis has grown and \nflourished significantly over the decades. With a \nvibrant downtown and economic growth driven \nby a series of innovative infrastructure projects, \nMegalopolis has become a hub of finance, culture, \nand entrepreneurship. Thousands of tourists enjoy \nthe museums and restaurants along the historic \nriverfront every day, or take the monorail to the \narts district for cutting edge theatre and music.\nThe beautiful city skyline is dominated by a \nmassive tree, several orders of magnitude larger \nthan any other known tree on Earth. This tree is the \n“Akash’Flora” tree — a remnant of a terrible battle \nknown as the “OblivAeon Event”, which took place \nnot just across the entire planet, but throughout \nthe cosmos and across multiple realities as well. The \ntree grew to protect the city and its inhabitants \nfrom the forces of OblivAeon, and in the \nreconstruction efforts in the OblivAeon \naftermath, the tree became an integral \npart of Megalopolis. \nThe roots of the Akash’Flora tree run throughout \nthe infrastructure of the entire city, and the \nMegalopolis power grid is supplemented by the \ntree’s natural energy, making Megalopolis the most \n“green” city in the world.\nFor all of its beauty and positive qualities, \nMegalopolis has also been the site of great tragedy. \nNumerous villainous foes have attacked the city, \neach with their own agenda and plot. From Baron \nBlade’s attempt to bring down the moon to defeat \nhis greatest nemesis, to Citizen Dawn’s destruction \nof the wealth of the city, to Omnitron’s robotic \nrampage, to Grand Warlord Voss’s gene-bound \nalien invasion, Megalopolis is no stranger to the \nvillainous forces of the world.\nThough many major crises have struck the city \nover the decades, Megalopolis has been home to \ntwo generations of America’s finest hero, Legacy, \nand the hero team known as the Freedom Five, \nwho served as both guardians and inspirations \nto its citizens. They protected Megalopolis against \ncountless incursions and deadly plots, making \ntheir home in the Freedom Tower Headquarters. \nHowever, in the aftermath of the destruction of \nFreedom Tower during the OblivAeon event, much \nhas changed. \nRecently, the Freedom Five became something \nmore, renaming themselves the Sentinels of \nFreedom and taking on more of a role as teachers \nand stewards within their new headquarters and \noutreach location, Freedom Plaza. Megalopolis has \nalways had its heroes to protect it, and with the \nSentinels of Freedom based here, it always will.\n420\n420\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "Public Defenders",
+          "type": "greenminor",
+          "description": "Megalopolis Police officers show"
+        },
+        {
+          "name": "Traffic Pileup",
+          "type": "greenminor",
+          "description": "The conflict is causing a mess of"
+        },
+        {
+          "name": "Hostage Situation",
+          "type": "greenmajor",
+          "description": "A villain or minions thereof"
+        },
+        {
+          "name": "Panicking Crowds",
+          "type": "yellowminor",
+          "description": "The danger has risen to a level"
+        },
+        {
+          "name": "Paparazzi on the Scene",
+          "type": "yellowminor",
+          "description": "The press have arrived"
+        },
+        {
+          "name": "Exposed Root System",
+          "type": "yellowmajor",
+          "description": "The fighting has exposed a"
+        },
+        {
+          "name": "Impending Casualty",
+          "type": "redmajor",
+          "description": "An innocent Megalopolis"
+        },
+        {
+          "name": "Rioting in the Streets",
+          "type": "redmajor",
+          "description": "Megalopolis has devolved"
+        },
+        {
+          "name": "Plummeting Monorail",
+          "type": "redmajor",
+          "description": "A monorail car has been"
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 420,
+        "twists": 421
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    },
+    {
+      "name": "Freedom Plaza",
+      "descriptionHtml": "<p>422\n422\nFull Name: Sentinels of Freedom Academy of \nHeroics and Justice\nMotto: Nulla enim minantis auctoritas apud \nliberos est\nMotto Translation: To freemen, threats are \npowerless.\nEstablished: 2018\nAdministrator: Paul Parsons\nLocation: Megalopolis, Connecticut, United States\nCampus Size: 960 acres\nStaff: 417 (including academic staff and operations \nemployees)\nStudents: 63 (full time), 109 (part time)\nNewspaper: The Silver Sentinel\nColors: Blue and Silver\nOpen to the Public from 9AM - 7PM\nTo inquire about space for meetings and events, \nplease contact: steph.dismas@SF_Plaza.com or \ncall 959-555-4376\nFreedom Plaza\nThe sprawling campus known as the Sentinels \nof Freedom Academy was established in the \naftermath of the devastating OblivAeon event as a \nplace where a new generation of heroes could be \ntrained, equipped, and brought together to protect \nagainst the threats of this world and beyond. It \nserves multiple purposes, from the headquarters \nof the Sentinels of Freedom hero team, to the \nFreedom Academy campus, to the research \nlaboratories of Dr. Stinson, and more. \nThe hero Heritage is the primary administrator \nof the Sentinels of Freedom Academy, though \nwith his responsibilities with G.L.O.B.A.L., he is \noften seen as a figurehead at Freedom Academy. \nEach of the heroes on the Sentinels of Freedom \nteam teach a variety of courses here, including \nsome adjunct team members, such as Time-Slinger, \nVisionary, and Argent Adept. Courses are taught \non a wide breadth of heroing topics — everything \nfrom Crimefighting 101 to Identifying Doomsday \nDevices and Color Coordinating Your Hero Outfit. \nFreedom Plaza is more than just a school for \nwould-be heroes. The Freedom Academy is \ncertainly part a major part of Freedom Plaza, but \nthe site of the destruction of Freedom Tower is \nhome to a vast network of interconnected sites. \nThere you can find Legacy Park, a memorial park \nto the heroes who have protected the city of \nMegalopolis and the world from all manner of \nthreats. The Akash’Flora tree grows there, as well. \nThere are museums, monuments, and more, all \nnear the campus of the Freedom Academy. \nHeroes of all ages and experience levels are \nencouraged to enroll in the Freedom Academy, \nboth for the sake of learning more and growing \nas a community of heroic individuals, as well as \nkeeping closely guarded records on as many \nheroes as possible. The registrar’s office has \nsome of the most intense security, as keeping the \nidentities and personal information of the heroes \nsecret and safe is of utmost importance, but the \nSentinels of Freedom also depend on having that \ninformation so they can best deploy heroes to deal \nwith unexpected threats all over the world. And \nFreedom Plaza is just the place from which to \ndeploy this new generation of heroes.\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "Breakout",
+          "type": "greenminor",
+          "description": "Dangerous creatures under study here"
+        },
+        {
+          "name": "Campus Tour, Interrupted",
+          "type": "greenminor",
+          "description": "The fight runs into a"
+        },
+        {
+          "name": "Campus Alert",
+          "type": "greenmajor",
+          "description": "The alert system is engaged. Roll"
+        },
+        {
+          "name": "Class is Cancelled!",
+          "type": "yellowminor",
+          "description": "A classroom full of bewildered"
+        },
+        {
+          "name": "Found Arsenal",
+          "type": "yellowminor",
+          "description": "Your foe found a weapons locker! Roll"
+        },
+        {
+          "name": "A New Hero on the Scene",
+          "type": "yellowmajor",
+          "description": "A hero in training"
+        },
+        {
+          "name": "Containment Failure",
+          "type": "redmajor",
+          "description": "The conflict has damaged a"
+        },
+        {
+          "name": "Hiding in the Training Simulator",
+          "type": "redmajor",
+          "description": "Your foes have"
+        },
+        {
+          "name": "Experimental Defense System Gone Haywire",
+          "type": "redmajor",
+          "description": ""
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 422,
+        "twists": 423
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    },
+    {
+      "name": "Wagner II Mars Base",
+      "descriptionHtml": "<p>424\n424\nNations initially participating in the Wagner Mars \nBase project: United States, England, France, \nRussia, Germany, Canada, Italy, Israel, Japan, China \nCOSPAR ID: 2018-023F\nCall Sign: Beta, Mars Station\nCrew: up to 1500\nCurrently posted: 857\nLaunch pad: Kennedy LC-39 and CCAFS\nPortal teleportation link: Wagner Space Center, \nMegalopolis, CT\nAtmospheric Pressure: 101.3 kPa (14.7 psi; 1.0 \natm) oxygen 21%, nitrogen 79%\nAverage distance from earth: approximately 225 \nmillion km\nStation Power Source: Nuclear Reactor\nPortal Power Source: Classified\nResearch: Government and Civilian\nThe circumstances of the destruction of the \noriginal Wagner Mars Research Base are shrouded \nin mystery. All that is known is that the self-destruct \ncode was triggered from within the base during the \nglobal catastrophe caused by the cosmic entity now \nknown as OblivAeon. Exactly why the self-destruct \nwas triggered remain unknown to the general \npublic as the base black box was classified during \nthe multinational investigation, and representatives \nof the participating governments released a \njoint statement to a hostile alien occupation. \nThe only clue is a single transmission that was\nreleased prior to the base\ndestruction:\n \n“Scion took the place, but they dinna get ta keep \nit. Bydand!”, followed by a bagpipe song that has \nbeen identified as “Cock o’ the North.” Both are \nassociated with the Gordon Highlanders, a former \nScottish regiment of the British army, and Clan \nGordon of Scotland. The governments of Scotland \nand Great Britain, as well as representatives of Clan \nGordon, have disavowed all involvement with the \ndestruction of the base.\nIn 2018, the Wagner space program was \nreinstated as a joint venture between multiple \nnational space agencies and private research \nlaboratories as a two-phase program. The new \nWagner base was constructed largely on earth \nat the Wagner Space Center in Megalopolis, with \nonly a single Mars mission necessary to set up the \ndestination node for an experimental teleportation \ngate network. Using this gate, sections of the base \ncould be constructed on earth and sent through \nthe origin node at Wagner Space Center to the \ndestination gate on Mars. This also allowed most \nbase personnel and researchers to commute to \nMars instead of being stationed there on a semi-\npermanent basis.\nConstruction of the gate was made possible with \ntechnical assistance from the Maerynian embassy \nand Stinson labs, both of which had the condition \nthat no one nation could control the base or \nthe gate network. Therefore, the primary nation \npartners decided that a new multi-national agency \nwould be needed, and the The Mars Space Agency \n(MSA) was etablished. Composed of military and \ncivilian personnel from all member nations who \nhave renounced their former citizenship and \nvolunteered to be stationed on Mars permanently, \nthe MSA is responsible for safety, administration, \nand the future expansion of the base. At this time, \nMars is treated its own member nation within the \nproject, with future ownership and expansion of \nMars still being disputed.\nWagner II \nMars Base\n424\n424\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "Energy Flare",
+          "type": "greenminor",
+          "description": "The base’s energy matrix has taken"
+        },
+        {
+          "name": "Sprinkler Malfunction",
+          "type": "greenminor",
+          "description": "The fire-suppression system"
+        },
+        {
+          "name": "Trouble in the Biosphere",
+          "type": "greenmajor",
+          "description": "The life-support systems"
+        },
+        {
+          "name": "In the Wrong Hands",
+          "type": "yellowminor",
+          "description": "Your foes have gotten their"
+        },
+        {
+          "name": "Untimely Interference",
+          "type": "yellowminor",
+          "description": "Unexpectedly, more foes"
+        },
+        {
+          "name": "Oxygen Leak",
+          "type": "yellowmajor",
+          "description": "Something has broken the base’s"
+        },
+        {
+          "name": "Quarantine Breach",
+          "type": "redmajor",
+          "description": "Some Martian scientists had"
+        },
+        {
+          "name": "Meteor Storm",
+          "type": "redmajor",
+          "description": "Micro-meteors pelt the base,"
+        },
+        {
+          "name": "Emergency Portal Protocol",
+          "type": "redmajor",
+          "description": "The Wagner II Mars"
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 424,
+        "twists": 425
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    },
+    {
+      "name": "Magmaria",
+      "descriptionHtml": "<p>426\n426\nMagmarians first appeared on the surface in 1952, \nwhen a trio emerged from the Megalopolis sewers. \nTheir first act on the surface was to consume the \ncontents of a jewelry store. It was only due to the \nintervention of the hero Legacy that fatalities were \navoided and the jewels recovered. The Magmarians \nescaped into the sewers and were observed \nentering tunnels that collapsed behind them. \nContact over the following year was \nsporadic and frequently violent, as the \nMagmen seemed intent on injesting \nprecious metals and gems. This all \nchanged in 1984 when Dr. Meredith \nStinson created a Magmarian \ntranslation device.\nShe learned that Magmarians require crystalline \ncompounds to survive, and that earlier hostilities \nwere the result of lost harvesters attempting to find \na way to survive the “cold” of the surface world. \nFollowing this revelation, Dr. Stinson designed a \nsynthetic high energy crystal that could sustain them \nand led the first human expedition to Magmaria.\nSince then, several exploratory expeditions by \nvarious private and government organizations have \ngathered some information about the environment \nof this fascinating place. Magmaria is composed of \na network of caves and tunnels roughly halfway \nto the planet’s core. Geophysicists are currently \nresearching how a cave system at that depth and \npressure can have a temperature that can sustain \nhuman life, with the leading theory involving the \nunique mineral compounds known as “magma \ncrystals” acting as a kind of “heat battery”, creating \nzones of tolerable temperature around them. How \nthis process works is not well understood, as it is \nimpossible to recreate on the surface. Magmaria’s \natmosphere is even less understood, save that it has \none with roughly the same nitrogen/oxygen mix as \nthe surface world. \nMany questions about their culture remain \nunanswered. Their language appears to have \nsignificant non-verbal components, akin to telepathy, \nand their culture seems to revolve around the \nacquisition and ritualistic consumption of magma \ncrystals. They have been observed harvesting \nand consuming these crystals, led by “ember \nshamans”. The exact position of these shamans \nin the Magmarian hierarchy is unclear, but they \nseem to have a great deal of influence over the \nother Magmarians. Hieroglyphics and carvings on \nMagmarian structures indicate a complex religion, \nbut as of yet, no Magmarian shaman has ever \nanswered questions about their religious beliefs. \nThe land of Magmaria currently has no embassies \nor ambassadors to the surface world.\nStatus: Independent Nation\nFlag: None\nCapital: Unknown\nLanguage: Magmarian\nReligion: Magma Crystal-based Animism\nDemonym(s): Magmarian, Magmen\nGovernment: Theocracy\nLeader: Unknown\nWorld Organization Membership: None\nApproximate Area: 200,000 sq mi (321,868.8 km2)\nApproximate distance to the earth’s crust: 1802 \nmiles / 2900 km\nApproximate distance to the earth’s core: 2188 \nmiles / 3521 km\nApproximate temperature range: 129 F / 54 C - \n2200 F/ Kelvin\nEstimated Population: 230,000 \nTravel Advisory Level: Red: Do not travel\nMagmaria\n426\n426\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "Very Hot",
+          "type": "greenminor",
+          "description": "It’s too hot here for surface dwellers."
+        },
+        {
+          "name": "Magmarian Envoy",
+          "type": "greenminor",
+          "description": "A leader of the Magmarian"
+        },
+        {
+          "name": "Magma Crystallization",
+          "type": "greenmajor",
+          "description": "The unique properties of"
+        },
+        {
+          "name": "Incredibly High Temperatures",
+          "type": "yellowminor",
+          "description": "You doubt you"
+        },
+        {
+          "name": "Magma Eruption",
+          "type": "yellowminor",
+          "description": "A spout of magma explodes"
+        },
+        {
+          "name": "Structural Collapse",
+          "type": "yellowmajor",
+          "description": "The rock tunnels have been"
+        },
+        {
+          "name": "Hot Enough to Boil Stone",
+          "type": "redmajor",
+          "description": "It is so hot in this area"
+        },
+        {
+          "name": "Magmaria at War",
+          "type": "redmajor",
+          "description": "Due to the chaos created by the"
+        },
+        {
+          "name": "Ancient Behemoth Rampage",
+          "type": "redmajor",
+          "description": "A massive Ur-Crystal"
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 426,
+        "twists": 427
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    },
+    {
+      "name": "Mordengrad",
+      "descriptionHtml": "<p>428\n428\n428\n428\nLocation: Eastern Europe\nCapital: Mordengrad\nLeader: Ivan Ramonat (Title: Baron Blade) \nAnthem: Mordengrad Amžinai (Mordengrad \nForever)\nMotto: We Write Our Own Future\nEthnic Groups: Mordengradi (100%)\nDemonyms: Mordengradi, Mordengradian\nPopulation: 40,000 (Approximate: the \nMordengradi government is fiercely secretive of \ncensus information and does not allow outside \nstudy of the country)\nType of Government: Meritocracy (Baron Blade is \nacknowledged by law to have the most merit)\nLanguages:Lithuanian, Latvian, Russian, English, \nMordengradi (local dialect)\nGDP: estimated 20 billion* (Mordengrad does \nnot export or import, so GDP approximation \nmay be incorrect)\nCurrency: The Mordengradi Luna\nTravel Advisory Level: Orange: Reconsider \nTraveling\nTravel Advisory Supplemental: As of Jan 1, 1998, \nit is illegal for anyone named “Paul” or “Pauline” to \nenter Mordengrad\nMordengrad\nHail Mordengrad! Mordengrad the invincible! \nMordengrad the technological wonder of the \nworld! Mordengrad, where no citizen goes hungry \nor lacks for a place to sleep, and where sickness \nand crime are things of the past. Mordengrad, \nwhere Ivan Ramonat leads with \nwisdom and strength!\nThese are the virtues claimed by Mordengrad’s \nambassadors, ignoring compulsory military service, \nforced labor, and doomsday device related risks. \nMordengrad’s ruler Ivan Ramonat, AKA the villain \nBaron Blade, has entered the world stage multiple \ntimes over the years. The baron’s flying fortress \nhas heralded raids by his loyal blade battalions, his \ninventions have brought the world to the brink of \ndisaster. Baron Blade has clashed with Legacy and \nthe heroes of the world, and countless times has \ndodged consequences, returning to the city where \nhe rules unquestioned. That may have ended now, \nwith his death during the fight against OblivAeon, \nwhere he heroically gave his life so that the Freedom \nFive could end the cosmic threat once and for all. \nHis body was returned to Mordengrad, so that the \ncity could mourn their beloved leader, but rumors \npersist that he still lives…\nWhatever the case, the engines of Mordengrad \nchurn on endlessly. The people have assignments \nto complete, orders to fill, and experiments to run. \nThe military remains in a state of readiness, and \ntheir walking tanks are ever vigilant against those \nwho would seek to enter uninvited. One thing has \nchanged, however. For the first time, Mordengrad \nis seeking people with substantial technical skills to \nimmigrate to Mordengrad, though their immigration \nofficers remain quiet about why Mordengrad \nis seeking an influx of mechanical, chemical, and \nelectrical engineers, particularly if they also have a \nbackground in applied science. \nFor better or for worse, the world will have to \nwait and see. Knowing what has \ncome from Mordengrad before, \nthere’s no telling what the baron \nis up to.\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "Battalion Patrols",
+          "type": "greenminor",
+          "description": "Blade Battalions patrol the streets,"
+        },
+        {
+          "name": "Dance With The Goat!",
+          "type": "greenminor",
+          "description": "You find yourself in a festival,"
+        },
+        {
+          "name": "Battalion Leader",
+          "type": "greenmajor",
+          "description": "A military leader has arrived to"
+        },
+        {
+          "name": "Auto-Drone-Deployment",
+          "type": "yellowminor",
+          "description": "Drones for observations"
+        },
+        {
+          "name": "In Memory of the Baron",
+          "type": "yellowminor",
+          "description": "A soldier shouts"
+        },
+        {
+          "name": "Loyalist",
+          "type": "yellowmajor",
+          "description": "A Mordengradi citizen joins the fight against"
+        },
+        {
+          "name": "Watching from the Shadows",
+          "type": "redmajor",
+          "description": "You have an"
+        },
+        {
+          "name": "The People of Mordengrad",
+          "type": "redmajor",
+          "description": "In the midst of the"
+        },
+        {
+          "name": "All Hands Response",
+          "type": "redmajor",
+          "description": "Mordengrad is going into"
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 428,
+        "twists": 429
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    },
+    {
+      "name": "Ruins of Atlantis",
+      "descriptionHtml": "<p>430\n430\nLocation: South Atlantic Ocean\nCoordinates: 34° 37’ 59” N, 12° 16’ 57’’ W\nDepth: 5698m (18694 feet)\nType: City/Magical Ward\nArea: approximately 73 ha (180 acres)\nAccessible area: approximately 40 ha (98 acres)\nFounded: unknown\nAbandoned: unknown\nCause of abandonment: unknown\nUNESCO World Heritage Site\nOfficial name: Archaeological area of Atlantis\nType: Scientific, cultural, technological\nDesignated: 2019\nRegion: International\nResearchers: 14\nKrakens: 1\nKraken Tentacles: Uncountable\nRuins of\nAtlantis\nResearchers have known about the existence \nof the place called Atlantis for years, but traveling \nto the bottom of the Atlantic Ocean has made \narchaeological expeditions prohibitively difficult. \nThe waters around Atlantis is patrolled by an \naggressive cephalopod of unknown classification, \nand while the ruins are sealed and pressurized by \nsome ancient unknowable technology, researchers \nwould have to contend with the ruin’s still-active \ninternal defenses, powered by Atlantean artifacts \nwhich defy all scientific explanation. \nDespite these challenges, a multinational team \nof researchers has set up a base within the ruins \nthemselves, protected by a pressurized water \nbarrier around the site. The crews of the Atlantis \nexpeditions have learned a healthy respect for the \nkraken, who seems content to lurk about near the \nedges of the water barrier, but will reach into the \ncomplex if it considers the ruins threatened in any \nway. Still, deep within the ruins, archaeologists are \nfinding evidence that challenges all conventional \ntheories on human evolution and civilization. \nHistorians estimate that both the founding \nand abandonment of Atlantis occurred many \nthousands of years before the earliest known \nhuman settlement of Jebel Irhoud, potentially just \nunder a million years before the human civilization \nof Mesopotamia. Indeed, it seems the citizens of \nAtlantis were creating complex technologies about \nthe same time as Neanderthals were learning that \nstones could be used to hit things. \nAtlantean magic is so far beyond current \nunderstanding that even to those who are familiar \nwith the weaving of arcane energies cannot \naccount for how it worked, making the fall of \ntheir society all the more perplexing. They could \nseal their city in such a way that it would survive \nsinking to the bottom of the ocean, but why? What \npossible catastrophe could cause an entire culture \nto abandon their city?\nWhen the Atlanteans left their city, it seems they \ntook the secrets of their ancient magic with them. \nWhile we can examine their marvels and learn \nstaggering truths about our own history, there are \nsome secrets that seem to have been lost forever.\n430\n430\nEnvironments</p>",
+      "twists": [
+        {
+          "name": "The Kraken Seeks Prey",
+          "type": "greenminor",
+          "description": "Roll the environment dice."
+        },
+        {
+          "name": "Water Barrier Disturbances",
+          "type": "greenminor",
+          "description": "A stray projectile or"
+        },
+        {
+          "name": "Activated Pillars",
+          "type": "greenmajor",
+          "description": "Giant crystalline pillars pulse with"
+        },
+        {
+          "name": "The Kraken Is Angered",
+          "type": "yellowminor",
+          "description": "Roll the environment dice."
+        },
+        {
+          "name": "Forgotten Magics",
+          "type": "yellowminor",
+          "description": "A magical ward has been"
+        },
+        {
+          "name": "Water Barrier Fault",
+          "type": "yellowmajor",
+          "description": "A segment of the water"
+        },
+        {
+          "name": "The Kraken Thrashes",
+          "type": "redmajor",
+          "description": "Roll the environment dice."
+        },
+        {
+          "name": "Misapplied Protection",
+          "type": "redmajor",
+          "description": "Something has gone awry"
+        },
+        {
+          "name": "Defensive Impairing Field",
+          "type": "redmajor",
+          "description": "With a thrumming"
+        }
+      ],
+      "dice": {
+        "firstDie": "d10",
+        "secondDie": "d8",
+        "thirdDie": "d6"
+      },
+      "sourcePages": {
+        "intro": 430,
+        "twists": 431
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  ]
+}

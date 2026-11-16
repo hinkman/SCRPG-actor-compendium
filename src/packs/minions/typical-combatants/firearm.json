@@ -1,0 +1,122 @@
+{
+  "name": "“Firearm”",
+  "type": "minion",
+  "img": "icons/svg/cowled.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "“Firearm”",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d8",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "items": [
+    {
+      "_id": "aSEPmlyqcbAp2bbF",
+      "name": "Unstable Ignition",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever Firearm Attacks, roll his die twice and use the higher result. If he rolled the same number twice, reduce his die size by one.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ut2zrE5EbBSujGSy.aSEPmlyqcbAp2bbF"
+    },
+    {
+      "_id": "lEnRnFaCGi8JeR5q",
+      "name": "Firewall",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever Firearm succeeds at his save, use that roll as an Attack against his attacker.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!ut2zrE5EbBSujGSy.lEnRnFaCGi8JeR5q"
+    }
+  ],
+  "effects": [],
+  "folder": "8yoyf8EYLbV3NdiJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "typical-combatants",
+      "kind": "lieutenant",
+      "description": "Mean Streets Pugilist Mean Streets Pugilist Mean Streets Rioter Mean Streets Rioter Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
+      "sourcePage": 414,
+      "dieTypeKnown": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "ut2zrE5EbBSujGSy",
+  "_key": "!actors!ut2zrE5EbBSujGSy"
+}

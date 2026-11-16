@@ -1,0 +1,554 @@
+{
+  "name": "Miss Information",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Aminia Twain",
+    "archetype": "Inhibitor",
+    "approach": "Overpowered",
+    "wounds": {
+      "value": 0,
+      "max": 65
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "yjbR2U3a6aqYUo0m",
+      "name": "65",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.yjbR2U3a6aqYUo0m"
+    },
+    {
+      "_id": "Hzx9jxFEDz9cPGBy",
+      "name": "Insight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.Hzx9jxFEDz9cPGBy"
+    },
+    {
+      "_id": "OM1UfVPizieht4Ba",
+      "name": "Illusions",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.OM1UfVPizieht4Ba"
+    },
+    {
+      "_id": "FByA3OOAmBEFQcJF",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.FByA3OOAmBEFQcJF"
+    },
+    {
+      "_id": "BQ1WUmVLlhHYAvj6",
+      "name": "Persuasion",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.BQ1WUmVLlhHYAvj6"
+    },
+    {
+      "_id": "jaZB2LGDF0fGBD0z",
+      "name": "Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.jaZB2LGDF0fGBD0z"
+    },
+    {
+      "_id": "kjeAb27QOqwJ6AD2",
+      "name": "3+ Heroes with at least one Penalty",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.kjeAb27QOqwJ6AD2"
+    },
+    {
+      "_id": "huSk2ZxxpF479F0D",
+      "name": "1-2 Heroes with at least one Penalty",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.huSk2ZxxpF479F0D"
+    },
+    {
+      "_id": "zUIgEtt7ClX1h593",
+      "name": "AtmosFear",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack one of those targets with your Mid die. Hinder using Transmutation. That penalty is persistent and exclusive. As long as that penalty is in play, reduce damage dealt to you by 1 and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.zUIgEtt7ClX1h593"
+    },
+    {
+      "_id": "OEzMLTHmPfzwrBme",
+      "name": "Cracked Mask",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>whenever you are dealt damage, the target with this penalty takes 1 irreducible damage. When Attacked, Defend yourself by rolling your single Presence die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.OEzMLTHmPfzwrBme"
+    },
+    {
+      "_id": "kirnnTBmCGNdDf6R",
+      "name": "Deviate Reality",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Deal that much damage to a different nearby target.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.kirnnTBmCGNdDf6R"
+    },
+    {
+      "_id": "Hu36EKaD9889GYCN",
+      "name": "Flawless Facade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Whenever you roll a 1, reroll that die. The heroes act as being in the Green zone for status die, access to abilities, and for the purposes of all abilities. Heroes may remove this ability with three Overcome successes. If a hero takes a minor twist,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.Hu36EKaD9889GYCN"
+    },
+    {
+      "_id": "KrBybFjn6u1MbW2R",
+      "name": "Rewrite Reality",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>you may use a reaction to Hinder them by rolling your single Presence die. (When using this upgrade, Miss Information has 10 additional Health.) As long as you are manifesting effects related to a power you have at</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.KrBybFjn6u1MbW2R"
+    },
+    {
+      "_id": "gmAA5sHIumXejpGQ",
+      "name": "Master of Superiority",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>, automatically succeed at an Overcome involving usage of those powers.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!CpTsXHCvGalBCLCc.gmAA5sHIumXejpGQ"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 350,
+      "biographyHtml": "<p>351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nAminia Twain died hating the Freedom Five, impaled \non a girder during a villain’s attack, with one question \non her mind. Why didn’t they save me? She had \nbeen their loyal secretary for years, organizing and \nsmoothing things behind the scenes so that they \ncould stop crimes and still lead normal lives. But, \ninstead of dying and slipping away from existence, \na timespace fracture resulted in her coming to \nin the body of the Aminia Twain of some other \nreality! Reborn as Miss Information, she spent \nyears conducting behind-the-\nscenes sabotage on the \nheroes. This ended \nwhen the hero Parse \nsaw through her ruse, \nwhich ultimately led \nto Miss Information \ngetting doused with \ntoxic chemicals. The \naccident that burned her body \nalso opened her mind to \nother versions of Aminia \nTwain in the Multiverse. \nIt also allowed her to \nrewrite reality itself, \nwith the only thing \npreventing her from being \na world-ending threat is her \never-changing whim and \ninability to focus.\nCapabilities and Motivations\nThe disconnection of this universe from the rest of \nthe multiverse has allowed Miss Information to regain \nsome of her focus as her mind heals from being many \npossible versions of Aminia Twain at the same time. \nMiss Information is a master of logistics, coordination, \nand intelligence gathering, able to formulate complex \nplots to trap heroes and tailor illusion-augmented \ntraps to their specific fears and capabilities. When \nthis fails, she can warp reality itself as long as she can \nconcentrate, changing the world to suit her desires. \nShe could make a Megalopolis where all heroes were \nhated, a temple where the Freedom Five served her \nwine in chains, or a diner that only served pickles.\nUpgrades\nIn the aftermath of OblivAeon, Miss Information \nacquired the Pandemonium Key, an artifact from the \nEnclave of the Endlings that augments her ability to \ncreate illusions and make them real. It is also a window \ninto the disconnected, wider multiverse, allowing her \nto peer into other realities and remember things from \nher multitude of other lifetimes. This, unfortunately, \ndoes not help her mental state.\nAlias: Aminia Twain\nGender: Female\nAge: Middle-Aged\nHeight: 5’ 4”\nEyes: Originally grey, now glowing gold\nHair: Chestnut\nSkin: Pale\nBuild: Slim\nCostume/Equipment: A black bodysuit with gold \ngloves, boots, and belt. Black cape with gold inner \nlining. Form fitting white porcelain mask that \nmoves with her facial expressions. \nApproach: Overpowered\nArchetype: Inhibitor\nMiss Information\n351\n351\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\n351\n351\nAppendices\nAppendices\nVillains</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "CpTsXHCvGalBCLCc",
+  "_key": "!actors!CpTsXHCvGalBCLCc"
+}

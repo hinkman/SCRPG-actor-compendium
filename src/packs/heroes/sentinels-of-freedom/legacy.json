@@ -1,0 +1,915 @@
+{
+  "name": "Legacy",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Pauline “Felicia Fields” Parsons",
+    "archetype": "Flyer",
+    "wounds": {
+      "value": 0,
+      "max": 32
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of the Hero",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Justice",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Female",
+    "age": "Early-20s",
+    "height": "5’10”",
+    "eyes": "Blue",
+    "hair": "Blonde",
+    "skin": "Fair",
+    "build": "Athletic",
+    "costume": "<p>Legacy wears the iconic Legacy costume, complete with Legacy insignia, blue cape, and tall red boots.</p>",
+    "background": "Dynasty",
+    "powerSource": "Genetic",
+    "personality": "Cheerful",
+    "health": {
+      "greenLow": 25,
+      "yellowHigh": 24,
+      "yellowLow": 12,
+      "redHigh": 11,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d8",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "FgzfnN5PkctfwZEX",
+      "name": "Atomic Glare",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.FgzfnN5PkctfwZEX"
+    },
+    {
+      "_id": "P7vSZoyGcZrjLe1F",
+      "name": "Flight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.P7vSZoyGcZrjLe1F"
+    },
+    {
+      "_id": "0t4FHLEmE9oU7HJF",
+      "name": "Strength",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.0t4FHLEmE9oU7HJF"
+    },
+    {
+      "_id": "MGLpgRGm9dudx6tW",
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.MGLpgRGm9dudx6tW"
+    },
+    {
+      "_id": "6MRTREBAaxbwARYf",
+      "name": "America’s Favorite",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.6MRTREBAaxbwARYf"
+    },
+    {
+      "_id": "au6ZlCjOIJNr2SEb",
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.au6ZlCjOIJNr2SEb"
+    },
+    {
+      "_id": "LUytkiQnAxcgOKZI",
+      "name": "History",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.LUytkiQnAxcgOKZI"
+    },
+    {
+      "_id": "IuBedgViorXDpvFy",
+      "name": "Insight",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.IuBedgViorXDpvFy"
+    },
+    {
+      "_id": "fhVg3CbYjvTm2xCe",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.fhVg3CbYjvTm2xCe"
+    },
+    {
+      "_id": "pYzzFyuxedmWAGFw",
+      "name": "Eyes in the Sky",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>actions until the start of your next turn.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.pYzzFyuxedmWAGFw"
+    },
+    {
+      "_id": "7HFE7WQcl0HEXxRB",
+      "name": "Furthering your Father’s",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost yourself using Insight. That bonus is persistent and exclusive.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.7HFE7WQcl0HEXxRB"
+    },
+    {
+      "_id": "NKRHAjDgr47DQQ7N",
+      "name": "Legacy",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.NKRHAjDgr47DQQ7N"
+    },
+    {
+      "_id": "arWQlw10amXkd4i0",
+      "name": "Sideswipe",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome in a situation in which innocent people are in immediate danger. Hinder multiple targets using Flight. Apply your Min die to each of them.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.arWQlw10amXkd4i0"
+    },
+    {
+      "_id": "bFocuKpIFSHy9Yp2",
+      "name": "Principle of the Hero",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Use your Max die. You and each of your allies gain a hero point. Overcome to stop an act of injustice in progress and use your Max die. You</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.bFocuKpIFSHy9Yp2"
+    },
+    {
+      "_id": "DRJwwRIB62fo7YFc",
+      "name": "Principle of Justice",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.DRJwwRIB62fo7YFc"
+    },
+    {
+      "_id": "Nwm7vrIzQhTLV0xm",
+      "name": "Danger Sense",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>rolling your single Flight die. Attack using Flight, then Defend against all attacks against you until your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.Nwm7vrIzQhTLV0xm"
+    },
+    {
+      "_id": "KNlZwFwqbehDEG9u",
+      "name": "Evasive Assault",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>next turn equal to your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.KNlZwFwqbehDEG9u"
+    },
+    {
+      "_id": "03e03ZAwcVmf8Q3f",
+      "name": "Sweeping Gaze",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack multiple targets using Atomic Glare, using your Min die against each. Boost yourself using Atomic Glare. Use your Max die. That bonus is</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.03e03ZAwcVmf8Q3f"
+    },
+    {
+      "_id": "WeJip7LNbUaQavfB",
+      "name": "Focused Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>persistent and exclusive. Attack using your Mid die plus that bonus. Attack using Flight. Use your Max die. Then, Hinder that target using your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.WeJip7LNbUaQavfB"
+    },
+    {
+      "_id": "e8sao56TzQHMpcQ2",
+      "name": "Head-On Collision",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Mid+Min dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.e8sao56TzQHMpcQ2"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 300,
+        "ability": 301,
+        "bio": 302
+      },
+      "biographyHtml": "<p>302\n302\nBiography \nFelicia grew up knowing that she would one day \ncarry on her father’s work as a hero. Once her \npowers manifested, she was eager to prove herself. \nAfter she went out on patrol without her parents’ \npermission, Legacy realized the time for her training \nhad come. Taking flight as “Young Legacy”, Felicia \nhad to balance school and the demands of being \na hero. She quickly realized she wanted a secret \nidentity. Her father had no such secrets, and she \nsaw just how much he gave of himself wherever \nhe went; for Paul Parsons, there was no time off. \nFelicia wanted to have a social life with people who \ndidn’t know that she could crush a steel beam. She \nwanted to go to parties, attend a rally, or just sit \nand study. She wanted to be treated like a normal \nperson, not a statue on a pedestal.\nThe identity of “Felicia Fields, normal girl”, turned \nout to be tricky to maintain. Despite wanting a \nnormal life, she was every inch her father’s daughter, \nunable to turn aside when she saw something \nwrong. College was a hectic mix of studying, social \nengagements, and dealing with the occasional \nvillain. In between crises — be they exams or bank \nrobberies — she met two people who would go \non to become fixtures in her life. The first, Jimmy \nWong, rapidly became one of her best friends, even \nafter he discovered her secret identity. The second, \nMarissa Snow, rapidly became her rival, the two of \nthem constantly pushing each other. \nOblivAeon struck shortly before Felicia graduated, \nand she leapt into action alongside the heroes of the \nmultiverse to combat the singular entity. She and \nher father and time-displaced grandfather fought \nthe cosmic entity directly, keeping it busy while the \nrest of the heroes prepared a trap. When the trap \nwas sprung, OblivAeon and her fellow heroes were \ntransported away in a burst of energy, leaving her in \nMegalopolis. The fight wasn’t over for her, however. \nSoon after OblivAeon disappeared, a cosmically \nempowered Rainek Kel’Voss appeared in his place, \nhaving absorbed the power of OblivAeon. Felicia \nfought the Thorathian with heroes such as Tempest, \nSky-Scraper, and Guise, but they could not defeat \nhim, augmented as he was with the stolen energy. It \nwas only through the return of the Freedom Five, \nmagical assistance from the Harpy, and a cunning \ntriple-cross from Baron Blade that Voss was drained \nof power and ultimately defeated.\nGraduation was comparatively underwhelming \nafter saving the multiverse, but she had earned it.\nAlias: Pauline “Felicia Fields” Parsons\nGender: Female\nAge: Early-20s\nHeight: 5’ 10”\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Legacy wears the iconic \nLegacy costume, complete with Legacy insignia, \nblue cape, and tall red boots.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Flyer\nPersonality: Cheerful\nLegacy\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "FrZVkc5QNchL3IVv",
+  "_key": "!actors!FrZVkc5QNchL3IVv"
+}

@@ -1,0 +1,594 @@
+{
+  "name": "Re-Volt",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Sean Vargas",
+    "archetype": "Guerrilla",
+    "approach": "Focused",
+    "wounds": {
+      "value": 0,
+      "max": 55
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "Jxv00H8YUi2IffGI",
+      "name": "55",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.Jxv00H8YUi2IffGI"
+    },
+    {
+      "_id": "aGi1qKFCksEBk1H9",
+      "name": "Electricity",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.aGi1qKFCksEBk1H9"
+    },
+    {
+      "_id": "kMx3yuBprbKZnjCf",
+      "name": "Living Lightning",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.kMx3yuBprbKZnjCf"
+    },
+    {
+      "_id": "YYdG8UfWXoFkxGUj",
+      "name": "Intangibility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.YYdG8UfWXoFkxGUj"
+    },
+    {
+      "_id": "cFC2HVLEnAC865vR",
+      "name": "Ranged Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.cFC2HVLEnAC865vR"
+    },
+    {
+      "_id": "2zmqcES592Rfrggm",
+      "name": "Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.2zmqcES592Rfrggm"
+    },
+    {
+      "_id": "Mn3NWFmhH1AHrjyK",
+      "name": "4+ Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.Mn3NWFmhH1AHrjyK"
+    },
+    {
+      "_id": "slgz8LJBEC3Kni0P",
+      "name": "2-3 Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.slgz8LJBEC3Kni0P"
+    },
+    {
+      "_id": "6T93wS7uqECKJy14",
+      "name": "Arcing Shock",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Mid die against a different target, and the Min die against a third target. If you Attack three different targets, the damage is irreducible. When Attacked with Electricity, Recover that amount of Health instead</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.6T93wS7uqECKJy14"
+    },
+    {
+      "_id": "oNtCAjjj4kVcGAt8",
+      "name": "More Power",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>of taking damage. When Hindered with Electricity, Boost yourself instead. Attack one target using Electricity. Use your Max die. That target cannot</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.oNtCAjjj4kVcGAt8"
+    },
+    {
+      "_id": "dFUs5T7883C2mwO0",
+      "name": "Overcharged",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die. Defend against an Attack against only you by rolling your single</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.dFUs5T7883C2mwO0"
+    },
+    {
+      "_id": "i2DzBUyrcRBOdRRr",
+      "name": "Pass Through Connection",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Intangibility die. Boost yourself by the damage reduced. Attack multiple close targets using Living Lightning. Hinder each target</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.i2DzBUyrcRBOdRRr"
+    },
+    {
+      "_id": "J7ClBLtblWOpqfSs",
+      "name": "Static Output",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes. If using your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.J7ClBLtblWOpqfSs"
+    },
+    {
+      "_id": "wBB1NKfxFfoE51OI",
+      "name": "Neural Takeover",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (While using this upgrade, Re-Volt has 10 additional Health.) If you are in a situation where everything is spiraling out of control,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.wBB1NKfxFfoE51OI"
+    },
+    {
+      "_id": "YnLhpT6q4qR5IQdu",
+      "name": "Master of Total Chaos",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed in an Overcome to accomplish a task by throwing out the rules.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!NUZO6DmWDTfQqAtK.YnLhpT6q4qR5IQdu"
+    }
+  ],
+  "effects": [],
+  "folder": "bVunWCsumAfcxt7G",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "slaughterhouse-six",
+      "sourcePage": 394,
+      "biographyHtml": "<p>395\n395\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs far as Sean Vargas was concerned, the life of \na RevoCorp enforcer was pretty good. Sure, he \nhad to kidnap the occasional scientist or kill the \noccasional whistleblower, but a job with great \nmedical, two weeks extra vacation, and generous \nperformance bonuses? Worth it. The transfer to \nFort Adamant seemed like just another assignment. \nHe started worrying when a bright-eyed doctor \nnamed Demikahv had him put on a slab and started \nhooking up electrodes. She told him that she had \ncut a deal with RevoCorp and he’d been written \noff. Then she threw the switch, overloading his \npowers and causing him to stop thinking altogether. \nWhen he finally came to, he realized that his body \nwas no longer on the slab. Then came the horrific \nrealization that his body was no longer on the slab \nbecause it was a pile of electrically charged ash \nhovering around him. That’s when the panic set in.\nCapabilities and Motivations\nGlamour has given Re-Volt a purpose. The loss of \nhis humanity expanded his powers exponentially, \nbut being part of the crew makes him feel more \nhuman, which he desperately needs. Ideally, he \nwants to regain his humanity, but he’s not about to \nput what little he has left of himself into the hands \nof doctors anytime soon. Reduced to a cloud of \nelectric impulses that can assume his old shape, he \ncan now travel over wires and absorb electricity to \naugment his powers, in addition to shooting even \nmore lightning than before.\nUpgrades\nAs his humanity fades, Re-Volt has begun to explore \nthe limits of the neuro-electricity that constitutes \nhis new form. By manipulating the electricity in the \nnervous systems of other people, he can debilitate \nand suppress his enemies. He can even take them \nover briefly, moving an unconscious body around \nby using their own nervous system as a host for his \nbioelectric impulses. This ability might one day grow \nto be the way he could acquire a new body.\nAlias: Sean Vargas\nGender: Male\nAge: Early-30s\nHeight: 5’8”/an indeterminate cloud of electrical \nimpulses\nEyes: Glowing blue\nHair: None\nSkin: Matte black, not actually skin\nBuild: Presents as a stout\nCostume/Equipment: When appearing as a \nperson, he has a carbon black body with glowing \nlightning jags on the head and chest, with lightning \narcing all over the body.\nApproach: Focused\nArchetype: Guerrilla\nRe-volt</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "NUZO6DmWDTfQqAtK",
+  "_key": "!actors!NUZO6DmWDTfQqAtK"
+}

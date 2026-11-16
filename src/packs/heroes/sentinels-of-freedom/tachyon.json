@@ -1,0 +1,843 @@
+{
+  "name": "Tachyon",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Dr. Meredith Stinson",
+    "archetype": "Speedster",
+    "wounds": {
+      "value": 0,
+      "max": 27
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of Speed",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Science",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Female",
+    "age": "Middle-Aged",
+    "height": "6’ 0”",
+    "eyes": "Blue",
+    "hair": "Strawberry Blonde",
+    "skin": "White",
+    "build": "Lithe",
+    "costume": "<p>White form-fitting outfit with blue sides. Red glowing circles on her thighs. Stabilizing device on her left forearm. Proprietary H.U.D. goggles. High-tech running shoes.</p>",
+    "background": "Academic",
+    "powerSource": "Radiation",
+    "personality": "Inquisitive",
+    "health": {
+      "greenLow": 21,
+      "yellowHigh": 20,
+      "yellowLow": 11,
+      "redHigh": 10,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d8",
+      "red": "d12",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "Gb7HcfHGxikoBZgd",
+      "name": "Inventions",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.Gb7HcfHGxikoBZgd"
+    },
+    {
+      "_id": "6c4TwrH8Crqys6m2",
+      "name": "Lightning Calculator",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.6c4TwrH8Crqys6m2"
+    },
+    {
+      "_id": "oVOCDBT8vjlq1gzl",
+      "name": "Speed",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.oVOCDBT8vjlq1gzl"
+    },
+    {
+      "_id": "OBCDhcmaBdXgCV9k",
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.OBCDhcmaBdXgCV9k"
+    },
+    {
+      "_id": "CluVtEb04rHIJ7YG",
+      "name": "Finesse",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.CluVtEb04rHIJ7YG"
+    },
+    {
+      "_id": "wOeI9R4IyGxBHby6",
+      "name": "Mind Over Matter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.wOeI9R4IyGxBHby6"
+    },
+    {
+      "_id": "2wLMQ5Q79G2RitEP",
+      "name": "Science",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d12",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.2wLMQ5Q79G2RitEP"
+    },
+    {
+      "_id": "dbRfoPPioDOHTYN2",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.dbRfoPPioDOHTYN2"
+    },
+    {
+      "_id": "GmbmqJWD7ct84gIP",
+      "name": "Hypersonic Assault",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>equal to your Mid die. When a new target enters the scene close to you, you may Attack it by</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.GmbmqJWD7ct84gIP"
+    },
+    {
+      "_id": "eRBsb0wQuyHMlwQx",
+      "name": "Nimble Strike",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>rolling your single Speed die. Boost or Hinder using Lightning Calculator. Use your Max die. If you roll</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.eRBsb0wQuyHMlwQx"
+    },
+    {
+      "_id": "IToBNFOrp78WAVAR",
+      "name": "Quick Insight",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>When you successfully Overcome, you may end up anywhere in the current doubles, you may also Attack using your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.IToBNFOrp78WAVAR"
+    },
+    {
+      "_id": "G6BiK168w42YgQxk",
+      "name": "Principle of Speed",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>environment. You and each of your allies gain a hero point. Overcome while applying specific scientific principles. Use your Max die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.G6BiK168w42YgQxk"
+    },
+    {
+      "_id": "tdpNhz9BKDBSuOgN",
+      "name": "Principle of Science",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>You and each of your allies gain a hero point. After rolling during your turn, you may take 1 irreducible damage to reroll</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.tdpNhz9BKDBSuOgN"
+    },
+    {
+      "_id": "fOzHeT9ghVZ0vdoJ",
+      "name": "Margin of Error",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>your entire dice pool. Boost yourself using Inventions. Then, either remove a penalty on yourself</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.fOzHeT9ghVZ0vdoJ"
+    },
+    {
+      "_id": "95ntDw9yox8y6TE0",
+      "name": "Stabilization Device",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>or recover using your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.95ntDw9yox8y6TE0"
+    },
+    {
+      "_id": "Gd1lCEoxmPmEFz8L",
+      "name": "Tech on the Fly",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Boost multiple targets using Inventions. Use your Max die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.Gd1lCEoxmPmEFz8L"
+    },
+    {
+      "_id": "wTUD5E4tw2WwhsbZ",
+      "name": "Rapid Response",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Max+Mid dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.wTUD5E4tw2WwhsbZ"
+    },
+    {
+      "_id": "6lDpBbUiru33UUlW",
+      "name": "Speed of Thought",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome using Speed. Use your Max+Min dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.6lDpBbUiru33UUlW"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 312,
+        "ability": 313,
+        "bio": 314
+      },
+      "biographyHtml": "<p>314\n314\nBiography \nMeredith Stinson was always brilliant. When other \nkids were playing baseball, she was studying the \ntrajectory of the ball and devising optimal swing \nspeeds, with detailed notes. Her inquisitive nature \nand meticulous approach served her well in college, \nand she rapidly began accumulating accolades in \nthe sciences. She patented her first invention in \nsophomore year: a layered crystal composites and \nmicrocircuitry translucent screen that could display \nimages and record data from both sides. This \ntechnology would later serve as the basis for her \nH.U.D. goggles, but more importantly, it started her \non the road to scientific legend.\nShe also met the woman who would go on to \nbecome the love of her life. Her college roommate \nDana Bertrand was one of the only people she had \never met that she could talk about things other than \nscience and not get bored, though she did end up \ndevising a new formula of eyeliner in the lab when \nDana lamented that she was running out of the \nstuff she liked. Dana, in turn, enjoyed how Meredith \ncould start at one topic and end up somewhere \ncompletely different (like, in a lab, nervously asking \nDana to try on something she had made for her). \nAfter Meredith graduated with three degrees \nin physics, chemistry, and mathematics, Eaken-\nRubendall labs in Megalopolis offered her a full ride \nto any doctoral program she wanted (and as many \nof them as she wanted), if she would come and \nwork for them. Dana got a modeling contract in \nMegalopolis at about the same time, and the two of \nthem decided that they should get a place together, \nsince they already knew that they got along. \nThey started dating two months later, celebrating \nMeredith completing her doctorate in physics, and \nmarried two years later, celebrating Dana becoming \nthe face of Cosmotique’s entire line.\nDuring one of her experiments, Dr. Meredith \nStinson was bombarded by tachyon particles, a \npreviously theoretical particle that travels faster than \nlight. The tachyons flooded and accelerated her cells, \nenabling her to move at phenomenal speeds and \nprotect herself from the negative consequences of \nsuch extreme velocity. As far as she was concerned, \nthis was fantastic. Not only could she study her \nown powers, it would allow her to run concurrent \nexperiments! When Legacy asked her to join the \nFreedom Five, she agreed to do so only so long \nas she still had time (and some additional funding) \nfor her experiments. In her career as a hero, there \nwas only one time when speed utterly failed her. \nIn fighting the monstrous cosmic construct called \nAlias: Dr. Meredith Stinson\nGender: Female\nAge: Middle-Aged\nHeight: 6’0”\nEyes: Blue \nHair: Strawberry Blonde\nSkin: White\nBuild: Lithe\nCostume/Equipment: White form-fitting outfit \nwith blue sides. Red glowing circles on her thighs. \nStabilizing device on her left forearm. Proprietary \nH.U.D. goggles. High-tech running shoes.\nBackground: Academic\nPower Source: Radiation\nArchetype: Speedster\nPersonality: Inquisitive\nTachyon\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "VQ7lETk7cdTqlz2z",
+  "_key": "!actors!VQ7lETk7cdTqlz2z"
+}

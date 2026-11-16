@@ -1,0 +1,490 @@
+{
+  "name": "Fright Train",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Steven Graves",
+    "archetype": "Bruiser",
+    "approach": "Disruptive",
+    "wounds": {
+      "value": 0,
+      "max": 60
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "NO4UgmSXBNLBEJFZ",
+      "name": "60",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.NO4UgmSXBNLBEJFZ"
+    },
+    {
+      "_id": "EBrH4I8PkzXew6Kl",
+      "name": "Momentum",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.EBrH4I8PkzXew6Kl"
+    },
+    {
+      "_id": "hztLsVjTikhWkWUM",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.hztLsVjTikhWkWUM"
+    },
+    {
+      "_id": "eHeD52THlb9EpRak",
+      "name": "Railway Gun",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.eHeD52THlb9EpRak"
+    },
+    {
+      "_id": "1JEFbjbMLeDXElIq",
+      "name": "Imposing",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.1JEFbjbMLeDXElIq"
+    },
+    {
+      "_id": "rjZD7KQuDzwR1fur",
+      "name": "Health",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.rjZD7KQuDzwR1fur"
+    },
+    {
+      "_id": "tLG7PWVFiCSKMEDB",
+      "name": "All Aboard!",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>are Yellow status, use the Max+Min dice. If you are Red status, use Max+Min against one target and Mid against another. Reduce damage taken by physical and energy sources by 1 while in</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.tLG7PWVFiCSKMEDB"
+    },
+    {
+      "_id": "Adp1N84BvsAf0DnT",
+      "name": "Engine of Destruction",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>the Green zone, 2 in the Yellow zone, and 3 in the Red zone. Whenever a target takes a Hinder action against you, you may first</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.Adp1N84BvsAf0DnT"
+    },
+    {
+      "_id": "WA9VCBqp0UAZPEmV",
+      "name": "Locomotivation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>roll your Momentum die as a Hinder on them. Hinder multiple targets using Imposing. You and any nearby allies</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.WA9VCBqp0UAZPEmV"
+    },
+    {
+      "_id": "EZHltmC4RJro5aiP",
+      "name": "Plow Through",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend using your Max die. When you take an action that lets you make an Attack, also make an</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.EZHltmC4RJro5aiP"
+    },
+    {
+      "_id": "c1AQuiXc61KgNYgh",
+      "name": "Trained Sights",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Attack using your Mid die. (When using this upgrade, Fright Train has 20 additional Health.) If you can cause massive collateral damage without regard for</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.c1AQuiXc61KgNYgh"
+    },
+    {
+      "_id": "BJKCsrBSwQSWXyXg",
+      "name": "Master of Annihilation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>casualties, automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!Km50XwvdnmkgKm94.BJKCsrBSwQSWXyXg"
+    }
+  ],
+  "effects": [],
+  "folder": "C6Tb9G3QkSgiZJzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "independent",
+      "sourcePage": 352,
+      "biographyHtml": "<p>353\n353\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nBiography\nSteven Graves served in the same unit as his rival \nLt. Vance, until he was wounded in battle. After his \nhonorable discharge, Steven Graves put his size and \ntraining to use as private security for various shady \nenterprises. To further his abilities, he underwent \nbiological and mechanical modifications to increase \nhis size and strength, as well as gaining the distinctive \nhelmet that earned him the name “Fright Train.” After \na stint in the extradimensional fortress known as The \nBlock, Fright Train was broken out by Baron Blade in \na plot to form a villain team to gain his vengeance \nagainst the Freedom Five. Further augmenting his \nstrength and durability, the Baron ensured that Fright \nTrain would be able to go toe to toe with the Bunker \nsuit. After the ultimate failure of the team, Fright Train \nreturned to being a hired thug, ready to provide \nmayhem and train references \nfor other criminals.\nCapabilities and Motivations\nWhen it comes to hired muscle, few can compete \nwith Fright Train. Though his style of fighting is best \ndescribed as “indiscriminate mayhem,” he can go toe \nto toe with even the strongest heroes, and his loyalty \nto his allies means those who employ him know he \nwon’t abandon the mission if things go wrong. Very \nfew things can stop him in his tracks once he builds up \nsome steam, though this single minded focus can be \nused against him. Fright Train has lately been teaming \nup with his old Vengeance team member \nErmine, and the pairing of his strength with her \nskill is proving to be a highly successful team \nfor heists, especially when things go wrong and she \ncan depend on him to power through. Though it is \nnot, strictly speaking, a superpower, Fright Train can \ncome up with a train reference to fit any situation.\nUpgrades\nAfter years of fighting Bunker, Fright Train has come \naround the bend to the idea of a powered suit. He’s \ngot ideas for a full body armored suit later down the \nline, but for now he’s got a cannon on his back that \nuses kinetic energy generated by the pistons on his \nlegs and stored in his chestpiece.\nVillains\nAlias: Steven Graves\nGender: Male\nAge: Mid-30s\nHeight: 8’ 3”\nEyes: Brown \nHair: Black\nSkin: Brown\nBuild: Heavily muscled\nCostume/Equipment: \nOlive-drab \npants, \ntan \ngloves that reach his elbows, and steel boots with \npistons attaching to braces on his legs. A steel \nchestpiece with a cannon mounted on the back \nthat holds and stores kinetic energy from the \npistons. A domed steel helmet that connects to \nthe chestpiece, covering his head and neck, with a \ngrill on the front. \nApproach: Disruptive\nArchetype: Bruiser\nFright Train</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "Km50XwvdnmkgKm94",
+  "_key": "!actors!Km50XwvdnmkgKm94"
+}

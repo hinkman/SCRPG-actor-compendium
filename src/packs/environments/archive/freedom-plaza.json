@@ -1,0 +1,314 @@
+{
+  "name": "Freedom Plaza",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>422\n422\nFull Name: Sentinels of Freedom Academy of \nHeroics and Justice\nMotto: Nulla enim minantis auctoritas apud \nliberos est\nMotto Translation: To freemen, threats are \npowerless.\nEstablished: 2018\nAdministrator: Paul Parsons\nLocation: Megalopolis, Connecticut, United States\nCampus Size: 960 acres\nStaff: 417 (including academic staff and operations \nemployees)\nStudents: 63 (full time), 109 (part time)\nNewspaper: The Silver Sentinel\nColors: Blue and Silver\nOpen to the Public from 9AM - 7PM\nTo inquire about space for meetings and events, \nplease contact: steph.dismas@SF_Plaza.com or \ncall 959-555-4376\nFreedom Plaza\nThe sprawling campus known as the Sentinels \nof Freedom Academy was established in the \naftermath of the devastating OblivAeon event as a \nplace where a new generation of heroes could be \ntrained, equipped, and brought together to protect \nagainst the threats of this world and beyond. It \nserves multiple purposes, from the headquarters \nof the Sentinels of Freedom hero team, to the \nFreedom Academy campus, to the research \nlaboratories of Dr. Stinson, and more. \nThe hero Heritage is the primary administrator \nof the Sentinels of Freedom Academy, though \nwith his responsibilities with G.L.O.B.A.L., he is \noften seen as a figurehead at Freedom Academy. \nEach of the heroes on the Sentinels of Freedom \nteam teach a variety of courses here, including \nsome adjunct team members, such as Time-Slinger, \nVisionary, and Argent Adept. Courses are taught \non a wide breadth of heroing topics — everything \nfrom Crimefighting 101 to Identifying Doomsday \nDevices and Color Coordinating Your Hero Outfit. \nFreedom Plaza is more than just a school for \nwould-be heroes. The Freedom Academy is \ncertainly part a major part of Freedom Plaza, but \nthe site of the destruction of Freedom Tower is \nhome to a vast network of interconnected sites. \nThere you can find Legacy Park, a memorial park \nto the heroes who have protected the city of \nMegalopolis and the world from all manner of \nthreats. The Akash’Flora tree grows there, as well. \nThere are museums, monuments, and more, all \nnear the campus of the Freedom Academy. \nHeroes of all ages and experience levels are \nencouraged to enroll in the Freedom Academy, \nboth for the sake of learning more and growing \nas a community of heroic individuals, as well as \nkeeping closely guarded records on as many \nheroes as possible. The registrar’s office has \nsome of the most intense security, as keeping the \nidentities and personal information of the heroes \nsecret and safe is of utmost importance, but the \nSentinels of Freedom also depend on having that \ninformation so they can best deploy heroes to deal \nwith unexpected threats all over the world. And \nFreedom Plaza is just the place from which to \ndeploy this new generation of heroes.\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "RFiR1sZJWPY1gbhs",
+      "name": "Breakout",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Dangerous creatures under study here</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.RFiR1sZJWPY1gbhs"
+    },
+    {
+      "_id": "YJENqgcjgfJlouqc",
+      "name": "Campus Tour, Interrupted",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>The fight runs into a</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.YJENqgcjgfJlouqc"
+    },
+    {
+      "_id": "7z4lDH4jdyqgbChT",
+      "name": "Campus Alert",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>The alert system is engaged. Roll</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.7z4lDH4jdyqgbChT"
+    },
+    {
+      "_id": "kdudOAwPeCg9aOQX",
+      "name": "Class is Cancelled!",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>A classroom full of bewildered</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.kdudOAwPeCg9aOQX"
+    },
+    {
+      "_id": "72BvLNokrxxgGEV5",
+      "name": "Found Arsenal",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Your foe found a weapons locker! Roll</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.72BvLNokrxxgGEV5"
+    },
+    {
+      "_id": "zVVesJjWxIqukyEw",
+      "name": "A New Hero on the Scene",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>A hero in training</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.zVVesJjWxIqukyEw"
+    },
+    {
+      "_id": "mreaEdDnqhKSInXp",
+      "name": "Containment Failure",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>The conflict has damaged a</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.mreaEdDnqhKSInXp"
+    },
+    {
+      "_id": "Bq0I2CArpsvCg8bO",
+      "name": "Hiding in the Training Simulator",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Your foes have</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.Bq0I2CArpsvCg8bO"
+    },
+    {
+      "_id": "uQSfWJoIu3QWSCCt",
+      "name": "Experimental Defense System Gone Haywire",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!DhpFNoxgX0tKAcHc.uQSfWJoIu3QWSCCt"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 422,
+        "twists": 423
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "DhpFNoxgX0tKAcHc",
+  "_key": "!actors!DhpFNoxgX0tKAcHc"
+}

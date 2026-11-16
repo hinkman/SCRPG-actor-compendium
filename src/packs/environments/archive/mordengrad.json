@@ -1,0 +1,314 @@
+{
+  "name": "Mordengrad",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>428\n428\n428\n428\nLocation: Eastern Europe\nCapital: Mordengrad\nLeader: Ivan Ramonat (Title: Baron Blade) \nAnthem: Mordengrad Amžinai (Mordengrad \nForever)\nMotto: We Write Our Own Future\nEthnic Groups: Mordengradi (100%)\nDemonyms: Mordengradi, Mordengradian\nPopulation: 40,000 (Approximate: the \nMordengradi government is fiercely secretive of \ncensus information and does not allow outside \nstudy of the country)\nType of Government: Meritocracy (Baron Blade is \nacknowledged by law to have the most merit)\nLanguages:Lithuanian, Latvian, Russian, English, \nMordengradi (local dialect)\nGDP: estimated 20 billion* (Mordengrad does \nnot export or import, so GDP approximation \nmay be incorrect)\nCurrency: The Mordengradi Luna\nTravel Advisory Level: Orange: Reconsider \nTraveling\nTravel Advisory Supplemental: As of Jan 1, 1998, \nit is illegal for anyone named “Paul” or “Pauline” to \nenter Mordengrad\nMordengrad\nHail Mordengrad! Mordengrad the invincible! \nMordengrad the technological wonder of the \nworld! Mordengrad, where no citizen goes hungry \nor lacks for a place to sleep, and where sickness \nand crime are things of the past. Mordengrad, \nwhere Ivan Ramonat leads with \nwisdom and strength!\nThese are the virtues claimed by Mordengrad’s \nambassadors, ignoring compulsory military service, \nforced labor, and doomsday device related risks. \nMordengrad’s ruler Ivan Ramonat, AKA the villain \nBaron Blade, has entered the world stage multiple \ntimes over the years. The baron’s flying fortress \nhas heralded raids by his loyal blade battalions, his \ninventions have brought the world to the brink of \ndisaster. Baron Blade has clashed with Legacy and \nthe heroes of the world, and countless times has \ndodged consequences, returning to the city where \nhe rules unquestioned. That may have ended now, \nwith his death during the fight against OblivAeon, \nwhere he heroically gave his life so that the Freedom \nFive could end the cosmic threat once and for all. \nHis body was returned to Mordengrad, so that the \ncity could mourn their beloved leader, but rumors \npersist that he still lives…\nWhatever the case, the engines of Mordengrad \nchurn on endlessly. The people have assignments \nto complete, orders to fill, and experiments to run. \nThe military remains in a state of readiness, and \ntheir walking tanks are ever vigilant against those \nwho would seek to enter uninvited. One thing has \nchanged, however. For the first time, Mordengrad \nis seeking people with substantial technical skills to \nimmigrate to Mordengrad, though their immigration \nofficers remain quiet about why Mordengrad \nis seeking an influx of mechanical, chemical, and \nelectrical engineers, particularly if they also have a \nbackground in applied science. \nFor better or for worse, the world will have to \nwait and see. Knowing what has \ncome from Mordengrad before, \nthere’s no telling what the baron \nis up to.\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "Fl6vxZCSpcLLAyzQ",
+      "name": "Battalion Patrols",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Blade Battalions patrol the streets,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.Fl6vxZCSpcLLAyzQ"
+    },
+    {
+      "_id": "9iFPoeCZfUOgqsMk",
+      "name": "Dance With The Goat!",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>You find yourself in a festival,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.9iFPoeCZfUOgqsMk"
+    },
+    {
+      "_id": "clDsCf2xWJIYFdAg",
+      "name": "Battalion Leader",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>A military leader has arrived to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.clDsCf2xWJIYFdAg"
+    },
+    {
+      "_id": "tm8ffJdxnmE0ARgR",
+      "name": "Auto-Drone-Deployment",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Drones for observations</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.tm8ffJdxnmE0ARgR"
+    },
+    {
+      "_id": "vm7ENtHPDFm6kQJ4",
+      "name": "In Memory of the Baron",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>A soldier shouts</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.vm7ENtHPDFm6kQJ4"
+    },
+    {
+      "_id": "dPmGde1bwANcUGTa",
+      "name": "Loyalist",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>A Mordengradi citizen joins the fight against</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.dPmGde1bwANcUGTa"
+    },
+    {
+      "_id": "yv9STpWXnMISOeYu",
+      "name": "Watching from the Shadows",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>You have an</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.yv9STpWXnMISOeYu"
+    },
+    {
+      "_id": "8kJ9cQL7FjkhigWw",
+      "name": "The People of Mordengrad",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>In the midst of the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.8kJ9cQL7FjkhigWw"
+    },
+    {
+      "_id": "cQUXQYVZjQzEvdFl",
+      "name": "All Hands Response",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Mordengrad is going into</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!t65QPzLpTKwT6u8Z.cQUXQYVZjQzEvdFl"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 428,
+        "twists": 429
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "t65QPzLpTKwT6u8Z",
+  "_key": "!actors!t65QPzLpTKwT6u8Z"
+}

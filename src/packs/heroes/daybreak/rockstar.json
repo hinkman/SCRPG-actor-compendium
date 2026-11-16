@@ -1,0 +1,843 @@
+{
+  "name": "Rockstar",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Megan “The Hammer” Lee",
+    "archetype": "Physical Powerhouse",
+    "wounds": {
+      "value": 0,
+      "max": 30
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of Ambition",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Strength",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Female",
+    "age": "Late-Teens",
+    "height": "5’7”",
+    "eyes": "Blue",
+    "hair": "Blonde",
+    "skin": "Fair",
+    "build": "Athletic",
+    "costume": "<p>Rockstar changes her outfit with some regularity, always looking for more hip and/or audacious stage clothes. She also changes the color of the ends of her hair, but always paints the star over her right eye to match.</p>",
+    "background": "Unremarkable",
+    "powerSource": "Accident",
+    "personality": "Arrogant",
+    "health": {
+      "greenLow": 23,
+      "yellowHigh": 22,
+      "yellowLow": 12,
+      "redHigh": 11,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "UH62ncUWJu7HVzOZ",
+      "name": "Stone",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d12",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.UH62ncUWJu7HVzOZ"
+    },
+    {
+      "_id": "41zzhzmUdCDRiSjX",
+      "name": "Strength",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.41zzhzmUdCDRiSjX"
+    },
+    {
+      "_id": "oGXacrpGQDKcbyE7",
+      "name": "Transmutation",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.oGXacrpGQDKcbyE7"
+    },
+    {
+      "_id": "guVyV8xVo1CgLp5Z",
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.guVyV8xVo1CgLp5Z"
+    },
+    {
+      "_id": "wi15lwwBwlwpnIX1",
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.wi15lwwBwlwpnIX1"
+    },
+    {
+      "_id": "mYMwHncEJBIsVxq0",
+      "name": "Creativity",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.mYMwHncEJBIsVxq0"
+    },
+    {
+      "_id": "WeimnRPev92YR3EB",
+      "name": "Hard Rock Lifestyle",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.WeimnRPev92YR3EB"
+    },
+    {
+      "_id": "1qJFT0KBEEpKAH8k",
+      "name": "Leadership",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.1qJFT0KBEEpKAH8k"
+    },
+    {
+      "_id": "DmRIS4oHzwKkThpN",
+      "name": "Rock Out",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Transmutation die. Reduce any physical or energy damage you take by 1 while you are in the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.DmRIS4oHzwKkThpN"
+    },
+    {
+      "_id": "PoDlYf3Jn7q6Q7aN",
+      "name": "Shake It Off",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Attack using Strength. The target of that Attack must take the Attack action</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.PoDlYf3Jn7q6Q7aN"
+    },
+    {
+      "_id": "T9R9EbyyMcjYGewO",
+      "name": "Wicked Solo",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome a situation where someone else has given you a bonus from a against you on its next turn, if possible.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.T9R9EbyyMcjYGewO"
+    },
+    {
+      "_id": "tiAGWGKGCOZO8KES",
+      "name": "Principle of Ambition",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost. Use your Max die. You and each of your allies gain a hero point. Overcome using brute force. Use your Max die. You and each of your allies gain</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.tiAGWGKGCOZO8KES"
+    },
+    {
+      "_id": "rWKwRGz2fux0Cpgg",
+      "name": "Principle of Strength",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>a hero point.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.rWKwRGz2fux0Cpgg"
+    },
+    {
+      "_id": "7HWDeyIUMZPzAe8M",
+      "name": "Drop the Hammer",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Strength. Hinder that same target using your Min die. When your personal zone changes, Attack all close enemy targets by rolling</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.7HWDeyIUMZPzAe8M"
+    },
+    {
+      "_id": "BRyuVe4s0z4I7X3D",
+      "name": "Shard Shatter",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "R",
+        "gameText": "<p>your single Stone die. When you eliminate a minion with an Attack using Close Combat, Recover</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.BRyuVe4s0z4I7X3D"
+    },
+    {
+      "_id": "ZiXwMJt5ud2jrCox",
+      "name": "Standing Ovation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": true
+        },
+        "type": "R",
+        "gameText": "<p>health equal to your min die. Hinder yourself using Vitality. Use your Min die. Recover health equal to your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.ZiXwMJt5ud2jrCox"
+    },
+    {
+      "_id": "DD3jzocPKaQLAfVf",
+      "name": "Encore!",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Max+Mid dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.DD3jzocPKaQLAfVf"
+    },
+    {
+      "_id": "6eZkiHICfbpOK4KA",
+      "name": "Power Chord",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Stone. Use your Max+Mid dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.6eZkiHICfbpOK4KA"
+    }
+  ],
+  "effects": [],
+  "folder": "1Wp2XFdRcAr1Y8cz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "daybreak",
+      "sourcePages": {
+        "attr": 330,
+        "ability": 331,
+        "bio": 332
+      },
+      "biographyHtml": "<p>332\n332\nBiography \nMegan Lee spent a lot of time daydreaming. When \nher dad Rick had talked about spending the summer \ntogether, she had thought it would be more exciting \nthan poking rocks, but “father-daughter bonding \ntime” turned out to be a series of dig sites as her \ngeologist father measured rocks. She was hoping for \nexplosives, but it turned out most geology was just \nhitting rocks with tiny hammers and then scribbling \nin tiny notebooks. There was only so much waiting \naround she could stand, and hitting rocks was only \nfun when she could hit them hard and make them \nbreak into a million pieces. Eventually, in every dig \nsite, Megan gave up and found a spot to listen to \nmusic while her dad worked. It was still nice that \nshe got to spend time with him — no mom, no \nsister, no chores — just going places with her dad. \nEven if each new one turned out to be boring. \nDig Site 17 was much like any other. A dirty cave \nin some state park or another in Arizona. Megan \ngot bored pretty quick and went for a walk. Majestic \nvistas were nice and all, but it wasn’t long before \nshe stopped looking where she was going. It was \nmore interesting to see if she could throw her rock \nhammer in time to the music and still catch it. If \nshe’d been paying attention, she might have noticed \nthe quarry, but suddenly her left foot came down \non nothing and she fell. She tumbled down dozens \nof feet through the air, too shocked to scream, and \nlanded hard in a shallow puddle at the bottom. \nSomehow, she had survived, but had the wind \nthoroughly knocked out of her. As she climbed the \nstairs out of the quarry, she was amazed. The fall \nwas more than a hundred feet! If it hadn’t been for \nthat shallow puddle, she would have died! It didn’t \nmake sense to her that the puddle had saved her \nlife, but it must have, right?\nAs she shakily walked back to where her dad \nwas working, she realized that the fall had bent the \nmetal handle of her rock hammer. She grabbed at \nit… in a flash her hands were covered in rock as \nshe pulled it straight as if it were a paperclip. She \nstared in amazement as the rocks flaked off. She \nhad powers?! Megan spent her junior year learning \nabout her powers — not by practicing with them, \nthat’s way too boring— but as things happened \nto her. Like when she got hit in the head with a \nbaseball and realized that the rocks would protect \nher even against things she didn’t notice, or when \nher favorite eyeliner rolled under the dresser and \nshe lifted the heavy piece of furniture with one \nrocky hand. All in all, it was pretty sweet. Not, like, \nrecord deal sweet, but still pretty good.\nAlias: Megan “The Hammer” Lee\nGender: Female\nAge: Late-Teens\nHeight: 5’7”\nEyes: Blue\nHair: Blonde\nSkin: Fair\nBuild: Athletic\nCostume/Equipment: Rockstar changes her outfit \nwith some regularity, always looking for more hip \nand/or audacious stage clothes. She also changes \nthe color of the ends of her hair, but always paints \nthe star over her right eye to match.\nBackground: Unremarkable\nPower Source: Accident\nArchetype: Physical Powerhouse\nPersonality: Arrogant\nRockstar\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "W3GkQsJom0Dufiyo",
+  "_key": "!actors!W3GkQsJom0Dufiyo"
+}

@@ -1,0 +1,554 @@
+{
+  "name": "Desert Eagle",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Mikal Jadoon",
+    "archetype": "Loner",
+    "approach": "Relentless",
+    "wounds": {
+      "value": 0,
+      "max": 50
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "Hjyt0Kn95pdqqRyb",
+      "name": "50",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.Hjyt0Kn95pdqqRyb"
+    },
+    {
+      "_id": "rm1tiwPnJbWUv2lb",
+      "name": "Eagle Eye System",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.rm1tiwPnJbWUv2lb"
+    },
+    {
+      "_id": "PHCmgl10fEcPZ3ax",
+      "name": "Acrobatics",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.PHCmgl10fEcPZ3ax"
+    },
+    {
+      "_id": "0RiWzI8F4Ng5TIAQ",
+      "name": "Energy Bolt Launchers",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.0RiWzI8F4Ng5TIAQ"
+    },
+    {
+      "_id": "mxckCy0wdw9FIWmC",
+      "name": "Alertness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.mxckCy0wdw9FIWmC"
+    },
+    {
+      "_id": "q2JBlTQT0MFMY90E",
+      "name": "Other Villains",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.q2JBlTQT0MFMY90E"
+    },
+    {
+      "_id": "JMLp134nTlduHvkA",
+      "name": "0 Other Villains",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.JMLp134nTlduHvkA"
+    },
+    {
+      "_id": "6WijCNFDeVvevCO2",
+      "name": "1-2 Other Villains",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.6WijCNFDeVvevCO2"
+    },
+    {
+      "_id": "SFCIb9vQ7xPHEJMB",
+      "name": "Debilitating Bolts",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>less status die, use your Max+Min dice; a status die, use your Max die; larger than a , use your Mid die. When an opponent moves away from you, you may follow them and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.SFCIb9vQ7xPHEJMB"
+    },
+    {
+      "_id": "Ca0EpdNJV8SoKz6n",
+      "name": "Hard to Shake",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": true
+        },
+        "type": "R",
+        "gameText": "<p>roll your single status die as a Hinder against them. Attack using Eagle Eye System and use your Max die. Recover Health</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.Ca0EpdNJV8SoKz6n"
+    },
+    {
+      "_id": "RZAYLbQ93UkMmZkH",
+      "name": "Locked on Target",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>equal to your Mid+Min dice. Attack multiple targets using Flight. Hinder each target with your Max</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.RZAYLbQ93UkMmZkH"
+    },
+    {
+      "_id": "X5wpDjeezDbqM93G",
+      "name": "Swoop and Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>die. Increase all of Desert Eagle’s power dice by one size.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.X5wpDjeezDbqM93G"
+    },
+    {
+      "_id": "bWle2KslT1W4Upwo",
+      "name": "Power Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Desert Eagle has 20 additional Health.) If you have been given a contract to perform a specific task, automatically</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.bWle2KslT1W4Upwo"
+    },
+    {
+      "_id": "KDR0FvM3wkjA0CGc",
+      "name": "Master Mercenary",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>succeed at an Overcome in a situation where the difference is getting paid and not getting paid.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!v4tdIalWFfPkqhIJ.KDR0FvM3wkjA0CGc"
+    }
+  ],
+  "effects": [],
+  "folder": "bVunWCsumAfcxt7G",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "slaughterhouse-six",
+      "sourcePage": 392,
+      "biographyHtml": "<p>393\n393\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs the goggles attached to the contacts that had \nbeen drilled into his skull, Mikal Jadoon remembered \nabandoning the Pakistani army for the mercenary \nlife of better pay and fewer rules. He remembered \njoining RevoCorp’s black ops team for the same \nreasons. He remembered the upgrades, the rush \nas he tried out the wings for the first time, and the \nEagle Eye system that let him see every crystal clear \ndetail, every nuance of his target. He remembered \nthe man who looked like living darkness, and \nthe terrible pain as that slice of shadow sent out \ntendrils that grabbed him by his eyes and pulled. He \nremembered being spit out of an endless darkness \nonly to realize that something was terribly wrong \nwith his vision. He remembered the weeks before \nhe was able to contact Ray Manta, seeing nothing \nbut writhing, hungry shadows. \nThen, Ray Manta made the \nfinal connections to Mikal’s \ntemple, lifting the darkness. \nCycling through the visual \nspectra, Mikal wondered if he \nwould ever sleep again.\nCapabilities and Motivations\nDesert Eagle is a skilled and dangerous aerial \ncombatant. The speed and maneuverability of his \nwing system allows him to attack from unpredictable \nangles and makes him a hard target to hit. Plus, he \nonly gets more lethal as the fight continues and \nhis Eagle Eye system analyzes target weaknesses. \nOnce the Eagle Eye system has locked on to a \ntarget, even the stealthiest heroes will find escaping \nDesert Eagle a difficult proposition.\nUpgrades\nRay Manta is tinkering with every aspect of Desert \nEagle’s gear. The next generation Eagle Eye system \nacquires target weaknesses faster and hits harder, \nthe barrier systems can generate a stronger barrier, \nand the wingsuit’s upgraded thrusters and G-force \ndampeners allow for tighter turns and a higher \noperational ceiling.\nAlias: Mikal Jadoon\nGender: Male\nAge: Early-30s\nHeight: 6’\nEyes: Completely black\nHair: Brown, windblown\nSkin: Brown\nBuild: Wiry gymnast\nCostume/Equipment: A brown bodysuit with \ngold piping, brown boots, and khaki arms and \nlegs. Khaki gloves with gold bracers fitted with \nglowing purple gems. A backpack fitted with large \nwings with metal feathers and thrusters. A black \nbreather mask covering the mouth and nose with \na hose leading to the backpack. Glowing purple \ngoggles covering the eyes.\nApproach: Reckless\nArchetype: Loner\nDesert Eagle</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "v4tdIalWFfPkqhIJ",
+  "_key": "!actors!v4tdIalWFfPkqhIJ"
+}

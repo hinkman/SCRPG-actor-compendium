@@ -1,0 +1,875 @@
+{
+  "name": "Bunker",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Captain Tyler Vance",
+    "archetype": "Modular: Armored",
+    "wounds": {
+      "value": 0,
+      "max": 33
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of The Defender",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of The Tactician",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Late-20s",
+    "height": "5’8”",
+    "eyes": "Green",
+    "hair": "Brown",
+    "skin": "White",
+    "build": "Athletic",
+    "costume": "<p>Captain Vance most commonly wears street clothes both in and out of armor, though he still has his dress uniform for special occasions. His ten-foot tall armored exo-chassis is silver and gold, with glowing blue accents. He always carries the RIOT cannon.</p>",
+    "background": "Military",
+    "powerSource": "Powered Suit",
+    "personality": "Decisive",
+    "health": {
+      "greenLow": 26,
+      "yellowHigh": 25,
+      "yellowLow": 13,
+      "redHigh": 12,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d8",
+      "yellow": "d8",
+      "red": "d10",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "tQPtTHjfUAg8BYC1",
+      "name": "Power Suit",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.tQPtTHjfUAg8BYC1"
+    },
+    {
+      "_id": "wHXCyeHCQuohWTVD",
+      "name": "RIOT Cannon",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.wHXCyeHCQuohWTVD"
+    },
+    {
+      "_id": "5aeiGLUv7MH89t16",
+      "name": "Lightning Calculator",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.5aeiGLUv7MH89t16"
+    },
+    {
+      "_id": "f6A9L3rS3f5yibNh",
+      "name": "Strength",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.f6A9L3rS3f5yibNh"
+    },
+    {
+      "_id": "MxOFE3ieEoeoXfSy",
+      "name": "Fitness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.MxOFE3ieEoeoXfSy"
+    },
+    {
+      "_id": "rsQkxIrDp3Qi7gbh",
+      "name": "Insight",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.rsQkxIrDp3Qi7gbh"
+    },
+    {
+      "_id": "3W41sjAaVPNPHOPC",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.3W41sjAaVPNPHOPC"
+    },
+    {
+      "_id": "cyx9EfersfOzWHvp",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.cyx9EfersfOzWHvp"
+    },
+    {
+      "_id": "jGwyaTzYgg1CdFOd",
+      "name": "Veteran",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.jGwyaTzYgg1CdFOd"
+    },
+    {
+      "_id": "tO9MwwkTwYXqgzNH",
+      "name": "Armored Plating",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>while in the Yellow zone, and 3 while in the Red zone.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.tO9MwwkTwYXqgzNH"
+    },
+    {
+      "_id": "Z6L7YnJ9pzIAOljb",
+      "name": "Satellite-Based Mode Shift",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": true,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost yourself using Power Suit. Then change modes. Overcome a situation that requires you to hold the line and use you Max die OR use your Mid die and Defend with your Min die. You and each of</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.Z6L7YnJ9pzIAOljb"
+    },
+    {
+      "_id": "4y7o961UVb9Gjac0",
+      "name": "Principle of the Defender",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your allies gain a hero point. Overcome when you can flashback to how you prepared for this exact</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.4y7o961UVb9Gjac0"
+    },
+    {
+      "_id": "gVbsdPQZbeaRkFjb",
+      "name": "Principle of the Tactician",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>situation. Use your Max die. You and each of your allies gain a hero point. Attack up to three different targets using RIOT Cannon. Apply your Max</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.gVbsdPQZbeaRkFjb"
+    },
+    {
+      "_id": "GCsMr9NeKne7oDeL",
+      "name": "Decoupled Barrage",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>die to one, your Mid die to another, and your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die. Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.GCsMr9NeKne7oDeL"
+    },
+    {
+      "_id": "lgmmf0eM4J2SIc6L",
+      "name": "MagnaRail Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>persistent and exclusive. Destroy one bonus on you. Change modes, then take an action in the new</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.lgmmf0eM4J2SIc6L"
+    },
+    {
+      "_id": "zL4ZLe5Vs2XmHb1c",
+      "name": "Satellite Recall",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>mode. When you are hit with an Attack, you may change to any mode. If you do,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.zL4ZLe5Vs2XmHb1c"
+    },
+    {
+      "_id": "usjHG2140tXfYDzn",
+      "name": "Emergency Reconfiguration",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>take extra damage equal to the Min die or take a minor twist. Attack multiple nearby targets using Power Suit. Use your Max+Mid dice</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.usjHG2140tXfYDzn"
+    },
+    {
+      "_id": "BM3UDP2XewqfTIeJ",
+      "name": "External Combustion",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>against each. Take irreducible damage equal to your Min die. Attack using RIOT Cannon and at least one bonus. Use your Max+Mid+Min</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.BM3UDP2XewqfTIeJ"
+    },
+    {
+      "_id": "cOuDGEpGWqk2fu7W",
+      "name": "RIOT-Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!nBRbTdPejWUr0SJH.cOuDGEpGWqk2fu7W"
+    }
+  ],
+  "effects": [],
+  "folder": "MOrb4XJ4mjKBQD3Z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "sentinels-of-freedom",
+      "sourcePages": {
+        "attr": 308,
+        "ability": 309,
+        "bio": 310
+      },
+      "biographyHtml": "<p>310\n310\nICON\nNAME\nTYPE\nGAME TEXT\nUplink Upgrade\nA\nBoost yourself using Power Suit. Create one bonus with your \nMax die and one bonus using your Mid die. These bonuses are \npersistent and exclusive.\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nPower Suit\nRIOT Cannon\nLightning \nCalculator\nStrength\nYou cannot Attack or Hinder while in this mode. \nYou gain access to this ability:\nBunker is a modular hero, and can change between modes \nusing abilities. Each mode can be accessed based on the zone \nyou are in. They change your power dice set and some have an \nability you gain access to while in that mode.\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nRIOT Cannon\nStrength\nWhen Tyler Vance is not in the Bunker suit, \nuse this mode. You cannot use any abilities \nother than abilities from your principles. \nWhen he can use the suit again, change to \nOperations Mode.\nOut of Suit Mode\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nPower Suit\n RIOT Cannon \nLightning \nCalculator\nStrength\nDefault mode.\nAll actions are \nnormal.\nOperations Mode\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nPower Suit\nRIOT Cannon\nLightning \nCalculator\nYou are fixed to the spot and cannot move or Boost \nwhile in this mode. You gain access to this ability:\nICON\nNAME\nTYPE\nGAME TEXT\nBUDDABUDDA\nBUDDABUDDA\nI\nWhenever you take a basic Attack action, either use your \nMax+Min dice to Attack one target, or Attack two different \ntargets, one using your Max die and one using your Mid die.\nTurret Mode\nUtility Mode\nICON\nNAME\nTYPE\nGAME TEXT\nSitrep: Resolved\nA\nHinder or use one of \nyour principles to \nOvercome using \nLightning Calculator. Use \nyour Max+Min dice.\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nPower Suit\nRIOT Cannon\nLightning \nCalculator\nStrength\n \nYou cannot Attack or Defend while in this \nmode. You gain access to this ability:\nTactical Mode\nGREEN ZONE\nYELLOW ZONE\nRED ZONE\nICON\nNAME\nTYPE\nGAME TEXT\nDefensive \nDiagnostic\nA\nDefend using RIOT \nCannon. Use your Max \ndie. Recover Health equal \nto your Min die.\nPOWERS\nDIE TYPE\nMODE DESCRIPTION\nPower Suit\nRIOT Cannon\nYou cannot Attack or Hinder while in this mode. \nYou gain access to this ability:\nRecharge Mode\nAuxiliary Sheet\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "nBRbTdPejWUr0SJH",
+  "_key": "!actors!nBRbTdPejWUr0SJH"
+}

@@ -1,0 +1,634 @@
+{
+  "name": "Snare",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Lilith Black",
+    "archetype": "Inhibitor",
+    "approach": "Dampening",
+    "wounds": {
+      "value": 0,
+      "max": 55
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "1a9eAfRO2LSSaDFI",
+      "name": "55",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.1a9eAfRO2LSSaDFI"
+    },
+    {
+      "_id": "Bg9O3YdVKYOuWHgg",
+      "name": "Drum Throne",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.Bg9O3YdVKYOuWHgg"
+    },
+    {
+      "_id": "pjHfLVt3JvhcEPzC",
+      "name": "Conviction",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.pjHfLVt3JvhcEPzC"
+    },
+    {
+      "_id": "Ic7jDCzjwIwDUTsu",
+      "name": "Energy Shields",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.Ic7jDCzjwIwDUTsu"
+    },
+    {
+      "_id": "zIb5tnDFfG5O9Pr8",
+      "name": "Insight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.zIb5tnDFfG5O9Pr8"
+    },
+    {
+      "_id": "jSzLkoBxZClTAonD",
+      "name": "Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.jSzLkoBxZClTAonD"
+    },
+    {
+      "_id": "NfywJjAG0ZYXAkzg",
+      "name": "3+ Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.NfywJjAG0ZYXAkzg"
+    },
+    {
+      "_id": "CaKwtSxodQxQGzGI",
+      "name": "1-2 Heroes with Penalties",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.CaKwtSxodQxQGzGI"
+    },
+    {
+      "_id": "kZP6MCZRuA4o0xBi",
+      "name": "Drive the Beat Home",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>die as a Hinder against them. Hinder multiple targets using Energy Shields. While a hero has this</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.kZP6MCZRuA4o0xBi"
+    },
+    {
+      "_id": "fa9hSt8NgEQl1EGx",
+      "name": "Encapsulate",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>penalty, reduce all their power dice by one size. When Attacked by someone with a penalty you created, Defend by</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.fa9hSt8NgEQl1EGx"
+    },
+    {
+      "_id": "XsmIsaGvxr2iomDb",
+      "name": "Resonant Shield",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>rolling your single status die, and the attacker also suffers that much damage. Select a nearby target. Either turn all bonuses on that target to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.XsmIsaGvxr2iomDb"
+    },
+    {
+      "_id": "2YwWO15glip2UH7z",
+      "name": "Switch Up the Timing",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>equivalent penalties, or move a penalty from that target to another target that you can see. You cannot be damaged by anyone except yourself until the defense shield is destroyed. The defense shield has 40 Health, or can be</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.2YwWO15glip2UH7z"
+    },
+    {
+      "_id": "H5p6caXekORV1ZJy",
+      "name": "Impenetrable Shield",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Overcome using Energy Shields. Use your Max die. On a success, remove one success from the deactivating challenge. Alternatively, deactivated with three Overcome successes. If a hero takes a minor twist working on the shield, you can make an Attack as a reaction by rolling your single Sonic die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.H5p6caXekORV1ZJy"
+    },
+    {
+      "_id": "DpesTVj8hYf62O9y",
+      "name": "Double Down",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>instead of an Overcome, use the Max die to Recover that much of the defense shield’s Health. This ability cannot be used if the defense shield has been completely removed. If you have complete control over your immediate surroundings,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.DpesTVj8hYf62O9y"
+    },
+    {
+      "_id": "tzKF15nEkuFZxwQJ",
+      "name": "Master of Enforced",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed in an Overcome to organize rabble to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.tzKF15nEkuFZxwQJ"
+    },
+    {
+      "_id": "1L87duCCzQAbosgP",
+      "name": "Order",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>accomplish a task.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!oTdOMHeMmlzl6nWD.1L87duCCzQAbosgP"
+    }
+  ],
+  "effects": [],
+  "folder": "oH7fMOVc623lrDfQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "helfyre",
+      "sourcePage": 372,
+      "biographyHtml": "<p>373\n373\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nAlias: Lilith Black\nGender: Female\nAge: Early-20s\nHeight: 6’5” (in chair)\nEyes: Glowing Red\nHair: Black and glossy\nSkin: Flawless\nBuild: Slight\nCostume/Equipment: A Giger-esque floating \nblack mobility chair decked out with spikes and \nskulls. When exercising her powers, a translucent \nred shield springs up around the chair, with \ntranslucent red drums inside it. \nApproach: Dampening\nArchetype: Inhibitor\nSnare\nVillains\nBiography\nLilith Black loved being behind the drum set. No \none looked at her legs, no one told her to “stay \npositive” and no one signed her up for risky \nexperiments “so that she could be a normal \ndaughter.” The final one was the shadiest, giving \nher a hoverchair in exchange for permission to try \nan experimental cocktail at their private clinic. As \nthe anesthesia began to take hold and the glowing \npurple chemicals flooded into her spinal cord, she \noverheard the doctor telling someone that he had \nthe data he needed, and that the disposal team \ncould get rid of the evidence. Fighting free of the \nsedatives, she reached out in rage and something in \nher mind reached with her. She saw a bubble of red \nenergy surround the doctor, the sound of drums as \nhe pounded at the resonant walls with his fists. She \ngot into her hoverchair and floated out of the place, \nencasing anyone that tried to stop her. She had the \npower now, and was done being poked.\nCapabilities and Motivations\nSnare’s shields are an extremely versatile form of \ntelekinesis. She can encase people or objects, shape \nthe shields, and control the sounds that they emit \nwhen struck. When she focuses fully on them, they \nare practically unbreakable. When Drudge made \nthem a more marketable band, Snare became the \ndriving force behind Helfyre’s musical and fighting \ncohesion, constantly working to balance the \ncompeting egos and keep the band moving to her \nbeat on and off the stage.\nUpgrades\nSnare is all-in for Helfyre, and could become their \nleader given a bit more time. She’s got a talent \nfor organization, a relentless internal drive, and \na bottomless well of rage at the fundamental \nunfairness of the world. The dark and mysterious \nDrudge has her intrigued by his stories of magic \nand smoldering eyes in equal measure, and she’s \nlooking forward to learning more about both.</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "oTdOMHeMmlzl6nWD",
+  "_key": "!actors!oTdOMHeMmlzl6nWD"
+}

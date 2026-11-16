@@ -1,0 +1,530 @@
+{
+  "name": "Blister",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Cinder Azarian",
+    "archetype": "Fragile",
+    "approach": "Focused",
+    "wounds": {
+      "value": 0,
+      "max": 30
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "8LdHUDpLXhuZmpix",
+      "name": "30",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.8LdHUDpLXhuZmpix"
+    },
+    {
+      "_id": "2GyWhzqH5k6BmCQn",
+      "name": "Fire",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.2GyWhzqH5k6BmCQn"
+    },
+    {
+      "_id": "iPKwdQ0Tzql4Noxg",
+      "name": "Close Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.iPKwdQ0Tzql4Noxg"
+    },
+    {
+      "_id": "4oaulGiGhPdjbyh0",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.4oaulGiGhPdjbyh0"
+    },
+    {
+      "_id": "lcLOy0b3pINF1HvN",
+      "name": "Creativity",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.lcLOy0b3pINF1HvN"
+    },
+    {
+      "_id": "Kuwpmb2Z41G36a0T",
+      "name": "Health",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.Kuwpmb2Z41G36a0T"
+    },
+    {
+      "_id": "O31GcxpZJ61jBL9C",
+      "name": "Blazing Axe",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.O31GcxpZJ61jBL9C"
+    },
+    {
+      "_id": "K1ZwDlvvUGqH9I14",
+      "name": "Blistering Solo",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Creativity. Then remove all bonuses from the target. Hinder one target using Presence. Use your Max die. Attack that</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.K1ZwDlvvUGqH9I14"
+    },
+    {
+      "_id": "tUvyGqmfYMZzL1Al",
+      "name": "Burning Melody",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>target using your Mid die. When Attacked with Fire, Recover that amount of Health instead of</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.tUvyGqmfYMZzL1Al"
+    },
+    {
+      "_id": "G1DblX0tzTgPFvIW",
+      "name": "Sleep Now in the Fire",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>taking damage. When Hindered with Fire, Boost yourself instead. Whenever your personal zone changes, you may immediately move</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.G1DblX0tzTgPFvIW"
+    },
+    {
+      "_id": "i2hF2fruguHc0oKn",
+      "name": "Stage Dive",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Increase all of Blister’s Qualities by one die size. elsewhere in the scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.i2hF2fruguHc0oKn"
+    },
+    {
+      "_id": "138bUgb8RjYrsxtU",
+      "name": "Quality Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Blister has 20 additional Health.) If you can cause massive collateral damage without regard for casualties,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.138bUgb8RjYrsxtU"
+    },
+    {
+      "_id": "Pz4ux8CjWhdmYiVJ",
+      "name": "Master of Annihilation",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>automatically succeed at an Overcome where a show of overwhelming force can solve the problem.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OhDNjRcJt0P4rQK2.Pz4ux8CjWhdmYiVJ"
+    }
+  ],
+  "effects": [],
+  "folder": "oH7fMOVc623lrDfQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "helfyre",
+      "sourcePage": 368,
+      "biographyHtml": "<p>369\n369\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nThe daughter of a roadie, Cinder spent her life on \ntour. She learned a great deal about how to play \nfrom a wide variety of bands, demonstrating an \naptitude for the guitar. This led to her discovering \nher powers one day when she was particularly in \nthe groove and her guitar burst into flames where \nher fingers touched the strings; fire which quickly \nspread to the rest of the guitar and herself. In \nthis moment, she learned several things. First, she \nlearned that she was completely immune to fire, as \nwas anything close to her skin. Second, she learned \nthat playing a flaming guitar while immune to fire \nwas AWESOME. Third and finally, she learned that \nguitars, unlike her, burned quite well. She would \nrequire a steady supply of guitars on her road to \ngreatness. A band of people with powers looking for \na guitarist was too good an opportunity to pass up.\nCapabilities and Motivations\nCinder is by far the most musically adept member \nof Helfyre. She has a natural talent for music, enjoys \nplaying the guitar, and has a desire to get better that \ndrives her to constantly practice. She could easily be \nthe heart of the team, but isn’t interested in helping \nthem get better. As far as Blister is concerned, the \nrest of Helfyre is mostly there to keep the crowd \nwarmed up between her solos. She’d be happy if \nthey got on her level... just as long as they do it on \ntheir own time and don’t get in her way.\nUpgrades\nWhile Wager Master certainly increased Blister’s \ncontrol, her constant practice has allowed her \nto work on flashier, hotter, and more sustained \napplications of her fire. The most apparent is that \nshe can keep her instruments from burning quite \nas fast, though she’s never had one survive a solo. \nShe’s still a long way from the control she would \nneed to stop a fire once it really got going, but that \nkind of mastery is potentially within her reach.\nAlias: Cinder Azarian\nGender: Female\nAge: Early-20s\nHeight: 5’ 0’\nEyes: Orange, frequently on fire\nHair: Red and black, frequently on fire\nSkin: Light brown, frequently on fire\nBuild: Very thin. Frequently on fire\nCostume/Equipment: Red tights, black tank top, \ngigantic boots with multiple buckles and zippers, \nmostly ornamental. She has a variety of guitars, \nmostly because she tends to light them on fire.\nApproach: Focused\nArchetype: Fragile\nBlister</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "OhDNjRcJt0P4rQK2",
+  "_key": "!actors!OhDNjRcJt0P4rQK2"
+}

@@ -1,0 +1,314 @@
+{
+  "name": "Wagner II Mars Base",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>424\n424\nNations initially participating in the Wagner Mars \nBase project: United States, England, France, \nRussia, Germany, Canada, Italy, Israel, Japan, China \nCOSPAR ID: 2018-023F\nCall Sign: Beta, Mars Station\nCrew: up to 1500\nCurrently posted: 857\nLaunch pad: Kennedy LC-39 and CCAFS\nPortal teleportation link: Wagner Space Center, \nMegalopolis, CT\nAtmospheric Pressure: 101.3 kPa (14.7 psi; 1.0 \natm) oxygen 21%, nitrogen 79%\nAverage distance from earth: approximately 225 \nmillion km\nStation Power Source: Nuclear Reactor\nPortal Power Source: Classified\nResearch: Government and Civilian\nThe circumstances of the destruction of the \noriginal Wagner Mars Research Base are shrouded \nin mystery. All that is known is that the self-destruct \ncode was triggered from within the base during the \nglobal catastrophe caused by the cosmic entity now \nknown as OblivAeon. Exactly why the self-destruct \nwas triggered remain unknown to the general \npublic as the base black box was classified during \nthe multinational investigation, and representatives \nof the participating governments released a \njoint statement to a hostile alien occupation. \nThe only clue is a single transmission that was\nreleased prior to the base\ndestruction:\n \n“Scion took the place, but they dinna get ta keep \nit. Bydand!”, followed by a bagpipe song that has \nbeen identified as “Cock o’ the North.” Both are \nassociated with the Gordon Highlanders, a former \nScottish regiment of the British army, and Clan \nGordon of Scotland. The governments of Scotland \nand Great Britain, as well as representatives of Clan \nGordon, have disavowed all involvement with the \ndestruction of the base.\nIn 2018, the Wagner space program was \nreinstated as a joint venture between multiple \nnational space agencies and private research \nlaboratories as a two-phase program. The new \nWagner base was constructed largely on earth \nat the Wagner Space Center in Megalopolis, with \nonly a single Mars mission necessary to set up the \ndestination node for an experimental teleportation \ngate network. Using this gate, sections of the base \ncould be constructed on earth and sent through \nthe origin node at Wagner Space Center to the \ndestination gate on Mars. This also allowed most \nbase personnel and researchers to commute to \nMars instead of being stationed there on a semi-\npermanent basis.\nConstruction of the gate was made possible with \ntechnical assistance from the Maerynian embassy \nand Stinson labs, both of which had the condition \nthat no one nation could control the base or \nthe gate network. Therefore, the primary nation \npartners decided that a new multi-national agency \nwould be needed, and the The Mars Space Agency \n(MSA) was etablished. Composed of military and \ncivilian personnel from all member nations who \nhave renounced their former citizenship and \nvolunteered to be stationed on Mars permanently, \nthe MSA is responsible for safety, administration, \nand the future expansion of the base. At this time, \nMars is treated its own member nation within the \nproject, with future ownership and expansion of \nMars still being disputed.\nWagner II \nMars Base\n424\n424\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "kLmF1OCEEZjkPkNL",
+      "name": "Energy Flare",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>The base’s energy matrix has taken</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.kLmF1OCEEZjkPkNL"
+    },
+    {
+      "_id": "TPClGIdQCsltF6iB",
+      "name": "Sprinkler Malfunction",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>The fire-suppression system</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.TPClGIdQCsltF6iB"
+    },
+    {
+      "_id": "wqLEew6MT3xOuWHQ",
+      "name": "Trouble in the Biosphere",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>The life-support systems</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.wqLEew6MT3xOuWHQ"
+    },
+    {
+      "_id": "VaE0nCCBipqFdjgm",
+      "name": "In the Wrong Hands",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Your foes have gotten their</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.VaE0nCCBipqFdjgm"
+    },
+    {
+      "_id": "LDZgX58BUEZCBFji",
+      "name": "Untimely Interference",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Unexpectedly, more foes</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.LDZgX58BUEZCBFji"
+    },
+    {
+      "_id": "029TjdHrKQ4aeZYQ",
+      "name": "Oxygen Leak",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>Something has broken the base’s</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.029TjdHrKQ4aeZYQ"
+    },
+    {
+      "_id": "FgzhimHA0CH77N0Y",
+      "name": "Quarantine Breach",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Some Martian scientists had</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.FgzhimHA0CH77N0Y"
+    },
+    {
+      "_id": "5jBGZ4Fk91xpY4HF",
+      "name": "Meteor Storm",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Micro-meteors pelt the base,</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.5jBGZ4Fk91xpY4HF"
+    },
+    {
+      "_id": "O8dztNmjz6XtSAPL",
+      "name": "Emergency Portal Protocol",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>The Wagner II Mars</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!xK2WUFpYG3eVsBK6.O8dztNmjz6XtSAPL"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 424,
+        "twists": 425
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "xK2WUFpYG3eVsBK6",
+  "_key": "!actors!xK2WUFpYG3eVsBK6"
+}

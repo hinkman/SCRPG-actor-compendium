@@ -1,0 +1,634 @@
+{
+  "name": "Marsman",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Pavel Vladislavovich Koslovski",
+    "archetype": "Predator",
+    "approach": "Specialized",
+    "wounds": {
+      "value": 0,
+      "max": 55
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "da2rZv6phmEvBeJR",
+      "name": "55",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.da2rZv6phmEvBeJR"
+    },
+    {
+      "_id": "kWsYUQQBvn4HLKEn",
+      "name": "Custom Sniper Rifle",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.kWsYUQQBvn4HLKEn"
+    },
+    {
+      "_id": "xleOlGl2W5zaCPL9",
+      "name": "Ranged Combat",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.xleOlGl2W5zaCPL9"
+    },
+    {
+      "_id": "CJxPjvmWWiMwEEBu",
+      "name": "Intuition",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.CJxPjvmWWiMwEEBu"
+    },
+    {
+      "_id": "XupLObLpNdLAg53F",
+      "name": "Reactivated",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.XupLObLpNdLAg53F"
+    },
+    {
+      "_id": "R2e1vO8CvTWAIhRT",
+      "name": "Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.R2e1vO8CvTWAIhRT"
+    },
+    {
+      "_id": "uIdzyH1Qnac5s3iM",
+      "name": "0-1 Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.uIdzyH1Qnac5s3iM"
+    },
+    {
+      "_id": "kWGDMqBN969kL00U",
+      "name": "2-3 Engaged Opponents",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.kWGDMqBN969kL00U"
+    },
+    {
+      "_id": "pzVcJViAm7mMKIqb",
+      "name": "Chosen Prey",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>once already in this scene, gain a +1 persistent and exclusive bonus against that target. Defend against an Attack where you’re the only target by rolling</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.pzVcJViAm7mMKIqb"
+    },
+    {
+      "_id": "Sh944Bi2leEZDTme",
+      "name": "Deep Cover",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>your single Stealth die. One other nearby target takes an amount of damage equal to the damage reduced. Boost yourself using Stealth. Use your Max die. That bonus is persistent and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.Sh944Bi2leEZDTme"
+    },
+    {
+      "_id": "pRlIRyIlq1v9H6st",
+      "name": "Patient Study",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>exclusive. Defend yourself using your Mid die against all Attacks until the start of your next turn. Attack one target using Ranged Combat and use your Max+Min dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.pRlIRyIlq1v9H6st"
+    },
+    {
+      "_id": "jMa0XymBVEAHCnGT",
+      "name": "Perfect Shot",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>That target cannot Defend or use reactions against this attack. Double any bonuses or penalties of your choice involved with taking</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.jMa0XymBVEAHCnGT"
+    },
+    {
+      "_id": "6QMXtY1A4JB9E2cr",
+      "name": "Unaware Quarry",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Increase all of Marxman’s power dice by one size. action against a target that is unaware of your presence or distracted from remembering that you’re still around.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.6QMXtY1A4JB9E2cr"
+    },
+    {
+      "_id": "RD6fDnVDFTHDMp6c",
+      "name": "Power Upgrade",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>(When using this upgrade, Marxman has 20 additional Health.) As long as you are not directly involved in the fray and are using</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.RD6fDnVDFTHDMp6c"
+    },
+    {
+      "_id": "rZ1shoMfcjSHngcX",
+      "name": "Master Behind the",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>your influence indirectly, automatically succeed at an Overcome to</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.rZ1shoMfcjSHngcX"
+    },
+    {
+      "_id": "pL2oqFIB8dYdXLVj",
+      "name": "Curtain",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>manipulate a situation.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!1JPUTWAjycwGmFs8.pL2oqFIB8dYdXLVj"
+    }
+  ],
+  "effects": [],
+  "folder": "qFXsoYfpv2WiPVRp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "perestroika",
+      "sourcePage": 386,
+      "biographyHtml": "<p>387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nPavel was in Stalingrad at age 17 when the Nazis \ninvaded. The ammunition factory where his parents \nworked was an early target, and after their death he \njoined the Red Army Unit 23. After the surrender of \nthe Axis forces in Stalingrad, he was deployed all along \nthe Eastern Front including Kursk, Finland, and Warsaw \nto destabilize axis operations in advance of Soviet \nforces. He was then recruited for the NKVD’s covert \nkill squad to eliminate political dissidents, disrupt CIA \nand MI6 agents, and assassinate foreign scientists \nstudying space travel. In 1950, the NKVD established \na sleeper program by order of Joseph Stalin. He was \nembedded in La Paz, Bolivia, ordered to maintain \nreadiness until activated.\nActivations:\nApr. 15, 1951: Nuclear test team 5 | Nuclear testing \nsite 5, Nevada\nJune 26, 1951: Korean theater command | The \nPentagon, Arlington, VA\nMar. 18, 1952: CIA Chief and Assistant | CIA HQ \nLangley, VA\nNov. 22, 1963: John F. Kennedy | Dallas, TX\nJun 23, 1967: Lyndon Baines Johnson | Glassboro NJ | \nMISSION ABORT, authorization A. Kosygin\nCapabilities and Motivations\nMarxman might be considered history’s greatest sniper, \nwere his service records not thoroughly redacted. His \ntalent for ballistic calculation honed by decades of \npractice allows him to make precise shots at extreme \nrange. He stalks his targets for days, preparing his \napproach, retreat, and contingent positions. For him, \nthe mission is all. Long ago, he made his choice to give \nhis life to the Soviet Union. Mecha-Stalin’s knowledge \nof his activation code gives him authority to command, \nand Marxman is ready to serve.\nUpgrades\nMecha-Stalin knows that keeping Marxman out of \ndirect fighting is paramount, so along with better \nweapons that extend his range, he wears a prototype \nexoskeleton under his fatigues that serves a variety \nof functions. It monitors his vitals, regulates his bodily \nfunctions, and augments his mobility.\n387\n387\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAlias: Pavel Vladislavovich Koslovski\nGender: Male\nAge: 97\nHeight: 5’ 5”\nEyes: Blue\nHair: Bald with a grey beard\nSkin: Pale, wrinkled, and spotted \nBuild: Excellent for his age\nCostume/Equipment: A grey and rust-red body \nsuit with white fur shawl around the neck and \nleft shoulder. White and grey camo combat pants. \nDark grey gloves and boots. Often wears a white \nmetal helmet with a rectangular red eye slit on the \nleft and a round one with the hammer and sickle \ndesign on the right. Frequently carries a bandoleer \nof heavily customized ammunition and a heavily \nmodified designated marksman rifle (DMR) or \nsniper rifle with scope.\nApproach: Specialized\nArchetype: Predator\nMarxman</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "1JPUTWAjycwGmFs8",
+  "_key": "!actors!1JPUTWAjycwGmFs8"
+}

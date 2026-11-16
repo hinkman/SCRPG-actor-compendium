@@ -1,0 +1,909 @@
+{
+  "name": "Muerto",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Thiago Diaz",
+    "archetype": "Divided: Form-Changer",
+    "wounds": {
+      "value": 0,
+      "max": 25
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of The Gearhead",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of The Mask",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Male",
+    "age": "Mid-Teens (at death)",
+    "height": "5’ (usually)",
+    "eyes": "None",
+    "hair": "None",
+    "skin": "None",
+    "build": "A Ghost, or a pile of electronics",
+    "costume": "<p>Muerto has no physical form of his own, as he is a ghost. However, when he haunts any electronics, they glow with his calavera designs. His most commonly used form is cobbled together from bits of tech from the destroyed Freedom Tower.</p>",
+    "background": "Adventurer",
+    "powerSource": "Supernatural",
+    "personality": "Jaded",
+    "health": {
+      "greenLow": 20,
+      "yellowHigh": 19,
+      "yellowLow": 10,
+      "redHigh": 9,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d10",
+      "yellow": "d8",
+      "red": "d6",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "qRNTFeFwlVtn6VSy",
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.qRNTFeFwlVtn6VSy"
+    },
+    {
+      "_id": "xVlBNlngEAC39pE9",
+      "name": "Electricity (Ghost)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.xVlBNlngEAC39pE9"
+    },
+    {
+      "_id": "TZKpnCcK8xCCW6ag",
+      "name": "Intangibility",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.TZKpnCcK8xCCW6ag"
+    },
+    {
+      "_id": "fPyGstTkhHDbFIgf",
+      "name": "Part Detachment (Electronic)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.fPyGstTkhHDbFIgf"
+    },
+    {
+      "_id": "iwUzTF57l5nFXkWL",
+      "name": "Power Suit (Electronic)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.iwUzTF57l5nFXkWL"
+    },
+    {
+      "_id": "uJY3YLDwibIU6HwY",
+      "name": "Remote Viewing (Ghost)",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.uJY3YLDwibIU6HwY"
+    },
+    {
+      "_id": "RCJsfe6hPqCuBQI5",
+      "name": "Anima",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.RCJsfe6hPqCuBQI5"
+    },
+    {
+      "_id": "FX0neuJZH6NK1zEp",
+      "name": "Finesse (Electronic)",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.FX0neuJZH6NK1zEp"
+    },
+    {
+      "_id": "FfBiDVflAhStKHDg",
+      "name": "Stealth (Ghost)",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.FfBiDVflAhStKHDg"
+    },
+    {
+      "_id": "zGMaMTlmO224ywiM",
+      "name": "Technology",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.zGMaMTlmO224ywiM"
+    },
+    {
+      "_id": "UStAbieQZ7VVUmBz",
+      "name": "Calavera Wisp",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your auxiliary sheet. Overcome using Technology. On a success, enter an Electronics form on</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.UStAbieQZ7VVUmBz"
+    },
+    {
+      "_id": "xWrnIbg4tbT9Nguw",
+      "name": "Haunt Electronics",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your auxiliary sheet. Then, take a basic action with your Min die. Attack using Intangibility and use your Max die. Then change to any available</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.xWrnIbg4tbT9Nguw"
+    },
+    {
+      "_id": "LF63U6oHaTFq1Nbg",
+      "name": "Polterheist",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome a technological challenge. Use your Max die. You and each of form.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.LF63U6oHaTFq1Nbg"
+    },
+    {
+      "_id": "vJxIolJdW4VgBv3A",
+      "name": "Principle of the Gearhead",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your allies gain a hero point. Overcome using knowledge from your civilian life. Use your Max die. You</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.vJxIolJdW4VgBv3A"
+    },
+    {
+      "_id": "jR0zV6mFyNPnCQvD",
+      "name": "Principle of the mask",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and each of your allies gain a hero point. Boost yourself using Intangibility. Use your Max die. That bonus is persistent</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.jR0zV6mFyNPnCQvD"
+    },
+    {
+      "_id": "jPOJtBWEathDFEud",
+      "name": "Absorbed Apparatus",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>and exclusive.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.jPOJtBWEathDFEud"
+    },
+    {
+      "_id": "U5fj3RNFMzs4ChZo",
+      "name": "Electro-Field",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Boost or Hinder multiple nearby targets using Electricity. Whenever you take an action using Awareness, you may reroll your Min die</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.U5fj3RNFMzs4ChZo"
+    },
+    {
+      "_id": "ljcFCcGiKJth65Mg",
+      "name": "Sense the Unseen",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": true
+        },
+        "type": "I",
+        "gameText": "<p>Hinder yourself using Intangibility. Use your Min die. Recover health equal before determining effects.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.ljcFCcGiKJth65Mg"
+    },
+    {
+      "_id": "FTzquM7nsf8Q3qOC",
+      "name": "Stop and Refocus",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>to your Max+Mid dice. When Attacked, change to any form before resolving the attack. Take a</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.FTzquM7nsf8Q3qOC"
+    },
+    {
+      "_id": "Z8hrM0fQJMBoFYBZ",
+      "name": "Quick Shift",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>minor twist.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!G2GVAuo0vvXgIWOi.Z8hrM0fQJMBoFYBZ"
+    }
+  ],
+  "effects": [],
+  "folder": "1Wp2XFdRcAr1Y8cz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "daybreak",
+      "sourcePages": {
+        "attr": 342,
+        "ability": 343,
+        "bio": 344
+      },
+      "biographyHtml": "<p>344\n344\nDivided Info\nAuxiliary Sheet\nMuerto has two different forms: one as a ghost, and one while haunting \ntechnology. He has a few forms he can assume depending on the technology \nthat he is haunting. While in ghost form, he has access to any Powers and \nQualities marked as Ghost. While in an electronics form, he has access to \nany Powers and Qualities marked as Electronic. He always has access to all \nhis other Powers and Qualities.</p><p>To take control of an electronic form, Muerto can use his Haunt Electronics \nability to enter one of the electronics forms below. To leave one of those \nforms and return to ghost form, he can use his Calavera Wisp ability. He \ncan also Attack and change to any form at a cost, using his Polterheist ability.</p><p>His electronics forms have different power dice than his ghost form. \nHe always has access to the Minuscule form (such as a cell phone or a \nremote control) and the Tough form (his standard metal body, or any \nother similarly durable form). Being in the Minuscule or Tough form do \nnot change any of his Powers or Qualities, and he is most frequently \nfound in his Tough form, the metal body he is depicted as inhabiting.</p><p>While in the Yellow or Red zone, he also gains access to the Towering \nform (a single massive piece of technology or a giant pile of parts). While \n in this form, his Qualities stay the same, but his Powers are altered from \nhis Green zone electronics forms, as listed below.\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTough Form\nPOWERS\nDIE TYPE\nAwareness\nIntangibility \nPart Detachment\nPower Suit\nTowering Form\nYELLOW ZONE\nGREEN ZONE\nPOWERS\nDIE TYPE\nAwareness\n Intangibility \nPart Detachment\nPower Suit\nICON\nNAME\nTYPE\nGAME TEXT\nSturdy Body\nI\nReduce any physical or energy damage you take by 1 \nwhile you are in the Green zone, 2 while in the Yellow \nzone, and 3 while in the Red zone.\nMinuscule Form\nMODE DESCRIPTION\nThe primary form that Muerto inhabits. It’s sturdy, reliable, and reminds him of his dream to be a hero.\nThis form can also be used for a different, similarly sized form that isn’t his standard body.\nICON\nNAME\nTYPE\nGAME TEXT\nSelf-Diagnostic\nA\nDefend using Power Suit. Use your Max die. Remove all \npenalties on you.\nMODE DESCRIPTION\nSomething small, like a cell phone, remote control, doomsday device activator, etc.\nMODE DESCRIPTION\nEither a large device, like a vehicle or a colossal machine, or a pile of tech all inhabited at once.\nICON\nNAME\nTYPE\nGAME TEXT\nTech Whirlwind\nA\nAttack multiple targets using Part Detachment. \nForms Key\nGhost:\n•Ghost Form\nElectronics:\n•Tough Form\n•Miniscule Form\n•Towering Form\nPOWERS\n DIE TYPE\nAwareness\n Electricity \nIntagibility\nRemote Viewing\nGhost Form \nGREEN ZONE\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "G2GVAuo0vvXgIWOi",
+  "_key": "!actors!G2GVAuo0vvXgIWOi"
+}

@@ -1,0 +1,314 @@
+{
+  "name": "Magmaria",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>426\n426\nMagmarians first appeared on the surface in 1952, \nwhen a trio emerged from the Megalopolis sewers. \nTheir first act on the surface was to consume the \ncontents of a jewelry store. It was only due to the \nintervention of the hero Legacy that fatalities were \navoided and the jewels recovered. The Magmarians \nescaped into the sewers and were observed \nentering tunnels that collapsed behind them. \nContact over the following year was \nsporadic and frequently violent, as the \nMagmen seemed intent on injesting \nprecious metals and gems. This all \nchanged in 1984 when Dr. Meredith \nStinson created a Magmarian \ntranslation device.\nShe learned that Magmarians require crystalline \ncompounds to survive, and that earlier hostilities \nwere the result of lost harvesters attempting to find \na way to survive the “cold” of the surface world. \nFollowing this revelation, Dr. Stinson designed a \nsynthetic high energy crystal that could sustain them \nand led the first human expedition to Magmaria.\nSince then, several exploratory expeditions by \nvarious private and government organizations have \ngathered some information about the environment \nof this fascinating place. Magmaria is composed of \na network of caves and tunnels roughly halfway \nto the planet’s core. Geophysicists are currently \nresearching how a cave system at that depth and \npressure can have a temperature that can sustain \nhuman life, with the leading theory involving the \nunique mineral compounds known as “magma \ncrystals” acting as a kind of “heat battery”, creating \nzones of tolerable temperature around them. How \nthis process works is not well understood, as it is \nimpossible to recreate on the surface. Magmaria’s \natmosphere is even less understood, save that it has \none with roughly the same nitrogen/oxygen mix as \nthe surface world. \nMany questions about their culture remain \nunanswered. Their language appears to have \nsignificant non-verbal components, akin to telepathy, \nand their culture seems to revolve around the \nacquisition and ritualistic consumption of magma \ncrystals. They have been observed harvesting \nand consuming these crystals, led by “ember \nshamans”. The exact position of these shamans \nin the Magmarian hierarchy is unclear, but they \nseem to have a great deal of influence over the \nother Magmarians. Hieroglyphics and carvings on \nMagmarian structures indicate a complex religion, \nbut as of yet, no Magmarian shaman has ever \nanswered questions about their religious beliefs. \nThe land of Magmaria currently has no embassies \nor ambassadors to the surface world.\nStatus: Independent Nation\nFlag: None\nCapital: Unknown\nLanguage: Magmarian\nReligion: Magma Crystal-based Animism\nDemonym(s): Magmarian, Magmen\nGovernment: Theocracy\nLeader: Unknown\nWorld Organization Membership: None\nApproximate Area: 200,000 sq mi (321,868.8 km2)\nApproximate distance to the earth’s crust: 1802 \nmiles / 2900 km\nApproximate distance to the earth’s core: 2188 \nmiles / 3521 km\nApproximate temperature range: 129 F / 54 C - \n2200 F/ Kelvin\nEstimated Population: 230,000 \nTravel Advisory Level: Red: Do not travel\nMagmaria\n426\n426\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "Gymh5rBMF5juntVo",
+      "name": "Very Hot",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>It’s too hot here for surface dwellers.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.Gymh5rBMF5juntVo"
+    },
+    {
+      "_id": "iUiQ7USvroTIb4Dy",
+      "name": "Magmarian Envoy",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>A leader of the Magmarian</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.iUiQ7USvroTIb4Dy"
+    },
+    {
+      "_id": "abEFnP47QmJHwR9w",
+      "name": "Magma Crystallization",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>The unique properties of</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.abEFnP47QmJHwR9w"
+    },
+    {
+      "_id": "0RtcivThMHDNWdCJ",
+      "name": "Incredibly High Temperatures",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>You doubt you</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.0RtcivThMHDNWdCJ"
+    },
+    {
+      "_id": "CHaJAesYvnFzn4SH",
+      "name": "Magma Eruption",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>A spout of magma explodes</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.CHaJAesYvnFzn4SH"
+    },
+    {
+      "_id": "xcDFiTI5wIlHmlHz",
+      "name": "Structural Collapse",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>The rock tunnels have been</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.xcDFiTI5wIlHmlHz"
+    },
+    {
+      "_id": "iyeojxZDAEBI1wDd",
+      "name": "Hot Enough to Boil Stone",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>It is so hot in this area</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.iyeojxZDAEBI1wDd"
+    },
+    {
+      "_id": "9AdTEMJtJTfL0vr1",
+      "name": "Magmaria at War",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Due to the chaos created by the</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.9AdTEMJtJTfL0vr1"
+    },
+    {
+      "_id": "4L8Ds5DtWBzyaVhg",
+      "name": "Ancient Behemoth Rampage",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>A massive Ur-Crystal</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!TLuMRbxh5aDxC9vQ.4L8Ds5DtWBzyaVhg"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 426,
+        "twists": 427
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "TLuMRbxh5aDxC9vQ",
+  "_key": "!actors!TLuMRbxh5aDxC9vQ"
+}

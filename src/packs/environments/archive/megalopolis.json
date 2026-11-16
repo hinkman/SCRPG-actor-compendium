@@ -1,0 +1,314 @@
+{
+  "name": "Megalopolis",
+  "type": "environment",
+  "img": "icons/svg/city.svg",
+  "system": {
+    "firstDie": "d10",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Environment",
+    "secondDieName": "Environment",
+    "thirdDieName": "Environment",
+    "description": "<p>420\n420\nCountry: United States\nState: Connecticut\nSettled: circa 1691\nIncorporated as town of New Colchester: 1784\nIncorporated as city of New Colchester: 1876\nRenamed Megalopolis: July 4, 1976\nArea: 405 sq mi (1049 km2)\nElevation: 36 ft (11 m)\nPopulation: 8.5 million\nDemonyms: Megalopolan, Megalopolite\nTime zone: UTC−05:00 (EST)\nMegalopolis\nEstablished in 1876 as New Colchester, an \neconomic hub for local farming villages, the massive \ncity now known as Megalopolis has grown and \nflourished significantly over the decades. With a \nvibrant downtown and economic growth driven \nby a series of innovative infrastructure projects, \nMegalopolis has become a hub of finance, culture, \nand entrepreneurship. Thousands of tourists enjoy \nthe museums and restaurants along the historic \nriverfront every day, or take the monorail to the \narts district for cutting edge theatre and music.\nThe beautiful city skyline is dominated by a \nmassive tree, several orders of magnitude larger \nthan any other known tree on Earth. This tree is the \n“Akash’Flora” tree — a remnant of a terrible battle \nknown as the “OblivAeon Event”, which took place \nnot just across the entire planet, but throughout \nthe cosmos and across multiple realities as well. The \ntree grew to protect the city and its inhabitants \nfrom the forces of OblivAeon, and in the \nreconstruction efforts in the OblivAeon \naftermath, the tree became an integral \npart of Megalopolis. \nThe roots of the Akash’Flora tree run throughout \nthe infrastructure of the entire city, and the \nMegalopolis power grid is supplemented by the \ntree’s natural energy, making Megalopolis the most \n“green” city in the world.\nFor all of its beauty and positive qualities, \nMegalopolis has also been the site of great tragedy. \nNumerous villainous foes have attacked the city, \neach with their own agenda and plot. From Baron \nBlade’s attempt to bring down the moon to defeat \nhis greatest nemesis, to Citizen Dawn’s destruction \nof the wealth of the city, to Omnitron’s robotic \nrampage, to Grand Warlord Voss’s gene-bound \nalien invasion, Megalopolis is no stranger to the \nvillainous forces of the world.\nThough many major crises have struck the city \nover the decades, Megalopolis has been home to \ntwo generations of America’s finest hero, Legacy, \nand the hero team known as the Freedom Five, \nwho served as both guardians and inspirations \nto its citizens. They protected Megalopolis against \ncountless incursions and deadly plots, making \ntheir home in the Freedom Tower Headquarters. \nHowever, in the aftermath of the destruction of \nFreedom Tower during the OblivAeon event, much \nhas changed. \nRecently, the Freedom Five became something \nmore, renaming themselves the Sentinels of \nFreedom and taking on more of a role as teachers \nand stewards within their new headquarters and \noutreach location, Freedom Plaza. Megalopolis has \nalways had its heroes to protect it, and with the \nSentinels of Freedom based here, it always will.\n420\n420\nEnvironments</p>"
+  },
+  "items": [
+    {
+      "_id": "GbrHo1Yf0LkDTmoU",
+      "name": "Public Defenders",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Megalopolis Police officers show</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.GbrHo1Yf0LkDTmoU"
+    },
+    {
+      "_id": "RJd9htWV4LRSe87b",
+      "name": "Traffic Pileup",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>The conflict is causing a mess of</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.RJd9htWV4LRSe87b"
+    },
+    {
+      "_id": "DFDVfmOiO8vbADvW",
+      "name": "Hostage Situation",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>A villain or minions thereof</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.DFDVfmOiO8vbADvW"
+    },
+    {
+      "_id": "ZzYUt0qa0fDNtDwP",
+      "name": "Panicking Crowds",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>The danger has risen to a level</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.ZzYUt0qa0fDNtDwP"
+    },
+    {
+      "_id": "TMnktGZUMQWEQT7d",
+      "name": "Paparazzi on the Scene",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>The press have arrived</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.TMnktGZUMQWEQT7d"
+    },
+    {
+      "_id": "HZEQXltJxbKsqxXK",
+      "name": "Exposed Root System",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>The fighting has exposed a</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.HZEQXltJxbKsqxXK"
+    },
+    {
+      "_id": "Ggnx3l9UeC1E1gSV",
+      "name": "Impending Casualty",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>An innocent Megalopolis</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.Ggnx3l9UeC1E1gSV"
+    },
+    {
+      "_id": "1WVtZorvmvTsnxiA",
+      "name": "Rioting in the Streets",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>Megalopolis has devolved</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.1WVtZorvmvTsnxiA"
+    },
+    {
+      "_id": "wdIe8NYtrteWElSv",
+      "name": "Plummeting Monorail",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>A monorail car has been</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!HWsub8XAt84T0TWr.wdIe8NYtrteWElSv"
+    }
+  ],
+  "effects": [],
+  "folder": "9AefgtP26KrVW5Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "sourcePages": {
+        "intro": 420,
+        "twists": 421
+      },
+      "gaps": [
+        "Environment dice pool defaults to d10/d8/d6 when not printed as text."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "HWsub8XAt84T0TWr",
+  "_key": "!actors!HWsub8XAt84T0TWr"
+}

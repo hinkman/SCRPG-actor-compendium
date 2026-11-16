@@ -1,0 +1,957 @@
+{
+  "name": "Aeon Girl",
+  "type": "hero",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "alias": "Windy Farrum",
+    "archetype": "Blaster",
+    "wounds": {
+      "value": 0,
+      "max": 35
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A",
+    "firstPrinciple": {
+      "name": "Principle of Levity",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "secondPrinciple": {
+      "name": "Principle of Cosmic Energy",
+      "roleplaying": "",
+      "minorTwist": "",
+      "majorTwist": ""
+    },
+    "backIssue": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collections": {
+      "one": "",
+      "two": "",
+      "three": "",
+      "four": "",
+      "five": "",
+      "six": ""
+    },
+    "collectionsUsed": {
+      "one": false,
+      "two": false,
+      "three": false,
+      "four": false,
+      "five": false,
+      "six": false
+    },
+    "heroPoints": {
+      "game": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false,
+        "five": false
+      },
+      "one": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "two": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "three": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      },
+      "four": {
+        "one": false,
+        "two": false,
+        "three": false,
+        "four": false
+      }
+    },
+    "gender": "Female",
+    "age": "A Few Months",
+    "height": "5’5” (usually)",
+    "eyes": "White",
+    "hair": "Silver",
+    "skin": "Metallic",
+    "build": "Impressionable",
+    "costume": "<p>Aeon Girl’s dark metallic skin and silvery hair speak to her cosmic origins, though her innate orange and yellow outfit and signature blue energy make her look eerily similar to a minion of OblivAeon, as opposed to her own person.</p>",
+    "background": "Blank Slate",
+    "powerSource": "Higher Power",
+    "personality": "Naive",
+    "health": {
+      "greenLow": 27,
+      "yellowHigh": 26,
+      "yellowLow": 13,
+      "redHigh": 12,
+      "redLow": 1
+    },
+    "statusDie": {
+      "green": "d6",
+      "yellow": "d6",
+      "red": "d12",
+      "civilianGreen": "d8",
+      "civilianYellow": "d8",
+      "civilianRed": "d8"
+    },
+    "scene": "green",
+    "out": "",
+    "modeName": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDescription": {
+      "main": "",
+      "green1": "",
+      "green2": "",
+      "yellow1": "",
+      "yellow2": "",
+      "red1": ""
+    },
+    "modeDisplayed": {
+      "main": false,
+      "green1": false,
+      "green2": false,
+      "yellow1": false,
+      "yellow2": false,
+      "red1": false
+    },
+    "modular": false,
+    "powerless": false,
+    "formchanger": false,
+    "divided": false,
+    "dividedPsyche": false,
+    "dividedStatus": false,
+    "civilianMode": false,
+    "poweredMode": false,
+    "persistent": false,
+    "exclusive": false
+  },
+  "items": [
+    {
+      "_id": "eHhF7MAMPjVpv4gY",
+      "name": "Absorption",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.eHhF7MAMPjVpv4gY"
+    },
+    {
+      "_id": "dTqeZMzUOGkwsa9P",
+      "name": "Cosmic",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.dTqeZMzUOGkwsa9P"
+    },
+    {
+      "_id": "R7wO1bM9HY5QAIX5",
+      "name": "Density Control",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.R7wO1bM9HY5QAIX5"
+    },
+    {
+      "_id": "FjGyyFdyTiY1b9ng",
+      "name": "Flight",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.FjGyyFdyTiY1b9ng"
+    },
+    {
+      "_id": "EXEN29mhqzVVi6ah",
+      "name": "Infernal",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.EXEN29mhqzVVi6ah"
+    },
+    {
+      "_id": "G1sW1cVPwfAexpCY",
+      "name": "Teleportation",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.G1sW1cVPwfAexpCY"
+    },
+    {
+      "_id": "6wbdAoHpESUCChid",
+      "name": "Alertness",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.6wbdAoHpESUCChid"
+    },
+    {
+      "_id": "EabHYphczYH63sZc",
+      "name": "Cosmic Progeny",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.EabHYphczYH63sZc"
+    },
+    {
+      "_id": "mZdnAdg8WAO5maGo",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.mZdnAdg8WAO5maGo"
+    },
+    {
+      "_id": "J8Wnm3yC28LNTLlq",
+      "name": "Cosmic Nature",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>At the start of your turn, remove any -1 penalties on you. Attack using Cosmic. Ignore all penalties on this attack, ignore any Defend</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.J8Wnm3yC28LNTLlq"
+    },
+    {
+      "_id": "05O9qrt59gCmzBko",
+      "name": "Inevitable Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>actions, and it cannot be affected by Reactions.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.05O9qrt59gCmzBko"
+    },
+    {
+      "_id": "PRHSHdoa9pmYX4mL",
+      "name": "Withering Blast",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": true,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Overcome a dire situation where your jokes prevent demoralization. Use Attack using Infernal. Hinder a target with your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.PRHSHdoa9pmYX4mL"
+    },
+    {
+      "_id": "hcRkQXsAgM9YAP20",
+      "name": "Principle of Levity",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>your Max die. You and each of your allies gain a hero point. Overcome a challenge involving cosmic energy. Use your Max die. You and</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.hcRkQXsAgM9YAP20"
+    },
+    {
+      "_id": "ACCRaGBFW10lRQr7",
+      "name": "Principle of Cosmic Energy",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>each of your allies gain a hero point. When you would take damage from Cosmic energy, recover that amount</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.ACCRaGBFW10lRQr7"
+    },
+    {
+      "_id": "6AAOJMr5lpG0xBBf",
+      "name": "Cosmic Form",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "green",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>of health instead. Boost yourself using Absorption. Then, remove a penalty on yourself or</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "green"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.6AAOJMr5lpG0xBBf"
+    },
+    {
+      "_id": "sXTBI8KIfk2U4Ps4",
+      "name": "Energy Battery",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>recover health equal to your Min die. Attack using Flight. Use your Max die. If you choose another hero to go</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.sXTBI8KIfk2U4Ps4"
+    },
+    {
+      "_id": "MP8sNQHYlFowy2vv",
+      "name": "Fly Interference",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>next, Boost that hero with your Mid die. Attack all nearby opponents using Infernal. Hinder any targets damaged by</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.MP8sNQHYlFowy2vv"
+    },
+    {
+      "_id": "PST0IZFGleyeNsWV",
+      "name": "Internal Cataclysm",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>this ability with your Min die. Hinder yourself with your Max die. When multiple allies are Attacked, you may take all the damage instead. If you</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.PST0IZFGleyeNsWV"
+    },
+    {
+      "_id": "PF5j57aLeiStJkov",
+      "name": "Interposing Jaunt",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>Once per issue, if you would go to 0 Health, roll your Absorption, Alertness, do, roll your Teleportation+Red status die and reduce the damage by that much.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.PF5j57aLeiStJkov"
+    },
+    {
+      "_id": "GSlvZDrai5nEwz1e",
+      "name": "Reconstitution",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>and Red status dice. Your health becomes the sum of that roll. Attack using Cosmic and at least one bonus. Use your Max+Mid+Min dice.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.GSlvZDrai5nEwz1e"
+    },
+    {
+      "_id": "f0e2BnQFzcHwK1th",
+      "name": "Unleashed Oblivion",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Destroy all of your bonuses, adding each of them to this attack first, even if they are exclusive.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!99bvd5m0XIaVpGae.f0e2BnQFzcHwK1th"
+    }
+  ],
+  "effects": [],
+  "folder": "1Wp2XFdRcAr1Y8cz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "daybreak",
+      "sourcePages": {
+        "attr": 338,
+        "ability": 339,
+        "bio": 340
+      },
+      "biographyHtml": "<p>340\n340\nBiography \nDuring the fight against OblivAeon, one of the major \nthreats came from the Aeon Men, led by the scion \ncalled Aeon Master. Semi-autonomous splinters \nof OblivAeon’s power that he shed when he was \ndealt damage, these minions engaged the heroes \nand wreaked havoc for their master. One hero was \nuniquely suited to destroying them — Tarogath, \nthe last Procitor. Known as the hero Lifeline, he \nabsorbed and directed the natural energy found in \nley lines. This natural energy absorption was further \naugmented by dark blood magic to the point \nwhere he could directly absorb the life essence \nof other beings. As the hordes of Aeon Men and \nAeon Master itself attacked the military base Fort \nAdamant, Lifeline hatched a plan with other heroes \nto absorb the entirety of Aeon Master’s energy, \ncompletely nullifying the Aeon Men by ridding the \nworld of the force directing them. He managed to \nbarely survive doing so, but could not contain such a \nvast amount of cosmic power for long. He directed \nsome of it in an attack against OblivAeon directly, \nbut the remaining power demanded release.\nAfter the fight, Lifeline and his fellow endling \nSlamara tapped the power inside of him, releasing \nit to take on its own shape. He channeled all of \nit into a new being — not an Aeon Man, not a \ncreation of OblivAeon, but something born of \ncosmic energy, natural magic, and shaped by \nblood magic. Something entirely new. Thus, Aeon \nGirl came into existence. This new being had full \nawareness, consciousness, and access to knowledge \nof the cosmos that OblivAeon’s power carried, but \nwas entirely her own being — pure power given \nshape. With a tangled history of terrible deeds for \nwhat he saw as the greater good, Lifeline knew he \nwas not the right teacher for this innocent creature. \nShe needed to learn how to survive in the universe \nwithout being warped into someone as twisted as \nLifeline saw himself to be. Knowing and respecting \nthe various heroes of Earth, he left this new entity \nwith them in the hopes that they could teach her \nhow to be a good person and a true hero. \nAeon Girl set to learning who she was with a will. \nIn an effort to fit in among the other students, she \ntook on a new name: “Windy” because she liked \nthe way the wind was everywhere and nowhere, \nand “Farrum” because it was Lifeline’s clan name. \nShe was one of the first students at the Freedom \nAcademy, and was a diligent if somewhat easily \ndistracted student. Her capacity for learning seems \nlimitless, but so do her interests. She’s still learning \nwhat she likes, and what she doesn’t like.\nAlias: Windy Farrum\nGender: Female\nAge: A Few Months\nHeight: 5’5” (usually)\nEyes: White\nHair: Silver\nSkin: Metallic\nBuild: Impressionable\nCostume/Equipment: Aeon Girl’s dark metallic \nskin and silvery hair speak to her cosmic origins, \nthough her innate orange and yellow outfit and \nsignature blue energy make her look eerily similar \nto a minion of OblivAeon, as opposed to her own \nperson.\nBackground: Blank Slate\nPower Source: Higher Power\nArchetype: Blaster\nPersonality: Naive\nAeon Girl\nHeroes</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "99bvd5m0XIaVpGae",
+  "_key": "!actors!99bvd5m0XIaVpGae"
+}

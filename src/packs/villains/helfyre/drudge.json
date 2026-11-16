@@ -1,0 +1,554 @@
+{
+  "name": "Drudge",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Jasper Felwind",
+    "archetype": "Loner",
+    "approach": "Leech",
+    "wounds": {
+      "value": 0,
+      "max": 45
+    },
+    "mode": "main",
+    "modName": "",
+    "modValue": "+1",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "items": [
+    {
+      "_id": "5V9lvDoFhhpCtg1J",
+      "name": "45",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.5V9lvDoFhhpCtg1J"
+    },
+    {
+      "_id": "i2eI6khsNFUmDfOm",
+      "name": "Infernal",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.i2eI6khsNFUmDfOm"
+    },
+    {
+      "_id": "M8GmN7qGXNFQ26x1",
+      "name": "Alertness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.M8GmN7qGXNFQ26x1"
+    },
+    {
+      "_id": "WDH58PIXLE7eJa66",
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.WDH58PIXLE7eJa66"
+    },
+    {
+      "_id": "zDUEu2ndMcVjBPfh",
+      "name": "Blood Sucking Fiend",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.zDUEu2ndMcVjBPfh"
+    },
+    {
+      "_id": "wlzXsLMTRAPPzTcR",
+      "name": "Other Villains",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.wlzXsLMTRAPPzTcR"
+    },
+    {
+      "_id": "2yx5es6Va6PjnG5K",
+      "name": "0 Other Villains in the Scene",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.2yx5es6Va6PjnG5K"
+    },
+    {
+      "_id": "ERUrOuW31mmUxz7b",
+      "name": "1-2 Other Villains in the Scene",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.ERUrOuW31mmUxz7b"
+    },
+    {
+      "_id": "EzkYwrS0R227QuDP",
+      "name": "Consume their Lifeforce",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>number of targets Hindered this way. When Attacked, Defend yourself by rolling your single Presence die. If</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.EzkYwrS0R227QuDP"
+    },
+    {
+      "_id": "MHiqUiUQ7RbHjQTv",
+      "name": "Enthralling Target",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll. Attack using Close Combat. Use your Max die. Hinder that target with your</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.MHiqUiUQ7RbHjQTv"
+    },
+    {
+      "_id": "1OPEeYN5j9a4zFro",
+      "name": "Feast on the Living",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Mid die. Recover Health equal to your Min die. When you would be Hindered or when an Attack would reduce you</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.1OPEeYN5j9a4zFro"
+    },
+    {
+      "_id": "JSwI1b8gLuoYcwGm",
+      "name": "Immortal Form",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>to 0 Health, reduce the penalty to -1 or reduce that damage to 1. While the scene is in the Green zone, all heroes’ quality dice at or above are reduced one size. In the Yellow zone, all heroes’ quality dice at or above are reduced two die sizes. In the Red zone, all heroes’ quality dice are treated as if they are . Heroes may remove this ability with three Overcome successes.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.JSwI1b8gLuoYcwGm"
+    },
+    {
+      "_id": "6tez0WYImUnCp5Gs",
+      "name": "Vampiric Aura",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>If a hero takes a minor twist, the hero must lose access to a quality entirely until this ability is removed. If a hero is knocked out while this ability is active, you may create a new minion using the hero’s highest power die to represent the controlled version of that hero. (When using this upgrade, Drudge has 10 additional Health.) If you have access to proper materials, automatically succeed at an</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.6tez0WYImUnCp5Gs"
+    },
+    {
+      "_id": "O9T9Zgg0vMg7K0a0",
+      "name": "Master of Mysticism",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "main",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": true,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Overcome in a situation involving harnessing magical forces.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "main"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!sQgF5VuqQda7QSHv.O9T9Zgg0vMg7K0a0"
+    }
+  ],
+  "effects": [],
+  "folder": "oH7fMOVc623lrDfQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-actor-compendium": {
+      "archive": true,
+      "team": "helfyre",
+      "sourcePage": 374,
+      "biographyHtml": "<p>375\n375\nPlaying\nPlaying\nthe Game\nthe Game\nthe\nthe\nBullpen\nBullpen\nAdventure\nAdventure\nIssues\nIssues\nCreating\nCreating\nHeroes\nHeroes\nIntro\nIntro\nModerating\nModerating\nthe Game\nthe Game\nrchives\nrchives\nA\nthe\nthe\nAppendices\nAppendices\nVillains\nBiography\nAs a child, “Jasper Felwind” (he admits to no other \nname) grew up listening to his grandmother’s stories \nof her youth in Romania. She told of the yearly lottery \nfestival where one person became royalty for one year. \nStories of how everyone knew to lay salt across the \nwindowsill on festival night and close their ears as the \nRoyal Ladies of the Court of Blood came to collect \nthe previous festival ruler. As a young man seeking \nimmortality and riches, he sought out the village, taking \nthe place of that year’s king so he could bargain with \nthe Court to join them. He soon learned his folly. After \nyears of washing the Court’s halls, he decided that \nstaying in the Court as a laborer and source of food \nwasn’t worth it. Scrubbing his face raw to remove \nKatarina’s blood sigils of ownership, he vanished into \nthe night to seek his fortune away from the Court.\nCapabilities and Motivations\nDrudge has all the speed and strength of a vampire, \nas well as their ability to enthrall, but his greatest \nstrength is in manipulation. He wants to live an \nimmortal life of luxury, and he knows that if the \nCourt of Blood ever finds him, they will either kill \nhim outright or bind him into a truly inescapable \nslavery. He’s got mesmerizing skills, cunning, and an \neye for flair, all of which he uses to try and make \nhimself indispensable to the band’s success.\nUpgrades\nDrudge has barely begun to explore the limits of \nthe effects his mesmerizing presence can have. He \nhas barely scratched the surface of Blood Magic, but \nhe knows it is vital to know more so that he stands \na chance at surviving long term, especially if the \nCourt comes calling. He’s aware of Snare’s interest, \nand is quite willing to encourage it — an admirer \nwho can create impenetrable shields sounds good \nto him.\nAlias: “Jasper Felwind”\nGender: Male\nAge: Unknown, looks in his mid-20s\nHeight: 6’\nEyes: Smoldering\nHair: An exquisite red mane\nSkin: Pale, only glitters when using glitter makeup\nBuild: Fashionably slender \nCostume/Equipment: A broadcloth topcoat over \nvelvet vest and open shirt with lace cuffs. Often \nstained with fake blood, as that is much easier to \nget out of fabric than real blood. Trousers that \nare a bit too tight. Pointed ears, claws, and fangs \n(usually displayed in a smirk).\nApproach: Leech\nArchetype: Loner\nDrudge</p>",
+      "gaps": [
+        "Villain power/quality die sizes are image glyphs; defaulted to d8 until visually verified.",
+        "Villain status dice (conditional) are not fully modeled beyond health max."
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.23",
+    "createdTime": 1763270000000,
+    "modifiedTime": 1763270000000,
+    "lastModifiedBy": null
+  },
+  "_id": "sQgF5VuqQda7QSHv",
+  "_key": "!actors!sQgF5VuqQda7QSHv"
+}
