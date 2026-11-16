@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "A military leader who is directly involved in the conflict, fighting alongside the other soldiers.",
+    "tactics": "Soldier Sergeants are excellent force multipliers for Soldier Grunts, both from their potent bonuses and also their ability to make squads of soldiers much more survivable.",
     "groups": "1",
     "groupName": {
       "one": "Soldier Sergeant",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "qREi9oaVevHHjRiN",
-      "name": "Squad Goals",
+      "_id": "hfCDkYdSRzX0dYaC",
+      "name": "Know Your Troops",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Soldier Grunts have +1 to Attack and Boost actions while near other Soldier Grunts or Soldier Sergeants.</p>",
+        "description": "<p>Whenever a Soldier Sergeant Boosts a Soldier Grunt, they roll their die twice and use the higher result.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,43 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!6WMZ6iHYvPcFbakk.qREi9oaVevHHjRiN"
+      "_key": "!actors.items!6WMZ6iHYvPcFbakk.hfCDkYdSRzX0dYaC"
+    },
+    {
+      "_id": "3aE2aaD295Rq2Z39",
+      "name": "Get Back In There!",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever a nearby Soldier Grunt at succeeds on their save roll, increase their die size by one</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!6WMZ6iHYvPcFbakk.3aE2aaD295Rq2Z39"
     }
   ],
   "effects": [],
@@ -72,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "lieutenant",
-      "description": "Soldier Grunt Soldier Grunt A standard military soldier, outfitted with standard modern military gear.",
       "sourcePage": 417,
       "dieTypeKnown": false
     }
@@ -81,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

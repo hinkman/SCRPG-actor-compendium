@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Sturdy turrets, often built into a structure or large vehicle, come with their own power source and ammunition supply. They aim and fire automatically as the heroes enter their range.",
+    "tactics": "Auto-Turrets shoot at any moving thing that they haven’t specifically been programmed to ignore. The heroes tend to be the most notable moving things, but if they’re holding still or somehow obscured, the turrets will either find other targets or simply go into standby mode.",
     "groups": "1",
     "groupName": {
       "one": "Auto-Turret",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "devices",
-      "kind": "minion",
-      "description": "Colossal Robot Colossal Robot Sturdy turrets, often built into a structure or large vehicle, come with their own power source and ammunition supply. They aim and fire automatically as the heroes enter their range.",
       "sourcePage": 409,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

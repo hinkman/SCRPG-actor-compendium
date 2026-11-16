@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "These tanks do not have wheels — they have legs! More moving parts to maintain can lead to tricky locomotion issues, but it does provide advantages, such as easily handling more difficult terrain.",
+    "tactics": "With their plating and weaponry, Walking Tanks do not need to worry about being nimble or quick. They wade into combat, unleash on the easiest to hit targets, and block attacks against weaker allied targets.",
     "groups": "1",
     "groupName": {
       "one": "Walking Tank",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "UPQZiRJzigBifdmF",
-      "name": "Run Over",
+      "_id": "gaWBNmP70KHnEoSL",
+      "name": "Planted Blast",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>After the Heavy Plated MegaTruck makes an Attack, it may then end up elsewhere in the scene.</p>",
+        "description": "<p>When targeting a large or slow moving target, Walking Tanks have a +2 to Attack.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,43 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!9EWy5yQGsXVt2XGg.UPQZiRJzigBifdmF"
+      "_key": "!actors.items!9EWy5yQGsXVt2XGg.gaWBNmP70KHnEoSL"
+    },
+    {
+      "_id": "tN40OqRUtiV2Z7rK",
+      "name": "Walking Target",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>If attacked while moving, Walking Tanks roll their save twice and use the higher result.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9EWy5yQGsXVt2XGg.tN40OqRUtiV2Z7rK"
     }
   ],
   "effects": [],
@@ -72,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "devices",
-      "kind": "lieutenant",
-      "description": "Heavy Plated MegaTruck Heavy Plated MegaTruck This truck is awesome. You couldn’t ask for a better truck to ride into a wasteland, or drive over a series of other vehicles. Even the tires and the windows are shielded.",
       "sourcePage": 410,
       "dieTypeKnown": false
     }
@@ -81,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

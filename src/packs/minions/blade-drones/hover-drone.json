@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Baron Blade’s Hover Drones have a seemingly- impossible maximum hover height, able to reach the upper atmosphere under their own power. As a trade-off, they’re quite light and can carry very little.",
+    "tactics": "Hover Drones attempt to stay high above the fight, imparting bonuses to their allies and providing intel without being part of the fight themselves.",
     "groups": "1",
     "groupName": {
       "one": "Hover Drone",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "35oEC9ms4Cdzdfk2",
-      "name": "Volatile",
+      "_id": "YIQXh2HYebBshcNR",
+      "name": "Observation",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>When an Ambulatory Drone is destroyed, roll its die twice, using the lower result as an Attack against all nearby non-mechanical targets.</p>",
+        "description": "<p>When Boosting using info gained from observation, Hover Drones can make that bonus Persistent and Exclusive by reducing their die size by 1 (minimum ).</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!fsRnL2s8yvY19HL7.35oEC9ms4Cdzdfk2"
+      "_key": "!actors.items!fsRnL2s8yvY19HL7.YIQXh2HYebBshcNR"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-drones",
-      "kind": "minion",
-      "description": "Ambulatory Drone Ambulatory Drone Defensive Drone Defensive Drone Reconstruction Drone Reconstruction Drone This most basic drone is mostly used for information gathering, or for timely explosions.",
       "sourcePage": 408,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

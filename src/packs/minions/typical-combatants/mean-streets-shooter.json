@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "These thugs aren’t particularly good at aiming, shooting, or any of the proper care and cleaning of their guns, but they have guns and a willingness to use them.",
+    "tactics": "Shooters try to get to a place where they can shoot at as many opposing targets as possible, while staying out of melee range.",
     "groups": "1",
     "groupName": {
       "one": "Mean Streets Shooter",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "These thugs aren’t particularly good at aiming, shooting, or any of the proper care and cleaning of their guns, but they have guns and a willingness to use them.",
       "sourcePage": 415,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

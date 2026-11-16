@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "The warrior class of the Magmarian people. Seismic Defenders are powered by additional crystals embedded in their bodies, and can form and wield weapons and shields made from the rock of their homes.",
+    "tactics": "Seismic Defenders wade into combat with relish, swinging wildly with their massive stone weapons. They exist to fight so other Magmarians don’t have to, so they do not fear being extinguished in combat.",
     "groups": "1",
     "groupName": {
       "one": "Seismic Defender",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "qF7e45GYDGWgG22G",
-      "name": "Firebrand",
+      "_id": "bRV8PCa42Xm5CLqq",
+      "name": "Crystal Powered",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Whenever a Magman Rebel Attacks, it may Attack 2 nearby targets.</p>",
+        "description": "<p>Whenever a Seismic Defender succeeds at its save, it rolls its die as an Attack against all nearby non-Magmarian targets.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!0mXqCY6UrEieRXqM.qF7e45GYDGWgG22G"
+      "_key": "!actors.items!0mXqCY6UrEieRXqM.bRV8PCa42Xm5CLqq"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "minion",
-      "description": "The magma crystals consumed by the Magmarians are strictly rationed so everyone gets what they need. However, occasionally, a Magmarian will consume more than their share, leading to them being exiled.",
       "sourcePage": 412,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

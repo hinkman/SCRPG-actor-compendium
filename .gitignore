@@ -6,4 +6,4 @@ node_modules/
 .cursor/
 *.iml
 .tmp-ocr/
-.tmp/
+.tmp/__pycache__/

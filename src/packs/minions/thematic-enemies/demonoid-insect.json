@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
+    "tactics": "A single Demonoid Insect seeks to swarm by taking its special action as often as possible. However, if there are many Demonoid Insects, they attempt to swarm whatever targets seem most digestable.",
     "groups": "1",
     "groupName": {
       "one": "Demonoid Insect",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "thematic-enemies",
-      "kind": "minion",
-      "description": "Fleshchildren Fleshchildren This bug is not only too big to be a normal bug, it also whispers the names of people you thought you’d forgotten.",
       "sourcePage": 413,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Fight the man! Burn it down! These rioters might not know what exactly it is they’re lashing out against, but that won’t stop them from lashing out!",
+    "tactics": "Rioters want to make as much of a mess as possible. They disrupt groups and cause chaos.",
     "groups": "1",
     "groupName": {
       "one": "Mean Streets Rioter",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "6ZzXZwCTwxC4cFMr",
-      "name": "Unstable Ignition",
+      "_id": "R2U3SYADzVEJwAyb",
+      "name": "Molotov",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Whenever Firearm Attacks, roll his die twice and use the higher result. If he rolled the same number twice, reduce his die size by one.</p>",
+        "description": "<p>When Mean Streets Rioters make Hinder actions, they can Hinder up to 3 nearby targets.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,43 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!yHjTedEmW8W9LUt3.6ZzXZwCTwxC4cFMr"
-    },
-    {
-      "_id": "QzU8VWx0SVUTAP3L",
-      "name": "Firewall",
-      "type": "minionForm",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "description": "<p>Whenever Firearm succeeds at his save, use that roll as an Attack against his attacker.</p>",
-        "bonus": "one",
-        "group": 1
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 100000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!yHjTedEmW8W9LUt3.QzU8VWx0SVUTAP3L"
+      "_key": "!actors.items!yHjTedEmW8W9LUt3.R2U3SYADzVEJwAyb"
     }
   ],
   "effects": [],
@@ -103,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "Firearm used to be a minor villain who went by the name Char. He underwent a series of invasive experiments during the events leading up to OblivAeon, granting him more control over his power, but even less of a grasp on morality.",
       "sourcePage": 414,
       "dieTypeKnown": false
     }
@@ -112,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

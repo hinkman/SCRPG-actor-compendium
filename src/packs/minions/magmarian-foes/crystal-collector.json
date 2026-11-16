@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
+    "tactics": "Crystal Collectors are not warriors. They can use their superheated form to crystallize almost anything, so if pressed in combat, they will attempt to take items from their foes in crystal form.",
     "groups": "1",
     "groupName": {
       "one": "Crystal Collector",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "minion",
-      "description": "Ember Shaman Ember Shaman Inner Core Tunneler Inner Core Tunneler The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
       "sourcePage": 411,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

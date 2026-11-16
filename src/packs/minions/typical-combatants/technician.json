@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "Maybe they’re operating machinery at a dig site, or taking readings in an alien warehouse, or monitoring a bank of fancy computers. Regardless, these are scientists, not fighters.",
+    "tactics": "In combat, they flee and/or cower. But if they have a specific job to work on overcoming a challenge and feel adequately protected, they can be quite effective.",
     "groups": "1",
     "groupName": {
       "one": "Technician",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "eF5SEHfvxjR86nT2",
-      "name": "Squad Goals",
+      "_id": "PGftupN5Sb0i3gHe",
+      "name": "Specialized",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Soldier Grunts have +1 to Attack and Boost actions while near other Soldier Grunts or Soldier Sergeants.</p>",
+        "description": "<p>Technicians cannot Attack or Defend, but they have a +3 to Overcome actions.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!Wfhf83jXEH8aXDj4.eF5SEHfvxjR86nT2"
+      "_key": "!actors.items!Wfhf83jXEH8aXDj4.PGftupN5Sb0i3gHe"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "typical-combatants",
-      "kind": "minion",
-      "description": "Soldier Sergeant Soldier Sergeant Soldier Grunt Soldier Grunt A standard military soldier, outfitted with standard modern military gear.",
       "sourcePage": 417,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

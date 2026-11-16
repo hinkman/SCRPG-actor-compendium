@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "Who would have built a robot this huge? It’s far too big. Something must be done about it.",
+    "tactics": "This robot is so gigantic, it doesn’t even need tactics. It stomps around, heading towards whatever location it has been programmed to attack. When deploying a Colossal Robot, one should do so with a plan in mind.",
     "groups": "1",
     "groupName": {
       "one": "Colossal Robot",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "OE8BI2FXo07vIgtS",
-      "name": "Well Built",
+      "_id": "9ijAuxet9DJmHH15",
+      "name": "Several Stories High",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>Auto-Turrets have a +1 to minion save rolls. However, they can be destroyed with a successful Overcome action.</p>",
+        "description": "<p>The Colossal Robot has a +2 to its save rolls. However, while its die is a or , it can be reduced one size by a successful Overcome action.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,43 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!seQDrSe57J9Uhi7M.OE8BI2FXo07vIgtS"
+      "_key": "!actors.items!seQDrSe57J9Uhi7M.9ijAuxet9DJmHH15"
+    },
+    {
+      "_id": "aQtm9D5EInKUb0gt",
+      "name": "Massive Stomp",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>When the Colossal Robot Attacks, it deals damage to all nearby targets.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!seQDrSe57J9Uhi7M.aQtm9D5EInKUb0gt"
     }
   ],
   "effects": [],
@@ -72,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "devices",
-      "kind": "lieutenant",
-      "description": "Sturdy turrets, often built into a structure or large vehicle, come with their own power source and ammunition supply. They aim and fire automatically as the heroes enter their range.",
       "sourcePage": 409,
       "dieTypeKnown": false
     }
@@ -81,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

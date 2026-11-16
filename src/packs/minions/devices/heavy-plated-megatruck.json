@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "This truck is awesome. You couldn’t ask for a better truck to ride into a wasteland, or drive over a series of other vehicles. Even the tires and the windows are shielded.",
+    "tactics": "A MegaTruck exists to protect its passengers and get them from one place to another. Though they are not attack vehicles, they’re not out of place in a combat situation. Still, they generally avoid being under direct fire, as they’re much more about the “MegaTruck” part than they are the “Heavy Plated”.",
     "groups": "1",
     "groupName": {
       "one": "Heavy Plated MegaTruck",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "devices",
-      "kind": "minion",
-      "description": "This truck is awesome. You couldn’t ask for a better truck to ride into a wasteland, or drive over a series of other vehicles. Even the tires and the windows are shielded.",
       "sourcePage": 410,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

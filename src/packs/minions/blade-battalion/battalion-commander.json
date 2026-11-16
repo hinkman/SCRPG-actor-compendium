@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "lieutenant",
+    "description": "Blade Battalion Commanders have all risen through the ranks. This is an impressive feat, considering how dangerous life is as a Blade Battalion Trooper. As a result, they should be feared not just because of the troops under their command, but also due to their own combat capabilities.",
+    "tactics": "Battalion Commanders tend to neither lead from the front nor the back - they like to be in the midst of their troops. No strangers to combat themselves, they want to be close enough to the heroes to take advantage of their baton sidearms, as well as effectively boost their allied minions.",
     "groups": "1",
     "groupName": {
       "one": "Battalion Commander",
@@ -54,7 +57,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -85,7 +88,7 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
@@ -103,8 +106,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "blade-battalion",
-      "kind": "lieutenant",
-      "description": "Blade Battalion Commanders have all risen through the ranks. This is an impressive feat, considering how dangerous life is as a Blade Battalion Trooper. As a result, they should be feared not just because of the troops under their command, but also due to their own combat capabilities.",
       "sourcePage": 406,
       "dieTypeKnown": false
     }
@@ -112,7 +113,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

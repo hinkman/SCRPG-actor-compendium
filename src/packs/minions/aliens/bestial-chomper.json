@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "It’s hard to imagine the type of planet that this rock-plated foe originated from. It evolved to have jaws strong enough to crush rocks, sharp teeth and fangs, and an appetite for costumed heroes, apparently.",
+    "tactics": "Bestial Chompers like to fight in packs, letting the venom from their bites wear down their opponents as they try to tear them into bite-sized pieces.",
     "groups": "1",
     "groupName": {
       "one": "Bestial Chomper",
@@ -29,7 +32,39 @@
       "ten": "d4"
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "C4nBYRCBlyB0mKHv",
+      "name": "Alien Venom",
+      "type": "minionForm",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": "<p>Whenever a Bestial Chomper damages a target, that target gains a -1 penalty.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.24",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!OUqesd68QywPOa7i.C4nBYRCBlyB0mKHv"
+    }
+  ],
   "effects": [],
   "folder": "vd6k7Pkho1Zr8em7",
   "sort": 0,
@@ -40,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "aliens",
-      "kind": "minion",
-      "description": "",
       "sourcePage": 404,
       "dieTypeKnown": false
     }
@@ -49,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null

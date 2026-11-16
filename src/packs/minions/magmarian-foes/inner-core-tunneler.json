@@ -3,6 +3,9 @@
   "type": "minion",
   "img": "icons/svg/cowled.svg",
   "system": {
+    "role": "minion",
+    "description": "The most animalistic of the Magmarians, Inner Core Tunnelers are mole-like in many ways, but many orders of magnitude larger and hotter.",
+    "tactics": "Inner Core Tunnelers exist to move a lot of earth and stone fast, even able to consume material to produce more magma. In combat, they build walls to help allies and hinder foes.",
     "groups": "1",
     "groupName": {
       "one": "Inner Core Tunneler",
@@ -31,12 +34,12 @@
   },
   "items": [
     {
-      "_id": "whKB6VAXHTwMA4QB",
-      "name": "Harvest",
+      "_id": "cNjf2CZ4IaMWGggN",
+      "name": "Dig Deep",
       "type": "minionForm",
       "img": "icons/svg/combat.svg",
       "system": {
-        "description": "<p>As an action, a Crystal Collector can remove a bonus or penalty from a nearby target. If it does so while its die is lower than a , increase its current die size by one.</p>",
+        "description": "<p>Inner Core Tunnelers have a +1 to Hindering by digging.</p>",
         "bonus": "one",
         "group": 1
       },
@@ -54,12 +57,12 @@
       "_stats": {
         "coreVersion": "14.000",
         "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
+        "systemVersion": "0.9.24",
         "createdTime": 1763270000000,
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!bXBNsUGuAB5zeSij.whKB6VAXHTwMA4QB"
+      "_key": "!actors.items!bXBNsUGuAB5zeSij.cNjf2CZ4IaMWGggN"
     }
   ],
   "effects": [],
@@ -72,8 +75,6 @@
     "scrpg-actor-compendium": {
       "archive": true,
       "team": "magmarian-foes",
-      "kind": "minion",
-      "description": "The Magmarian people depend on crystals for sustenance, so the majority of Magmarians are tasked with the chore of “farming” the naturally occurring magma crystals.",
       "sourcePage": 411,
       "dieTypeKnown": false
     }
@@ -81,7 +82,7 @@
   "_stats": {
     "coreVersion": "14.000",
     "systemId": "scrpg-foundry",
-    "systemVersion": "0.9.23",
+    "systemVersion": "0.9.24",
     "createdTime": 1763270000000,
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null
