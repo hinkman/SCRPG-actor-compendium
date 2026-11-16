@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of Speed",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You’re fast, and you don’t like to waste time. You like to be on your way as quickly as possible.",
+      "minorTwist": "What physical drawbacks do you suffer from going too fast?",
+      "majorTwist": "What critical detail did you speed by earlier that is now coming back to haunt you?"
     },
     "secondPrinciple": {
       "name": "Principle of Science",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You are up to date on and understand most modern scientific theories and research and can quote from them during conversations.",
+      "minorTwist": "What were the surprising effects of leveraging that scientific principle in this situation?",
+      "majorTwist": "Oh heck! What just blew up?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Sentinels of Freedom, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -612,12 +612,12 @@
       "_key": "!actors.items!VQ7lETk7cdTqlz2z.tdpNhz9BKDBSuOgN"
     },
     {
-      "_id": "fOzHeT9ghVZ0vdoJ",
+      "_id": "5CCJZ67rcX9EAzxr",
       "name": "Margin of Error",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": false,
@@ -638,7 +638,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -649,7 +649,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!VQ7lETk7cdTqlz2z.fOzHeT9ghVZ0vdoJ"
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.5CCJZ67rcX9EAzxr"
     },
     {
       "_id": "95ntDw9yox8y6TE0",
@@ -732,12 +732,12 @@
       "_key": "!actors.items!VQ7lETk7cdTqlz2z.Gd1lCEoxmPmEFz8L"
     },
     {
-      "_id": "wTUD5E4tw2WwhsbZ",
+      "_id": "FQnvd3VqUkwpCbXz",
       "name": "Rapid Response",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": false,
           "defend": false,
@@ -758,7 +758,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -769,7 +769,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!VQ7lETk7cdTqlz2z.wTUD5E4tw2WwhsbZ"
+      "_key": "!actors.items!VQ7lETk7cdTqlz2z.FQnvd3VqUkwpCbXz"
     },
     {
       "_id": "6lDpBbUiru33UUlW",

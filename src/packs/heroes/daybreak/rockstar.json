@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of Ambition",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "There is something you want, and you will strive towards achieving your goals, no matter the cost. You see paths to victory that no one else will.",
+      "minorTwist": "How are the pursuit of your goals getting in the way of being a hero in this situation?",
+      "majorTwist": "What did you just pass up or miss that could have helped you achieve your biggest goal at last?"
     },
     "secondPrinciple": {
       "name": "Principle of Strength",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You are very strong, so you must be careful to not crush delicate things. You do not need to roll to perform mundane acts of great strength.",
+      "minorTwist": "What just broke?",
+      "majorTwist": "Who just broke?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Daybreak Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -612,12 +612,12 @@
       "_key": "!actors.items!W3GkQsJom0Dufiyo.rWKwRGz2fux0Cpgg"
     },
     {
-      "_id": "7HWDeyIUMZPzAe8M",
+      "_id": "q7oYqQt5fJByzHWb",
       "name": "Drop the Hammer",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": true,
           "defend": false,
@@ -638,7 +638,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -649,7 +649,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!W3GkQsJom0Dufiyo.7HWDeyIUMZPzAe8M"
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.q7oYqQt5fJByzHWb"
     },
     {
       "_id": "BRyuVe4s0z4I7X3D",
@@ -732,12 +732,12 @@
       "_key": "!actors.items!W3GkQsJom0Dufiyo.ZiXwMJt5ud2jrCox"
     },
     {
-      "_id": "DD3jzocPKaQLAfVf",
+      "_id": "WDUKZ6dhWAqPdf9g",
       "name": "Encore!",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": false,
           "defend": false,
@@ -758,7 +758,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -769,7 +769,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!W3GkQsJom0Dufiyo.DD3jzocPKaQLAfVf"
+      "_key": "!actors.items!W3GkQsJom0Dufiyo.WDUKZ6dhWAqPdf9g"
     },
     {
       "_id": "6eZkiHICfbpOK4KA",

@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of the Hero",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "Because of your abilities, you have a calling to protect others.",
+      "minorTwist": "Your immediate need to help someone else causes you to drop the ball in your personal life. What was it?",
+      "majorTwist": "You’re given an ultimatum between your life as a hero and something else you value. What do you give up?"
     },
     "secondPrinciple": {
       "name": "Principle of Justice",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You are always aware of acts of injustice in your environment and those who have committed them.",
+      "minorTwist": "How are you taking extra time to show yourself as a shining example of justice?",
+      "majorTwist": "How do you unnerve your allies in the single-minded pursuit of justice?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Sentinels of Freedom, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -684,12 +684,12 @@
       "_key": "!actors.items!FrZVkc5QNchL3IVv.DRJwwRIB62fo7YFc"
     },
     {
-      "_id": "Nwm7vrIzQhTLV0xm",
+      "_id": "EH7v9MkG9jLRgwQW",
       "name": "Danger Sense",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": true,
           "defend": true,
@@ -710,7 +710,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -721,7 +721,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.Nwm7vrIzQhTLV0xm"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.EH7v9MkG9jLRgwQW"
     },
     {
       "_id": "KNlZwFwqbehDEG9u",
@@ -804,12 +804,12 @@
       "_key": "!actors.items!FrZVkc5QNchL3IVv.03e03ZAwcVmf8Q3f"
     },
     {
-      "_id": "WeJip7LNbUaQavfB",
+      "_id": "jv7fpiyud4aw6A3U",
       "name": "Focused Blast",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": false,
@@ -830,7 +830,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -841,7 +841,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!FrZVkc5QNchL3IVv.WeJip7LNbUaQavfB"
+      "_key": "!actors.items!FrZVkc5QNchL3IVv.jv7fpiyud4aw6A3U"
     },
     {
       "_id": "e8sao56TzQHMpcQ2",

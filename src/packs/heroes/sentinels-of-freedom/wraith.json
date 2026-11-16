@@ -20,15 +20,15 @@
     "thirdDieName": "N/A",
     "firstPrinciple": {
       "name": "Principle of the Detective",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You can always tell when an important piece of information is being left out or obscured, though you might not know exactly what it is.",
+      "minorTwist": "What important clue did you miss?",
+      "majorTwist": "What major secret was just revealed that you would rather have stayed hidden?"
     },
     "secondPrinciple": {
       "name": "Principle of Stealth",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "roleplaying": "You always know the most efficient method to enter or leave a location.",
+      "minorTwist": "What evidence of your presence did you just leave behind?",
+      "majorTwist": "What just happened that identified you as an obvious threat?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Sentinels of Freedom, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -636,12 +636,12 @@
       "_key": "!actors.items!voHC0YIWp3Ueace2.ZNSMQRJUR6mloVRr"
     },
     {
-      "_id": "YUZPWHYiucM9RIqJ",
+      "_id": "YqK0yC4CFmOGdJLP",
       "name": "Combat Stance",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "green",
+        "aux": "yellow",
         "icon": {
           "attack": false,
           "defend": true,
@@ -662,7 +662,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "green"
+          "color": "yellow"
         }
       },
       "_stats": {
@@ -673,7 +673,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!voHC0YIWp3Ueace2.YUZPWHYiucM9RIqJ"
+      "_key": "!actors.items!voHC0YIWp3Ueace2.YqK0yC4CFmOGdJLP"
     },
     {
       "_id": "LbjtDLz4OpDtjvOo",
@@ -756,12 +756,12 @@
       "_key": "!actors.items!voHC0YIWp3Ueace2.bEPC3dtlGiq42u3Y"
     },
     {
-      "_id": "os5GuxyHmN2u3DQ4",
+      "_id": "CKpBQWSLGtNAZQse",
       "name": "Favorite Knife",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
-        "aux": "yellow",
+        "aux": "red",
         "icon": {
           "attack": true,
           "defend": true,
@@ -782,7 +782,7 @@
       "flags": {
         "scrpg-actor-compendium": {
           "archive": true,
-          "color": "yellow"
+          "color": "red"
         }
       },
       "_stats": {
@@ -793,7 +793,7 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!voHC0YIWp3Ueace2.os5GuxyHmN2u3DQ4"
+      "_key": "!actors.items!voHC0YIWp3Ueace2.CKpBQWSLGtNAZQse"
     },
     {
       "_id": "ZQGEAKuMdgeDLQFi",

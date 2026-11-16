@@ -1,13 +1,13 @@
 {
-  "name": "Heritage",
+  "name": "Time-Slinger",
   "type": "hero",
   "img": "icons/svg/mystery-man.svg",
   "system": {
-    "alias": "Paul Parsons",
-    "archetype": "Physical Powerhouse",
+    "alias": "Jim Brooks",
+    "archetype": "Reality Shaper",
     "wounds": {
       "value": 0,
-      "max": 32
+      "max": 30
     },
     "mode": "main",
     "modName": "",
@@ -19,16 +19,16 @@
     "secondDieName": "N/A",
     "thirdDieName": "N/A",
     "firstPrinciple": {
-      "name": "Principle of Order",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "name": "Principle of the Time Traveler",
+      "roleplaying": "You are far from your own time and are often unsure how to act in this time. You have an innate sense for when time is not quite right in the era you’re in.",
+      "minorTwist": "What detail of this era did you not previously know about?",
+      "majorTwist": "What effects are happening as you discorporate in time?"
     },
     "secondPrinciple": {
-      "name": "Principle of The Mentor",
-      "roleplaying": "",
-      "minorTwist": "",
-      "majorTwist": ""
+      "name": "Principle of Whispers",
+      "roleplaying": "You hear a voice in your head that no one else hears. That voice tells you things, which might be true or false, but the voice certainly seems to know a lot.",
+      "minorTwist": "How did the voice in your head just distract you?",
+      "majorTwist": "What is the voice demanding of you now?"
     },
     "backIssue": {
       "one": "",
@@ -39,7 +39,7 @@
       "six": ""
     },
     "collections": {
-      "one": "",
+      "one": "Time-Slinger, Vol. 1",
       "two": "",
       "three": "",
       "four": "",
@@ -89,26 +89,26 @@
     },
     "gender": "Male",
     "age": "Middle-Aged",
-    "height": "6’ 2”",
-    "eyes": "Blue",
-    "hair": "Light Brown and Grey",
-    "skin": "White",
-    "build": "Athletic",
-    "costume": "<p>Form-fitting blue and silver bodysuit, a high silver collar, blue gloves, tall black boots, with a stylized silver lantern logo on each shoulder.</p>",
-    "background": "Dynasty",
-    "powerSource": "Genetic",
-    "personality": "Natural Leader",
+    "height": "5’ 11”",
+    "eyes": "Brown",
+    "hair": "Brown",
+    "skin": "Tan",
+    "build": "Rugged",
+    "costume": "<p>Cowboy hat, worn jeans, brown leather boots. Blue collared shirt emblazoned with golden clock arms. Golden left arm. Golden time-gun. Glowing blue eyepiece over left eye. Has robot horse named Masadah.</p>",
+    "background": "Anachronistic",
+    "powerSource": "Tech Upgrades",
+    "personality": "Lone Wolf",
     "health": {
-      "greenLow": 25,
-      "yellowHigh": 24,
+      "greenLow": 23,
+      "yellowHigh": 22,
       "yellowLow": 12,
       "redHigh": 11,
       "redLow": 1
     },
     "statusDie": {
-      "green": "d6",
+      "green": "d8",
       "yellow": "d8",
-      "red": "d10",
+      "red": "d8",
       "civilianGreen": "d8",
       "civilianYellow": "d8",
       "civilianRed": "d8"
@@ -152,7 +152,7 @@
   },
   "items": [
     {
-      "_id": "xnhmEBJF0Dv6AduP",
+      "_id": "fRxhKaII4VBdHPeF",
       "name": "Awareness",
       "type": "power",
       "img": "icons/svg/aura.svg",
@@ -182,11 +182,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.xnhmEBJF0Dv6AduP"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.fRxhKaII4VBdHPeF"
     },
     {
-      "_id": "aNFWDY6yHAI7VLpX",
-      "name": "Flight",
+      "_id": "bDkvBbjlKc9Nbnvp",
+      "name": "Postcognition",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -215,11 +215,44 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.aNFWDY6yHAI7VLpX"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.bDkvBbjlKc9Nbnvp"
     },
     {
-      "_id": "SdPdoo90oNXj3tvK",
-      "name": "Speed",
+      "_id": "ZQVRN9NMWXr6HzvW",
+      "name": "Power Arm",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.ZQVRN9NMWXr6HzvW"
+    },
+    {
+      "_id": "mQr9Hbvdl3Z7LCxS",
+      "name": "Robot Horse",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -230,39 +263,6 @@
       },
       "effects": [],
       "folder": null,
-      "sort": 200000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.SdPdoo90oNXj3tvK"
-    },
-    {
-      "_id": "CUheDLRf2FZQvuKs",
-      "name": "Strength",
-      "type": "power",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "dieType": "d10",
-        "aux": "main",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
       "sort": 300000,
       "ownership": {
         "default": 0
@@ -281,11 +281,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.CUheDLRf2FZQvuKs"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.mQr9Hbvdl3Z7LCxS"
     },
     {
-      "_id": "pkDpMkLCNhAsUaSH",
-      "name": "Vitality",
+      "_id": "3M9IGCCIqkZg32AK",
+      "name": "Time Revolver",
       "type": "power",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -314,74 +314,10 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.pkDpMkLCNhAsUaSH"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.3M9IGCCIqkZg32AK"
     },
     {
-      "_id": "1BGcRL0fJeKA6W3D",
-      "name": "America’s Finest",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.1BGcRL0fJeKA6W3D"
-    },
-    {
-      "_id": "8svMASqwYNCG76eW",
-      "name": "Close Combat",
-      "type": "quality",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "dieType": "d8",
-        "selected": "",
-        "description": ""
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 100000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "dieTypeKnown": true
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.8svMASqwYNCG76eW"
-    },
-    {
-      "_id": "HxqBW2yGd4jbfvSP",
+      "_id": "ocPirXRpiQS1VbBF",
       "name": "History",
       "type": "quality",
       "img": "icons/svg/book.svg",
@@ -392,6 +328,70 @@
       },
       "effects": [],
       "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.ocPirXRpiQS1VbBF"
+    },
+    {
+      "_id": "CLKdGkjRwsEE8tid",
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "dieTypeKnown": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.CLKdGkjRwsEE8tid"
+    },
+    {
+      "_id": "YjCrc3pcuOtFT2bb",
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": "",
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
       "sort": 200000,
       "ownership": {
         "default": 0
@@ -410,15 +410,15 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.HxqBW2yGd4jbfvSP"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.YjCrc3pcuOtFT2bb"
     },
     {
-      "_id": "Ez8klhb8gN1eVymx",
-      "name": "Leadership",
+      "_id": "o0jQAMliI0LIZThZ",
+      "name": "Time-Lost Sheriff",
       "type": "quality",
       "img": "icons/svg/book.svg",
       "system": {
-        "dieType": "d10",
+        "dieType": "d8",
         "selected": "",
         "description": ""
       },
@@ -442,25 +442,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.Ez8klhb8gN1eVymx"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.o0jQAMliI0LIZThZ"
     },
     {
-      "_id": "WqIszd6N2ZKUIcYH",
-      "name": "Fortitude",
+      "_id": "XfbGQw40SVwsZaRm",
+      "name": "Altered Scan",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "green",
         "icon": {
-          "attack": true,
+          "attack": false,
           "defend": false,
-          "overcome": true,
+          "overcome": false,
           "hinder": false,
-          "boost": true,
+          "boost": false,
           "recover": false
         },
-        "type": "I",
-        "gameText": "<p>Green zone, 2 while in the Yellow zone, and 3 while in the Red zone. Boost using Leadership. Apply that bonus to all hero Attack and Overcome</p>"
+        "type": "R",
+        "gameText": "<p>After a die pool is rolled, adjust one die up or down one value on the die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -482,11 +482,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.WqIszd6N2ZKUIcYH"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.XfbGQw40SVwsZaRm"
     },
     {
-      "_id": "qd2LGwyogNbQTZg9",
-      "name": "Galvanize",
+      "_id": "bA2DCBF8NB9AAY3g",
+      "name": "Sit a Spell",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -495,12 +495,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
-          "boost": false,
+          "hinder": true,
+          "boost": true,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>actions until the start of your next turn. Attack using Leadership. Other nearby heroes in the Yellow or Red zone</p>"
+        "gameText": "<p>Attack a target using Power Arm. Hinder that target with your Min die. Boost using Power Arm. Use your Max die. If you roll doubles, you may also</p>"
       },
       "effects": [],
       "folder": null,
@@ -522,25 +522,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.qd2LGwyogNbQTZg9"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.bA2DCBF8NB9AAY3g"
     },
     {
-      "_id": "ospqV4zZTD7iaD0r",
-      "name": "Motivational Charge",
+      "_id": "Y4SSsCsWWFICOg7t",
+      "name": "Takin’ My Time",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "green",
         "icon": {
-          "attack": false,
+          "attack": true,
           "defend": false,
           "overcome": true,
           "hinder": false,
           "boost": false,
-          "recover": true
+          "recover": false
         },
         "type": "A",
-        "gameText": "<p>Overcome a challenge where you can organize other people. Use your Max Recover equal to your Min die.</p>"
+        "gameText": "<p>Overcome a problem using knowledge from your home era and use your Attack using your Mid die.</p>"
       },
       "effects": [],
       "folder": null,
@@ -562,11 +562,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.ospqV4zZTD7iaD0r"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.Y4SSsCsWWFICOg7t"
     },
     {
-      "_id": "3iwTWU62bihawqnJ",
-      "name": "Principle of Order",
+      "_id": "BIgnlqX9nYA5gP2G",
+      "name": "Principle of the Time Traveler",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -580,7 +580,7 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>die. You and each of your allies gain a hero point. Overcome a challenge that someone else younger already tried and failed.</p>"
+        "gameText": "<p>Max die. You and each of your allies gain a hero point. Overcome against a challenge that involves information that you have no real way</p>"
       },
       "effects": [],
       "folder": null,
@@ -602,25 +602,25 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.3iwTWU62bihawqnJ"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.BIgnlqX9nYA5gP2G"
     },
     {
-      "_id": "CiiyCxYFiKrtTGzS",
-      "name": "Principle of the Mentor",
+      "_id": "VgCByWYscn2wE5z3",
+      "name": "Principle of Whispers",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
         "aux": "green",
         "icon": {
           "attack": true,
-          "defend": true,
+          "defend": false,
           "overcome": false,
           "hinder": false,
           "boost": false,
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Use your Max die. You and each of your allies gain a hero point. When damaged by an environment target or a surprise Attack, Defend by</p>"
+        "gameText": "<p>of knowing and use your Max die. You and each of your allies gain a hero point. Attack multiple targets using Time Revolver, using your Min die against each.</p>"
       },
       "effects": [],
       "folder": null,
@@ -642,51 +642,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.CiiyCxYFiKrtTGzS"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.VgCByWYscn2wE5z3"
     },
     {
-      "_id": "3qaEnsOF3qKlYBO4",
-      "name": "Danger Sense",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "green",
-        "icon": {
-          "attack": true,
-          "defend": false,
-          "overcome": false,
-          "hinder": false,
-          "boost": false,
-          "recover": false
-        },
-        "type": "R",
-        "gameText": "<p>rolling your single Awareness die. Attack using Strength. The target of that Attack must take the Attack action</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 500000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "green"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.3qaEnsOF3qKlYBO4"
-    },
-    {
-      "_id": "SOTSRhCcSSmLNyvp",
-      "name": "Lead from the Front",
+      "_id": "zjGPCBnFwsqxZezv",
+      "name": "Fan the Hammer",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -700,7 +660,47 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>against you as its next turn, if possible. Boost yourself using Vitality, then either remove a penalty on yourself or</p>"
+        "gameText": "<p>Boost yourself using Power Arm. Then, either remove a penalty on yourself</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "yellow"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.zjGPCBnFwsqxZezv"
+    },
+    {
+      "_id": "RZjBOgYjTMitgDvq",
+      "name": "Localized Acceleration",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "yellow",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>or Recover using your Min die. When a nearby enemy would create a bonus or penalty, you may remove</p>"
       },
       "effects": [],
       "folder": null,
@@ -722,11 +722,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.SOTSRhCcSSmLNyvp"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.RZjBOgYjTMitgDvq"
     },
     {
-      "_id": "JjX9hGo1VNiliKSY",
-      "name": "Steel Yourself",
+      "_id": "ZUvh0dGeZbFUAofm",
+      "name": "Stack the Deck",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -735,12 +735,12 @@
           "attack": true,
           "defend": false,
           "overcome": false,
-          "hinder": false,
+          "hinder": true,
           "boost": false,
-          "recover": true
+          "recover": false
         },
-        "type": "A",
-        "gameText": "<p>Recover using your Min die. When an opponent Attacks, you may become the target of the Attack and</p>"
+        "type": "R",
+        "gameText": "<p>it immediately. Attack using Robot Horse. Use your Max die. Hinder each nearby opponent</p>"
       },
       "effects": [],
       "folder": null,
@@ -762,51 +762,11 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.JjX9hGo1VNiliKSY"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.ZUvh0dGeZbFUAofm"
     },
     {
-      "_id": "aYq5rJ2lRj67R8w0",
-      "name": "Heroic Interception",
-      "type": "ability",
-      "img": "icons/svg/combat.svg",
-      "system": {
-        "aux": "yellow",
-        "icon": {
-          "attack": true,
-          "defend": true,
-          "overcome": false,
-          "hinder": true,
-          "boost": false,
-          "recover": false
-        },
-        "type": "R",
-        "gameText": "<p>Defend by rolling your single Red zone die. Attack using Flight. Use your Max die. Then, Hinder that target using your</p>"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 800000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "scrpg-actor-compendium": {
-          "archive": true,
-          "color": "yellow"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.000",
-        "systemId": "scrpg-foundry",
-        "systemVersion": "0.9.23",
-        "createdTime": 1763270000000,
-        "modifiedTime": 1763270000000,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.aYq5rJ2lRj67R8w0"
-    },
-    {
-      "_id": "L5H3s5zXHboLMHXA",
-      "name": "Take Down",
+      "_id": "BhMg10CLhhPzBa9b",
+      "name": "Get Out of Dodge",
       "type": "ability",
       "img": "icons/svg/combat.svg",
       "system": {
@@ -820,7 +780,47 @@
           "recover": false
         },
         "type": "A",
-        "gameText": "<p>Mid+Min dice.</p>"
+        "gameText": "<p>with your Min die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.BhMg10CLhhPzBa9b"
+    },
+    {
+      "_id": "4zyxl4GZFO7Sgqz7",
+      "name": "Showdown",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Self-Discipline. Use your Max+Mid+Min dice. Take a major twist. Boost another hero using Postcognition. If that hero has already acted for</p>"
       },
       "effects": [],
       "folder": null,
@@ -842,11 +842,51 @@
         "modifiedTime": 1763270000000,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!p8whkrDjmb5hvQQr.L5H3s5zXHboLMHXA"
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.4zyxl4GZFO7Sgqz7"
+    },
+    {
+      "_id": "YE53d80OeDTQrpze",
+      "name": "Temporal Bootstrap",
+      "type": "ability",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "aux": "red",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the action order.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "scrpg-actor-compendium": {
+          "archive": true,
+          "color": "red"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.23",
+        "createdTime": 1763270000000,
+        "modifiedTime": 1763270000000,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!EXM1A7ElGPS2TJ2q.YE53d80OeDTQrpze"
     }
   ],
   "effects": [],
-  "folder": "MOrb4XJ4mjKBQD3Z",
+  "folder": "E862UMbR44dWsAJX",
   "sort": 0,
   "ownership": {
     "default": 0
@@ -854,13 +894,13 @@
   "flags": {
     "scrpg-actor-compendium": {
       "archive": true,
-      "team": "sentinels-of-freedom",
+      "team": "independent",
       "sourcePages": {
-        "attr": 294,
-        "ability": 295,
-        "bio": 296
+        "attr": 320,
+        "ability": 321,
+        "bio": 322
       },
-      "biographyHtml": "<p>296\n296\nBiography \nFor decades, the name Paul Parsons was \nsynonymous with Legacy, arguably the world’s \ngreatest hero. Whenever the fighting was thickest, \nhe would be there, holding back the tide. Wherever \ninjustice reared its ugly head, a flash of white and \nblue would appear and save the day. Whenever a \nmadman with a plan for world domination laughed \nmaniacally and declared that he was invincible, \nLegacy would be there at the last moment to show \nhim just how wrong he was. In the darkest times, \neven the bravest heroes would look to him for \ninspiration, and he was always prepared to put his \nlife on the line for the freedom of others. \nPaul, like all of the firstborn Parsons before him, \nknew that he would likely die on the front lines \nof the fight against insurmountable odds, leaving \nthe next generation to take up the mantle. His \nfamily accepted and supported this, ready to face \nwhatever came with grace. \nWhen OblivAeon came to destroy all that was \nand would ever be, Paul knew that it would likely \nbe his final battle. In order to save all of existence, \nhe prepared to face the cosmic being with his \nfellow heroes (and greatest enemy) at his side, \nhis daughter prepared to fully take up the name \nof Legacy should he fall. It was an epic battle that \ntaxed his limits, and many times it seemed that he \nwould need to make the ultimate sacrifice. When \nthe time came, then, he was astonished to find that \nit was his greatest enemy, Baron Blade, who died to \nsave the world.\nLegacy was at a crossroads. He knew that his \ndaughter was ready to be a hero in her own right, \nand it was fitting that she inherit the name of Legacy. \nHowever, he couldn’t simply hand off responsibility \nand stop helping others. After consulting with \nhis family and friends, he reached a decision. Paul \nParsons would continue to be a hero under the \nname Heritage, leaving his daughter Felicia free to \nstep into the role of Legacy. The OblivAeon event \nproved that the world needed more heroes, so he \nwould focus on educating the next generation as a \nteacher at the newly proposed Freedom Plaza, and \nas an ambassador to the new multinational group \nG.L.O.B.A.L. Heritage would become a beacon of \nlight, showing the way for the next generation… \nbut if he ever sees a kid crying because their kitten \nis stuck in a tree, well, he always makes time to help \nthose in need.\nAlias: Paul Parsons\nGender: Male\nAge: Middle-Aged\nHeight: 6’2”\nEyes: Blue\nHair: Light brown and grey\nSkin: White\nBuild: Athletic\nCostume/Equipment: Form-fitting blue and silver \nbodysuit, a high silver collar, blue gloves, all black \nboots, with a stylized silver lantern logo on each \nshoulder.\nBackground: Dynasty\nPower Source: Genetic\nArchetype: Physical Powerhouse\nPersonality: Natural Leader\nHeritage\nHeroes</p>"
+      "biographyHtml": "<p>322\n322\nBiography \nJim Brooks was fed up with the Hayes boys. Their \nlatest transgression — dynamiting his recently \npainted fences — was just the latest in a long line \nof indiscretions and indignities visited upon him and \nthe rest of the good people of Silver Gulch. The \nlayabout sheriff wouldn’t so much as lift a finger, but \nJim was tired of waiting around. He strapped on his \ntrusty six-gun and deputized himself, riding out to \nchase those Hayes brothers down. Rounding them \nup got him elected as the new sheriff shortly after \nthat. He brought peace and relative order to the \nsmall mining town, until one day while investigating \ncomplaints of strange noises, he fell through a hole \nin time itself. Instantly, he was thrown to a strange \nplace where a massive rat walking on its hind legs \nknocked off his hat and bit off his arm! Jim drew his \npistol and plugged the varmint, and then promptly \npassed out on top of its corpse. Some time later, he \nwoke again on a metal table, a soothing voice that \ncalled itself CON talking to him about how he was \nin the distant future, in a wasteland populated by \nmonsters. CON gave him a new arm, a shiny badge, \nand a new name: Chrono-Ranger! He bounced all \naround time hunting monsters, until one day CON \ngave him a bounty to murder a masked man in cold \nblood. He refused, and when the energy keeping \nhim fixed in that time period ran out, he was stuck \noutside of time, stranded in grey emptiness until he \nwas rescued by a passing sailing vessel. \nLa Comodora, as the grey haired captain of the \nship identified herself, needed him to round up \nall of the other versions of her that were causing \ntrouble with time and reality. No killing, just putting \nthem in irons and pulling off their power to travel \nin time so that they would stop poking holes in \nreality for fun. She upgraded his tech, linking the \ntime-travel capabilities of his badge to the function \nof her time-traveling pirate ship so that he could \npursue his quarry through different times. This \nseemed as good a job as any, right up until he \nended up stranded in Pompeii right before the \neruption of the volcano. He was a mite worried \nas the lava approached, but was once again saved \nat the last moment, this time by a man right out \nof Greek mythology, but with golden metal legs. \nHe introduced himself as The Chronoist, and told \nJim that the greatest monster of all time was trying \nto destroy literally everywhere and everywhen, \nand everyone had to work together to save the \nmultiverse. Jim stepped through the portal into the \nfight of his life against OblivAeon! \nHe fought valiantly, taking down minions and \nAlias: Jim Brooks\nGender: Male\nAge: Middle-Aged\nHeight: 5’11”\nEyes: Brown\nHair: Brown\nSkin: Tan\nBuild: Rugged\nCostume/Equipment: \nCowboy \nhat, \nworn \njeans, brown leather boots. Blue collared shirt \nemblazoned with golden clock arms. Golden left \narm. Golden time-gun. Glowing blue eyepiece over \nhis left eye. Has a robot horse named Masadah.\nBackground: Anachronistic\nPower Source: Tech Upgrades\nArchetype: Reality Shaper\nPersonality: Lone Wolf\nTime Slinger\nHeroes</p>"
     }
   },
   "_stats": {
@@ -871,6 +911,6 @@
     "modifiedTime": 1763270000000,
     "lastModifiedBy": null
   },
-  "_id": "p8whkrDjmb5hvQQr",
-  "_key": "!actors!p8whkrDjmb5hvQQr"
+  "_id": "EXM1A7ElGPS2TJ2q",
+  "_key": "!actors!EXM1A7ElGPS2TJ2q"
 }
